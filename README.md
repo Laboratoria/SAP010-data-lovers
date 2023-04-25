@@ -32,7 +32,7 @@ Na imagem seguinte, você pode ver como os dados que estão na parte esquerda
 podem ser usados para construir a interface amigável e compreensível que está na
 parte direita.
 
-![json-interface](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+![pokemon-data-to-ui](https://user-images.githubusercontent.com/12631491/218505816-c6d11758-9de4-428f-affb-2a56ea4d68c4.png)
 
 ## 2. Resumo do projeto
 
@@ -57,34 +57,45 @@ construir a interface que o ajude a interagir e entender melhor os dados.
 Este são os dados que propomos:
 
 * [Pokémon](src/data/pokemon/pokemon.json): Neste conjunto você encontrará uma
-  lista com os 151 Pokémon da região de Kanto, com suas respectivas estatísticas
+  lista com os 251 Pokémon da região de Kanto, com suas respectivas estatísticas
   utilizadas no jogo [Pokémon GO](http://pokemongolive.com).
-  - [Pesquisa com jogadores de Pokémon Go](src/data/pokemon/README.pt-BR.md)
+  - [Pesquisa com jogadores de Pokémon Go](src/data/pokemon/README.pt.md)
 
 * [League of Legends - Challenger leaderboard](src/data/lol/lol.json): Este
   conjunto mostra a lista de campeões do jogo League of Legends
   (LoL).
-  - [Pesquisa com jogadores de LoL](src/data/lol/README.pt-BR.md)
+  - [Pesquisa com jogadores de LoL](src/data/lol/README.pt.md)
 
 * [Rick and Morty](src/data/rickandmorty/rickandmorty.json). Lista de
   personagens da série Rick & Morty. Você pode revisar a documentação da API
   neste [link](https://rickandmortyapi.com).
-  - [Pesquisa com seguidores de Rick and Morty](src/data/rickandmorty/README.pt-BR.md)
+  - [Pesquisa com seguidores de Rick and Morty](src/data/rickandmorty/README.pt.md)
 
 * [Jogos Olímpicos do Rio de Janeiro](src/data/atletas/atletas.json).
    Este conjunto nos fornece a lista de atletas que conquistaram medalhas nas
    Olimpíadas do Rio de Janeiro.
-  - [Pesquisa com stakeholders dos Jogos Olímpicos do Rio de Janeiro](src/data/atletas/README.pt-BR.md)
+  - [Pesquisa com stakeholders dos Jogos Olímpicos do Rio de Janeiro](src/data/atletas/README.pt.md)
 
 * [Studio Ghibli](src/data/ghibli/ghibli.json).
   Lista de animações e personagens do [Studio Ghibli](https://ghiblicollection.com/).
-  - [Pesquisa com seguidores de Studio Ghibli](src/data/ghibli/README.pt-BR.md)
+  - [Pesquisa com seguidores de Studio Ghibli](src/data/ghibli/README.pt.md)
 
-* [Harry Potter](src/data/harrypotter/harry.json).
- Este conjunto nos fornece uma lista dos personagens, livros e feitiços de toda
- a saga Harry Potter
-  [Harry Potter](https://harrypotter.fandom.com).
-  - [Pesquisa com seguidores de Harry Potter](src/data/harrypotter/README.md)
+
+* [Breaking Bad](src/data/breakingbad/breakingbad.json): Neste conjunto você encontrará uma
+  lista com personagens da série Breaking Bad.
+  - [Pesquisa com seguidores Breaking Bad](src/data/breakingbad/README.pt.md)
+
+* [Países](src/data/breakingbad/breakingbad.json): Neste conjunto você encontrará uma
+  lista países.
+  - [Pesquisa com estudantes de geografia](src/data/breakingbad/README.pt.md)
+
+* [Game of Thrones](src/data/got/got.json): Neste conjunto você encontrará uma
+  lista com personagens da série Breaking Bad.
+  - [Pesquisa com seguidores de Game of Thrones](src/data/got/README.pt.md)
+
+  * [Tarot](src/data/tarot/tarot.json): Neste conjunto você encontrará uma
+  lista com personagens da série Breaking Bad.
+  - [Pesquisa com usuários de Tarot](src/data/tarot/README.pt.md)
 
 O objetivo principal deste projeto é que aprenda a desenhar e construir uma
 interface web onde se possa visualizar e manipular dados, entendendo o que o
@@ -282,9 +293,9 @@ Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projet
 ## 4. Considerações gerais
 
 * Este projeto será executado em duplas.
+* O intervalo de tempo estimado para concluir o projeto é de 3 a 4 Sprints.
 * Este projeto será entregue através do GitHub e a interface deve ser publicada
   no [GitHub Pages](https://pages.github.com/).
-* Tempo para completá-lo: Tome como referencia 4 semanas.
 
 ## 5. Critérios mínimos de aceitação do projeto
 
@@ -422,19 +433,28 @@ como toda a configuração de dependências:
 |  |  |  ├── ghibli.js
 |  |  |  ├── ghibli.json
 |  |  |  └── README.md
-|  |  └── harrypotter
-|  |  |  ├── data.js
-|  |  |  ├── harry.json
+|  |  └── got
+|  |  |  ├── got.js
+|  |  |  ├── got.json
 |  |  |  └── README.md
-
+|  |  └── breakingbad
+|  |  |  ├── breakingbad.js
+|  |  |  ├── breakingbad.json
+|  |  |  └── README.md
+|  |  └── countries
+|  |  |  ├── countries.js
+|  |  |  ├── countries.json
+|  |  |  └── README.md
+|  |  └── tarot
+|  |  |  ├── tarot.js
+|  |  |  ├── tarot.json
+|  |  |  └── README.md
 |  ├── data.js
 |  ├── index.html
 |  ├── main.js
 |  └── style.css
 └── test
    └── data.spec.js
-
-directory: 7 file: 20
 ```
 
 ### `src/index.html`

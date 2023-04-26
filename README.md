@@ -59,26 +59,26 @@ Este são os dados que propomos:
 * [Pokémon](src/data/pokemon/pokemon.json): Neste conjunto você encontrará uma
   lista com os 251 Pokémon da região de Kanto, com suas respectivas estatísticas
   utilizadas no jogo [Pokémon GO](http://pokemongolive.com).
-  - [Pesquisa com jogadores de Pokémon Go](src/data/pokemon/README.pt.md)
+  - [Pesquisa com jogadores de Pokémon Go](src/data/pokemon/README.pt-BR.md)
 
 * [League of Legends - Challenger leaderboard](src/data/lol/lol.json): Este
   conjunto mostra a lista de campeões do jogo League of Legends
   (LoL).
-  - [Pesquisa com jogadores de LoL](src/data/lol/README.pt.md)
+  - [Pesquisa com jogadores de LoL](src/data/lol/README.pt-BR.md)
 
 * [Rick and Morty](src/data/rickandmorty/rickandmorty.json). Lista de
   personagens da série Rick & Morty. Você pode revisar a documentação da API
   neste [link](https://rickandmortyapi.com).
-  - [Pesquisa com seguidores de Rick and Morty](src/data/rickandmorty/README.pt.md)
+  - [Pesquisa com seguidores de Rick and Morty](src/data/rickandmorty/README.pt-BR.md)
 
-* [Jogos Olímpicos do Rio de Janeiro](src/data/atletas/atletas.json).
+* [Jogos Olímpicos do Rio de Janeiro](src/data/athletes/athletes.json).
    Este conjunto nos fornece a lista de atletas que conquistaram medalhas nas
    Olimpíadas do Rio de Janeiro.
-  - [Pesquisa com stakeholders dos Jogos Olímpicos do Rio de Janeiro](src/data/atletas/README.pt.md)
+  - [Pesquisa com stakeholders dos Jogos Olímpicos do Rio de Janeiro](src/data/athletes/README.pt-BR.md)
 
 * [Studio Ghibli](src/data/ghibli/ghibli.json).
   Lista de animações e personagens do [Studio Ghibli](https://ghiblicollection.com/).
-  - [Pesquisa com seguidores de Studio Ghibli](src/data/ghibli/README.pt.md)
+  - [Pesquisa com seguidores de Studio Ghibli](src/data/ghibli/README.pt-BR.md)
 
 
 * [Breaking Bad](src/data/breakingbad/breakingbad.json): Neste conjunto você encontrará uma
@@ -86,15 +86,15 @@ Este são os dados que propomos:
   - [Pesquisa com seguidores Breaking Bad](src/data/breakingbad/README.pt.md)
 
 * [Países](src/data/breakingbad/breakingbad.json): Neste conjunto você encontrará uma
-  lista países.
+  lista de países.
   - [Pesquisa com estudantes de geografia](src/data/breakingbad/README.pt.md)
 
 * [Game of Thrones](src/data/got/got.json): Neste conjunto você encontrará uma
   lista com personagens da série Breaking Bad.
   - [Pesquisa com seguidores de Game of Thrones](src/data/got/README.pt.md)
 
-  * [Tarot](src/data/tarot/tarot.json): Neste conjunto você encontrará uma
-  lista com personagens da série Breaking Bad.
+* [Tarot](src/data/tarot/tarot.json): Neste conjunto você encontrará uma
+  lista com cartas de Tarot.
   - [Pesquisa com usuários de Tarot](src/data/tarot/README.pt.md)
 
 O objetivo principal deste projeto é que aprenda a desenhar e construir uma

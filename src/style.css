@@ -3,16 +3,76 @@
   padding: 0px;
 }
 
-body{
+header{
+  border: 2px solid red;
+  height: 80px;
+}
+
+main{
+  border: 2px solid rgb(232, 6, 111);
+  height: 570px;
+}
+
+.title{
+  border: 1px solid red;
+  height: 60px;
+  width: 400px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.texto p{
+  /* border: 1px solid red; */
+  width: 400px;
+}
+
+.sobre{
+  border: 2px solid rgb(64, 19, 90);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  border: 2px solid red;
+  height: 35px;
+  width: 750px;
+  font-size: 23px;
 }
 
 .menu{
   display: flex;
+  justify-content: space-around;
   list-style: none
 }
 
-li{
-  margin-left: 10px;
+.campoBuscar{
+  display: flex;
+  justify-content: center;
+}
+
+.buscarClassificação{
+  border: 1px solid red;
+  height: 70px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selecionar{
+  margin-left: 25px;
+}
+
+footer{
+  border: 2px solid red;
+  height: 70px;
 }

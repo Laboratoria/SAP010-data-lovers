@@ -1,57 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@300;400;500&display=swap');
+
 *{
   margin: 0px;
   padding: 0px;
 }
 
+body{
+  font-family: 'Ysabeau', sans-serif;
+}
+
 header{
-  border: 2px solid red;
-  height: 80px;
+  height: 70px;
+  background: black;
 }
 
 main{
-  border: 2px solid rgb(232, 6, 111);
-  height: 570px;
+  height: 550px;
+  background: rgb(246, 243, 243);
 }
 
 .title{
-  border: 1px solid red;
-  height: 60px;
-  width: 400px;
+  height: 20px;
+  width: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.texto p{
-  /* border: 1px solid red; */
-  width: 400px;
+  font-size: 20px;
 }
 
 .sobre{
-  border: 2px solid rgb(64, 19, 90);
-  height: 200px;
+  height: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.texto{
+  width: 450px;
+  height: 85px;
+  font-size: 90px;
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+}
+
+.texto1{
+  text-align: center;
+  margin-top: 45px;
 }
 
 .section{
   display: flex;
   justify-content: center;
+}
+
+.containerFiltrar{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  border: 1px solid rgb(173, 171, 171);
+  width: 1300px;
+  height: 55px;
+  border-radius: 40px 10px 40px 10px;
 }
 
 .container{
-  border: 2px solid red;
-  height: 35px;
-  width: 750px;
-  font-size: 23px;
+  height: 30px;
+  width: 650px;
+  font-size: 17px;
+}
+
+#buscar{
+  outline: 0;
+  /* border: none; */
+  padding: 5px;
+  background: transparent;
 }
 
 .menu{
   display: flex;
   justify-content: space-around;
-  list-style: none
+  list-style: none;
+  cursor: pointer;
+}
+
+li:hover{
+  color: rgb(156, 151, 3);
 }
 
 .campoBuscar{
@@ -59,20 +94,13 @@ main{
   justify-content: center;
 }
 
-.buscarClassificação{
-  border: 1px solid red;
-  height: 70px;
-  width: 450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .selecionar{
+  width: 200px;
+  text-align: center;
   margin-left: 25px;
 }
 
 footer{
-  border: 2px solid red;
   height: 70px;
+  background: black;
 }

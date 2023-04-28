@@ -1,6 +1,16 @@
-import { example } from './data.js';
+import { pokemon } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(example, data);
+document.getElementById("submit").addEventListener("click", ()=>{
+  const namePokemon = document.getElementById("namePokemon").value;
+  pokemon(namePokemon, data);
+
+})
+
+
+
+
+
+

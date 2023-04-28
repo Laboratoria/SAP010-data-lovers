@@ -1,9 +1,18 @@
-// estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
-};
+export const pokemon = (namePokemon, data) => {
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+  for(let array in data){
+    for(let object in data[array]){
+      if(data[array][object].name === namePokemon){
+        console.log(data[array][object])
+
+
+      }
+
+    }//for
+
+  }//for
+  //console.log(data.pokemon[0].name)
+
+}//endPokemon
+

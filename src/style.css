@@ -21,3 +21,12 @@ background-position: bottom;
   .logo{
     max-width: 300px;
   }
+
+  section{
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 15%;
+  }

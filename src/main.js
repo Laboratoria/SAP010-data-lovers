@@ -8,7 +8,7 @@ function mostraCards(campeoes) {
   document.getElementById('mostrarTodos').innerHTML = campeoes.map((campeao) =>
     `
       <div class="cards">
-        <div class="card">
+        <div class="card" >
           <div class="card-frente">
             <img src="${campeao.splash}" class="imagem-do-card">
             <h2 id="nome-do-card">${campeao.name.toUpperCase()}</h2>

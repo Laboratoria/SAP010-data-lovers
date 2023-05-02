@@ -9,5 +9,5 @@ const dataLol = {
     return campeoes.filter(filtraCampeoes);
   }
 
-
-export default dataLol
+}
+export default dataLol;

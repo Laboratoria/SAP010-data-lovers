@@ -6,11 +6,47 @@
   padding: 0px;
 }
 
-header{
+header {
   height: 60px;
   background: black;
-  align-items: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.cabecalho {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(226, 225, 223);
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: rgb(230, 220, 89);
+}
+
+.logo-cab {
+  width: 40px;
+  margin-right: 3em;
+  margin-left: 1.5em;
 }
 
 main{
@@ -67,7 +103,7 @@ main{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: rgb(232, 227, 227);
+  background: #3B3A3A;
   width: 95%;
   height: 55px;
   border-radius: 40px 10px 40px 10px;
@@ -103,6 +139,10 @@ main{
   list-style: none;
   cursor: pointer;
   gap: 1rem;
+  font-size: medium;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(250, 248, 245);
 }
 
 li:hover{

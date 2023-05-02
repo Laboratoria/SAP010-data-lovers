@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-image: url("pikachu.jpg");
+  background-image: url("./images/pikachu.jpg");
   background-position: bottom;
 }
 

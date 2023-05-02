@@ -20,7 +20,7 @@
   <main>
 
     <section class="header">
-      <img class="logo" rel="icon" type="image/png" src="Pokemon-Yellow.png" />
+      <img class="logo" rel="icon" type="image/png" src="./images/pokemonTittle.png" alt="Pokemon Tittle" />
       <div class="search">
         <label>Encontre a ficha técnica do seu Pokémon favorito:</label>
         <input type="text" id="namePokemon" placeholder="Enter name Pokemon">
@@ -29,14 +29,18 @@
     </section>
 
     <section class="cardPokemon">
-      <img id="imagePokemon" alt="Image Pokemon">
+      <div class="circle">
+        <img id="imagePokemon" alt="Image Pokemon">
+      </div>
       <div class="showNamePokemon">
         <img class="pokeball" alt="Image Pokeball" src="./images/pokeball.png">
         <h1 id="name"></h1>
       </div>
-      <p>Type: <span id="type"></span> </p>
-      <p>About: <span id="about"></span> </p>
-      <p>Evolution: <span id="evolution"></span></p>
+      <div class="dataPokemon">
+        <p>Type: <span id="type"></span> </p>
+        <p>About: <span id="about"></span> </p>
+        <p>Evolution: <span id="evolution"></span></p>
+      </div>
     </section>
 
   </main>

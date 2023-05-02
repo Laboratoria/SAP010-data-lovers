@@ -1,13 +1,14 @@
 html {
     height: 100%;
     width: 100%;
-    font-size: xx-large;
+    font-size: x-large;
     text-align: center;
     font-style: normal;
   }
   
   body {
-background-image: url("pokemon.logo.jpg");
+background-image: url("pikachu.jpg");
+background-position: bottom;
   }
 
   button {
@@ -15,4 +16,17 @@ background-image: url("pokemon.logo.jpg");
     font-weight: 900;
     border-radius: 25px;
 
+  }
+
+  .logo{
+    max-width: 300px;
+  }
+
+  section{
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 15%;
   }

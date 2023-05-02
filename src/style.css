@@ -25,10 +25,20 @@ main{
 }
 
 .sobre{
-  height: 260px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.titleComeco{
+  border: 1px solid rgb(184, 179, 48);
+  height: 170px;
+  width: 500px;
+}
+
+.title{
+  margin-top: 10px;
 }
 
 .texto{
@@ -36,11 +46,11 @@ main{
   font-size: 90px;
   font-family: 'Abril Fatface', cursive;
   font-style: italic;
+  text-align: center;
 }
 
 .texto1{
   text-align: center;
-  margin-top: 45px;
 }
 
 .section{

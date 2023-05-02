@@ -8,6 +8,7 @@ const dataLol = {
     const filtraCampeoes = campeao => campeao.name.includes(nome);
     return campeoes.filter(filtraCampeoes);
   }
+}
 
 }
 export default dataLol;

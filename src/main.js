@@ -1,25 +1,24 @@
-import { pokemon } from './data.js';
+import { filterData } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-document.getElementById("submit").addEventListener("click", ()=>{
+document.getElementById("submit").addEventListener("click", () => {
   const namePokemon = document.getElementById("namePokemon").value;
-  const pokemonInfo = pokemon (namePokemon,data);
-  changeImage ("imagePokemon", pokemonInfo.photo);
-  insertToTag ("name", pokemonInfo.name);
-  insertToTag ("about", pokemonInfo.about);
-  insertToTag ("type", pokemonInfo.type);
-  insertToTag ("evolution", pokemonInfo.evolution);
+  const pokemon = filterData(namePokemon, data);
+  insertToImage("imagePokemon", pokemon.photo);
+  insertToTag("name", pokemon.name);
+  insertToTag("about", pokemon.about);
+  insertToTag("type", pokemon.type);
+  insertToTag("evolution", pokemon.evolution);
+});
 
-})
-
-function changeImage( id, url ) {
+function insertToImage(id, url) {
   document.getElementById(id).src = url.toString();
 }
 
-function insertToTag( id, txt ) {
-  document.getElementById( id ).innerHTML=txt;
+function insertToTag(id, txt) {
+  document.getElementById(id).innerHTML=txt;
 }
 
 

@@ -6,7 +6,7 @@ const pokemonObject = {
   "evolution": ""
 };
 
-export const pokemon = (namePokemon, data) => {
+export const filterData = (namePokemon, data) => {
   for (let allObjects in data) {
     for (let object in allObjects) {
       if (data[allObjects][object].name === namePokemon) {

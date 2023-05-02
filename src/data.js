@@ -8,6 +8,7 @@ const pokemonObject = {
 
 export const filterData = (namePokemon, data) => {
   for (let allObjects in data) {
+
     console.log("primeiro for")
     for (let object in data[allObjects]) {
       console.log("segundo for")
@@ -20,25 +21,29 @@ export const filterData = (namePokemon, data) => {
         pokemonObject.photo = data[allObjects][object].img;
         pokemonObject.about = data[allObjects][object].about;
         pokemonObject.type = data[allObjects][object].type;
-         /*
-        if(data[allObjects][object].evolution['next-evolution'][0].name !== ''){
-          pokemonObject.evolution = data[allObjects][object].evolution['next-evolution'][0].name;
 
-          if(data[allObjects][object].evolution['next-evolution'][0]['next-evolution'].name !== ''){
-            pokemonObject.evolution = data[allObjects][object].evolution['next-evolution'][0]['next-evolution'][0].name;
-          }
-
+        console.log(Object.keys(data[allObjects][object].evolution).filter((key)=>key.includes('next-evolution')))
+        console.log(Object.keys(data[allObjects][object].evolution).filter((key)=>key.includes('next-evolution')))
+        if (Object.keys(data[allObjects][object].evolution).filter((key)=>key.includes('next-evolution')).length !== 0){
+          console.log(true)
+          Object.keys(data[allObjects][object].evolution['next-evolution'][0].name)
+          console.log(data[allObjects][object].evolution['next-evolution'][0].name)
+          filterData(data[allObjects][object].evolution['next-evolution'][0].name,data)
+        }
+        else {
+          console.log(false)
+        }
         }
         */
         console.log(pokemonObject)
         return pokemonObject
       }
 
-
-
-
     }//for
 
   }//for
 }
 
+/*filter((key) => key.includes('Name'))*/
+
+//"prev-evolution"

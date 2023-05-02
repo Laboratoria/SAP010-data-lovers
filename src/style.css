@@ -73,6 +73,7 @@ button {
   width: 20%;
   font-size: medium;
   padding: 15px;
+  display: none;
 }
 
 .showNamePokemon{

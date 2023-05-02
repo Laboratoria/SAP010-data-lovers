@@ -6,6 +6,7 @@ import data from './data/pokemon/pokemon.js';
 document.getElementById("submit").addEventListener("click", () => {
   const namePokemon = document.getElementById("namePokemon").value;
   const pokemon = filterData(namePokemon, data);
+  visible("cardPokemon")
   insertToImage("imagePokemon", pokemon.photo);
   insertToTag("name", pokemon.name);
   insertToTag("about", pokemon.about);
@@ -19,6 +20,11 @@ function insertToImage(id, url) {
 
 function insertToTag(id, txt) {
   document.getElementById(id).innerHTML=txt;
+}
+
+function visible(id){
+  document.getElementById(id).style.display = "block"
+
 }
 
 

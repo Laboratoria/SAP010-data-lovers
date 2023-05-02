@@ -125,7 +125,6 @@ li:hover{
 
 /*estilizar os cards*/
 
-
 .card-frente img{
   width: 100%;
   height: 270px;
@@ -140,7 +139,6 @@ li:hover{
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 4%;
-  
 }
 
 .card-verso li{
@@ -182,9 +180,9 @@ li:hover{
   background-color: rgb(10, 38, 104);
 }
 
-.card:hover h2{
+/* .card:hover h2{
   text-align: center;
-}
+} */
 .card:hover .card-frente {
   transform: rotateY(180deg);
 }

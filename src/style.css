@@ -12,8 +12,10 @@ html {
 }
 
 body {
-  background-image: url("pikachu.jpg");
+  background-color: #F6E652;
+  background-image: url("pikachuuuu.jpg");
   background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .header{

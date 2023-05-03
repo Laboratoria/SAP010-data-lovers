@@ -34,7 +34,6 @@ export const filterData = (namePokemon, data) => {
           console.log(false)
         }
         }
-        */
         console.log(pokemonObject)
         return pokemonObject
       }
@@ -42,8 +41,6 @@ export const filterData = (namePokemon, data) => {
     }//for
 
   }//for
-}
-
 /*filter((key) => key.includes('Name'))*/
 
 //"prev-evolution"

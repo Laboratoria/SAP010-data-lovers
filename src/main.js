@@ -4,6 +4,9 @@ import dataLol from './data/lol/lol.js';
 
 const campeoes = Object.values(dataLol.data);
 
+
+
+//interpolamos os dados
 function mostraCards(campeoes) {
   document.getElementById('mostrarTodos').innerHTML = campeoes.map((campeao) =>
     `

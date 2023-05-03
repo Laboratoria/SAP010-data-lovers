@@ -27,5 +27,7 @@ function mostraCards(campeoes) {
 
         `
   ).join('')
+
+  
 }
 window.addEventListener('load', () => mostraCards(campeoes));

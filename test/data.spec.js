@@ -1,23 +1,33 @@
-import { example, anotherExample } from '../src/data.js';
+import {buscarTag} from "../src/data"; '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('buscarTag', () => {
+  it('deve retornar um array com os campeões que possuem a tag especificada', () => {
+    const campeoes = [
+      { nome: 'Ahri', tags: ['Assassino', 'Mago'] },
+      { nome: 'Ashe', tags: ['Atirador', 'Suporte'] },
+      { nome: 'Darius', tags: ['Lutador', 'Tambor da Guerra'] },
+      { nome: 'Evelynn', tags: ['Assassino', 'Mago'] },
+    ];
+
+    const resultado = buscarTag(campeoes, 'Assassino');
+
+    expect(resultado).toEqual([
+      { nome: 'Ahri', tags: ['Assassino', 'Mago'] },
+      { nome: 'Evelynn', tags: ['Assassino', 'Mago'] },
+    ]);
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+  it('deve retornar um array vazio se nenhum campeão possuir a tag especificada', () => {
+    const campeoes = [
+      { nome: 'Ahri', tags: ['Assassino', 'Mago'] },
+      { nome: 'Ashe', tags: ['Atirador', 'Suporte'] },
+      { nome: 'Darius', tags: ['Lutador', 'Tambor da Guerra'] },
+      { nome: 'Evelynn', tags: ['Assassino', 'Mago'] },
+    ];
 
+    const resultado = buscarTag(campeoes, 'Tanque');
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+    expect(resultado).toEqual([]);
   });
 });

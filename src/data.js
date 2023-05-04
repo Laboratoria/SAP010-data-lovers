@@ -72,7 +72,7 @@ export const sortData = (data, sortBy) => {
           </div>
         `;
 
-        pokemons.appendChild(cardPokemon);
+        pokemons.appendChild(cardPokemon).sorted(function(a,b){return a-b})
         /*
         console.log(pokemons)
         console.log(cardPokemon)

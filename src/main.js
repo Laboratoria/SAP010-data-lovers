@@ -7,6 +7,7 @@ document.getElementById("submit").addEventListener("click", () => {
   document.getElementById("pokemons").innerHTML = "";
   const namePokemon = document.getElementById("namePokemon").value;
   /*filterData(namePokemon, data);*/
+ /*const orderBy = document.getElementById("orderBy").value*/
  sortData (data,namePokemon)
 });
 

@@ -1,6 +1,46 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import data from './data.js';
+import dataLol from './data/lol/lol.js';
 
-console.log(example, data);
+const campeoes = Object.values(dataLol.data);
+
+function filtroNomes() {
+  const inputFilter = document.getElementById('buscar').value
+
+  // const filtraCampeoes = campeao => campeao.name.toUpperCase().includes(nomeFiltrado.toUpperCase());
+  // const filter = campeoes.filter(filtraCampeoes);
+
+  const filter = data.buscarNome(campeoes, inputFilter)
+
+  return mostraCards(filter)
+
+}
+
+//interpolamos os dados
+function mostraCards(campeoes) {
+  document.getElementById('mostrarTodos').innerHTML = campeoes.map((campeao) =>
+    `
+      <div class="cards">
+        <div class="card" >
+          <div class="card-frente">
+            <img src="${campeao.splash}" class="imagem-do-card">
+            <h2 id="nome-do-card">${campeao.name.toUpperCase()}</h2>
+          </div>
+          <div class="card-verso">
+            <ul class="info-do-card">
+            <h3 class="nome-verso"><strong>${campeao.name.toUpperCase()}</strong></h3>
+            <li>Ataque: ${campeao.info.attack}</li>
+            <li>Defesa: ${campeao.info.defense}</li>
+            <li>Magia: ${campeao.info.magic}</li>
+            <li>Dificuldade: ${campeao.info.difficulty}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        `
+  ).join('')
+
+}
+window.addEventListener('load', () => mostraCards(campeoes));
+
+window.addEventListener('input', filtroNomes)

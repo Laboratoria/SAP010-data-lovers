@@ -1,9 +1,37 @@
-// estas funciones son de ejemplo
+export const dataLol = {
+  // filtra os campeões de acordo com uma tag específica
+  buscarTag: function(campeoes, tag) {
+    return campeoes.filter(campeao => campeao.tags.includes(tag));
+  },
 
-export const example = () => {
-  return 'example';
-};
+  // filtra os campeões de acordo com um nome específico
+  buscarNome: function(campeoes, nome) {
+    return campeoes.filter(campeao => campeao.name.toLowerCase().includes(nome.toLowerCase()));
+  },
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+  // ordena os campeões de acordo com uma ordem específica
+  ordenarCampeoes: function(campeoes, ordem) {
+    return campeoes.sort((campeaoA, campeaoB) => {
+      switch (ordem) {
+      case "maior-defesa":
+        return campeaoB.info.defense - campeaoA.info.defense;
+      case "menor-defesa":
+        return campeaoA.info.defense - campeaoB.info.defense;
+      case "maior-ataque":
+        return campeaoB.info.attack - campeaoA.info.attack;
+      case "menor-ataque":
+        return campeaoA.info.attack - campeaoB.info.attack;
+      case "maior-magia":
+        return campeaoB.info.magic - campeaoA.info.magic;
+      case "menor-magia":
+        return campeaoA.info.magic - campeaoB.info.magic;
+      case "maior-dificuldade":
+        return campeaoB.info.difficulty - campeaoA.info.difficulty;
+      case "menor-dificuldade":
+        return campeaoA.info.difficulty - campeaoB.info.difficulty;
+      default:
+        return 0;
+      }
+    });
+  }
+}

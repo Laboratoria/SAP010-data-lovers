@@ -1,0 +1,97 @@
+* {
+  font-family: 'Prompt', sans-serif;
+  font-family: 'Signika', sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-size: x-large;
+  text-align: center;
+  font-style: normal;
+}
+
+body {
+  background-color: #F6E652;
+  background-image: url("pikachuuuu.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.header{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 300px;
+  margin: 10px;
+}
+
+.search{
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 90%;
+}
+
+label{
+  display: block;
+}
+
+input{
+  display: block;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 15%;
+}
+
+button {
+  background-color: rgb(15, 221, 15);
+  border-radius: 25px;
+  display: block;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 5px;
+  width: 15%;
+}
+
+.cardPokemon {
+  background-color: blue;
+  height: 70px;
+  width: 100%;
+}
+
+.showNamePokemon{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pokeball{
+  height: 40px;
+  width: 40px;
+}
+
+h1::first-letter {
+  text-transform: capitalize;
+}
+
+p{
+  font-weight: bold;
+}
+
+span{
+  font-weight: lighter;
+}

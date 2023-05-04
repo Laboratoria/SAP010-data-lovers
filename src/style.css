@@ -1,0 +1,43 @@
+:root{
+    --light-blue: #00B5CC;
+    --dark-blue: #00353E;
+    --green: #b2df28;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Creepster', cursive;
+    font-family: 'Dangrek', cursive;
+}
+
+a{
+    color: var(--light-blue);
+    text-decoration: none;
+    font-family: 'Creepster', cursive;
+    transition: 0.3s ease-in-out;
+}
+
+img{
+    width: 15%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 2em;
+    transition: 0.3s ease-in-out;
+}
+
+button a:hover{
+    color: var(--green);
+}

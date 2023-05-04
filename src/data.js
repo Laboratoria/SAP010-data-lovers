@@ -36,12 +36,10 @@ export const filterData = (namePokemon, data) => {
 
         } else {
           console.log(false)
-        }//endIf
 
       }//endIf
 
     }//endFor
-
   }//endFor
 
 }//enFilterData

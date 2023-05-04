@@ -5,9 +5,9 @@ const dataLol = {
   },
   
   // filtra os campeões de acordo com um nome específico
+
   buscarNome: function(campeoes, nome) {
-    const filtraCampeoes = campeao => campeao.name.includes(nome);
-    return campeoes.filter(filtraCampeoes);
+    return campeoes.filter(campeao => campeao.name.toLowerCase().includes(nome.toLowerCase()));
   },
   
   // ordena os campeões de acordo com uma ordem específica

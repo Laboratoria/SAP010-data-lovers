@@ -1,15 +1,15 @@
-const dataLol = {
+export const dataLol = {
   // filtra os campeões de acordo com uma tag específica
   buscarTag: function(campeoes, tag) {
     return campeoes.filter(campeao => campeao.tags.includes(tag));
   },
-  
+
   // filtra os campeões de acordo com um nome específico
 
   buscarNome: function(campeoes, nome) {
     return campeoes.filter(campeao => campeao.name.toLowerCase().includes(nome.toLowerCase()));
   },
-  
+
   // ordena os campeões de acordo com uma ordem específica
   ordenarCampeoes: function(campeoes, ordem) {
     return campeoes.sort((campeaoA, campeaoB) => {
@@ -36,6 +36,3 @@ const dataLol = {
     });
   }
 }
-
-
-export default dataLol;

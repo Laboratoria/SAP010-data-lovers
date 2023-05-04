@@ -6,12 +6,11 @@ import data from './data/pokemon/pokemon.js';
 document.getElementById("submit").addEventListener("click", () => {
   const namePokemon = document.getElementById("namePokemon").value;
   const pokemon = filterData(namePokemon, data);
-  visible("cardPokemon")
+  visible("cardPokemon");
   insertToImage("imagePokemon", pokemon.photo);
   insertToTag("name", pokemon.name);
   insertToTag("about", pokemon.about);
   insertToTag("type", pokemon.type);
-  insertToTag("evolution", pokemon.evolution);
 });
 
 function insertToImage(id, url) {
@@ -23,8 +22,7 @@ function insertToTag(id, txt) {
 }
 
 function visible(id){
-  document.getElementById(id).style.display = "block"
-
+  document.getElementById(id).style.display = "block";
 }
 
 

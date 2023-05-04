@@ -1,9 +1,3 @@
-const pokemonObject = {
-  "name": "",
-  "photo": "",
-  "about": "",
-  "type": ""
-};
 
 export const filterData = (namePokemon, data) => {
 
@@ -13,24 +7,35 @@ export const filterData = (namePokemon, data) => {
 
       if (data[allObjects][object].name === namePokemon) {
 
-        pokemonObject.name = data[allObjects][object].name;
-        pokemonObject.photo = data[allObjects][object].img;
-        pokemonObject.about = data[allObjects][object].about;
-        pokemonObject.type = data[allObjects][object].type;
 
+
+        const pokemons = document.getElementById("pokemons");
+        console.log(pokemons)
+        console.log(document.getElementById("pokemons").parentElement.nodeName);
+        let cardPokemon = document.createElement('section');
+        cardPokemon.innerHTML = `
+        <img id="imagePokemon" alt="Image Pokemon" src="${data[allObjects][object].img}">
+          <div class="showNamePokemon">
+            <img class="pokeball" alt="Image Pokeball" src="./images/pokeball.png">
+            <h1 id="name">${data[allObjects][object].name}</h1>
+          </div>
+          <div class="dataPokemon">
+            <p>Type: <span id="type">${data[allObjects][object].type}</span> </p>
+            <p>About: <span id="about">${data[allObjects][object].about}</span> </p>
+          </div>
+        `;
+
+        pokemons.appendChild(cardPokemon);
+        /*
+        console.log(pokemons)
+        console.log(cardPokemon)
         console.log(Object.keys(data[allObjects][object].evolution).filter((key) => key.includes('next-evolution')))
-
+        */
         if (Object.keys(data[allObjects][object].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
-          console.log(true)
-          Object.keys(data[allObjects][object].evolution['next-evolution'][0].name);
-
           filterData(data[allObjects][object].evolution['next-evolution'][0].name, data);
-          
+
         } else {
           console.log(false)
-
-        console.log(pokemonObject)
-        return pokemonObject;
 
       }//endIf
 
@@ -39,4 +44,4 @@ export const filterData = (namePokemon, data) => {
 
 }//enFilterData
 
-//"prev-evolution"
+}//"prev-evolution"

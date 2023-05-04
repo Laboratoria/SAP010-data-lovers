@@ -28,7 +28,6 @@ export const filterData = (namePokemon, data) => {
           
         } else {
           console.log(false)
-        }//endIf
 
         console.log(pokemonObject)
         return pokemonObject;
@@ -36,7 +35,6 @@ export const filterData = (namePokemon, data) => {
       }//endIf
 
     }//endFor
-
   }//endFor
 
 }//enFilterData

@@ -13,7 +13,6 @@ html {
 
 body {
   background-image: url("./images/pikachu.jpg");
-  background-position: bottom;
 }
 
 .header{
@@ -65,15 +64,9 @@ button {
 }
 
 .cardPokemon {
-  background-color: rgba(155, 151, 151, 0.701);
-  border-radius: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 400px;
-  width: 20%;
-  font-size: medium;
-  padding: 15px;
-  display: none;
+  background-color: blue;
+  height: 70px;
+  width: 100%;
 }
 
 .showNamePokemon{

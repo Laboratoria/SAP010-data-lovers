@@ -12,37 +12,29 @@
 </head>
 
 <body>
-  <div id="root"></div>
   <script src="main.js" type="module"></script>
 
   <header></header>
 
-  <main>
+  <main id="parent">
 
     <section class="header">
       <img class="logo" rel="icon" type="image/png" src="./images/pokemonTittle.png" alt="Pokemon Tittle" />
       <div class="search">
         <label>Encontre a ficha técnica do seu Pokémon favorito:</label>
         <input type="text" id="namePokemon" placeholder="Enter name Pokemon">
+
         <button id="submit">Pesquisar</button>
       </div>
     </section>
 
-    <section id="cardPokemon" class="cardPokemon">
-      <img id="imagePokemon" alt="Image Pokemon">
-      <div class="showNamePokemon">
-        <img class="pokeball" alt="Image Pokeball" src="./images/pokeball.png">
-        <h1 id="name"></h1>
-      </div>
-      <div class="dataPokemon">
-        <p>Type: <span id="type"></span> </p>
-        <p>About: <span id="about"></span> </p>
-      </div>
+    <section id="pokemons" class="cardPokemon">
+      
     </section>
 
   </main>
 
-  <footer></footer>
+  <footer id="footer"></footer>
 
 </body>
 

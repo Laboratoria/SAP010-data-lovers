@@ -44,4 +44,4 @@ export const filterData = (namePokemon, data) => {
 
 }//enFilterData
 
-//"prev-evolution"
+}//"prev-evolution"

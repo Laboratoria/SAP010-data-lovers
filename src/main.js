@@ -3,6 +3,22 @@ import dataLol from './data/lol/lol.js';
 
 const campeoes = Object.values(dataLol.data);
 
+const tagTraduzida = (tag) => {
+  switch (tag) {
+  case "Assassin":
+    return " Assassino ";
+  case "Fighter":
+    return " Lutador ";
+  case "Mage":
+    return " Mago ";
+  case "Marksman":
+    return " Atirador ";
+  case "Support":
+    return " Suporte ";
+  case "Tank":
+    return " Tanque ";
+  }
+}
 function filtroNomes() {
   const inputFilter = document.getElementById('buscar').value
 
@@ -28,6 +44,7 @@ function mostraCards(campeoes) {
             <li>Defesa: ${campeao.info.defense}</li>
             <li>Magia: ${campeao.info.magic}</li>
             <li>Dificuldade: ${campeao.info.difficulty}</li>
+            <li> <strong> ${campeao.tags.map(tagTraduzida)} </strong></li>
             </ul>
           </div>
         </div>
@@ -37,6 +54,28 @@ function mostraCards(campeoes) {
   ).join('')
 
 }
+
+
+function filtroTags(tag) {
+  const filter = data.buscarTag(campeoes, tag);
+  mostraCards(filter);
+}
+
+// Adicionando eventos de clique aos itens do menu
+const itensMenu = document.querySelectorAll('.menu li');
+itensMenu.forEach(item => {
+  item.addEventListener('click', () => {
+    const tag = item.dataset.tag;
+    if (!tag) return;
+    if (tag === 'todos') {
+      mostraCards(campeoes);
+    } else {
+      filtroTags(tag);
+    }
+  });
+});
+
+
 window.addEventListener('load', () => mostraCards(campeoes));
 
-window.addEventListener('input', filtroNomes)
+document.getElementById('buscar').addEventListener('input', filtroNomes)

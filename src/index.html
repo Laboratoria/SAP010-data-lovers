@@ -43,13 +43,13 @@
 
           <div class="container">
             <ul class="menu">
-              <li class='filtrar-todos' id="filtrar">Todos</li>
-              <li class='filtrar-todos' id="filtrar-assassinos">Assassinos</li>
-              <li class='filtrar-todos' id="filtrar-lutadores">Lutadores</li>
-              <li class='filtrar-todos' id="filtrar-magos">Magos</li>
-              <li class='filtrar-todos' id="filtrar-atiradores">Atiradores</li>
-              <li class='filtrar-todos' id="filtrar-suporte">Suporte</li>
-              <li class='filtrar-todos' id="filtrar-tanques">Tanques</li>
+              <li class="filtrar-todos" data-tag="todos" id="filtrar">Todos</li>
+              <li class="filtrar-todos" data-tag="Assassin" id="Assassin">Assassinos</li>
+              <li class="filtrar-todos" data-tag="Fighter" id="Fighter">Lutadores</li>
+              <li class="filtrar-todos" data-tag="Mage" id="Mage">Magos</li>
+              <li class="filtrar-todos" data-tag="Marksman" id="Marksman">Atiradores</li>
+              <li class="filtrar-todos" data-tag="Support" id="Support">Suporte</li>
+              <li class="filtrar-todos" data-tag="Tank" id="Tank">Tanques</li>
             </ul>
           </div>
 
@@ -68,8 +68,14 @@
           <div class="divOpcoes">
             <select class="selecionar">
               <option>Classificação</option>
-              <option>opcao1</option>
-              <option>opcao2</option>
+              <option value="maior-ataque">Maior ataque </option>
+              <option value="menor-ataque"> Menor ataque</option>
+              <option value="maior-defesa"> Maior defesa </option>
+              <option value="menor-defesa"> Menor defesa </option>
+              <option value="maior-magia"> Maior magia </option>
+              <option value="menor-magia"> Menor magia </option>
+              <option value="maior-dificuldade"> Maior dificuldade </option>
+              <option value="menor-dificuldade"> Menor dificuldade </option>
             </select>
           </div>
         </div>

@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Pokedex</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+ pokemon
 
-  <body>
-<<<<<<< HEAD
-    <h1>
-      "ola projeto"
-      novo teste
-    </h1>
-=======
-    <h1>pokemon</h1>
->>>>>>> d9f722047b9592c711c76d935c04a7687b23e80b
+<head>
+  <meta charset="utf-8">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+  <img src="pokedex-3d-logo.png">
+
+  <div class="botoes">
+
+    <label for="tipo" class="tipo"></label>
+
+    <select id="tipo">
+    <option> Tipos de Pokemon </option>
+     <option onchange="tipoAgua()"> Água (Water)</option>
+     <option>Fogo (Fire)</option></option>
+     <option>Voador (flying)</option>
+
+    </select>
+
+    <label for="pontosDeVida" class="pontosDeVida"> </label>
+    <select id="pontosDeVida">
+     <option>Pontos de vida</option>
+     <option>50</option>
+     <option>100</option>
+     <option>150</option>
+
+    </select>
+    
+
+    <label for="bucaPorId" class="bucaPorId"> Digite o numero do Pokemon:</label>
+    <imput type="text" id="textoId">
+    
+    
+    
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
 </html>
+

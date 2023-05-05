@@ -1,4 +1,4 @@
-export const dataLol = {
+const dataLol = {
   // filtra os campeões de acordo com uma tag específica
   buscarTag: function(campeoes, tag) {
     return campeoes.filter(campeao => campeao.tags.includes(tag));
@@ -36,3 +36,4 @@ export const dataLol = {
     });
   }
 }
+export default dataLol

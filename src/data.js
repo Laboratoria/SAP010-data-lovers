@@ -3,13 +3,15 @@ const dataLol = {
   buscarTag: function(campeoes, tag) {
     return campeoes.filter(campeao => campeao.tags.includes(tag));
   },
-  
-  // filtra os campeões de acordo com um nome específico
 
+  // filtra os campeões de acordo com um nome específico
   buscarNome: function(campeoes, nome) {
-    return campeoes.filter(campeao => campeao.name.toLowerCase().includes(nome.toLowerCase()));
+    const filtraCampeoes = campeao => campeao.name.toUpperCase().includes(nome.toUpperCase());
+    const filter = campeoes.filter(filtraCampeoes);
+
+    return filter;
   },
-  
+
   // ordena os campeões de acordo com uma ordem específica
   ordenarCampeoes: function(campeoes, ordem) {
     return campeoes.sort((campeaoA, campeaoB) => {
@@ -37,5 +39,5 @@ const dataLol = {
   }
 }
 
-
 export default dataLol;
+

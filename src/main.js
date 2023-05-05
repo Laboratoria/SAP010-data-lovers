@@ -1,10 +1,15 @@
-// import { example } from './data.js';
-
+import data from './data.js';
 import dataLol from './data/lol/lol.js';
 
 const campeoes = Object.values(dataLol.data);
 
+function filtroNomes() {
+  const inputFilter = document.getElementById('buscar').value
 
+  const filter = data.buscarNome(campeoes, inputFilter);
+
+  return mostraCards(filter)
+}
 
 //interpolamos os dados
 function mostraCards(campeoes) {
@@ -31,6 +36,7 @@ function mostraCards(campeoes) {
         `
   ).join('')
 
-  
 }
 window.addEventListener('load', () => mostraCards(campeoes));
+
+window.addEventListener('input', filtroNomes)

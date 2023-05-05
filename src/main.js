@@ -6,13 +6,9 @@ const campeoes = Object.values(dataLol.data);
 function filtroNomes() {
   const inputFilter = document.getElementById('buscar').value
 
-  // const filtraCampeoes = campeao => campeao.name.toUpperCase().includes(nomeFiltrado.toUpperCase());
-  // const filter = campeoes.filter(filtraCampeoes);
-
   const filter = data.buscarNome(campeoes, inputFilter)
 
   return mostraCards(filter)
-
 }
 
 //interpolamos os dados

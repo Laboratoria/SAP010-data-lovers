@@ -6,9 +6,9 @@ import data from './data/pokemon/pokemon.js';
 document.getElementById("submit").addEventListener("click", () => {
   document.getElementById("pokemons").innerHTML = "";
   const namePokemon = document.getElementById("namePokemon").value;
-  ///filterData(namePokemon, data);
-  //const orderBy = document.getElementById("orderBy").value
-  sortData(data, namePokemon)
+  //filterData(namePokemon, data);
+  const orderBy = document.getElementById("orderBy").value;
+  sortData(data, namePokemon, orderBy);
 });
 
 export const buildScreen = (pokemon) => {
@@ -32,6 +32,7 @@ export const buildScreen = (pokemon) => {
   pokemons.appendChild(cardPokemon);
 
 }//endBuildScreen
+
 
 
 

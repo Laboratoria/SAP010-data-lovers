@@ -6,7 +6,7 @@ export const filterData = (namePokemon, data) => {
 
     for (let object in data[allObjects]) {
 
-      if (data[allObjects][object].name === namePokemon) {
+      if (data[allObjects][object].name.includes(namePokemon)) {
 
         buildScreen(data[allObjects][object]);
 
@@ -28,7 +28,32 @@ export const filterData = (namePokemon, data) => {
 
 }//endFilterData
 
-export const sortData = (data, sortBy) => {
+export const sortData = (data, sortBy, orderBy) => {
+
+  if(orderBy === 'a-z') {
+
+   data.pokemon.sort(function (a, b) {
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
+
+  } else if (orderBy === 'z-a'){
+    data.pokemon.sort(function (a, b) {
+      if (a.name < b.name) {
+        return 1;
+      }
+      if (a.name > b.name) {
+        return -1;
+      }
+      return 0;
+    });
+
+  }
 
   for (let allObjects in data) {
 

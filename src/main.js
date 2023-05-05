@@ -4,10 +4,11 @@ import dataLol from './data/lol/lol.js';
 const campeoes = Object.values(dataLol.data);
 
 function filtroNomes() {
-  const inputFilter = document.getElementById('buscar').value;
-  const filter = data.buscarNome(campeoes,inputFilter);
-  return mostraCards(filter)
+  const inputFilter = document.getElementById('buscar').value
 
+  const filter = data.buscarNome(campeoes, inputFilter);
+
+  return mostraCards(filter)
 }
 
 //interpolamos os dados

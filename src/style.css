@@ -16,13 +16,14 @@ body {
   background-image: url("./images/pikachu.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
+  margin: 0;
 }
 
-.header{
+.header {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
 }
 
 .logo {
@@ -30,7 +31,7 @@ body {
   margin: 10px;
 }
 
-.search{
+.search {
   flex-direction: column;
   margin-bottom: 10px;
   margin-left: auto;
@@ -39,18 +40,24 @@ body {
   width: 90%;
 }
 
-label{
+label {
   display: block;
 }
 
-input{
+input {
   display: block;
   padding: 5px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  width: 15%;
+  width: 100%;
+  max-width: 300px;
+}
+
+select {
+  width: 100%;
+  max-width: 100px;
 }
 
 button {
@@ -63,7 +70,8 @@ button {
   margin-right: auto;
   margin-top: 10px;
   padding: 5px;
-  width: 15%;
+  width: 100%;
+  max-width: 250px;
 }
 
 .cardPokemon {
@@ -71,14 +79,14 @@ button {
   width: 100%;
 }
 
-.showNamePokemon{
+.showNamePokemon {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.pokeball{
+.pokeball {
   height: 40px;
   width: 40px;
 }
@@ -87,10 +95,67 @@ h1::first-letter {
   text-transform: capitalize;
 }
 
-p{
+p {
   font-weight: bold;
 }
 
-span{
+span {
   font-weight: lighter;
+}
+
+#navPc {
+  width: 100%;
+  background-color: rgb(74, 223, 148);
+  display: flex;
+}
+
+#navPc div {
+  padding: 15px;
+  cursor: pointer;
+  transition-duration:0.5s;
+}
+
+#navPc div:hover{
+background-color: rgb(168, 231, 168);
+}
+
+#navCel {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #navPc{
+    display: none;
+  }
+  
+  #navCel {
+    display: flex;
+    padding: 15px;
+    align-items: start;
+    flex-direction: column;
+    background-color: rgb(74, 223, 148);
+  }
+
+  #navCel img {
+    cursor: pointer;
+    max-width: 50px;
+  }
+
+  #navCel ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    max-height: 0px;
+    margin: 0;
+  }
+
+  #navCel.selected ul {
+    max-height: 300px;
+  }
+
+  #navCel li {
+    padding: 10px 0;
+  }
 }

@@ -6,7 +6,7 @@ const campeoes = Object.values(dataLol.data);
 function filtroNomes() {
   const inputFilter = document.getElementById('buscar').value
 
-  const filter = data.buscarNome(campeoes, inputFilter)
+  const filter = data.buscarNome(campeoes, inputFilter);
 
   return mostraCards(filter)
 }

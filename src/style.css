@@ -151,7 +151,7 @@ background-color: rgb(168, 231, 168);
     margin: 0;
   }
 
-  #navCel.selected ul {
+  #navCel.active ul {
     max-height: 300px;
   }
 

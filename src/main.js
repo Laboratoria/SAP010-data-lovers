@@ -33,9 +33,20 @@ export const buildScreen = (pokemon) => {
 
 }//endBuildScreen
 
+document.querySelectorAll("header .home").forEach(
+  item => {
+    item.addEventListener("click",() =>{
+      console.log("click");
+      return window.location = "./";
+    })
+    
+  }
+)
 
-
-
+document.getElementById("menuMob").addEventListener("click",() =>{
+  const menu = document.querySelector("#navCel");
+  menu.classList.toggle("active");
+})
 
 
 

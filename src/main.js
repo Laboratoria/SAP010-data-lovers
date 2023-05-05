@@ -1,6 +1,81 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import data from './data.js';
+import dataLol from './data/lol/lol.js';
 
-console.log(example, data);
+const campeoes = Object.values(dataLol.data);
+
+const tagTraduzida = (tag) => {
+  switch (tag) {
+  case "Assassin":
+    return " Assassino ";
+  case "Fighter":
+    return " Lutador ";
+  case "Mage":
+    return " Mago ";
+  case "Marksman":
+    return " Atirador ";
+  case "Support":
+    return " Suporte ";
+  case "Tank":
+    return " Tanque ";
+  }
+}
+function filtroNomes() {
+  const inputFilter = document.getElementById('buscar').value
+
+  const filter = data.buscarNome(campeoes, inputFilter);
+
+  return mostraCards(filter)
+}
+
+//interpolamos os dados
+function mostraCards(campeoes) {
+  document.getElementById('mostrarTodos').innerHTML = campeoes.map((campeao) =>
+    `
+      <div class="cards">
+        <div class="card" >
+          <div class="card-frente">
+            <img src="${campeao.splash}" class="imagem-do-card">
+            <h2 id="nome-do-card">${campeao.name.toUpperCase()}</h2>
+          </div>
+          <div class="card-verso">
+            <ul class="info-do-card">
+            <h3 class="nome-verso"><strong>${campeao.name.toUpperCase()}</strong></h3>
+            <li>Ataque: ${campeao.info.attack}</li>
+            <li>Defesa: ${campeao.info.defense}</li>
+            <li>Magia: ${campeao.info.magic}</li>
+            <li>Dificuldade: ${campeao.info.difficulty}</li>
+            <li> <strong> ${campeao.tags.map(tagTraduzida)} </strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        `
+  ).join('')
+
+}
+
+
+function filtroTags(tag) {
+  const filter = data.buscarTag(campeoes, tag);
+  mostraCards(filter);
+}
+
+// Adicionando eventos de clique aos itens do menu
+const itensMenu = document.querySelectorAll('.menu li');
+itensMenu.forEach(item => {
+  item.addEventListener('click', () => {
+    const tag = item.dataset.tag;
+    if (!tag) return;
+    if (tag === 'todos') {
+      mostraCards(campeoes);
+    } else {
+      filtroTags(tag);
+    }
+  });
+});
+
+
+window.addEventListener('load', () => mostraCards(campeoes));
+
+document.getElementById('buscar').addEventListener('input', filtroNomes)

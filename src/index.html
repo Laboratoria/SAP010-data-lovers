@@ -6,7 +6,95 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <header>
+      <section class="cabecalho">
+        <img src="logo lol menor.png" class="logo-cab" />
+        <nav class="navegacaoCabecalho">
+          <a href=""> Sobre o Jogo</a>
+          <a href=""> Comunidade</a>
+          <a href=""> Mais</a>
+          <a href=""> jOGUE AGORA</a>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+
+      <section class="sobre">
+        <div class="titleComeco">
+          <div class="title">
+            <p>ESCOLHA SEU</p>
+          </div>
+          <div class="texto">
+            <p>CAMPEÃO</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="texto1">
+        <p>Com mais de 140 Campeões, você encontrará a combinação<br>perfeita para seu estilo de jogo. Especialize-se em um estilo ou<br> em todos.</p>
+      </div>
+
+      <section class="section">
+        <div class="containerFiltrar">
+          <div class="buscarClassificação">
+            <input id="buscar" type="text" placeholder="Buscar">
+          </div>
+
+          <div class="container">
+            <ul class="menu">
+              <li class="filtrar-todos" data-tag="todos" id="filtrar">Todos</li>
+              <li class="filtrar-todos" data-tag="Assassin" id="Assassin">Assassinos</li>
+              <li class="filtrar-todos" data-tag="Fighter" id="Fighter">Lutadores</li>
+              <li class="filtrar-todos" data-tag="Mage" id="Mage">Magos</li>
+              <li class="filtrar-todos" data-tag="Marksman" id="Marksman">Atiradores</li>
+              <li class="filtrar-todos" data-tag="Support" id="Support">Suporte</li>
+              <li class="filtrar-todos" data-tag="Tank" id="Tank">Tanques</li>
+            </ul>
+          </div>
+
+          <div class="container2">
+            <select class="selecionar2">
+              <option>Todas as funções</option>
+              <option>Assassinos</option>
+              <option>Lutadores</option>
+              <option>Magos</option>
+              <option>Atiradores</option>
+              <option>Suporte</option>
+              <option>Tanques</option>
+            </select>
+          </div>
+
+          <div class="divOpcoes">
+            <select class="selecionar">
+              <option>Classificação</option>
+              <option value="maior-ataque">Maior ataque </option>
+              <option value="menor-ataque"> Menor ataque</option>
+              <option value="maior-defesa"> Maior defesa </option>
+              <option value="menor-defesa"> Menor defesa </option>
+              <option value="maior-magia"> Maior magia </option>
+              <option value="menor-magia"> Menor magia </option>
+              <option value="maior-dificuldade"> Maior dificuldade </option>
+              <option value="menor-dificuldade"> Menor dificuldade </option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="todosCampeoes">
+        <div id="mostrarTodos">
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer>
+      <p> PROJETO DESENVOLVIDO POR</p>
+      <a href="https://github.com/larissakorz"> Larissa Korz</a>
+      <a href="https://github.com/laridepaula"> Larissa de Paula</a>
+    </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>

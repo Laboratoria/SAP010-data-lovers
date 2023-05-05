@@ -1,0 +1,48 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background-image: url('img/globo.jpg');
+    background-size: 70% auto;
+    background-position: center;
+    color: white;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  header {
+    border: 2px solid red;
+    text-align: center;
+    background-color: rgba(193, 145, 53, 0.63);
+    margin-bottom: 20px;
+  }
+  
+  
+  #root {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background: rgba(193, 145, 53, 0.63);
+    border: 2px solid blue;
+  }
+  
+  .filter {
+    background-color: rgba(247, 248, 249, 0.68);
+    /* Define a largura máxima de 600 pixels */
+    max-width: 700px;
+    color:black;
+  
+    /* Centraliza horizontalmente a seção */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+  
+  }

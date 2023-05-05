@@ -9,6 +9,7 @@ function filtroNomes() {
   const filter = data.buscarNome(campeoes, inputFilter);
 
   return mostraCards(filter)
+  //teste
 }
 
 //interpolamos os dados

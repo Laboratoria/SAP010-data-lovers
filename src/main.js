@@ -34,16 +34,27 @@ export const buildScreen = (pokemon) => {
 
 }//endBuildScreen
 
+
 export const noDataFound = (item) => {
 
   alert(`O ${item} pesquisado não existe na base da dados!`);
 
 }//endNoDataFound
 
+document.querySelectorAll("header .home").forEach(
+  item => {
+    item.addEventListener("click",() =>{
+      console.log("click");
+      return window.location = "./";
+    })
+    
+  }
+)
 
-
-
-
+document.getElementById("menuMob").addEventListener("click",() =>{
+  const menu = document.querySelector("#navCel");
+  menu.classList.toggle("active");
+})
 
 
 

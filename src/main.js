@@ -1,4 +1,4 @@
-import { filterData, sortData } from './data.js';
+import { filterData, sortData, computeStats } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -8,7 +8,8 @@ document.getElementById("submit").addEventListener("click", () => {
   const namePokemon = document.getElementById("namePokemon").value;
   //filterData(namePokemon, data);
   const orderBy = document.getElementById("orderBy").value;
-  sortData(data, namePokemon, orderBy);
+  //sortData(data, namePokemon, orderBy);
+  computeStats(data);
 });
 
 export const buildScreen = (pokemon) => {
@@ -33,6 +34,13 @@ export const buildScreen = (pokemon) => {
 
 }//endBuildScreen
 
+
+export const noDataFound = (item) => {
+
+  alert(`O ${item} pesquisado não existe na base da dados!`);
+
+}//endNoDataFound
+
 document.querySelectorAll("header .home").forEach(
   item => {
     item.addEventListener("click",() =>{
@@ -47,6 +55,7 @@ document.getElementById("menuMob").addEventListener("click",() =>{
   const menu = document.querySelector("#navCel");
   menu.classList.toggle("active");
 })
+
 
 
 

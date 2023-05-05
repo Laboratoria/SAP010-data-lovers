@@ -1,28 +1,26 @@
-import { buildScreen } from "./main.js";
+import { buildScreen, noDataFound } from "./main.js";
 
 export const filterData = (namePokemon, data) => {
 
-  for (let allObjects in data) {
+  for (let object in data.pokemon) {
 
-    for (let object in data[allObjects]) {
+    if (data.pokemon[object].name.includes(namePokemon)) {
 
-      if (data[allObjects][object].name.includes(namePokemon)) {
+      buildScreen(data.pokemon[object]);
 
-        buildScreen(data[allObjects][object]);
+      if (Object.keys(data.pokemon[object].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
 
-        if (Object.keys(data[allObjects][object].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
-
-          filterData(data[allObjects][object].evolution['next-evolution'][0].name, data);
-
-        } else {
-
-          console.log(false)
-
-        }//endIf
+        filterData(data.pokemon[object].evolution['next-evolution'][0].name, data);
 
       }//endIf
 
-    }//endFor
+    }//endIf
+
+    if (!data.pokemon[object].name.includes(namePokemon)) {
+
+      return noDataFound("nome");
+
+    }//endIf
 
   }//endFor
 
@@ -30,9 +28,9 @@ export const filterData = (namePokemon, data) => {
 
 export const sortData = (data, sortBy, orderBy) => {
 
-  if(orderBy === 'a-z') {
+  if (orderBy === 'a-z') {
 
-   data.pokemon.sort(function (a, b) {
+    data.pokemon.sort(function (a, b) {
       if (a.name < b.name) {
         return -1;
       }
@@ -42,7 +40,7 @@ export const sortData = (data, sortBy, orderBy) => {
       return 0;
     });
 
-  } else if (orderBy === 'z-a'){
+  } else if (orderBy === 'z-a') {
     data.pokemon.sort(function (a, b) {
       if (a.name < b.name) {
         return 1;
@@ -55,21 +53,47 @@ export const sortData = (data, sortBy, orderBy) => {
 
   }
 
-  for (let allObjects in data) {
+  for (let object in data.pokemon) {
 
-    for (let object in data[allObjects]) {
+    if (data.pokemon[object].type.includes(sortBy)) {
 
-      if (data[allObjects][object].type.includes(sortBy)) {
+      buildScreen(data.pokemon[object]);
 
-        buildScreen(data[allObjects][object]);
-
-      }//endIf
-
-    }//endFor
+    }//endIf
 
   }//endFor
 
 }//endSortData
+
+export const computeStats = (data) => {
+
+  let totalNumberOfPokemons = data.pokemon.length;
+
+  console.log(totalNumberOfPokemons);
+
+  const count = {};
+
+  for (let object in data.pokemon) {
+
+    data.pokemon[object].type.forEach(type => {
+      count[type] = (count[type] || 0) + 1;
+    });
+
+  }//endFor
+
+  console.log(count);
+
+  for (const value in count) {
+    count[value] = parseFloat(((count[value] / totalNumberOfPokemons) * 100).toFixed(2));
+  }
+
+  console.log(count)
+
+
+}//endComputStats
+
+
+
 
 
 

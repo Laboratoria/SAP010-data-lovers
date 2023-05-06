@@ -74,7 +74,8 @@ button {
   max-width: 250px;
 }
 
-.cardPokemon {
+.cardPokemon, #pokemonsSize{
+  background-color: blue;
   height: 70px;
   width: 100%;
 }
@@ -184,3 +185,4 @@ background-color: rgb(168, 231, 168);
   background-color: darkgray;
   height: 90%;
 }
+

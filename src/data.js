@@ -6,7 +6,7 @@ export const filterData = (namePokemon, data) => {
 
     if (data.pokemon[object].name.includes(namePokemon)) {
 
-      buildScreen(data.pokemon[object]);
+      buildScreen("pokemons", data.pokemon[object]);
 
       if (Object.keys(data.pokemon[object].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
 
@@ -51,7 +51,7 @@ export const sortData = (data, sortBy, orderBy) => {
 
     if (data.pokemon[object].type.includes(sortBy)) {
 
-      buildScreen(data.pokemon[object]);
+      buildScreen("pokemons", data.pokemon[object]);
 
     }//endIf
 
@@ -62,33 +62,84 @@ export const sortData = (data, sortBy, orderBy) => {
 export const computeStats = {
 
 
-calculatePokemonTypesInPercentages : function (data) {
+  calculatePokemonTypesInPercentages: function (data) {
 
-  let totalNumberOfPokemons = data.pokemon.length;
+    let totalNumberOfPokemons = data.pokemon.length;
 
-  console.log(totalNumberOfPokemons);
+    const count = {};
 
-  const count = {};
+    for (let object in data.pokemon) {
 
-  for (let object in data.pokemon) {
+      data.pokemon[object].type.forEach(type => {
+        count[type] = (count[type] || 0) + 1;
+      });
 
-    data.pokemon[object].type.forEach(type => {
-      count[type] = (count[type] || 0) + 1;
-    });
+    }//endFor
 
-  }//endFor
-
-  console.log(count);
-
-  for (const property in count) {
-    count[property] = ((count[property] / totalNumberOfPokemons) * 100).toFixed(2);
+    for (const property in count) {
+      count[property] = ((count[property] / totalNumberOfPokemons) * 100).toFixed(2);
       plotChart(property, count[property]);
+    }
+
+  },
+
+  findTheSizePokemon: function (data) {
+
+    const sizes = data.pokemon.map(object => {
+      return parseFloat(object.size.height);
+    });
+    console.log(sizes);
+
+    const max = Math.max(...sizes);
+    console.log(max);
+
+    const min = Math.min(...sizes);
+    console.log(min);
+
+    for(let object in data.pokemon){
+
+      if(data.pokemon[object].size.height.includes(max)){
+        console.log(true);
+        buildScreen("pokemonsSize", data.pokemon[object]);
+      }
+
+      if(data.pokemon[object].size.height.includes(min)){
+        console.log(true);
+        buildScreen("pokemonsSize", data.pokemon[object]);
+      }
+
+    }
+
+  },
+
+  findTheWeightPokemon: function (data) {
+
+    const sizes = data.pokemon.map(object => {
+      return parseFloat(object.size.weight);
+    });
+    console.log(sizes);
+
+    const max = Math.max(...sizes);
+    console.log(max);
+
+    const min = Math.min(...sizes);
+    console.log(min);
+
+    for(let object in data.pokemon){
+
+      if(data.pokemon[object].size.weight.includes(max)){
+        console.log(true);
+        buildScreen("pokemonsSize", data.pokemon[object]);
+      }
+
+      if(data.pokemon[object].size.weight.includes(min)){
+        console.log(true);
+        buildScreen("pokemonsSize", data.pokemon[object]);
+      }
+
+    }
+
   }
-
-
-
-
-}
 
 }//endComputStats
 

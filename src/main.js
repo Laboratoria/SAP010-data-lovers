@@ -21,13 +21,15 @@ const imprimeGrafico = document.getElementById("imprimegrafico");
 
 if(imprimeGrafico) {
   imprimeGrafico.addEventListener("click", () => {
-    computeStats.calculatePokemonTypesInPercentages(data);
+    //computeStats.calculatePokemonTypesInPercentages(data);
+    //computeStats.findTheSizePokemon(data);
+    computeStats.findTheWeightPokemon(data);
   });
 }
 
-export const buildScreen = (pokemon) => {
+export const buildScreen = (id, pokemon) => {
 
-  let pokemons = document.getElementById("pokemons");
+  let pokemons = document.getElementById(id);
   let cardPokemon = document.createElement('section');
   cardPokemon.classList.add("card");
 
@@ -39,6 +41,8 @@ export const buildScreen = (pokemon) => {
     </div>
     <div class="dataPokemon">
       <p>Type: <span id="type">${pokemon.type}</span> </p>
+      <p>Height: <span id="type">${pokemon.size.height}</span> </p>
+      <p>Weigth: <span id="type">${pokemon.size.weight}</span> </p>
       <p>About: <span id="about">${pokemon.about}</span> </p>
     </div>
    `;

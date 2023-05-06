@@ -127,7 +127,7 @@ background-color: rgb(168, 231, 168);
   #navPc{
     display: none;
   }
-  
+
   #navCel {
     display: flex;
     padding: 15px;
@@ -158,4 +158,29 @@ background-color: rgb(168, 231, 168);
   #navCel li {
     padding: 10px 0;
   }
+}
+
+#grafico {
+  background-color: aliceblue;
+  height: 500px;
+  width: 100%;
+}
+
+#tipoDePokemon{
+  background-color: coral;
+  height: 36px;
+  width: 15%;
+  float: left;
+}
+
+#percentual{
+  background-color: aqua;
+  height: 36px;
+  width: 85%;
+  float: right;
+}
+
+#valor{
+  background-color: darkgray;
+  height: 90%;
 }

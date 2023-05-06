@@ -1,4 +1,4 @@
-import { buildScreen, noDataFound } from "./main.js";
+import { buildScreen, noDataFound, plotChart } from "./main.js";
 
 export const filterData = (namePokemon, data) => {
 
@@ -13,12 +13,6 @@ export const filterData = (namePokemon, data) => {
         filterData(data.pokemon[object].evolution['next-evolution'][0].name, data);
 
       }//endIf
-
-    }//endIf
-
-    if (!data.pokemon[object].name.includes(namePokemon)) {
-
-      return noDataFound("nome");
 
     }//endIf
 
@@ -65,7 +59,10 @@ export const sortData = (data, sortBy, orderBy) => {
 
 }//endSortData
 
-export const computeStats = (data) => {
+export const computeStats = {
+
+
+calculatePokemonTypesInPercentages : function (data) {
 
   let totalNumberOfPokemons = data.pokemon.length;
 
@@ -83,12 +80,15 @@ export const computeStats = (data) => {
 
   console.log(count);
 
-  for (const value in count) {
-    count[value] = parseFloat(((count[value] / totalNumberOfPokemons) * 100).toFixed(2));
+  for (const property in count) {
+    count[property] = ((count[property] / totalNumberOfPokemons) * 100).toFixed(2);
+      plotChart(property, count[property]);
   }
 
-  console.log(count)
 
+
+
+}
 
 }//endComputStats
 

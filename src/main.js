@@ -3,14 +3,27 @@ import { filterData, sortData, computeStats } from './data.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-document.getElementById("submit").addEventListener("click", () => {
-  document.getElementById("pokemons").innerHTML = "";
-  const namePokemon = document.getElementById("namePokemon").value;
-  //filterData(namePokemon, data);
-  const orderBy = document.getElementById("orderBy").value;
-  //sortData(data, namePokemon, orderBy);
-  computeStats(data);
-});
+const submit = document.getElementById("submit");
+
+if(submit){
+
+  submit.addEventListener("click", () => {
+    document.getElementById("pokemons").innerHTML = "";
+    const namePokemon = document.getElementById("namePokemon").value;
+    filterData(namePokemon, data);
+    const orderBy = document.getElementById("orderBy").value;
+    //sortData(data, namePokemon, orderBy);
+  });
+
+}
+
+const imprimeGrafico = document.getElementById("imprimegrafico");
+
+if(imprimeGrafico) {
+  imprimeGrafico.addEventListener("click", () => {
+    computeStats.calculatePokemonTypesInPercentages(data);
+  });
+}
 
 export const buildScreen = (pokemon) => {
 
@@ -41,13 +54,31 @@ export const noDataFound = (item) => {
 
 }//endNoDataFound
 
+export const plotChart = (typePokemon, width) => {
+
+  let grafico = document.getElementById("grafico");
+  let dados = document.createElement('section');
+
+  dados.innerHTML = `
+    <div id="tipoDePokemon">
+      <div id="tipo">${typePokemon}</div>
+    </div>
+    <div id="percentual">
+      <div id="valor" style="width: ${width}% "> ${width}% </div>
+    </div>
+   `;
+
+   grafico.appendChild(dados);
+
+}//endBuildScreen
+
 document.querySelectorAll("header .home").forEach(
   item => {
     item.addEventListener("click",() =>{
       console.log("click");
       return window.location = "./";
     })
-    
+
   }
 )
 
@@ -55,6 +86,7 @@ document.getElementById("menuMob").addEventListener("click",() =>{
   const menu = document.querySelector("#navCel");
   menu.classList.toggle("active");
 })
+
 
 
 

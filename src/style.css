@@ -207,7 +207,8 @@ span {
 }
 
 #chart {
-  width: 60%;
+  margin: 20px;
+  width: 70%;
 }
 
 #tipoDePokemon{

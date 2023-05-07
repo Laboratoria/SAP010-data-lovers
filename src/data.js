@@ -55,6 +55,7 @@ export const sortData = (data, sortBy, orderBy) => {
 
     }//endIf
 
+
   }//endFor
 
 }//endSortData
@@ -83,29 +84,26 @@ export const computeStats = {
 
   },
 
-  findTheSizePokemon: function (data) {
+  findTheHeigthPokemon: function (data) {
 
     const sizes = data.pokemon.map(object => {
       return parseFloat(object.size.height);
     });
-    console.log(sizes);
 
     const max = Math.max(...sizes);
-    console.log(max);
 
     const min = Math.min(...sizes);
-    console.log(min);
 
     for(let object in data.pokemon){
 
       if(data.pokemon[object].size.height.includes(max)){
         console.log(true);
-        buildScreen("pokemonsSize", data.pokemon[object]);
+        buildScreen("pokemonsHeight", data.pokemon[object]);
       }
 
       if(data.pokemon[object].size.height.includes(min)){
         console.log(true);
-        buildScreen("pokemonsSize", data.pokemon[object]);
+        buildScreen("pokemonsHeight", data.pokemon[object]);
       }
 
     }
@@ -117,24 +115,21 @@ export const computeStats = {
     const sizes = data.pokemon.map(object => {
       return parseFloat(object.size.weight);
     });
-    console.log(sizes);
 
     const max = Math.max(...sizes);
-    console.log(max);
 
     const min = Math.min(...sizes);
-    console.log(min);
 
     for(let object in data.pokemon){
 
       if(data.pokemon[object].size.weight.includes(max)){
         console.log(true);
-        buildScreen("pokemonsSize", data.pokemon[object]);
+        buildScreen("pokemonsWeight", data.pokemon[object]);
       }
 
       if(data.pokemon[object].size.weight.includes(min)){
         console.log(true);
-        buildScreen("pokemonsSize", data.pokemon[object]);
+        buildScreen("pokemonsWeight", data.pokemon[object]);
       }
 
     }

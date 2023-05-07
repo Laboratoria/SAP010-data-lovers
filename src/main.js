@@ -1,4 +1,4 @@
-import { filterData, sortData, computeStats } from './data.js';
+import { computeStats, filterData,  sortData} from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -10,27 +10,43 @@ if(submit){
   submit.addEventListener("click", () => {
     document.getElementById("pokemons").innerHTML = "";
     const namePokemon = document.getElementById("namePokemon").value;
-    filterData(namePokemon, data);
+    //filterData(namePokemon, data);
     const orderBy = document.getElementById("orderBy").value;
-    //sortData(data, namePokemon, orderBy);
+    sortData(data, namePokemon, orderBy);
   });
 
 }
 
-const imprimeGrafico = document.getElementById("imprimegrafico");
+const findPokemonWeight = document.getElementById("findPokemonWeight");
 
-if(imprimeGrafico) {
-  imprimeGrafico.addEventListener("click", () => {
+if(findPokemonWeight) {
+  document.getElementById("findPokemonWeight").innerHTML = "";
+  findPokemonWeight.addEventListener("click", () => {
     //computeStats.calculatePokemonTypesInPercentages(data);
-    //computeStats.findTheSizePokemon(data);
     computeStats.findTheWeightPokemon(data);
+  });
+}
+
+const findPokemonHeight = document.getElementById("findPokemonHeight");
+if(findPokemonHeight) {
+  document.getElementById("findPokemonHeight").innerHTML = "";
+  findPokemonHeight.addEventListener("click", () => {
+    computeStats.findTheHeigthPokemon(data);
+  });
+}
+
+const findPercentageOfTypesOfPokemons = document.getElementById("findPercentageOfTypesOfPokemons");
+if(findPercentageOfTypesOfPokemons) {
+  document.getElementById("findPercentageOfTypesOfPokemons").innerHTML = "";
+  findPercentageOfTypesOfPokemons.addEventListener("click", () => {
+    computeStats.calculatePokemonTypesInPercentages(data);
   });
 }
 
 export const buildScreen = (id, pokemon) => {
 
   let pokemons = document.getElementById(id);
-  let cardPokemon = document.createElement('section');
+  let cardPokemon = document.createElement('div');
   cardPokemon.classList.add("card");
 
   cardPokemon.innerHTML = `
@@ -43,7 +59,6 @@ export const buildScreen = (id, pokemon) => {
       <p>Type: <span id="type">${pokemon.type}</span> </p>
       <p>Height: <span id="type">${pokemon.size.height}</span> </p>
       <p>Weigth: <span id="type">${pokemon.size.weight}</span> </p>
-      <p>About: <span id="about">${pokemon.about}</span> </p>
     </div>
    `;
 
@@ -60,7 +75,7 @@ export const noDataFound = (item) => {
 
 export const plotChart = (typePokemon, width) => {
 
-  let grafico = document.getElementById("grafico");
+  let grafico = document.getElementById("chart");
   let dados = document.createElement('section');
 
   dados.innerHTML = `

@@ -8,7 +8,6 @@ const dataLol = {
   buscarNome: function(campeoes, nome) {
     const filtraCampeoes = campeao => campeao.name.toUpperCase().includes(nome.toUpperCase());
     const filter = campeoes.filter(filtraCampeoes);
-
     return filter;
   },
 
@@ -37,13 +36,11 @@ const dataLol = {
       }
     });
   },
-
   calcularPorcentagem: function(campeoes, filtraCampeoes) {
-  const numeroCampeoesFiltrados = filtraCampeoes.length;
-  const totalDeCampeoes = campeoes.length;
-  return (numeroCampeoesFiltrados / totalDeCampeoes) * 100;
-  },
+    const numeroCampeoesFiltrados = filtraCampeoes.length;
+    const totalDeCampeoes = campeoes.length;
+    return (numeroCampeoesFiltrados / totalDeCampeoes) * 100;
+    },
 }
 
 export default dataLol;
-

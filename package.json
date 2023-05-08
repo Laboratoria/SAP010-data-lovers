@@ -30,10 +30,5 @@
     "createdAt": "2023-04-25T13:26:30.898Z",
     "version": "5.5.0",
     "commit": "df7115b8ec46293bf1e868fdedcc42e9b3861226"
-  },
-  "description": "* [1. Preâmbulo](#1-preâmbulo)\r * [2. Resumo do projeto](#2-resumo-do-projeto)\r * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)\r * [4. Considerações gerais](#4-considerações-gerais)\r * [5. Critérios mínimos de aceitação do\r   projeto](#5-critérios-mínimos-de-aceitação-do-projeto)\r * [6. Hacker edition](#6-hacker-edition)\r * [7. Considerações técnicas](#7-considerações-técnicas)\r * [8. Pistas, dicas e leituras\r   complementares](#8-pistas-dicas-e-leituras-complementares)\r * [9. Checklist](#9-checklist)",
-  "directories": {
-    "test": "test"
-  },
-  "author": ""
+  }
 }

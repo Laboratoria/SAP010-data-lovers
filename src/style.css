@@ -1,0 +1,131 @@
+/*html 1*/
+
+#logo {
+    top: -40px;
+    left: 510px;
+    position: absolute;
+    
+}
+
+#botãoiniciar {
+    color: yellow;
+    -webkit-text-stroke: 1px black;
+    
+}
+
+.botãoiniciar {
+    background-color: aqua;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    display: inline-block;
+    border: 3.0px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*html 2*/
+
+.botãoreset {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    display: inline-block;
+    padding: 5px;
+    width: 10%;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    z-index: 1;
+}
+
+#order {
+    background-color: rgb(0, 255, 26);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    display: inline-block;
+    border: 3.0px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.tarja {
+    background: rgba(25, 25, 25, 0.915);
+    padding: 120px 1480px 30px 30px;
+    position: absolute;
+    top: 10px;
+  
+  }
+
+#textgenero {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    color: white;
+    top: 25%;
+    left: 23%;
+    position: absolute;
+}
+
+#gender {
+    background-color: rgb(0, 255, 26);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    position: absolute;
+    top: 45%;
+    left: 23%;
+    display: inline-block;
+    border: 3.0px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+#textespecie {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    color: white;
+    top: 25%;
+    left: 43%;
+    position: absolute;
+}
+
+#species {
+    background-color: rgb(0, 255, 26);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    display: inline-block;
+    border: 3.0px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#textstatusdevida {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    color: white;
+    top: 25%;
+    left: 68%;
+    position: absolute;
+}
+
+#status {
+    background-color: rgb(0, 255, 26);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    position: absolute;
+    top: 45%;
+    left: 68%;
+    display: inline-block;
+    border: 3.0px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}

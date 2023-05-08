@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="imgfundo2">
+        <img src="https://images.alphacoders.com/805/805180.jpg" id="imgfundo2" width="1510px" height="730px">
+    </div>
+
+    <div class="botãoreset">
+        <a href="index.html" id="botãoreset"><img src="https://thumbs.gfycat.com/AlarmedInsistentGrayreefshark-size_restricted.gif" width="170%"></a>
+    </div>
+
+    <div class="titulo">
+        <select name="" id="order">
+            <option value="ORDENAR">Ordenar</option>
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+        </select>
+
+        <div class="tarja">
+            <div class="filtro">
+                <label id="textgenero">GENÊRO</label>
+                <select name="" id="gender">
+                    <option value="All">ALL</option>
+                    <option value="Female">FEMALE</option>
+                    <option value="Male">MALE</option>
+                </select>
+            </div>
+
+            <div class="filtro">
+                <label id="textespecie">ESPÉCIE</label>
+                <select name="" id="species">
+                    <option value="Specie">ALL</option>
+                    <option value="Human">HUMANS</option>
+                    <option value="Alien">ALIENS</option>
+                    <option value="Animal">ANIMALS</option>
+                    <option value="Robot">ROBOTS</option>
+                    <option value="Vampire">VAMPIRES</option>
+                    <option value="Humanoid">HUMANOIDS</option>
+                    <option value="Poopybutthole">POOPYBUTTHOLES</option>
+                    <option value="Mytholog">MYTHOLOGS</option>
+                    <option value="Cronenberg">CRONENBERGS</option>
+                    <option value="Disease">DISEASES</option>
+                    <option value="Parasite">PARASITES</option>
+                    <option value="unknown">UNKNOWNS</option>
+                </select>
+            </div>
+
+            <div class="filtro">
+                <label id="textstatusdevida">STATUS DE VIDA</label>
+                <select name="" id="status">
+                    <option value="Status">ALL</option>
+                    <option value="Alive">ALIVE</option>
+                    <option value="Dead">DEAD</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="root">
+
+        </div>
+
+        <script src="main.js" type="module"></script>
+</body>
+
+</html>

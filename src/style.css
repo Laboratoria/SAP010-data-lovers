@@ -331,6 +331,14 @@ li:hover{
 
 }
 
+.grafico{
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
 footer{
   height: 15vh;
   background: black;

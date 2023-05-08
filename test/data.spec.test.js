@@ -1,14 +1,9 @@
-import sum  from './data.spec.js'
+import filterData  from './data.spec.js'
 
-describe('soma', () => {
+describe('filterData', () => {
 
-  test('deveria ser uma função', () => {
-    expect(typeof sum).toBe('function');
+  it('deveria ser uma função', () => {
+    expect(typeof filterData).toBe('function');
   });
-
-  test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3);
-  });
-
 });
 

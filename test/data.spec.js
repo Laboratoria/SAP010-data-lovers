@@ -1,11 +1,6 @@
+import {filterData}  from './data.js'
 
-
-const sum = (a, b) => {
-  return a + b;
-}
-
-export default sum;
-
+export default filterData;
 
 
 

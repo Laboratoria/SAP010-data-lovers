@@ -1,97 +1,122 @@
 // import data from './data/lol/lol.js';
-import {filtrarPersonagens} from "./data.js"./data/rickandmorty/rickandmorty.js';
+import {filtrarPersonagens} from "./data.js"./data/rickandmorty/rickandmorty.js";
 
-const getCharacters = RICKANDMORTY.results;
-const reload = document.getElementById("refresh");
-const statusMenu = document.getElementById("filtro-status");
-const speciesMenu = document.getElementById("filtro-species");
-const ordenarAZ = document.getElementById("buttonAZ");
-const ordenarZA = document.getElementById("buttonZA");
-const calc = document.getElementById("boxCalculo");
+const data = RICKANDMORTY.results;
+const genderFilter = document.getElementById("filter-gender");
+const statusFilter = document.getElementById("filter-status");
+const statistic = document.getElementById("calc-estatic");
 
-reload.addEventListener("click", refreshPage);
-
-statusMenu.addEventListener("change", () => {
-  const retorno = window.data.getStatus(getCharacters, statusMenu.value);
-  show(retorno);
-  calc.innerHTML= percentStatus(getCharacters, retorno) + "%";
+genderFilter.addEventListener("change", () => {
+  functionGender();
+  statistic.innerHTML = `There are ${app.percCalculation(app.filterData(data, genderFilter.value))} % ${genderFilter.value} of the characters`;
 });
 
-speciesMenu.addEventListener("change", () => {
-  const retorno = window.data.getSpecies(getCharacters, speciesMenu.value);
-  show(retorno);
-  calc.innerHTML = percentSpecies(getCharacters, retorno) + "%";
-});
-
-ordenarAZ.addEventListener("click",
-  () => show(window.data.orderAZ(getCharacters)));
-
-ordenarZA.addEventListener("click",
-  () => show(window.data.orderZA(getCharacters)));
-
-window.onload = () => {
-  loadStatusMenu(getCharacters);
-  loadStatusSpecies(getCharacters);
-  show(getCharacters);
+function functionGender() {
+  return selectionCard(app.filterData(data, genderFilter.value));
 };
 
-function refreshPage() {
-  loadStatusMenu(getCharacters);
-  loadStatusSpecies(getCharacters);
-  show(getCharacters);
+window.onload = () => {
+  menuGender(data);
+  selectionCard(data);
+  menuStatus(data);
+};
 
-}
-
-function loadStatusMenu(arrayPersonagens) {
-  const charactersStatus = [];
-  arrayPersonagens.map(characters => {
-    if (!charactersStatus.includes(characters.status)) {
-      charactersStatus.push(characters.status);
+function menuGender(data) {
+  const rickandmortygender = [];
+  data.map(item => {
+    if (!rickandmortygender.includes(item.gender)) {
+      rickandmortygender.push(item.gender);
     } else {
       return false;
     }
-    return charactersStatus;
   });
 
-  statusMenu.innerHTML = "";
-  statusMenu.innerHTML = "<option value= \"none\"> Choose Status   </option>";
-  statusMenu.innerHTML += charactersStatus.map(status =>
-    `<option value= "${status}"> ${status}</option>`).join("");
+  genderFilter.innerHTML = "";
+  genderFilter.innerHTML = "<option value =\"none\">Filter Gender</option>";
+  genderFilter.innerHTML += rickandmortygender.map(item =>
+    `<option value="${item}">${item}</option>`).join("");
 
 }
 
-function loadStatusSpecies(arrayPersonagens) {
-  const charactersSpecies = [];
-  arrayPersonagens.map(characters => {
-    if (!charactersSpecies.includes(characters.species)) {
-      charactersSpecies.push(characters.species);
+
+function selectionCard(arr) {
+  const mostrarCardsDiv = document.getElementById("main");
+  let layout = "";
+
+  arr.forEach(data => {
+    layout += `
+        <div class ="card">
+          <img  class ="image" src="${data.image}"/>
+          <p class ="name"> <span>Name</span> &nbsp ${data.name}</p><hr>
+          <p class ="gender"><span>Gender</span> &emsp;${data.gender}</p><hr>
+          <p class ="status"><span>Status</span> &emsp;${data.status}</p><hr>
+        </div> `;
+  });
+  mostrarCardsDiv.innerHTML = layout;
+}
+
+statusFilter.addEventListener("change", () => {
+  functionStatus();
+  statistic.innerHTML = `There are ${app.percCalculation(app.filterStatus(data, statusFilter.value))} % ${statusFilter.value} of the characters`;
+});
+
+function functionStatus() {
+  selectionCard(app.filterStatus(data, statusFilter.value));
+}
+
+function menuStatus(data) {
+  const rickandmortystatus = [];
+  data.map(item => {
+    if (!rickandmortystatus.includes(item.status)) {
+      rickandmortystatus.push(item.status);
     } else {
       return false;
     }
-    return charactersSpecies;
   });
 
-  speciesMenu.innerHTML = "";
-  speciesMenu.innerHTML = "<option value= \"none\"> Choose Specie </option>";
-  speciesMenu.innerHTML += charactersSpecies.map(species =>
-    `<option value= "${species}"> ${species}</option>`).join("");
+  statusFilter.innerHTML = "";
+  statusFilter.innerHTML = "<option value =\"none\">Filter Status</option>";
+  statusFilter.innerHTML += rickandmortystatus.map(item =>
+    `<option value="${item}">${item}</option>`).join("");
+};
 
-}
+const sortCharacters = document.getElementById("sort-characters");
+sortCharacters.addEventListener("change", (sortCharacters) => {
+  const sortPersonas = app.sortNames(data, sortCharacters.target.value);
+  selectionCard(sortPersonas),
+  clearMessage();
+});
 
-function show (array) {
-  const result = document.getElementById("resultado");
-  calc.innerHTML = "When you choose the filter, the percentual of the characters will appear!";
-  result.innerHTML = "";
-  result.innerHTML += `${array.map(characters => {
-    return `
-        <div class="card1">
-            <img src="${characters.image}"/>
-            <h4>${characters.name}</h4>
-            <p>Status: ${characters.status}</p>
-            <p>Species: ${characters.species}</p>
+const clearFilters = document.getElementById("btn-clear");
+clearFilters.addEventListener("click", () => {
+  return selectionCard(data), clearMessage();
+});
 
-        </div>
-        `;
-  }).join("")}`;
-}
+const search = document.getElementById("btn-search");
+let textName = document.getElementById("search-character");
+search.addEventListener("click", () => {
+  const searchCharacter = app.filterName(data, textName.value.toUpperCase());
+  if(searchCharacter == ""){
+    return statistic.innerHTML = "Character not found.",
+    event.preventDefault(),
+    clearCards();
+  } else {
+    selectionCard(searchCharacter),
+    event.preventDefault(),
+    clearMessage();
+  }
+});
 
+function clearCards() {
+  const node = document.getElementById("main");
+  while (node.hasChildNodes()) {
+      node.removeChild(node.lastChild);
+  }
+};
+
+function clearMessage() {
+  const message = document.getElementById("calc-estatic");
+  while (message.hasChildNodes()) {
+    message.removeChild(message.lastChild);
+  }
+};

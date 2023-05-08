@@ -11,112 +11,21 @@ html {
   font-style: normal;
 }
 
-body {
-  background-color: #F6E652;
-  background-image: url("./images/pikachu.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  margin: 0;
-}
-
-.header {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-}
-
-.logo {
-  max-width: 300px;
-  margin: 10px;
-}
-
-.search {
-  flex-direction: column;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  width: 90%;
-}
-
-label {
-  display: block;
-}
-
-input {
-  display: block;
-  padding: 5px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  width: 100%;
-  max-width: 300px;
-}
-
-select {
-  width: 100%;
-  max-width: 100px;
-}
-
-button {
-  background-color: rgb(15, 221, 15);
-  border-radius: 25px;
-  display: block;
-  font-weight: 900;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  padding: 5px;
-  width: 100%;
-  max-width: 250px;
-}
-
-.cardPokemon {
-  height: 70px;
-  width: 100%;
-}
-
-.showNamePokemon {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.pokeball {
-  height: 40px;
-  width: 40px;
-}
-
-h1::first-letter {
-  text-transform: capitalize;
-}
-
-p {
-  font-weight: bold;
-}
-
-span {
-  font-weight: lighter;
-}
-
 #navPc {
   width: 100%;
   background-color: rgb(74, 223, 148);
   display: flex;
+  width: 100vw;
 }
 
 #navPc div {
   padding: 15px;
   cursor: pointer;
-  transition-duration:0.5s;
+  transition-duration: 0.5s;
 }
 
-#navPc div:hover{
-background-color: rgb(168, 231, 168);
+#navPc div:hover {
+  background-color: rgb(168, 231, 168);
 }
 
 #navCel {
@@ -124,10 +33,10 @@ background-color: rgb(168, 231, 168);
 }
 
 @media only screen and (max-width: 768px) {
-  #navPc{
+  #navPc {
     display: none;
   }
-  
+
   #navCel {
     display: flex;
     padding: 15px;
@@ -157,5 +66,215 @@ background-color: rgb(168, 231, 168);
 
   #navCel li {
     padding: 10px 0;
+  }
+}
+
+body {
+  background-color: #F6E652;
+  background-image: url("./images/pikachu.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  max-width: 300px;
+  margin: 10px;
+}
+
+.search {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  width: 90%;
+}
+
+input {
+  padding: 5px;
+  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+select {
+  width: 100%;
+  max-width: 100px;
+}
+
+.options {
+  padding: 5px;
+  margin: 5px;
+}
+
+.btn {
+  background-color: rgb(15, 221, 15);
+  border-radius: 25px;
+  height: 40px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.cardsPokemon {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 500px;
+  width: 100vw;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: azure;
+  border-radius: 10px;
+  height: 80%;
+  float: right;
+  margin: 20px;
+  padding: 20px;
+  width: 20%;
+}
+
+.showNamePokemon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pokeball {
+  height: 40px;
+  width: 40px;
+}
+
+h1::first-letter {
+  text-transform: capitalize;
+}
+
+p {
+  font-weight: bold;
+}
+
+span {
+  font-weight: lighter;
+}
+
+.questions {
+  display: flex;
+  height: max-content;
+  margin: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.curiosity {
+  align-items: center;
+  height: 100%;
+  margin: 20px;
+  width: 15%;
+}
+
+.showData {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+}
+
+#chart {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 70%;
+}
+
+#typeOfPokemon {
+  background-color: coral;
+  height: 36px;
+  width: 15%;
+  float: left;
+}
+
+#percentage {
+  background-color: aqua;
+  height: 36px;
+  width: 85%;
+  float: right;
+}
+
+#value {
+  background-color: darkgray;
+  height: 90%;
+}
+
+/*media queries - vai informar o que tem de ser feito quando for detectado um tamanho X de viewport*/
+/*max-width - pega o intervalo de 0px até 650px*/
+@media (max-width: 650px) {
+
+  .showData,
+  .questions {
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+  }
+
+  .curiosity {
+    width: 100%;
+  }
+
+  .card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 820px) {
+
+  .showData,
+  .questions {
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+  }
+
+  .curiosity {
+    width: 100%;
+  }
+
+  .card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .showData,
+  .questions {
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+  }
+
+  .curiosity {
+    width: 100%;
+  }
+
+  .card {
+    width: 30%;
   }
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- o meta name viewport serve para saber o tamanho do elemento da tela do usuário -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Signika:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <script src="main.js" type="module"></script>
+
+  <header>
+    <nav id="navPc">
+      <a href="index.html">
+        <div class="home">Home</div>
+      </a>
+      <a href="statistic.html">
+        <div>Estatisticas</div>
+      </a>
+    </nav>
+
+    <nav id="navCel">
+      <div id="menuMob">
+        <img src="images/menu.png" alt="menu">
+      </div>
+      <ul>
+        <a href="index.html">
+          <li class="home">Home</li>
+        </a>
+        <a href="statistic.html">
+          <li>Estatisticas</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Teste os seus conhecimentos!</h1>
+
+    <section class="questions">
+      <div class="curiosity">
+        <p>Você sabe quais são Pokemons mais baixos e o mais alto?</p>
+        <button id="findPokemonHeight" class="btn">Clique aqui para descobrir</button>
+      </div>
+      <div id="pokemonsHeight" class="showData"></div>
+    </section>
+
+    <section class="questions">
+      <div class="curiosity">
+        <p>Você sabe quais são Pokemons mais leves e o mais pesado?</p>
+        <button id="findPokemonWeight" class="btn">Clique aqui para descobrir</button>
+      </div>
+      <div id="pokemonsWeight" class="showData"></div>
+    </section>
+
+    <section class="questions">
+      <section class="curiosity">
+        <p>Você sabe quais são os tipos de Pokémons mais raros?</p>
+        <button id="findPercentageOfTypesOfPokemons" class="btn">Clique aqui para descobrir</button>
+      </section>
+      <section id="chart"></section>
+    </section>
+
+  </main>
+
+  <footer></footer>
+
+</body>
+
+</html>

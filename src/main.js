@@ -123,17 +123,56 @@ function selecionarSelect(){
 
 document.getElementById('buscar').addEventListener('input', filtroNomes)
 
-document.getElementById('buscar').addEventListener('input', filtroNomes);
+function filtroTags(tag) {
+  const filter = data.buscarTag(campeoes, tag);
+  mostraCards(filter);
+};
+
+// Adicionando eventos de clique aos itens do menu LISTA
+const itensMenu = document.querySelectorAll('.menu li');
+itensMenu.forEach(item => {
+  item.addEventListener('click', () => {
+    const tag = item.dataset.tag;
+    if (!tag) return;
+    if (tag === 'todos') {
+      mostraCards(campeoes);
+    } else {
+      filtroTags(tag);
+    }
+  });
+});
+
+
+// Adicionando eventos de clique aos itens do menu SELECT
+function filtroTagSelect(tag) {
+  const filter = data.buscarTag(campeoes, tag);
+  mostraCards(filter);
+}
+
+const itensMenuSelect = document.querySelector('.menu2');
+itensMenuSelect.addEventListener('change', () => {
+  const tag = itensMenuSelect.value;
+  if (!tag) return;
+  if (tag === 'todos') {
+    mostraCards(campeoes);
+  } else {
+    filtroTagSelect(tag);
+  }
+});
+
+// filtrar por classifcação
+function selecionarSelect(){
+  const ordem = document.querySelector('.selecionar').value
+  const selecionarMaiorMenor = data.ordenarCampeoes(campeoes, ordem);
+  mostraCards(selecionarMaiorMenor);
+}
+
+document.getElementById('buscar').addEventListener('input', filtroNomes)
+
 
 
 
 //aqui vou iniciar o grafico em charts
-
-async function carregarDados() {
-  const response = await fetch('lol.json');
-  const data = await response.json();
-  return data;
-}
 
 const categoriasCampeoes = ["Tank", "Mage", "Assassin", "Fighter", "Marksman", "Support"];
 const numeroCampeoesPorCategoria = categoriasCampeoes.map(categoria => data.buscarTag(campeoes, categoria).length);

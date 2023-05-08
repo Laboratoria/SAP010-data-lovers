@@ -43,4 +43,5 @@ const dataLol = {
     },
 }
 
+
 export default dataLol;

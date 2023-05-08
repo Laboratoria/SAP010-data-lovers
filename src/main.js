@@ -99,7 +99,7 @@ function selecionarSelect() {
 }
 
 document.getElementById('buscar').addEventListener('input', filtroNomes);
-
+document.querySelector('.selecionar').addEventListener('change', selecionarSelect);
 //aqui vou iniciar o grafico em charts
 
 const categoriasCampeoes = ["Tank", "Mage", "Assassin", "Fighter", "Marksman", "Support"];

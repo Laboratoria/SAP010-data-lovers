@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Dangrek&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Dangrek&display=swap" rel="stylesheet">
 <title>Rick and morty</title>
   </head>
   <body>
@@ -21,12 +20,27 @@
           <source src="images/video-pag-inicial.mp4" type="video/mp4">
         </video>
         </section>
+        
+        <section class="selecao">
+          <h1>Filtre por:</h1>
 
-        <section class="personagens">
-          <a href="#">Personagens</a>
-          <a href="episodios.html">Temporadas e Episódios</a>
+          <select name="btn-opcao" id="selecao-status">
+          <option value="" selected disabled hidden>Status</option>
+          <option value="alive">Vivo</option>
+          <option value="dead">Morto</option>
+          <option value="unknow">Desconhecido</option>
         </select>
+
+        <select name="btn-opcao" id="selecao-especie">
+          <option value="" selected disabled hidden>Espécie</option>
+          <option value="human">Human</option>
+          <option value="alien">Alienígena</option>
+          <option value="unknow">Desconhecido</option>
+        </select>
+
         </section>
+
+        <section class="personagens" id="card-personagens"></section>
     </main>
 
     <footer>

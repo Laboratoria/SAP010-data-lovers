@@ -51,7 +51,7 @@ nav a:hover {
 
 main{
   background: rgb(238, 235, 235);
-  background-image: url("background\ lol.png");
+  background-image: url(imgs/background_lol.png);
   font-family: 'Ysabeau', sans-serif;
 }
 
@@ -165,7 +165,6 @@ li:hover{
 
 /*estilizar os cards*/
 
-
 .card-frente img{
   width: 100%;
   height: 270px;
@@ -180,7 +179,7 @@ li:hover{
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 4%;
-  
+
 }
 
 .card-verso li{
@@ -250,7 +249,7 @@ li:hover{
     border-radius: 30px 10px 30px 10px;
   }
 
-  .selecionar, .selecionar2{
+  .selecionar, .menu2{
     outline: 0;
     padding: 6% 25%;
     background: rgb(184, 181, 85);
@@ -260,7 +259,7 @@ li:hover{
     color: rgb(59, 59, 58);
   }
 
-  .selecionar2{
+  .menu2{
     margin-right: 15%;
   }
 
@@ -291,7 +290,7 @@ li:hover{
     border-radius: 30px 10px 30px 10px;
   }
 
-  .selecionar, .selecionar2{
+  .selecionar, .menu2{
     outline: 0;
     padding: 7px;
     background: rgb(184, 181, 85);
@@ -301,11 +300,11 @@ li:hover{
     color: rgb(59, 59, 58);
   }
 
-  .selecionar2{
+  .menu2{
     margin-right: 5%;
   }
 
-  .selecionar:hover, .selecionar2:hover{
+  .selecionar:hover, .menu2:hover{
     color: rgb(90, 88, 34);
   }
 

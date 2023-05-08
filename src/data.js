@@ -8,7 +8,6 @@ const dataLol = {
   buscarNome: function(campeoes, nome) {
     const filtraCampeoes = campeao => campeao.name.toUpperCase().includes(nome.toUpperCase());
     const filter = campeoes.filter(filtraCampeoes);
-
     return filter;
   },
 
@@ -36,8 +35,7 @@ const dataLol = {
         return 0;
       }
     });
-  }
+  },
 }
 
 export default dataLol;
-

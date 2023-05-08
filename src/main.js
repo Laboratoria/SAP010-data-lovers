@@ -2,6 +2,7 @@ import data from './data.js';
 import dataLol from './data/lol/lol.js';
 // import dadosjson from './data/lol/lol.js'
 
+
 const campeoes = Object.values(dataLol.data);
 
 const tagTraduzida = (tag) => {
@@ -120,5 +121,62 @@ function selecionarSelect(){
   mostraCards(selecionarMaiorMenor);
 }
 
+document.getElementById('buscar').addEventListener('input', filtroNomes)
+
 document.getElementById('buscar').addEventListener('input', filtroNomes);
-document.querySelector('.selecionar').addEventListener('change', selecionarSelect);
+
+
+
+//aqui vou iniciar o grafico em charts
+
+async function carregarDados() {
+  const response = await fetch('lol.json');
+  const data = await response.json();
+  return data;
+}
+
+const categoriasCampeoes = ["Tank", "Mage", "Assassin", "Fighter", "Marksman", "Support"];
+const numeroCampeoesPorCategoria = categoriasCampeoes.map(categoria => data.buscarTag(campeoes, categoria).length);
+const porcentagemCampeoesPorCategoria = numeroCampeoesPorCategoria.map(numeroCampeoes => Math.round(numeroCampeoes / campeoes.length * 100));
+
+const config = {
+
+  type: 'doughnut',
+  data: {
+    labels: categoriasCampeoes.map(tagTraduzida),
+    datasets: [{
+      label: 'Número de Campeões',
+      data: porcentagemCampeoesPorCategoria,
+      backgroundColor: [
+        'rgba(14, 113, 1, 1)',
+        'rgba(1, 189, 153, 1)',
+        'rgba(183, 0, 3, 1)',
+        'rgba(255, 244, 0, 1)',
+        'rgba(47, 0, 183, 1)',
+        'rgba(248, 1, 219, 1)'
+      ],
+      borderColor: [
+        'rgba(14, 113, 1, 1)',
+        'rgba(1, 189, 153, 1)',
+        'rgba(183, 0, 3, 1)',
+        'rgba(255, 244, 0, 1)',
+        'rgba(47, 0, 183, 1)',
+        'rgba(248, 1, 219, 1)'
+      ],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Porcentagem de Campeões por categoria'
+      }
+    }
+  }
+};
+const meuGrafico = new Chart(document.getElementById('grafico-campeoes'), config);

@@ -1,48 +1,157 @@
-html {
-    height: 100%;
-    width: 100%;
-  }
-  
-  body {
-    background-image: url('img/globo.jpg');
-    background-size: 70% auto;
-    background-position: center;
-    color: white;
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  header {
-    border: 2px solid red;
-    text-align: center;
-    background-color: rgba(193, 145, 53, 0.63);
-    margin-bottom: 20px;
-  }
-  
-  
-  #root {
-    display: flex;
-    padding: 20px;
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+/* reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: rgba(42, 5, 248, 0.549) url("img/bg.jpg") center/cover;
+    overflow: hidden;
+}
+
+header {
+    display: flex; 
     align-items: center;
-    background: rgba(193, 145, 53, 0.63);
-    border: 2px solid blue;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100px;
+    background: linear-gradient(to bottom right, rgba(242, 240, 240, 0.326), rgba(246, 246, 246, 0.05));
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.464);
+    backdrop-filter: blur(0.8rem);
+    
+    padding: 1.5rem;
+    color: whitesmoke;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 10px;
+}
+.logo a {
+    display: flex;
+    width: 80px; 
+    height: 80px; 
+    background-image: url("img/globo.png"); 
+    background-size: contain;
+    background-repeat: no-repeat;
   }
+
+h1 {
+    display: flex;
+    margin: 0 auto;
+    font-size: 2.5em;
+    margin-left: 20px;
+}
   
-  .filter {
-    background-color: rgba(247, 248, 249, 0.68);
-    /* Define a largura máxima de 600 pixels */
-    max-width: 700px;
-    color:black;
+.menu {
+    display: flex;
+}
   
-    /* Centraliza horizontalmente a seção */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    border: 2px solid black;
+.card {
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.464);
+    backdrop-filter: blur(0.8rem);
+    border-radius: 1rem;
+    padding: 1.5rem 2.5rem;
+    color: white;
+} 
+
+.cardContainer {
+    text-align: justify;
+    line-height: 1.5;
+}
+.cardContainer p {
+    margin-bottom: 10px;
+}
+#selector {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 200px;
+    border: none;
     border-radius: 5px;
-  
-  }
+    background-color: rgba(242, 240, 240, 0.326);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+} 
+#selector option {
+    background-color:#12609c8e;
+    color: white;
+}  
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: linear-gradient(to bottom right, rgba(242, 240, 240, 0.326), rgba(246, 246, 246, 0.05));
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* Responsive */
+@media screen and (max-width: 767px) {
+    /* Styles for screens up to 767px wide */
+    .navBar {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin-left: 10px;
+        font-size: 1.5em;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for screens up to 480px wide */
+    .cardContainer {
+        font-size: 0.9em;
+    }
+
+    #selector {
+        width: 100%;
+    }
+}

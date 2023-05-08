@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <header>
-        <nav class="">
-          <h1>TravelCode &copy;</h1>
-          <ul class="">
-            <li><a type="button" id="" href="">População</a></li>
-            <li><a type="button" id="" href="">Países</a></li>
-          </ul>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelCode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+    <div class="navBar">
+      <div class="logo">
+        <a href="img/globo.png"></a>
+      </div>
+      <h1>TravelCode&copy;</h1>
+      <div class="menu">
+        <!-- <button class="btn-menu">Início</button> -->
+      </div>
+    </div>
+  </header>
+
+  <main class="card">
+    <div class="container"> 
+      <div class="cardContainer">Bem-vinda(o) ao TravelCode! <br>
+        Aqui você pode encontrar informações detalhadas sobre todos os países do mundo. Explore nossos filtros de busca para encontrar informações de fatos interessantes sobre a população, idioma e outros critérios importantes de cada país. Com nosso site, você pode descobrir tudo o que precisa saber sobre qualquer país do mundo em apenas alguns cliques!</div>
+      <div class="custom-select">
+        <select name="selector" id="selector">
+            <option value="">Filtre sua busca:</option>
+            <option value="country" class="select-otp">Países</option>
+            <option value="language" class="select-otp">Idioma</option>
+            <option value="population" class="select-otp">População</option>
+        </select>
+      </div> 
     
-          <button class="" type=" button">
-            <span class=""></span>
-            <span class=""></span>
-            <span class=""></span>
-          </button>
-        </nav>
-       
-      </header>
-      <main>
-        <div id=root>
-          <section class=filter>
-            <h1>Filtre os Páises</h1>
-            <div class="text">
-              <input type="text" id="search-box" placeholder="Digite um idioma">
-              <button id="search-button">Buscar País</button>
-            </div>
-          </section>
-        </div>
+    </div>
+  </main>
+  <footer>
+    <p>Desenvolvido por <a href="#">Carol Protásio</a> e <a href="#">Raquel Maia</a></p>
+  </footer>
       </main>
     <script src="main.js" type="module"></script>
   </body>

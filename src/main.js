@@ -3,7 +3,22 @@ import data from './data/pokemon/pokemon.js';
 
 //Só adiciona o addEventListener se o elemento for acionado
 //Pegando elemento do input
+
+
+//can use document here
 const name = document.getElementById("namePokemon");
+
+if (name) {
+  name.addEventListener("input", () => {
+    document.getElementById("pokemons").innerHTML = "";
+    const namePokemon = document.getElementById("namePokemon").value.toLowerCase();
+    filterData(namePokemon, data);
+  });
+}//endIf
+
+/*
+const name = document.getElementById("namePokemon");
+
 if (name) {
   name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
@@ -14,6 +29,7 @@ if (name) {
 
 //Só adiciona o addEventListener se o elemento for acionado
 //Pegando elemento do botão pesquisar
+*/
 const searchType = document.getElementById("submit");
 if (searchType) {
   searchType.addEventListener("click", () => {
@@ -106,22 +122,27 @@ document.querySelectorAll("header .home").forEach(
   }
 )
 
-document.getElementById("menuMob").addEventListener("click", () => {
-  const menu = document.querySelector("#navCel");
-  menu.classList.toggle("active");
-})
+const menuMob = document.getElementById("menuMob");
+
+if (menuMob) {
+  menuMob.addEventListener("click", () => {
+    const menu = document.querySelector("#navCel");
+    menu.classList.toggle("active");
+  })
+}
+
 
 //adicionando evento no carregamento da página
-document.getElementById("pokemons").addEventListener("load", onload(data));
 
-function onload(data) {
+const showPokemons = document.getElementById("pokemons");
 
-
-  for (const pokemon in data.pokemon) {
-    buildCard("pokemons", data.pokemon[pokemon]);
-  }//enFor
-
-}//endOnload
+if(showPokemons){
+  showPokemons.addEventListener("load", () => {
+    for (const pokemon in data.pokemon) {
+      buildCard("pokemons", data.pokemon[pokemon]);
+    }//enFor
+  });
+}
 
 
 

@@ -1,16 +1,16 @@
-import { buildScreen, noDataFound, plotChart } from "./main.js";
+import { buildCard, plotChart } from "./main.js";
 
 export const filterData = (namePokemon, data) => {
 
-  for (let object in data.pokemon) {
+  for (let pokemon in data.pokemon) {
 
-    if (data.pokemon[object].name.includes(namePokemon)) {
+    if (data.pokemon[pokemon].name.includes(namePokemon)) {
 
-      buildScreen("pokemons", data.pokemon[object]);
+      buildCard("pokemons", data.pokemon[pokemon]);
 
-      if (Object.keys(data.pokemon[object].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
+      if (Object.keys(data.pokemon[pokemon].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
 
-        filterData(data.pokemon[object].evolution['next-evolution'][0].name, data);
+        return filterData(data.pokemon[pokemon].evolution['next-evolution'][0].name, data);
 
       }//endIf
 
@@ -45,13 +45,13 @@ export const sortData = (data, sortBy, orderBy) => {
       return 0;
     });
 
-  }
+  }//endIf
 
-  for (let object in data.pokemon) {
+  for (let pokemon in data.pokemon) {
 
-    if (data.pokemon[object].type.includes(sortBy)) {
+    if (data.pokemon[pokemon].type.includes(sortBy)) {
 
-      buildScreen("pokemons", data.pokemon[object]);
+      buildCard("pokemons", data.pokemon[pokemon]);
 
     }//endIf
 
@@ -61,7 +61,6 @@ export const sortData = (data, sortBy, orderBy) => {
 }//endSortData
 
 export const computeStats = {
-
 
   calculatePokemonTypesInPercentages: function (data) {
 
@@ -80,9 +79,9 @@ export const computeStats = {
     for (const property in count) {
       count[property] = ((count[property] / totalNumberOfPokemons) * 100).toFixed(2);
       plotChart(property, count[property]);
-    }
+    }//endFor
 
-  },
+  },//endCalculatePokemonTypesInPercentages
 
   findTheHeigthPokemon: function (data) {
 
@@ -97,18 +96,16 @@ export const computeStats = {
     for(let object in data.pokemon){
 
       if(data.pokemon[object].size.height.includes(max)){
-        console.log(true);
-        buildScreen("pokemonsHeight", data.pokemon[object]);
-      }
+        buildCard("pokemonsHeight", data.pokemon[object]);
+      }//endIf
 
       if(data.pokemon[object].size.height.includes(min)){
-        console.log(true);
-        buildScreen("pokemonsHeight", data.pokemon[object]);
-      }
+         buildCard("pokemonsHeight", data.pokemon[object]);
+      }//endIf
 
-    }
+    }//endFor
 
-  },
+  },//endFindTheHeigthPokemon
 
   findTheWeightPokemon: function (data) {
 
@@ -123,18 +120,16 @@ export const computeStats = {
     for(let object in data.pokemon){
 
       if(data.pokemon[object].size.weight.includes(max)){
-        console.log(true);
-        buildScreen("pokemonsWeight", data.pokemon[object]);
-      }
+        buildCard("pokemonsWeight", data.pokemon[object]);
+      }//endIf
 
       if(data.pokemon[object].size.weight.includes(min)){
-        console.log(true);
-        buildScreen("pokemonsWeight", data.pokemon[object]);
-      }
+         buildCard("pokemonsWeight", data.pokemon[object]);
+      }//endIf
 
-    }
+    }//endFor
 
-  }
+  }//endFindTheWeigthPokemon
 
 }//endComputStats
 

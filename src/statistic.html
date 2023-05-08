@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- o meta name viewport serve para saber o tamanho do elemento da tela do usuário -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
@@ -24,7 +25,6 @@
       <a href="statistic.html">
         <div>Estatisticas</div>
       </a>
-
     </nav>
 
     <nav id="navCel">
@@ -42,14 +42,14 @@
     </nav>
   </header>
 
-  <main style="background-color: aqua;">
+  <main>
 
     <h1>Teste os seus conhecimentos!</h1>
 
     <section class="questions">
       <div class="curiosity">
         <p>Você sabe quais são Pokemons mais baixos e o mais alto?</p>
-        <button id="findPokemonHeight">Clique aqui para descobrir</button>
+        <button id="findPokemonHeight" class="btn">Clique aqui para descobrir</button>
       </div>
       <div id="pokemonsHeight" class="showData"></div>
     </section>
@@ -57,7 +57,7 @@
     <section class="questions">
       <div class="curiosity">
         <p>Você sabe quais são Pokemons mais leves e o mais pesado?</p>
-        <button id="findPokemonWeight">Clique aqui para descobrir</button>
+        <button id="findPokemonWeight" class="btn">Clique aqui para descobrir</button>
       </div>
       <div id="pokemonsWeight" class="showData"></div>
     </section>
@@ -65,7 +65,7 @@
     <section class="questions">
       <section class="curiosity">
         <p>Você sabe quais são os tipos de Pokémons mais raros?</p>
-        <button id="findPercentageOfTypesOfPokemons">Clique aqui para descobrir</button>
+        <button id="findPercentageOfTypesOfPokemons" class="btn">Clique aqui para descobrir</button>
       </section>
       <section id="chart"></section>
     </section>

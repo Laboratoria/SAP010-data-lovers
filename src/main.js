@@ -1,49 +1,62 @@
-import { computeStats, filterData,  sortData} from './data.js';
-// import data from './data/lol/lol.js';
+import { computeStats, filterData, sortData } from './data.js';
 import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
 
-const submit = document.getElementById("submit");
-
-if(submit){
-
-  submit.addEventListener("click", () => {
+//Só adiciona o addEventListener se o elemento for acionado
+//Pegando elemento do input
+const name = document.getElementById("namePokemon");
+if (name) {
+  name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
     const namePokemon = document.getElementById("namePokemon").value;
-    //filterData(namePokemon, data);
-    const orderBy = document.getElementById("orderBy").value;
-    sortData(data, namePokemon, orderBy);
+    filterData(namePokemon, data);
   });
+}//endIf
 
-}
+//Só adiciona o addEventListener se o elemento for acionado
+//Pegando elemento do botão pesquisar
+const searchType = document.getElementById("submit");
+if (searchType) {
+  searchType.addEventListener("click", () => {
+    name.value = "";
+    document.getElementById("pokemons").innerHTML = "";
+    const sortBy = document.getElementById("sortBy").value;
+    const orderBy = document.getElementById("orderBy").value;
+    sortData(data, sortBy, orderBy);
+  });
+}//endIf
 
+//Só adiciona o addEventListener se o elemento for acionado
+//Pegando elemento do botão clique para descobrir o peso dos pokemons
 const findPokemonWeight = document.getElementById("findPokemonWeight");
-
-if(findPokemonWeight) {
-  document.getElementById("findPokemonWeight").innerHTML = "";
+if (findPokemonWeight) {
   findPokemonWeight.addEventListener("click", () => {
-    //computeStats.calculatePokemonTypesInPercentages(data);
+    document.getElementById("pokemonsWeight").innerHTML = "";
     computeStats.findTheWeightPokemon(data);
   });
-}
+}//endIf
 
+//Só adiciona o addEventListener se o elemento for acionado
+//Pegando elemento do botão clique para descobrir a altura dos pokemons
 const findPokemonHeight = document.getElementById("findPokemonHeight");
-if(findPokemonHeight) {
-  document.getElementById("findPokemonHeight").innerHTML = "";
+if (findPokemonHeight) {
   findPokemonHeight.addEventListener("click", () => {
+    document.getElementById("pokemonsHeight").innerHTML = "";
     computeStats.findTheHeigthPokemon(data);
   });
-}
+}//endIf
 
+//Só adiciona o addEventListener se o elemento for acionado
+//Pegando elemento do botão clique para descobrir os tipos mais raros e comuns dos pokemons
 const findPercentageOfTypesOfPokemons = document.getElementById("findPercentageOfTypesOfPokemons");
-if(findPercentageOfTypesOfPokemons) {
-  document.getElementById("findPercentageOfTypesOfPokemons").innerHTML = "";
+if (findPercentageOfTypesOfPokemons) {
   findPercentageOfTypesOfPokemons.addEventListener("click", () => {
+    document.getElementById("chart").innerHTML = "";
     computeStats.calculatePokemonTypesInPercentages(data);
   });
-}
+}//endIf
 
-export const buildScreen = (id, pokemon) => {
+//Função que constrói os cards dos pokémons
+export const buildCard = (id, pokemon) => {
 
   let pokemons = document.getElementById(id);
   let cardPokemon = document.createElement('div');
@@ -64,36 +77,31 @@ export const buildScreen = (id, pokemon) => {
 
   pokemons.appendChild(cardPokemon);
 
-}//endBuildScreen
+}//endBuildCard
 
-
-export const noDataFound = (item) => {
-
-  alert(`O ${item} pesquisado não existe na base da dados!`);
-
-}//endNoDataFound
-
+//Função que constrói o gráfico exibindo o percentual dos tipos de pokémons
 export const plotChart = (typePokemon, width) => {
 
   let grafico = document.getElementById("chart");
   let dados = document.createElement('section');
 
   dados.innerHTML = `
-    <div id="tipoDePokemon">
+    <div id="typeOfPokemon">
       <div id="tipo">${typePokemon}</div>
     </div>
-    <div id="percentual">
-      <div id="valor" style="width: ${width}% "> ${width}% </div>
+    <div id="percentage">
+      <div id="value" style="width: ${width}% "> ${width}% </div>
     </div>
    `;
 
-   grafico.appendChild(dados);
+  grafico.appendChild(dados);
 
 }//endBuildScreen
 
+
 document.querySelectorAll("header .home").forEach(
   item => {
-    item.addEventListener("click",() =>{
+    item.addEventListener("click", () => {
       console.log("click");
       return window.location = "./";
     })
@@ -101,12 +109,21 @@ document.querySelectorAll("header .home").forEach(
   }
 )
 
-document.getElementById("menuMob").addEventListener("click",() =>{
+document.getElementById("menuMob").addEventListener("click", () => {
   const menu = document.querySelector("#navCel");
   menu.classList.toggle("active");
 })
 
+//adicionando evento no carregamento da página
+document.getElementById("pokemons").addEventListener("load", onload(data));
 
+function onload(data) {
+
+  for (let pokemon in data.pokemon) {
+    buildCard("pokemons", data.pokemon[pokemon]);
+  }//enFor
+
+}//endOnload
 
 
 

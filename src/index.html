@@ -4,9 +4,74 @@
     <meta charset="utf-8">
     <title>Data Lovers Olimpiadas 2016 - Atualizado com sucesso!</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+  </head> 
+  
   <body>
-    <h1>Vila Olímpica Digital</h1>  
+  <header>  Bem vindo a Vila Olímpica Digital 
+    <br>
+    Acompanhe como foi a trajetória dos atletas Rio 2016  
+  </header>
+  
+  
+
+  <main>
+  <div class="ordenar-container">
+    <label>
+      <select  id="selecionar-ordem" classs="btn-ordem">
+      <option value="" selected disabled hidden>Ordenar</option>
+      <option value="AZ">A-Z</option>
+      <option value="ZA">Z-A</option>
+      </select>
+    </label>
+
+    <label>
+      <select id="selecionar-medalhas" class="btn-ordem">
+        <option value="" selected disabled hidden>Medalhas</option>
+        <option value="ouro">Ouro</option>
+        <option value="prata">Prata</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+
+    <label>
+      <select id="selecionar-genero" class="btn-ordem">
+        <option value="" selected disabled hidden>Gênero</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">feminino</option>
+      </select>
+    </label>
+    
+    <label>
+      <select id="selecionar-país" class="btn-ordem">
+        <option value="" selected disabled hidden>Países</option>
+      </select>
+    </label>
+      
+    <label>
+      <select id="selecionar-esporte" class="btn-ordem">
+        <option value="" selected disabled hidden>Esporte</option>
+      </select>
+    </label>
+
+    <label>
+      <select id="selecionar-categoria" class="btn-ordem">
+        <option value="" selected disabled hidden>Categorias</option>
+      </select>
+    </label>
+
+  </div>
+  
+
+  
+
+    
+  </div>
+
+
+
+
+
+      
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>

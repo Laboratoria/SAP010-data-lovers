@@ -7,7 +7,7 @@ const name = document.getElementById("namePokemon");
 if (name) {
   name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
-    const namePokemon = document.getElementById("namePokemon").value;
+    const namePokemon = document.getElementById("namePokemon").value.toLowerCase();
     filterData(namePokemon, data);
   });
 }//endIf
@@ -58,8 +58,8 @@ if (findPercentageOfTypesOfPokemons) {
 //Função que constrói os cards dos pokémons
 export const buildCard = (id, pokemon) => {
 
-  let pokemons = document.getElementById(id);
-  let cardPokemon = document.createElement('div');
+  const pokemons = document.getElementById(id);
+  const cardPokemon = document.createElement('div');
   cardPokemon.classList.add("card");
 
   cardPokemon.innerHTML = `
@@ -81,9 +81,8 @@ export const buildCard = (id, pokemon) => {
 
 //Função que constrói o gráfico exibindo o percentual dos tipos de pokémons
 export const plotChart = (typePokemon, width) => {
-
-  let grafico = document.getElementById("chart");
-  let dados = document.createElement('section');
+  const grafico = document.getElementById("chart");
+  const dados = document.createElement('section');
 
   dados.innerHTML = `
     <div id="typeOfPokemon">
@@ -91,8 +90,7 @@ export const plotChart = (typePokemon, width) => {
     </div>
     <div id="percentage">
       <div id="value" style="width: ${width}% "> ${width}% </div>
-    </div>
-   `;
+    </div> `;
 
   grafico.appendChild(dados);
 
@@ -102,7 +100,6 @@ export const plotChart = (typePokemon, width) => {
 document.querySelectorAll("header .home").forEach(
   item => {
     item.addEventListener("click", () => {
-      console.log("click");
       return window.location = "./";
     })
 
@@ -119,7 +116,8 @@ document.getElementById("pokemons").addEventListener("load", onload(data));
 
 function onload(data) {
 
-  for (let pokemon in data.pokemon) {
+
+  for (const pokemon in data.pokemon) {
     buildCard("pokemons", data.pokemon[pokemon]);
   }//enFor
 

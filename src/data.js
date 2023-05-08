@@ -2,7 +2,7 @@ import { buildCard, plotChart } from "./main.js";
 
 export const filterData = (namePokemon, data) => {
 
-  for (let pokemon in data.pokemon) {
+  for (const pokemon in data.pokemon) {
 
     if (data.pokemon[pokemon].name.includes(namePokemon)) {
 
@@ -47,7 +47,7 @@ export const sortData = (data, sortBy, orderBy) => {
 
   }//endIf
 
-  for (let pokemon in data.pokemon) {
+  for (const pokemon in data.pokemon) {
 
     if (data.pokemon[pokemon].type.includes(sortBy)) {
 
@@ -64,11 +64,11 @@ export const computeStats = {
 
   calculatePokemonTypesInPercentages: function (data) {
 
-    let totalNumberOfPokemons = data.pokemon.length;
+    const totalNumberOfPokemons = data.pokemon.length;
 
     const count = {};
 
-    for (let object in data.pokemon) {
+    for (const object in data.pokemon) {
 
       data.pokemon[object].type.forEach(type => {
         count[type] = (count[type] || 0) + 1;
@@ -93,14 +93,14 @@ export const computeStats = {
 
     const min = Math.min(...sizes);
 
-    for(let object in data.pokemon){
+    for(const object in data.pokemon){
 
       if(data.pokemon[object].size.height.includes(max)){
         buildCard("pokemonsHeight", data.pokemon[object]);
       }//endIf
 
       if(data.pokemon[object].size.height.includes(min)){
-         buildCard("pokemonsHeight", data.pokemon[object]);
+        buildCard("pokemonsHeight", data.pokemon[object]);
       }//endIf
 
     }//endFor
@@ -117,14 +117,14 @@ export const computeStats = {
 
     const min = Math.min(...sizes);
 
-    for(let object in data.pokemon){
+    for(const object in data.pokemon){
 
       if(data.pokemon[object].size.weight.includes(max)){
         buildCard("pokemonsWeight", data.pokemon[object]);
       }//endIf
 
       if(data.pokemon[object].size.weight.includes(min)){
-         buildCard("pokemonsWeight", data.pokemon[object]);
+        buildCard("pokemonsWeight", data.pokemon[object]);
       }//endIf
 
     }//endFor

@@ -13,25 +13,28 @@
         </div>
         <h1>TravelCode&copy;</h1>
         <div class="menu">
-          <!-- <button class="btn-menu">Início</button> -->
+          <a href="index.html">
+            <button class="home">Início</button>
+          </a>
         </div>
       </div>
     </header>
   
-    <main class="card">
-      <div class="container">
-        <div class="cardContainer">
-          <h2>Bem-vindo(a) ao TravelCode!<br> você encontra informações detalhadas sobre países, incluindo bandeiras. Use nossos filtros para descobrir fatos sobre população, idioma e outros critérios. Conheça tudo o que precisa sobre qualquer país em alguns cliques!</h2>
+    
+        <div class="custom-select">
+          <select name="selector" id="selector">
+            <option value="">Filtre sua busca:</option>
+            <option value="country" class="select-otp">Países</option>
+            <option value="alphabetical" class="select-otp">Países Por Ordem alfabética</option>
+          </select>
         </div>
-
-        <div class="buttonHome">
-          <a href="pg.html">
-            <button class="homeOne">Realize seu FIltro Aqui</button>
-          </a>
+        <div>
+          
         </div>
         <ul id="country-list">
         </ul>
       </div>
+      
     </main>
     <footer>
       <p>Desenvolvido por <a href="#">Carol Protásio</a> e <a href="#">Raquel Maia</a></p>

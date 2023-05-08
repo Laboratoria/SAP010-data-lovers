@@ -1,11 +1,18 @@
+/**
+ * @jest-environment jsdom
+ */
 
+import {filterData}  from '../src/data.js'
+//import data from '../src/data/pokemon/pokemon.js';
 
-const sum = (a, b) => {
-  return a + b;
-}
+describe('filterData', () => {
 
-export default sum;
-
-
-
-
+  test('deveria ser uma função', () => {
+    expect(typeof filterData).toBe('function');
+  });
+/*
+  test('deveria encontrar o nome o Pokémon mesmo se o input contiver letras maisculas', () => {
+    expect(filterData('PIKACHU', data)).toBe();
+  });
+*/
+});

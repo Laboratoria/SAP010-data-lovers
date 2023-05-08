@@ -11,8 +11,8 @@ const name = document.getElementById("namePokemon");
 if (name) {
   name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
-    const namePokemon = document.getElementById("namePokemon").value.toLowerCase();
-    filterData(namePokemon, data);
+    const namePokemon = document.getElementById("namePokemon").value;
+    filterData(namePokemon.toLowerCase(), data);
   });
 }//endIf
 
@@ -136,7 +136,7 @@ if (menuMob) {
 
 const showPokemons = document.getElementById("pokemons");
 
-if(showPokemons){
+if (showPokemons) {
   showPokemons.addEventListener("load", () => {
     for (const pokemon in data.pokemon) {
       buildCard("pokemons", data.pokemon[pokemon]);

@@ -5,11 +5,10 @@ export const filterData = (namePokemon, data) => {
   for (const pokemon in data.pokemon) {
 
     if (data.pokemon[pokemon].name.includes(namePokemon)) {
-
+      console.log("pokemons", data.pokemon[pokemon])
       buildCard("pokemons", data.pokemon[pokemon]);
 
       if (Object.keys(data.pokemon[pokemon].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
-
         return filterData(data.pokemon[pokemon].evolution['next-evolution'][0].name, data);
 
       }//endIf

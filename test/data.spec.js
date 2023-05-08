@@ -1,23 +1,11 @@
-import { example, anotherExample } from '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
+const sum = (a, b) => {
+  return a + b;
+}
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+export default sum;
 
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
+

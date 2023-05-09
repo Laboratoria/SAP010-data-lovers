@@ -12,7 +12,7 @@ if (name) {
   name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
     const namePokemon = document.getElementById("namePokemon").value;
-    filterData(namePokemon.toLowerCase(), data);
+    filterData(namePokemon, data);
   });
 }//endIf
 
@@ -89,7 +89,7 @@ export const buildCard = (id, pokemon) => {
       <p>Height: <span id="type">${pokemon.size.height}</span> </p>
       <p>Weigth: <span id="type">${pokemon.size.weight}</span> </p>
     </div>
-   `;
+    `;
 
   pokemons.appendChild(cardPokemon);
 
@@ -133,21 +133,13 @@ if (menuMob) {
 
 
 //adicionando evento no carregamento da página
+//trocar o elemento por window
 
-const showPokemons = document.getElementById("pokemons");
-
-if (showPokemons) {
-  showPokemons.addEventListener("load", () => {
-    for (const pokemon in data.pokemon) {
-      buildCard("pokemons", data.pokemon[pokemon]);
-    }//enFor
-  });
-}
-
-
-
-
-
+window.addEventListener("load", () => {
+  for (const pokemon in data.pokemon) {
+    buildCard("pokemons", data.pokemon[pokemon]);
+  }//enFor
+});
 
 
 

@@ -2,10 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>mudei</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Detalhes sobre os personagens</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <select id="select-filter" class="filter">
+      <option value="" selected> Todos </option>
+      <option> Personagens da série Better Call Saul</option>
+      <option>Temporada 1 </option>
+      <option>Temporada 2 </option>
+      <option>Temporada 3 </option>
+      <option>Temporada 4 </option>
+      <option>Temporada 5 </option>
+    </select>
+
+    <select id="select-order" class="order">
+      <option value="" disabled selected> Ordenar </option>
+      <option value="a-z"> A - Z </option>
+      <option value="z-a"> Z - A </option>
+    </select>
+
+    
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>

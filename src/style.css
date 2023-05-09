@@ -1,3 +1,19 @@
 body {
-    background-image: url(img/Background.jpg);
+    background-color: rgba(96, 196, 133, 0.821);
+}
+
+header {
+    background: fixed;
+    background-image: url(img/cover2.jpg);
+    padding-top: 50px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+    height: 250px;
+    
+}
+
+input {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 0;
 }

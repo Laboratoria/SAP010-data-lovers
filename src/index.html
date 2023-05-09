@@ -12,36 +12,34 @@
     <header>
       <img id="logo" src="Estudante digital.png" alt="logo">
       <h1 id="tituloprincipal">ENCONTRE SEU DESTINO DE INTERCÂMBIO!🔎</h1>
-      <div>
-        <img src="mapa_mundi-removebg-preview.png" alt="Mapa Mundi" id="continente">
     </header>
+    <div id="continente">
+      <img src="mapa_mundi-removebg-preview (1).png" alt="Mapa Mundi">
+    </div>
   </div>
+
+  <div class="filtros">
+    <label for="Filtro1"> <strong>Continentes:</strong></label>
+    <select>
+      <option selected disabled value="Todos"></option>
+      <option value="AmrSul">América do Sul</option>
+      <option value="AmrCen">América Central</option>
+      <option value="AmrNor">América do Norte</option>
+      <option value="Africa">África</option>
+      <option value="Euro">Europa</option>
+      <option value="Asia">Ásia</option>
+      <option value="Oce">Oceania</option>
+    </select>
+
+
+    <label for="Filtro2"><strong>A-Z:</strong></label>
+    <select>
+      <option selected disabled value="Todos"></option>
+      <option value="az">A-Z</option>
+      <option value="za">Z-A</option>
+    </select>
   </div>
-  <!--  <section class="filtros">
-   <label class="filtro1">Continentes</label> -->
-  <!-- <select name="Filtro" id="filtroContinente"></select> -->
- 
-  <label for="Filtro1" class="filtros1">Continentes</label>
-  <select>
-    <option selected disabled value="Todos"></option>
-    <option value="AmrSul">América do Sul</option>
-    <option value="AmrCen">América Central</option>
-    <option value="AmrNor">América do Norte</option>
-    <option value="Africa">África</option>
-    <option value="Euro">Europa</option>
-    <option value="Asia">Ásia</option>
-    <option value="Oce">Oceania</option>
-  </select>
-  </section>
 
-  <label for="Filtro2" class="filtros2">A-Z</label>
-  <select>
-    <option selected disabled value="Todos"></option>
-    <option value="az">A-Z</option>
-    <option value="za">Z-A</option>
-
-  </select>
-  </section>
 
   <div id="root"></div>
   <script src="main.js" type="module"></script>

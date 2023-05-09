@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,700;1,400;1,600&family=Girassol&family=Montserrat:ital,wght@0,700;0,800;1,700&display=swap');
 
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #E0FFFF;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+}
+
 #logo {
     max-width: 180px;
     max-height: 180px;
-    position: absolute;
     left: 5%;
 }
 
@@ -11,22 +23,47 @@
     font-size: 40px;
     font-family: 'faustina';
     text-align: right;
-    position: absolute;
-    top: 10%;
+    display: inline-block;
+    margin-top: 50px;
     right: 10%;
-    left: 10%;
+    margin-left: 0px;
     color: #006400;
 }
 
-body{
-    background-color:#E0FFFF;
+#continente {
+    height: 150px;
+    width: 90%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+
+
 }
 
-#continente{
-    height: 90%;
-    width: 90%;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    
+img {
+    height: 350px;
+    width: 900px;
+
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    margin-top: 18%;
+    color: #006400;
+    font-family: 'faustina';
+}
+
+.filtros select:first-of-type {
+    margin-right: 70px;
+}
+
+.filtros label {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.filtros select {
+    width: 150px;
 }

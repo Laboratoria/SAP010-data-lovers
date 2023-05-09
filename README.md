@@ -43,8 +43,9 @@ contando como foi o processo de desenho e como você acredita que o produto poss
 resolver o problema (ou problemas) de seu usuário.
 
 ### Histórias de usuário
-Sou uma fã da serie, e gostaria de saber que personagens aparecem nas duas series, ou só aparece em uma ou na outra. Basta utilizar o filtro de serie, e selecionar Breaking Bad, Better Call Saul ou em ambas.
-Comecei a assistir a serie, e quero descobrir mais sobre cada personagem, e então eu realizo uma ordenação por ordem alfabetica.
+1. Sou uma fã da serie, e gostaria de saber que personagens aparecem nas duas series, ou só aparece em uma ou na outra. Basta utilizar o filtro de serie, e selecionar Breaking Bad, Better Call Saul ou em ambas.
+
+2. Comecei a assistir a serie, e quero descobrir mais sobre cada personagem, e então eu realizo uma ordenação por ordem alfabetica.
 
 ### Desenho de interface do usuário
 

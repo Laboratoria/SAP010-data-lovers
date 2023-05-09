@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
 
 html {
     height: 100%;
@@ -20,8 +19,8 @@ html {
       }
 
     h1 {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 25px;
+        font-family: 'Grense', sans-serif;
+        font-size: 40px;
 
 
 

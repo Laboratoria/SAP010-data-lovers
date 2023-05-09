@@ -151,5 +151,5 @@ const config = {
   }
 };
 
-const meuGrafico = new Chart(document.getElementById('grafico-campeoes'), config);
-console.log(meuGrafico)
+// eslint-disable-next-line no-undef
+new Chart(document.getElementById('grafico-campeoes'), config);

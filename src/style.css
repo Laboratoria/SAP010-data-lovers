@@ -3,7 +3,6 @@ html {
     height: 100%;
     width: 100%;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     color: antiquewhite;
     background-color: black;
     background-image: url("img/papel-de-parede.jpg");
@@ -19,12 +18,11 @@ html {
       }
 
     h1 {
-        font-family: 'Grense', sans-serif;
+        font-family: 'Grenze', serif;
         font-size: 40px;
-
-
-
+    
     }
+
     img {
         width: 25%;
         margin: 25px 25px 25px 25px;

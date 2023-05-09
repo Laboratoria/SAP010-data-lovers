@@ -91,7 +91,9 @@ export const buildCard = (id, pokemon) => {
     </div>
     `;
 
-  pokemons.appendChild(cardPokemon);
+  if(pokemons){
+    pokemons.appendChild(cardPokemon);
+  }
 
 }//endBuildCard
 

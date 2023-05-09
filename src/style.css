@@ -1,0 +1,163 @@
+/*html 1*/
+
+body {
+    background: url(https://images.alphacoders.com/805/805180.jpg);
+    height: 45vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#logo {
+    top: -12%;
+    left: 28%;
+    position: absolute;
+
+}
+
+#botãoiniciar {
+    color: rgba(255, 255, 255, 0.91);
+ 
+
+}
+
+.botãoiniciar {
+    background-color: rgba(81, 81, 81, 0.558);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    position: absolute;
+    top: 29%;
+    left: 47.5%;
+    display: inline-block;
+    border: 3.0px solid #000000;
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 1;
+}
+
+#logo2 {
+    top: 21%;
+    left: 28%;
+    position: absolute;
+}
+
+/*html 2*/
+
+.botãoreset {
+    padding: 0vw;
+    position: absolute;
+    top: 0.3vw;
+    left: 0vw;
+    z-index: 1;
+}
+
+.giflateral {
+    padding: 0vw;
+    position: absolute;
+    top: 0vw;
+    left: 81vw;
+    z-index: 1;
+ 
+}
+
+input {
+    background-color: rgb(0, 255, 26);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3vw;
+    position: absolute;
+    top: 20vw;
+    left: 3vw;
+    display: inline-block;
+    border: 0.2vw solid #ffffff;
+    border-radius: 1vw;
+    padding: 0.5vw;
+}
+
+#order {
+    background-color: rgb(0, 255, 26);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3vw;
+    position: absolute;
+    top: 15vw;
+    left: 3vw;
+    display: inline-block;
+    border: 0.2vw solid #ffffff;
+    border-radius: 1vw;
+    padding: 0.5vw;
+
+}
+
+.tarja {
+    background: rgba(25, 25, 25, 0.915);
+    padding: 1vw 68.3vw 8.5vw 32vw;
+    position: absolute;
+    top: 0vw;
+
+}
+
+#textgenero {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3vw;
+    color: white;
+    top: 2.5vw;
+    left: 23.2vw;
+    position: absolute;
+}
+
+#gender {
+    background-color: rgb(0, 255, 26);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3vw;
+    position: absolute;
+    top: 4.5vw;
+    left: 23vw;
+    display: inline-block;
+    border: 0.2vw solid #ffffff;
+    border-radius: 1vw;
+    padding: 0.5vw;
+}
+
+
+#textespecie {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3vw;
+    color: white;
+    top: 2.5vw;
+    left: 42.7vw;
+    position: absolute;
+}
+
+#species {
+    background-color: rgb(0, 255, 26);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3vw;
+    position: absolute;
+    top: 4.5vw;
+    left: 42.5vw;
+    display: inline-block;
+    border: 0.2vw solid #ffffff;
+    border-radius: 1vw;
+    padding: 0.5vw;
+}
+
+#textstatusdevida {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3vw;
+    color: white;
+    top: 2.5vw;
+    left: 67.2vw;
+    position: absolute;
+}
+
+#status {
+    background-color: rgb(0, 255, 26);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3vw;
+    position: absolute;
+    top: 4.5vw;
+    left: 67vw;
+    display: inline-block;
+    border: 0.2vw solid #ffffff;
+    border-radius: 1vw;
+    padding: 0.5vw;
+}

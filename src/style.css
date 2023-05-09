@@ -85,8 +85,8 @@ body {
 }
 
 main {
-  height: 100vh;
-  width: 100vw;
+  height: 200%;
+  width: 100%;
 }
 
 .logo {
@@ -139,6 +139,7 @@ select {
   justify-content: center;
   height: 500px;
   width: 100vw;
+  font-size: large;
 }
 
 .card {
@@ -225,7 +226,7 @@ span {
 
 /*media queries - vai informar o que tem de ser feito quando for detectado um tamanho X de viewport*/
 /*max-width - pega o intervalo de 0px até 650px*/
-@media (max-width: 650px) {
+@media (max-width: 1200px) {
 
   .showData,
   .questions {
@@ -239,10 +240,9 @@ span {
   }
 
   .card {
-    width: 50%;
+    width: 30%;
   }
 }
-
 @media (max-width: 820px) {
 
   .showData,
@@ -261,7 +261,8 @@ span {
   }
 }
 
-@media (max-width: 1200px) {
+
+@media (max-width: 650px) {
 
   .showData,
   .questions {
@@ -275,6 +276,6 @@ span {
   }
 
   .card {
-    width: 30%;
+    width: 50%;
   }
 }

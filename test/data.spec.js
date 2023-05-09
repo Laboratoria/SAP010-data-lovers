@@ -11,8 +11,9 @@ describe('filterData', () => {
     expect(typeof filterData).toBe('function');
   });
 
-  test('deveria encontrar o nome o Pokémon mesmo se o input contiver letras maisculas', () => {
-    expect(filterData('PIKACHU', data)).toBe();
+  test('deveria encontrar o nome do Pokémon mesmo se o input contiver letras maisculas', () => {
+    const resultado = filterData('PIKACHU', data);
+    expect(resultado).toBe();
   });
 });
 

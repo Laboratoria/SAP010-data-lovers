@@ -4,7 +4,7 @@ export const filterData = (namePokemon, data) => {
 
   for (const pokemon in data.pokemon) {
 
-    if (data.pokemon[pokemon].name.includes(namePokemon)) {
+    if (data.pokemon[pokemon].name.includes(namePokemon.toLowerCase())) {
       console.log("pokemons", data.pokemon[pokemon])
       buildCard("pokemons", data.pokemon[pokemon]);
 

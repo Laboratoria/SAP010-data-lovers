@@ -40,7 +40,7 @@ const dataLol = {
     const numeroCampeoesFiltrados = filtraCampeoes.length;
     const totalDeCampeoes = campeoes.length;
     return (numeroCampeoesFiltrados / totalDeCampeoes) * 100;
-    },
+  },
 }
 
 

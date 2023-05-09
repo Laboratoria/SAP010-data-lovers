@@ -1,7 +1,7 @@
 import data from "./data/rickandmorty/rickandmorty.js"; // pego meus dados de data e trago pra essa página
 const resultado = data.results; // aqui estou atribuindo os resultados do meu arquivo data para uma variavel
 
-//crio uma function que a finalidade é ver se o personagem ta vivo ou morto  Coloco o export pois essa função vai ser usada no meu arquivo main.js
+//crio uma function que a finalidade é ver se o personagem ta vivo ou morto.Coloco o export pois essa função vai ser usada no meu arquivo main.js
 export function filterByStatus(status) {
   const filteredStatus = resultado.filter((resultado) => {
     //aqui se usa uma arrow function e e estamos filtrando o personagem usando o metodo .filter essa expressão é para filtrar os personagens e retornar uma nova lista com personagens que atendam a esse critério

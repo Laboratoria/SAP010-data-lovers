@@ -341,4 +341,14 @@ li:hover{
 footer{
   height: 15vh;
   background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 5px;
+}
+footer p{
+  padding: 10px;
+  margin:0 auto;
+  color: antiquewhite;
 }

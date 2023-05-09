@@ -42,11 +42,12 @@
     color: rgb(230, 220, 89);
   }
   
-  .logo-cab {
-    width: 40px;
-    margin-right: 3em;
-    margin-left: 1.5em;
-  }
+  
+.logo-cab {
+  width: 40px;
+  margin-right: 3em;
+  margin-left: 1.5em;
+}
   
   
 .video-container {
@@ -108,4 +109,7 @@ footer p{
   padding: 10px;
   margin:0 auto;
   color: antiquewhite;
+}
+footer a{
+  color: beige;
 }

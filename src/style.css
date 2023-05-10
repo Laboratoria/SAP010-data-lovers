@@ -1,43 +1,223 @@
+/*
 body {
-    background-color: rgba(96, 196, 133, 0.821);
-    margin: auto;
-    min-width: 280px;
-    max-width: 800px;
+  background-color: rgba(96, 196, 133, 0.821);
+  margin: auto;
+  min-width: 280px;
+  max-width: 800px;
 }
 
 .logo {
-    padding: 0px;
-    width: 0px
+  padding: 0px;
+  width: 0px;
+  align-items: left;
 }
 
-*{
-    margin: 0px;
-    padding: 0px; /*in order to reduce to zero the margin and the padding of the whole website*/
+* {
+  margin: 0px;
+  padding: 0px;
+ } /*in order to reduce to zero the margin and the padding of the whole website*/
+
+/*
+.FirstInputs {
+  display: flex;
+  justify-content: center;
 }
 
-.FirstInputs{
-    display: flex;
-    justify-content: center;
-  }
- 
 .input-element {
-    width: 200px;
-    height: 30px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    text-align: left;
+  width: 200px;
+  height: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  text-align: left;
 }
 
 #search {
-    width: 300px;
-    height: 30px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    font-size: 16px;
-    border-radius: 10px;
-    text-align: left;
+  width: 300px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 16px;
+  border-radius: 10px;
+  text-align: left;
+}
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green: rgb(178, 223, 40);
+  --dark-blue: rgb(10, 24, 35);
+  --light-blue: rgb(0, 181, 204);
+  --white: rgb(240, 248, 255);
+}
+
+body {
+  color: var(--dark-blue);
+  font-family: monospace;
+  background-color: rgba(96, 196, 133, 0.821);
+  background-size: fill;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 100%;
+  font-family: monospace;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-header {
+  margin: 25px;
+  background-color: var(--light-blue);
+  border-radius: 20px;
+  border: none;
+  color: var(--dark-blue);
+  width: 12vw;
+  height: 40px;
+  font-size: large;
+  cursor: pointer;
+}
+
+.btn-header:hover {
+  opacity: 0.5;
+}
+
+.rick-img {
+  width: 40%;
+  object-fit: fill;
+}
+
+.btn-option {
+  background-color: var(--light-blue);
+  border-radius: 20px;
+  border: none;
+  color: var(--dark-blue);
+  width: 10vw;
+  height: 40px;
+  margin: 0px 7px;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-option:hover {
+  opacity: 0.5;
+}
+
+.reset {
+  background-color: var(--white);
+  border: var(--light-blue) 4px solid;
+  font-size: 0.9rem;
+}
+
+.search {
+  background-color: var(--white);
+  font-size: 0.9rem;
+}
+
+main {
+  background-color: var(--dark-blue);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.option-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: monospace;
+}
+
+.percentage-container {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--green);
+  font-size: large;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+}
+
+.card {
+  height: 44vh;
+  width: 16vw;
+  margin: 20px;
+  padding: 2vh 1vw;
+  border-radius: 50px;
+  background-color: var(--green);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+  font-size: 0.89rem;
+  color: var(--dark-blue);
+}
+
+.poster-img {
+  height: 25vh;
+  width: 15vw;
+  margin-bottom: 2vh;
+  border-radius: 50px;
+  border: var(--dark-blue) 2px solid;
+  object-fit: cover;
+}
+
+footer {
+  color: var(--white);
+  font-size: 1.1rem;
+  margin: 100px 0 auto;
+  padding: 10px 10px;
+  width: 100%;
+  height: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  color: var(--green);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.name:hover {
+  opacity: 0.5;
 }

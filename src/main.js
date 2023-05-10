@@ -15,7 +15,6 @@ function displayCards(characters) {
         <div class="card">
 
             <img class="poster-img" src="${item.img}" alt="${item.name}">
-            poster-img
             <ul class="card-text" style="list-style: none">                       
             <li>Name: ${item.name}</li>
             <li>NickName: ${item.nickname}</li>

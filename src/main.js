@@ -14,8 +14,8 @@ function displayCards(characters) {
     const template = `
         <div class="card">
 
-            <img class="img" src="${item.image}" alt="${item.name}">
-
+            <img class="poster-img" src="${item.img}" alt="${item.name}">
+            poster-img
             <ul class="card-text" style="list-style: none">                       
             <li>Name: ${item.name}</li>
             <li>NickName: ${item.nickname}</li>

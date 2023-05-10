@@ -100,11 +100,6 @@ header {
   opacity: 0.5;
 }
 
-.rick-img {
-  width: 40%;
-  object-fit: fill;
-}
-
 .btn-option {
   background-color: var(--light-blue);
   border-radius: 20px;

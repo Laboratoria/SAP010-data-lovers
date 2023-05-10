@@ -1,0 +1,32 @@
+body {
+    background-color: rgba(96, 196, 133, 0.821);
+    margin: auto;
+    min-width: 280px;
+    max-width: 800px;
+}
+
+header {
+    background-image: url(img/cover2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    overflow: hidden;
+    padding: 150px;
+    width: 0px
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+*{
+    margin: 0px;
+    padding: 0px; /*in order to reduce to zero the margin and the padding of the whole website*/
+}
+
+input {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border: none;
+    border-radius: 20px;
+    
+}
+

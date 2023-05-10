@@ -1,133 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleinicial.css" />
+    <title>League of Legends</title>
+</head>
+<header>
+    <section class="cabecalho">
+      
+      <nav class="navegacaoCabecalho">
+       <a href="index.html"> <img src="imgs/logo_lol_menor.png" class="logo-cab" /></a>
+        <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label-menu"> Menu <span class="hamburger"></span
+        ></label>
+        <ul class="nav-list"> 
+        <li><a href="https://www.leagueoflegends.com/pt-br/how-to-play/" target="_blank"> Sobre o Jogo</a></li>
+        <li><a href="https://discord.com/invite/runeterra-br" target="_blank"> Comunidade Discord</a></li>
+        <li><a href="https://map.leagueoflegends.com/pt_BR?_gl=1*m8u1fj*_ga*MTI2ODQxNzUwNC4xNjgyNTQ4MTU3*_ga_[%E2%80%A6]_ga=2.31127416.671164730.1683324694-1268417504.1682548157" target="_blank"> Conheça Runeterra</a></li>
+        <li><a href="https://signup.leagueoflegends.com/pt-br/signup/index?_ga=2.227968541.1606645289.1683494494-1477913861.1682983732&_gl=1*knqgwl*_ga*MTQ3NzkxMzg2MS4xNjgyOTgzNzMy*_ga_FXBJE5DEDD*MTY4MzQ5NDQ5NC4yLjEuMTY4MzQ5NDkzNi40MC4wLjA.#/" target="_blank"> jOGUE AGORA</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+<body>
+  <div class="video-container">
+    <video id="bg-video" autoplay loop muted>
+      <source src="fundovideocampeoes.webm" type="video/webm">
+    </video>
+	  <div class="bem-vindo">
+    <img src="lol-league-of-Legends-logo.png" class="logo-centro" />
+		<a href="paginainicial.html"><button>Conheça os Campeões</button></a>
+	  </div>
+  </div>  
+</body>
 
-      <div class="header" id="header">
-          <button class="btn_icon_header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-          </button>
-
-          <div class="logo-header">
-            <img src="imgs/logo_lol_menor.png" class="logo-cab" />
-          </div>
-
-          <div class="navigation_header" id="navigation_header">
-            <button class="btn_icon_header" id="icone-x">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-              </svg>
-            </button>
-
-              <a href="https://www.leagueoflegends.com/pt-br/how-to-play/" target="_blank"> Sobre o Jogo</a>
-              <a href="https://discord.com/invite/runeterra-br" target="_blank"> Comunidade Discord</a>
-              <a href="https://map.leagueoflegends.com/pt_BR?_gl=1*m8u1fj*_ga*MTI2ODQxNzUwNC4xNjgyNTQ4MTU3*_ga_[%E2%80%A6]_ga=2.31127416.671164730.1683324694-1268417504.1682548157" target="_blank"> Conheça Runeterra</a>
-              <a href="https://signup.leagueoflegends.com/pt-br/signup/index?_ga=2.227968541.1606645289.1683494494-1477913861.1682983732&_gl=1*knqgwl*_ga*MTQ3NzkxMzg2MS4xNjgyOTgzNzMy*_ga_FXBJE5DEDD*MTY4MzQ5NDQ5NC4yLjEuMTY4MzQ5NDkzNi40MC4wLjA.#/" target="_blank"> JOGUE AGORA</a>
-          </div>
-
-      </div>
-
-    </header>
-
-    <main>
-
-      <section class="sobre">
-        <div class="titleComeco">
-          <div class="title">
-            <p>ESCOLHA SEU</p>
-          </div>
-          <div class="texto">
-            <p>CAMPEÃO</p>
-          </div>
-        </div>
-      </section>
-
-      <div class="texto1">
-        <p>Com mais de 140 Campeões, você encontrará a combinação<br>perfeita para seu estilo de jogo. Especialize-se em um estilo ou<br> em todos.</p>
-      </div>
-
-      <section class="section">
-        <div class="containerFiltrar">
-          <div class="buscarClassificação">
-            <input id="buscar" type="text" placeholder="Buscar">
-          </div>
-
-          <div class="container">
-            <ul class="menu">
-              <li class="filtrar-todos" data-tag="todos">Todos</li>
-              <li class="filtrar-todos" data-tag="Assassin">Assassinos</li>
-              <li class="filtrar-todos" data-tag="Fighter" id="Fighter">Lutadores</li>
-              <li class="filtrar-todos" data-tag="Mage" id="Mage">Magos</li>
-              <li class="filtrar-todos" data-tag="Marksman" id="Marksman">Atiradores</li>
-              <li class="filtrar-todos" data-tag="Support" id="Support">Suporte</li>
-              <li class="filtrar-todos" data-tag="Tank" id="Tank">Tanques</li>
-            </ul>
-          </div>
-
-          <div class="container2">
-            <select class="menu2">
-              <option value="todos">Todas as funções</option>
-              <option value="Assassin">Assassinos</option>
-              <option value="Fighter">Lutadores</option>
-              <option value="Mage">Magos</option>
-              <option value="Marksman">Atiradores</option>
-              <option value="Support">Suporte</option>
-              <option value="Tank">Tanques</option>
-            </select>
-          </div>
-
-          <div class="divOpcoes">
-            <select class="selecionar">
-              <option>Classificação</option>
-              <option value="maior-ataque">Maior ataque </option>
-              <option value="menor-ataque"> Menor ataque</option>
-              <option value="maior-defesa"> Maior defesa </option>
-              <option value="menor-defesa"> Menor defesa </option>
-              <option value="maior-magia"> Maior magia </option>
-              <option value="menor-magia"> Menor magia </option>
-              <option value="maior-dificuldade"> Maior dificuldade </option>
-              <option value="menor-dificuldade"> Menor dificuldade </option>
-            </select>
-          </div>
-        </div>
-      </section>
-
-      <section class="grafico">
-        <canvas id="grafico-campeoes"></canvas>
-      </section>
-
-      <section class="todosCampeoes">
-        <div id="mostrarTodos">
-
-        </div>
-      </section>
-
-    </main>
-
-
-    <footer>
-      <div class="div-geral-footer">
-        <div class="div-footer">
-          <p> PROJETO DESENVOLVIDO POR</p>
-          <img id='github' src="imgs/github (1).png" alt="">
-          <div id="footer">
-            <a href="https://github.com/larissakorz">Larissa Korz</a>
-            <a id="laridepaula" href="https://github.com/laridepaula">Larissa de Paula</a>
-          </div>
-        </div>
-      </div>
-
-    </footer>
-    <script src="main.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
-  </body>
+<footer>
+  <p> PROJETO DESENVOLVIDO POR</p>
+  <a href="https://github.com/larissakorz"> Larissa Korz</a> <br>
+  <a href="https://github.com/laridepaula"> Larissa de Paula</a>
+</footer>
 </html>

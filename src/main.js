@@ -5,20 +5,20 @@ const campeoes = Object.values(dataLol.data);
 
 const tagTraduzida = (tag) => {
   switch (tag) {
-    case "Assassin":
-      return "Assassino";
-    case "Fighter":
-      return "Lutador";
-    case "Mage":
-      return "Mago";
-    case "Marksman":
-      return "Atirador";
-    case "Support":
-      return "Suporte";
-    case "Tank":
-      return "Tanque";
-    default:
-      return "";
+  case "Assassin":
+    return "Assassino";
+  case "Fighter":
+    return "Lutador";
+  case "Mage":
+    return "Mago";
+  case "Marksman":
+    return "Atirador";
+  case "Support":
+    return "Suporte";
+  case "Tank":
+    return "Tanque";
+  default:
+    return "";
   }
 }
 
@@ -147,3 +147,22 @@ const config = {
   }
 };
 const meuGrafico = new Chart(document.getElementById('grafico-campeoes'), config);
+
+document.querySelector('.btn_icon_header').addEventListener('click', toggleSidebar);
+document.querySelector('#icone-x').addEventListener('click', toggleSidebar);
+
+let showSidebar = false;
+
+function toggleSidebar(){
+  const navigationHeader = document.getElementById('navigation_header');
+  showSidebar = !showSidebar;
+
+  if(showSidebar){
+    navigationHeader.style.marginLeft = '-10vw';
+    navigationHeader.style.animationName = 'showSidebar';
+  }
+  else{
+    navigationHeader.style.marginLeft = '-100vw';
+    navigationHeader.style.animationName = '';
+  }
+}

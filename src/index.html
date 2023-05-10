@@ -12,34 +12,27 @@
       <img src="img/logobbtransp.png" alt="" />
     </picture>
 
-    <!--  <section class="FirstInputs">
-      <input type="search" placeholder="Nickname" class="input-element" />
-      <input type="search" placeholder="Occupation" class="input-element" />
-      <input type="search" placeholder="Appearence" class="input-element" />
-    </section>
-    <input type="search" id="search" placeholder="Search for a character" /> -->
-
     <main>
       <div class="option-container">
         <label>
           <select id="select-status" class="btn-option">
-            <option value="" selected disabled hidden>STATUS</option>
-            <option value="alive">VIVO</option>
-            <option value="Presumed dead">PRESUMIDAMENTE MORTO</option>
-            <option value="Deceased">MORTO</option>
+            <option value="" selected disabled hidden>Status</option>
+            <option value="alive">Alive</option>
+            <option value="Deceased">Dead</option>
+            <option value="Presumed dead">Presumed dead</option>
           </select>
         </label>
 
         <label>
           <select id="select-order" class="btn-option">
-            <option value="" selected disabled hidden>ORDENAR</option>
-            <option value="ascending" id="ascending">A-Z</option>
-            <option value="descending" id="descending">Z-A</option>
+            <option value="" selected disabled hidden>Sort</option>
+            <option value="ascending" id="ascending">A to Z</option>
+            <option value="descending" id="descending">Z to A</option>
           </select>
         </label>
 
         <label>
-          <button id="reset" class="btn-option reset">limpar</button>
+          <button id="reset" class="btn-option reset">Clear</button>
         </label>
 
         <label>
@@ -47,7 +40,7 @@
             type="text"
             id="btn-search"
             class="btn-option search"
-            placeholder="buscar por nome"
+            placeholder="Search for a character"
           />
         </label>
       </div>

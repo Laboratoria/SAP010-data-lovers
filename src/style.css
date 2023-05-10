@@ -5,17 +5,9 @@ body {
     max-width: 800px;
 }
 
-header {
-    background-image: url(img/cover2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    overflow: hidden;
-    padding: 150px;
+.logo {
+    padding: 0px;
     width: 0px
-    margin: 0;
-    box-sizing: border-box;
-    display: block;
 }
 
 *{
@@ -23,10 +15,29 @@ header {
     padding: 0px; /*in order to reduce to zero the margin and the padding of the whole website*/
 }
 
-input {
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    border: none;
-    border-radius: 20px;
-    
+.FirstInputs{
+    display: flex;
+    justify-content: center;
+  }
+ 
+.input-element {
+    width: 200px;
+    height: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: left;
 }
 
+#search {
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: left;
+}

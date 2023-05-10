@@ -151,5 +151,23 @@ const config = {
   }
 };
 
-// eslint-disable-next-line no-undef
-new Chart(document.getElementById('grafico-campeoes'), config);
+const meuGrafico = new Chart(document.getElementById('grafico-campeoes'), config);
+
+document.querySelector('.btn_icon_header').addEventListener('click', toggleSidebar);
+document.querySelector('#icone-x').addEventListener('click', toggleSidebar);
+
+let showSidebar = false;
+
+function toggleSidebar(){
+  const navigationHeader = document.getElementById('navigation_header');
+  showSidebar = !showSidebar;
+
+  if(showSidebar){
+    navigationHeader.style.marginLeft = '-10vw';
+    navigationHeader.style.animationName = 'showSidebar';
+  }
+  else{
+    navigationHeader.style.marginLeft = '-100vw';
+    navigationHeader.style.animationName = '';
+  }
+}

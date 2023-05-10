@@ -12,35 +12,40 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Ysabeau', sans-serif;
 }
 
-section.cabecalho {
-  width: 100%;
+.header, .navigation_header{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-nav a {
-  margin: 0 1.5em;
+.header{
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 3.5em;
+}
+.navigation_header{
+  gap: 3em;
+}
+
+.navigation_header a{
   text-transform: uppercase;
-  font-weight: bold;
   text-decoration: none;
-  color: rgb(226, 225, 223);
-  cursor: pointer;
+  color: white;
+  transition: 1s;
+  font-weight: bold;
+}
+.navigation_header a:hover{
+  color: rgb(230, 220, 89);
 }
 
-nav a:hover {
-  color: rgb(230, 220, 89);
+.btn_icon_header{
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
 }
 
 .logo-cab {
@@ -71,7 +76,7 @@ main{
 }
 
 .titleComeco{
-  border: 1px solid rgb(184, 179, 48);
+  border: 2px solid rgb(184, 179, 48);
   border-radius: 20px 0px 20px 0px;
   height: 170px;
   width: 500px;
@@ -236,8 +241,6 @@ li:hover{
   margin: 20px;
   position: relative;
   perspective: 1000px;
-  /*width: 17%;
-  margin: 0.5rem;*/
 }
 
 @media (max-width: 1024px) {
@@ -247,6 +250,37 @@ li:hover{
     background: rgb(184, 181, 85);
     border: none;
     border-radius: 30px 10px 30px 10px;
+  }
+
+  .navigation_header{
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    background-color: black;
+    height: 61%;
+    width: 50vw;
+    padding: 1em;
+    animation-duration: 2s;
+    margin-left: -160vw;
+    border-radius: 10px;
+  }
+
+  @keyframes showSidebar {
+    from {margin-left: -100vw;}
+    top {margin-left: -10vw;}
+  }
+
+  #icone-x{
+    margin-left: 300px;
+  }
+
+  .btn_icon_header{
+    display: block;
+    margin-right: 300px;
+  }
+
+  .logo-cab{
+    margin-right: 10px;
   }
 
   .selecionar, .menu2{
@@ -288,6 +322,52 @@ li:hover{
     background: rgb(184, 181, 85);
     border: none;
     border-radius: 30px 10px 30px 10px;
+  }
+
+  .navigation_header{
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    background-color: black;
+    height: 61%;
+    width: 50vw;
+    padding: 1em;
+    animation-duration: 2s;
+    margin-left: -160vw;
+    border-radius: 10px;
+  }
+
+  @keyframes showSidebar {
+    from {margin-left: -100vw;}
+    top {margin-left: -10vw;}
+  }
+
+  #icone-x{
+    margin-left: 300px;
+  }
+
+  .btn_icon_header{
+    display: block;
+    margin-right: 300px;
+  }
+
+  .logo-cab{
+    margin-right: 10px;
+  }
+
+  .titleComeco{
+    border: 2px solid rgb(184, 179, 48);
+    border-radius: 20px 0px 20px 0px;
+    height: 170px;
+    width: 400px;
+  }
+
+  .texto{
+    height: 85px;
+    font-size: 75px;
+    font-family: 'Abril Fatface', cursive;
+    font-style: italic;
+    text-align: center;
   }
 
   .selecionar, .menu2{
@@ -338,17 +418,41 @@ li:hover{
   position: relative;
 }
 
-footer{
-  height: 15vh;
+.div-geral-footer{
+  display: flex;
+  justify-content: center;
+  height: 20vh;
   background: black;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 5px;
+  font-family: 'Ysabeau', sans-serif;
+  color: white;
 }
-footer p{
-  padding: 10px;
-  margin:0 auto;
-  color: antiquewhite;
+
+.div-footer #github{
+  margin: 5px 0px 0px 90px;
+}
+
+#footer {
+  margin-top: 10px;
+}
+
+#footer a{
+  background: rgb(82, 80, 80);
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+#laridepaula{
+  margin-left: 35px;
+}
+
+#github{
+  width: 40px;
+}
+
+#footer a:hover{
+  color: rgb(14, 14, 15);
+  background: rgb(167, 165, 165);
+  text-decoration: none;
 }

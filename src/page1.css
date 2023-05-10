@@ -1,0 +1,63 @@
+header {
+    background-color: rgb(43, 144, 226);
+    padding-left: 20px;
+    height: 150px;
+    width: 110%;
+    margin-top: 10px;
+}
+
+.conteiner {
+   background-color: rgb(43, 226, 171);
+   height: 900px;
+   width: 200px;
+   text-align: center;
+}
+
+
+#footerText {
+    background-color: rgb(43, 144, 226);
+    text-align: center;
+    width: 110%;
+
+}
+
+.btn-nav {
+  width: 20vw;
+  max-width: 150px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid  rgb(43, 144, 226);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px  rgb(43, 144, 226);
+  
+}
+
+.nav-sort-filter {
+  padding-left: 1100px; 
+}
+
+  .btn1 {
+    max-width: 150px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid  rgb(43, 144, 226);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px  rgb(43, 144, 226);
+
+ }
+
+  .parrafo {
+    width: 100px;
+    height: 100px;
+    padding: 20px 0 0 50px;
+ }
+
+  .rotom {
+    width: 150px;
+    height: 150px;
+    padding-top: 130px;
+}

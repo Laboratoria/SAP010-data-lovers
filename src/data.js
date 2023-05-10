@@ -1,9 +1,6 @@
-// estas funciones son de ejemplo
+//import { example } from './data.js';
+// import data from './data/lol/lol.js';
+import data from './data/athletes/athletes.js';
+// import data from './data/rickandmorty/rickandmorty.js';
 
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
+const paísesFiltrados = document.querySelector(".selecionar-país")

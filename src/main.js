@@ -42,7 +42,7 @@ const renderPokemon = async (pokemon) => {
     document.body.appendChild(abilitiesList);
 
   } else {
-    pokemonImage.style.display = 'none';
+    pokemonImage.style.display = 'none' (????)"id";
     pokemonName.innerHTML = 'Not found :c';
     pokemonNumber.innerHTML = '';
   }

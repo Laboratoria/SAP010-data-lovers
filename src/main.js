@@ -1,9 +1,11 @@
 // Importa os dados dos países
+import countries from './data/countries/countries.js';
 import data from './data/countries/countries.js';
 
-// Seleciona o elemento do seletor e da lista de países
+// Seleciona os elementos do seletor, da lista de países e do seletor de continentes
 const selectorElement = document.querySelector('#selector');
-const countryListElement = document.querySelector('#country-list');
+const countryListElement = document.querySelector('.bandeiras');
+const continentSelectorElement = document.querySelector('#seletor_continent');
 
 // Ordena os países em ordem alfabética
 const orderByAlphabetical = () => {
@@ -13,30 +15,48 @@ const orderByAlphabetical = () => {
   renderCountryList(sortedCountries);
 };
 
+// Filtra os países por continente
+const filterByContinent = () => {
+  // Filtra o array de países pelo continente selecionado
+  const filteredCountries = data.countries.filter((countries) => countries.subregion === "South America");
+  // Renderiza a lista de países filtrada
+  renderCountryList(filteredCountries);
+};
+
 // Função para renderizar a lista de países
 const renderCountryList = (countries) => {
-  // Limpa a lista antes de renderizar
   countryListElement.innerHTML = '';
-  
-  // Para cada país, cria um elemento <li> e um elemento <img>
+
   countries.forEach((country) => {
-    const liElement = document.createElement('li');
+    const countryElement = document.createElement('div');
+    countryElement.className = 'country';
+
     const imgElement = document.createElement('img');
-    
-    // Define o atributo src do elemento <img> como a URL da bandeira e o atributo alt com o nome do país
-    imgElement.src = country.flags.png; // Acessa a propriedade flags.png do objeto country para definir a URL da bandeira
-    imgElement.alt = `Flag of ${country.name.common}`; // Acessa a propriedade name.common do objeto country para definir o nome do país no atributo alt da imagem
-    
-    // Cria um elemento <span> com o nome do país e adiciona-o como filho do elemento <li>
-    const nameElement = document.createElement('span');
-    nameElement.textContent = country.name.common; // Acessa a propriedade name.common do objeto country para definir o nome do país no elemento <span>
-    liElement.appendChild(imgElement);
-    liElement.appendChild(nameElement);
-    
-    // Adiciona o elemento <li> como filho da lista de países
-    countryListElement.appendChild(liElement);
+    imgElement.src = country.flags.png;
+    imgElement.alt = `Flag of ${country.name.common}`;
+
+    const nameElement = document.createElement('p');
+    nameElement.textContent = country.name.common;
+
+    countryElement.appendChild(imgElement);
+    countryElement.appendChild(nameElement);
+
+    countryListElement.appendChild(countryElement);
   });
 };
+
+// Event listener para mudanças no seletor de continentes
+continentSelectorElement.addEventListener('change', (event) => {
+  // Verifica o valor do seletor de continentes
+  const value = event.target.value;
+  if (value === 'all') {
+    // Renderiza a lista de países não filtrada
+    renderCountryList(data.countries.slice());
+  } else {
+    // Filtra os países pelo continente selecionado e renderiza a lista
+    filterByContinent(value);
+  }
+});
 
 // Event listener para mudanças no seletor
 selectorElement.addEventListener('change', (event) => {
@@ -44,12 +64,14 @@ selectorElement.addEventListener('change', (event) => {
   const value = event.target.value;
   if (value === 'country') {
     // Renderiza a lista de países não ordenada
-    renderCountryList(data.countries.slice()); // Acessa o array de países através da propriedade countries do objeto data e cria uma cópia dele com a função slice(). Depois, passa essa cópia como parâmetro para a função renderCountryList.
+    renderCountryList(data.countries.slice());
   } else if (value === 'alphabetical') {
     // Ordena os países em ordem alfabética e renderiza a lista
     orderByAlphabetical();
   }
 });
+
+
 
 /*
   O bloco "if" verifica se o valor selecionado no seletor é "country".

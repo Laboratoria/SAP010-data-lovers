@@ -1,0 +1,86 @@
+* {
+    outline: 1px dotted red;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+header {
+    height: 15vh;
+    background-color: rgb(245, 88, 88);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 5vw;
+    
+}
+
+.pokémon-one,.pokémon-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 60vh;
+    width: 50vw;
+    background-color: rgb(77, 202, 240);
+    margin-right: 5vw;
+}
+
+.pokeOneName, .pokeOneType, .pokeTwoName, .pokeTwoType {
+    background-color: rgb(119, 119, 119);
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    align-self: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 3vh;
+}
+
+.pokeOneImage, .pokeTwoImage {
+    background-color: bisque;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+.dropDownOne, .dropDownTwo {
+    text-align: center;
+    align-self: center;
+    height: 4vh;
+    width: auto;
+    font-size: 0.8rem;
+    
+
+}
+.sidebar {
+   
+    height: 70vh;
+    width: 20vw;
+    background-color: beige;
+    
+
+}
+
+.rotom {
+    width: 12vw;
+    height: auto;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+footer {
+    height: 5vh;
+    background-color: aqua;
+}
+
+
+

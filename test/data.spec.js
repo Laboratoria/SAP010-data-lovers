@@ -114,3 +114,49 @@ describe('ordenarCampeoes', () => {
     expect(dataLol.ordenarCampeoes(campeoes)).toEqual([{info: {defense: 90}}, {info: {defense: 70}}]);
   });
 });
+
+describe('calcularPorcentagem', () => {
+  
+  it('deve retornar 0 a porcentagem de campeões que possuem a tag', () => {
+    const champions = [
+      { name: 'Ashe', tags: ['Marksman'] },
+      { name: 'Malphite', tags: ['Tank'] },
+    ];
+    
+    const tag = 'Mage';
+    
+    const porcentagem = dataLol.calcularPorcentagem(champions, tag);
+    
+    expect(porcentagem).toEqual(0);
+  });
+});
+
+describe('calcularPorcentagem', () => {
+  const campeoes = [
+    { name: 'Ahri', tags: ['Mage', 'Assassin'] },
+    { name: 'Ashe', tags: ['Marksman', 'Support'] },
+    { name: 'Braum', tags: ['Tank', 'Support'] },
+    { name: 'Caitlyn', tags: ['Marksman'] },
+    { name: 'Diana', tags: ['Fighter', 'Mage'] },
+  ];
+
+  it('deve retornar a porcentagem de campeões que possuem a tag "Mage"', () => {
+    const porcentagem = dataLol.calcularPorcentagem(campeoes, 'Mage');
+    expect(porcentagem).toBe(40);
+  });
+
+  it('deve retornar a porcentagem de campeões que possuem a tag "Marksman"', () => {
+    const porcentagem = dataLol.calcularPorcentagem(campeoes, 'Marksman');
+    expect(porcentagem).toBe(40);
+  });
+
+  it('deve retornar a porcentagem de campeões que possuem a tag "Support"', () => {
+    const porcentagem = dataLol.calcularPorcentagem(campeoes, 'Support');
+    expect(porcentagem).toBe(40);
+  });
+
+  it('deve retornar 0 quando a tag passada não existe em nenhum campeão', () => {
+    const porcentagem = dataLol.calcularPorcentagem(campeoes, 'Inexistente');
+    expect(porcentagem).toBe(0);
+  });
+});

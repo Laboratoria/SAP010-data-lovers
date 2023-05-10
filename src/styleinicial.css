@@ -9,14 +9,14 @@
     height: 60px;
     background: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   
   section.cabecalho {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
@@ -25,7 +25,7 @@
   nav {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: jus;
     align-items: center;
   }
   
@@ -36,19 +36,96 @@
     text-decoration: none;
     color: rgb(226, 225, 223);
     cursor: pointer;
+    
   }
   
   nav a:hover {
     color: rgb(230, 220, 89);
   }
   
+  .nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    
+  }
+ 
+
   .logo-cab {
     width: 40px;
     margin-right: 3em;
     margin-left: 1.5em;
   }
   
-  
+  .label-menu,
+ .checkbox {
+  display: none;
+}
+@media (max-width: 700px) {
+  .nav-list {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #000000;
+    text-align: center;
+    width: 50%;
+    height: calc(100vh - 60px);
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  .nav-list a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+  }
+  .label-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #f7f6f5;
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+  .checkbox:checked ~ .nav-list {
+    height: calc(100vh - 60px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .checkbox:checked ~ .label-menu .hamburger {
+    border-top-color: transparent;
+  }
+  .checkbox:checked ~ .label-menu .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .checkbox:checked ~ .label-menu .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+
+
+
+}
+
 .video-container {
   width: 100%;
   height: 100vh;
@@ -57,6 +134,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  
 }
 
 #bg-video {
@@ -67,6 +145,7 @@
   min-height: 100%;
   transform: translate(-50%, -50%);
   z-index: -1;
+  opacity: 0.85;
 }
 
 .logo-centro{
@@ -108,4 +187,11 @@ footer p{
   padding: 10px;
   margin:0 auto;
   color: antiquewhite;
+  font-size: 20px;
+}
+footer a{
+  color: rgb(248, 233, 151);
+  text-align: center;
+  font-size: 16px;
+
 }

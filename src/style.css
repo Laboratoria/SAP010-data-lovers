@@ -52,10 +52,10 @@ body {
 }
 
 :root {
-  --green: rgb(178, 223, 40);
+  --green: #7cb29c;
   --dark-blue: rgb(10, 24, 35);
-  --light-blue: rgb(0, 181, 204);
-  --white: rgb(240, 248, 255);
+  --light-blue: #c9dbd4;
+  --white: rgb(240, 248, 255);#c9dbd4
 }
 
 body {

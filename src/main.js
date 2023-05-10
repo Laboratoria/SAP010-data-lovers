@@ -69,7 +69,7 @@ itensMenu.forEach(item => {
     if (tag === 'todos') {
       mostraCards(campeoes);
     } else {
-      filtroTags(tag);
+      filtroTags(tag);    
     }
   });
 });
@@ -78,6 +78,7 @@ itensMenu.forEach(item => {
 function filtroTagSelect(tag) {
   const filter = data.buscarTag(campeoes, tag);
   mostraCards(filter);
+  
 }
 
 const itensMenuSelect = document.querySelector('.menu2');
@@ -88,6 +89,7 @@ itensMenuSelect.addEventListener('change', () => {
     mostraCards(campeoes);
   } else {
     filtroTagSelect(tag);
+    
   }
 });
 
@@ -100,11 +102,13 @@ function selecionarSelect() {
 
 document.getElementById('buscar').addEventListener('input', filtroNomes);
 document.querySelector('.selecionar').addEventListener('change', selecionarSelect);
+
 //aqui vou iniciar o grafico em charts
 
+
 const categoriasCampeoes = ["Tank", "Mage", "Assassin", "Fighter", "Marksman", "Support"];
-const numeroCampeoesPorCategoria = categoriasCampeoes.map(categoria => data.buscarTag(campeoes, categoria).length);
-const porcentagemCampeoesPorCategoria = numeroCampeoesPorCategoria.map(numeroCampeoes => Math.round(numeroCampeoes / campeoes.length * 100));
+//const numeroCampeoesPorCategoria = categoriasCampeoes.map(categoria => data.buscarTag(campeoes, categoria).length);
+const porcentagemCampeoesPorCategoria = categoriasCampeoes.map(categoria => data.calcularPorcentagem(campeoes, categoria).toFixed(0));
 
 const config = {
 
@@ -146,6 +150,7 @@ const config = {
     }
   }
 };
+
 const meuGrafico = new Chart(document.getElementById('grafico-campeoes'), config);
 
 document.querySelector('.btn_icon_header').addEventListener('click', toggleSidebar);

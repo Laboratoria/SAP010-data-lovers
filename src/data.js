@@ -36,8 +36,9 @@ const dataLol = {
       }
     });
   },
-  calcularPorcentagem: function(campeoes, filtraCampeoes) {
-    const numeroCampeoesFiltrados = filtraCampeoes.length;
+  calcularPorcentagem: function(campeoes, tag) {
+    const campeoesFiltrados = this.buscarTag(campeoes, tag);
+    const numeroCampeoesFiltrados = campeoesFiltrados.length;
     const totalDeCampeoes = campeoes.length;
     return (numeroCampeoesFiltrados / totalDeCampeoes) * 100;
   },

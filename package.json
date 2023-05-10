@@ -32,6 +32,7 @@
     "commit": "df7115b8ec46293bf1e868fdedcc42e9b3861226"
   },
   "dependencies": {
+    "chart": "^0.1.2",
     "json": "^11.0.0"
   }
 }

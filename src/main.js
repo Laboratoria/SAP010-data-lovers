@@ -1,13 +1,13 @@
-const pokemonName = document.querySelector('.pokemon__name');
-const pokemonNumber = document.querySelector('.pokemon__number');
-const pokemonImage = document.querySelector('.pokemon__image');
+const pokemonName = document.querySelector('.pokemon__name'); //variável para selecionar um elemento HTML com a classe
+const pokemonNumber = document.querySelector('.pokemon__number'); //variável para selecionar um elemento HTML com a classe
+const pokemonImage = document.querySelector('.pokemon__image'); //variável para selecionar um elemento HTML com a classe
 
-const form = document.querySelector('.form');
-const input = document.querySelector('.input__search');
-const buttonPrev = document.querySelector('.btn-prev');
-const buttonNext = document.querySelector('.btn-next');
+const form = document.querySelector('.form'); // variável para selecionar um elemento no HTML com a classe .form.
+const input = document.querySelector('.input__search'); //variável para selecionar um elemento no HTML com a classe .input
+const buttonPrev = document.querySelector('.btn-prev'); //variável para selecionar um elemento no HTML com a classe .btn (botão)
+const buttonNext = document.querySelector('.btn-next'); ////variável para selecionar um elemento no HTML com a classe .btn (botão)
 
-let searchPokemon = 1;
+let searchPokemon = 1; //variável "searchPokemon"  0 , que representa o número do Pokémon que vai começar  inicialmente.
 
 const fetchPokemon = async (pokemon) => {
   const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);

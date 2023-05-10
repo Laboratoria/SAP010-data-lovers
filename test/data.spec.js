@@ -1,23 +1,19 @@
-import { example, anotherExample } from '../src/data.js';
+test('fetchPokemon deve retornar os dados do pokemon correto', async () => {
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
+  const pokemonName = 'pikachu';
+  const pokemonData = await fetchPokemon(pokemonName);
+  expect(pokemonData.name).toEqual('pikachu');
+  expect(pokemonData.id).toEqual(25);
 });
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
+test('fetchPokemon deve retornar null quando o pokemon não é encontrado', async () => {
+  const pokemonName = 'naoexiste';
+  const pokemonData = await fetchPokemon(pokemonName);
+  expect(pokemonData).toBeNull();
 });
+it('returns `anotherExample`', () => {
+expect(anotherExample()).toBe('OMG');
+});
+
+console.log()

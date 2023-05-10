@@ -3,7 +3,10 @@
 import data from './data/athletes/athletes.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 60f650b45c9569cec5c7c4f3b5b078bf860468b8
 const atletas = data.athletes
 
 const esportes = atletas.map(modalidades => modalidades.sport)
@@ -34,6 +37,7 @@ const modalidade = atletas.map(estilo => estilo.event)
 const modalidadesFiltradas = new Set()
 modalidade.forEach((modalidades) => {
     modalidadesFiltradas.add(modalidades)
+<<<<<<< HEAD
 })*/
 
 
@@ -43,3 +47,6 @@ modalidade.forEach((modalidades) => {
 
 
 
+=======
+})*/
+>>>>>>> 60f650b45c9569cec5c7c4f3b5b078bf860468b8

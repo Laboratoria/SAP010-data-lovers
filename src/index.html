@@ -1,64 +1,39 @@
 <!DOCTYPE html>
 <html>
- pokemon
 
-<head>
-  <meta charset="utf-8">
-  <title>Pokedex</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main JS -->
+    <script defer="" src="./main.js"></script>
+  </head>
 
+  <body>
 
-<body>
-  <img src="pokedex-3d-logo.png">
-
-  <div class="botoes">
-
-    <label for="tipo" class="tipo"></label>
-
-    <select id="tipo">
-    <option> Tipos de Pokemon </option>
-     <option onchange="tipoAgua()"> Água (Water)</option>
-     <option>Fogo (Fire)</option></option>
-     <option>Voador (flying)</option>
-
-    </select>
-
-    <label for="pontosDeVida" class="pontosDeVida"> </label>
-    <select id="pontosDeVida">
-     <option>Pontos de vida</option>
-     <option>50</option>
-     <option>100</option>
-     <option>150</option>
-
-    </select>
-    
-
-    <label for="bucaPorId" class="bucaPorId"> Digite o numero do Pokemon:</label>
-    <imput type="text" id="textoId">
-    
-    
-    
+    <img src="./pokedex-3d-logo.png" alt="pokemon" class="pokemonLogo">
 
 
+    <main> 
+      
+      <img src="https://pokeapi.co/api/v2/pokemon/${pokemon}" alt="pokemon" class="pokemon__image">
+
+      <ul class="pokemon__data">
+        <span class="pokemon__number"></span> -
+        <span class="pokemon__name"></span>
+      </ul>
+
+      <form class="form">
+        <input type="search" class="input__search" placeholder="Nome ou Numero " required="">
+      </form>
+
+      <ul class="buttons">
+        <button class="button btn-prev">Voltar &lt;</button>
+        <button class="button btn-next">Seguir &gt;</button>
+      </lu>
 
 
-  </div>
+    </main>
 
-
-
-
-
-
-
-  <div id="root"></div>
-  <script src="main.js" type="module"></script>
-</body>
-
-</html>
-
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
   </body>
-</html>
 
+</html>

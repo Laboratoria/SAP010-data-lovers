@@ -7,7 +7,34 @@ body{
     margin:0;
 }
 
+.busca{
+    position: fixed;
+    top: 45px;
+    left: 370px;
+    width: 550px;
+    height: 30px;
+}
 
+.filter{
+    position: fixed;
+    top: 95px;
+    left: 400px;
+}
 
+.order{
+    position: fixed;
+    top: 95px;
+    left: 800px;
+}
 
+.btnBCS{
+    position: fixed;
+    top: 30px;
+    left: 1100px;
+}
 
+.btnBB{
+    position: fixed;
+    top: 60px;
+    left: 1100px;
+}

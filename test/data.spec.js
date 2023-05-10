@@ -1,10 +1,11 @@
 import { example, anotherExample } from '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('data', () => {
+  it('is a Deve ser um objeto', () => {
+    expect(typeof data).toBe('object');
   });
+  // fiz a inclusão do teste acima 
 
   it('returns `example`', () => {
     expect(example()).toBe('example');

@@ -1,21 +1,17 @@
-import { buildCard, plotChart } from "./main.js";
-
 export const filterData = (namePokemon, data) => {
 
   for (const pokemon in data.pokemon) {
 
     if (data.pokemon[pokemon].name.includes(namePokemon.toLowerCase())) {
-      console.log("pokemons", data.pokemon[pokemon])
-      buildCard("pokemons", data.pokemon[pokemon]);
-
-      if (Object.keys(data.pokemon[pokemon].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
-        return filterData(data.pokemon[pokemon].evolution['next-evolution'][0].name, data);
-
-      }//endIf
+      return data.pokemon[pokemon]
+      
 
     }//endIf
-
+    if (Object.keys(data.pokemon[pokemon].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
+      return data.pokemon[pokemon]
+    }//endIf
   }//endFor
+  return false
 
 }//endFilterData
 

@@ -1,4 +1,5 @@
 // Importa os dados dos países
+// Importa os dados dos países
 import countries from './data/countries/countries.js';
 import data from './data/countries/countries.js';
 
@@ -15,13 +16,63 @@ const orderByAlphabetical = () => {
   renderCountryList(sortedCountries);
 };
 
-// Filtra os países por continente
-const filterByContinent = () => {
-  // Filtra o array de países pelo continente selecionado
-  const filteredCountries = data.countries.filter((countries) => countries.subregion === "South America");
+
+// Filtra os países por subregião America do Sul
+const filterBySouthAmerica = () => {
+  // Filtra o array de países pela subregião selecionada
+  const filteredCountries = data.countries.filter((country) => country.subregion === "South America");
   // Renderiza a lista de países filtrada
   renderCountryList(filteredCountries);
 };
+
+// Filtra os países por subregião América Central
+const filterAmericaNorte = () => {
+  // Filtra o array de países pela subregião selecionada
+  const filteredCountries = data.countries.filter((country) => country.subregion === "Northern Europe");
+  // Renderiza a lista de países filtrada
+  renderCountryList(filteredCountries);
+  };
+
+
+  // Filtra os países por subregião América Central
+const filterByCentralAmerica = () => {
+  // Filtra o array de países pela subregião selecionada
+  const filteredCountries = data.countries.filter((country) => country.subregion === "Central America");
+  // Renderiza a lista de países filtrada
+  renderCountryList(filteredCountries);
+  };
+
+  /* // Filtra os países por subregião América Central
+const filterAsia= () => {
+  // Filtra o array de países pela subregião selecionada
+  const filteredCountries = data.countries.filter((country) => country.continent === "Asia");
+  // Renderiza a lista de países filtrada
+  renderCountryList(filteredCountries);
+  }; */
+  
+  
+  // Event listener para mudanças no seletor de sub-regiões
+  continentSelectorElement.addEventListener('change', (event) => {
+  // Verifica o valor do seletor de sub-regiões
+  const value = event.target.value;
+  if (value === 'amer_central') {
+  // Filtra os países pela sub-região selecionada e renderiza a lista
+  filterByCentralAmerica();
+  } else if (value === 'amer_sul') {
+  // Filtra os países pela sub-região selecionada e renderiza a lista
+  filterBySouthAmerica();
+  } else if (value === 'amer_norte') {
+    // Filtra os países pela sub-região selecionada e renderiza a lista
+    filterAmericaNorte();
+    } /* else if (value === 'asia') {
+      // Filtra os países pela sub-região selecionada e renderiza a lista
+      filterAsia();
+      } */
+  // Adicione outras condições else if ou else para filtrar outros continentes/sub-regiões
+  });
+
+
+
 
 // Função para renderizar a lista de países
 const renderCountryList = (countries) => {
@@ -45,18 +96,6 @@ const renderCountryList = (countries) => {
   });
 };
 
-// Event listener para mudanças no seletor de continentes
-continentSelectorElement.addEventListener('change', (event) => {
-  // Verifica o valor do seletor de continentes
-  const value = event.target.value;
-  if (value === 'all') {
-    // Renderiza a lista de países não filtrada
-    renderCountryList(data.countries.slice());
-  } else {
-    // Filtra os países pelo continente selecionado e renderiza a lista
-    filterByContinent(value);
-  }
-});
 
 // Event listener para mudanças no seletor
 selectorElement.addEventListener('change', (event) => {

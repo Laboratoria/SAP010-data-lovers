@@ -33,36 +33,3 @@ function displayCards(characters) {
   return arrayResults.join("");
 }
 cardContainer.innerHTML = displayCards(characters);
-
-selectStatus.addEventListener("change", (event) => {
-  const value = event.target.value;
-  const listaFiltrada = dataFunctions.filtrar(characters, value, "status");
-  const cards = displayCards(listaFiltrada);
-  cardContainer.innerHTML = cards;
-
-  const porcentagem = dataFunctions.calcularPorcentagem(
-    characters.length,
-    listaFiltrada.length
-  );
-  percentage.innerHTML =
-    "Essa categoria contém " + porcentagem + "% dos personagens totais";
-});
-
-selectOrder.addEventListener("change", (event) => {
-  const value = event.target.value;
-  const listaOrdenada = dataFunctions.ordenar(characters, value);
-  const cards = displayCards(listaOrdenada);
-  cardContainer.innerHTML = cards;
-  percentage.innerHTML = "";
-});
-
-reset.addEventListener("click", (event) => {
-  location.reload(event);
-});
-
-searchForName.addEventListener("keyup", function (event) {
-  const value = event.target.value;
-  const listaFiltrada = dataFunctions.buscarPorNome(characters, value);
-  const cards = displayCards(listaFiltrada);
-  cardContainer.innerHTML = cards;
-});

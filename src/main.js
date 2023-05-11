@@ -2,11 +2,11 @@ import data from "./data/breakingbad/breakingbad.js";
 
 import dataFunctions from "./data.js";
 
-const characters = data.breaking_bad; //aqui onde puxa o banco de dados do breakingbad.js para fornecer os personagens
-const cardContainer = document.querySelector("#card-container"); //Aqui cria os cards
-const selectStatus = document.querySelector("#select-status"); //Seletor de busca do status
-const searchForName = document.querySelector("#btn-search"); //cria busca por nome
-const reset = document.querySelector("#reset"); //cria o argumento de reset
+const characters = data.breaking_bad; //aqui onde puxa o banco de dados do breakingbad.js para fornecer os personagens.
+const cardContainer = document.querySelector("#card-container"); //Aqui cria os cards.
+const selectStatus = document.querySelector("#select-status"); //Seletor de busca do status.
+const searchForName = document.querySelector("#btn-search"); //cria busca por nome.
+const reset = document.querySelector("#reset"); //cria o argumento de reset.
 
 function displayCards(characters) {
   //declara a função personagens, criando os cards

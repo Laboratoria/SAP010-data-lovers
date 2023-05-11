@@ -6,7 +6,7 @@
 body {
   background-image: url(img/greensmoke.png);
   background-color: white;
-  background-size: 100%;
+  background-size: fill;
   color: white;
   text-align: center;
   align-content: center;

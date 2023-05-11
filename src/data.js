@@ -3,17 +3,29 @@ export const filterData = (namePokemon, data) => {
   for (const pokemon in data.pokemon) {
 
     if (data.pokemon[pokemon].name.includes(namePokemon.toLowerCase())) {
-      return data.pokemon[pokemon]
-      
+
+      return data.pokemon[pokemon];
 
     }//endIf
-    if (Object.keys(data.pokemon[pokemon].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
-      return data.pokemon[pokemon]
-    }//endIf
+
   }//endFor
+
   return false
 
 }//endFilterData
+
+export const filterEvolution = (pokemon, data) => {
+
+  if (Object.keys(pokemon.evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
+
+    return filterData(pokemon.evolution['next-evolution'][0].name, data);
+
+  }//endIf
+
+  return false;
+
+}//endFilterEvolution
+
 
 export const sortData = (data, sortBy, orderBy) => {
 
@@ -42,11 +54,17 @@ export const sortData = (data, sortBy, orderBy) => {
 
   }//endIf
 
+ let pokemons = {};
+
   for (const pokemon in data.pokemon) {
 
     if (data.pokemon[pokemon].type.includes(sortBy)) {
 
-      buildCard("pokemons", data.pokemon[pokemon]);
+      data.pokemon[pokemon].type.forEach(type => {
+        pokemons += data.pokemon[pokemon].type;
+      });
+
+      return pokemons;
 
     }//endIf
 
@@ -88,13 +106,13 @@ export const computeStats = {
 
     const min = Math.min(...sizes);
 
-    for(const object in data.pokemon){
+    for (const object in data.pokemon) {
 
-      if(data.pokemon[object].size.height.includes(max)){
+      if (data.pokemon[object].size.height.includes(max)) {
         buildCard("pokemonsHeight", data.pokemon[object]);
       }//endIf
 
-      if(data.pokemon[object].size.height.includes(min)){
+      if (data.pokemon[object].size.height.includes(min)) {
         buildCard("pokemonsHeight", data.pokemon[object]);
       }//endIf
 
@@ -112,13 +130,13 @@ export const computeStats = {
 
     const min = Math.min(...sizes);
 
-    for(const object in data.pokemon){
+    for (const object in data.pokemon) {
 
-      if(data.pokemon[object].size.weight.includes(max)){
+      if (data.pokemon[object].size.weight.includes(max)) {
         buildCard("pokemonsWeight", data.pokemon[object]);
       }//endIf
 
-      if(data.pokemon[object].size.weight.includes(min)){
+      if (data.pokemon[object].size.weight.includes(min)) {
         buildCard("pokemonsWeight", data.pokemon[object]);
       }//endIf
 

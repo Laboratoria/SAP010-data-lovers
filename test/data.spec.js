@@ -1,23 +1,30 @@
-import { example, anotherExample } from '../src/data.js';
+/**
+ * @jest-environment jsdom
+ */
 
+//import { isObject } from 'chart.js/dist/helpers/helpers.core.js';\\
+import { filterData, sortData, computeStats } from '../src/data.js'
+import data from '../src/data/pokemon/pokemon.js';
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('filterData', () => {
+  test('deveria ser uma função', () => {
+    expect(typeof filterData).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  test('deveria encontrar o nome do Pokémon mesmo se o input contiver letras maisculas', () => {
+    const resultado = filterData('PIKACHU', data);
+    expect(resultado).toBe();
   });
 });
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+describe('sortData', () => {
+  test('deveria ser uma função', () => {
+    expect(typeof sortData).toBe('function');
   });
+});
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+describe('computeStats', () => {
+  test('deveria ser um objeto', () => {
+    expect(typeof computeStats).toBe('object');
   });
 });

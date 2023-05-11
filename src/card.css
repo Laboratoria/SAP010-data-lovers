@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("img/brba.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    padding:0;
+    margin:0;
+}
+
+.busca{
+    position: fixed;
+    top: 45px;
+    left: 370px;
+    width: 550px;
+    height: 30px;
+}
+
+.filter{
+    position: fixed;
+    top: 95px;
+    left: 400px;
+    height: 25px;
+}
+
+.order{
+    position: fixed;
+    top: 95px;
+    left: 800px;
+    height: 25px;
+}
+
+.btnBCS{
+    position: fixed;
+    top: 30px;
+    left: 1100px;
+    width: 180px;
+    height: 25px;
+}
+
+.btnBB{
+    position: fixed;
+    top: 60px;
+    left: 1100px;
+    width: 180px;
+    height: 25px;
+}
+

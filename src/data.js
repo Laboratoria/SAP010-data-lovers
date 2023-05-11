@@ -35,4 +35,4 @@ const modalidade = atletas.map(estilo => estilo.event)
 
 const modalidadesFiltradas = new Set()
 modalidade.forEach((modalidades) => {
-    modalidadesFiltradas.add(modalidades)
+    modalidadesFiltradas.add(modalidades)*/

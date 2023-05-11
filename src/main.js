@@ -1,35 +1,24 @@
-import { computeStats, filterData, sortData } from './data.js';
-import pokemon from './data/pokemon/pokemon.js';
+import { computeStats, filterData, filterEvolution, sortData } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
-//Só adiciona o addEventListener se o elemento for acionado
-//Pegando elemento do input
 
-
-//can use document here
 const name = document.getElementById("namePokemon");
 
 if (name) {
   name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
     const namePokemon = document.getElementById("namePokemon").value;
-    buildCard ("pokemons",filterData(namePokemon,data)) 
-}//endIf
-)}
-/*
-const name = document.getElementById("namePokemon");
-
-if (name) {
-  name.addEventListener("input", () => {
-    document.getElementById("pokemons").innerHTML = "";
-    const namePokemon = document.getElementById("namePokemon").value.toLowerCase();
-    filterData(namePokemon, data);
-  });
+    const pokemon = filterData(namePokemon, data);
+    buildCard("pokemons", pokemon);
+    if (name.value === "") {
+      document.getElementById("pokemons").innerHTML = "";
+      for (const pokemon in data.pokemon) {
+        buildCard("pokemons", data.pokemon[pokemon]);
+      }//enFor
+    }//if
+  })//endAddEventListener
 }//endIf
 
-//Só adiciona o addEventListener se o elemento for acionado
-//Pegando elemento do botão pesquisar
-*/
 const searchType = document.getElementById("submit");
 if (searchType) {
   searchType.addEventListener("click", () => {
@@ -37,12 +26,12 @@ if (searchType) {
     document.getElementById("pokemons").innerHTML = "";
     const sortBy = document.getElementById("sortBy").value;
     const orderBy = document.getElementById("orderBy").value;
-    sortData(data, sortBy, orderBy);
+    console.log(sortData(data, sortBy, orderBy));
+    buildCard("pokemons", sortData(data, sortBy, orderBy));
   });
 }//endIf
 
-//Só adiciona o addEventListener se o elemento for acionado
-//Pegando elemento do botão clique para descobrir o peso dos pokemons
+
 const findPokemonWeight = document.getElementById("findPokemonWeight");
 if (findPokemonWeight) {
   findPokemonWeight.addEventListener("click", () => {
@@ -51,8 +40,7 @@ if (findPokemonWeight) {
   });
 }//endIf
 
-//Só adiciona o addEventListener se o elemento for acionado
-//Pegando elemento do botão clique para descobrir a altura dos pokemons
+
 const findPokemonHeight = document.getElementById("findPokemonHeight");
 if (findPokemonHeight) {
   findPokemonHeight.addEventListener("click", () => {
@@ -61,8 +49,7 @@ if (findPokemonHeight) {
   });
 }//endIf
 
-//Só adiciona o addEventListener se o elemento for acionado
-//Pegando elemento do botão clique para descobrir os tipos mais raros e comuns dos pokemons
+
 const findPercentageOfTypesOfPokemons = document.getElementById("findPercentageOfTypesOfPokemons");
 if (findPercentageOfTypesOfPokemons) {
   findPercentageOfTypesOfPokemons.addEventListener("click", () => {
@@ -71,7 +58,7 @@ if (findPercentageOfTypesOfPokemons) {
   });
 }//endIf
 
-//Função que constrói os cards dos pokémons
+
 export const buildCard = (id, pokemon) => {
 
   const pokemons = document.getElementById(id);
@@ -91,13 +78,13 @@ export const buildCard = (id, pokemon) => {
     </div>
     `;
 
-  if(pokemons){
+  if (pokemons) {
     pokemons.appendChild(cardPokemon);
   }
 
 }//endBuildCard
 
-//Função que constrói o gráfico exibindo o percentual dos tipos de pokémons
+
 export const plotChart = (typePokemon, width) => {
   const grafico = document.getElementById("chart");
   const dados = document.createElement('section');
@@ -137,11 +124,16 @@ if (menuMob) {
 //adicionando evento no carregamento da página
 //trocar o elemento por window
 
+const input = document.getElementById("namePokemon");
+
+
 window.addEventListener("load", () => {
   for (const pokemon in data.pokemon) {
     buildCard("pokemons", data.pokemon[pokemon]);
   }//enFor
 });
+
+
 
 
 

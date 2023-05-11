@@ -6,7 +6,7 @@
 body {
   background-image: url(img/greensmoke.png);
   background-color: white;
-  background-size: fill;
+  background-size: 100%;
   color: white;
   text-align: center;
   align-content: center;
@@ -23,7 +23,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-content: justify;
 }
 
 .main-text {

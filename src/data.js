@@ -1,16 +1,22 @@
 export const filterData = (namePokemon, data) => {
 
+  const pokemons = [];
+
   for (const pokemon in data.pokemon) {
 
     if (data.pokemon[pokemon].name.includes(namePokemon.toLowerCase())) {
 
-      return data.pokemon[pokemon];
+      console.log("entrei no IF")
+
+      console.log(data.pokemon[pokemon]);
+
+      pokemons.push(data.pokemon[pokemon]);
 
     }//endIf
 
   }//endFor
 
-  return false
+  return pokemons;
 
 }//endFilterData
 
@@ -54,22 +60,19 @@ export const sortData = (data, sortBy, orderBy) => {
 
   }//endIf
 
- let pokemons = {};
+  const pokemons = [];
 
   for (const pokemon in data.pokemon) {
 
     if (data.pokemon[pokemon].type.includes(sortBy)) {
 
-      data.pokemon[pokemon].type.forEach(type => {
-        pokemons += data.pokemon[pokemon].type;
-      });
-
-      return pokemons;
+      pokemons.push(data.pokemon[pokemon]);
 
     }//endIf
 
-
   }//endFor
+
+  return pokemons;
 
 }//endSortData
 

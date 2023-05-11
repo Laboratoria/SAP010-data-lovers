@@ -7,14 +7,14 @@ const name = document.getElementById("namePokemon");
 if (name) {
   name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
-    const namePokemon = document.getElementById("namePokemon").value;
+    const namePokemon = name.value;
     const pokemon = filterData(namePokemon, data);
     buildCard("pokemons", pokemon);
     if (name.value === "") {
       document.getElementById("pokemons").innerHTML = "";
-      for (const pokemon in data.pokemon) {
-        buildCard("pokemons", data.pokemon[pokemon]);
-      }//enFor
+
+        buildCard("pokemons", data.pokemon);
+
     }//if
   })//endAddEventListener
 }//endIf
@@ -27,7 +27,8 @@ if (searchType) {
     const sortBy = document.getElementById("sortBy").value;
     const orderBy = document.getElementById("orderBy").value;
     console.log(sortData(data, sortBy, orderBy));
-    buildCard("pokemons", sortData(data, sortBy, orderBy));
+    const pokemonsSorted = sortData(data, sortBy, orderBy);
+    buildCard("pokemons", pokemonsSorted)
   });
 }//endIf
 
@@ -61,25 +62,27 @@ if (findPercentageOfTypesOfPokemons) {
 
 export const buildCard = (id, pokemon) => {
 
-  const pokemons = document.getElementById(id);
-  const cardPokemon = document.createElement('div');
-  cardPokemon.classList.add("card");
+  for (let i = 0; i < pokemon.length; i++) {
+    const pokemons = document.getElementById(id);
+    const cardPokemon = document.createElement('div');
+    cardPokemon.classList.add("card");
 
-  cardPokemon.innerHTML = `
-    <img id="imagePokemon" alt="Image Pokemon" src="${pokemon.img}">
+    cardPokemon.innerHTML = `
+    <img id="imagePokemon" alt="Image Pokemon" src="${pokemon[i].img}">
     <div class="showNamePokemon">
       <img class="pokeball" alt="Image Pokeball" src="./images/pokeball.png">
-      <h1 id="name">${pokemon.name}</h1>
+      <h1 id="name">${pokemon[i].name}</h1>
     </div>
     <div class="dataPokemon">
-      <p>Type: <span id="type">${pokemon.type}</span> </p>
-      <p>Height: <span id="type">${pokemon.size.height}</span> </p>
-      <p>Weigth: <span id="type">${pokemon.size.weight}</span> </p>
+      <p>Type: <span id="type">${pokemon[i].type}</span> </p>
+      <p>Height: <span id="type">${pokemon[i].size.height}</span> </p>
+      <p>Weigth: <span id="type">${pokemon[i].size.weight}</span> </p>
     </div>
     `;
 
-  if (pokemons) {
-    pokemons.appendChild(cardPokemon);
+    if (pokemons) {
+      pokemons.appendChild(cardPokemon);
+    }
   }
 
 }//endBuildCard
@@ -128,9 +131,7 @@ const input = document.getElementById("namePokemon");
 
 
 window.addEventListener("load", () => {
-  for (const pokemon in data.pokemon) {
-    buildCard("pokemons", data.pokemon[pokemon]);
-  }//enFor
+  buildCard("pokemons", data.pokemon);
 });
 
 

@@ -1,4 +1,5 @@
 import { computeStats, filterData, sortData } from './data.js';
+import pokemon from './data/pokemon/pokemon.js';
 import data from './data/pokemon/pokemon.js';
 
 //Só adiciona o addEventListener se o elemento for acionado
@@ -12,10 +13,9 @@ if (name) {
   name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
     const namePokemon = document.getElementById("namePokemon").value;
-    filterData(namePokemon, data);
-  });
+    buildCard ("pokemons",filterData(namePokemon,data)) 
 }//endIf
-
+)}
 /*
 const name = document.getElementById("namePokemon");
 

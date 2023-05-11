@@ -47,15 +47,15 @@ filterCentralAmerica,
 filterAmericaNorte
 };
 
-//* / Objeto que mapeia cada continente para identificadores
-const continents = {
+ // Objeto que mapeia cada continente para identificadores
+/* const continents = {
 "Asia": "asia",
 "Africa": "africa",
 "Oceania":"oceania",
 "Europe":"europa"
 };
 
-/* // Objeto vazio que será preenchido com cada país mapeado para seu continente correspondente
+// Objeto vazio que será preenchido com cada país mapeado para seu continente correspondente
 const countryContinents = {};
 
 // Loop através de cada país para mapeá-lo para o continente correspondente
@@ -92,4 +92,4 @@ countries,
 filterAsia,
 filterEuropa,
 filterOceania
-}; */ 
+};  */

@@ -64,14 +64,15 @@ header {
 
 h1 {
   display: flex;
-  margin: 0 auto;
-  font-size: 2.5em;
+  font-size: 2rem;
   margin-left: 20px;
   
 }
 
 h2{
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 
 .menu {
@@ -79,10 +80,10 @@ h2{
 }
 
 .card {
-  display: flex;
+  display: flex;  
   justify-content: center;
-  align-items: center;
-  position: fixed;
+  align-items: center; 
+  position: fixed; 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -94,30 +95,17 @@ h2{
   border-radius: 1rem;
   padding: 1.5rem 2.5rem;
   color: white;
-}
+} 
 
 .cardContainer {
-  text-align: justify;
+  text-align: left;
   line-height: 1.5;
 }
-
 .cardContainer p {
   margin-bottom: 10px;
 }
 
-#selector{
-  display: block;
-  margin: 20px auto;
-  padding: 10px;
-  width: 200px;
-  border: none;
-  border-radius: 5px;
-  background-color: rgba(242, 240, 240, 0.326);
-  color: white;
-  text-align: center;
-  font-size: 16px;
-  outline: none;
-}
+
 
 #selector  option {
   background-color: #12609c8e;
@@ -187,17 +175,16 @@ footer a:hover {
 
 
 .flag {
-    display: inline-block;
-    margin-right: 10px;
-    width: 50px;
-    height: 35px;
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+  height: 28px;
 }
 
-#country-list img {
-    width: 200px;
-    height: 140px;
+#contry {
+  margin-top: 50px;
+  padding: auto;
 }
-
 /*página 2*/
 
 .home{
@@ -234,9 +221,10 @@ footer a:hover {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin-bottom: 0px;
-
+  margin-top: 30px;
+  width: 300px;
+  height: 200px;
+  align-items: center;
 }
 
 .country {
@@ -247,8 +235,50 @@ footer a:hover {
   color: white;
 }
 
+.continent{
 
+ display: flex;
+  flex-direction: row;
+}
+#seletor_continent{
+ 
+  margin: 20px auto;
+  padding: 10px;
+  width: 205px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(242, 240, 240, 0.326);
+  color:white;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
 
+}
 
+#selector{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  padding: 10px;
+  width: 205px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(242, 240, 240, 0.326);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  
+}
 
+#seletor_continent:hover, #selector:hover {
+  background: rgba(101, 217, 238, 0.76);
+  color: black;
+}
 
+.bandeiras{
+  display: block;
+  justify-content: center;
+  margin-left: 90px;
+  margin-bottom: 40px;
+}

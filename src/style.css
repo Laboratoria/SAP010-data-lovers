@@ -1,5 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/474/875/595/periodic-table-wallpaper-thumb.jpg');
+    background-image: url('https://giffiles.alphacoders.com/312/3123.gif');
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
@@ -7,34 +12,32 @@ body{
     margin:0;
 }
 
-.busca{
-    position: fixed;
-    top: 45px;
-    left: 370px;
-    width: 550px;
+.btHome{
+    position: relative;
+    left: 920px;
+    top: 150px;
+    width: 150px;
     height: 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
-.filter{
-    position: fixed;
-    top: 95px;
-    left: 400px;
+.btHome:hover {
+    background: #4db190a4; /* Muda a cor assim que o cursor estiver em cima*/
 }
 
-.order{
-    position: fixed;
-    top: 95px;
-    left: 800px;
+.btHome a {/* tira o sublinado do nome no botão*/
+    text-decoration: none;
 }
 
-.btnBCS{
-    position: fixed;
-    top: 30px;
-    left: 1100px;
-}
-
-.btnBB{
-    position: fixed;
-    top: 60px;
-    left: 1100px;
+.fraseHome {
+    position: absolute;
+    top: 20px;
+    left: 700px;
+    width: 400px;
+    height: 100px;
+    color: white;
+    font-size: 18px; /* tamanho da letra */
+    font-family: 'Source Code Pro', monospace;
 }

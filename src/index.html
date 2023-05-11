@@ -2,42 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Detalhes sobre os personagens</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Home Breaking Bad</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
-    <main>
+      <section class="fraseHome">
+        <h1>Quer saber mais detalhes sobre os personagens da série Breaking Bad?</h1>
+      </section>
 
-      <select id="select-filter" class="filter">
-        <option value="" selected> Todos </option>
-        <option> Personagens da série Better Call Saul</option>
-        <option> Temporada 1 </option>
-        <option> Temporada 2 </option>
-        <option> Temporada 3 </option>
-        <option> Temporada 4 </option>
-        <option> Temporada 5 </option>
-      </select>
+      <section>
+          <button class="btHome">
+              <a href="card.html" target="_self"> Let's cook </a>
+          </button>
+      </section>
 
-      <select id="select-order" class="order">
-        <option value="" disabled selected> Ordenar </option>
-        <option value="a-z"> A - Z </option>
-        <option value="z-a"> Z - A </option>
-      </select>
-      
-      <form class="busca">
-        <input type="search" value="" placeholder="Buscar personagem" class="busca">
-      </form>
-
-      <button class="btnBCS">
-        <a href="https://www.youtube.com/watch?v=FAdiEjeNRi0&ab_channel=NetflixBrasil" target="_blank"> Trailer de Better Call Saul</a>
-      </button>
-
-      <button class="btnBB">
-        <a href="https://www.youtube.com/watch?v=HhesaQXLuRY&ab_channel=TrailerBlend" target="_blank"> Trailer de Breaking Bad</a>
-      </button>
-
-      <div id="root"></div>
-    </main>
+    <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
 </html>

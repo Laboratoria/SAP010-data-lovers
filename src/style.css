@@ -175,12 +175,12 @@ footer a:hover {
 }
 
 
-.flag {
+/* .flag {
   display: inline-block;
   margin-right: 10px;
-  width: 40px;
-  height: 28px;
-}
+  width: 140px;
+  height: 128px;
+} */
 
 #contry {
   margin-top: 50px;
@@ -230,17 +230,24 @@ footer a:hover {
 
 .country {
   display: inline-block;
+  gap: 15px;
   flex-wrap:wrap;
   overflow: hidden;
-  margin-left: 10px;
+  margin-left: 15px;
   color: white;
 }
 
-.continent{
-
- display: flex;
-  flex-direction: row;
+.country p{
+  font-size: 0.8rem;
 }
+
+.continent{
+ display: flex;
+ gap: 10px;
+ flex-direction: row;
+}
+
+
 #seletor_continent{
  
   margin: 20px auto;

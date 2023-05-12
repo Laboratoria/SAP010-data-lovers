@@ -53,7 +53,9 @@ if (findPercentageOfTypesOfPokemons) {
 
 
 const buildCard = (id, pokemon) => {
+
   document.getElementById(id).innerHTML = "";
+
   for (let i = 0; i < pokemon.length; i++) {
 
     const pokemons = document.getElementById(id);

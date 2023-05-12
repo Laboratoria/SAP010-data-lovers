@@ -1,8 +1,7 @@
 import { filterData, sortData, computeStats } from '../src/data.js'
 import data from '../src/data/pokemon/pokemon.js';
-import sortedListForTest from '../src/sortedListForTest.js';
-
-//criar uma pasta para guardar os dados mocados
+import sortedListForTest from './mocks/sortedListForTest.js';
+import pikachu from './mocks/pikachu.js';
 
 describe('filterData', () => {
   test('deveria ser uma função', () => {
@@ -11,18 +10,24 @@ describe('filterData', () => {
 
   //entender poorque o toBe() teve que ser substituído pelo toStricEqual()
   test('deveria encontrar o nome do Pokémon mesmo se o input contiver letras maisculas', () => {
-    //mocar os dados
-    expect(filterData("PIKACHU", data)).toStrictEqual(filterData("pikachu", data));
+    expect(filterData("PIKACHU", data)).toStrictEqual(pikachu);
   });
 
   test('deveria encontrar retornar a próxima evolução do Pokémon, se houver', () => {
     const pokemons = filterData("bulbasaur", data);
-    //verificar as outras posições do array
-    const namePokemonNextEvolution = pokemons[1].name;
+    let namePokemonNextEvolution = "";
+    for(let i = 0; i < pokemons.length; i++){
+      if(pokemons[i].name.includes("ivysaur"))
+        namePokemonNextEvolution = pokemons[i].name;
+    }
     expect(namePokemonNextEvolution).toBe("ivysaur");
   });
 
-  //criar um teste para um pokemon sem sem nenhuma evolução
+  test('deveria encontrar retornar apenas um Pokémon, caso seja pesquisado algum que não tenha evolução nem nome em comum', () => {
+    const pokemons = filterData("snorlax", data);
+    const arraySize = pokemons.length;
+    expect(arraySize).toBe(1);
+  });
 
 });
 
@@ -38,9 +43,19 @@ describe('sortData', () => {
 
   test('deveria retornar uma lista contendo o tipo de Pokemon pesquisado', () => {
     const result = sortData(data, "ghost", "a-z");
-    //percorrer o atributo type e verificar se todos contém o tipo pesquisado que é ghost
-    //procurar por alguma função que verifique se todos os obejtos daquele elemento contem aquela propriedade
-    expect(("")).toBe();
+    let everyType = false;
+    let count = 0;
+
+    for(let i = 0; i < result.length; i++){
+      console.log(result[i].type.includes("ghost"))
+      if(result[i].type.includes("ghost")){
+        count += 1;
+      }
+      if(count === result.length){
+        everyType = true;
+      }
+    }
+    expect(everyType).toBe(true);
   });
 
 });

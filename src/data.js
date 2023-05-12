@@ -47,6 +47,19 @@ filterCentralAmerica,
 filterAmericaNorte
 };
 
+
+function getLanguagesByCountry(country) {
+    const languages = country.languages;
+    const languageList = [];
+
+    for (const key in languages) {
+     if (Object.hasOwnProperty.call(languages, key)) {
+        languageList.push(languages[key]);
+      }
+    }
+  
+    return languageList;
+  }
 /* Objeto que mapeia cada continente para identificadores
 
 

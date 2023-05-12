@@ -42,12 +42,12 @@ const filterByCentralAmerica = () => {
   renderCountryList(filteredCountries);
   };
 
-  const filterByAsia = () => {
+/*   const filterByAsia = () => {
     // Filtra o array de países pelo continente selecionado
     const filteredCountries = data.countries.filter((country) => country.region === "Asia");
     // Renderiza a lista de países filtrada
     renderCountryList(filteredCountries);
-  };
+  }; */
   
   
   // Event listener para mudanças no seletor de sub-regiões
@@ -72,26 +72,29 @@ const filterByCentralAmerica = () => {
 
   
 
-// Função para renderizar a lista de países
-const renderCountryList = (countries) => {
-  countryListElement.innerHTML = '';
-
-  countries.forEach((country) => {
-    const countryElement = document.createElement('div');
-    countryElement.className = 'country';
-
-    const imgElement = document.createElement('img');
-    imgElement.src = country.flags.png;
-    imgElement.alt = `Flag of ${country.name.common}`;
-
-    const nameElement = document.createElement('p');
-    nameElement.textContent = country.name.common;
-
-    countryElement.appendChild(imgElement);
-    countryElement.appendChild(nameElement);
-    countryListElement.appendChild(countryElement);
-  });
-};
+  const renderCountryList = (countries) => {
+    countryListElement.innerHTML = '';
+  
+    countries.forEach((country) => {
+      const countryElement = document.createElement('div');
+      countryElement.className = 'country';
+  
+      const imgElement = document.createElement('img');
+      imgElement.src = country.flags.png;
+      imgElement.alt = `Flag of ${country.name.common}`;
+  
+      const nameElement = document.createElement('p');
+      nameElement.textContent = country.name.common;
+  
+      const languagesElement = document.createElement('p');
+      languagesElement.textContent = "Languages: " + Object.values(country.languages).join(", ");
+  
+      countryElement.appendChild(imgElement);
+      countryElement.appendChild(nameElement);
+      countryElement.appendChild(languagesElement);
+      countryListElement.appendChild(countryElement);
+    });
+  };
 
 
 // Event listener para mudanças no seletor

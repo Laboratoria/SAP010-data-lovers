@@ -1,13 +1,11 @@
 const dataFunctions = {
   filter: function (characters, value, key) { /*esta função faz o filtro de todas as categorias */
-  console.log(characters, value, key)
     const filter = characters.filter(function (character) {
-      
       const filtered = character[key].includes(value)
       
       return filtered;
     });
-    console.log({filter})
+  
     return filter; 
   },
 
@@ -53,7 +51,7 @@ const dataFunctions = {
       return filteredSearch;
     });
     return filter;
-  },
+  },  
 
   calculatePercentage: function (sizeList, sizefilteredList) {
     return Math.round((sizefilteredList * 100) / sizeList);

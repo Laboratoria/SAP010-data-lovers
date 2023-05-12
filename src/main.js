@@ -25,7 +25,7 @@ function displayCards(characters) {
             <li>Status: ${item.status}</li>
             <li>Occupation: ${item.occupation}</li>
             <li>Birthday: ${item.birthday}</li>
-            <li>Portrayed: ${item.portrayed}</li>
+            <li>Portrayed: ${item.portrayed}</li> 
             <li>Category: ${item.category}</li>
            
             </ul>                
@@ -78,4 +78,6 @@ searchForName.addEventListener('keyup', function (event) {
   const filteredList = dataFunctions.searchName(characters, value);
   const cards = displayCards(filteredList);
   cardContainer.innerHTML = cards;
+
 });
+

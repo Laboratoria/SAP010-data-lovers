@@ -75,6 +75,9 @@ export const buildCard = (id, pokemon) => {
       <p>Type: <span id="type">${pokemon.type}</span> </p>
       <p>Height: <span id="type">${pokemon.size.height}</span> </p>
       <p>Weigth: <span id="type">${pokemon.size.weight}</span> </p>
+      <p>Resistant: <span id="type">${pokemon.resistant}</span> </p>
+      <p>Weaknesses: <span id="type">${pokemon.weaknesses}</span> </p>
+      <p>Quick-moves: <span id="type">${pokemon['quick-move'][0]['base-damage']}</span> </p>
     </div>
     `;
 

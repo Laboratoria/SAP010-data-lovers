@@ -1,9 +1,12 @@
 // Importa os dados dos países
+// Importa os dados dos países
+
 import data from './data/countries/countries.js';
 
-// Seleciona o elemento do seletor e da lista de países
+// Seleciona os elementos do seletor, da lista de países e do seletor de continentes
 const selectorElement = document.querySelector('#selector');
-const countryListElement = document.querySelector('#country-list');
+const countryListElement = document.querySelector('.bandeiras');
+const continentSelectorElement = document.querySelector('#seletor_continent');
 
 // Ordena os países em ordem alfabética
 const orderByAlphabetical = () => {
@@ -13,30 +16,86 @@ const orderByAlphabetical = () => {
   renderCountryList(sortedCountries);
 };
 
-// Função para renderizar a lista de países
-const renderCountryList = (countries) => {
-  // Limpa a lista antes de renderizar
-  countryListElement.innerHTML = '';
-  
-  // Para cada país, cria um elemento <li> e um elemento <img>
-  countries.forEach((country) => {
-    const liElement = document.createElement('li');
-    const imgElement = document.createElement('img');
-    
-    // Define o atributo src do elemento <img> como a URL da bandeira e o atributo alt com o nome do país
-    imgElement.src = country.flags.png; // Acessa a propriedade flags.png do objeto country para definir a URL da bandeira
-    imgElement.alt = `Flag of ${country.name.common}`; // Acessa a propriedade name.common do objeto country para definir o nome do país no atributo alt da imagem
-    
-    // Cria um elemento <span> com o nome do país e adiciona-o como filho do elemento <li>
-    const nameElement = document.createElement('span');
-    nameElement.textContent = country.name.common; // Acessa a propriedade name.common do objeto country para definir o nome do país no elemento <span>
-    liElement.appendChild(imgElement);
-    liElement.appendChild(nameElement);
-    
-    // Adiciona o elemento <li> como filho da lista de países
-    countryListElement.appendChild(liElement);
-  });
+
+// Filtra os países por subregião America do Sul
+const filterBySouthAmerica = () => {
+  // Filtra o array de países pela subregião selecionada
+  const filteredCountries = data.countries.filter((country) => country.subregion === "South America");
+  // Renderiza a lista de países filtrada
+  renderCountryList(filteredCountries);
 };
+
+// Filtra os países por subregião 
+const filterByAmericaNorte = () => {
+  // Filtra o array de países pela subregião selecionada
+  const filteredCountries = data.countries.filter((country) => country.subregion === "North America");
+  // Renderiza a lista de países filtrada
+  renderCountryList(filteredCountries);
+  };
+
+
+  // Filtra os países por subregião América Central
+const filterByCentralAmerica = () => {
+  // Filtra o array de países pela subregião selecionada
+  const filteredCountries = data.countries.filter((country) => country.subregion === "Central America");
+  // Renderiza a lista de países filtrada
+  renderCountryList(filteredCountries);
+  };
+
+/*   const filterByAsia = () => {
+    // Filtra o array de países pelo continente selecionado
+    const filteredCountries = data.countries.filter((country) => country.region === "Asia");
+    // Renderiza a lista de países filtrada
+    renderCountryList(filteredCountries);
+  }; */
+  
+  
+  // Event listener para mudanças no seletor de sub-regiões
+  continentSelectorElement.addEventListener('change', (event) => {
+  // Verifica o valor do seletor de sub-regiões
+  const value = event.target.value;
+  if (value === 'amer_central') {
+  // Filtra os países pela sub-região selecionada e renderiza a lista
+  filterByCentralAmerica();
+  } else if (value === 'amer_sul') {
+  // Filtra os países pela sub-região selecionada e renderiza a lista
+  filterBySouthAmerica();
+  } else if (value === 'amer_norte') {
+    // Filtra os países pela sub-região selecionada e renderiza a lista
+  filterByAmericaNorte();
+    }  /* else if (value === 'asia') {
+      // Filtra os países pela sub-região selecionada e renderiza a lista
+      filterByAsia();
+      }  */
+  // Adicione outras condições else if ou else para filtrar outros continentes/sub-regiões
+  });
+
+  
+
+  const renderCountryList = (countries) => {
+    countryListElement.innerHTML = '';
+  
+    countries.forEach((country) => {
+      const countryElement = document.createElement('div');
+      countryElement.className = 'country';
+  
+      const imgElement = document.createElement('img');
+      imgElement.src = country.flags.png;
+      imgElement.alt = `Flag of ${country.name.common}`;
+  
+      const nameElement = document.createElement('p');
+      nameElement.textContent = country.name.common;
+  
+      const languagesElement = document.createElement('p');
+      languagesElement.textContent = "Languages: " + Object.values(country.languages).join(", ");
+  
+      countryElement.appendChild(imgElement);
+      countryElement.appendChild(nameElement);
+      countryElement.appendChild(languagesElement);
+      countryListElement.appendChild(countryElement);
+    });
+  };
+
 
 // Event listener para mudanças no seletor
 selectorElement.addEventListener('change', (event) => {
@@ -44,12 +103,14 @@ selectorElement.addEventListener('change', (event) => {
   const value = event.target.value;
   if (value === 'country') {
     // Renderiza a lista de países não ordenada
-    renderCountryList(data.countries.slice()); // Acessa o array de países através da propriedade countries do objeto data e cria uma cópia dele com a função slice(). Depois, passa essa cópia como parâmetro para a função renderCountryList.
+    renderCountryList(data.countries.slice());
   } else if (value === 'alphabetical') {
     // Ordena os países em ordem alfabética e renderiza a lista
     orderByAlphabetical();
   }
 });
+
+
 
 /*
   O bloco "if" verifica se o valor selecionado no seletor é "country".

@@ -12,7 +12,6 @@ html {
 }
 
 #navPc {
-  width: 100%;
   background-color: rgb(74, 223, 148);
   display: flex;
   width: 100vw;
@@ -137,7 +136,7 @@ select {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 500px;
+  height: 600px;
   width: 100vw;
   font-size: large;
 }
@@ -278,4 +277,8 @@ span {
   .card {
     width: 50%;
   }
+}
+
+.ficha{
+  background-color: lightgreen;
 }

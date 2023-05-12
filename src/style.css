@@ -9,6 +9,7 @@
 }
 
 body {
+ /* height: 100vh; */
   background: rgba(42, 5, 248, 0.549) url("img/bg.jpg") center/cover;
   /* overflow: hidden */
 }

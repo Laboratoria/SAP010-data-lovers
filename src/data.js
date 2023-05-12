@@ -5,7 +5,7 @@ import countries from "./countries.json";
 const subregions = {
 "South America": "amer_sul",
 "Central America": "amer_central",
-"Northern Europe":"amer_norte"
+"North America":"amer_norte"
 };
 
 // Objeto vazio que será preenchido com cada país mapeado para sua sub-região correspondente
@@ -47,8 +47,10 @@ filterCentralAmerica,
 filterAmericaNorte
 };
 
- // Objeto que mapeia cada continente para identificadores
-/* const continents = {
+/* Objeto que mapeia cada continente para identificadores
+
+
+const continents = {
 "Asia": "asia",
 "Africa": "africa",
 "Oceania":"oceania",
@@ -59,21 +61,23 @@ filterAmericaNorte
 const countryContinents = {};
 
 // Loop através de cada país para mapeá-lo para o continente correspondente
-countries.forEach((country) => {
-// Se o continente do país existe no objeto continents
-if (continents[country.continent]) {
-// Se o continente ainda não tem nenhum país mapeado para ele, inicialize um array vazio para o continente
-if (!countryContinents[continents[country.continent]]) {
-countryContinents[continents[country.continent]] = [];
+
+// Percorre a lista de países e adiciona cada país ao seu continente correspondente
+data.countries.forEach((country) => {
+if (country.continents.includes("Asia")) {
+    if (!countryContinents.Asia) {
+    countryContinents.Asia = [];
+    }
+    countryContinents.Asia.push(country);
 }
-// Adicione o país ao array correspondente no continente
-countryContinents[continents[country.continent]].push(country);
-}
+
+  // Repita para outros continentes, conforme necessário
 });
 
-// Função que retorna a lista de países da Ásia
-function filterAsia() {
-return countryContinents.asia || [];
+
+/* Função que retorna a lista de países da Ásia */
+/* function filterAsia() {
+    return data.features.filter((country) => country.properties.continents.includes("Asia"));
 }
 
 // Função que retorna a lista de países da Europa
@@ -87,9 +91,9 @@ return countryContinents.oceania || [];
 }
 
 // Exporta um objeto com a lista completa de países e as funções de filtro por continente
-export const countriesByContinent = {
+export const countriesByContinents = {
 countries,
 filterAsia,
 filterEuropa,
 filterOceania
-};  */
+};  */  

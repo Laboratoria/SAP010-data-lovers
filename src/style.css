@@ -88,12 +88,12 @@ h2{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  max-width: 500px;
+  max-width:600px;
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
   box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.464);
   backdrop-filter: blur(0.8rem);
   border-radius: 1rem;
-  padding: 1.5rem 2.5rem;
+  padding: 1rem 2rem;
   color: white;
 } 
 

@@ -1,6 +1,6 @@
 // Importa os dados dos países
 // Importa os dados dos países
-import countries from './data/countries/countries.js';
+
 import data from './data/countries/countries.js';
 
 // Seleciona os elementos do seletor, da lista de países e do seletor de continentes
@@ -26,9 +26,9 @@ const filterBySouthAmerica = () => {
 };
 
 // Filtra os países por subregião 
-const filterAmericaNorte = () => {
+const filterByAmericaNorte = () => {
   // Filtra o array de países pela subregião selecionada
-  const filteredCountries = data.countries.filter((country) => country.subregion === "Northern Europe");
+  const filteredCountries = data.countries.filter((country) => country.subregion === "North America");
   // Renderiza a lista de países filtrada
   renderCountryList(filteredCountries);
   };
@@ -42,12 +42,11 @@ const filterByCentralAmerica = () => {
   renderCountryList(filteredCountries);
   };
 
-  // Filtra os países por subregião 
-const filterAsia= () => {
-  // Filtra o array de países pela subregião selecionada
-  const filteredCountries = data.countries.filter((country) => country.continent === "Asia");
-  // Renderiza a lista de países filtrada
-  renderCountryList(filteredCountries);
+  const filterByAsia = () => {
+    // Filtra o array de países pelo continente selecionado
+    const filteredCountries = data.countries.filter((country) => country.region === "Asia");
+    // Renderiza a lista de países filtrada
+    renderCountryList(filteredCountries);
   };
   
   
@@ -63,11 +62,11 @@ const filterAsia= () => {
   filterBySouthAmerica();
   } else if (value === 'amer_norte') {
     // Filtra os países pela sub-região selecionada e renderiza a lista
-    filterAmericaNorte();
-    } /* else if (value === 'asia') {
+  filterByAmericaNorte();
+    }  /* else if (value === 'asia') {
       // Filtra os países pela sub-região selecionada e renderiza a lista
-      filterAsia();
-      } */
+      filterByAsia();
+      }  */
   // Adicione outras condições else if ou else para filtrar outros continentes/sub-regiões
   });
 

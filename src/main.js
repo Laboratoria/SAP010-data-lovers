@@ -11,9 +11,13 @@ const continentSelectorElement = document.querySelector('#seletor_continent');
 // Ordena os países em ordem alfabética
 const orderByAlphabetical = () => {
   // Faz uma cópia do array de países e ordena em ordem alfabética
-  const sortedCountries = data.countries.slice().sort((a, b) => a.name.common.localeCompare(b.name.common));
+  const sortedCountries = data.countries.slice().sort((a, b) => removeSpecialChars(a.name.common).localeCompare(removeSpecialChars(b.name.common)));
   // Renderiza a lista de países ordenada
   renderCountryList(sortedCountries);
+};
+
+const removeSpecialChars = (string) => {
+  return string.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 };
 
 
@@ -85,12 +89,22 @@ const filterByCentralAmerica = () => {
   
       const nameElement = document.createElement('p');
       nameElement.textContent = country.name.common;
+
+      const populationElement = document.createElement('p');
+      populationElement.textContent = "População: " + country.population;
   
       const languagesElement = document.createElement('p');
-      languagesElement.textContent = "Languages: " + Object.values(country.languages).join(", ");
+      languagesElement.textContent = "Idioma: " + Object.values(country.languages).join(", ");
+
+      if (typeof country.languages === 'object' && country.languages !== null) {
+        languagesElement.textContent = "Idioma: " + Object.values(country.languages).join(", ");
+      } else {
+        languagesElement.textContent = "Idioma: N/A";
+      }
   
       countryElement.appendChild(imgElement);
       countryElement.appendChild(nameElement);
+      countryElement.appendChild(populationElement);
       countryElement.appendChild(languagesElement);
       countryListElement.appendChild(countryElement);
     });

@@ -67,3 +67,8 @@ img {
 .filtros select {
     width: 150px;
 }
+
+#exibirFlags {
+    height: 3px;
+    width: 3px;
+}

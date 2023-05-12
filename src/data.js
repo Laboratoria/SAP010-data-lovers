@@ -1,57 +1,63 @@
 const dataFunctions = {
-  filterCards: function(characters, value, key) {
-    return characters.filter(function(character) {
-      return character[key].toLowerCase() === value.toLowerCase();
-    });  
-  }
+  filter: function (characters, value, key) { /*esta função faz o filtro de todas as categorias */
+  console.log(characters, value, key)
+    const filter = characters.filter(function (character) {
+      
+      const filtered = character[key].includes(value)
+      
+      return filtered;
+    });
+    console.log({filter})
+    return filter; 
+  },
 
-  /*Key: o parâmetro key representa o nome da propriedade em cada objeto 
-  do array de caracteres que deve ser comparado ao parâmetro value.;
+  ascending: function (characters) {
+    const order = characters.sort(function (a, b) {
+      if (a.name > b.name) {
+        return 1;
+      } else {
+        return -1;
+      }
+    });
 
-  Value: o parâmetro value representa o valor que a propriedade "key" de 
-  cada objeto na matriz de caracteres deve corresponder.*/
+    return order;
+  },
 
-  ordenarCrescente: function(characters) {
-    const ordem = characters.sort(function (a, b) {
-        if (a.name > b.name) {
-          return 1;
-        }else {
-          return -1;
-        }            
-        
-      });  
+  descending: function (characters) {
+    const order = characters.sort(function (a, b) {
+      if (a.name > b.name) {
+        return -1;
+      } else {
+        return 1;
+      }
+    });
 
-    return ordem;
-},   
+    return order;
+  },
 
-ordenarDecrescente: function(characters) {
-    const ordem = characters.sort(function (a, b) {            
-        if (a.name > b.name) {
-          return -1;
-        }else {
-          return 1;
-        }            
-        
-      });   
+  order: function (characters, sortBy) {
+    const copy = [...characters];
 
-    return ordem;
-},   
-
-ordenar: function(characters, sortBy) {        
-    const copy = [...characters]; 
-
-    if(sortBy === "ascending") {
-        return dataFunctions.ordenarCrescente(copy);
+    if (sortBy === "ascending") {
+      return dataFunctions.ascending(copy);
+    } else if (sortBy === "descending") {
+      return dataFunctions.descending(copy);
     }
-    else if(sortBy === "descending" ) {
-        return dataFunctions.ordenarDecrescente(copy);
-    }
-},
+  },
 
+  searchForName: function (characters, name) {
+    const filter = characters.filter(function (character) {
+      const filteredSearch = character.name
+        .toLowerCase()
+        .includes(name.toLowerCase());
+      return filteredSearch;
+    });
+    return filter;
+  },
 
- 
-
+  calculatePercentage: function (sizeList, sizefilteredList) {
+    return Math.round((sizefilteredList * 100) / sizeList);
+  },
 };
-
 
 export default dataFunctions;

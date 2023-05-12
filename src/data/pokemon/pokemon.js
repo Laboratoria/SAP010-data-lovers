@@ -86,7 +86,7 @@ export default {
     "evolution": {
       "candy": "bulbasaur candy",
       "next-evolution": [{
-        "num": "002",
+        "num": "f",
         "name": "ivysaur",
         "candy-cost": "25",
         "next-evolution": [{

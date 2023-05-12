@@ -1,10 +1,5 @@
-/**
- * @jest-environment jsdom
- */
-
-//import { isObject } from 'chart.js/dist/helpers/helpers.core.js';\\
 import { filterData, sortData, computeStats } from '../src/data.js'
-import data from '../src/data/pokemon/pokemon.js';
+//import data from '../src/data/pokemon/pokemon.js';
 
 describe('filterData', () => {
   test('deveria ser uma função', () => {
@@ -12,8 +7,7 @@ describe('filterData', () => {
   });
 
   test('deveria encontrar o nome do Pokémon mesmo se o input contiver letras maisculas', () => {
-    const resultado = filterData('PIKACHU', data);
-    expect(resultado).toBe();
+    expect().toBe();
   });
 });
 

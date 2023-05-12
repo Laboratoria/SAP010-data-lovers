@@ -6,10 +6,6 @@ export const filterData = (namePokemon, data) => {
 
     if (data.pokemon[pokemon].name.includes(namePokemon.toLowerCase())) {
 
-      console.log("entrei no IF")
-
-      console.log(data.pokemon[pokemon]);
-
       pokemons.push(data.pokemon[pokemon]);
 
     }//endIf
@@ -20,6 +16,7 @@ export const filterData = (namePokemon, data) => {
 
 }//endFilterData
 
+/*
 export const filterEvolution = (pokemon, data) => {
 
   if (Object.keys(pokemon.evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
@@ -31,7 +28,7 @@ export const filterEvolution = (pokemon, data) => {
   return false;
 
 }//endFilterEvolution
-
+*/
 
 export const sortData = (data, sortBy, orderBy) => {
 
@@ -76,6 +73,7 @@ export const sortData = (data, sortBy, orderBy) => {
 
 }//endSortData
 
+
 export const computeStats = {
 
   calculatePokemonTypesInPercentages: function (data) {
@@ -94,12 +92,16 @@ export const computeStats = {
 
     for (const property in count) {
       count[property] = ((count[property] / totalNumberOfPokemons) * 100).toFixed(2);
-      plotChart(property, count[property]);
     }//endFor
+
+    return count;
 
   },//endCalculatePokemonTypesInPercentages
 
-  findTheHeigthPokemon: function (data) {
+
+  findTheTallestPokemon: function (data) {
+
+    const pokemons = [];
 
     const sizes = data.pokemon.map(object => {
       return parseFloat(object.size.height);
@@ -107,23 +109,21 @@ export const computeStats = {
 
     const max = Math.max(...sizes);
 
-    const min = Math.min(...sizes);
-
     for (const object in data.pokemon) {
 
       if (data.pokemon[object].size.height.includes(max)) {
-        buildCard("pokemonsHeight", data.pokemon[object]);
-      }//endIf
-
-      if (data.pokemon[object].size.height.includes(min)) {
-        buildCard("pokemonsHeight", data.pokemon[object]);
+        pokemons.push(data.pokemon[object]);
+        return pokemons;
       }//endIf
 
     }//endFor
 
   },//endFindTheHeigthPokemon
 
-  findTheWeightPokemon: function (data) {
+
+  findTheHeaviestPokemon: function (data) {
+
+    const pokemons = [];
 
     const sizes = data.pokemon.map(object => {
       return parseFloat(object.size.weight);
@@ -131,16 +131,11 @@ export const computeStats = {
 
     const max = Math.max(...sizes);
 
-    const min = Math.min(...sizes);
-
     for (const object in data.pokemon) {
 
       if (data.pokemon[object].size.weight.includes(max)) {
-        buildCard("pokemonsWeight", data.pokemon[object]);
-      }//endIf
-
-      if (data.pokemon[object].size.weight.includes(min)) {
-        buildCard("pokemonsWeight", data.pokemon[object]);
+        pokemons.push(data.pokemon[object]);
+        return pokemons;
       }//endIf
 
     }//endFor

@@ -18,9 +18,17 @@
         <label>
           <select id="select-status" class="btn-option">
             <option value="" selected disabled hidden>Status</option>
-            <option value="alive">Alive</option>
-            <option value="deceased">Dead</option>
-            <option value="dresumed dead">Presumed dead</option>
+            <option value="Alive">Alive</option>
+            <option value="Deceased">Dead</option>
+            <option value="Presumed dead">Presumed dead</option>
+          </select>
+        </label>
+
+        <label>
+          <select id="select-category" class="btn-option">
+            <option value="" selected disabled hidden>Series</option>
+            <option value="Better Call Saul">Better Call Saul</option>
+            <option value="Breaking Bad">Breaking Bad</option>
           </select>
         </label>
 
@@ -37,17 +45,14 @@
         </label>
 
         <label>
-          <input
-            type="text"
-            id="btn-search"
-            class="btn-option search"
-            placeholder="Search for a character"
-          />
+          <input type="text" id="btn-search" class="btn-option search" placeholder="Search for a character">
         </label>
       </div>
 
       <!--Aqui é a div dos cartões-->
       <div class="card-container" id="card-container"></div>
+
+      </div>
     </main>
 
     <footer>

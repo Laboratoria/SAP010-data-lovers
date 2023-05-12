@@ -67,9 +67,12 @@ const buildCard = (id, pokemon) => {
       <h1 id="name">${pokemon[i].name}</h1>
     </div>
     <div class="dataPokemon">
-      <p>Type: <span id="type">${pokemon[i].type}</span> </p>
-      <p>Height: <span id="type">${pokemon[i].size.height}</span> </p>
-      <p>Weigth: <span id="type">${pokemon[i].size.weight}</span> </p>
+      <p>Type: <span id="type">${pokemon.type}</span> </p>
+      <p>Height: <span id="type">${pokemon.size.height}</span> </p>
+      <p>Weigth: <span id="type">${pokemon.size.weight}</span> </p>
+      <p>Resistant: <span id="type">${pokemon.resistant}</span> </p>
+      <p>Weaknesses: <span id="type">${pokemon.weaknesses}</span> </p>
+      <p>Quick-moves: <span id="type">${pokemon['quick-move'][0]['base-damage']}</span> </p>
     </div>
     `;
 

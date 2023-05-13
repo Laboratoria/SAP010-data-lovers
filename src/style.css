@@ -8,9 +8,10 @@ header {
 
 .conteiner {
    background-color: transparent;
-   height: 400px;
+   height: 50px;
    width: 200px;
    text-align: center;
+      
 }
 
 
@@ -19,7 +20,7 @@ header {
    text-align: center;
    width: 110%;
    color: rgb(226, 226, 20);
-
+margin-top: 100px;
 }
 
 .btn2 {
@@ -30,8 +31,7 @@ header {
    font-weight: bold;
    border: 2px solid rgb(226, 123, 20);
    border-radius: 10px;
-   box-shadow: 2px 2px 5px rgb(43, 144, 226);
-
+   box-shadow: 2px 2px 5px rgb(226,226,20);
 }
 
 .welcome {
@@ -44,9 +44,12 @@ header {
 }
 
 .pok {
-   width: 200px;
-   height: 200px;
-   margin-left: 10px;
+   display: flex;
+   justify-content: start;
+   width: 250px;
+   height: 250px;
+   margin-left: 600px;
+   
 }
 
 .texto {

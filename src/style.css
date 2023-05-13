@@ -9,7 +9,8 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.9;
+    opacity: 0.98;
+
     }
 
     body {
@@ -26,6 +27,13 @@ html {
     img {
         width: 25%;
         margin: 25px 25px 25px 25px;
+    }
+    .pesquisa {
+        font-size: 20px;
+        font-weight: bold;
+        
+        
+        
     }
 
     footer, .link {

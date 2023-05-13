@@ -1,9 +1,15 @@
-// estas funciones son de ejemplo
+const sortData = { //objeto que agrupa 
+  data: function (ordenar){
+    return console.log(ordenar, 'aqui data');
+  },
 
-export const example = () => {
-  return 'example';
-};
+  sortBy: function (ordenar){
+    return console.log(ordenar, "aqui sortBy");
+  },
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+  sortOrder: function (ordenar){
+    return console.log(ordenar + "aqui sorOrder");
+  }
+}
+
+export default sortData; // exporta o objeto

@@ -116,7 +116,7 @@ body {
     display: flex;
     gap: 32px;
     flex-direction: column;
-    margin-left: 58px;
+    margin-left: 37px;
     
 }
 
@@ -129,7 +129,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-right: 64px;
+    margin-right: 90px;
     box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.5);
 }
 

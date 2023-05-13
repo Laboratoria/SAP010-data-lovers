@@ -5,40 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="language" content="pt-br">
-    
-
-    <!-- Main JS -->
-    <script defer="" src="./main.js"></script>
+    <title>pokemon</title>
+    <!--<link href= "style.css" rel="stylesheet" type="text/css">-->
   </head>
+   
+  
 
+  <h1><nav>
+    <a href="estatistica.html">
+      <div>Filtros de pesquisa</div>
+    </a>
+    <a href="estatistica.html">
+      <div> Estatisticas</div>
+    </a> 
+  </nav></h1>
+   
+  
   <body>
 
-    <img src="./pokedex-3d-logo.png" alt="pokemon" class="pokemonLogo">
 
-
+    <img src="./pokedex-3d-logo.png" alt="pokemon" class="pokemonLogo"><!--imagem do logo --> 
+   
     <main> 
       
-      <img src="https://pokeapi.co/api/v2/pokemon/${pokemon}" alt="pokemon" class="pokemon__image">
+      <img src="https://pokeapi.co/api/v2/pokemon" alt="pokemon" class="pokemon__image">
 
       <ul class="pokemon__data">
-        <span class="pokemon__number"></span> -
-        <span class="pokemon__name"></span>
-      </ul>
+        <strong><span class="pokemon__number"></span> -
+        <span class="pokemon__name"></span></strong>
 
-      <form class="form">
+        <li>Habilidades:</li>
+        <li class="pokemon__abilities"></li>
+
+       <form class="form">
         <input type="search" class="input__search" placeholder="Nome ou Numero " required="">
-      </form>
-
-      <ul class="buttons">
+       </form>
+      
+       <ul class="buttons" >
         <button class="button btn-prev">Voltar &lt;</button>
         <button class="button btn-next">Seguir &gt;</button>
-
-        
-      </lu>
-
-
+      </ul>
+       
+    
     </main>
 
+    <script src="main.js" type="module"></script>
+   
   </body>
 
 </html>

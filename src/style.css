@@ -1,9 +1,9 @@
 header {
-    background-color: rgb(43, 144, 226);
-    padding-left: 20px;
-    height: 150px;
-    width: 110%;
-    margin-top: 10px;
+   background-color: rgb(43, 144, 226);
+   padding-left: 20px;
+   height: 150px;
+   width: 110%;
+   margin-top: 10px;
 }
 
 .conteiner {
@@ -15,35 +15,45 @@ header {
 
 
 #footerText {
-    background-color: rgb(43, 144, 226);
-    text-align: center;
-    width: 110%;
+   background-color: rgb(43, 144, 226);
+   text-align: center;
+   width: 110%;
+   color: rgb(226, 226, 20);
 
 }
 
-  .btn1 {
-    max-width: 150px;
-    margin: 20px;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    border: 2px solid  rgb(43, 144, 226);
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px  rgb(43, 144, 226);
+.btn2 {
+   max-width: 150px;
+   margin: 20px;
+   padding: 10px;
+   font-size: 16px;
+   font-weight: bold;
+   border: 2px solid rgb(226, 123, 20);
+   border-radius: 10px;
+   box-shadow: 2px 2px 5px rgb(43, 144, 226);
 
- }
+}
 
-  .welcome {
-    padding-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(43, 144, 226);
-    font-family: sans-serif;
-    font-style: italic;
- }
+.welcome {
+   padding-top: 20px;
+   font-size: 30px;
+   font-weight: bold;
+   color: rgb(226, 226, 20);
+   font-family: sans-serif;
+   font-style: italic;
+}
 
- .pok {
-    width: 200px;
-    height: 200px;
-    margin-left: 10px;
- }
+.pok {
+   width: 200px;
+   height: 200px;
+   margin-left: 10px;
+}
+
+.texto {
+   display: flex;
+   justify-content: left;
+   padding-left: 800px;
+   width: 100px;
+   height: 100px;
+   font-family: sans-serif;
+}

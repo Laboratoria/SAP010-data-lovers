@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page1.css" />
+    <title>PokéData Go</title>
+</head>
+
+<body>
+    <header>
+    <figure><img class="logo" src="PokeData.png" alt="Logo PokeData Go" />
+        <img class="logo" src="Go.png" alt="Logo PokeData Go" /></figure>
+    </header>
+
+    <main>
+        <div class="conteiner">
+            <section class="card-main-display">
+                <nav class="nav1">
+                   <input type="text" placeholder="Search by name" class="input-search" id="searchByName" />
+                    <button id="cleanButton" class="clean-name">Clean</button>
+                  
+                    <select id="sortName" class="btn-name">
+                      <option value="Name">Name</option>
+                      <option value="A-Z">A-Z</option>
+                      <option value="Z-A">Z-A</option>
+                    </select>
+                        </select>
+                    </nav>
+            </section>
+
+            <button onclick="location.href='index.html'" class="btn3">Homepage</button>
+            <button onclick="location.href='page2.html'" class="btn3">Filter</button>
+            <button onclick="location.href='page2.html'" class="btn3">Compare</button>
+            
+            <figure><img class="pikachu" src="pikachu.gif" alt="gif de pikachu" /></figure>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p id="footerText">PokéData Go, 2023 <br><strong><em>Created by Cristyna Costa and Ninoska
+                    Contreras</em></strong></p>
+    </footer>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

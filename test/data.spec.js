@@ -2,7 +2,7 @@ import { filterData, sortData, computeStats } from '../src/data.js'
 import data from '../src/data/pokemon/pokemon.js';
 import sortedListForTest from './mocks/sortedListForTest.js';
 import pikachu from './mocks/pikachu.js';
-import haviestPokemon from './mocks/haviestPokemon.js';
+import sizesPokemon from './mocks/sizesPokemon.js';
 import ivysaur from './mocks/ivysaur.js';
 
 describe('filterData', () => {
@@ -65,9 +65,16 @@ describe('computeStats', () => {
     expect(typeof computeStats).toBe('object');
   });
 
-  describe('findTheHaviestPokemon', () => {
-    test('deveria retornar uma lista contendo o tipo de Pokemon pesquisado', () => {
-      expect(computeStats.findTheTallestPokemon(haviestPokemon)).toStrictEqual(ivysaur);
+  describe('findTheTallestPokemon', () => {
+    test('deveria retornar o Pokémon mais alto', () => {
+      expect(computeStats.findTheTallestPokemon(sizesPokemon)).toStrictEqual(ivysaur);
     });
   })
+
+  describe('findTheHaviestPokemon', () => {
+    test('deveria retornar o Pokémon mais pesado', () => {
+      expect(computeStats.findTheHeaviestPokemon(sizesPokemon)).toStrictEqual(ivysaur);
+    });
+  })
+
 });

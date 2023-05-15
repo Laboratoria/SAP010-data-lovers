@@ -53,8 +53,8 @@ const dataFunctions = {
     return filter;
   },  
 
-  calculatePercentage: function (sizeList, sizefilteredList) {
-    return Math.round((sizefilteredList * 100) / sizeList);
+  calculatePercentage: function (sizeList, sizeFilteredList) {
+    return Math.round((sizeFilteredList * 100) / sizeList);
   },
 };
 

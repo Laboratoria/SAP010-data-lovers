@@ -11,41 +11,16 @@
    </head>
 
   <body>
-    <div id="root">
+    <div id="root" class="container">
       <header>
-        <img src="img/logo-GOT.jpeg" alt="GameOfThrones">
+        <img src="img/logo-GOT.jpeg" alt="GameOfThrones" class="logo"> 
         <h1>Informações sobre os personagens</h1>
-                
+        
+        <div class="pesquisa">
         <input type="text"  placeholder="Pesquisa por nome">
 
         <label for="familia">Família:</label>
-        <select id="familia">
-          <option value="baelish">Baelish </option>
-          <option value="baratheon">Baratheon </option>
-          <option value="bolton"> Bolton</option>
-          <option value="bronn">Bronn </option>
-          <option value="blegane"> Clegane</option>
-          <option value="free Folk"> Free Folk</option>
-          <option value="greyjoy">Greyjoy </option>
-          <option value="lannister">Lannister </option>
-          <option value="lorathi"> Lorathi</option>
-          <option value="mormont">Mormont </option>
-          <option value="naathi">Naathi </option>
-          <option value="naharis">Naharis </option>
-          <option value="none">None </option>
-          <option value="qyburn">Qyburn </option>
-          <option value="sand">Sand </option>
-          <option value="seaworth">Seaworth </option>
-          <option value="sparrow">Sparrow </option>
-          <option value="stark">Stark </option>
-          <option value="targaryen">Targaryen </option>
-          <option value="tarly">Tarly </option>
-          <option value="tarth">Tarth </option>
-          <option value="tyrell">Tyrell </option>
-          <option value="unknown">Unknown </option>
-          <option value="viper">Viper </option>
-          <option value="worm">Worm </option>
-        </select>
+        <select id="selecionarFamilia"></select>
 
         <label for="ordenar">Ordem:</label>
         <select id="ordenar">
@@ -54,28 +29,28 @@
         </select>
         
         <button id="buscar">Pesquisar</button>
+        </div>
 
       </header>
 
       <main>
-        <div id="exibirCards" class="exibirCards"></div>
+        <div id="exibirCards"></div>
       </main>
 
       <footer>
-        <div class="link">
         <p >Fernanda Souza | <a href="https://github.com/fernanda-asouza" target="_blank" >GitHub</a> | <a
           href="https://www.linkedin.com/in/fernandaasouza/" target="_blank">LinkedIn</a>
         <p >Renata Ribeiro | <a href="https://github.com/rbcribeiro" target="_blank">GitHub</a> | <a
           href="https://www.linkedin.com/in/rbcribeiro/" target="_blank">LinkedIn</a>
         <p>Bootcamp Laboratoria 2023 </p>
-        </div>
+        
 
       </footer>
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@300;400&display=swap" rel="stylesheet">
-
+    </div>
     <script src="main.js" type="module"></script>
 
   </body>

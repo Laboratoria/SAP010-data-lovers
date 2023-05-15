@@ -67,8 +67,7 @@ describe('computeStats', () => {
 
   describe('findTheHaviestPokemon', () => {
     test('deveria retornar uma lista contendo o tipo de Pokemon pesquisado', () => {
-
-      expect(computeStats.findTheTallestPokemon(haviestPokemon)).toBe(ivysaur);
+      expect(computeStats.findTheTallestPokemon(haviestPokemon)).toStrictEqual(ivysaur);
     });
   })
 });

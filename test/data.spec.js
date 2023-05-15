@@ -4,7 +4,8 @@ import sortedListForTest from './mocks/sortedListForTest.js';
 import pikachu from './mocks/pikachu.js';
 import sizesPokemon from './mocks/sizesPokemon.js';
 import ivysaur from './mocks/ivysaur.js';
-
+import sortedListForTestZA from './mocks/sortedListForTestZA.js';
+//criar um index dentro da pasta mocks
 describe('filterData', () => {
   test('deveria ser uma função', () => {
     expect(typeof filterData).toBe('function');
@@ -37,14 +38,14 @@ describe('sortData', () => {
     expect(typeof sortData).toBe('function');
   });
 
-  test('deveria retornar uma lista ordenada de a-z', () => {
+  test('deveria retornar uma lista ordenada de A-Z', () => {
     const result = sortData(data, "steel", "a-z");
     expect(result).toStrictEqual(sortedListForTest);
   });
 
-  test('deveria retornar uma lista ordenada de z-a', () => {
-    const result = sortData(data, "steel", "a-z");
-    expect(result).toStrictEqual(sortedListForTest);
+  test('deveria retornar uma lista ordenada de Z-A', () => {
+    const result = sortData(data, "ghost", "z-a");
+    expect(result).toStrictEqual(sortedListForTestZA);
   });
 
 

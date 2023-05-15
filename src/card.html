@@ -6,7 +6,13 @@
     <link rel="stylesheet" type="text/css" href="card.css" />
   </head>
   <body>
-    <main>
+    <header>
+      <h1>Busque pelo seu personagem</h1>
+    </header>
+
+      <form class="busca">
+        <input type="search" value="" placeholder="Buscar personagem" class="busca" id="busca">
+      </form>
 
       <select id="select-filter" class="filter">
         <option value="" selected> Todos </option>
@@ -23,10 +29,15 @@
         <option value="a-z"> A - Z </option>
         <option value="z-a"> Z - A </option>
       </select>
-      
-      <form class="busca">
-        <input type="search" value="" placeholder="Buscar personagem" class="busca">
-      </form>
+
+    <main>
+
+      <section>
+        <!-- essa classe armazena todos os cards -->
+        <div class="container-card" id="infoCards"></div>
+      </section>
+
+    </main>
 
       <button class="btnBCS">
         <a href="https://www.youtube.com/watch?v=FAdiEjeNRi0&ab_channel=NetflixBrasil" target="_blank"> Trailer de Better Call Saul</a>
@@ -36,12 +47,8 @@
         <a href="https://www.youtube.com/watch?v=HhesaQXLuRY&ab_channel=TrailerBlend" target="_blank"> Trailer de Breaking Bad</a>
       </button>
 
-
-  
-    
-
       <div id="root"></div>
-    </main>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>

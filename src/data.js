@@ -74,7 +74,6 @@ export const sortData = (data, sortBy, orderBy) => {
     }//endIf
 
   }//endFor
-  console.log(pokemons);
   return pokemons;
 
 }//endSortData
@@ -108,11 +107,21 @@ export const computeStats = {
   findTheTallestPokemon: function (data) {
 
     const pokemons = [];
-
-    const sizes = data.pokemon.map(object => {
+    /*const sizes = data.pokemon.map(object => {
       return parseFloat(object.size.height);
-    });
-
+    });*/
+    let sizes = []
+    data.pokemon?sizes = data.pokemon.map(object =>
+      {
+        parseFloat(object.size.height);
+      })
+    /*let sizes = null
+    if (data.pokemon){
+      sizes = data.pokemon.map(object => {
+        return parseFloat(object.size.height);
+      });
+    }*/
+    console.log(sizes)
     const max = Math.max(...sizes);
 
     for (const object in data.pokemon) {

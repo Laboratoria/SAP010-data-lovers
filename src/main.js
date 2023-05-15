@@ -8,7 +8,7 @@ const selectStatus = document.querySelector("#select-status"); //Seletor de busc
 const selectCategory = document.querySelector("#select-category"); //Seletor de busca por séries em que o personagem participou.
 const searchForName = document.querySelector("#btn-search"); //cria busca por nome.
 const reset = document.querySelector("#reset"); //cria o argumento de reset.
-const percentage = document.querySelector("#percentage");
+const percentageElement = document.querySelector("#percentage");
 const selectOrder = document.querySelector("#select-order");
 
 function displayCards(characters) {
@@ -48,7 +48,7 @@ selectStatus.addEventListener("change", (event) => {
     characters.length,
     filteredList.length
   );
-  percentage.innerHTML =
+  percentageElement.innerHTML =
     "This category represents " + percentage + "% of the characters";
 });
 
@@ -62,7 +62,7 @@ selectCategory.addEventListener("change", (event) => {
     characters.length,
     filteredList.length
   );
-  percentage.innerHTML =
+  percentageElement.innerHTML =
     "This category represents " + percentage + "% of the characters";
 });
 
@@ -83,7 +83,4 @@ searchForName.addEventListener("keyup", function (event) {
   const filteredList = dataFunctions.searchName(characters, value);
   const cards = displayCards(filteredList);
   cardContainer.innerHTML = cards;
-
 });
-
-

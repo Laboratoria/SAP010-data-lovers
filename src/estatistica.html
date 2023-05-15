@@ -1,55 +1,83 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pesquisa</title>
-  <link rel="stylesheet" href="estatisticas.css"> 
-  <script src="estatistica.js" defer></script> 
-</head>
+  <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pesquisa</title>
+   <link rel="stylesheet" href="estatisticas.css"> 
+  </head>
 
-<body>
+  <h1><nav>
 
- 
+    <a href="index.html">
+      <div> HOME</div>
+    </a> 
 
-    <h1><label>Filtre seus pokemons:</label></h1>
+  </nav></h1>
+   
+  <body>
 
-    <ul id="pokemonListContainer">
+    <h1><label for="options1">Filtre seus pokemons:</label></h1>
+    
+    <form id="pokemon_list" class="pokemon_list">
+      <label for="ordenarpor">Ordenar por:</label>
+      <select class="options1" id="ordenarpor">
+        <option value="Selecione"></option>
+        <option value="id">ID</option>
+        <option value="height">Altura</option>
+        <option value="weight">Peso</option>
+        <option value="hp">HP</option>
+        <option value="attack">Ataque</option>
+        <option value="defense">Defesa</option>
+        <option value="speed">Velocidade</option>
+      </select>
 
-    <label for="options1">Ordenação:</label>
-    <select id="options1" class="options1">
-      <option value="a-z">A-Z</option>
-      <option value="z-a">Z-A</option>
-    </select>
+
+      <label for="options1">Ordenação:</label>
+      <select id="options1" class="options1">
+        <option value="a-z">A-Z</option>
+        <option value="z-a">Z-A</option>
+      </select>
+      
+
+      <button class="btn1" type="submit">Pesquisar</button>
+
+      <label for="TipoPokemon">Tipo:</label>
+      <select class="TipoPokemon" id="TipoPokemon">
+        <option value="">Todos</option>
+        <option value="normal">Normal</option>
+        <option value="fighting">Lutador</option>
+        <option value="flying">Voador</option>
+        <option value="poison">Veneno</option>
+        <option value="ground">Terra</option>
+        <option value="rock">Pedra</option>
+        <option value="bug">Inseto</option>
+        <option value="ghost">Fantasma</option>
+        <option value="steel">Aço</option>
+        <option value="fire">Fogo</option>
+        <option value="water">Água</option>
+        <option value="grass">Planta</option>
+        <option value="electric">Elétrico</option>
+        <option value="psychic">Psíquico</option>
+        <option value="ice">Gelo</option>
+        <option value="dragon">Dragão</option>
+        <option value="dark">Noturno</option>
+        <option value="fairy">Fada</option>
+      </select>
+    
+      <button class="btn2" type="submit">Pesquisar</button>
+    
+      <ul id="pokemon-list"></ul>
 
     
-  <label for="options2">Tipo:</label>
-    <select id="options2" class="options2">
-      <option value="chosenType">Tipo</option>
-      <option value="grass">Planta</option>
-      <option value="poison">Veneno</option>
-      <option value="fire">Fogo</option>
-      <option value="flying">Voador</option>
-      <option value="water">Água</option>
-      <option value="normal">Normal</option>
-      <option value="electric">Elétrico</option>
-      <option value="fighting">Luta</option>
-      <option value="psychic">Psíquico</option>
-      <option value="rock">Pedra</option>
-      <option value="ice">Gelo</option>
-      <option value="ghost">Fantasma</option>
-      <option value="dragon">Dragão</option>
-      <option value="fairy">Fada</option>
-      <option value="dark">Sombrio</option>
-      <option value="steel">Aço</option>
-    </select> 
+    
 
-    <button id="submit" class="btn">Pesquisar</button>
-
-    </ul>
+    
     </div>
-  
- </body>
+
+    <script src="estatistica.js" type="module"></script>
+
+  </body>
 
 </html>

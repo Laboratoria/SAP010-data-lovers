@@ -1,43 +1,87 @@
-let pokemonList = []; // Armazenar a lista de Pokémon
+const pokemon_List = document.querySelector('.pokemon_list');
+let pokemonList = [];
 
-fetch('"https://pokeapi.co/api/v2/characteristic?offset=20&limit=10"') // obter lista da API   .then(response => response.json())
-  .then(data => {
-    pokemonList = data.results;    
-    //console.log(pokemonList);
+fetch('https://pokeapi.co/api/v2/pokemon?limit=500&offset=0')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Não foi possível obter a lista de Pokémon');
+    }
+    return response.json();
   })
- 
-// Selecionar os elementos HTML
-const options1 = document.querySelector('#options1');
-const options2 = document.querySelector('#options2');
-const submitButton = document.querySelector('#submit');
-const pokemonListContainer = document.querySelector('#pokemonListContainer');
-
-
-submitButton.addEventListener('click', () => { // evento do botão pesquisar
-
-
-  const orderValue = options1.value; // valor selecionado para o filtro de ordenação
-
-  const typeValue = options2.value; // valor selecionado para o filtro de tipo
-
-  let filteredList = pokemonList; // filtra a lista de Pokémon com base no valor do filtro de tipo
-  if (typeValue !== 'chosenType') {
-    filteredList = filteredList.filter(pokemon => {
-      return pokemon.types.some(type => type.type.name === typeValue);
+  .then(data => {
+     pokemonList = data.results;
+    return Promise.all(pokemonList.map(pokemon => fetch(pokemon.url).then(res => res.json())));
+   })
+   .then(data => {
+     pokemonList = data.map(pokemon => {
+       return {
+        name: pokemon.name,
+        id: pokemon.id,
+        height: pokemon.height,
+        weight: pokemon.weight,
+        hp: pokemon.stats[0].base_stat,
+        attack: pokemon.stats[1].base_stat,
+        defense: pokemon.stats[2].base_stat,
+        speed: pokemon.stats[5].base_stat,
+        types: pokemon.types.map(type => type.type.name),
+        imageUrl: pokemon.sprites.other['official-artwork'].front_default // adicionando a URL da imagem do Pokémon
+      }
     });
-  }
 
-  // ordena a lista de Pokémon com base no valor do filtro de ordenação
-  if (orderValue === 'a-z') {
-    filteredList.sort((a, b) => a.name.localeCompare(b.name));
-  } else if (orderValue === 'z-a') {
-    filteredList.sort((a, b) => b.name.localeCompare(a.name));
-  }
+    displayPokemonList(pokemonList); // Corrigido para exibir a lista de todos os Pokémon após a busca.
+   })
+  .catch(error => {
+    console.log(error);
+   });
 
-  // exibe os Pokémon filtrados e ordenados na tela
-  filteredList.forEach(pokemon => {
+ function displayPokemonList(pokemonList) {
+   pokemon_List.innerHTML = '';
+  pokemonList.forEach(pokemon => {
     const listItem = document.createElement('li');
-    listItem.textContent = pokemon.name;
-    pokemonListContainer.appendChild(listItem);
-  });
+     listItem.innerHTML = `
+      <div class="pokemon_info">
+        <h3 class="pokemon_name">${pokemon.name}</h3>
+        <img src="${pokemon.imageUrl}" alt="${pokemon.name}">
+        <p>name: ${pokemon.name}</p>
+        <p>id: ${pokemon.id}</p>
+        <p>Weight: ${pokemon.weight}</p>
+        <p>HP: ${pokemon.hp}</p>
+        <p>Attack: ${pokemon.attack}</p>
+        <p>Defense: ${pokemon.defense}</p>
+//       <p>Speed: ${pokemon.speed}</p>
+        <p>Types: ${pokemon.types.join(', ')}</p> 
+    </div>
+    `; 
+     pokemon_List.appendChild(listItem);
+   });
+ }
+
+const ordenarPorElement = document.querySelector('#ordenarPorElement');
+const tipoPokemonElement = document.querySelector('#TipoPokemon');
+const btn1 = document.querySelector('.btn1');
+const btn2 = document.querySelector('.btn2');
+
+btn2.addEventListener('"click"', () => {
+  pokemonList.innerHTML = '';
+  
+  const orderValue = btn1.value;
+  const typeValue = btn2.value;
+  
+  let filteredList = [...pokemonList];
+  //console.log()
+  
+  if (typeValue) { // Corrigido para filtrar por typeValue em vez de orderValue
+    filteredList = filteredList.filter(pokemon => pokemon.type.includes(typeValue));
+
+  }
+  
+  if (orderValue) {
+    filteredList = filteredList.sort(pokemon => pokemon.pokemonList.includes(orderValue));
+
+
+  }
+  
+  displayPokemonList(filteredList);
 });
+
+

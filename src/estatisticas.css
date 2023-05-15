@@ -1,66 +1,41 @@
-/* Define uma fonte padrão para a página */
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Define uma largura máxima para o conteúdo da página */
-  .busca {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Estilo do título principal */
-  .busca h1 {
-    font-size: 32px;
-    margin-top: 0;
-  }
-  
-  /* Estilo da lista de Pokémon */
-  #pokemon-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #pokemon-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  #pokemon-list li img {
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-  }
-  
-  #pokemon-list li p {
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  /* Estilo dos selects e botão de pesquisa */
-  .options1,
-  .options2,
-  .btn {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-  }
-  
-  .btn {
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  /* Estilo para quando o botão de pesquisa estiver desabilitado */
-  .btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  
+/* Estilo para a lista de Pokémon */
+.pokemon_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo para cada item da lista de Pokémon */
+.pokemon_list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para a imagem do Pokémon */
+.pokemon_list li img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para o nome do Pokémon */
+.pokemon_list li p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Estilo para os stats do Pokémon */
+.pokemon_list li p:last-child {
+  font-size: 16px;
+  text-align: center;
+}

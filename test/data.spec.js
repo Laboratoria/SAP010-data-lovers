@@ -37,10 +37,16 @@ describe('sortData', () => {
     expect(typeof sortData).toBe('function');
   });
 
-  test('deveria retornar uma lista ordenada', () => {
+  test('deveria retornar uma lista ordenada de a-z', () => {
     const result = sortData(data, "steel", "a-z");
     expect(result).toStrictEqual(sortedListForTest);
   });
+
+  test('deveria retornar uma lista ordenada de z-a', () => {
+    const result = sortData(data, "steel", "a-z");
+    expect(result).toStrictEqual(sortedListForTest);
+  });
+
 
   test('deveria retornar uma lista contendo o tipo de Pokemon pesquisado', () => {
     const result = sortData(data, "ghost", "a-z");
@@ -74,6 +80,13 @@ describe('computeStats', () => {
   describe('findTheHaviestPokemon', () => {
     test('deveria retornar o Pokémon mais pesado', () => {
       expect(computeStats.findTheHeaviestPokemon(sizesPokemon)).toStrictEqual(ivysaur);
+    });
+  })
+
+  describe('calculatePokemonTypesInPercentages', () => {
+    test('deveria retornar um percentual válido', () => {
+      const percentual = computeStats.calculatePokemonTypesInPercentages(data)
+      expect(percentual.bug).toBe("8.76");
     });
   })
 

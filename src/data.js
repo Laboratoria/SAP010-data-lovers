@@ -1,15 +1,24 @@
-const sortData = { //objeto que agrupa 
-  data: function (ordenar){
-    return console.log(ordenar, 'aqui data');
-  },
+export const ordenarNomes = (ordenar) => {
+  ordenar.sort((a, b) => {
+    const nomeA = a.ordenarNomes.common.toUpperCase();
+    const nomeB = b.ordenarNomes.common.toUpperCase();
 
-  sortBy: function (ordenar){
-    return console.log(ordenar, "aqui sortBy");
-  },
+    if (nomeA < nomeB) {
+      return -1;
+    }
+    if (nomeA > nomeB) {
+      return 1;
+    }
+    return 0;
+  });
+};
 
-  sortOrder: function (ordenar){
-    return console.log(ordenar + "aqui sorOrder");
-  }
-}
+/*export const sortBy = (ordenar) => {
+  return console.log(ordenar, "aqui sortBy");
+};
 
-export default sortData; // exporta o objeto
+export const sortOrder = (ordenar) => {
+  return console.log(ordenar + "aqui sorOrder");
+}*/
+
+

@@ -1,49 +1,82 @@
 
 html {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    color: antiquewhite;
-    background-color: black;
-    background-image: url("img/papel-de-parede.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: 0.98;
+ width: 99%;
+ height: auto; 
+  text-align: center;
+  color: antiquewhite;
+  background-color: black;
+  background-image: url("img/papel-de-parede.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.98;
+}
 
-    }
 
-    body {
-        position: relative;
-        min-height: 100vh;
-      }
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+  position: relative;
+  min-height: 100vh;
+}
 
-    h1 {
-        font-family: 'Grenze', serif;
-        font-size: 40px;
+.container {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  border-radius: 50px 50px 50px 50px;
+}
+
+h1 {
+  font-family: 'Grenze', serif;
+  font-size: 40px;
+}
+
+.logo {
+  width: 25%;
+  margin: 25px 25px 25px 25px;
+ }
+
+.pesquisa {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+      
+#exibirCards img {
+  display: flex;
+  flex-wrap: wrap; /* exibe os itens em linha */
+  box-sizing: border-box; /* inclui a largura da borda e do padding no width */
+  height: 300px;
+  width: 300px;
+  justify-content: center; 
+  text-align: center; 
+  padding: 20px;
+  margin: 70px 0 0 0;
+  object-fit: cover;
+}
+
+#exibirCards{
+  display: flex;
+  flex-wrap: wrap; /* exibe os itens em linha */
+  box-sizing: border-box; /* inclui a largura da borda e do padding no width */
+  width: 100%;
+  justify-content: center;  
+  padding: 20px;
+  }
+
+  footer {
+    background-color: #d1cfce28;
+    padding: 10px;
     
-    }
 
-    img {
-        width: 25%;
-        margin: 25px 25px 25px 25px;
-    }
-    .pesquisa {
-        font-size: 20px;
-        font-weight: bold;
-        
-        
-        
-    }
+  }
+  
+  footer a {
+  color: #D1CFCE;
+  }
 
-    footer, .link {
-        border-radius: 0 0 50px 50px;
-        padding-bottom: 50px;
-        color: #D1CFCE;
-        padding: 8px 8px 8px 8px;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        padding: 5px;
-      }
+
+ 

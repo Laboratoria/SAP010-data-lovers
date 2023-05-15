@@ -3,11 +3,12 @@
   padding: 0;
 }
 
-:root { /*paleta de cores */
+:root {
+  /*paleta de cores */
   --green: #7cb29c;
   --dark-blue: rgb(10, 24, 35);
   --light-blue: #c9dbd4;
-  --white: rgb(240, 248, 255);#c9dbd4
+  --white: rgb(240, 248, 255);
 }
 
 body {
@@ -78,7 +79,7 @@ header {
 .search {
   background-color: var(--white);
   font-size: 0.9rem;
-  width: 20vw
+  width: 20vw;
 }
 
 main {
@@ -103,7 +104,6 @@ main {
   font-family: monospace;
 }
 
-
 .card-container {
   display: flex; /* alinhamento dos cards. */
   flex-wrap: wrap; /* alinhamento dos cards. */
@@ -113,11 +113,11 @@ main {
 }
 
 .percentage-container {
-  width: 100%; 
+  width: 100%;
   height: 20px;
   border-radius: 5px;
   display: flex;
-  flex-wrap: wrap;    
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   color: white;

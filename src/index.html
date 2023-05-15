@@ -3,38 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="navBar">
-        <div class="logo">
-          <a href="#"><img class="logoTopo" src="img/globo.png"></a>
-        </div>
-        <h1>TravelCode&copy;</h1>
-        <div class="menu">
-          <!-- <button class="btn-menu">Início</button> -->
-        </div>
+    <div class="big-container">
+      <div class="small-container">
+        <header>
+          <div class="logo">
+            <h1>TravelCode&copy;</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="paises.html">Países</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+          </nav>     
+        </header>
+        <section class="form1">
+          <h2>TravelCode&copy;</h2> 
+          <p>Seja bem-vindo(a), <br>
+             Use nossos filtros para descobrir fatos sobre população, idioma e muito mais. Conheça tudo o que precisa sobre a geografia de qualquer país em alguns cliques!</p>
+          <a href="paises.html" class="active">Vamos lá!</a>
+        </section>
+        <footer>
+          <p>Desenvolvido por <a href="https://github.com/carolprotasio" target="_blank"><ion-icon name="logo-github"></ion-icon> Carol Protásio</a> e <a href="https://github.com/raquel-maia" target="_blank"><ion-icon name="logo-github"></ion-icon> Raquel Maia</a></p>          
+        </footer>
+        <video src="video/earth.mp4" autoplay muted loop></video>
       </div>
-    </header>
-  
-    <main class="card">
-      <div class="container">
-        <div class="cardContainer">
-          <h2>Bem-vindo(a) ao TravelCode!<br><br> você encontra informações detalhadas sobre países e continentes incluindo bandeiras. Use nossos filtros para descobrir fatos sobre população, idioma e muito mais. Conheça tudo o que precisa sobre qualquer país em alguns cliques!</h2>
-        </div>
-
-        <div class="buttonHome">
-          <a href="pg.html">
-            <button class="homeOne">Realize seu FIltro Aqui</button>
-          </a>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>Desenvolvido por <a href="https://github.com/carolprotasio" target="_blank"><ion-icon name="logo-github"></ion-icon> Carol Protásio</a> e <a href="https://github.com/raquel-maia" target="_blank"><ion-icon name="logo-github"></ion-icon> Raquel Maia</a></p>
-      <p>testando</p>
-    </footer>
+    </div>
+   
     <script src="main.js" type="module"></script>
     <script
       type="module"
@@ -43,6 +43,7 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    >
+  </script>
   </body>
 </html>

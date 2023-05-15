@@ -1,4 +1,4 @@
-// Importa a lista de países em JSON
+/* // Importa a lista de países em JSON
 import countries from "./countries.json";
 
 // Objeto que mapeia as sub-regiões para identificadores
@@ -48,7 +48,7 @@ filterAmericaNorte
 };
 
 
-/* Objeto que mapeia cada continente para identificadores
+//Objeto que mapeia cada continente para identificadores
 
 
 const continents = {
@@ -64,12 +64,12 @@ const countryContinents = {};
 // Loop através de cada país para mapeá-lo para o continente correspondente
 
 // Percorre a lista de países e adiciona cada país ao seu continente correspondente
-data.countries.forEach((country) => {
-if (country.continents.includes("Asia")) {
-    if (!countryContinents.Asia) {
-    countryContinents.Asia = [];
+countries.forEach((country) => {
+if (continents[country.continents]) {
+    if (!countryContinents[continents[country.continents]]) {
+    countryContinents[continents[country.continents]] = [];
     }
-    countryContinents.Asia.push(country);
+    countryContinents[continents[country.continents]].push(country);
 }
 
   // Repita para outros continentes, conforme necessário
@@ -77,8 +77,8 @@ if (country.continents.includes("Asia")) {
 
 
 /* Função que retorna a lista de países da Ásia */
-/* function filterAsia() {
-    return data.features.filter((country) => country.properties.continents.includes("Asia"));
+/*function filterAsia() {
+    return countryContinents.asia || [];
 }
 
 // Função que retorna a lista de países da Europa
@@ -90,11 +90,16 @@ return countryContinents.europa || [];
 function filterOceania() {
 return countryContinents.oceania || [];
 }
+// Função que retorna a lista de países da Afica
+function filterAfrica() {
+return countryContinents.africa || [];
+}
 
 // Exporta um objeto com a lista completa de países e as funções de filtro por continente
 export const countriesByContinents = {
 countries,
 filterAsia,
 filterEuropa,
-filterOceania
-};  */  
+filterOceania,
+filterAfrica,
+};   */

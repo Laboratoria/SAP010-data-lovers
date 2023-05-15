@@ -1,5 +1,5 @@
 test('fetchPokemon deve retornar os dados do pokemon correto', async ()=>{
-
+//teste
 
 const pokemonName= 'pikachu';
 const pokemonData= await fetchPokemon (pokemonName);

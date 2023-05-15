@@ -71,7 +71,7 @@ selectOrder.addEventListener("change", (event) => {
   const orderedList = dataFunctions.order(characters, value);
   const cards = displayCards(orderedList);
   cardContainer.innerHTML = cards;
-  percentage.innerHTML = "";
+  percentageElement.innerHTML = "";
 });
 
 reset.addEventListener("click", (event) => {

@@ -1,12 +1,14 @@
 const dataFunctions = {
-  filter: function (characters, value, key) { /*esta função faz o filtro de todas as categorias */
+  filter: function (characters, value, key) {
+    /*esta função faz o filtro de todas as categorias */
+    console.log(characters, value, key);
     const filter = characters.filter(function (character) {
-      const filtered = character[key].includes(value)
-      
+      const filtered = character[key].includes(value);
+
       return filtered;
     });
-  
-    return filter; 
+    console.log({ filter });
+    return filter;
   },
 
   ascending: function (characters) {
@@ -53,8 +55,8 @@ const dataFunctions = {
     return filter;
   },  
 
-  calculatePercentage: function (sizeList, sizefilteredList) {
-    return Math.round((sizefilteredList * 100) / sizeList);
+  calculatePercentage: function (sizeList, sizeFilteredList) {
+    return Math.round((sizeFilteredList * 100) / sizeList);
   },
 };
 

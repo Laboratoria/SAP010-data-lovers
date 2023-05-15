@@ -17,8 +17,8 @@ describe('filterData', () => {
   test('deveria encontrar retornar a próxima evolução do Pokémon, se houver', () => {
     const pokemons = filterData("bulbasaur", data);
     let namePokemonNextEvolution = "";
-    for(let i = 0; i < pokemons.length; i++){
-      if(pokemons[i].name.includes("ivysaur"))
+    for (let i = 0; i < pokemons.length; i++) {
+      if (pokemons[i].name.includes("ivysaur"))
         namePokemonNextEvolution = pokemons[i].name;
     }
     expect(namePokemonNextEvolution).toBe("ivysaur");
@@ -47,12 +47,12 @@ describe('sortData', () => {
     let everyType = false;
     let count = 0;
 
-    for(let i = 0; i < result.length; i++){
+    for (let i = 0; i < result.length; i++) {
       console.log(result[i].type.includes("ghost"))
-      if(result[i].type.includes("ghost")){
+      if (result[i].type.includes("ghost")) {
         count += 1;
       }
-      if(count === result.length){
+      if (count === result.length) {
         everyType = true;
       }
     }
@@ -66,10 +66,10 @@ describe('computeStats', () => {
     expect(typeof computeStats).toBe('object');
   });
 
-descibre ('findTheHaviestPokemon',() =>{
+  describe('findTheHaviestPokemon', () => {
     test('deveria retornar uma lista contendo o tipo de Pokemon pesquisado', () => {
-    
- expect(computeStats.findTheTallestPokemon(haviestPokemon)).toBe(ivysaur);
-  });
-})
+
+      expect(computeStats.findTheTallestPokemon(haviestPokemon)).toBe(ivysaur);
+    });
+  })
 });

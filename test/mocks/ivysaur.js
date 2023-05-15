@@ -1,5 +1,4 @@
-
-export default[
+export default [
   {
     "num": "002",
     "name": "ivysaur",
@@ -97,4 +96,5 @@ export default[
         "candy-cost": "25"
       }]
     }
-    }]
+  }
+]

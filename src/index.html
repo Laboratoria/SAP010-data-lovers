@@ -17,9 +17,9 @@
         <div class="card">
           <div class="card-wrapper"> 
             <div class="header">
-              <p>No. 001</p>
-              <p>Kanto</p>
-              <p>Normal</p>
+              <p id="text-poke-num"></p>
+              <p id="text-poke-generation-name"></p>
+              <p id="text-poke-rarity"></p>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
                 <p>Height</p>
               </div>
 
-              <p>0.71 m</p>
+              <p id="text-poke-height"></p>
             </div>
             <!-- FIM Cards de informações -->
             
@@ -44,7 +44,7 @@
                 <p>Weight</p>
               </div>
 
-              <p>6.9 kg</p>
+              <p id="text-poke-weight"></p>
             </div>
             <!-- FIM Cards de informações -->
             
@@ -54,22 +54,22 @@
                 <p>Candy</p>
               </div>
 
-              <p>25</p>
+              <p id="text-poke-candy"></p>
             </div>
             <!-- FIM Cards de informações -->
 
           </div>
 
           <div class="picture">
-            <img src="https://www.serebii.net/pokemongo/pokemon/001.png" alt="Bulbasaur">
-            <p>Bulbasaur</p>
+            <img id="image-poke">
+            <p id="text-poke-name"></p>
           </div>
         </div>
 
 
 
         <div class="description-pokemon">
-          <p>Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.</p>
+          <p id="text-poke-about"></p>
         </div>
 
 
@@ -77,7 +77,9 @@
 
       </div>
       
-      
+      <p>
+        <input id="pokemonname"/>
+      </p>
       
       <div class="list"></div>
     </div>

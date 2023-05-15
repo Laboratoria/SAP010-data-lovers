@@ -26,8 +26,8 @@ export const filterPokemonByStr = (data, str) => {
   const pokemons = data.pokemon
 
   const pokemonsFiltered = pokemons.filter(pokemon => {
-    return pokemon.name.includes(str)
-        || pokemon.type.some(type => type.includes(str))
+    return pokemon.name.includes(str.toLowerCase())
+        || pokemon.type.some(type => type.includes(str.toLowerCase()))
         || parseInt(pokemon.num) === parseInt(str)
   })
 

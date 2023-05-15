@@ -1,12 +1,31 @@
+
 export const filterData = (namePokemon, data) => {
 
   const pokemons = [];
 
   for (const pokemon in data.pokemon) {
 
-    if (data.pokemon[pokemon].name.includes(namePokemon.toLowerCase())) {
+    namePokemon = namePokemon.toLowerCase();
+
+    if (data.pokemon[pokemon].name.includes(namePokemon)) {
 
       pokemons.push(data.pokemon[pokemon]);
+
+      if (Object.keys(data.pokemon[pokemon].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
+
+        const idNextEvolution = data.pokemon[pokemon].evolution['next-evolution'][0].num;
+
+        for(const evolution in data.pokemon){
+
+          if(data.pokemon[evolution].num.includes(idNextEvolution)){
+
+            pokemons.push(data.pokemon[evolution]);
+
+          }//endIf
+
+        }//endFor
+
+      }//endIf
 
     }//endIf
 
@@ -16,19 +35,6 @@ export const filterData = (namePokemon, data) => {
 
 }//endFilterData
 
-/*
-export const filterEvolution = (pokemon, data) => {
-
-  if (Object.keys(pokemon.evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
-
-    return filterData(pokemon.evolution['next-evolution'][0].name, data);
-
-  }//endIf
-
-  return false;
-
-}//endFilterEvolution
-*/
 
 export const sortData = (data, sortBy, orderBy) => {
 
@@ -68,7 +74,7 @@ export const sortData = (data, sortBy, orderBy) => {
     }//endIf
 
   }//endFor
-
+  console.log(pokemons);
   return pokemons;
 
 }//endSortData

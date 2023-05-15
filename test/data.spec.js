@@ -48,7 +48,6 @@ describe('sortData', () => {
     let count = 0;
 
     for (let i = 0; i < result.length; i++) {
-      console.log(result[i].type.includes("ghost"))
       if (result[i].type.includes("ghost")) {
         count += 1;
       }

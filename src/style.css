@@ -1,30 +1,53 @@
-
+@import url('https://fonts.google.com/specimen/Oxanium?query=oxanium');
 
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
-  font-family: 'Oxanium', cursive;
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family:'Oxanium', cursive;
+
 }
 
 body {
-  text-align: center;
-  background: linear-gradient(to bottom, #6ab7f5, #fff);
-  min-height: 100vh;
+    text-align: center;
+    background:linear-gradient(to bottom,#797575,#3b3a3a );
+    min-height: 100vh;
+    display:inline-block;
+
+}
+main{
+    text-align: center;
+    display:inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
 }
 
-main {
-  display: inline-block;
-  margin-top: 2%;
-  padding: 15px;
-  position: relative;
+.pokebola {
+width: 100%;
+max-width: 425px;
+
 }
 
-.pokedex {
-  width: 100%;
-  max-width: 425px;
+.logo {
+    
+    
 }
+.pokemon__image{
+position: absolute;
+bottom: 55%;
+left: 50%;
+transform: translate(-40%,80%);
+height:18% ;
+}
+
+.pokedexnova{
+   
+margin: 10%;
+     
+}
+
 
 .pokemon__image {
   position: absolute;
@@ -48,28 +71,20 @@ main {
   text-transform: capitalize;
 }
 
-.filtro { /* formulário de filtros habilidades / região */
-  position: absolute;
-  width: 160%;
-  top: 5%;
-  left: 1%;
-  
-}
-
-
-.form { /* formulário nome ou numero*/
+.form {
   position: absolute;
   width: 65%;
+  top: 65%;
   left: 13.5%;
 }
 
-.input__search { 
+.input__search {
   width: 100%;
-  padding: 2%;
+  padding: 4%;
   outline: none;
   border: 2px solid #333;
   border-radius: 5px;
-  font-weight: 600px;
+  font-weight: 600;
   color: #3a444d;
   font-size: clamp(8px, 5vw, 1rem);
   box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
@@ -101,5 +116,6 @@ main {
   box-shadow: inset -4px 4px 0 #222;
   font-size: 0.9rem;
 }
+
 
 

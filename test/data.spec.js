@@ -2,13 +2,14 @@ import { filterData, sortData, computeStats } from '../src/data.js'
 import data from '../src/data/pokemon/pokemon.js';
 import sortedListForTest from './mocks/sortedListForTest.js';
 import pikachu from './mocks/pikachu.js';
+import haviestPokemon from './mocks/haviestPokemon.js';
+import ivysaur from './mocks/ivysaur.js';
 
 describe('filterData', () => {
   test('deveria ser uma função', () => {
     expect(typeof filterData).toBe('function');
   });
 
-  //entender poorque o toBe() teve que ser substituído pelo toStricEqual()
   test('deveria encontrar o nome do Pokémon mesmo se o input contiver letras maisculas', () => {
     expect(filterData("PIKACHU", data)).toStrictEqual(pikachu);
   });
@@ -65,4 +66,10 @@ describe('computeStats', () => {
     expect(typeof computeStats).toBe('object');
   });
 
+descibre ('findTheHaviestPokemon',() =>{
+    test('deveria retornar uma lista contendo o tipo de Pokemon pesquisado', () => {
+    
+ expect(computeStats.findTheTallestPokemon(haviestPokemon)).toBe(ivysaur);
+  });
+})
 });

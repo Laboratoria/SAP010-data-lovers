@@ -15,9 +15,9 @@ export const filterData = (namePokemon, data) => {
 
         const idNextEvolution = data.pokemon[pokemon].evolution['next-evolution'][0].num;
 
-        for(const evolution in data.pokemon){
+        for (const evolution in data.pokemon) {
 
-          if(data.pokemon[evolution].num.includes(idNextEvolution)){
+          if (data.pokemon[evolution].num.includes(idNextEvolution)) {
 
             pokemons.push(data.pokemon[evolution]);
 
@@ -35,20 +35,20 @@ export const filterData = (namePokemon, data) => {
 
 }//endFilterData
 
-
-export const sortData = (data, sortBy, orderBy) => {
+const alphabetical = (orderBy, data) => {
 
   if (orderBy === 'a-z') {
 
-    data.pokemon.sort(function (a, b) {
+    data.pokemon.sort((a, b) => {
       if (a.name < b.name) {
         return -1;
       }
 
     });
 
-  } else if (orderBy === 'z-a') {
-    data.pokemon.sort(function (a, b) {
+  }
+  if (orderBy === 'z-a') {
+    data.pokemon.sort((a, b) => {
       if (a.name > b.name) {
         return -1;
       }
@@ -56,6 +56,48 @@ export const sortData = (data, sortBy, orderBy) => {
     });
 
   }//endIf
+
+}//endAlphabetical
+
+const pokedexNumber = (orderBy, data) => {
+
+  console.log(data.pokemon)
+
+  if (orderBy === 'asc') {
+
+    data.pokemon.sort((a, b) => {
+
+      if (a.num < b.num) {
+        return -1;
+      }
+
+    });
+
+  }
+
+  if (orderBy === 'desc') {
+
+    data.pokemon.sort((a, b) => {
+
+      if (a.num > b.num) {
+        return -1;
+      }
+
+    });
+
+  }//endIf
+
+}//endStrength
+
+export const sortData = (data, sortBy, orderBy) => {
+
+  if (orderBy === 'a-z' || orderBy === 'z-a') {
+    alphabetical(orderBy, data);
+  }
+
+  if (orderBy === 'asc' || orderBy === 'desc') {
+    pokedexNumber(orderBy, data);
+  }
 
   const pokemons = [];
 

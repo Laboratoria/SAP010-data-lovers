@@ -34,6 +34,14 @@ export function orderByAlphabetical(array) {
   return filteredCountries;
 }
 
+//==============FILTRAR por total de população==============
+
+// Função para calcular a população total de uma lista de países
+export const calculatePopulation = (countries) => {
+  return countries.reduce((totalPopulation, country) => {
+    return totalPopulation + country.population;
+  }, 0);
+};
 
 
 

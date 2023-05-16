@@ -1,11 +1,12 @@
 // Importa os dados dos países
-import { filterBySubregion, filterByContinent, orderByAlphabetical } from './data.js'; 
+import { filterBySubregion, filterByContinent, orderByAlphabetical, calculatePopulation } from './data.js'; 
 import data from "./data/countries/countries.js";
 
 // Seleciona os elementos do seletor, da lista de países e do seletor de continentes
 const selectorElement = document.querySelector("#selector");
 const countryListElement = document.querySelector(".bandeiras");
 const continentSelectorElement = document.querySelector("#seletor_continent");
+const populationResultElement = document.querySelector("#populationResult");
 
 
 
@@ -112,5 +113,51 @@ selectorElement.addEventListener("change", (event) => {
 
 
 
-/*=======================CALCULO TOTAL DA POPULAÇÃO ================*/
+/*======================= CALCULO TOTAL DA POPULAÇÃO ================*/
 
+
+/* // Função para calcular a população total de uma lista de países
+const calculatePopulation = (countries) => {
+  return countries.reduce((totalPopulation, country) => {
+    return totalPopulation + country.population;
+  }, 0);
+}; */
+
+// Função para exibir a população total e a região no elemento populationResultElement
+const displayPopulation = (region, population) => {
+  populationResultElement.innerHTML = 
+  `<strong>População total de ${region}: ${population.toLocaleString("br-PT")}</strong>`;
+};
+
+continentSelectorElement.addEventListener("change", (event) => {
+  const value = event.target.value;
+  let filteredCountries = [];
+  let region = "";
+
+  if (value === "amer_central") {
+    region = "América Central";
+    filteredCountries = filterBySubregion("Central America", data);
+  } else if (value === "amer_sul") {
+    region = "América do Sul";
+    filteredCountries = filterBySubregion("South America", data);
+  } else if (value === "amer_norte") {
+    region = "América do Norte";
+    filteredCountries = filterBySubregion("North America", data);
+  } else if (value === "asia") {
+    region = "Ásia";
+    filteredCountries = filterByContinent("Asia", data);
+  } else if (value === "africa") {
+    region = "África";
+    filteredCountries = filterByContinent("Africa", data);
+  } else if (value === "oceania") {
+    region = "Oceania";
+    filteredCountries = filterByContinent("Oceania", data);
+  } else if (value === "europa") {
+    region = "Europa";
+    filteredCountries = filterByContinent("Europe", data);
+  }
+
+  renderCountryList(filteredCountries);
+  const totalPopulation = calculatePopulation(filteredCountries);
+  displayPopulation(region, totalPopulation);
+});

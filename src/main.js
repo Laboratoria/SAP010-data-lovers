@@ -30,7 +30,7 @@ function infoAllCards (data) {
 }
 infoAllCards(dadosSerie); //referente a const que virou de objeto para array
 
-// pesquisar por nome
+//pesquisar por nome
 const pesquisarNome = document.getElementById("busca");
 
 pesquisarNome.addEventListener("input", Event => {
@@ -40,4 +40,4 @@ pesquisarNome.addEventListener("input", Event => {
   infoAllCards(nomeFiltrado);
 });
 
-//console.log(data);
+console.log(data);

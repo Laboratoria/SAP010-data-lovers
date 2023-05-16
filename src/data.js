@@ -1,3 +1,5 @@
+export {sortByName, searchByNum ,filterByType, searchByName,};
+
 
 import data from './data/pokemon/pokemon.js';
 

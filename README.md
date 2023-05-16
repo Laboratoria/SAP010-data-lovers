@@ -85,9 +85,9 @@ Este são os dados que propomos:
   lista com personagens da série Breaking Bad.
   - [Pesquisa com seguidores Breaking Bad](src/data/breakingbad/README.pt.md)
 
-* [Países](src/data/breakingbad/breakingbad.json): Neste conjunto você encontrará uma
+* [Países](src/data/countries/countries.json): Neste conjunto você encontrará uma
   lista de países.
-  - [Pesquisa com estudantes de geografia](src/data/breakingbad/README.pt.md)
+  - [Pesquisa com estudantes de geografia](src/data/countries/README.pt.md)
 
 * [Game of Thrones](src/data/got/got.json): Neste conjunto você encontrará uma
   lista com personagens da série Breaking Bad.

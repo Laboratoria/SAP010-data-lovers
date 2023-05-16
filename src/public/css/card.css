@@ -1,0 +1,24 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  height: 24rem;
+  background: #fff;
+  border-radius: 0.8rem;
+  padding: 1rem 1rem;
+}
+
+.card:nth-child(-n+3) {
+  margin-top: 1rem;
+}
+
+.card:nth-last-child(-n+3) {
+  margin-bottom: 1rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./">
+        <img src="./images/logo.svg" width="136" height="32" alt="logo">
+      </a>
+
+      <nav aria-label="primaria">
+        <ul class="header-menu">
+          <li><a href="./">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="main-menu">
+      <ul>
+        <li class="menu-itens">
+          <a href="colocar o link que vai redirecionar" class="menu-link">Ordenar</a>
+        </li>
+
+        <li class="menu-itens">
+          <a href="colocar o link que vai redirecionar" class="menu-link">Temporadas</a>
+        </li>
+
+        <li class="menu-itens">
+          <a href="colocar o link que vai redirecionar" class="menu-link">Epsódios</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="container characters">
+      <% for (let i = 0; i < characters.length; i++) {%>
+      <div class="card">
+        <div class="character">
+          <img src="<%= characters[i].image %>" alt="">
+          <div class="character_info">
+            <a href="./" class="character_name">
+              <%= characters[i].fullName %>
+            </a>
+          </div>
+        </div>
+      </div>
+      <% } %>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="copyright">
+      <h4>Vitória Lins de Miranda <br> Raquel Biondi de Sylos Mello e Souza</h4>
+    </div>
+  </footer>
+  <!-- <script src="main.js" type="module"></script> -->
+</body>
+
+</html>

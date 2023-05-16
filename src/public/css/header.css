@@ -1,0 +1,25 @@
+.header-bg {
+  background-color: #000000;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-menu a {
+  display: inline-block;
+  padding: 16px 0px; /* Aumentar área de contato do botão */
+  position: relative;
+}

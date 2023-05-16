@@ -1,17 +1,32 @@
-export const ordenarNomes = (ordenar) => {
-  ordenar.sort((a, b) => {
-    const nomeA = a.ordenarNomes.common.toUpperCase();
-    const nomeB = b.ordenarNomes.common.toUpperCase();
+export const ordenarNomes = (personagens, ordem) => {
+  let listaOrdenada = sort(personagens); // chamando a função que ordena de forma crescente
+  if (ordem === 'za'){
+    listaOrdenada = listaOrdenada.reverse(); //inverte a lista ordenada para decrescente
+  }
+  return listaOrdenada;
+};
 
-    if (nomeA < nomeB) {
+// export const ordenarNomes = (personagens, ordem) => {
+//   if (ordem === 'az'){
+//     return sort(personagens);
+//   } else {
+//     const listaCrescente = sort(personagens);
+//     return listaCrescente.reverse(); 
+//   }
+// };
+
+function sort(personagens) {
+  return personagens.sort((a, b) => {
+    if (a.fullName < b.fullName) {
       return -1;
     }
-    if (nomeA > nomeB) {
+    if (a.fullName > b.fullName) {
       return 1;
     }
     return 0;
   });
-};
+}
+
 
 /*export const sortBy = (ordenar) => {
   return console.log(ordenar, "aqui sortBy");

@@ -1,8 +1,8 @@
 
 html {
- width: 99%;
- height: auto; 
+  width: 99%;
   text-align: center;
+  justify-content: center;  
   color: antiquewhite;
   background-color: black;
   background-image: url("img/papel-de-parede.jpg");
@@ -15,33 +15,38 @@ html {
 
 body {
   width: 100%;
-  display: flex;
-  justify-content: center;  
   position: relative;
   min-height: 100vh;
 }
 
 .container {
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  border-radius: 50px 50px 50px 50px;
+  display: flex;
 }
 
-h1 {
-  font-family: 'Grenze', serif;
-  font-size: 40px;
+.bloco{
+  display: inline-block; 
+  font-size: 20px;
+  height: 40px;
+  width: 100%;
+
+
 }
 
 .logo {
-  width: 25%;
-  margin: 25px 25px 25px 25px;
- }
-
-.pesquisa {
-  font-size: 20px;
-  font-weight: bold;
+  float: left;
+  padding: 10%;
+  width: 40%;
+  margin: auto ;
+  
 }
+ 
+.ladoDireito{
+  width: 80%;
+  float: right;
+  font-family: 'Grenze', serif;
+  margin: 100px 0 0 100px; 
+  }
+
 
 
       
@@ -67,6 +72,10 @@ h1 {
   padding: 20px;
   }
 
+  select {
+    width: 100px;
+    height: 20px;
+   }
   footer {
     background-color: #d1cfce28;
     padding: 10px;
@@ -77,6 +86,7 @@ h1 {
   footer a {
   color: #D1CFCE;
   }
+
 
 
  

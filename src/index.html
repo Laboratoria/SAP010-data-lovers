@@ -13,24 +13,24 @@
   <body>
     <div id="root" class="container">
       <header>
-        <img src="img/logo-GOT.jpeg" alt="GameOfThrones" class="logo"> 
-        <h1>Informações sobre os personagens</h1>
-        
-        <div class="pesquisa">
-        <input type="text"  placeholder="Pesquisa por nome">
+        <div class="bloco">
+          <img src="img/logo-GOT.jpeg" alt="GameOfThrones" class="logo"> 
+          
+          <div class="ladoDireito"></div>
+            <p>Digite o nome do personagem</p>
+            
+            <input type="text"  placeholder="Nome do personagem">
+            <button id="buscar">Pesquisar</button><br><br>
+      
+            <p>Filtrar por:</p>
+            <label for="familia">Família</label>
+            <select id="selecionarFamilia"></select><br>
 
-        <label for="familia">Família:</label>
-        <select id="selecionarFamilia"></select>
-
-        <label for="ordenar">Ordem:</label>
-        <select id="ordenar">
-          <option value="asc">A - Z</option>
-          <option value="desc">Z - A</option>
-        </select>
-        
-        <button id="buscar">Pesquisar</button>
+            <label for="ordenar">Ordenar</label>
+            <select id="ordenar"></select>
+          </div>
         </div>
-
+            
       </header>
 
       <main>

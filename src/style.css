@@ -130,15 +130,17 @@ footer {
     left: 0;
     color: white;
     width: 100%;
-    padding: 20px;
+    padding:2px;
     text-align: center;
     /* position:relative; */
     letter-spacing: 2px;
+
 }
 footer a {
     text-decoration: none;
     color: white;
     letter-spacing: 2px;
+    
 }
 footer a:hover {
     text-decoration: underline;
@@ -177,6 +179,14 @@ footer a:hover {
     }
 }
 /* ------------------PAGINA PAISES------------------ */
+
+.title{
+    font-size: 0.8rem;
+    margin: 30px 20px 0px 0px;
+    text-align: center;
+    color: white;
+    text-shadow: rgba(255, 255, 255, 0.544);
+}
 
 #populationResult {
     display: flex;
@@ -283,6 +293,7 @@ a#selector {
     font-size: 2em;
     text-align: center;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.416);
+    margin-bottom: 30px;
 }
 .sobre_1 p {
     font-size: 1.2em;
@@ -302,5 +313,4 @@ a#selector {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.904);
 
 }
-
 

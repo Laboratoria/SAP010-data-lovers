@@ -1,5 +1,4 @@
 
-
 //==============FILTRAR A SUBREGIÃO E O CONTINENTE RENDERIZANDO==============
 
 // Filtra os países por subregião
@@ -23,18 +22,20 @@ export const filterByContinent = (continent, array) => {
   
   );
   return filteredCountries
- 
 };
 
-/* // Ordena os países em ordem alfabética
-export const orderByAlphabetical = () => {
-  // Faz uma cópia do array de países e ordena em ordem alfabética
-  const sortedCountries = data.countries
-    .slice()
-    .sort((a, b) => a.name.common.localeCompare(b.name.common));
-  // Renderiza a lista de países ordenada
-  renderCountryList(sortedCountries);
-};
- */
+//==============FILTRAR por ordem alfabetica==============
+
+
+// Ordena os países em ordem alfabética
+// Ordena os países em ordem alfabética
+export function orderByAlphabetical(array) {
+  const filteredCountries = array.slice().sort((a, b) => a.name.common.localeCompare(b.name.common, 'en', { sensitivity: 'base' }));
+  return filteredCountries;
+}
+
+
+
+
 
 

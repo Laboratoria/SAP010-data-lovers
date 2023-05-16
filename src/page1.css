@@ -4,14 +4,26 @@
   box-sizing: border-box;
   }
 
+  body{
+    background-color: rgb(175, 208, 236);
+   
+  }
+
+
 
 header {
-  background-color: rgb(43, 144, 226);
-  padding-left: 20px;
+  background-color: rgb(140, 172, 198);
+  padding-left: 400px;
   height: 200px;
   width: 110%;
   margin-top: 10px;
-  align-items: center;
+  justify-content: center;
+}
+
+.nav1 {
+  padding-left: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .conteiner {
@@ -23,7 +35,7 @@ header {
 
 
 #footerText {
-  background-color: rgb(43, 144, 226);
+  background-color: rgb(140, 172, 198);
   text-align: center;
   width: 110%;
   color: rgb(226, 226, 20);
@@ -43,16 +55,22 @@ header {
 }
 
 .nav {
-  padding-left: 1300px;
+  padding-left: 0px;
   display: flex;
   justify-content: space-between;
 }
 
-.nav1 {
-  padding-left: 200px;
-  display: flex;
-  justify-content: space-between;
-}
+.btn-num {
+  max-width: 150px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid rgb(43, 144, 226);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(43, 144, 226);
+  }
+
 
 .btn1 {
   max-width: 150px;
@@ -63,15 +81,7 @@ header {
   border: 2px solid rgb(22, 234, 220);
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgb(43, 144, 226);
-
 }
-
-.Squirtle {
-  width: 200px;
-  height: 250px;
-  padding-top: 60px;
-}
-
 
 .clean-name {
   width: 10vw;
@@ -80,10 +90,9 @@ header {
   padding: 10px;
   font-size: 14px;
   font-weight: bold;
-  border: 2px solid rgb(186, 226, 43);
+  border: 2px solid rgb(43, 144, 226);
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgb(43, 144, 226);
-
 }
 
 .btn-name {
@@ -96,7 +105,6 @@ header {
   border: 2px solid rgb(43, 144, 226);
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgb(43, 144, 226);
-
 }
 
 .input-search {
@@ -113,12 +121,11 @@ header {
 
 .allPokemon {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   justify-content: space-between;
-  padding: 1rem;
-  
-   }
+  padding-left: 10rem;
+     }
 
 @media  screen and (min-width: 367px) {
   allPokemon { 
@@ -137,21 +144,23 @@ header {
 box-shadow: 0 0 3rem -1 rem rgb(37, 90, 134);
 padding-block: 1 rem;
 text-transform: uppercase;
-background-color:rgb(37, 90, 134);
+background-color:rgb(140, 172, 198);
 position: relative;
 isolation: isolate;
 overflow: hidden;
 }
+
+.pokemon:hover {
+  background-color: rgb(43, 144, 226);
+}
+
 .pokemon-id-back {
- font-size: 4rem;
-font-weight: 200;
-color: whitesmoke;
-position: absolute;
-top: 1 rem;
+ position: absolute;
+top: 3 rem;
 left: 50%;
 transform: translateX(-50%);
-font-size: 5rem;
-font-weight: 400;
+font-size: 2rem;
+font-weight: 100;
 color: whitesmoke;
 z-index: -1
 }
@@ -184,7 +193,7 @@ color: whitesmoke;
   font-weight: 500;
   flex-wrap: wrap;
   justify-content: center;
- }
+   }
 
  .type{
   border-radius: 100vmax;
@@ -203,4 +212,90 @@ color: whitesmoke;
   border: none;
   text-align: center;
   justify-items: center;
+}
+
+.type-teste {
+  display: flex;
+  justify-content: center;
+}
+
+.water {
+  background-color: #54a6e9;
+}
+
+.fire {
+  background: linear-gradient(to left, #c02425, #f0cb35);
+}
+.bug {
+  background-color: #65ce7c;
+}
+
+.dragon {
+  background: linear-gradient(to left, #c02425, #f0cb35);
+}
+
+.electric {
+  background: linear-gradient(to left, #8e2de2, #4a00e0);
+}
+
+.ghost {
+  background: linear-gradient(to left, #005aa7, #fffde4);
+}
+
+.ice {
+  background: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6);
+}
+
+.fighting {
+  background-color: #395ade;
+}
+
+.normal {
+  background-color: #54a6e9;
+}
+
+.grass {
+  background-color: #59c26c;
+}
+
+.psychic {
+  background: linear-gradient(to left, #8d6cbb, #ebe8a3);
+}
+
+.rock {
+  background-color: #909094;
+}
+
+.ground {
+  background-color:  #d8d8e3; 
+}
+
+.poison {
+  background: linear-gradient(to left, #4776e6, #54a6e9);
+}
+
+.flying {
+  background-color: #a27ab1;
+}
+
+.fairy {
+  background-color:#b5405d;
+}
+
+.dark {
+  background-color: #3f3983;
+}
+
+.steel {
+  background: linear-gradient(to left, #bdc3c7, #2c3e50);
+}
+
+.card {
+  background: #e9dcdc;
+  border: 5px solid #2485af;
+  border-radius: 20px;
+  margin: 0.5rem;
+  padding-bottom: 1rem;
+  width: 12rem;
+  height: 14rem;
 }

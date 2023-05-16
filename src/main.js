@@ -1,14 +1,17 @@
-import { filterByType, sortByName, searchByName, } from "./data.js";
-
+import {sortByName, sortByNum ,filterByType} from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
+
 const pkmnDataList = data.pokemon;
-const pokemonList = document.querySelector("#pokemonList");
 const pkmCards = document.getElementById("pokemonList");
 
 pkmnDataList.forEach((pokemon) => {
-  console.log(pokemon)
+  //console.log(pokemon)
   const card = document.createElement("div");
+  let typesPkmn = "";
+  pokemon.type.forEach((type) => {
+    typesPkmn += `<p class="type-style ${type}">${type}</p>`;
+  });
   card.innerHTML = `
     
   <div class="pokemon">
@@ -20,14 +23,14 @@ pkmnDataList.forEach((pokemon) => {
         <h2 class="pokemon-name">${pokemon.name}</h2>
   </div>
   <div class="pokemon-type">
-      <p class="type">${pokemon.type}</p>
-  </div>
+  <div class="type-teste">${typesPkmn}</div>
 </div>
       `;
   pkmCards.appendChild(card);
 })
-pokemonList(pkmnDataList);
+//pokemonList(pkmnDataList);
 
+//console.log (pkmnDataList)
 
 document.getElementById("searchByName");
 document.addEventListener("keyup", searchName);
@@ -56,3 +59,12 @@ alphabeticOrdenation.addEventListener("change", function () {
   pokemonList(sortedPokemons);
 });
 
+numberAscDescOrdenation.addEventListener("change", function () {
+  let sortedPokemons = [];
+  if (numberAscDescOrdenation.value == "0-9") {
+    sortedPokemons = sortByNum(pkmnDataList, "0-9");
+  } else {
+    sortedPokemons = sortByNum(pkmnDataList, "9-0");
+  }
+  pokemonList(sortedPokemons);
+});

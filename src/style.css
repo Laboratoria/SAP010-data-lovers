@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@300;400;500&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  height: 60px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ysabeau', sans-serif;
+}
+
+.header, .navigation_header{
+  display: flex;
+  align-items: center;
+}
+
+.header{
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 3.5em;
+}
+.navigation_header{
+  gap: 3em;
+}
+
+.navigation_header a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+  font-weight: bold;
+}
+.navigation_header a:hover{
+  color: rgb(230, 220, 89);
+}
+
+.btn_icon_header{
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.logo-cab {
+  width: 40px;
+  margin-right: 3em;
+  margin-left: 1.5em;
+}
+
+main{
+  background: rgb(238, 235, 235);
+  background-image: url(imgs/background_lol.png);
+  font-family: 'Ysabeau', sans-serif;
+}
+
+.title{
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.sobre{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleComeco{
+  border: 2px solid rgb(184, 179, 48);
+  border-radius: 20px 0px 20px 0px;
+  height: 170px;
+  width: 500px;
+}
+
+.title{
+  margin-top: 10px;
+}
+
+.texto{
+  height: 85px;
+  font-size: 90px;
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  text-align: center;
+}
+
+.texto1{
+  text-align: center;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.containerFiltrar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #3B3A3A;
+  width: 95%;
+  height: 55px;
+  border-radius: 40px 10px 40px 10px;
+}
+
+.container{
+  height: 30px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+}
+
+#buscar{
+  outline: 0;
+  padding: 7px;
+  background: rgb(184, 181, 85);
+  border: none;
+  border-radius: 30px 10px 30px 10px;
+}
+
+#buscar::placeholder{
+  text-align: center;
+  font-weight: bold;
+}
+
+.container2 {
+  display: none;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+  gap: 1rem;
+  font-size: medium;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(255, 249, 241);
+}
+
+li:hover{
+  color: rgb(156, 151, 3);
+}
+
+.campoBuscar{
+  display: flex;
+  justify-content: center;
+}
+
+.selecionar{
+  outline: 0;
+  padding: 7px 35px;
+  background: rgb(184, 181, 85);
+  border: none;
+  border-radius: 30px 10px 30px 10px;
+  cursor: pointer;
+}
+
+/*estilizar os cards*/
+
+.card-frente img{
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+#mostrarTodos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4%;
+
+}
+
+.card-verso li{
+  list-style: none;
+}
+.card-frente,
+.card-verso {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.card-verso{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(-180deg);
+  transition: transform 0.2s ease;
+}
+
+.card{
+  background-color: rgb(7, 15, 33);
+  color: white;
+  height: 320px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease;
+}
+
+.card h2{
+  margin-left: 12px;
+}
+
+.card:hover{
+  background-color: rgb(10, 38, 104);
+}
+
+.card:hover h2{
+  text-align: center;
+}
+.card:hover .card-frente {
+  transform: rotateY(180deg);
+}
+.card:hover .card-verso {
+  transform: rotateY(0);
+}
+.cards{
+  width: 250px;
+  height: 320px;
+  margin: 20px;
+  position: relative;
+  perspective: 1000px;
+}
+
+@media (max-width: 1024px) {
+  #buscar{
+    outline: 0;
+    width: 80%;
+    background: rgb(184, 181, 85);
+    border: none;
+    border-radius: 30px 10px 30px 10px;
+  }
+
+  .navigation_header{
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    background-color: black;
+    height: 61%;
+    width: 50vw;
+    padding: 1em;
+    animation-duration: 2s;
+    margin-left: -160vw;
+    border-radius: 10px;
+  }
+
+  @keyframes showSidebar {
+    from {margin-left: -100vw;}
+    top {margin-left: -10vw;}
+  }
+
+  #icone-x{
+    margin-left: 300px;
+  }
+
+  .btn_icon_header{
+    display: block;
+    margin-right: 300px;
+  }
+
+  .logo-cab{
+    margin-right: 10px;
+  }
+
+  .selecionar, .menu2{
+    outline: 0;
+    padding: 6% 25%;
+    background: rgb(184, 181, 85);
+    border: none;
+    border-radius: 30px 10px 30px 10px;
+    cursor: pointer;
+    color: rgb(59, 59, 58);
+  }
+
+  .menu2{
+    margin-right: 15%;
+  }
+
+  .selecionar:hover, .selecionar2:hover{
+    color: rgb(90, 88, 34);
+  }
+
+  .container{
+    display: none;
+  }
+
+  .container2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .divOpcoes{
+    margin-right: 8%;
+  }
+}
+
+@media all and (min-width: 375px) and (max-width: 667px) {
+  #buscar{
+    outline: 0;
+    width: 60px;
+    background: rgb(184, 181, 85);
+    border: none;
+    border-radius: 30px 10px 30px 10px;
+  }
+
+  .navigation_header{
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    background-color: black;
+    height: 61%;
+    width: 50vw;
+    padding: 1em;
+    animation-duration: 2s;
+    margin-left: -160vw;
+    border-radius: 10px;
+  }
+
+  @keyframes showSidebar {
+    from {margin-left: -100vw;}
+    top {margin-left: -10vw;}
+  }
+
+  #icone-x{
+    margin-left: 300px;
+  }
+
+  .btn_icon_header{
+    display: block;
+    margin-right: 300px;
+  }
+
+  .logo-cab{
+    margin-right: 10px;
+  }
+
+  .titleComeco{
+    border: 2px solid rgb(184, 179, 48);
+    border-radius: 20px 0px 20px 0px;
+    height: 170px;
+    width: 400px;
+  }
+
+  .texto{
+    height: 85px;
+    font-size: 75px;
+    font-family: 'Abril Fatface', cursive;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .selecionar, .menu2{
+    outline: 0;
+    padding: 7px;
+    background: rgb(184, 181, 85);
+    border: none;
+    border-radius: 30px 10px 30px 10px;
+    cursor: pointer;
+    color: rgb(59, 59, 58);
+  }
+
+  .menu2{
+    margin-right: 5%;
+  }
+
+  .selecionar:hover, .menu2:hover{
+    color: rgb(90, 88, 34);
+  }
+
+  .container{
+    display: none;
+  }
+
+  .container2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .divOpcoes{
+    margin-right: 1%;
+  }
+
+  #mostrarTodos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4%;
+  }
+
+}
+
+.grafico{
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.div-geral-footer{
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  background: black;
+  font-family: 'Ysabeau', sans-serif;
+  color: white;
+}
+
+.div-footer #github{
+  margin: 5px 0px 0px 90px;
+}
+
+#footer {
+  margin-top: 10px;
+}
+
+#footer a{
+  background: rgb(82, 80, 80);
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+#laridepaula{
+  margin-left: 35px;
+}
+
+#github{
+  width: 40px;
+}
+
+#footer a:hover{
+  color: rgb(14, 14, 15);
+  background: rgb(167, 165, 165);
+  text-decoration: none;
+}

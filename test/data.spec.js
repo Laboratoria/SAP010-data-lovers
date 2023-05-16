@@ -79,3 +79,14 @@ describe("searchName", () => {
     expect(characterSearch.length).toEqual(1);
   });
 });
+
+describe("calculatePercentage", () => {
+  it("is a function", () => {
+    expect(typeof dataFunctions.calculatePercentage).toBe("function");
+  });
+
+  it("calculate percentage", () => {
+    const percentage = dataFunctions.calculatePercentage(arrayTest.length,3);
+    expect(percentage).toEqual(75);
+  });
+});

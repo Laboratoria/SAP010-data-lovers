@@ -1,7 +1,6 @@
 import { orderAZ, orderZA, filterBreakingBad, filtroNomes } from "../src/data.js";
 // import breaking_bad from "../src/data/breakingbad/breakingbad.js";
 
-
 describe("orderAZ", () => {
   it("is a function", () => {
     expect(typeof orderAZ).toBe("function");

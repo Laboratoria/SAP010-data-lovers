@@ -22,3 +22,4 @@ export const filtroNomes = (dados, nomePesquisado) => {
   const nomeUpper = nomePesquisado.toUpperCase(); // converte o nome pesquisado para letras MAIÚSCCULAS
   return dados.filter(nome => nome.name.toUpperCase().includes(nomeUpper));
 };
+

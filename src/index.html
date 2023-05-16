@@ -77,13 +77,58 @@
 
       </div>
       
-      <p>
-        <input id="pokemonname"/>
-      </p>
       
-<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000"><circle cx="32" cy="32" r="24"/><circle cx="28" cy="28" r="8"/><line x1="44" y1="44" x2="33.66" y2="33.66"/></svg>
       
-      <div class="list"></div>
+
+      
+      <div class="list">
+        <div class="list-header">
+
+          <div class="search-input">
+            <div class="search-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 24 24" fill="none">
+                <circle cx="11" cy="11" r="7" stroke="#E3E3E3" stroke-width="2"/>
+                <path d="M11 8C10.606 8 10.2159 8.0776 9.85195 8.22836C9.48797 8.37913 9.15726 8.6001 8.87868 8.87868C8.6001 9.15726 8.37913 9.48797 8.22836 9.85195C8.0776 10.2159 8 10.606 8 11" stroke="#E3E3E3" stroke-width="2" stroke-linecap="round"/>
+                <path d="M20 20L17 17" stroke="#E3E3E3" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+              
+              <input id="pokemonname" placeholder="Search"/>
+            
+          </div>
+
+          <div class="sort-input">
+
+            <select name="sort" id="sort" required>
+              <option value="" disabled selected> Sort by</option>
+              <option value="asc">
+                A to Z
+              </option>
+              <option value="desc">
+                Z to A
+              </option>
+              <option value="attack">
+                By Attack 
+              </option>
+              <option value="defense">
+                By Defense
+              </option>
+            </select>
+
+            <div>
+              <svg viewBox="0 0 24 24" widht="32px" height="32px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 2L7.29289 1.29289L8 0.585786L8.70711 1.29289L8 2ZM9 17C9 17.5523 8.55229 18 8 18C7.44772 18 7 17.5523 7 17L9 17ZM2.29289 6.29289L7.29289 1.29289L8.70711 2.70711L3.70711 7.70711L2.29289 6.29289ZM8.70711 1.29289L13.7071 6.29289L12.2929 7.70711L7.29289 2.70711L8.70711 1.29289ZM9 2L9 17L7 17L7 2L9 2Z" fill="#73777B"></path> <path d="M16 22L15.2929 22.7071L16 23.4142L16.7071 22.7071L16 22ZM17 7C17 6.44772 16.5523 6 16 6C15.4477 6 15 6.44771 15 7L17 7ZM10.2929 17.7071L15.2929 22.7071L16.7071 21.2929L11.7071 16.2929L10.2929 17.7071ZM16.7071 22.7071L21.7071 17.7071L20.2929 16.2929L15.2929 21.2929L16.7071 22.7071ZM17 22L17 7L15 7L15 22L17 22Z" fill="#73777B"></path> </g></svg>
+            </div>
+
+            
+          </div>
+
+        </div>
+        
+          <div class="list-items">
+
+          </div>
+
+      </div>
     </div>
     </div>
     <script src="main.js" type="module"></script>

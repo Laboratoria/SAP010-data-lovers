@@ -9,6 +9,7 @@ body {
     --suporte-color: #6ECCAF;
     --white-color: #FFFFFF;
     --text-header-color: #73777b;
+    --text-placeholder: #E3E3E3;
     color: var(--text-header-color);
 }
 
@@ -31,6 +32,7 @@ body {
     display: flex;
     background-color: var(--white-color);
     flex: 1;
+    margin: 12px;
 }
 
 .card {
@@ -161,3 +163,75 @@ body {
     line-height: 30px;
     color: var(--text-header-color);
 }
+
+.search-input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border: 1px solid var(--text-header-color);
+    border-radius: 6px;
+    box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.5);
+}
+
+.search-icon {
+    background-color: var(--suporte-color);
+    border-radius: 6px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input input {
+    outline: none;
+    border: 0 none;
+    font-size: 22px;
+    width: 100%;
+}
+
+::-webkit-input-placeholder{
+    color: var(--text-placeholder);
+    
+}
+
+.list-header {
+    border-bottom: 4px solid var(--suporte-color);
+    width: 100%;
+    max-height: 68px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+}
+
+
+.sort-input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border: 1px solid var(--text-header-color);
+    border-radius: 6px;
+    padding: 0px 8px;
+    box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.5);
+}
+
+.sort-input select {
+    outline: none;
+    border: 0 none;
+    font-size: 22px;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    color: var(--text-header-color)
+}
+
+select:invalid {
+    color: var(--text-placeholder);
+  }

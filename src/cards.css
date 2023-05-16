@@ -6,15 +6,15 @@
 :root {
   /*paleta de cores */
   --green: #025939;
-  --black: #0D0C00;
-  --light-yellow: #ECF2BD;
-  --white: #F2F2DC;
+  --black: #0d0c00;
+  --light-yellow: #ecf2bd;
+  --white: #f2f2dc;
 }
 
 body {
   color: var(--black);
   font-family: monospace;
-  background-color:var(--black);
+  background-color: var(--black);
   background-size: fill;
   display: flex;
   flex-wrap: wrap;
@@ -22,14 +22,10 @@ body {
   align-items: center;
 }
 
-header{
-  height:250px;
-  width: 50%;
-  background-image: url(img/Image20230516161335.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  overflow: hidden;
+header {
+  background: no-repeat center/cover url(img/background-header-largo.jpg);
+  height: calc(58vh);
+  width: 100vw;
 }
 
 .nav-header {
@@ -37,7 +33,7 @@ header{
   justify-content: center;
 }
 
-.btn-header { 
+.btn-header {
   background-color: var(--white);
   border-radius: 20px;
   border: none;
@@ -49,12 +45,12 @@ header{
   text-align: center;
   cursor: pointer;
   margin-top: 20px;
+  float: right;
 }
 
 .btn-header:hover {
   opacity: 0.5;
 }
-
 
 .btn-option {
   background-color: var(--white);
@@ -96,7 +92,6 @@ main {
   padding: 10px;
   font-family: monospace;
 }
-
 
 .card-container {
   display: flex; /* alinhamento dos cards. */

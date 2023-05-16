@@ -14,7 +14,7 @@
 body {
   color: var(--black);
   font-family: monospace;
-  background-color:var(--green);
+  background-color:var(--black);
   background-size: fill;
   display: flex;
   flex-wrap: wrap;
@@ -22,14 +22,14 @@ body {
   align-items: center;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  width: 100%;
-  font-family: monospace;
+header{
+  height:250px;
+  width: 50%;
+  background-image: url(img/Image20230516161335.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
 }
 
 .nav-header {
@@ -37,27 +37,30 @@ header {
   justify-content: center;
 }
 
-.btn-header {
-  margin: 25px;
-  background-color: var(--black);
+.btn-header { 
+  background-color: var(--white);
   border-radius: 20px;
   border: none;
   color: var(--black);
-  width: 12vw;
+  width: 10vw;
   height: 40px;
-  font-size: large;
+  margin: 0px 7px;
+  font-size: 0.8rem;
+  text-align: center;
   cursor: pointer;
+  margin-top: 20px;
 }
 
-/*.btn-header:hover {
+.btn-header:hover {
   opacity: 0.5;
-}*/
+}
+
 
 .btn-option {
-  background-color: var(--light-yellow);
+  background-color: var(--white);
   border-radius: 20px;
   border: none;
-  color: var(--dark-blue);
+  color: var(--black);
   width: 10vw;
   height: 40px;
   margin: 0px 7px;
@@ -66,16 +69,6 @@ header {
   cursor: pointer;
 }
 
-/*.btn-option:hover {
-  opacity: 0.5; 
-}*/
-
-/*.reset {
-  background-color: var(--white);
-  border: var(--light-blue) 4px solid;
-  font-size: 0.9rem;
-}*/
-
 .search {
   background-color: var(--white);
   font-size: 0.9rem;
@@ -83,14 +76,14 @@ header {
 }
 
 main {
-  background-color: var(--dark-blue);
-  border-radius: 40px;
+  background-image: url(img/tubos\ de\ ensaio.jpg);
+  /*border-radius: 40px;*/
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 200%;
 }
 
 .option-container {
@@ -102,8 +95,8 @@ main {
   margin-bottom: 10px;
   padding: 10px;
   font-family: monospace;
-  background-color: var(--black);
 }
+
 
 .card-container {
   display: flex; /* alinhamento dos cards. */
@@ -146,7 +139,7 @@ main {
   width: 15vw;
   margin-bottom: 2vh;
   border-radius: 50px;
-  border: var(--dark-blue) 2px solid;
+  border: var(--black) 2px solid;
   object-fit: cover;
 }
 

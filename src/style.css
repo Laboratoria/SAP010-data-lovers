@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,700;1,400;1,600&family=Girassol&family=Montserrat:ital,wght@0,700;0,800;1,700&display=swap');
 
-body {
+body{
     display: flex;
     flex-direction: column;
-    background-color: #E0FFFF;
 
 }
 
@@ -30,21 +29,25 @@ header {
     color: #006400;
 }
 
+body {
+    background-color: #E0FFFF;
+}
+
 #continente {
     height: 150px;
     width: 90%;
     margin-top: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-left: 100px;
-
-
+    
+    
 }
-
-img {
+#mapaheader{
     height: 350px;
     width: 900px;
-
+    
 }
 
 .filtros {
@@ -53,22 +56,36 @@ img {
     margin-top: 18%;
     color: #006400;
     font-family: 'faustina';
-}
+    }
 
 .filtros select:first-of-type {
     margin-right: 70px;
+  }
+  
+  .bands {
+    width: 20%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  background-color: #87b3e6;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+}
+  .bandeiras {
+    
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.filtros label {
-    margin-right: 5px;
-    margin-top: 5px;
-}
-
-.filtros select {
-    width: 150px;
-}
-
-#exibirFlags {
-    height: 3px;
-    width: 3px;
-}
+.imgBand{
+    max-width: 100%;
+    max-height: 200px;
+  }
+  h3 {
+    margin-top: 10px;
+  }

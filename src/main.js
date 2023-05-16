@@ -25,7 +25,6 @@ function infoAllCards (data) {
       <li><strong> Category: ${character.info.category}</strong></li>
       <li><strong> Better_call_saul_appearance: ${character.info.better_call_saul_appearance}</strong></li>
     </ul>
-
   </div>
   `).join('');
 }

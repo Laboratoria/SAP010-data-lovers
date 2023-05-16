@@ -19,6 +19,6 @@ export const filterBreakingBad = (appearance, breaking_bad) => {
 
 // barra de pesquisa
 export const filtroNomes = (dados, nomePesquisado) => {
-  const nomeUpper = nomePesquisado.toUpperCase(); // converte o nome pesquisado para letras MAIÚSCCULAS
+  const nomeUpper = nomePesquisado.toUpperCase(); // converte o nome pesquisado para letras MAIÚSCULAS
   return dados.filter(nome => nome.name.toUpperCase().includes(nomeUpper));
 };

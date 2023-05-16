@@ -23,9 +23,15 @@ body {
 }
 
 header {
-  background: no-repeat center/cover url(img/background-header-largo.jpg);
-  height: calc(58vh);
+  /*background: no-repeat center/cover url(img/background-header-largo.jpg);*/
+  height:fit-content;
   width: 100vw;
+}
+
+#bbimage{
+  width: 280px ;
+  justify-content: center;
+  margin-left: 40%;
 }
 
 .nav-header {
@@ -149,3 +155,5 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+

@@ -9,12 +9,12 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=500&offset=0')
     return response.json();
   })
   .then(data => {
-     pokemonList = data.results;
+    pokemonList = data.results;
     return Promise.all(pokemonList.map(pokemon => fetch(pokemon.url).then(res => res.json())));
-   })
-   .then(data => {
-     pokemonList = data.map(pokemon => {
-       return {
+  })
+  .then(data => {
+    pokemonList = data.map(pokemon => {
+      return {
         name: pokemon.name,
         id: pokemon.id,
         height: pokemon.height,
@@ -28,17 +28,17 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=500&offset=0')
       }
     });
 
-    displayPokemonList(pokemonList); // Corrigido para exibir a lista de todos os Pokémon após a busca.
-   })
+    displayPokemonList(pokemonList);
+  })
   .catch(error => {
     console.log(error);
-   });
+  });
 
- function displayPokemonList(pokemonList) {
-   pokemon_List.innerHTML = '';
+function displayPokemonList(pokemonList) {
+  pokemon_List.innerHTML = '';
   pokemonList.forEach(pokemon => {
     const listItem = document.createElement('li');
-     listItem.innerHTML = `
+    listItem.innerHTML = `
       <div class="pokemon_info">
         <h3 class="pokemon_name">${pokemon.name}</h3>
         <img src="${pokemon.imageUrl}" alt="${pokemon.name}">
@@ -48,40 +48,46 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=500&offset=0')
         <p>HP: ${pokemon.hp}</p>
         <p>Attack: ${pokemon.attack}</p>
         <p>Defense: ${pokemon.defense}</p>
-//       <p>Speed: ${pokemon.speed}</p>
+        <p>Speed: ${pokemon.speed}</p>
         <p>Types: ${pokemon.types.join(', ')}</p> 
-    </div>
+      </div>
     `; 
-     pokemon_List.appendChild(listItem);
-   });
- }
+    pokemon_List.appendChild(listItem);
+  });
+}
 
-const ordenarPorElement = document.querySelector('#ordenarPorElement');
+const ordenarPorElement = document.querySelector('#options1');
 const tipoPokemonElement = document.querySelector('#TipoPokemon');
+
 const btn1 = document.querySelector('.btn1');
-const btn2 = document.querySelector('.btn2');
+const btn2 = document.querySelector('#btn2');
 
-btn2.addEventListener('"click"', () => {
-  pokemonList.innerHTML = '';
+btn1.addEventListener('click', () => { //evento
+  let filteredList = [...pokemonList]; // armazenar copia da lista no filteredList usando o operador spread 
+  const orderValue = ordenarPorElement.value; //pega o valor selecionado do ordenarPorElement e guarda o valor na variavel orderValue
   
-  const orderValue = btn1.value;
-  const typeValue = btn2.value;
-  
-  let filteredList = [...pokemonList];
-  //console.log()
-  
-  if (typeValue) { // Corrigido para filtrar por typeValue em vez de orderValue
-    filteredList = filteredList.filter(pokemon => pokemon.type.includes(typeValue));
+  if (orderValue === 'a-z') { // se for selecionado A-Z ele executa o if se for de de Z-A ele executa o codigo else
 
-  }
-  
-  if (orderValue) {
-    filteredList = filteredList.sort(pokemon => pokemon.pokemonList.includes(orderValue));
-
-
+    filteredList.sort((a, b) => a.name.localeCompare(b.name)); 
+    //nome da lista + sort() metodo que classifica elementos e array + (a,B) elemento de comparação + a.name  primeiro elemento a ser comparado + localeCompare() método da string que compara duas strings localizadas e retorna um valor numérico com base na ordem de classificação. 
+  } else if (orderValue === 'z-a') {
+    filteredList.sort((a, b) => b.name.localeCompare(a.name));
   }
   
   displayPokemonList(filteredList);
 });
 
+
+btn2.addEventListener('click', () => {
+  let filteredList = [...pokemonList];
+  
+  const typeValue = tipoPokemonElement.value;
+  
+  if (typeValue) {
+    filteredList = filteredList.filter(pokemon => pokemon.types.includes(typeValue));
+  }
+  
+  displayPokemonList(filteredList);
+
+});
 

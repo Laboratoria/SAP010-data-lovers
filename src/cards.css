@@ -6,15 +6,15 @@
 :root {
   /*paleta de cores */
   --green: #025939;
-  --dark-blue: rgb(10, 24, 35);
-  --light-blue: #c9dbd4;
-  --white: rgb(240, 248, 255);
+  --black: #0D0C00;
+  --light-yellow: #ECF2BD;
+  --white: #F2F2DC;
 }
 
 body {
-  color: var(--dark-blue);
+  color: var(--black);
   font-family: monospace;
-  background-color:#025939;
+  background-color:var(--green);
   background-size: fill;
   display: flex;
   flex-wrap: wrap;
@@ -39,22 +39,22 @@ header {
 
 .btn-header {
   margin: 25px;
-  background-color: var(--light-blue);
+  background-color: var(--black);
   border-radius: 20px;
   border: none;
-  color: var(--dark-blue);
+  color: var(--black);
   width: 12vw;
   height: 40px;
   font-size: large;
   cursor: pointer;
 }
 
-.btn-header:hover {
+/*.btn-header:hover {
   opacity: 0.5;
-}
+}*/
 
 .btn-option {
-  background-color: var(--light-blue);
+  background-color: var(--light-yellow);
   border-radius: 20px;
   border: none;
   color: var(--dark-blue);
@@ -66,15 +66,15 @@ header {
   cursor: pointer;
 }
 
-.btn-option:hover {
-  opacity: 0.5;
-}
+/*.btn-option:hover {
+  opacity: 0.5; 
+}*/
 
-.reset {
+/*.reset {
   background-color: var(--white);
   border: var(--light-blue) 4px solid;
   font-size: 0.9rem;
-}
+}*/
 
 .search {
   background-color: var(--white);
@@ -102,6 +102,7 @@ main {
   margin-bottom: 10px;
   padding: 10px;
   font-family: monospace;
+  background-color: var(--black);
 }
 
 .card-container {
@@ -120,7 +121,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--white);
   font-size: large;
 }
 
@@ -137,7 +138,7 @@ main {
   text-align: center;
   align-items: center;
   font-size: 0.89rem;
-  color: var(--dark-blue);
+  color: var(--black);
 }
 
 .poster-img {

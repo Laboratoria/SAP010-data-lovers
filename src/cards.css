@@ -5,7 +5,7 @@
 
 :root {
   /*paleta de cores */
-  --green: #7cb29c;
+  --green: #025939;
   --dark-blue: rgb(10, 24, 35);
   --light-blue: #c9dbd4;
   --white: rgb(240, 248, 255);
@@ -14,7 +14,7 @@
 body {
   color: var(--dark-blue);
   font-family: monospace;
-  background-color: rgba(96, 196, 133, 0.821);
+  background-color:#025939;
   background-size: fill;
   display: flex;
   flex-wrap: wrap;

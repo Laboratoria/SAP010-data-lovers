@@ -51,6 +51,8 @@ body{
     left: 1100px;
     width: 180px;
     height: 25px;
+    border: 10px;
+    border-radius: 40px;
 }
 
 .btnBB{
@@ -59,6 +61,8 @@ body{
     left: 1100px;
     width: 180px;
     height: 25px;
+    border: 10px;
+    border-radius: 40px;
 }
 
 

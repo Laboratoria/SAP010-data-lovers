@@ -69,7 +69,7 @@ describe("filterBreakingBad", () => {
 });
 
 
-// o teste abaixo verifica se a função retorna os dados corretos quando um nome é encontrado
+// o teste abaixo verifica se a função retorna os dados corretos quando um nome é encontrado na barra de pesquisa
 test('Filtrar nomes - nome encontrado', () => {
   const dados = [
     { name: 'Walter White' },
@@ -99,7 +99,7 @@ test('Filtrar nomes - nome não encontrado', () => {
   expect(resultado).toEqual([]);
 });
 
-// verificar se a função retorna todos os dados quando nenhum nome é especificado
+// verifica se a função retorna todos os dados quando nenhum nome é especificado
 test('Filtrar nomes - sem nome especificado', () => {
   const dados = [
     { name: 'Walter White' },

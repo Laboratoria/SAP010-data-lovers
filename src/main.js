@@ -1,9 +1,15 @@
-import { filterPokemonsByType, filterPokemonByStr } from './data.js';
+import {
+  filterPokemonsByType,
+  filterPokemonByStr,
+  pokemonsOrderAZ,
+  pokemonsOrderZA,
+  pokemonsOrderByAttack,
+  pokemonsOrderByDefense
+} from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-const inputPokeName = document.getElementById("pokemonname")
 const textPokeNum = document.getElementById("text-poke-num")
 const textPokeGenerationName = document.getElementById("text-poke-generation-name")
 const textPokeName = document.getElementById("text-poke-name")
@@ -14,8 +20,16 @@ const textPokeWeight = document.getElementById("text-poke-weight")
 const textPokeCandy = document.getElementById("text-poke-candy")
 const textPokeAbout = document.getElementById("text-poke-about")
 
+const inputPokeName = document.getElementById("input-poke-name")
+const selectPokeFilter = document.getElementById("select-poke-filter")
+
 let selectedPokemon = data.pokemon[0]
 changeUI(selectedPokemon)
+
+//console.log(pokemonsOrderAZ(data))
+//console.log(pokemonsOrderZA(data))
+//console.log (pokemonsOrderByAttack(data))
+//console.log (pokemonsOrderByDefense(data))
 
 inputPokeName.addEventListener('input', event => {
   const pokemonsFiltered = filterPokemonByStr(data, event.target.value)
@@ -27,6 +41,27 @@ inputPokeName.addEventListener('input', event => {
   if (pokemonsFiltered.length === 1) {
     changeUI(pokemonsFiltered[0])
   }
+})
+
+selectPokeFilter.addEventListener('change', event => {
+  const select = event.target
+  let pokemonsOrdened
+
+  if (select.value === "az") {
+    pokemonsOrdened = pokemonsOrderAZ(data)
+    selectedPokemon = pokemonsOrdened[0]
+  } else if (select.value === "za") {
+    pokemonsOrdened = pokemonsOrderZA(data)
+    selectedPokemon = pokemonsOrdened[0]
+  } else if (select.value === "by-attack") {
+    pokemonsOrdened = pokemonsOrderByAttack(data)
+    selectedPokemon = pokemonsOrdened[0]
+  } else if (select.value === "by-defense") {
+    pokemonsOrdened = pokemonsOrderByDefense(data)
+    selectedPokemon = pokemonsOrdened[0]
+  }
+
+  changeUI(selectedPokemon)
 })
 
 // Função criada para mudar os elementos da tela.

@@ -33,3 +33,59 @@ export const filterPokemonByStr = (data, str) => {
 
   return pokemonsFiltered;
 };
+
+export const pokemonsOrderAZ = (data) => {
+  const pokemons = data.pokemon
+
+  const pokemonsOrderAZ = pokemons.sort((pokemon1, pokemon2) => {
+    return pokemon1.name.localeCompare(pokemon2.name)
+  })
+
+  return pokemonsOrderAZ
+}
+
+export const pokemonsOrderZA = (data) => {
+  const pokemons = data.pokemon
+
+  const pokemonsOrderZA = pokemons.sort((pokemon1, pokemon2) => {
+    return pokemon2.name.localeCompare(pokemon1.name)
+  })
+
+  return pokemonsOrderZA
+}
+
+export const pokemonsOrderByAttack = (data) => {
+  const pokemons = data.pokemon
+
+  const pokemonsOrdened = pokemons.sort((pokemon1, pokemon2) => {
+    if (parseInt(pokemon1.stats["base-attack"]) < parseInt(pokemon2.stats["base-attack"])){
+      return 1
+    }
+
+    if (parseInt(pokemon1.stats["base-attack"]) > parseInt(pokemon2.stats["base-attack"])){
+      return -1
+    }
+
+    return 0
+  })
+
+  return pokemonsOrdened
+}
+
+export const pokemonsOrderByDefense = (data) => {
+  const pokemons = data.pokemon
+
+  const pokemonsOrdened = pokemons.sort((pokemon1, pokemon2) => {
+    if (parseInt(pokemon1.stats["base-defense"]) < parseInt(pokemon2.stats["base-defense"])){
+      return 1
+    }
+
+    if (parseInt(pokemon1.stats["base-defense"]) > parseInt(pokemon2.stats["base-defense"])){
+      return -1
+    }
+
+    return 0
+  })
+
+  return pokemonsOrdened
+}

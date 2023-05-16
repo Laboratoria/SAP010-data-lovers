@@ -1,6 +1,16 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    opacity: .9;
+    text-align: center;
+    color: white;
+    padding: 3.2rem;
+    max-width: 46rem;
+    margin: auto;
 }
 
 body{
@@ -14,23 +24,23 @@ body{
 }
 
 .busca{
-    position: fixed;
-    top: 45px;
-    left: 370px;
+    position: absolute;
+    top: 55px;
+    left: 200px;
     width: 550px;
     height: 30px;
 }
 
 .filter{
-    position: fixed;
-    top: 95px;
+    position: absolute;
+    top: 150px;
     left: 400px;
     height: 25px;
 }
 
 .order{
-    position: fixed;
-    top: 95px;
+    position: absolute;
+    top: 150px;
     left: 800px;
     height: 25px;
 }
@@ -50,4 +60,6 @@ body{
     width: 180px;
     height: 25px;
 }
+
+
 

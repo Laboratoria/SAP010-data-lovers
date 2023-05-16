@@ -1,4 +1,4 @@
-import { orderAZ, orderZA, filterBreakingBad } from "../src/data.js";
+import { orderAZ, orderZA, filterBreakingBad, filtroNomes } from "../src/data.js";
 // import breaking_bad from "../src/data/breakingbad/breakingbad.js";
 
 describe("orderAZ", () => {
@@ -66,4 +66,50 @@ describe("filterBreakingBad", () => {
 
     expect(resultadoFinal).toEqual(resultado);
   });
+});
+
+
+// o teste abaixo verifica se a função retorna os dados corretos quando um nome é encontrado
+test('Filtrar nomes - nome encontrado', () => {
+  const dados = [
+    { name: 'Walter White' },
+    { name: 'Jesse Pinkman' },
+    { name: 'Skyler White' },
+    { name: 'Hank Schrader' }
+  ];
+  const nomePesquisado = 'Walter';
+
+  const resultado = filtroNomes(dados, nomePesquisado);
+
+  expect(resultado).toEqual([{ name: 'Walter White' }]);
+});
+
+// verifica se a função retorna um array vazio quando nenhum nome é encontrado
+test('Filtrar nomes - nome não encontrado', () => {
+  const dados = [
+    { name: 'Walter White' },
+    { name: 'Jesse Pinkman' },
+    { name: 'Skyler White' },
+    { name: 'Hank Schrader' }
+  ];
+  const nomePesquisado = 'Gus';
+
+  const resultado = filtroNomes(dados, nomePesquisado);
+
+  expect(resultado).toEqual([]);
+});
+
+// verificar se a função retorna todos os dados quando nenhum nome é especificado
+test('Filtrar nomes - sem nome especificado', () => {
+  const dados = [
+    { name: 'Walter White' },
+    { name: 'Jesse Pinkman' },
+    { name: 'Skyler White' },
+    { name: 'Hank Schrader' }
+  ];
+  const nomePesquisado = '';
+
+  const resultado = filtroNomes(dados, nomePesquisado);
+
+  expect(resultado).toEqual(dados);
 });

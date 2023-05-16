@@ -16,3 +16,10 @@ export const filterBreakingBad = (appearance, breaking_bad) => {
     breaking_bad_item.name.includes(appearance)
   );
 };
+
+// barra de pesquisa
+export const filtroNomes = (dados, nomePesquisado) => {
+  const nomeUpper = nomePesquisado.toUpperCase(); // converte o nome pesquisado para letras MAIÚSCCULAS
+  return dados.filter(nome => nome.name.toUpperCase().includes(nomeUpper));
+};
+

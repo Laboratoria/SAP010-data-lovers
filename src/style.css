@@ -19,8 +19,12 @@ body{
     width: 150px;
     height: 30px;
     cursor: pointer;
-    border: none;
+    border: 10px;
+    border-radius: 40px;
+    color: aliceblue;
+    text-decoration: none;
     outline: none;
+    transition: 1s;
 }
 
 .btHome:hover {

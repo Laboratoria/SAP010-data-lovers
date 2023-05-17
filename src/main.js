@@ -31,24 +31,35 @@ pkmnDataList.forEach((pokemon) => { //forEach: estrutura de repetição, usada p
 })
 //console.log (pkmCards)
 
-const typeFilter = document.getElementById("typeFilter");
-typeFilter.addEventListener("change", function () {
-    let filteredPokemons = [];
-  if (typeFilter.value != "all") {
-    filteredPokemons = filterByType(pkmnDataList, typeFilter.value);
-    pokemonList(filteredPokemons);
-  }
+const filterType = document.getElementById("typeFilter");
+let dataFiltered = []
+
+if (filterType) {
+  filterType.addEventListener("change", function () {
+    dataFiltered = pkmnDataList.filter((pokemon) => {    
+      return pokemon.type[0] === filterType.value.toLowerCase()
+    })
+  
+    console.log(dataFiltered)
   });
+}
 
-
-  document.getElementById("searchByName")
-  document.addEventListener("keyup", searchName);/*com keyup chamamos a função para quando o usuário para de digitar o nome que deseja encontrar em searchByName*/
-  function searchName(evento) {
-    const name = evento.value.target; // é observado o valor que o usuário digitou no elemento onde ocorre o evento
-    const result = searchName(pkmnDataList, name);
-    pokemonList(result);
-  }
-  const clearButton = document.getElementById("cleanButton");
+const searchByNameInput = document.getElementById("searchByName");
+let resultSearch = []
+if (searchByNameInput) {
+  searchByNameInput.addEventListener("keyup", function(){
+    const name = searchByNameInput.value.toLowerCase();
+    console.log(name)
+    resultSearch = pkmnDataList.find((pokemon) => {
+      
+      return pokemon.name.toLowerCase() === name
+      
+      return pokemon.name.toLowerCase().includes(name)
+    })
+    console.log(resultSearch)  
+  });  
+}
+const clearButton = document.getElementById("cleanButton");
   if (clearButton) {
     function cleanInput() {
       document.getElementById("searchByName").value = '';
@@ -78,6 +89,4 @@ typeFilter.addEventListener("change", function () {
     }
     pokemonList(sortedPokemons);
   });
-  
-console.log(sortedPokemons);
   

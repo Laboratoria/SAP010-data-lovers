@@ -1,10 +1,8 @@
+export {sortByName, sortByNum ,filterByType};
 
-
-
-import data from './data/pokemon/pokemon.js';
 
 // primeira função: ordernar em ordem alfabética
-export const sortByName = () => {
+const sortByName = () => {
   const sortedPokemonsByName = [...data.pokemon].sort((a, b) => { // spread operator para não modificar a array, a e b representam os dois "pokémons" que estão sendo ordenados
     const nameA = a.name.toLowerCase(); //toLowerCase para não diferenciar maiúsculas e minúsculas
     const nameB = b.name.toLowerCase();
@@ -21,10 +19,10 @@ export const sortByName = () => {
 return sortedPokemonsByName
 
 }
-//console.log(sortByName());
+console.log(sortByName());
 
 // Segunda função, ordenar pelo número da pokédex (mesma lógica da anterior, só muda o parâmetro de name pra num)
-export const sortByNum = () => {
+const sortByNum = () => {
   const sortedPokemonsByNum = [...data.pokemon].sort((a, b) => { // spread operator para não modificar a array, a e b representam os dois "pokémons" que estão sendo ordenados
     const numA = a.num
     const numB = b.num
@@ -41,17 +39,17 @@ export const sortByNum = () => {
  return sortedPokemonsByNum
 
 }
-//console.log(sortByNum());
+console.log(sortByNum());
 
 //terceira função: Filtrar por tipo
 
-export const filterByType = (typeInput) => {
+const filterByType = (typeInput) => {
   const filteredPokemons = data.pokemon.filter((pokemon) => {
     return pokemon.type.includes(typeInput)
   })
-    return filteredPokemons
+    return filteredPokemons;
   }
-//console.log(filterByType("water"))
+console.log(filterByType("water"))
   
 
 //quarta função, procurar por nome

@@ -1,7 +1,7 @@
 import data from "./data/pokemon/pokemon.js";
 
 const pokemonDataList = [...data.pokemon];
-//peguei a lista de pokémons um uma array
+//peguei a lista de pokémons em uma array
 //console.log(pokemonDataList)
 
 

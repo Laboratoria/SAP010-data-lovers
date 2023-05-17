@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="linguage" content="pt-br">
+   <link rel="icon " href="./pokebola.png">
+
+    <!-- Main JS -->
+    <script defer="" src="./main.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Pokédex</title>
   </head>
+
+
   <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+
+    <img src="logo.png" alt="logo" class="logo"/>
+
+    <main>
+      <img src="./pokedex-3d-logo.png" alt="pokemon" class="pokemon__image" style="display: block;">
+      <img src="pokebola.png " alt="pokebola" class="pokebola"/>
+      <img src="pokedexnova.png" alt="pokedexnova" class="pokedexnova"/>
+      
+      <ul class="pokemon__data">
+        <span class="pokemon__number"></span> -
+        <span class="pokemon__name"></span>
+      </ul>
+
+      <form class="form">
+       <input type="search" class="input__search" placeholder="Nome ou numero" required="">
+      </form>
+
+      <ul class="buttons">
+       <button class="button btn-prev">Voltar &lt;</button>
+       <button class="button btn-next">Seguir &gt;</button>
+      </ul>
+
+  
+    </main>
+
   </body>
+
 </html>

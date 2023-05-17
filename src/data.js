@@ -31,12 +31,11 @@ export const filtrarFamilia = (personagens, familia) => {
   return personagens.filter(personagem => personagem.family === familia);
 }
 
-/*export const sortBy = (ordenar) => {
-  return console.log(ordenar, "aqui sortBy");
-};
 
-export const sortOrder = (ordenar) => {
-  return console.log(ordenar + "aqui sorOrder");
-}*/
+export const filtrarNomes = (personagens, nome) => {
+  return personagens.filter(personagem => personagem.fullName === nome);
+}
+
+
 
 

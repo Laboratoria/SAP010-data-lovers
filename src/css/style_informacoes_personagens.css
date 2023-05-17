@@ -69,12 +69,12 @@ body {
 
 }
 
-.exibirCards{
+.exibirCards {
   display: flex;
   flex-wrap: wrap; /* exibe os itens em linha */
   box-sizing: border-box; /* inclui a largura da borda e do padding no width */
   justify-content: center;  
-  padding: 20px;
+  padding: 10px;
 }
 
 input {
@@ -85,7 +85,7 @@ input {
 
 }
 
-  select, button {
+  select {
     width: auto;
     height: 30px;
     font-size: 15px;

@@ -27,6 +27,9 @@ function sort(personagens) {
   });
 }
 
+export const filtrarFamilia = (personagens, familia) => {
+  return personagens.filter(personagem => personagem.family === familia);
+}
 
 /*export const sortBy = (ordenar) => {
   return console.log(ordenar, "aqui sortBy");

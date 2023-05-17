@@ -1,12 +1,15 @@
 import got from './data/got/got.js'; // importando o módulo 'got' do arquivo got.jsc
-import {ordenarNomes} from './data.js'; // importando o módulo 'got' do arquivo got.js
-
-const ordenacao = document.getElementById("ordenacao");
-ordenacao.addEventListener("change", onChangeOrdenacao); // add o evento de clique ao botão vinculando a função
+import {ordenarNomes, filtrarFamilia} from './data.js'; // importando o módulo 'got' do arquivo got.js
 
 const listaPersonagens = got.got;
-onChangeOrdenacao();
+const ordenacao = document.getElementById("ordenacao");
+const selecionarFamilia = document.getElementById("selecionarFamilia");
 
+ordenacao.addEventListener("change", onChangeOrdenacao); // add o evento de clique ao botão vinculando a função
+selecionarFamilia.addEventListener("change", onChangeSelecionarFamilia);
+
+onChangeOrdenacao();
+onChangeSelecionarFamilia();
 
 function onChangeOrdenacao(){
   const listaOrdenada = ordenarNomes(listaPersonagens, ordenacao.value);
@@ -54,8 +57,12 @@ function exibirPersonagens(personagens){
   });
 }
 
+function onChangeSelecionarFamilia(){
+  const listaFamilia = filtrarFamilia(listaPersonagens, selecionarFamilia.value);
+  exibirPersonagens(listaFamilia);
+}
+
 // Cria e exibe em ordem alfabética as famílias no 'select' ==>
-const selecionarFamilia = document.getElementById('selecionarFamilia');
 const familyArray = [];
 
 got.got.forEach(personagem => {

@@ -64,7 +64,7 @@ body {
   flex-wrap: wrap; /* exibe os itens em linha */
   box-sizing: border-box; /* inclui a largura da borda e do padding no width */
   height: 300px;
-  width: 250px;
+  width: 230px;
   justify-content: center; 
   text-align: center; 
   margin: 70px 10px 0 10px;
@@ -74,13 +74,14 @@ body {
 
 }
 
-.exibirCards {
+.exibirCards{
   display: flex;
   flex-wrap: wrap; /* exibe os itens em linha */
   box-sizing: border-box; /* inclui a largura da borda e do padding no width */
   justify-content: center;  
   padding: 10px;
-}
+  
+  }
 
 input {
   width: 200px;
@@ -90,14 +91,14 @@ input {
 
 }
 
-  select {
+  select, button {
     width: auto;
     height: 30px;
     font-size: 15px;
     border-radius: 10px;
    }
 
-   label {
+   label, p {
     font-size: 30px;
     padding: 15px;
    }

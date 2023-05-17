@@ -1,20 +1,34 @@
 import got from './data/got/got.js'; // importando o módulo 'got' do arquivo got.jsc
-import {ordenarNomes, filtrarFamilia} from './data.js'; // importando o módulo 'got' do arquivo got.js
+import {ordenarNomes, filtrarFamilia, filtrarNomes} from './data.js'; // importando o módulo 'got' do arquivo got.js
 
 const listaPersonagens = got.got;
 const ordenacao = document.getElementById("ordenacao");
 const selecionarFamilia = document.getElementById("selecionarFamilia");
+const selecionarPersonagens = document.getElementById("selecionarPersonagem");
 
 ordenacao.addEventListener("change", onChangeOrdenacao); // add o evento de clique ao botão vinculando a função
 selecionarFamilia.addEventListener("change", onChangeSelecionarFamilia);
+selecionarPersonagens.addEventListener("change", onChangeSelecionarPersonagens);
 
 onChangeOrdenacao();
 onChangeSelecionarFamilia();
+onChangeSelecionarPersonagens();
 
 function onChangeOrdenacao(){
   const listaOrdenada = ordenarNomes(listaPersonagens, ordenacao.value);
   exibirPersonagens(listaOrdenada);
 }
+
+function onChangeSelecionarFamilia(){
+  const listaFamilia = filtrarFamilia(listaPersonagens, selecionarFamilia.value);
+  exibirPersonagens(listaFamilia);
+}
+
+function onChangeSelecionarPersonagens(){
+  const listaNomes = filtrarNomes(listaPersonagens, selecionarPersonagens.value);
+  exibirPersonagens(listaNomes);
+}
+
 
 function exibirPersonagens(personagens){
   // selecionando o elemento com id HTML 'exibirPersonagens' para exibir os cards ==>
@@ -57,10 +71,8 @@ function exibirPersonagens(personagens){
   });
 }
 
-function onChangeSelecionarFamilia(){
-  const listaFamilia = filtrarFamilia(listaPersonagens, selecionarFamilia.value);
-  exibirPersonagens(listaFamilia);
-}
+
+
 
 // Cria e exibe em ordem alfabética as famílias no 'select' ==>
 const familyArray = [];

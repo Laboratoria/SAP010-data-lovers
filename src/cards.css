@@ -12,7 +12,7 @@
 }
 
 body {
-  color: var(--black);
+  color:var(--black);
   font-family: monospace;
   background-color: var(--black);
   background-size: fill;
@@ -20,6 +20,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -31,7 +32,8 @@ header {
 #bbimage{
   width: 280px ;
   justify-content: center;
-  margin-left: 40%;
+  margin-left: 43%;
+  
 }
 
 .nav-header {
@@ -54,10 +56,6 @@ header {
   float: right;
 }
 
-.btn-header:hover {
-  opacity: 0.5;
-}
-
 .btn-option {
   background-color: var(--white);
   border-radius: 20px;
@@ -71,15 +69,16 @@ header {
   cursor: pointer;
 }
 
-.search {
-  background-color: var(--white);
-  font-size: 0.9rem;
-  width: 20vw;
+#btn-search {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 250px;
 }
 
 main {
-  background-image: url(img/tubos\ de\ ensaio.jpg);
+  /*background-image: url(img/tubos\ de\ ensaio.jpg);
   /*border-radius: 40px;*/
+  background-image: url(img/greensmoke.png);
   display: flex;
   flex-direction: column;
   /*flex-wrap: wrap;*/
@@ -136,7 +135,7 @@ main {
 }
 
 .poster-img {
-  height: 25vh;
+  height: 35vh;
   width: 15vw;
   margin-bottom: 2vh;
   border-radius: 50px;

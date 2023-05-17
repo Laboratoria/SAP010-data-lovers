@@ -37,6 +37,26 @@ describe("filter", () => {
   it("is a function", () => {
     expect(typeof dataFunctions.filter).toBe("function");
   });
+
+  it("filter status", () => {
+    const expectedStatus = dataFunctions.filter(arrayTest, "alive", "status");
+    expect(expectedStatus.length).toEqual(3);
+    expect(expectedStatus).toEqual(arrayTest[1], arrayTest[2], arrayTest[3]);
+  });
+
+  it("filter series", () => {
+    const expectSeries = dataFunctions.filter(
+      arrayTest,
+      "Breaking Bad",
+      "Series"
+    );
+    expect(expectSeries.length).toEqual(4);
+    expect(expectSeries).toEqual(
+      arrayTest[0],
+      arrayTest[1],
+      arrayTest[(2, arrayTest[3])]
+    );
+  });
 });
 
 //testando ordenação a-z e z-a
@@ -86,7 +106,7 @@ describe("calculatePercentage", () => {
   });
 
   it("calculate percentage", () => {
-    const percentage = dataFunctions.calculatePercentage(arrayTest.length,3);
+    const percentage = dataFunctions.calculatePercentage(arrayTest.length, 3);
     expect(percentage).toEqual(75);
   });
 });

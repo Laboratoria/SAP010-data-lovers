@@ -1,49 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>GAME OF THRONES</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./throneicon.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <section class="main-header">
-        <img src="logo.png" alt="Logo com espada" class="website-logo" />
-        <a href="https://www.hbo.com/game-of-thrones/season-1/" id="watch-now">
-          ASSISTA A SÉRIE
-        </a>
-        <nav>
-          <div class="menu-hamburguer">
-            <span></span>
-          </div>
-          <ul>
-            <li><a href="#">Sobre a série</a></li>
-            <li><a href="#">Filtrar por</a></li>
-            <li><a href="#">Ordenar de A-Z e Z-A</a></li>
-            <li><a href="#">Quem somos nós</a></li>
-          </ul>
-        </nav>
-      </section>
-    </header>
-    <div class="main-tittle">
-      <h1>Guia de Personagens Game of Thrones</h1>
+<head>
+  <meta charset="utf-8" />
+  <title>GAME OF THRONES</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./throneicon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/ac359e685a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="header">
+    <div id="logo">
+      <a href="./"> <img src="logo.png" alt="Logo Game of Thrones"></a>
     </div>
-    <div id="root"></div>
-    <main>
-      <section class="cards">
-        <!-- Incluir aqui os cards dos personagens -->
-      </section>
-    </main>
-    <script src="got.js"></script>
+    <div id="container-right">
+      <div class="search-box">
+        <input class="search-input" id="search-input" type="text" placeholder="Pesquisar por nome">
+        <a href="#" class="search-btn">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
+      <a href="https://www.hbo.com/game-of-thrones/season-1/" target="_blank"><button id="watch-now">ASSISTA A
+          SÉRIE</button></a>
+    </div>
+  </header>
 
-    <script src="main.js" type="module"></script>
-  </body>
+  <main id="main">
+    <nav class="menu-hamburguer">
+      <div class="menu">
+        <a href="./about.html" class="menu-item">Sobre a série</a>
+        <ul>
+          <li class="menu-item">filtrar por:</li>
+          <li class="menu-sub-item">
+            <select id="filter-by-tittle">
+              <option disabled selected style="display: none;">TÍTULO</option>
+            </select>
+          </li>
+          <li class="menu-sub-item">
+            <select id="filter-by-family">
+              <option disabled selected style="display: none;">FAMÍLIA</option>
+            </select>
+          </li>
+          <li class="menu-sub-item">
+            <select id="filter-by-born">
+              <option disabled selected style="display: none;">ANO DE NASCIMENTO</option>
+            </select>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu-item">ordenar por:</li>
+          <li class="menu-sub-item">
+            <select id="order-by-name">
+              <option value="a-z">A-Z</option>
+              <option value="z-a">Z-A</option>
+            </select>
+          </li>
+        </ul>
+        <a href="./quemsomosnos.html" class="menu-item">Quem somos nós</a>
+      </div>
+      <a href="#" class="menu-icon">
+        <i class="fas fa-bars fa-lg"></i>
+      </a>
+    </nav>
+    <section class="cards">
+      <!-- Incluir aqui os cards dos personagens -->
+    </section>
+  </main>
+  <script src="got.js"></script>
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

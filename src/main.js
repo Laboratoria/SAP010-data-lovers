@@ -17,30 +17,30 @@ continentSelectorElement.addEventListener("change", (event) => {
   // Verifica o valor do seletor de sub-regiões
   const value = event.target.value;
   if (value === "amer_central") {
-    let amerCentral = filterBySubregion("Central America", data)
+    const amerCentral = filterBySubregion("Central America", data)
     // Filtra os países pela sub-região selecionada e renderiza a lista
     renderCountryList (amerCentral);
   } else if (value === "amer_sul") {
-    let amerSul = filterBySubregion("South America", data)
+    const amerSul = filterBySubregion("South America", data)
     // Filtra os países pela sub-região selecionada e renderiza a lista
     renderCountryList (amerSul);
   } else if (value === "amer_norte") {
-    let amerNorte = filterBySubregion("North America", data)
+    const amerNorte = filterBySubregion("North America", data)
     // Filtra os países pela sub-região selecionada e renderiza a lista
     renderCountryList (amerNorte)
 
 
   } else if (value === "asia") {
-    let asia = filterByContinent("Asia", data)
+    const asia = filterByContinent("Asia", data)
     renderCountryList (asia);
   } else if (value === "africa") {
-    let africa = filterByContinent("Africa", data)
+    const africa = filterByContinent("Africa", data)
     renderCountryList (africa);
   } else if (value === "oceania") {
-    let oceania = filterByContinent("Oceania", data);
+    const oceania = filterByContinent("Oceania", data);
     renderCountryList (oceania);
   } else if (value === "europa") {
-    let europa = filterByContinent("Europe", data);
+    const europa = filterByContinent("Europe", data);
     renderCountryList (europa);
   } else {
     renderCountryList([]);
@@ -97,7 +97,7 @@ const renderCountryList = (countries) => {
 
 // Chama a função orderByAlphabetical com o array de países
 let alphabetical = orderByAlphabetical(data.countries);
-console.log(alphabetical); // Certifique-se de chamar a função orderByAlphabetical corretamente
+/* console.log(alphabetical); */ // Certifique-se de chamar a função orderByAlphabetical corretamente
 
 // Event listener para mudanças no seletor
 selectorElement.addEventListener("change", (event) => {
@@ -126,7 +126,7 @@ const calculatePopulation = (countries) => {
 // Função para exibir a população total e a região no elemento populationResultElement
 const displayPopulation = (region, population) => {
   populationResultElement.innerHTML = 
-  `<strong>População total de ${region}: ${population.toLocaleString("br-PT")}</strong>`;
+  `<strong>População total de ${region}: </br><p>${population.toLocaleString("br-PT")}</p></strong>`;
 };
 
 continentSelectorElement.addEventListener("change", (event) => {

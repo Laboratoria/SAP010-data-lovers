@@ -16,7 +16,7 @@ export const filterBySubregion = (subregion, array2) => {
 // Filtra os países por continente
 export const filterByContinent = (continent, array) => {
   // Filtra o array de países pelo continente selecionado
-  console.log(array)
+  /* console.log(array) */
   const filteredCountries = array.countries.filter((country) =>
     country.continents.includes(continent)
   

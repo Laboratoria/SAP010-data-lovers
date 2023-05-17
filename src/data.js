@@ -19,7 +19,7 @@ export const sortByName = () => {
 return sortedPokemonsByName
 
 }
-console.log(sortByName());
+//console.log(sortByName);
 
 // Segunda função, ordenar pelo número da pokédex (mesma lógica da anterior, só muda o parâmetro de name pra num)
 export const sortByNum = () => {
@@ -39,7 +39,7 @@ export const sortByNum = () => {
  return sortedPokemonsByNum
 
 }
-console.log(sortByNum());
+//console.log(sortByNum);
 
 //terceira função: Filtrar por tipo
 
@@ -49,7 +49,7 @@ export const filterByType = (typeInput) => {
   })
     return filteredPokemons;
   }
-console.log(filterByType("water"))
+//console.log(filterByType)
   
 
 //quarta função, procurar por nome

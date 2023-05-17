@@ -32,7 +32,7 @@ export const filtrarFamilia = (personagens, familia) => {
 }
 
 
-export const filtrarNomes = (personagens, nome) => {
+export const filtrarPersonagens = (personagens, nome) => {
   return personagens.filter(personagem => personagem.fullName === nome);
 }
 

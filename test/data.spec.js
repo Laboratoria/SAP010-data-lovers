@@ -1,23 +1,13 @@
-import { example, anotherExample } from '../src/data.js';
+import { ordenarNomes} from '../src/data.js';
 
-
-describe('example', () => {
+describe('ordenarNomes', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof ordenarNomes).toStrictEqual('function');
   });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('Retorna em ordem alfabetica ', () => {
+    const nomes = ['Arya', 'Jon', 'Robert', 'Samwell', 'Sandor'];
+    const nomesOrdenados = ordenarNomes(nomes);
+    const ordemEsperada = ['Arya', 'Jon', 'Robert', 'Samwell', 'Sandor'];
+    expect(nomesOrdenados).toStrictEqual(ordemEsperada);
   });
 });

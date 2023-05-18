@@ -9,7 +9,8 @@
     <link href= "style.css" rel="stylesheet" type="text/css">
     <img src="./pokedex-3d-logo.png" alt="pokemon" class="logo"><!--imagem do logo pokedex -->
 
-  </head>
+
+ </head>
 
   <h1><nav>
     <div class="box">
@@ -22,37 +23,56 @@
   </nav></h1>
 
 
-  <body>
+  
 
-    <main>
-      <div>
-      <img src="https://pokeapi.co/api/v2/pokemon" alt="pokemon" class="pokemon__image">
-      <img src="pokebola.png" alt="pokebola" class="pokebola">
-      </div>
-      
-      <section class="pokemon__data">
-        <strong><span class="pokemon__number"></span> -
-        <span class="pokemon__name"></span></strong>
-      </section>
-       <!-- <li>Habilidades:</li>
-        <li class="pokemon__abilities"></li>-->
+<body>
 
-        <form class="form">
+
+        <main>
+            <div>
+              <img src="https://pokeapi.co/api/v2/pokemon" alt="pokemon" class="pokemon__image">
+              <img src="pokebola.png" alt="pokebola" class="pokebola">
+              </div>
+           
+            <section class="pokemon__data">
+                <strong><span class="pokemon__number"></span> -
+                  <span class="pokemon__name"></span></strong>
+              </section>
+         
+
+
+              <form class="form">
+                <input type="search" class="input__search" placeholder="Nome ou Numero " required="">
+               </form>
+
+      <form class="form">
         <input type="search" class="input__search" placeholder="Nome ou Numero " required="">
-       </form>
+      </form>
 
-       <ul class="buttons" >
+      <ul class="buttons">
         <button class="button btn-prev">Voltar &lt;</button>
         <button class="button btn-next">Seguir &gt;</button>
-       </ul>
+      </ul>
+
+  </section>
 
 
+         <ul class="buttons">
+            <button class="button btn-prev">Voltar &lt;</button>
+            <button class="button btn-next">Seguir &gt;</button>
+           </ul>
 
-    </main>
 
-    <script src="main.js" type="module"></script>
+     
+  </main>
 
-  </body>
+     
+  <script src="main.js" type="module"></script>
 
+   
+</body>
+
+
+  
 
 </html>

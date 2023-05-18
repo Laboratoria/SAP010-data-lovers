@@ -157,12 +157,14 @@ const buildCard = (id, pokemon) => {
     cardPokemon.href = "cardDetails.html";
     cardPokemon.target = "_blank";
     cardPokemon.innerHTML = `
-    <div>
-    <img id="imagePokemon" alt="Image Pokemon" src=${pokemon[i].img}>
     <div class="showNamePokemon">
+    <div>
       <h1 id="name">${pokemon[i].name}</h1>
-      <p>${pokemon[i].num}</p>
-    </div>
+      </div>
+      <div>
+      <p id="num">${pokemon[i].num}</p>
+      </div>
+      <img id="imagePokemon" alt="Image Pokemon" src=${pokemon[i].img}>
     </div>
     `;
 

@@ -212,3 +212,63 @@ select {
     line-height: 10.05em;
     vertical-align: -0.075em;
 }
+
+/* formatação dos cards e card container */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    gap: 50px;
+    justify-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  color: white;
+  f
+ 
+}
+
+#characterContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    gap: 50px;
+    justify-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+ 
+}
+
+.card {
+width: 244px;
+    height: 409px;
+    background: #0d0d0d;
+    padding: 10px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  
+}
+
+.card h2 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 500px) {
+  .card-container {
+    justify-content: flex-start;
+  }
+}

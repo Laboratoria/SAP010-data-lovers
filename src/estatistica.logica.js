@@ -13,6 +13,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=500&offset=0')
     }
     return response.json();
   })
+  
   .then(data => {
     pokemonList = data.results;
     return Promise.all(pokemonList.map(pokemon => fetch(pokemon.url).then(res => res.json())));
@@ -38,5 +39,5 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=500&offset=0')
   })
   //.catch(error => {
   //  console.log(error);
-// });
+// });/
 

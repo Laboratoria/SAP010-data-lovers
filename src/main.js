@@ -51,67 +51,86 @@ if (findPercentageOfTypesOfPokemons) {
   });
 }//endIf
 
-const replaceTypeToImage = (pokemon) => {
+const styleCard = (pokemon) => {
 
   for (const data in pokemon) {
-    
+
     Object.defineProperty(pokemon[data], 'imgType', { value: [] })
+    Object.defineProperty(pokemon[data], 'colorType', { value: [] })
 
     for (let i = 0; i < pokemon[data].type.length; i++) {
 
       if (pokemon[data].type[i].includes('grass')) {
         pokemon[data].imgType.push("./images/types/grass.png");
+        pokemon[data].colorType.push('#218C74');
       }
       if (pokemon[data].type[i].includes('poison')) {
         pokemon[data].imgType.push("./images/types/poison.png");
+        pokemon[data].colorType.push('#786fa6');
       }
       if (pokemon[data].type[i].includes('fire')) {
         pokemon[data].imgType.push("./images/types/fire.png");
+        pokemon[data].colorType.push('#FF793F');
       }
       if (pokemon[data].type[i].includes('flying')) {
         pokemon[data].imgType.push("./images/types/flying.png");
+        pokemon[data].colorType.push('#778beb');
       }
       if (pokemon[data].type[i].includes('water')) {
         pokemon[data].imgType.push("./images/types/water.png");
+        pokemon[data].colorType.push('#3dc1d3');
       }
       if (pokemon[data].type[i].includes('bug')) {
         pokemon[data].imgType.push("./images/types/bug.png");
+        pokemon[data].colorType.push('#0be881');
       }
       if (pokemon[data].type[i].includes('normal')) {
         pokemon[data].imgType.push("./images/types/normal.png");
+        pokemon[data].colorType.push('#aaa69d');
       }
       if (pokemon[data].type[i].includes('electric')) {
         pokemon[data].imgType.push("./images/types/electric.png");
+        pokemon[data].colorType.push('#CCAE62');
       }
       if (pokemon[data].type[i].includes('ground')) {
         pokemon[data].imgType.push("./images/types/ground.png");
+        pokemon[data].colorType.push('#cd6133');
       }
       if (pokemon[data].type[i].includes('fighting')) {
         pokemon[data].imgType.push("./images/types/fighting.png");
+        pokemon[data].colorType.push('#ea8685');
       }
       if (pokemon[data].type[i].includes('psychic')) {
         pokemon[data].imgType.push("./images/types/psychic.png");
+        pokemon[data].colorType.push('#cf6a87');
       }
       if (pokemon[data].type[i].includes('rock')) {
         pokemon[data].imgType.push("./images/types/rock.png");
+        pokemon[data].colorType.push('#84817a');
       }
       if (pokemon[data].type[i].includes('ice')) {
         pokemon[data].imgType.push("./images/types/ice.png");
+        pokemon[data].colorType.push('#63cdda');
       }
       if (pokemon[data].type[i].includes('ghost')) {
         pokemon[data].imgType.push("./images/types/ghost.png");
+        pokemon[data].colorType.push('#786fa6');
       }
       if (pokemon[data].type[i].includes('dragon')) {
         pokemon[data].imgType.push("./images/types/dragon.png");
+        pokemon[data].colorType.push('#546de5');
       }
       if (pokemon[data].type[i].includes('fairy')) {
         pokemon[data].imgType.push("./images/types/fairy.png");
+        pokemon[data].colorType.push('#f8a5c2');
       }
       if (pokemon[data].type[i].includes('dark')) {
         pokemon[data].imgType.push("./images/types/dark.png");
+        pokemon[data].colorType.push('#353b48');
       }
       if (pokemon[data].type[i].includes('steel')) {
         pokemon[data].imgType.push("./images/types/steel.png");
+        pokemon[data].colorType.push('#487eb0');
       }
 
     }
@@ -120,48 +139,7 @@ const replaceTypeToImage = (pokemon) => {
 
 }
 
-const changeColorBackground = (pokemon) => {
-
-  if (pokemon.type.includes("grass") && pokemon.type.indexOf("grass") === 0) {
-    return '#218C74'
-  } else if (pokemon.type.includes('poison') && pokemon.type.indexOf('poison') === 0) {
-    return '#786fa6'
-  } else if (pokemon.type.includes("fire") && pokemon.type.indexOf("fire") === 0) {
-    return '#FF793F'
-  } else if (pokemon.type.includes("flying") && pokemon.type.indexOf("flying") === 0) {
-    return '#778beb'
-  } else if (pokemon.type.includes("water") && pokemon.type.indexOf("water") === 0) {
-    return '#3dc1d3'
-  } else if (pokemon.type.includes("bug") && pokemon.type.indexOf("bug") === 0) {
-    return '#0be881'
-  } else if (pokemon.type.includes("normal") && pokemon.type.indexOf("normal") === 0) {
-    return '#aaa69d'
-  } else if (pokemon.type.includes("electric") && pokemon.type.indexOf("electric") === 0) {
-    return '#CCAE62'
-  } else if (pokemon.type.includes("ground") && pokemon.type.indexOf("ground") === 0) {
-    return '#cd6133'
-  } else if (pokemon.type.includes("fighting") && pokemon.type.indexOf("fighting") === 0) {
-    return '#ea8685'
-  } else if (pokemon.type.includes("psychic") && pokemon.type.indexOf("psychic") === 0) {
-    return '#cf6a87'
-  } else if (pokemon.type.includes("rock") && pokemon.type.indexOf("rock") === 0) {
-    return '#84817a'
-  } else if (pokemon.type.includes("ice") && pokemon.type.indexOf("ice") === 0) {
-    return '#63cdda'
-  } else if (pokemon.type.includes("ghost") && pokemon.type.indexOf("ghost") === 0) {
-    return '#786fa6'
-  } else if (pokemon.type.includes("dragon") && pokemon.type.indexOf("dragon") === 0) {
-    return '#546de5'
-  } else if (pokemon.type.includes("fairy") && pokemon.type.indexOf("fairy") === 0) {
-    return '#f8a5c2'
-  } else if (pokemon.type.includes("dark") && pokemon.type.indexOf("dark") === 0) {
-    return '#353b48'
-  } else if (pokemon.type.includes("steel") && pokemon.type.indexOf("steel") === 0) {
-    return '#487eb0'
-  }
-
-}
-replaceTypeToImage(data.pokemon);
+styleCard(data.pokemon);
 
 const buildCard = (id, pokemon) => {
 
@@ -175,8 +153,7 @@ const buildCard = (id, pokemon) => {
 
     const cardPokemon = document.createElement('div');
     cardPokemon.classList.add("card");
-    const color = changeColorBackground(pokemon[i])
-    cardPokemon.style.backgroundColor = color;
+    cardPokemon.style.backgroundColor = pokemon[i].colorType[0];
     cardPokemon.innerHTML = `
     <img id="imagePokemon" alt="Image Pokemon" src=${pokemon[i].img}>
     <div class="showNamePokemon">

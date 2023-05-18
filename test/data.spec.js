@@ -39,19 +39,19 @@ describe("filter", () => {
   });
 
   it("filter status", () => {
-    const expectedStatus = dataFunctions.filter(arrayTest, "alive", "status");
-    expect(expectedStatus.length).toEqual(3);
-    expect(expectedStatus).toEqual(arrayTest[1], arrayTest[2], arrayTest[3]);
+    const selectStatus = dataFunctions.filter(arrayTest, "Alive", "Status");
+    expect(selectStatus.length).toEqual(3);
+    expect(selectStatus).toEqual(arrayTest[1], arrayTest[2], arrayTest[3]);
   });
 
   it("filter series", () => {
-    const expectSeries = dataFunctions.filter(
+    const selectCategory = dataFunctions.filter(
       arrayTest,
       "Breaking Bad",
       "Series"
     );
-    expect(expectSeries.length).toEqual(4);
-    expect(expectSeries).toEqual(
+    expect(selectCategory.length).toEqual(4);
+    expect(selectCategory).toEqual(
       arrayTest[0],
       arrayTest[1],
       arrayTest[(2, arrayTest[3])]

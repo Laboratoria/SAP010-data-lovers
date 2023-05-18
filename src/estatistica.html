@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+    <link rel="stylesheet" href="estatisticas.css"> 
+  </head>
+  <body>
+    <h1>
+      <nav>
+        <a href="index.html">
+          <div> HOME</div>
+        </a> 
+      </nav>
+    </h1>
+    
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pesquisa</title>
-  <link rel="stylesheet" href="estatisticas.css"> 
-  <script src="estatistica.js" defer></script> 
-</head>
-
-<body>
-
- 
-
-    <h1><label>Filtre seus pokemons:</label></h1>
-
-    <ul id="pokemonListContainer">
-
-    <label for="options1">Ordenação:</label>
-    <select id="options1" class="options1">
+    <label for="ordenarPor"><b>Organizar por:</b></label>
+    <select id="options1" class="ordenarPor">
       <option value="a-z">A-Z</option>
       <option value="z-a">Z-A</option>
     </select>
+    <button class="btn1" type="submit">Pesquisar</button>
 
-    
-  <label for="options2">Tipo:</label>
-    <select id="options2" class="options2">
-      <option value="chosenType">Tipo</option>
-      <option value="grass">Planta</option>
-      <option value="poison">Veneno</option>
-      <option value="fire">Fogo</option>
-      <option value="flying">Voador</option>
-      <option value="water">Água</option>
+    <label for="TipoPokemon"><b>Escolha o Tipo:</b></label>
+    <select class="tipoPokemon" id="TipoPokemon">
+      <option value="">Todos</option>
       <option value="normal">Normal</option>
-      <option value="electric">Elétrico</option>
-      <option value="fighting">Luta</option>
-      <option value="psychic">Psíquico</option>
+      <option value="fighting">Lutador</option>
+      <option value="flying">Voador</option>
+      <option value="poison">Venenoso</option>
+      <option value="ground">Terra</option>
       <option value="rock">Pedra</option>
-      <option value="ice">Gelo</option>
+      <option value="bug">Inseto</option>
       <option value="ghost">Fantasma</option>
-      <option value="dragon">Dragão</option>
-      <option value="fairy">Fada</option>
-      <option value="dark">Sombrio</option>
       <option value="steel">Aço</option>
-    </select> 
+      <option value="fire">Fogo</option>
+      <option value="water">Água</option>
+      <option value="grass">Planta</option>
+      <option value="electric">Elétrico</option>
+      <option value="psychic">Psíquico</option>
+      <option value="ice">Gelo</option>
+      <option value="dragon">Dragão</option>
+      <option value="dark">sombrio</option>
+      <option value="fairy">Fada</option>
+    </select>
 
-    <button id="submit" class="btn">Pesquisar</button>
+    <button id="btn2" type="submit">Pesquisar</button>
 
-    </ul>
-    </div>
+
+    <ul id="pokemon-list" class="pokemon_list"></ul>
+
+    <script src="estatistica.js" type="module"></script>
+    
+
+
+  </body>
+
   
- </body>
-
 </html>

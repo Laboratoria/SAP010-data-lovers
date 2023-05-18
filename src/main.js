@@ -1,5 +1,5 @@
 import {
-  filterPokemonsByType,
+  //filterPokemonsByType,
   filterPokemonByStr,
   pokemonsOrderAZ,
   pokemonsOrderZA,

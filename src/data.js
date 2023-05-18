@@ -15,20 +15,11 @@ export const selectTitle = (films, data) => {
   //substituindo por for of
   function filmsArray(data){
     for (let something of data.films){
-      for (let i = 0; i < titles.length; i){
-        titles.push(data.films[films[i]].title);
+      for (let i = 0; i < 19; i++){
+        titles.push(data.films[i].title);
       }
       something = titles;
       return something;
     }
-  }
-  //tentando printar o atributo do valor "Studio" só pra testar se consigo acessar ele.
-  function trying(data){
-    let studio = "";
-
-    for (let x in data){
-      studio += x;
-    }
-    return studio;
   }
 }

@@ -68,7 +68,7 @@ const renderCountryList = (countries) => {
     capitalElement.textContent = "Capital: " + country.capital;
 
     const languagesElement = document.createElement("p");
-    languagesElement.textContent = "Idioma: " + Object.values(country.languages).join(", ");
+    languagesElement.textContent = "Idioma: " + Object.values(country.languages).join(", "); 
 
     const populationElement = document.createElement("p");
     populationElement.textContent =

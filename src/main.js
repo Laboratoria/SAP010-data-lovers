@@ -1,4 +1,4 @@
-
+/** @type {import('jest').Config} */ 
 //import { characteristic,generatio } from 'https://pokeapi.co/api/v2/pokemon';
 //import  APIResponse 'https://pokeapi.co/api/v2/pokemon/${pokemon}';
 
@@ -7,7 +7,7 @@
 const pokemonName = document.querySelector('.pokemon__name'); //variável para selecionar um elemento HTML com a classe
 const pokemonNumber = document.querySelector('.pokemon__number');
 const pokemonImage = document.querySelector('.pokemon__image');
-//const pokemonAbilities = document.querySelector('.pokemon__abilities');
+const pokemonAbilities = document.querySelector('.pokemon__abilities');
 
 const form = document.querySelector('.form'); // variável para selecionar um elemento no HTML com a classe .form.
 const input = document.querySelector('.input__search'); //variável para selecionar um elemento no HTML com a classe .input
@@ -42,7 +42,7 @@ const renderPokemon = async (pokemon) => {
     pokemonName.innerHTML = data.name;
     pokemonNumber.innerHTML = data.id;
     pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
-    //pokemonAbilities.innerHTML = data.abilities.map(a => a.ability.name).join(", "); // MAP - converte o resultado recebido do arrey para 
+    pokemonAbilities.innerHTML = data.abilities.map(a => a.ability.name).join(", "); // MAP - converte o resultado recebido do arrey para 
     input.value = '';
     searchPokemon = data.id;
 
@@ -51,11 +51,13 @@ const renderPokemon = async (pokemon) => {
     pokemonImage.style.display = 'none';
     pokemonName.innerHTML = 'Not found ';
     pokemonNumber.innerHTML = '';
-    //pokemonAbilities.innerHTML = '';
+    pokemonAbilities.innerHTML = '';
 
   }
 
 }
+
+
 
 //eventos do botão
 
@@ -78,3 +80,5 @@ buttonNext.addEventListener('click', () => {
 });
 
 renderPokemon(searchPokemon);
+
+

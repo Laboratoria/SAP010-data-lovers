@@ -1,11 +1,10 @@
 @import url('https://fonts.google.com/specimen/Oxanium?query=oxanium');
 
-
 * {
     margin: 0;
     padding:0 ;
-    box-sizing: border-box;
-    font-family:'Oxanium', cursive;
+    box-sizing: border-box;/*faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+    font-family:'Oxanium', cursive;/*font escolhida padrão no link*/
 
 }
 
@@ -14,7 +13,7 @@ body {
     background:linear-gradient(to bottom,#797575,#3b3a3a );
     min-height: 100vh;
     display:inline-block;
-
+    
 }
 main{
     text-align: center;
@@ -24,6 +23,15 @@ main{
     position: relative;
 }
 
+.box {
+  border: 2px solid rgb(138, 19, 19);
+  padding:15px;
+  width: 100%;
+  background: rgb(138, 19, 19);
+  text-align-last: center;
+  
+}
+
 .pokebola {
 width: 100%;
 max-width: 425px;
@@ -31,23 +39,13 @@ max-width: 425px;
 }
 
 .logo {
-    
-    
-}
-.pokemon__image{
-position: absolute;
-bottom: 55%;
-left: 50%;
-transform: translate(-40%,80%);
-height:18% ;
-}
+  text-align: center;
+  display:inline-block;
+  width: 100%;
+  margin: 0%;
 
-.pokedexnova{
-   
-margin: 10%;
-     
+    
 }
-
 
 .pokemon__image {
   position: absolute;
@@ -58,29 +56,32 @@ margin: 10%;
 }
 
 .pokemon__data {
-  position: absolute;
   font-weight: 600;
   color: #aaa;
-  top: 54.5%;
-  right: 27%;
+  top: 75%;
+  right: 33%;
   font-size: clamp(8px, 5vw, 25px);
+  display:block;
+  
 }
 
 .pokemon__name {
-  color: #3a444d;
+  color: #6b1919;
   text-transform: capitalize;
+  left: 30%;
+  display:inline-block;
+  
 }
 
 .form {
-  position: absolute;
   width: 65%;
-  top: 65%;
-  left: 13.5%;
+  display:inline-block;
+  
 }
 
 .input__search {
   width: 100%;
-  padding: 4%;
+  padding:4%;
   outline: none;
   border: 2px solid #333;
   border-radius: 5px;
@@ -88,34 +89,39 @@ margin: 10%;
   color: #3a444d;
   font-size: clamp(8px, 5vw, 1rem);
   box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
+  
 }
 
-.buttons {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  width: 65%;
-  transform: translate(-57%, 0);
-  display: flex;
-  gap: 20px;
-}
-
-.button {
-  width: 50%;
-  padding: 4%;
+.btn-prev {
+  width: 30%;
+  padding: 2%;
   border: 2px solid #000;
   border-radius: 5px;
-  font-size: clamp(8px, 5vw, 1rem);
+  font-size: clamp(19px, 5vw, 1rem);
   font-weight: 600;
   color: white;
-  background-color: #444;
+  background-color:rgb(138, 19, 19);
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  display:inline-block;
 }
 
-.button:active {
-  box-shadow: inset -4px 4px 0 #222;
-  font-size: 0.9rem;
+ .btn-next {
+  width: 30%;
+  padding: 2%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(19px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color:rgb(138, 19, 19);
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  display:inline-block;
 }
+
+a{
+  color: #aaa;
+}
+
 
 
 

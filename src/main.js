@@ -151,14 +151,18 @@ const buildCard = (id, pokemon) => {
 
   for (let i = 0; i < pokemon.length; i++) {
 
-    const cardPokemon = document.createElement('div');
+    const cardPokemon = document.createElement('a');
     cardPokemon.classList.add("card");
     cardPokemon.style.backgroundColor = pokemon[i].colorType[0];
+    cardPokemon.href = "cardDetails.html";
+    cardPokemon.target = "_blank";
     cardPokemon.innerHTML = `
+    <div>
     <img id="imagePokemon" alt="Image Pokemon" src=${pokemon[i].img}>
     <div class="showNamePokemon">
       <h1 id="name">${pokemon[i].name}</h1>
       <p>${pokemon[i].num}</p>
+    </div>
     </div>
     `;
 
@@ -184,6 +188,8 @@ const buildCard = (id, pokemon) => {
     }//endIf
 
   }//endFor
+
+  console.log(pokemons)
 
 }//endBuildCard
 

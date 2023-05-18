@@ -1,4 +1,4 @@
-import { calculatePopulation, filterBySubregion, filterByContinent } from "../src/data.js";
+import { calculatePopulation, filterBySubregion, filterByContinent, orderByAlphabetical } from "../src/data.js";
 
 //=======================CALCULAR POPULAÇÃO===================
 describe("calculatePopulation", () => {
@@ -60,3 +60,24 @@ describe('filterByContinent', () => {
     expect(filteredCountries).toEqual([]);
   });
 });
+
+//====================Teste Ordena os países em ordem alfabética==============
+ 
+describe('orderByAlphabetical', () => {
+  const countries = [
+    { name: { common: 'Country 1' }, countries: 'Asia' },
+    { name: { common: 'Country 2' }, countries: 'Brasil' },
+    { name: { common: 'Country 3' }, countries: 'Canada' },
+  ];
+  
+  it('ordena países em ordem alfabética', () => {
+    const sortedCountries = orderByAlphabetical(countries);
+    expect(sortedCountries).toEqual([
+      { name: { common: 'Country 1' }, countries: 'Asia' },
+      { name: { common: 'Country 2' }, countries: 'Brasil' },
+      { name: { common: 'Country 3' }, countries: 'Canada' },
+    ]);
+  });
+});
+
+

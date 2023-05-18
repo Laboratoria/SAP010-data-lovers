@@ -142,8 +142,6 @@ select {
 }
 
 .card {
-  border: 1px solid black;
-  background-color: azure;
   border-radius: 10px;
   height: 80%;
   float: right;

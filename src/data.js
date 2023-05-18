@@ -61,8 +61,6 @@ const alphabetical = (orderBy, data) => {
 
 const pokedexNumber = (orderBy, data) => {
 
-  console.log(data.pokemon)
-
   if (orderBy === 'asc') {
 
     data.pokemon.sort((a, b) => {

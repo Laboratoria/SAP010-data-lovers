@@ -39,5 +39,5 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=500&offset=0')
   })
   //.catch(error => {
   //  console.log(error);
-// });/
+// });  //
 

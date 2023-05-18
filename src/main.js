@@ -62,15 +62,15 @@ const styleCard = (pokemon) => {
 
       if (pokemon[data].type[i].includes('grass')) {
         pokemon[data].imgType.push("./images/types/grass.png");
-        pokemon[data].colorType.push('#218C74');
+        pokemon[data].colorType.push('#5fa81f7e');
       }
       if (pokemon[data].type[i].includes('poison')) {
         pokemon[data].imgType.push("./images/types/poison.png");
-        pokemon[data].colorType.push('#786fa6');
+        pokemon[data].colorType.push('#786fa6d0');
       }
       if (pokemon[data].type[i].includes('fire')) {
         pokemon[data].imgType.push("./images/types/fire.png");
-        pokemon[data].colorType.push('#FF793F');
+        pokemon[data].colorType.push('#ff793f7a');
       }
       if (pokemon[data].type[i].includes('flying')) {
         pokemon[data].imgType.push("./images/types/flying.png");
@@ -78,15 +78,15 @@ const styleCard = (pokemon) => {
       }
       if (pokemon[data].type[i].includes('water')) {
         pokemon[data].imgType.push("./images/types/water.png");
-        pokemon[data].colorType.push('#3dc1d3');
+        pokemon[data].colorType.push('#3dc1d371');
       }
       if (pokemon[data].type[i].includes('bug')) {
         pokemon[data].imgType.push("./images/types/bug.png");
-        pokemon[data].colorType.push('#0be881');
+        pokemon[data].colorType.push('#0be8816e');
       }
       if (pokemon[data].type[i].includes('normal')) {
         pokemon[data].imgType.push("./images/types/normal.png");
-        pokemon[data].colorType.push('#aaa69d');
+        pokemon[data].colorType.push('#aaa69ddc');
       }
       if (pokemon[data].type[i].includes('electric')) {
         pokemon[data].imgType.push("./images/types/electric.png");

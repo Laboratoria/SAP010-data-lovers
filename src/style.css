@@ -23,13 +23,15 @@ main{
     position: relative;
 }
 
+
+
 .box {
   border: 2px solid rgb(138, 19, 19);
   padding:15px;
-  width: 100%;
+  width: 108%;
   background: rgb(138, 19, 19);
-  text-align-last: center;
-  
+  text-align: center;
+
 }
 
 .pokebola {
@@ -118,8 +120,10 @@ max-width: 425px;
   display:inline-block;
 }
 
+
 a{
   color: #aaa;
+
 }
 
 

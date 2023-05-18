@@ -153,3 +153,120 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 10%;
+    margin-right: 10%;
+    padding: 5%;
+  }
+
+  .btn-option {
+    width: 20vw;
+    margin: 5%;
+    text-align: center;
+  }
+
+  #btn-search {
+    width: 20vw;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+  }
+
+  .poster-img {
+    height: 20vh;
+    width: 15vw;
+    object-fit: cover;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    padding: 10%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    width: 80vw;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .poster-img {
+    height: 20vh;
+    width: 15vw;
+    object-fit: cover;
+  }
+
+  footer {
+    /* text-align: center; */
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    padding: 30%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  body {
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    width: 80vw;
+  }
+
+  .card {
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+  }
+
+  .poster-img {
+    height: 20vh;
+    width: 15vw;
+    object-fit: cover;
+  }
+
+  footer {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    margin-top: 35px;
+  }
+}

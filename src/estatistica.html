@@ -4,27 +4,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="pokebola.png">
   <title>Pesquisa</title>
   <link rel="stylesheet" href="estatisticas.css"> 
   <script src="estatistica.js" defer></script> 
 </head>
 
+<nav class = "navE">
+  <div class="home">
+   <a href="index.html"> 
+    <div class="escritaHome">HOME</div></a>
+  </div>
+
+</nav>
+
+<label class="filtrePokemon">Filtre seus pokemons:</label>
 <body>
-
- 
-
-    <h1><label>Filtre seus pokemons:</label></h1>
 
     <ul id="pokemonListContainer">
 
-    <label for="options1">Ordenação:</label>
+    <label for="options1" class ="ordenação">Ordenação:</label>
     <select id="options1" class="options1">
       <option value="a-z">A-Z</option>
       <option value="z-a">Z-A</option>
     </select>
 
     
-  <label for="options2">Tipo:</label>
+  <label for="options2" class="tipo" >Tipo:</label>
     <select id="options2" class="options2">
       <option value="chosenType">Tipo</option>
       <option value="grass">Planta</option>

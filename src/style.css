@@ -14,7 +14,7 @@ body {
     background:linear-gradient(to bottom,#797575,#3b3a3a );
     min-height: 100vh;
     display:inline-block;
-    
+    width: 100%;
 }
 main{
     text-align: center;
@@ -24,11 +24,20 @@ main{
     position: relative;
 }
 
+nav {
+  width: 100%;
+}
+
+a{
+  color: #aaa;
+  font-size:30px;
+  width: 100%;
+}
 
 .box {
   border: 2px solid rgb(138, 19, 19);
   padding:15px;
-  width: 108%;
+  width: 100%;
   background: rgb(138, 19, 19);
   text-align: center;
 }
@@ -119,9 +128,5 @@ max-width: 425px;
   display:inline-block;
 }
 
-a{
-  color: #aaa;
-  width: 100%;
-}
 
 

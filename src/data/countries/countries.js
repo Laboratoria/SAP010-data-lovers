@@ -3169,6 +3169,10 @@ export default {
       "continents": [
         "Antarctica"
       ],
+      "languages": {
+        "eng": "English",
+        
+      },
       "flags": {
         "png": "https://flagcdn.com/w320/aq.png",
         "svg": "https://flagcdn.com/aq.svg"

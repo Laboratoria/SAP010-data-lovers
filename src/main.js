@@ -132,25 +132,25 @@ continentSelectorElement.addEventListener("change", (event) => {
 
   if (value === "amer_central") {
     region = "América Central";
-    filteredCountries = filterBySubregion("Central America", data);
+    filteredCountries = filterBySubregion("Central America", data.countries);
   } else if (value === "amer_sul") {
     region = "América do Sul";
-    filteredCountries = filterBySubregion("South America", data);
+    filteredCountries = filterBySubregion("South America", data.countries);
   } else if (value === "amer_norte") {
     region = "América do Norte";
-    filteredCountries = filterBySubregion("North America", data);
+    filteredCountries = filterBySubregion("North America", data.countries);
   } else if (value === "asia") {
     region = "Ásia";
-    filteredCountries = filterByContinent("Asia", data);
+    filteredCountries = filterByContinent("Asia", data.countries);
   } else if (value === "africa") {
     region = "África";
-    filteredCountries = filterByContinent("Africa", data);
+    filteredCountries = filterByContinent("Africa", data.countries);
   } else if (value === "oceania") {
     region = "Oceania";
-    filteredCountries = filterByContinent("Oceania", data);
+    filteredCountries = filterByContinent("Oceania", data.countries);
   } else if (value === "europa") {
     region = "Europa";
-    filteredCountries = filterByContinent("Europe", data);
+    filteredCountries = filterByContinent("Europe", data.countries);
   }
 
   renderCountryList(filteredCountries);

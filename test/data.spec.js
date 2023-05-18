@@ -5,9 +5,36 @@ describe('ordenarNomes', () => {
     expect(typeof ordenarNomes).toStrictEqual('function');
   });
   it('Retorna em ordem alfabetica ', () => {
-    const nomes = ['Arya', 'Jon', 'Robert', 'Samwell', 'Sandor'];
+    const nomes = 
+    [
+      {
+        "fullName": "Daenerys Targaryen",
+        "family": "House Targaryen"
+      },
+      {
+        "fullName": "Samwell Tarly",
+        "family": "House Tarly"
+      },
+      {
+        "fullName": "Jon Snow",
+        "family": "House Stark"
+      }
+    ];
     const nomesOrdenados = ordenarNomes(nomes);
-    const ordemEsperada = ['Arya', 'Jon', 'Robert', 'Samwell', 'Sandor'];
+    const ordemEsperada = [
+      {
+        "fullName": "Daenerys Targaryen",
+        "family": "House Targaryen"
+      },
+      {
+        "fullName": "Jon Snow",
+        "family": "House Stark"
+      },
+      {
+        "fullName": "Samwell Tarly",
+        "family": "House Tarly"
+      }
+    ];
     expect(nomesOrdenados).toStrictEqual(ordemEsperada);
   });
 });

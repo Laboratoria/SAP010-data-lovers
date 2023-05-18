@@ -1,0 +1,90 @@
+html {
+  text-align: center;
+  justify-content: center;
+  font-family: 'Grenze', serif;
+  color: #D1CFCE;
+  background-color: black;
+  box-sizing: border-box;
+ 
+}
+
+html::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/papel-de-parede.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -5;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.imagem {
+  float: left;
+  margin: 20px 20px 0 100px;
+  align-self: flex-start;
+}
+
+img {
+  width: 500px;
+}
+
+main{
+  font-family: 'Grenze', serif;
+  text-align: justify;
+  margin: 20px 20px 0 20px;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+h1{
+  text-align: center;
+
+ }
+
+.links, main a {
+  color: #D1CFCE;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+footer {
+  background-color: #d1cfce28;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+}
+  
+ footer a, footer p {
+  margin: 5px;
+  text-decoration: none;
+  color: #D1CFCE;
+}
+
+
+
+ 

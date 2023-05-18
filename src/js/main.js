@@ -1,5 +1,5 @@
-import got from './data/got/got.js'; // importando o módulo 'got' do arquivo got.jsc
-import {ordenarNomes, filtrarFamilia, filtrarPersonagens} from './data.js'; // importando o módulo 'got' do arquivo got.js
+import got from '../data/got/got.js'; // importando o módulo 'got' do arquivo got.jsc
+import {ordenarNomes, filtrarFamilia, filtrarPersonagens} from '../js/data.js'; // importando o módulo 'got' do arquivo got.js
 
 const listaPersonagens = got.got;
 const ordenacao = document.getElementById("ordenacao");

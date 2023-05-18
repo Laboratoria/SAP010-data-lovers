@@ -33,7 +33,11 @@ export const filtrarFamilia = (personagens, familia) => {
 
 
 export const filtrarPersonagens = (personagens, nome) => {
-  return personagens.filter(personagem => personagem.fullName === nome);
+  if (nome === "Todas Famílias") {
+    return personagens; // Retorna a lista completa de personagens
+  } else {
+    return personagens.filter(personagem => personagem.fullName === nome);
+  }
 }
 
 

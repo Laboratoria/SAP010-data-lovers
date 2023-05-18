@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="linguage" content="pt-br">
-   <link rel="icon " href="./pokebola.png">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="pt-br">
+    <link rel="icon" href="pokebola.png"><!--imagem do icone do html (favicon) -->
+    <title>pokemon</title>
+    <link href= "style.css" rel="stylesheet" type="text/css">
+    <img src="./pokedex-3d-logo.png" alt="pokemon" class="logo"><!--imagem do logo pokedex -->
 
-    <!-- Main JS -->
-    <script defer="" src="./main.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <title>Pokédex</title>
-  </head>
+  </head>
+
+  <h1><nav>
+    <div class="box">
+     <a href="estatistica.html">
+      <div class="escritafiltro">Filtros de pesquisa</div>
+    </div>
+   
+    </a>
+
+  </nav></h1>
 
 
-  <body>
+  <body>
 
-    <img src="logo.png" alt="logo" class="logo"/>
+    <main>
+      <div>
+      <img src="https://pokeapi.co/api/v2/pokemon" alt="pokemon" class="pokemon__image">
+      <img src="pokebola.png" alt="pokebola" class="pokebola">
+      </div>
+     
+      <section class="pokemon__data">
+        <strong><span class="pokemon__number"></span> -
+        <span class="pokemon__name"></span></strong>
+      </section>
+       <!-- <li>Habilidades:</li>
+        <li class="pokemon__abilities"></li>-->
 
-    <main>
-      <img src="./pokedex-3d-logo.png" alt="pokemon" class="pokemon__image" style="display: block;">
-      <img src="pokebola.png " alt="pokebola" class="pokebola"/>
-      <img src="pokedexnova.png" alt="pokedexnova" class="pokedexnova"/>
-      
-      <ul class="pokemon__data">
-        <span class="pokemon__number"></span> -
-        <span class="pokemon__name"></span>
-      </ul>
+        <form class="form">
+        <input type="search" class="input__search" placeholder="Nome ou Numero " required="">
+       </form>
 
-      <form class="form">
-       <input type="search" class="input__search" placeholder="Nome ou numero" required="">
-      </form>
+       <ul class="buttons" >
+        <button class="button btn-prev">Voltar &lt;</button>
+        <button class="button btn-next">Seguir &gt;</button>
+       </ul>
 
-      <ul class="buttons">
-       <button class="button btn-prev">Voltar &lt;</button>
-       <button class="button btn-next">Seguir &gt;</button>
-      </ul>
 
-  
-    </main>
 
-  </body>
+    </main>
+
+    <script src="main.js" type="module"></script>
+
+  </body>
 
 </html>

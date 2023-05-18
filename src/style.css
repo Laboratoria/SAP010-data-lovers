@@ -1,5 +1,18 @@
 
-h1 {
-  font-family: 'Cinzel', serif;
-  color:rgb(45, 38, 38)
+
+section#menu{
+  justify-items:flex-start;
+}
+
+.all-filters{
+  display: inline;
+}
+
+ul.all-filters{
+  list-style: none;
+}
+
+li{
+  display: inline;
+  list-style: none;
 }

@@ -1,7 +1,7 @@
 
 
 <p align="center">
-<img src="./images/Logo_Ghibli.svg.webp">
+<img src= "./images/SootSpriteTee11_700x700_crop_center.webp" alt="Sprite with starts">
 </p>
 
 <section align="center"> Ghibli Flix

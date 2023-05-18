@@ -2,42 +2,77 @@
 <html>
   <head>
     <meta charset="utf-8" lang="">
-    <title>Data Lovers</title>
+    <title>Data Lovers - GhibliFlix</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
-    <!-- adicionar fontes -->
   </head>
   <body>
     <header>
-      <!--Comporta título (h1, h2...) E também comporta img, video, etc-->
-      <hgroup>
-        <!-- Só comporta títulos (h1, h2, ...)-->
-        <h1>Game Of Game of Thrones</h1>
-      </hgroup>
+      <hgroup></hgroup>
+      <section id="menu">
+            <ul class="store">
+              <li><img id=logo src="./images/Logo-site.png" alt="Logo Studios Ghibli"></li>
+              <li><a href="https://studioghibli.com.br/ghiblistore/livros/">BOOKS</a></li>
+              <li><a href="https://studioghibli.com.br/categoria/games/">GAMES</a></li>
+              <li><a href="https://studioghibli.com.br/ghiblistore/">STORE</a></li>
+            </ul>
+        </section>
     </header>
 
-    <main></main>
+    <img src="./images/allchars.webp" alt="Principais personagens do Studio Ghibli caminhando juntos numa colina">
 
-    <div class="filters"></div>
+    <main>
+      <section class="all-filters">
+        <label for="all-filters">Filtrar animações por: </label>
+        <!--p id= "filters" style="color: cornsilk;"> Filtrar animacoes por: </p-->
 
-    <div class="other-sites">
-      <ul>
-        <p><a href="https://gameofthrones.fandom.com/pt-br/wiki/Game_of_Thrones_Wiki"></a>GOT Wiki</p>
-        <p><a href=""></a></p>
-        <p><a href=""></a></p>
+        <ul class="all-filters">
+          <li>
+            <input list="first-filter">
+            <datalist id="first-filter">
+              <option value="Ordem alfabetica">
+              <option value="Ano de lancamento">
+            </datalist>
+          </li>
+          <li>
+            <input list="second-filter">
+            <datalist id="second-filter">
+              <option value="Diretor">
+              <option value="Produtor">
+            </datalist>
+          </li>
+          <li>
+            <input type="button" class ="all-filters" id="start-events" value="ok">
+          </li>
+        </ul>
+      </section>
 
-      </ul>
-    </div>
+      <section class="result">
+        <article class="list">
+        </article>
+      </section>
 
+      <footer>
+      <menu id="about">
+        <ul class="about">
+          <li id="Museum"><a href="https://www.ghibli-museum.jp/en/">MUSEUM</a></li>
+          <li id="Ghibli Park"><a href="https://ghibli-park.jp/en/">GHIBLI PARK</a></li>
+          <li id="Store"><a href="https://studioghibli.com.br/ghiblistore/">STORE</a></li>
+        </ul>
+      </menu>
 
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-    <footer>
+      <menu id="social-media">
+        <li if="reddit"><a href="https://www.reddit.com/r/ghibli/"><img src="images/reddit-logo.webp" style="width:46px;height:42px"></a></li>
+        <li id="instagram"><a href="https://www.instagram.com/ghibli.movies/?hl=en"><img src="./images/instagram.jpeg" style="width:42px;height:42px;"></a></li>
+        <li id="tiktok"><a href="https://www.tiktok.com/@studio_ghibli_shorts?lang=en"><img type="button" src="./images/tiktok.png" style="width:40px;height:42px;"></a></li>
+      </menu>
+
+    </main>
       <figure>
-        <img src="images">
+        <img src="./images/butterfly.8e1a40df.gif">
       </figure>
     </footer>
+
+    <script src="main.js" type="module"></script>
+    <small><a href="https://github.com/Lila8351">Desing by: Lila Araujo</a></small>
   </body>
 </html>

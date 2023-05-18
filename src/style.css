@@ -109,14 +109,15 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px;
+  margin: 26px;
+  padding: 10px;
   width: 90%;
 }
 
 input {
   padding: 15px;
   margin: 10px;
-  width: 300px;
+  width: 270px;
   height: 15px;
   border-radius: 5px;
   background-color: #F5F5F5;
@@ -124,26 +125,30 @@ input {
   font-style: normal;
   font-size: 14px;
   color: #CBD5DD;
-
+  border: #F5F5F5;
 }
 
-select {
-  width: 100%;
-  max-width: 100px;
+.content-options {
+  display: flex;
+  justify-content: space-around;
+  width: 340px;
+  padding: 10px;
 }
 
 .options {
+  border: #F5F5F5;
   padding: 5px;
   margin: 5px;
   background: #F5F5F5;
-  width: 100px;
-  height: 35px;
+  height: 40px;
   color: #8c9ba7;
   font-weight: bolder;
+  width: 120px;
 }
 
 .btn {
   background-color: #00478C;
+  border: #00478C;
   border-radius: 15px;
   height: 51px;
   font-family: 'Inter', sans-serif;
@@ -158,7 +163,6 @@ select {
 }
 
 
-
 .cardsPokemon {
   align-items: center;
   display: flex;
@@ -166,11 +170,12 @@ select {
   justify-content: center;
   height: 600px;
   width: 100vw;
-   font-size:large;
+  font-size: large;
 }
 
 
 .card {
+  display: flex;
   float: right;
   margin: 20px;
   padding: 20px;
@@ -181,13 +186,28 @@ select {
   background: rgba(33, 140, 116, 0.38);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 63px;
+  text-decoration: none;
 }
-
 
 .showNamePokemon {
   align-items: center;
   display: flex;
+  padding: 10px;
   justify-content: center;
+}
+
+.imagePokemon {
+  height: 212px;
+  width: 221px;
+}
+
+#name, #num{
+  font-family: 'Carter One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  color: #F7F1E3;
+  margin: 10px;
 }
 
 .pokeball {

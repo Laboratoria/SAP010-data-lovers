@@ -64,97 +64,158 @@ footer {
   opacity: 0.5;
 }
 
-  @media screen and (max-width: 480px) { 
+@media screen and (max-width: 480px) {
   body {
     font-size: 1.2rem;
-    text-align: center; 
+    text-align: center;
     justify-content: center;
     margin: 0;
+    width: 80vw;
   }
 
-   .header-text {
-   margin-bottom: 0px; 
-   font-size: 1.79rem; 
+  .header-text {
+    margin-bottom: 0px;
+    font-size: 1.79rem;
+    width: 80vw;
+    margin: 10%;
   }
 
-   .main-text {
+  .main-text {
+    width: 80vw;
+    margin: 10%;
+    margin-right: 10%;
+    padding: 5%;
     /* text-align: center; */
     /* font-size: 1.08rem;
     text-align: center; */
-  } 
+  }
 
-   .welcome-text {
+  .welcome-text {
+    width: 80vw;
+    margin: 10%;
+    margin-right: 10%;
+    padding: 5%;
     /* text-align: center; */
     /* font-size: 1.2rem;
     text-align: center; */
-  } 
+  }
 
   .van-img {
-    width: 36vw;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    padding: 30%;
+  }
+
+  footer {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    padding: 10%;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   body {
     font-size: 1.2rem;
-    text-align: center; 
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0;
+    width: 80vw;
   }
   .header-text {
     margin-bottom: 0px;
     font-size: 1.82rem;
+    width: 80vw;
+    margin: 10%;
   }
 
-  /* .main-text {
-    font-size: 1.09rem;
+  .main-text {
+    width: 80vw;
+    margin: 10%;
+    margin-right: 10%;
+    padding: 5%;
   }
+  /* font-size: 1.09rem;
+  } */
 
   .welcome-text {
-    font-size: 1.25rem;
+    width: 80vw;
+    margin: 10%;
+    margin-right: 10%;
+    padding: 5%;
+  }
+  /*  font-size: 1.25rem;
   } */
 
   .van-img {
-    width: 43vw;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    padding: 30%;
   }
 
-  /* footer {
-    font-size: 1.05rem;
+  footer {
+    /* text-align: center; */
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    padding: 30%;
   }
 
+  /*
   .name {
     font-size: 1.2rem;
   } */
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   body {
     font-size: 1.2rem;
     text-align: center;
-    margin: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    width: 80vw;
   }
-  /* .main-text {
-    width: 60vw;
-    font-size: 1.4rem;
+
+  .header-text {
+    margin-bottom: 0px;
+    font-size: 1.82rem;
+    width: 80vw;
+    margin: 10%;
+  }
+
+  .main-text {
+    width: 70vw;
+    margin: 10%;
+    margin-right: 10%;
+    padding: 5%;
   }
 
   .welcome-text {
-    font-size: 1.55rem;
-  } */
+    width: 70vw;
+    margin: 10%;
+    margin-right: 10%;
+    padding: 5%;
+  }
 
   .van-img {
     width: 60vw;
+    display: flex;
+    justify-content: center;
+    padding: 20%;
   }
-/* 
+
   footer {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
     margin-top: 35px;
-    font-size: 1.4rem;
   }
-
-  .name {
-    font-size: 1.5rem;
-  } */
-
 }

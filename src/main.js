@@ -19,14 +19,14 @@ function infoAllCards(data) {
       <h3>${character.char_id}</h3>
       <h1 id="nome"><strong> ${character.name} </strong></h1>
       <img alt="foto" class="img-card" src="${character.img}">
-      <li><strong> Birthday: ${character.birthday}</strong></li>
-      <li><strong> occupation: ${character.occupation}</strong></li>
-      <li><strong> Status: ${character.status}</strong></li>
-      <li><strong> Nickname: ${character.nickname}</strong></li>
-      <li><strong> Appearance: ${character.appearance}</strong></li>
-      <li><strong> Portrayed: ${character.portrayed}</strong></li>
-      <li><strong> Category: ${character.category}</strong></li>
-      <li><strong> Better_call_saul_appearance: ${character.better_call_saul_appearance}</strong></li>
+      <li><strong> Birthday: </strong> ${character.birthday}</li>
+      <li><strong> occupation: </strong> ${character.occupation}</li>
+      <li><strong> Status: </strong> ${character.status}</li>
+      <li><strong> Nickname: </strong> ${character.nickname}</li>
+      <li><strong> Appearance: </strong> ${character.appearance}</li>
+      <li><strong> Portrayed: </strong> ${character.portrayed}</li>
+      <li><strong> Category: </strong> ${character.category}</li>
+      <li><strong> Better_call_saul_appearance: </strong> ${character.better_call_saul_appearance}</li>
     </ul>
   </div>
   `

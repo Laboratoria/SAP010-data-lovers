@@ -32,8 +32,7 @@ header {
 #bbimage{
   width: 280px ;
   justify-content: center;
-  margin-left: 43%;
-  
+  display: flex;
 }
 
 .nav-header {

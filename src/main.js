@@ -17,30 +17,30 @@ continentSelectorElement.addEventListener("change", (event) => {
   // Verifica o valor do seletor de sub-regiões
   const value = event.target.value;
   if (value === "amer_central") {
-    const amerCentral = filterBySubregion("Central America", data)
+    const amerCentral = filterBySubregion("Central America", data.countries)
     // Filtra os países pela sub-região selecionada e renderiza a lista
     renderCountryList (amerCentral);
   } else if (value === "amer_sul") {
-    const amerSul = filterBySubregion("South America", data)
+    const amerSul = filterBySubregion("South America", data.countries)
     // Filtra os países pela sub-região selecionada e renderiza a lista
     renderCountryList (amerSul);
   } else if (value === "amer_norte") {
-    const amerNorte = filterBySubregion("North America", data)
+    const amerNorte = filterBySubregion("North America", data.countries)
     // Filtra os países pela sub-região selecionada e renderiza a lista
     renderCountryList (amerNorte)
 
 
   } else if (value === "asia") {
-    const asia = filterByContinent("Asia", data)
+    const asia = filterByContinent("Asia", data.countries)
     renderCountryList (asia);
   } else if (value === "africa") {
-    const africa = filterByContinent("Africa", data)
+    const africa = filterByContinent("Africa", data.countries)
     renderCountryList (africa);
   } else if (value === "oceania") {
-    const oceania = filterByContinent("Oceania", data);
+    const oceania = filterByContinent("Oceania", data.countries);
     renderCountryList (oceania);
   } else if (value === "europa") {
-    const europa = filterByContinent("Europe", data);
+    const europa = filterByContinent("Europe", data.countries);
     renderCountryList (europa);
   } else {
     renderCountryList([]);
@@ -68,8 +68,7 @@ const renderCountryList = (countries) => {
     capitalElement.textContent = "Capital: " + country.capital;
 
     const languagesElement = document.createElement("p");
-    languagesElement.textContent =
-      "Idioma: " + Object.values(country.languages).join(", ");
+    languagesElement.textContent = "Idioma: " + Object.values(country.languages).join(", ");
 
     const populationElement = document.createElement("p");
     populationElement.textContent =
@@ -96,17 +95,14 @@ const renderCountryList = (countries) => {
 ///==============FILTRAR POR PAÍSES E POR ORDEM ALFABÉTICA==============
 
 // Chama a função orderByAlphabetical com o array de países
-let alphabetical = orderByAlphabetical(data.countries);
-/* console.log(alphabetical); */ // Certifique-se de chamar a função orderByAlphabetical corretamente
 
-// Event listener para mudanças no seletor
 selectorElement.addEventListener("change", (event) => {
   const value = event.target.value;
   if (value === "country") {
     renderCountryList(data.countries.slice());
   } else if (value === "alphabetical") {
-    alphabetical = orderByAlphabetical(data.countries.slice()); // Atualiza a ordem alfabética
-    renderCountryList(alphabetical);
+    const orderedCountries = orderByAlphabetical(data.countries.slice());
+    renderCountryList(orderedCountries);
   }
 });
 
@@ -126,7 +122,7 @@ const calculatePopulation = (countries) => {
 // Função para exibir a população total e a região no elemento populationResultElement
 const displayPopulation = (region, population) => {
   populationResultElement.innerHTML = 
-  `<strong>População total de ${region}: </br><p>${population.toLocaleString("br-PT")}</p></strong>`;
+  `<span style="background-color: rgba(255, 255, 255, 0.864)"><strong>População total de ${region}: </br> ${population.toLocaleString("br-PT")}</strong></span>`;
 };
 
 continentSelectorElement.addEventListener("change", (event) => {

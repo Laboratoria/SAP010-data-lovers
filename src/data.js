@@ -2,9 +2,9 @@
 //==============FILTRAR A SUBREGIÃO E O CONTINENTE RENDERIZANDO==============
 
 // Filtra os países por subregião
-export const filterBySubregion = (subregion, array2) => {
+export const filterBySubregion = (subregion, countries) => {
   // Filtra o array de países pela subregião selecionada
-  const filteredCountries = array2.countries.filter(
+  const filteredCountries = countries.filter(
     (country) => country.subregion === subregion
   );
   return filteredCountries
@@ -14,10 +14,10 @@ export const filterBySubregion = (subregion, array2) => {
 //==============FILTRAR A SUBREGIÃO E O CONTINENTE RENDERIZANDO==============
 
 // Filtra os países por continente
-export const filterByContinent = (continent, array) => {
+export const filterByContinent = (continent, countries) => {
   // Filtra o array de países pelo continente selecionado
   /* console.log(array) */
-  const filteredCountries = array.countries.filter((country) =>
+  const filteredCountries = countries.filter((country) =>
     country.continents.includes(continent)
   
   );
@@ -27,13 +27,12 @@ export const filterByContinent = (continent, array) => {
 //==============FILTRAR por ordem alfabetica==============
 
 
+
 // Ordena os países em ordem alfabética
-// Ordena os países em ordem alfabética
-export function orderByAlphabetical(array) {
-  const filteredCountries = array.slice().sort((a, b) => a.name.common.localeCompare(b.name.common, 'en', { sensitivity: 'base' }));
+export function orderByAlphabetical(countries) {
+  const filteredCountries = countries.slice().sort((a, b) => a.name.common.localeCompare(b.name.common));
   return filteredCountries;
 }
-
 //==============FILTRAR por total de população==============
 
 // Função para calcular a população total de uma lista de países

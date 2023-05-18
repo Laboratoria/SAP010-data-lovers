@@ -18,6 +18,7 @@ export const filterBreakingBad = (dados, temporada) => {
   );
 };
 
+
 // calcula a porcentagem de personagens por temporada
 export const porcentagemTemporada = (dados, filterBreakingBad) => {
   return ((filterBreakingBad.length / dados.length) * 100).toFixed(2); // to fixed retorna somente 2 casas depois da vírgula

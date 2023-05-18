@@ -1,4 +1,8 @@
-import { filtroNomes } from "./data.js";
+import {
+  filtroNomes,
+  filterBreakingBad,
+  filterBetterCallSaul,
+} from "./data.js";
 import data from "./data/breakingbad/breakingbad.js";
 
 // o código abaixo transforma um objeto em array
@@ -9,7 +13,6 @@ import data from "./data/breakingbad/breakingbad.js";
 
 const resultBreakingBad = data.breaking_bad;
 const root = document.getElementById("infoCards");
-
 function infoAllCards(data) {
   root.innerHTML = data
     .map(
@@ -35,8 +38,6 @@ function infoAllCards(data) {
 }
 infoAllCards(resultBreakingBad); //referente a const que virou de objeto para array
 
-
-
 //pesquisar por nome
 const pesquisarNome = document.getElementById("busca");
 
@@ -44,6 +45,24 @@ pesquisarNome.addEventListener("input", (Event) => {
   const nomeDoPersonagem = Event.target.value.toUpperCase();
   const nomeFiltrado = filtroNomes(resultBreakingBad, nomeDoPersonagem); //linka com a função da pasta data.js em barra de pesquisa
   infoAllCards(nomeFiltrado);
+});
+
+const buscarPortemporada = document.getElementById("select-filter");
+buscarPortemporada.addEventListener("change", () => {
+  const filtroBB = filterBreakingBad(
+    data.breaking_bad,
+    buscarPortemporada.value
+  );
+  console.log(filtroBB, "buscar por temporada");
+  infoAllCards(filtroBB);
+});
+buscarPortemporada.addEventListener("change", () => {
+  const filtroBCS = filterBetterCallSaul(
+    resultBreakingBad,
+    buscarPortemporada.value
+  );
+  console.log (filtroBCS, "bettercallsaul")
+  infoAllCards(filtroBCS);
 });
 
 

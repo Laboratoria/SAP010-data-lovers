@@ -22,11 +22,9 @@ describe('anotherExample', () => {
   });
 }); */
 
+import { calculatePopulation, filterBySubregion } from '../src/data.js';
 
-import { calculatePopulation, filterByContinent } from '../src/data.js';
-
-//=======================Testando o total de População =================
-
+//=======================CALCULAR POPULAÇÃO===================
 describe('calculatePopulation', () => {
   // Array de países com nome, população e sub-região
   const countries = [
@@ -42,19 +40,28 @@ describe('calculatePopulation', () => {
   });
 });
 
-//=======================Testando os continentes =================
-
-describe('filterByContinent', () => {
-  // Array de
-  const continente = [
-    { name: 'Country 1', continents: 'Asia' },
-    { name: 'Country 2', continents: 'Africa' },
-    { name: 'Country 3', continents: 'Oceania' },
+//========================CALCULO DA SUBREGION===============
+describe('filterBySubregion', () => {
+  const countries = [
+    { name: 'Country 1', subregion: 'América do Norte' },
+    { name: 'Country 2', subregion: 'América do Sul' },
+    { name: 'Country 3', subregion: 'América Central' },
   ];
-  it('calculates contries for a specific continents', () => {
-    // Chamando a função calculatePopulation com o array de países e a sub-região específica
-    const continentsCountry = filterByContinent(continente, 'Asia');
-    // Verificando se a população calculada é igual ao valor esperado (6000)
-    expect(continentsCountry).toBe([]);
+  it('filtra países por sub-região', () => {
+    const filteredCountries = filterBySubregion('América do Norte', countries);
+    // Verifica se a função retornou um array com os países filtrados corretamente
+    expect(filteredCountries).toEqual([
+      { name: 'Country 1', subregion: 'América do Norte' },
+    ]);
+  });
+  it('retorna um array vazio se nenhum país corresponder à sub-região', () => {
+    const filteredCountries = filterBySubregion('Europa', countries);
+    // Verifica se a função retornou um array vazio, já que nenhum país corresponde à sub-região 'Europa'
+    expect(filteredCountries).toEqual([]);
+  });
+  it('retorna todos os países se a sub-região não for especificada', () => {
+    const filteredCountries = filterBySubregion('', countries);
+    // Verifica se a função retornou todos os países, já que a sub-região não foi especificada
+    expect(filteredCountries).toEqual(countries);
   });
 });

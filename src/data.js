@@ -27,7 +27,7 @@ export const filterByContinent = (continent, array) => {
 //==============FILTRAR por ordem alfabetica==============
 
 
-// Ordena os países em ordem alfabética
+
 // Ordena os países em ordem alfabética
 export function orderByAlphabetical(array) {
   const filteredCountries = array.slice().sort((a, b) => a.name.common.localeCompare(b.name.common, 'en', { sensitivity: 'base' }));

@@ -118,7 +118,7 @@ main {
 }
 
 .card {
-  height: 55vh;
+  height: fit-content;
   width: 16vw;
   margin: 20px;
   padding: 2vh 1vw;
@@ -154,7 +154,7 @@ footer {
   align-items: center;
 }
 
-@media screen and (max-width: 480px) /*telas de celulares */ {
+* @media screen and (max-width: 480px)  {
   body{
     flex-direction: column;
   }
@@ -183,7 +183,7 @@ footer {
   .percentage-container {
     font-size: small;
   }
-}
+} 
 
 /* @media screen and (max-width: 480px) {
   body {
@@ -307,17 +307,16 @@ footer {
 } */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   body{
-    /* flex-direction: column; */
-    
+     display: flex;   
   }
 
   main{
-    /* flex-direction: column; */
-    width: 100%;
+    display: flex; 
   }
 
   .card-container {
-    /* flex-direction: column; */
+    display: flex; 
+    width: 70%;
   }
 
   .card{

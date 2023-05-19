@@ -13,19 +13,17 @@
 
 body {
   color: var(--black);
-  font-family: monospace;
   background-color: var(--black);
   background-size: fill;
-  display: flex;
-  flex-wrap: wrap;
+  display: flex;/*Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+  flex-wrap: wrap; /*Quebra a linha assim que um dos flex itens não puder mais ser compactado*/
   justify-content: center;
   align-items: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-header {
-  /*background: no-repeat center/cover url(img/background-header-largo.jpg);*/
+header { 
   height: fit-content;
   width: 100vw;
 }
@@ -81,7 +79,7 @@ main {
   background-image: url(img/greensmoke.png);
   display: flex;
   flex-direction: column;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 200%;
@@ -126,7 +124,7 @@ main {
   padding: 2vh 1vw;
   border-radius: 50px;
   background-color: var(--green);
-  display: flex;
+   /* display: flex;  */
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
@@ -156,9 +154,36 @@ footer {
   align-items: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) /*telas de celulares */ {
+  body{
+    flex-direction: column;
+  }
+
+  main{
+    flex-direction: column;
+  }
+
+  .card-container {
+    flex-direction: column;
+    
+  }
+
+  .card{
+    height: fit-content;
+    width: 60vw;
+    margin: 20px;
+    font-size: 0.89rem
+  }
+
+  .poster-img {
+    height: 40vh;
+    width: 40vw;
+  }
+}
+
+/* @media screen and (max-width: 480px) {
   body {
-    font-size: 1.2rem;
+    font-size: 1 rem;
     text-align: center;
     justify-content: center;
     width: 100vw;
@@ -175,14 +200,14 @@ footer {
     flex-shrink: 0;
   }
 
-  /* .card {
+   .card {
     width: 16vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
     align-items: center;
-  } */
+  } 
 
   .poster-img {
     height: 20vh;
@@ -215,11 +240,11 @@ footer {
     justify-content: space-evenly;
   }
 
-  /* .card {
+   .card {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  } */
+  } 
 
   .poster-img {
     height: 20vh;
@@ -228,7 +253,7 @@ footer {
   }
 
   footer {
-    /* text-align: center; */
+    text-align: center; 
     width: 60vw;
     display: flex;
     justify-content: center;
@@ -253,14 +278,14 @@ footer {
     justify-content: space-evenly;
   }
 
-  /* .card {
+   .card {
     width: 16vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
     align-items: center;
-  } */
+  } 
 
   .poster-img {
     height: 20vh;
@@ -274,5 +299,31 @@ footer {
     justify-content: center;
     padding: 10%;
     margin-top: 35px;
+  }
+} */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body{
+    flex-direction: column;
+    
+  }
+
+  main{
+    flex-direction: column;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card{
+    height: fit-content;
+    width: 60vw;
+    margin: 20px;
+    font-size: 0.89rem
+  }
+
+  .poster-img {
+    height: 40vh;
+    width: 40vw;
   }
 }

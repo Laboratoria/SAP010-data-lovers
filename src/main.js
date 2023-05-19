@@ -9,9 +9,9 @@ const dadosTarot = data.cards;
 const root = document.getElementById("info-cards");
 
 function infosDosCardsTela(cards) {
-  root.innerHTML = cards
-    .map(
-      (cards) => `
+    root.innerHTML = cards
+        .map(
+            (cards) => `
     <div class="cards">
         <div class="flip-container">
             <div class="flipper">
@@ -29,10 +29,17 @@ function infosDosCardsTela(cards) {
         </div>   
     </div>
 `
-    )
-    .join("");
+        )
+        .join("");
 }
-infosDosCardsTela(dadosTarot) 
+infosDosCardsTela(dadosTarot);
+
+const pesquisarNome = document.getElementById("pesquisa-nome"); // pega o input de pesquisa pela id
+pesquisarNome.addEventListener("input", evento => { // adiciona um evento quando o input é acionado
+const nomeDasCartas = evento.target.value; // variavel para pegar o nome digitado no input
+const filtrarCartas = filtrarNomes(dadosTarot, nomeDasCartas); // variável para chamar a função no data.js com os parametros dadosTarot e nomeDasCartas
+infosDosCardsTela(filtrarCartas); // chama a função infoDosCardsTela com o parametro que foi atribuído na variavel filtrarCartas
+});
 
 
 

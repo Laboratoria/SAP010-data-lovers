@@ -78,7 +78,7 @@ const styleCard = (pokemon) => {
       }
       if (pokemon[data].type[i].includes('water')) {
         pokemon[data].imgType.push("./images/types/water.png");
-        pokemon[data].colorType.push('#3dc1d371');
+        pokemon[data].colorType.push('#03f2faa8');
       }
       if (pokemon[data].type[i].includes('bug')) {
         pokemon[data].imgType.push("./images/types/bug.png");
@@ -90,11 +90,11 @@ const styleCard = (pokemon) => {
       }
       if (pokemon[data].type[i].includes('electric')) {
         pokemon[data].imgType.push("./images/types/electric.png");
-        pokemon[data].colorType.push('#CCAE62');
+        pokemon[data].colorType.push('#fbd1007c');
       }
       if (pokemon[data].type[i].includes('ground')) {
         pokemon[data].imgType.push("./images/types/ground.png");
-        pokemon[data].colorType.push('#cd6133');
+        pokemon[data].colorType.push('#cd6133bb');
       }
       if (pokemon[data].type[i].includes('fighting')) {
         pokemon[data].imgType.push("./images/types/fighting.png");
@@ -102,35 +102,35 @@ const styleCard = (pokemon) => {
       }
       if (pokemon[data].type[i].includes('psychic')) {
         pokemon[data].imgType.push("./images/types/psychic.png");
-        pokemon[data].colorType.push('#cf6a87');
+        pokemon[data].colorType.push('#cf6a87b9');
       }
       if (pokemon[data].type[i].includes('rock')) {
         pokemon[data].imgType.push("./images/types/rock.png");
-        pokemon[data].colorType.push('#84817a');
+        pokemon[data].colorType.push('#84817ab6');
       }
       if (pokemon[data].type[i].includes('ice')) {
         pokemon[data].imgType.push("./images/types/ice.png");
-        pokemon[data].colorType.push('#63cdda');
+        pokemon[data].colorType.push('#63ccdab6;');
       }
       if (pokemon[data].type[i].includes('ghost')) {
         pokemon[data].imgType.push("./images/types/ghost.png");
-        pokemon[data].colorType.push('#786fa6');
+        pokemon[data].colorType.push('#786fa6c0');
       }
       if (pokemon[data].type[i].includes('dragon')) {
         pokemon[data].imgType.push("./images/types/dragon.png");
-        pokemon[data].colorType.push('#546de5');
+        pokemon[data].colorType.push('#546ce5b0');
       }
       if (pokemon[data].type[i].includes('fairy')) {
         pokemon[data].imgType.push("./images/types/fairy.png");
-        pokemon[data].colorType.push('#f8a5c2');
+        pokemon[data].colorType.push('#f8a5c2e0');
       }
       if (pokemon[data].type[i].includes('dark')) {
         pokemon[data].imgType.push("./images/types/dark.png");
-        pokemon[data].colorType.push('#353b48');
+        pokemon[data].colorType.push('#353b4891');
       }
       if (pokemon[data].type[i].includes('steel')) {
         pokemon[data].imgType.push("./images/types/steel.png");
-        pokemon[data].colorType.push('#487eb0');
+        pokemon[data].colorType.push('#487eb0bd');
       }
 
     }
@@ -156,22 +156,16 @@ const buildCard = (id, pokemon) => {
     cardPokemon.style.backgroundColor = pokemon[i].colorType[0];
     cardPokemon.href = "cardDetails.html";
     cardPokemon.target = "_blank";
-    cardPokemon.innerHTML = `
+    let pokemonShowName = `
     <div class="showNamePokemon">
-    <div>
-      <h1 id="name">${pokemon[i].name}</h1>
-      </div>
       <div>
-      <p id="num">${pokemon[i].num}</p>
-      </div>
-      <img id="imagePokemon" alt="Image Pokemon" src=${pokemon[i].img}>
-    </div>
+      <h1 id="name">${pokemon[i].name}</h1>
     `;
 
     for (let j = 0; j < pokemon[i].imgType.length; j++) {
       const imgType = document.createElement('img');
       imgType.classList.add("pokeball");
-      cardPokemon.innerHTML += `
+      pokemonShowName += `
         <img class="pokeball" src=${pokemon[i].imgType[j]}>
     `;
 
@@ -179,9 +173,17 @@ const buildCard = (id, pokemon) => {
         imgType.appendChild(cardPokemon);
 
       }//endIf
-
-
     }
+
+    pokemonShowName += `
+    </div>
+      <div>
+      <p id="num">${pokemon[i].num}</p>
+      </div>
+      <img id="imagePokemon" alt="Image Pokemon" src=${pokemon[i].img}>
+    </div>`;
+
+    cardPokemon.innerHTML = pokemonShowName;
 
     if (pokemons) {
 

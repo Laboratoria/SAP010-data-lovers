@@ -82,7 +82,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 200%;
+  /* width: 200%; */
 }
 
 .option-container {
@@ -178,6 +178,10 @@ footer {
   .poster-img {
     height: 40vh;
     width: 40vw;
+  }
+
+  .percentage-container {
+    font-size: small;
   }
 }
 
@@ -303,27 +307,31 @@ footer {
 } */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   body{
-    flex-direction: column;
+    /* flex-direction: column; */
     
   }
 
   main{
-    flex-direction: column;
+    /* flex-direction: column; */
+    width: 100%;
   }
 
   .card-container {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .card{
     height: fit-content;
     width: 60vw;
-    margin: 20px;
-    font-size: 0.89rem
+    font-size: 1rem
   }
 
   .poster-img {
     height: 40vh;
     width: 40vw;
+  }
+
+  .percentage-container {
+    font-size: medium;
   }
 }

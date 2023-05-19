@@ -1,12 +1,12 @@
-import got from '../data/got/got.js'; // importando o módulo 'got' do arquivo got.jsc
-import {ordenarNomes, filtrarFamilia, filtrarPersonagens} from '../js/data.js'; // importando o módulo 'got' do arquivo got.js
+import got from '../data/got/got.js';
+import { ordenarNomes, filtrarFamilia, filtrarPersonagensPorFamilia, filtrarPersonagem } from '../js/data.js';
 
 const listaPersonagens = got.got;
 const ordenacao = document.getElementById("ordenacao");
 const selecionarFamilia = document.getElementById("selecionarFamilia");
 const selecionarPersonagens = document.getElementById("selecionarPersonagens");
 
-ordenacao.addEventListener("change", onChangeOrdenacao); // add o evento de clique ao botão vinculando a função
+ordenacao.addEventListener("change", onChangeOrdenacao);
 selecionarFamilia.addEventListener("change", onChangeSelecionarFamilia);
 selecionarPersonagens.addEventListener("change", onChangeSelecionarPersonagens);
 
@@ -14,27 +14,32 @@ onChangeOrdenacao();
 onChangeSelecionarFamilia();
 onChangeSelecionarPersonagens();
 
-function onChangeOrdenacao(){
-  const listaOrdenada = ordenarNomes(listaPersonagens, ordenacao.value);
+function onChangeOrdenacao() {
+  const familiaSelecionada = selecionarFamilia.value;
+  const personagensFiltradosPorFamilia = filtrarPersonagensPorFamilia(listaPersonagens, familiaSelecionada);
+  const listaOrdenada = ordenarNomes(personagensFiltradosPorFamilia, ordenacao.value);
   exibirPersonagens(listaOrdenada);
 }
 
-function onChangeSelecionarFamilia(){
-  const listaFamilia = filtrarFamilia(listaPersonagens, selecionarFamilia.value);
-  exibirPersonagens(listaFamilia);
+function onChangeSelecionarFamilia() {
+  const familiaSelecionada = selecionarFamilia.value;
+  const listaPersonagensFiltrada = filtrarFamilia(listaPersonagens, familiaSelecionada);
+  exibirPersonagens(listaPersonagensFiltrada);
+
+  const personagensFiltradosPorFamilia = filtrarPersonagensPorFamilia(listaPersonagens, familiaSelecionada);
+  atualizarListaPersonagens(personagensFiltradosPorFamilia);
 }
 
-function onChangeSelecionarPersonagens(){
-  const listaNomes = filtrarPersonagens(listaPersonagens, selecionarPersonagens.value);
-  exibirPersonagens(listaNomes);
+function onChangeSelecionarPersonagens() {
+  const personagemSelecionado = selecionarPersonagens.value;
+  const personagem = filtrarPersonagem(listaPersonagens, personagemSelecionado);
+  exibirPersonagens(personagem);
 }
 
-function exibirPersonagens(personagens){
-  // selecionando o elemento com id HTML 'exibirPersonagens' para exibir os cards ==>
-  const cardContainer = document.querySelector("#exibirPersonagens"); 
-  
-  //Limpa a exibição do cardContainer ==>
-  while(cardContainer.firstChild){
+function exibirPersonagens(personagens) {
+  const cardContainer = document.querySelector("#exibirPersonagens");
+
+  while (cardContainer.firstChild) {
     cardContainer.removeChild(cardContainer.lastChild);
   }
 
@@ -48,20 +53,19 @@ function exibirPersonagens(personagens){
     const family = document.createElement('h2');
     const imageUrl = document.createElement('img');
     const born = document.createElement('h2');
-    
+
     id.textContent = personagem.id;
     firstName.textContent = personagem.firstName;
     lastName.textContent = personagem.lastName;
     fullName.textContent = personagem.fullName;
     title.textContent = personagem.title;
     family.textContent = personagem.family;
-    imageUrl.src = personagem.imageUrl; // acessando imagens
+    imageUrl.src = personagem.imageUrl;
     born.textContent = personagem.born;
 
-    //Retorna o card com nome embaixo ==>
     cardDiv.appendChild(imageUrl);
     cardDiv.appendChild(fullName);
-    
+
     return cardDiv;
   });
 
@@ -70,7 +74,6 @@ function exibirPersonagens(personagens){
   });
 }
 
-// Cria e exibe em ordem alfabética as famílias no 'select' ==>
 const familyArray = [];
 familyArray.push("Todas Famílias");
 
@@ -97,7 +100,7 @@ listaPersonagens.forEach(personagem => {
   }
 });
 
-familyArray.sort(); // Ordena o array em ordem alfabética
+familyArray.sort();
 
 familyArray.forEach(family => {
   const option = document.createElement('option');
@@ -106,7 +109,24 @@ familyArray.forEach(family => {
   selecionarFamilia.appendChild(option);
 });
 
-// Cria e exibe em ordem alfabética os nomes dos personagens no 'select' ==>
+function atualizarListaPersonagens(personagens) {
+  while (selecionarPersonagens.firstChild) {
+    selecionarPersonagens.removeChild(selecionarPersonagens.firstChild);
+  }
+
+  const optionTodosPersonagens = document.createElement('option');
+  optionTodosPersonagens.value = "Todos Personagens";
+  optionTodosPersonagens.textContent = "Todos Personagens";
+  selecionarPersonagens.appendChild(optionTodosPersonagens);
+
+  personagens.forEach(personagem => {
+    const option = document.createElement('option');
+    option.value = personagem.fullName;
+    option.textContent = personagem.fullName;
+    selecionarPersonagens.appendChild(option);
+  });
+}
+
 const fullNameArray = [];
 fullNameArray.push("Todos Personagens");
 
@@ -133,7 +153,7 @@ listaPersonagens.forEach(personagem => {
   }
 });
 
-fullNameArray.sort(); // Ordena o array em ordem alfabética
+fullNameArray.sort();
 
 fullNameArray.forEach(fullName => {
   const option = document.createElement('option');
@@ -142,16 +162,13 @@ fullNameArray.forEach(fullName => {
   selecionarPersonagens.appendChild(option);
 });
 
-// Cria ordenacao A-Z/Z-A no 'select' ==>
 const ordenarAZ = document.getElementById('ordenacao');
 
-// Opção A-Z
 const optionAZ = document.createElement('option');
 optionAZ.value = 'az';
 optionAZ.textContent = 'A-Z';
 ordenarAZ.appendChild(optionAZ);
 
-// Opção Z-A
 const optionZA = document.createElement('option');
 optionZA.value = 'za';
 optionZA.textContent = 'Z-A';

@@ -44,7 +44,7 @@ describe('filtrarFamilia', () => {
   it('filtrarFamilia is a function', () => {
     expect(typeof filtrarFamilia).toStrictEqual('function');
   });
-  it('Retorna a família filtrada ', () => {
+  it('Retorna a família filtrada', () => {
     const familiaFiltrada = filtrarFamilia(dados, "House Targaryen");
     const familiaEsperada = [
       {

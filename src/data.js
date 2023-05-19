@@ -3,6 +3,7 @@ export const orderAZ = (breaking_bad) => {
   breaking_bad.sort((a, b) => a.name.localeCompare(b.name));
   return breaking_bad;
 };
+
 // ordenando de ordem decrescente
 export const orderZA = (breaking_bad) => {
   breaking_bad.sort((a, b) => b.name.localeCompare(a.name));
@@ -13,7 +14,7 @@ export const orderZA = (breaking_bad) => {
 
 // retorna os personagens por temporada
 export const filterBreakingBad = (dados, temporada) => {
-  return dados.filter((breaking_bad_item) =>
+  return dados.filter(breaking_bad_item =>
     breaking_bad_item.appearance.includes(temporada)
   );
 };
@@ -32,7 +33,7 @@ export const filtroNomes = (dados, nomePesquisado) => {
 
 // função para filtrar os personagens da serie Better Call Saul
 export const filterBetterCallSaul = (dados) => {
-  return dados.filter((personagem) =>
-    personagem.better_call_saul_appearance === true
+  return dados.filter(
+    (personagem) => personagem.better_call_saul_appearance === true
   );
 };

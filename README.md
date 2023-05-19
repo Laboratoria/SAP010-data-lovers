@@ -1,6 +1,6 @@
 # Data Lovers - Breaking Bad
 
-  Clique aqui para acessar o projeto.
+#### Clique aqui para acessar o projeto.
 
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white//https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
 [![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white//https://developer.mozilla.org/en-US/docs/Web/CSS)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -22,9 +22,8 @@
 - [3. Desenho de interface do usuário](#3-desenho-de-interface-do-usuário)
 - [4. Testes de usabilidade](#4-testes-de-usabilidade)
 - [5. Testes unitários](#5-testes-unitários)
-- [6. Ferramentas utilizadas](#6-ferramentas-utilizadas)
-- [7. Objetivos alcançados](#7-objetivos-alcançados)
-- [8. Desenvolvedoras](#10-desenvolvedoras)
+- [6. Objetivos alcançados](#6-objetivos-alcançados)
+- [7. Desenvolvedoras](#7-desenvolvedoras)
 
 ---
 
@@ -76,15 +75,8 @@ Lembrando que todos os teste foram escritos por nós.
 
 ![Alt text](src/img/testesUnitarios.png)
 
-## 6. Ferramentas utilizadas
 
-- [Git](https://git-scm.com/)
-- [GitHub](https://github.com/)
-- [GitHub Pages](https://pages.github.com/)
-- [Node.js](https://nodejs.org/)
-- [Jest](https://jestjs.io/)
-
-## 7. Objetivos alcançados
+## 6. Objetivos alcançados
 
 - [x] Usar VanillaJS.
 - [x] Passa pelo linGIter (`npm run pretest`)
@@ -101,7 +93,7 @@ Lembrando que todos os teste foram escritos por nós.
 - [x] UI: Permite filtrar dados com base em uma condição.
 - [ ] UI: É _responsivo_.
 
-## 8. Desenvolvedoras
+## 7. Desenvolvedoras
 
 Geane Ramos
 

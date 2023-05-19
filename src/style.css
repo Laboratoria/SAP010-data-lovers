@@ -1,91 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,700;1,400;1,600&family=Girassol&family=Montserrat:ital,wght@0,700;0,800;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,700;1,400;1,600&family=Girassol&family=Montserrat:ital,wght@0,700;0,800;1,700&display=swap");
 
-body{
-    display: flex;
-    flex-direction: column;
-
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /*o tamanho da altura do elemento será definido como o tamanho da janela do navegador (100 porcento da altura da janela do navegador)*/
 }
 
 header {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0;
 }
 
 #logo {
-    max-width: 180px;
-    max-height: 180px;
-    left: 5%;
+  max-width: 180px;
+  max-height: 180px;
+  left: 5%;
+  display: flex;
 }
 
 #tituloprincipal {
-    font-size: 40px;
-    font-family: 'faustina';
-    text-align: right;
-    display: inline-block;
-    margin-top: 50px;
-    right: 10%;
-    margin-left: 0px;
-    color: #006400;
+  display: flex;
+  font-size: 40px;
+  font-family: "faustina";
+  text-align: right;
+  display: inline-block;
+  margin-top: 50px;
+  right: 10%;
+  margin-left: 0px;
+  color: #006400;
+  border: 8px solid #2f939f;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  font-size: clamp(1em, 3em + 3vw, 2.5em);
 }
 
 body {
-    background-color: #E0FFFF;
+  background-color: black;
 }
 
 #continente {
-    height: 150px;
-    width: 90%;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 100px;
-    
-    
+  height: 150px;
+  width: 90%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
 }
-#mapaheader{
-    height: 350px;
-    width: 900px;
-    
+
+#mapaheader {
+  height: 350px;
+  width: 900px;
+  display: flex;
 }
 
 .filtros {
-    display: flex;
-    justify-content: center;
-    margin-top: 18%;
-    color: #006400;
-    font-family: 'faustina';
-    }
+  display: flex;
+  justify-content: center;
+  margin-top: 18%;
+  color: #006400;
+  font-family: "faustina";
+  text-transform: uppercase;
+  font-size: 20px;
+
+}
 
 .filtros select:first-of-type {
-    margin-right: 70px;
-  }
-  
-  .bands {
-    width: 20%;
-  height: 300px;
+  margin-right: 70px;
+  border: 2px solid#006400;
+  border-radius: 6px;
+}
+
+.bands {
+  width: 20%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: 10px;
-  background-color: #87b3e6;
+  background-color: #2f939f;
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+  transition: all 0.8s;
+  font-family: "faustina";
+  font-weight: bold;
 }
-  .bandeiras {
-    
-    display: flex;
+
+.bands:hover {
+  background-color: rgb(20, 47, 122);
+}
+
+.bandeiras {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.imgBand{
-    max-width: 100%;
-    max-height: 200px;
-  }
-  h3 {
-    margin-top: 10px;
-  }
+.imgBand {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+h3 {
+  margin-top: 10px;
+  color: #e0ffff;
+  font-size:x-large;
+  text-align: center;
+}
+h4 {
+  margin-top: 10px;
+  color: #e0ffff;
+  font-size: large;
+  font-family: "faustina";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 10px;
+  color: #e0ffff;
+}
+
+.curiosidade {
+  border-radius: 6px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+  border: 2px solid#006400;
+  padding: 8px;
+  text-align: center;
+  background-color: #2f939f;
+  text-transform: uppercase;
+  display: flex;
+  font-size: clamp(1em, 2.5em + 2.5vw, 1em);
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "faustina";
+}

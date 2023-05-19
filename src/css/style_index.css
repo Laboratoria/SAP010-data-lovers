@@ -5,6 +5,8 @@ html {
   color: #D1CFCE;
   background-color: black;
   box-sizing: border-box;
+  text-shadow: 3px 3px black;
+
  
 }
 
@@ -36,7 +38,7 @@ body {
 
 
 .imagem {
-  float: left;
+  float: center;
   margin: 20px 20px 0 100px;
   align-self: flex-start;
 }
@@ -63,6 +65,8 @@ h1{
   text-align: center;
   justify-content: center;
   align-items: center;
+  text-decoration: none
+
   
 
 }
@@ -87,6 +91,12 @@ footer {
 
 }
 
+button {
+  background-color: #26374C;
+  font-family: 'Grenze', serif;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 20px;
+  border-radius: 10px;
 
-
- 
+}

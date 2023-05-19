@@ -1,92 +1,87 @@
-import { sortByName, sortByNum, filterByType } from "./data.js";
+import { filterByType, searchByName, sortByNameAZ, sortByNameZA, sortByNumAsc, sortByNumDes  } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
+const pkmnDataList = data.pokemon; //pega o banco de dados
+const pkmCards = document.getElementById("pokemonList"); //pega o espaço onde os cards serão cridos
 
-const pkmnDataList = data.pokemon;
-const pkmCards = document.getElementById("pokemonList");
+updatePokemonList(pkmnDataList); 
 
-pkmnDataList.forEach((pokemon) => { //forEach: estrutura de repetição, usada para manipular os elementos do array pokemon
 
-  const card = document.createElement("div"); // createElement foi usado para criar uma div, na qual teremos vários elementos
-  let typePkm = ""; // a variável vazia typePkm é criada, posteriormente armazenará os valores do tipo
-  pokemon.type.forEach((type) => { // dentro da matriz pokemon, estamos procurando e atribuindo a um parágrafo os diferentes tipos
-    typePkm += `<p class="type-style ${type}">${type}</p>`;
-  }); /* innerHTML se uso para definir o novo conteúdo dentro do HTML, ou seja, que tipo, nome, imagem e número 
-       foram adicionados ao HTML via interpolação de string*/
-  card.innerHTML = ` 
-    
-  <div class="pokemon">
-  <p class="pokemon-numero">${pokemon.num}</p>
-    <div class="pokemon-imagem">
-    <img src="${pokemon.img}" alt="Foto pokemon"></img>
-  </div>
-  <div class="name-contenedor">
-        <h2 class="pokemon-name">${pokemon.name}</h2>
-  </div>
-  <div class="pokemon-type">
-  <div class="typePokemon">${typePkm}</div>
-</div>
-      `;
-  pkmCards.appendChild(card); /* O createElement não funciona sozinho, por isso usamos appendChild() para adicionar esses novos valores que estamos criando*/
-})
-//console.log (pkmCards)
 
-const filterType = document.getElementById("typeFilter");
-let dataFiltered = []
+/*função de atualizar a lista de pokémons,
+ela gera os cards inicialmente e é invocada nos filtros para gerar os cards filtrados
+*/
 
-if (filterType) {
-  filterType.addEventListener("change", function () {
-    dataFiltered = pkmnDataList.filter((pokemon) => {    
-      return pokemon.type[0] === filterType.value.toLowerCase()
-    })
-  
-    console.log(dataFiltered)
+function updatePokemonList(filteredPokemons) {
+  pkmCards.innerHTML = ""
+
+  filteredPokemons.forEach((pokemon) => {
+    const card = document.createElement("div")
+    let typePkm = ""
+    pokemon.type.forEach((type) => {
+      typePkm += `<p class="type-style ${type}">${type}</p>`
+    });
+    card.innerHTML = `
+      <div class="pokemon">
+        <p class="pokemon-numero">${pokemon.num}</p>
+        <div class="pokemon-imagem">
+          <img src="${pokemon.img}" alt="Foto pokemon"></img>
+        </div>
+        <div class="name-contenedor">
+          <h2 class="pokemon-name">${pokemon.name}</h2>
+        </div>
+        <div class="pokemon-type">
+          <div class="typePokemon">${typePkm}</div>
+        </div>
+      </div>
+    `;
+
+    pkmCards.appendChild(card);
   });
 }
 
-const searchByNameInput = document.getElementById("searchByName");
-let resultSearch = []
-if (searchByNameInput) {
-  searchByNameInput.addEventListener("keyup", function(){
-    const name = searchByNameInput.value.toLowerCase();
-    console.log(name)
-    resultSearch = pkmnDataList.find((pokemon) => {
-      
-      return pokemon.name.toLowerCase() === name
-      
-      return pokemon.name.toLowerCase().includes(name)
-    })
-    console.log(resultSearch)  
-  });  
-}
-const clearButton = document.getElementById("cleanButton");
-  if (clearButton) {
-    function cleanInput() {
-      document.getElementById("searchByName").value = '';
-    }
-    clearButton.addEventListener("click", cleanInput);
+//filtrar por tipo
+const typeInput = document.getElementById("typeFilter")
+typeInput.addEventListener("change", () => {
+  const selectedType = typeInput.value.toLowerCase()
+  const filteredPokemons = filterByType(selectedType)
+  updatePokemonList(filteredPokemons)
+});
+
+
+//função de ordenar em ordem alfabética
+const sortNameInput = document.getElementById("sortName")
+sortNameInput.addEventListener("change", () => {
+  if  (sortNameInput.value == "A-Z") {
+    let orderedByNamePokemons = sortByNameAZ()
+    return updatePokemonList(orderedByNamePokemons)
+  } else if (sortNameInput.value == "Z-A") {
+    let orderedByNamePokemons = sortByNameZA()
+    return updatePokemonList(orderedByNamePokemons)
   }
   
-  
-  const alphabeticOrdenation = document.getElementById("sortName");
-  alphabeticOrdenation.addEventListener("change", function () {
-    let sortedPokemons = [];
-    if (alphabeticOrdenation.value == "Name") {
-      sortedPokemons = sortByName(pkmnDataList, "A-Z");
-    } else {
-      sortedPokemons = sortByName(pkmnDataList, "Z-A");
-    }
-    pokemonList(sortedPokemons);
-  });
-  
-  const numberOrdenation = document.getElementById("sortNum");
-  numberOrdenation.addEventListener("change", function () {
-    let sortedPokemons = [];
-    if (numberOrdenation.value == "0-9") {
-      sortedPokemons = sortByNum(pkmnDataList, "0-9");
-    } else {
-      sortedPokemons = sortByNum(pkmnDataList, "9-0");
-    }
-    pokemonList(sortedPokemons);
-  });
-  
+})
+
+//ordenar por número
+const sortNumInput = document.getElementById("sortNum")
+sortNumInput.addEventListener("change", () => {
+  if (sortNumInput.value == "0-9") {
+    let orderedByNumPokemons = sortByNumAsc()
+    return updatePokemonList(orderedByNumPokemons)
+  } else if (sortNumInput.value == "9-0") {
+    let orderedByNumPokemons = sortByNumDes()
+    return updatePokemonList(orderedByNumPokemons)
+  }
+})
+
+//procurar por nome
+const searchNameInput = document.getElementById("searchName")
+searchNameInput.addEventListener("change", () =>{
+  const nameInput = searchNameInput.value.toLowerCase()
+  const filteredPokemons = searchByName(nameInput)
+  updatePokemonList(filteredPokemons)
+
+})
+
+
+

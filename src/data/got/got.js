@@ -422,7 +422,7 @@ export default{
       "lastName": "The Red Woman",
       "fullName": "Melisandre",
       "title": "Melisandre of Asshai",
-      "family": "House Unkown",
+      "family": "House Unknown",
       "imageUrl": "https://thronesapi.com/assets/images/melisandre.jpg",
       "born": null
     },

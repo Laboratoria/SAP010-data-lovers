@@ -1,12 +1,10 @@
 import got from '../data/got/got.js'; // importando o módulo 'got' do arquivo got.jsc
 import {ordenarNomes, filtrarFamilia, filtrarPersonagens} from '../js/data.js'; // importando o módulo 'got' do arquivo got.js
 
-
-
 const listaPersonagens = got.got;
 const ordenacao = document.getElementById("ordenacao");
 const selecionarFamilia = document.getElementById("selecionarFamilia");
-const selecionarPersonagens = document.getElementById("selecionarPersonagem");
+const selecionarPersonagens = document.getElementById("selecionarPersonagens");
 
 ordenacao.addEventListener("change", onChangeOrdenacao); // add o evento de clique ao botão vinculando a função
 selecionarFamilia.addEventListener("change", onChangeSelecionarFamilia);
@@ -22,19 +20,14 @@ function onChangeOrdenacao(){
 }
 
 function onChangeSelecionarFamilia(){
-  if (selecionarFamilia.value === "Todas Famílias") {
-    exibirPersonagens(listaPersonagens); // Exibe todos os personagens
-  } else {
-    const listaFamilia = filtrarFamilia(listaPersonagens, selecionarFamilia.value);
-    exibirPersonagens(listaFamilia);
-  }
+  const listaFamilia = filtrarFamilia(listaPersonagens, selecionarFamilia.value);
+  exibirPersonagens(listaFamilia);
 }
 
 function onChangeSelecionarPersonagens(){
   const listaNomes = filtrarPersonagens(listaPersonagens, selecionarPersonagens.value);
   exibirPersonagens(listaNomes);
 }
-
 
 function exibirPersonagens(personagens){
   // selecionando o elemento com id HTML 'exibirPersonagens' para exibir os cards ==>
@@ -77,21 +70,14 @@ function exibirPersonagens(personagens){
   });
 }
 
-
-
-
 // Cria e exibe em ordem alfabética as famílias no 'select' ==>
 const familyArray = [];
 familyArray.push("Todas Famílias");
-
 
 const optionTodasFamilias = document.createElement('option');
 optionTodasFamilias.value = "Todas Famílias";
 optionTodasFamilias.textContent = "Todas Famílias";
 selecionarFamilia.appendChild(optionTodasFamilias);
-
-
-
 
 listaPersonagens.forEach(personagem => {
   if (Array.isArray(personagem.family)) {
@@ -112,23 +98,38 @@ listaPersonagens.forEach(personagem => {
 });
 
 familyArray.sort(); // Ordena o array em ordem alfabética
+
 familyArray.forEach(family => {
-  if (family !== "Todas Famílias") {
-    const option = document.createElement('option');
-    option.value = family;
-    option.textContent = family;
-    selecionarFamilia.appendChild(option);
-  }
+  const option = document.createElement('option');
+  option.value = family;
+  option.textContent = family;
+  selecionarFamilia.appendChild(option);
 });
 
-
 // Cria e exibe em ordem alfabética os nomes dos personagens no 'select' ==>
-const selecionarPersonagem = document.getElementById('selecionarPersonagem');
 const fullNameArray = [];
+fullNameArray.push("Todos Personagens");
+
+const optionTodosPersonagens = document.createElement('option');
+optionTodosPersonagens.value = "Todos Personagens";
+optionTodosPersonagens.textContent = "Todos Personagens";
+selecionarPersonagens.appendChild(optionTodosPersonagens);
 
 listaPersonagens.forEach(personagem => {
-  if (!fullNameArray.includes(personagem.fullName)) {
-    fullNameArray.push(personagem.fullName);
+  if (Array.isArray(personagem.fullName)) {
+    personagem.fullName.forEach(fullName => {
+      if (!fullNameArray.includes(fullName)) {
+        fullNameArray.push(fullName);
+      }
+    });
+  } else if (typeof personagem.fullName === 'string') {
+    const names = personagem.fullName.split(',');
+    names.forEach(fullName => {
+      const trimmedFullName = fullName.trim();
+      if (!fullNameArray.includes(trimmedFullName)) {
+        fullNameArray.push(trimmedFullName);
+      }
+    });
   }
 });
 
@@ -138,9 +139,8 @@ fullNameArray.forEach(fullName => {
   const option = document.createElement('option');
   option.value = fullName;
   option.textContent = fullName;
-  selecionarPersonagem.appendChild(option);
+  selecionarPersonagens.appendChild(option);
 });
-
 
 // Cria ordenacao A-Z/Z-A no 'select' ==>
 const ordenarAZ = document.getElementById('ordenacao');
@@ -156,29 +156,3 @@ const optionZA = document.createElement('option');
 optionZA.value = 'za';
 optionZA.textContent = 'Z-A';
 ordenarAZ.appendChild(optionZA);
-
-
-window.onload = function() {
-  exibirPersonagens(listaPersonagens);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  const informacoesPersonagens = data(ordenar);
-  const familiaPersonagem = sortBy(ordenar);
-  const ordenarAZ = sortOrder(ordenar);
-*/

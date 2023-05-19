@@ -28,18 +28,17 @@ function sort(personagens) {
 }
 
 export const filtrarFamilia = (personagens, familia) => {
-  return personagens.filter(personagem => personagem.family === familia);
-}
-
-
-export const filtrarPersonagens = (personagens, nome) => {
-  if (nome === "Todas Famílias") {
+  if (familia === "Todas Famílias") {
     return personagens; // Retorna a lista completa de personagens
   } else {
-    return personagens.filter(personagem => personagem.fullName === nome);
+    return personagens.filter(personagem => personagem.family === familia);
   }
 }
 
-
-
-
+export const filtrarPersonagens = (personagens, nome) => {
+  if (nome === "Todos Personagens") {
+    return personagens; // Retorna a lista completa de personagens
+  } else {
+    return personagens.filter(personagem => personagem.fullName.includes(nome));
+  }
+}

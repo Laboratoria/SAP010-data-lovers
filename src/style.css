@@ -273,11 +273,11 @@ a#selector {
 .sobre_1 > h1 {
     padding: 15px;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.8em;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.416);
 }
 .sobre_2 > h1 {
-    font-size: 2em;
+    font-size: 2.8em;
     text-align: center;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.416);
     margin-bottom: 30px;
@@ -288,6 +288,9 @@ a#selector {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     
+}
+.sobre_2 > h2 {
+    font-size: 2em;
 }
 .sobre_2 p {
     font-size: 1.2em;
@@ -302,7 +305,37 @@ a#selector {
 
 }
 
-/*======Media queries=====*/
+/*=================MEDIA QUERIES===================*/
+
+@media screen and (max-width: 480px) {
+    .small-container {
+      font-size: 0.9em;
+    }
+    nav a {
+        font-size: 1rem;        
+    }
+   
+    #populationResult {
+        font-size: 0.8rem;
+    }
+    .sobre_1 > h1 {
+        font-size: 0.1em;        
+    }
+    .sobre_1 > h2, .sobre_2 > h2 {
+        font-size: 1em;
+    }
+    
+    .foto {
+       width: 25%; 
+       height: 25%;
+    }
+    footer {
+        font-size: 0.2em;
+    }
+   
+  
+  }
+
 @media screen and (max-width: 767px) {
     header .logo {
       margin-left: 10px;
@@ -315,34 +348,54 @@ a#selector {
     nav ul {
       min-width: auto;
       margin-right: 0;
-    }
-    #populationResult {
-        font-size: 0.8rem;
-    }
+    }   
     footer {
         font-size: 0.8rem;
     }
     .title {
         font-size: 0.9rem;
     }
+    #populationResult {
+        font-size: 0.9rem;
+    }
   
   }
-  @media screen and (max-width: 480px) {
+ 
+  @media screen and (max-width: 1200px) {
     .small-container {
-      font-size: 0.9em;
+      font-size: 1.5em;
     }
     #populationResult {
         font-size: 1.2rem;
     }
+    header .logo h1 {
+        font-size: 2.5rem;
+    }
+    nav a {
+        font-size: 1rem;        
+    }
+    .sobre_1 > h1, .sobre_2 > h1 {
+        font-size: 1.5em;
+    }
+    .sobre_1 > h2, .sobre_2 > h2 {
+        font-size: 1.1em;
+    }
+    .sobre_1 > p, .sobre_2 > p {
+        font-size: 0.9em;
+    }
+   footer {
+    font-size: 1.1rem;
+   }
+      
   
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1201px) {
     .small-container {
-      font-size: 1.1em;
+      font-size: 1.2rem;
     }
     #populationResult {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
-  
+   
   }
 

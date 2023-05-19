@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    position: relative;
+    height: 100%;
+}
+
 body{
     background-image: url("img/brba.jpg");
     /*filter: blur(8px);
@@ -14,10 +19,21 @@ body{
     background-attachment: fixed;
     max-width: 1280px;
     margin:0 auto;
-    height: 100%;
     padding:0;
 }
 
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    z-index: -1;
+}
 
 
 h1{
@@ -36,8 +52,9 @@ h1{
     left: 400px;
     width: 550px;
     height: 30px;
-    border: 90px;
-    border-radius: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
 .filter{

@@ -1,4 +1,10 @@
-import { filtroNomes, filterBreakingBad, filterBetterCallSaul, orderAZ, orderZA } from "./data.js";
+import {
+  filtroNomes,
+  filterBreakingBad,
+  filterBetterCallSaul,
+  orderAZ,
+  orderZA,
+} from "./data.js";
 import data from "./data/breakingbad/breakingbad.js";
 
 // o código abaixo transforma um objeto em array
@@ -14,9 +20,17 @@ function infoAllCards(data) {
     .map(
       (character) => `
   <div class="cards">
+  <div class="flip-container"> 
+  <div class="flipper">
+
     <ul class="frontCard">
       <h1 id="nome"><strong> ${character.name} </strong></h1>
       <img alt="foto" class="img-card" src="${character.img}">
+    </ul>
+
+      
+      <div class="cardsback">
+      <ul class="back-cards-texto">
       <li><strong> Birthday: </strong> ${character.birthday}</li>
       <li><strong> occupation: </strong> ${character.occupation}</li>
       <li><strong> Status: </strong> ${character.status}</li>
@@ -26,6 +40,9 @@ function infoAllCards(data) {
       <li><strong> Category: </strong> ${character.category}</li>
       <li><strong> Better_call_saul_appearance: </strong> ${character.better_call_saul_appearance}</li>
     </ul>
+    </div>
+  </div>
+  </div>
   </div>
   `
     )
@@ -48,20 +65,19 @@ buscarPortemporada.addEventListener("change", () => {
     resultBreakingBad,
     buscarPortemporada.value
   );
- 
+
   infoAllCards(filtroBB);
 });
 
-const buscarSerieBCS = document.getElementById("select-filter")
-buscarSerieBCS.addEventListener ("change", () => {
-  const filtroBCS = filterBetterCallSaul (resultBreakingBad);
-  console.log(filtroBCS, "better call saul")
-  infoAllCards (filtroBCS);
-   
+const buscarSerieBCS = document.getElementById("select-filter");
+buscarSerieBCS.addEventListener("change", () => {
+  const filtroBCS = filterBetterCallSaul(resultBreakingBad);
+  console.log(filtroBCS, "better call saul");
+  infoAllCards(filtroBCS);
 });
 
 const ordenarPersonagens = document.getElementById("select-order");
-ordenarPersonagens.addEventListener("change", () => { 
+ordenarPersonagens.addEventListener("change", () => {
   const ordenar = ordenarPersonagens.value;
   let breakingBadOrdenado;
   if (ordenar === "a-z") {
@@ -71,5 +87,3 @@ ordenarPersonagens.addEventListener("change", () => {
   }
   infoAllCards(breakingBadOrdenado);
 });
-
-

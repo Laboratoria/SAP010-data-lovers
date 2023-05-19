@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Menu</h1>
+    <span id="menu-paginas" class="material-icons">menu</span>
+    <menu>
+      <ul>
+        <li><a href="#">Historia do Tarô</a></li>
+        <li><a href="#">Arcanos</a></li>
+        <ul>
+          <li><a href="#">Maiores</a></li>
+          <li><a href="#">Menores</a></li>
+        </ul>
+      </ul>
+    </menu>
+  </header>
+  <main>
+    <h1><strong>Tarô</strong></h1>
+    <p>O tarô é um baralho de cartas frequentemente utilizado como meio de consulta e interpretação de fatos (presentes,
+      passados ou futuros), sonhos, percepções ou estados emocionais, que também constitui um tipo de cartomancia.</p>
+
+    <form>
+      <label for="nome">Nome</label>
+      <input type="search" id="pesquisa-nome" name="nome" placeholder="Insira o nome da Carta">
+
+      <label for="numero">Número</label>
+      <input type="number" id="pesquisa-numero" name="numero" min="1" max="78">
+
+    </form>
+    <button type="submit">Pesquisar</button>
+    <ul class="listagem-cartas">
+      <li class="cartao-carta">
+        <div class="informacoes">
+          <span>#1 The Magician</span>
+          <span>Arcano: Major</span>
+        </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg" alt="carta de tarô: O Mago" width="100" class="jpg">
+
+  </main>
+
+
+  <div id="root"></div>
+
+  <section>
+    <div class="container-card" id="info-cards"></div>
+  </section>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

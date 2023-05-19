@@ -21,4 +21,12 @@ Veja o projeto finalizado
 Seja para fins educacionais, pesquisa acadêmica, planejamento de viagens ou simplesmente para satisfazer a curiosidade, o TravelCode© é uma fonte confiável de informações sobre os países, permitindo aos usuários obterem uma visão geral de suas características principais. Com sua interface amigável e dados atualizados, o TravelCode© torna mais fácil para os usuários encontrarem os detalhes que procuram, como a população de um país, os idiomas falados, a aparência da bandeira e outras informações relevantes. Portanto, se você está em busca de um recurso confiável e prático para pesquisar informações geográficas sobre diferentes países, o TravelCode é uma ferramenta que vale a pena explorar.
 
 
-## 3. Protótipos
+## 3. Protótipos 📝
+Baixa fidelidade:
+![imagem](src/img/pghome.jpeg)
+![imagem](src/img/pgpaises.jpeg)
+![imagem](src/img/pgsobre.jpeg)
+Alta fidelidade:
+![imagem](src/img/página home.png)
+![imagem](src/img/página paises.png)
+![imagem](src/img/página sobre.png)

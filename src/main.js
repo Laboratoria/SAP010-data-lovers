@@ -122,7 +122,7 @@ const calculatePopulation = (countries) => {
 // Função para exibir a população total e a região no elemento populationResultElement
 const displayPopulation = (region, population) => {
   populationResultElement.innerHTML = 
-  `<span style="background-color: rgba(255, 255, 255, 0.864)"><strong>População total de ${region}: </br> ${population.toLocaleString("br-PT")}</strong></span>`;
+  `<strong>População total de ${region}: </br> <span>${population.toLocaleString("br-PT")}</span></strong>`;
 };
 
 continentSelectorElement.addEventListener("change", (event) => {

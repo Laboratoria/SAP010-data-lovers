@@ -1,17 +1,27 @@
-import { filterByType } from "./data.js";
+
+=======
+import { filterByType, searchByName, sortByNameAZ, sortByNameZA, sortByNumAsc, sortByNumDes  } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
-const pkmnDataList = data.pokemon;
-const pkmCards = document.getElementById("pokemonList");
+const pkmnDataList = data.pokemon; //pega o banco de dados
+const pkmCards = document.getElementById("pokemonList"); //pega o espaço onde os cards serão cridos
+
+updatePokemonList(pkmnDataList); 
+
+
+
+/*função de atualizar a lista de pokémons,
+ela gera os cards inicialmente e é invocada nos filtros para gerar os cards filtrados
+*/
 
 function updatePokemonList(filteredPokemons) {
-  pkmCards.innerHTML = "";
+  pkmCards.innerHTML = ""
 
   filteredPokemons.forEach((pokemon) => {
-    const card = document.createElement("div");
-    let typePkm = "";
+    const card = document.createElement("div")
+    let typePkm = ""
     pokemon.type.forEach((type) => {
-      typePkm += `<p class="type-style ${type}">${type}</p>`;
+      typePkm += `<p class="type-style ${type}">${type}</p>`
     });
     card.innerHTML = `
       <div class="pokemon">
@@ -28,69 +38,55 @@ function updatePokemonList(filteredPokemons) {
       </div>
     `;
 
+
     pkmCards.appendChild(card);
   });
 }
 
-const typeInput = document.getElementById("typeFilter");
+
+//filtrar por tipo
+const typeInput = document.getElementById("typeFilter")
 typeInput.addEventListener("change", () => {
-  if (typeFilter.value != "All"){
-   const selectedType = typeInput.value.toLowerCase();
-  const filteredPokemons = filterByType(selectedType);
-  updatePokemonList(filteredPokemons);
-     }
+  const selectedType = typeInput.value.toLowerCase()
+  const filteredPokemons = filterByType(selectedType)
+  updatePokemonList(filteredPokemons)
 });
 
-// Chamada inicial para exibir todos os cards
-updatePokemonList(pkmnDataList);
 
+//função de ordenar em ordem alfabética
+const sortNameInput = document.getElementById("sortName")
+sortNameInput.addEventListener("change", () => {
+  if  (sortNameInput.value == "A-Z") {
+    let orderedByNamePokemons = sortByNameAZ()
+    return updatePokemonList(orderedByNamePokemons)
+  } else if (sortNameInput.value == "Z-A") {
+    let orderedByNamePokemons = sortByNameZA()
+    return updatePokemonList(orderedByNamePokemons)
 
-
-
-
-const searchByNameInput = document.getElementById("searchByName");
-let resultSearch = []
-if (searchByNameInput) {
-  searchByNameInput.addEventListener("keyup", function(){
-    const name = searchByNameInput.value.toLowerCase();
-    console.log(name)
-    resultSearch = pkmnDataList.find((pokemon) => {
-      
-      return pokemon.name.toLowerCase() === name
-      
-      return pokemon.name.toLowerCase().includes(name)
-    })
-    console.log(resultSearch)  
-  });  
-}
-const clearButton = document.getElementById("cleanButton");
-  if (clearButton) {
-    function cleanInput() {
-      document.getElementById("searchByName").value = '';
-    }
-    clearButton.addEventListener("click", cleanInput);
   }
   
-  
-  const alphabeticOrdenation = document.getElementById("sortName");
-  alphabeticOrdenation.addEventListener("change", function () {
-    let sortedPokemons = [];
-    if (alphabeticOrdenation.value == "Name") {
-      sortedPokemons = sortByName(pkmnDataList, "A-Z");
-    } else {
-      sortedPokemons = sortByName(pkmnDataList, "Z-A");
-    }
-    pokemonList(sortedPokemons);
-  });
-  
-  const numberOrdenation = document.getElementById("sortNum");
-  numberOrdenation.addEventListener("change", function () {
-    let sortedPokemons = [];
-    if (numberOrdenation.value == "0-9") {
-      sortedPokemons = sortByNum(pkmnDataList, "0-9");
-    } else {
-      sortedPokemons = sortByNum(pkmnDataList, "9-0");
-    }
-    pokemonList(sortedPokemons);
-  });
-  
+})
+
+//ordenar por número
+const sortNumInput = document.getElementById("sortNum")
+sortNumInput.addEventListener("change", () => {
+  if (sortNumInput.value == "0-9") {
+    let orderedByNumPokemons = sortByNumAsc()
+    return updatePokemonList(orderedByNumPokemons)
+  } else if (sortNumInput.value == "9-0") {
+    let orderedByNumPokemons = sortByNumDes()
+    return updatePokemonList(orderedByNumPokemons)
+  }
+})
+
+//procurar por nome
+const searchNameInput = document.getElementById("searchName")
+searchNameInput.addEventListener("change", () =>{
+  const nameInput = searchNameInput.value.toLowerCase()
+  const filteredPokemons = searchByName(nameInput)
+  updatePokemonList(filteredPokemons)
+
+})
+
+
+

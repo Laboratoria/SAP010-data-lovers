@@ -28,9 +28,12 @@
         <div class="conteiner">
             <section class="card-main-display">
                 <nav class="nav">
+
                     <div class="numberName">
                         <input type="text" placeholder="Search by name" class="input-search" id="searchByName" />
                         <button id="cleanButton" class="clean-name">Clean</button>
+
+                    
 
                         <select id="sortName" class="btn-name">
                             <option value="Name">Name</option>
@@ -40,12 +43,16 @@
                     </div>
             </section>
 
+
             <div class="btName">
-                <select id="sortNum" class="btn-num">
-                    <option value="0-9">Numero</option>
-                    <option value="0-9">Crescente</option>
-                    <option value="9-0">Decrescente</option>
-                </select>
+              
+       
+            <select id="sortNum" class="btn-num">
+                <option value="0-9">Pokédex Number</option>
+                <option value="0-9">Ascending</option>
+                <option value="9-0">Descending</option>
+            </select>
+           
 
                 <select id="typeFilter" class="type-filter">
                     <option value="typeTitle" disabled selected style="display: none">Type</option>

@@ -10,15 +10,17 @@
 </head>
 
 <body>
+    <div class= "contentAll">
     <header>
+
         <figure>
             <img class="logo" src="PokeData.png" alt="Logo PokeData Go" />
             <img class="logo" src="Go.png" alt="Logo PokeData Go" />
         </figure>
-<div class= "nav1">
-        <button onclick="location.href='index.html'" class="btn1">Homepage</button>
-        <button onclick="location.href='page2.html'" class="btn1">Compare</button>
-    </div>    
+        <div class="nav1">
+            <button onclick="location.href='index.html'" class="btn1">Homepage</button>
+            <button onclick="location.href='page2.html'" class="btn1">Compare</button>
+        </div>
     </header>
 
     <main>
@@ -26,15 +28,24 @@
         <div class="conteiner">
             <section class="card-main-display">
                 <nav class="nav">
-                    <input type="text" placeholder="Search by name" class="input-search" id="searchName" />
-                    <button id="cleanButton" class="clean-name">Clean</button>
 
-                    <select id="sortName" class="btn-name">
-                        <option value="Name">Name</option>
-                        <option value="A-Z">A-Z</option>
-                        <option value="Z-A">Z-A</option>
-                    </select>
+                    <div class="numberName">
+                        <input type="text" placeholder="Search by name" class="input-search" id="searchByName" />
+                        <button id="cleanButton" class="clean-name">Clean</button>
+
+                    
+
+                        <select id="sortName" class="btn-name">
+                            <option value="Name">Name</option>
+                            <option value="A-Z">A-Z</option>
+                            <option value="Z-A">Z-A</option>
+                        </select>
+                    </div>
             </section>
+
+
+            <div class="btName">
+              
        
             <select id="sortNum" class="btn-num">
                 <option value="0-9">Pokédex Number</option>
@@ -42,6 +53,7 @@
                 <option value="9-0">Descending</option>
             </select>
            
+
                 <select id="typeFilter" class="type-filter">
                     <option value="typeTitle" disabled selected style="display: none">Type</option>
                     <option value="All">All</option>
@@ -64,18 +76,20 @@
                     <option value="Steel">Steel</option>
                     <option value="Water">Water</option>
                 </select>
+            </div>
             </nav>
-
-            <section class="figureCard">
-                <div class="allPokemon" id=pokemonList></div>
-            </section>
         </div>
+        <section class="figureCard">
+            <div class="allPokemon" id=pokemonList></div>
+        </section>
+
     </main>
 
     <footer class="footer">
         <p id="footerText">PokéData Go, 2023 <br><strong><em>Created by Cristyna Costa and Ninoska
                     Contreras</em></strong></p>
     </footer>
+    </div>
     <script src="main.js" type="module"></script>
 </body>
 

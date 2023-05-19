@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compare Pokémons</title>
-    <link rel="stylesheet" href="page2-style.css"/>
+    <link rel="stylesheet" href="page2-style.css" />
     <script src="page2.js" type="module"></script>
 </head>
+
 <body>
     <header>
         <figure>
-        <img class="logo" src="PokeData.png" alt="Logo PokeData Go" />
-        <img class="logo" src="Go.png" alt="Logo PokeData Go" />
-    </figure>
-    <button onclick="location.href='index.html'" class="navBtn1">Homepage</button>
-    <button onclick="location.href='page1.html'" class="navBtn2">Pokémon List</button>
-        </header>
-        <p class="prompt">Select two pokémon to compare their stats:</p>
+            <img class="logo" src="PokeData.png" alt="Logo PokeData Go" />
+            <img class="logo" src="Go.png" alt="Logo PokeData Go" />
+        </figure>
+        <div class="nav1">
+        <button onclick="location.href='index.html'" class="navBtn1">Homepage</button>
+        <button onclick="location.href='page1.html'" class="navBtn2">Filter</button>
+    </div>
+    </header>
+    <marquee behavior="alternate"><p class="prompt">Select two pokémon to compare their stats:</p></marquee>
     <div class="pokemonSelection">
-        <form id= "firstPokeForm"action="javascript:void(0)">
-        <input id="pokeNameInputFirst" type="text" placeholder="First Pokémon">
-        <input type="submit" value="Confirm">
-    </form>
+        <form id="firstPokeForm" action="javascript:void(0)">
+            <input id="pokeNameInputFirst" type="text" placeholder="First Pokémon">
+            <input id="confirm" type="submit" value="Confirm">
+        </form>
         <form id="secondPokeForm" action="javascript:void(0)">
-        <input id="pokeNameInputSecond" type="text" placeholder="Second Pokémon">
-        <input type="submit" value="Confirm">
+            <input id="pokeNameInputSecond" type="text" placeholder="Second Pokémon">
+            <input id="confirm" type="submit" value="Confirm">
         </form>
     </div>
     <main class="card-containers">
-      
+
         <section id="pokémon-card-one-container"></section>
-       
+
         <section id="pokémon-card-two-container"></section>
-        
-    
+
+
     </main>
     <footer>
-    
+
     </footer>
 </body>
+
 </html>

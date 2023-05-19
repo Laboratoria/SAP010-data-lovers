@@ -1,3 +1,5 @@
+
+=======
 import { filterByType, searchByName, sortByNameAZ, sortByNameZA, sortByNumAsc, sortByNumDes  } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
@@ -36,9 +38,11 @@ function updatePokemonList(filteredPokemons) {
       </div>
     `;
 
+
     pkmCards.appendChild(card);
   });
 }
+
 
 //filtrar por tipo
 const typeInput = document.getElementById("typeFilter")
@@ -58,6 +62,7 @@ sortNameInput.addEventListener("change", () => {
   } else if (sortNameInput.value == "Z-A") {
     let orderedByNamePokemons = sortByNameZA()
     return updatePokemonList(orderedByNamePokemons)
+
   }
   
 })

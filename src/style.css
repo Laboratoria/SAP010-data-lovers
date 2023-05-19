@@ -297,6 +297,11 @@ a#selector {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
 }
+section p > a {
+    color: rgba(0, 0, 0, 0.673);
+    font-size: 150%; 
+    
+}
 .foto {
     display: flex;
     height: 100px;

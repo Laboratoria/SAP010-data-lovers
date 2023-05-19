@@ -1,6 +1,8 @@
 # Data Lovers - Breaking Bad
 
-  <h4 align="center">Clique aqui para acessar o projeto</h4>
+  <p align="center">Clique aqui para acessar o projeto</p>
+  <p align="center">Status do projeto: em andamento</p>
+
 
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white//https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
 [![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white//https://developer.mozilla.org/en-US/docs/Web/CSS)](https://developer.mozilla.org/en-US/docs/Web/CSS)

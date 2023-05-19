@@ -80,21 +80,37 @@ h1{
 
 /* as linhas abaixo é referente a estilização dos cards*/
 
-main {
-    padding-inline: 3.2rem;
-    max-width: 70rem;
-    margin: 3.2rem auto;
+main{
+    padding: 25px;
+}
+
+main .container-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
 }
 
 .frontCard{
+    background-color: white;
+    width: 200px;
+    padding: 16;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px ;
     list-style-type: none;
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-    width: calc(40% - 10px); /* Definindo a largura do card */
-    margin-bottom: 20px; /* Adicionando um espaçamento entre os cards */
-    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.438); /* sombra nos cards */
+    cursor: pointer;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.438);
+    transition: 0.2s ease-in-out;
 }
+
+.frontCard:hover{
+    background-color: #818383e0;
+}
+
+
 
 #nome{
     color: rgb(26, 25, 25);

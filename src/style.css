@@ -34,6 +34,7 @@ body {
     background-color: var(--white-color);
     flex: 1;
     margin: 12px;
+    flex-direction: column;
 }
 
 .card {
@@ -206,6 +207,8 @@ body {
     align-items: center;
     flex-direction: row;
     gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 
@@ -235,4 +238,78 @@ body {
 
 select:invalid {
     color: var(--text-placeholder);
+  }
+
+  .list-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    gap: 12px;
+  }
+
+  .list-item {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    height: 80px;  
+    cursor: pointer;
+  }
+
+  .item-picture {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item-picture img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .item-info {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    
+  }
+
+  .item-info p {
+    margin: 0;
+    font-size: 19px;
+    font-style: italic;
+    color: black;
+    text-transform: capitalize;
+  }
+
+  .item-types {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+  }
+
+  .item-type {
+    background-color: var(--suporte-color);
+    border-radius: 25px;
+    padding: 4px 16px;
+
+
+  }
+
+  .item-type p {
+    color: var(--white-color);
+    font-size: 14px;
+  }
+
+  .list-item.active {
+    border: 1px solid #FFB100;
+    border-radius: 15px;
+    background-color: #fff6bd9b;
   }

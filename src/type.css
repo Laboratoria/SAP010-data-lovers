@@ -1,0 +1,71 @@
+.water {
+    --background-color: #B9E9FC; /* cor clara */
+    --background-color-2: #97DEFF; /* cor media */
+    --suporte-color: #47B5FF; /* cor forte */
+    --text-header-color: #73777b; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.ice {
+    --background-color: #C9EEFF; /* cor clara */
+    --background-color-2: #B9E9FC; /* cor media */
+    --suporte-color: #8DCBE6; /* cor forte */
+    --text-header-color: #73777b; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.fighting {
+    --background-color: #FFC3C3; /* cor clara */
+    --background-color-2: #FF8C8C; /* cor media */
+    --suporte-color: #FF5D5D; /* cor forte */
+    --text-header-color: #FFFFFF; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.fire {
+    --background-color: #FFBC80; /* cor clara */
+    --background-color-2: #FF9F45; /* cor media */
+    --suporte-color: #F76E11; /* cor forte */
+    --text-header-color: #73777b; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.electric {
+    --background-color: #FFF9B0; /* cor clara */
+    --background-color-2: #FFD966; /* cor media */
+    --suporte-color: #E6B325; /* cor forte */
+    --text-header-color: #73777b; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.poison {
+    --background-color: #C060A1; /* cor clara */
+    --background-color-2: #9145B6; /* cor media */
+    --suporte-color: #4C3F91; /* cor forte */
+    --text-header-color: #FFFFFF; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.grasson {
+    --background-color: #CEEDC7;
+    --background-color-2: #E9EDC9;
+    --suporte-color: #6ECCAF;
+    --text-header-color: #73777b;
+    color: var(--text-header-color);
+}
+
+.dragon {
+    --background-color: #736EAD; /* cor clara */
+    --background-color-2: #576CBC; /* cor media */
+    --suporte-color: #19376D; /* cor forte */
+    --text-header-color: #FFFFFF; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.bug {
+    --background-color: #D3E4CD; /* cor clara */
+    --background-color-2: #BDD2B6; /* cor media */
+    --suporte-color: #56776C; /* cor forte */
+    --text-header-color: #73777b;; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}

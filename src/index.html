@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&family=Open+Sans&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="type.css" />
   </head>
   <body>
     <div id="root">
 
-    <div class="container">
+    <div class="container grass" id="container">
                    
 
       <div class="info"> 
@@ -54,10 +55,10 @@
             <!-- Cards de informações -->
             <div class="info-card">
               <div class="info-card-header">
-                <p>Type</p>
+                <p>Spawn Chance</p>
               </div>
 
-              <p id="text-poke-candy"></p>
+              <p id="text-poke-spawn-chance"></p>
             </div>
             <!-- FIM Cards de informações -->
 
@@ -92,7 +93,7 @@
                 </svg>
             </div>
               
-              <input id="input-poke-nam" placeholder="Search"/>
+              <input id="input-poke-name" placeholder="Search"/>
             
           </div>
 
@@ -123,15 +124,8 @@
 
         </div>
         
-          <div class="list-items">
-            <div class="list-item">
-                <div class="item-picture"></div>
-                <div class="item-info">
-                  <div class="item-title"></div>
-                  <div class="item-types"></div>
-                </div>
-            </div>
-
+          <div class="list-items" id="list-items">
+            
           </div>
 
       </div>

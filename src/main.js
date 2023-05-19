@@ -1,8 +1,4 @@
-import {
-  filtroNomes,
-  filterBreakingBad,
-  filterBetterCallSaul,
-} from "./data.js";
+import { filtroNomes, filterBreakingBad, filterBetterCallSaul, orderAZ, orderZA } from "./data.js";
 import data from "./data/breakingbad/breakingbad.js";
 
 // o código abaixo transforma um objeto em array
@@ -50,21 +46,31 @@ pesquisarNome.addEventListener("input", (Event) => {
 const buscarPortemporada = document.getElementById("select-filter");
 buscarPortemporada.addEventListener("change", () => {
   const filtroBB = filterBreakingBad(
-    data.breaking_bad,
-    buscarPortemporada.value
-  );
-  console.log(filtroBB, "buscar por temporada");
-  infoAllCards(filtroBB);
-});
-buscarPortemporada.addEventListener("change", () => {
-  const filtroBCS = filterBetterCallSaul(
     resultBreakingBad,
     buscarPortemporada.value
   );
-  console.log (filtroBCS, "bettercallsaul")
-  infoAllCards(filtroBCS);
+ 
+  infoAllCards(filtroBB);
+});
+
+const buscarSerieBCS = document.getElementById("select-filter")
+buscarSerieBCS.addEventListener ("change", () => {
+  const filtroBCS = filterBetterCallSaul (resultBreakingBad);
+  console.log(filtroBCS, "better call saul")
+  infoAllCards (filtroBCS);
+   
+});
+
+const ordenarPersonagens = document.getElementById("select-order");
+ordenarPersonagens.addEventListener("change", () => { 
+  const ordenar = ordenarPersonagens.value;
+  let breakingBadOrdenado;
+  if (ordenar === "a-z") {
+    breakingBadOrdenado = orderAZ(resultBreakingBad);
+  } else if (ordenar === "z-a") {
+    breakingBadOrdenado = orderZA(resultBreakingBad);
+  }
+  infoAllCards(breakingBadOrdenado);
 });
 
 
-
-console.log(data);

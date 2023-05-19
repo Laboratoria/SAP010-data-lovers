@@ -15,7 +15,6 @@ function infoAllCards(data) {
       (character) => `
   <div class="cards">
     <ul class="frontCard">
-      <h3>${character.char_id}</h3>
       <h1 id="nome"><strong> ${character.name} </strong></h1>
       <img alt="foto" class="img-card" src="${character.img}">
       <li><strong> Birthday: </strong> ${character.birthday}</li>

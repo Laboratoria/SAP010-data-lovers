@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-h1{
-    opacity: .9;
-    text-align: center;
-    color: white;
-    padding: 3.2rem;
-    max-width: 46rem;
-    margin: auto;
-}
-
 body{
     background-image: url("img/brba.jpg");
     /*filter: blur(8px);
@@ -21,9 +12,21 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    max-width: 1280px;
+    margin:0 auto;
     height: 100%;
     padding:0;
-    margin:0;
+}
+
+
+
+h1{
+    opacity: .9;
+    text-align: center;
+    color: white;
+    padding: 3.2rem;
+    max-width: 100%;
+    margin: auto;
 }
 
 .busca{
@@ -77,13 +80,13 @@ body{
 
 /* as linhas abaixo é referente a estilização dos cards*/
 
-.img-card {
-    max-width: 50%;
-    max-height: 50%;
-    object-fit: cover;
+main {
+    padding-inline: 3.2rem;
+    max-width: 70rem;
+    margin: 3.2rem auto;
 }
 
-.frontCard {
+.frontCard{
     list-style-type: none;
     background-color: #f5f5f5;
     padding: 20px;
@@ -91,25 +94,17 @@ body{
     width: calc(40% - 10px); /* Definindo a largura do card */
     margin-bottom: 20px; /* Adicionando um espaçamento entre os cards */
     box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.438); /* sombra nos cards */
-
-
-    display:inline-block;
-
-    /*flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;*/
 }
 
 #nome{
     color: rgb(26, 25, 25);
 }
 
-main {
-    padding-inline: 3.2rem;
-    max-width: 70rem;
-    margin: 3.2rem auto;
+.img-card {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
-
 
 @media screen and (max-width: 768px) {
     .frontCard {
@@ -120,3 +115,24 @@ main {
     .frontCard:nth-child(2n) {
         margin-right: 0; /* Remove o espaçamento à direita para o último card de cada fileira em telas menores */
       }
+/* rodapé */
+.footer{
+    background-color: #f7faf9e0;
+    color: #030303;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.title-footer{
+    padding: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.nome-aluna{
+    font-size: 15;
+    padding: 8px 8px 0 8px;
+}
+
+.contato a{
+    font-size: 0.40cm;
+}

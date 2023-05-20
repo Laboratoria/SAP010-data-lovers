@@ -47,7 +47,7 @@ header {
   width: 10vw;
   height: 40px;
   margin: 0px 7px;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   text-align: center;
   cursor: pointer;
   margin-top: 20px;
@@ -62,7 +62,7 @@ header {
   width: 10vw;
   height: 40px;
   margin: 0px 7px;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   text-align: center;
   cursor: pointer;
 }
@@ -82,7 +82,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* width: 200%; */
+  width: 100%;
 }
 
 .option-container {
@@ -114,11 +114,11 @@ main {
   justify-content: center;
   align-items: center;
   color: var(--white);
-  font-size: large;
+  font-size: 1.2rem
 }
 
 .card {
-  height: fit-content;
+  height: 30vw;
   width: 16vw;
   margin: 20px;
   padding: 2vh 1vw;
@@ -154,36 +154,7 @@ footer {
   align-items: center;
 }
 
-* @media screen and (max-width: 480px)  {
-  body{
-    flex-direction: column;
-  }
 
-  main{
-    flex-direction: column;
-  }
-
-  .card-container {
-    flex-direction: column;
-    
-  }
-
-  .card{
-    height: fit-content;
-    width: 60vw;
-    margin: 20px;
-    font-size: 0.89rem
-  }
-
-  .poster-img {
-    height: 40vh;
-    width: 40vw;
-  }
-
-  .percentage-container {
-    font-size: small;
-  }
-} 
 
 /* @media screen and (max-width: 480px) {
   body {
@@ -305,32 +276,82 @@ footer {
     margin-top: 35px;
   }
 } */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  body{
-     display: flex;   
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .btn-header {
+    font-size: 1.1rem;
   }
 
-  main{
-    display: flex; 
+  .btn-option {
+    font-size: 1.1rem;
   }
 
-  .card-container {
-    display: flex; 
-    width: 70%;
+  .percentage-container{
+    font-size: 1.1rem;
   }
 
-  .card{
-    height: fit-content;
-    width: 60vw;
+  .card {
+    height: 50vw;
+    width: 40vw;
     font-size: 1rem
   }
 
   .poster-img {
     height: 40vh;
-    width: 40vw;
+    width: 30vw;
+  }
+ 
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .btn-header {
+    width: 15vw;
+    font-size: 0.9rem;
   }
 
-  .percentage-container {
-    font-size: medium;
+  .btn-option{
+    width: 15vw;
+    font-size: 0.9rem;
+  }
+
+  .percentage-container{
+    font-size: 0.9rem;
+  }
+
+  .card {
+    height: 62vh;
+    width: 52vw;
+    font-size:0.8rem
+  }
+
+  .poster-img {
+    height: 32vh;
+    width: 30vw;
   }
 }
+
+
+@media screen and (max-width: 480px)  {
+  .btn-header {
+    width: 15vw;
+    font-size: 0.8rem;
+  }
+
+  .btn-option{
+    width: 15vw;
+    font-size: 0.8rem;
+  }
+
+  .percentage-container{
+    font-size: 0.8rem;
+  }
+  .card {
+    height: 65vh;
+    width: 55vw;
+    font-size: 0.7rem
+  }
+
+  .poster-img {
+    height: 40vh;
+    width: 20vw;
+  }
+} 

@@ -34,6 +34,24 @@ export const filterPokemonByStr = (data, str) => {
   return pokemonsFiltered;
 };
 
+export const pokemonsOrderByNum = (data) => {
+  const pokemons = data.pokemon
+
+  const pokemonsOrderByNum = pokemons.sort((pokemon1, pokemon2) => {
+    if (parseInt(pokemon1.num) > parseInt(pokemon2.num)) {
+      return 1
+    }
+
+    if (parseInt(pokemon1.num) < parseInt(pokemon2.num)) {
+      return -1
+    }
+
+    return 0
+  })
+
+  return pokemonsOrderByNum
+}
+
 export const pokemonsOrderAZ = (data) => {
   const pokemons = data.pokemon
 

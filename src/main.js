@@ -1,6 +1,7 @@
 import {
   //filterPokemonsByType,
   filterPokemonByStr,
+  pokemonsOrderByNum,
   pokemonsOrderAZ,
   pokemonsOrderZA,
   pokemonsOrderByAttack,
@@ -11,6 +12,7 @@ import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 let activePokemon = '001';
+
 const textPokeNum = document.getElementById("text-poke-num")
 const textPokeGenerationName = document.getElementById("text-poke-generation-name")
 const textPokeName = document.getElementById("text-poke-name")
@@ -24,49 +26,30 @@ const textPokeAbout = document.getElementById("text-poke-about")
 const inputPokeName = document.getElementById("input-poke-name")
 const selectPokeFilter = document.getElementById("select-poke-filter")
 
-let selectedPokemon = data.pokemon[0]
-changeUI(selectedPokemon)
-
-//console.log(pokemonsOrderAZ(data))
-//console.log(pokemonsOrderZA(data))
-//console.log (pokemonsOrderByAttack(data))
-//console.log (pokemonsOrderByDefense(data))
-
 inputPokeName.addEventListener('input', event => {
   const pokemonsFiltered = filterPokemonByStr(data, event.target.value)
 
-  console.log(pokemonsFiltered)
-
-  // TODO: temporario somente para testes
-  // depois mudar para trocar a UI qndo clicar em um pokemon da lista
-  if (pokemonsFiltered.length === 1) {
-    changeUI(pokemonsFiltered[0])
-  }
+  loadPokemonList(pokemonsFiltered)
 })
 
 selectPokeFilter.addEventListener('change', event => {
   const select = event.target
-  let pokemonsOrdened
 
-  if (select.value === "az") {
-    pokemonsOrdened = pokemonsOrderAZ(data)
-    selectedPokemon = pokemonsOrdened[0]
-  } else if (select.value === "za") {
-    pokemonsOrdened = pokemonsOrderZA(data)
-    selectedPokemon = pokemonsOrdened[0]
-  } else if (select.value === "by-attack") {
-    pokemonsOrdened = pokemonsOrderByAttack(data)
-    selectedPokemon = pokemonsOrdened[0]
-  } else if (select.value === "by-defense") {
-    pokemonsOrdened = pokemonsOrderByDefense(data)
-    selectedPokemon = pokemonsOrdened[0]
+  if (select.value === "num") {
+    loadPokemonList(pokemonsOrderByNum(data))
+  } else if (select.value === "asc") {
+    loadPokemonList(pokemonsOrderAZ(data))
+  } else if (select.value === "desc") {
+    loadPokemonList(pokemonsOrderZA(data))
+  } else if (select.value === "attack") {
+    loadPokemonList(pokemonsOrderByAttack(data))
+  } else if (select.value === "defense") {
+    loadPokemonList(pokemonsOrderByDefense(data))
   }
-
-  changeUI(selectedPokemon)
 })
 
 // Função criada para mudar os elementos da tela.
-function changeUI(pokemon) {
+function loadActivePokemonInfo(pokemon) {
   textPokeNum.innerHTML = "No. " + pokemon.num
   textPokeGenerationName.innerHTML = firstToUpperCase(pokemon.generation.name)
   textPokeRarity.innerHTML = firstToUpperCase(pokemon['pokemon-rarity'])
@@ -78,7 +61,7 @@ function changeUI(pokemon) {
   textPokeAbout.innerHTML = pokemon.about
   textPokeName.innerHTML = firstToUpperCase(pokemon.name)
 
-  //adicionado estas funcoes para dentro do changeUI para quando fazer a pesquisa também mudar a cor da pagina
+  //adicionado estas funcoes para dentro do loadActivePokemonInfo para quando fazer a pesquisa também mudar a cor da pagina
   const type = pokemon.type[0];
   const container = document.querySelector('#container');
   container.className = '';
@@ -97,8 +80,8 @@ function firstToUpperCase(str) {
 // criou uma funcao chamada cardClick que é executada quando clica no card, ela recebe como parametro o elemnento do card 
 const cardClick = (element) => {
   const value = element.dataset.value; //nesta linha eu pego o numero do pokemon clicado do elemento
-  const pokemon = data.pokemon.find((item) => item.num === value); // nesta linha eu busco nos dados o pokemon que tenha esse numero
-  changeUI(pokemon) //nesta linha eu troco as informacoes da tela
+  const pokemon = filterPokemonByStr(data, value)[0] // nesta linha eu busco nos dados o pokemon que tenha esse numero
+  loadActivePokemonInfo(pokemon) //nesta linha eu troco as informacoes da tela
 
   element.classList.add('active'); // adiciona a classe active no elemento clicado
   const activeElement = document.querySelector('#pokemon-'+activePokemon) //pega qual o elemento ativo anterior 
@@ -137,18 +120,13 @@ const renderItem = (props, index) => {
   `;
 }
 
-const initialList = () => {
-  const elements = data.pokemon.map(renderItem).join('\n');
+// Função que mapeia um array de pokemons e cria a lista e um item da lista para cada pokemon
+const loadPokemonList = (pokemons) => {
+  const elements = pokemons.map(renderItem).join('\n');
   const list = document.querySelector('#list-items');
   list.innerHTML = elements;
+  loadActivePokemonInfo(pokemons[0])
 };
 
-window.onload = initialList;
-
-/*const searchButton = document.getElementById("searchButton")
-searchButton.addEventListener("click", function() {
-  const pokeName = inputPokeName.value
-
-  const pokemon = filterPokemonByStr(data, pokeName)
-  console.log(pokemon)
-})*/
+// Quando a tela é carregada, chama a função loadPokemonList
+window.onload = loadPokemonList(data.pokemon);

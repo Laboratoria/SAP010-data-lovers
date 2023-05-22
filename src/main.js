@@ -20,35 +20,38 @@ function infoAllCards(data) {
     .map(
       (character) => `
   <div class="cards">
-  <div class="flip-container"> 
-  <div class="flipper">
+    <div class="flip-container"> 
+      <div class="flipper">
 
-    <ul class="frontCard">
-      <h1 id="nome"><strong> ${character.name} </strong></h1>
-      <img alt="foto" class="img-card" src="${character.img}">
-    </ul>
+          <ul class="frontCard">
+            <h2 id="nome"><strong> ${character.name} </strong></h2>
+            <img alt="foto" class="img-card" src="${character.img}">
+          </ul>
 
-      
-      <div class="cardsback">
-      <ul class="back-cards-texto">
-      <li><strong> Birthday: </strong> ${character.birthday}</li>
-      <li><strong> occupation: </strong> ${character.occupation}</li>
-      <li><strong> Status: </strong> ${character.status}</li>
-      <li><strong> Nickname: </strong> ${character.nickname}</li>
-      <li><strong> Appearance: </strong> ${character.appearance}</li>
-      <li><strong> Portrayed: </strong> ${character.portrayed}</li>
-      <li><strong> Category: </strong> ${character.category}</li>
-      <li><strong> Better_call_saul_appearance: </strong> ${character.better_call_saul_appearance}</li>
-    </ul>
+        <div class="backCard">
+          <ul class="back-cards-texto">
+              <li><strong> Birthday: </strong> ${character.birthday}</li>
+              <li><strong> occupation: </strong> ${character.occupation}</li>
+              <li><strong> Status: </strong> ${character.status}</li>
+              <li><strong> Nickname: </strong> ${character.nickname}</li>
+              <li><strong> Appearance: </strong> ${character.appearance}</li>
+              <li><strong> Portrayed: </strong> ${character.portrayed}</li>
+              <li><strong> Category: </strong> ${character.category}</li>
+              <li><strong> Better_call_saul_appearance: </strong> ${character.better_call_saul_appearance}</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
   </div>
   `
     )
     .join("");
 }
 infoAllCards(resultBreakingBad); //referente a const que virou de objeto para array
+
+
+
+
 
 //pesquisar por nome
 const pesquisarNome = document.getElementById("busca");
@@ -87,3 +90,5 @@ ordenarPersonagens.addEventListener("change", () => {
   }
   infoAllCards(breakingBadOrdenado);
 });
+
+

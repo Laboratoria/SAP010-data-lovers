@@ -125,45 +125,85 @@ h1{
 /* as linhas abaixo é referente a estilização dos cards*/
 
 main{
-    padding: 25px;
+    padding: 60px;
 }
 
-main .container-card{
+.container-card{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 25px;
     justify-content: center;
-
+    padding: 60px;
+    align-items: start;
 }
 
 .frontCard{
     background-color: white;
-    width: 200px;
+    width: 300px;
     padding: 16;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     border-radius: 15px ;
-    list-style-type: none;
     cursor: pointer;
     box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.438);
     transition: 0.2s ease-in-out;
+    text-align: center;
 }
 
 .frontCard:hover{
     background-color: #818383e0;
 }
 
+.backCard{
+    background-color: rgba(114, 150, 119, 0.678);
+    width: 300px;
+    padding: 16;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px ;
+    cursor: pointer;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.438);
+    transition: 0.2s ease-in-out;
+    padding: 2.0rem;
 
+    display: none; /* deixa o conteúdo escondido */
+}
+
+.backCard:hover{
+    background-color: #959797e0;
+}
+
+
+.backCard li{
+    list-style-type: none;
+}
+
+.backCard ul li {
+    margin-bottom: 8px;
+}
+
+h2{
+    opacity: .9;
+    text-align: center;
+    color: rgb(31, 30, 30);
+    padding: 3.2rem;
+    max-width: 100%;
+    margin: auto; 
+}
 
 #nome{
     color: rgb(26, 25, 25);
 }
 
 .img-card {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 200px;
+    max-height: 70%;
+    width: auto;
+    height: auto;
     object-fit: cover;
+    padding: 0.9rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -175,6 +215,7 @@ main .container-card{
     .frontCard:nth-child(2n) {
         margin-right: 0; /* Remove o espaçamento à direita para o último card de cada fileira em telas menores */
       }
+
 /* rodapé */
 .footer{
     background-color: #f7faf9e0;

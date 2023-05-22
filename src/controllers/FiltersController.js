@@ -19,6 +19,15 @@ const FiltersController = {
 
         // Renderizando a página de filtros
         res.render('index', { characters });
+    },
+
+
+    targaryanOrder: (req, res) => {
+        var Tcharacters = [];
+
+        Tcharacters = got_cast.Targaryan();
+
+        res.render('index', {Tcharacters});
     }
 }
 

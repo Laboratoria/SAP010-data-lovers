@@ -2,6 +2,7 @@
 const db = require('../database/got.json');
 const fs = require('fs');
 const path = require('path');
+const { all } = require('../routes/FiltersRouter');
 
 // Objeto got_cast
 const got_cast = {
@@ -64,7 +65,35 @@ const got_cast = {
     // Retornando os personagens em ordem alfabética
     return character;
   }
-}
+},
+
+
+
+// Método para listar os personagens targaryan
+    Targaryan_house: () => {
+  
+      // Array para armazenar os personagens
+      const character = [];
+  
+      // Percorrendo o array de personagens
+      db.got.map(charac.family === targaryan => {
+        // Adicionando os personagens no array
+        character.push ({
+          id: charac.id,
+          firstName: charac.firstName,
+          lastName: charac.lastName,
+          fullName: charac.fullName,
+          title: charac.title,
+          family: charac.family,
+          image: charac.imageUrl,
+          born: charac.born
+        })
+      });
+  
+      return character;
+    }
+  
+
 
 // Exportando o objeto got_cast
 module.exports = got_cast;

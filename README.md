@@ -3,7 +3,7 @@
   <p align="center">Clique aqui para acessar o projeto</p>
   <p align="center">Status do projeto: em desenvolvimento</p>
 
-<div align="center">
+<div style="text-align: center">
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white//https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
 [![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white//https://developer.mozilla.org/en-US/docs/Web/CSS)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black//https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)

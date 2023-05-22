@@ -1,0 +1,16 @@
+footer{
+  height: 50px;
+  color: aliceblue;
+  background-color: black;
+  text-align: center;
+  font-style: italic;
+  font-size: medium;
+  width: 100%;
+  bottom: 0;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

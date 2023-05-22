@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./">
+        <img src="./images/logo.svg" width="136" height="32" alt="logo">
+      </a>
+
+      <nav aria-label="primaria">
+        <ul class="header-menu">
+          <li><a href="./">Home</a></li>
+          <li><a href="./">Temporada</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main_page">
+    <aside class="filters">
+      <div class="class_apha_order">
+        <span>Ordem Alfabética</span>
+        <input type="checkbox" name="alphabetical_order" id="alphabetical_order" onclick="redirect()">
+        <label for="alphabetical_order" class="alphabetical_label"></label>
+      </div>
+    </aside>
+
+    <section class="container characters">
+      <% for (let i=0; i < characters.length; i++) {%>
+        <div class="card">
+          <div class="character">
+            <img src="<%= characters[i].image %>" alt="">
+            <div class="character_info">
+              <a href="./" class="character_name">
+                <%= characters[i].fullName %>
+              </a>
+            </div>
+          </div>
+        </div>
+        <% } %>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="copyright">
+      <h4>Vitória Lins de Miranda <br> Raquel Biondi de Sylos Mello e Souza</h4>
+    </div>
+  </footer>
+</body>
+
+</html>

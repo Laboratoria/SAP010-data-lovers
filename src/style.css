@@ -211,11 +211,6 @@ input {
   margin: 10px;
 }
 
-.imagePokemon {
-  height: 212px;
-  width: 221px;
-}
-
 .all-images-card-pokemon {
   display: flex;
   justify-content: space-around;
@@ -377,28 +372,44 @@ a {
   }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 915px) {
 
-  .showData,
-  .questions {
-    flex-direction: column;
-    width: 100%;
-    height: max-content;
-  }
-
-  .curiosity {
-    width: 100%;
+  .cardsPokemon {
+    padding: 0.4px;
   }
 
   .card {
-    width: 40%;
+    height: 200px;
+    width: 32%;
   }
-}
 
+  #name,
+  #num {
+    font-size: 22px;
+  }
 
-@media (max-width: 371px) {
   .ficha {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .img-type {
+    height: 28px;
+    margin: 1px;
+    padding: 1px;
+    width: 28px;
+  }
+
+  #imagePokemon {
+    height: 110px;
+    margin: 5px;
+    width: 110px;
+  }
+
+  .saiba-mais {
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
   }
 
   #chart {
@@ -407,7 +418,7 @@ a {
 
   .column {
     flex-direction: column;
-    width: 90%;
+    width: 85%;
   }
 
   .curiosity {
@@ -418,5 +429,103 @@ a {
     color: #F7F1E3;
     font-size: 14px;
     text-align: center;
+  }
+
+  .showData {
+    width: 80%;
+  }
+
+  .showDataPokemon {
+    margin: 5px;
+    width: 100%;
+  }
+
+  #politoed,
+  #snorlax {
+    height: 90px;
+    width: 90px;
+  }
+
+  .nameRevealed {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 545px) {
+
+  .cardsPokemon {
+    padding: 0.4px;
+  }
+
+  .card {
+    height: 200px;
+    width: 50%;
+  }
+
+  #name,
+  #num {
+    font-size: 22px;
+  }
+
+  .ficha {
+    font-size: 20px;
+  }
+
+  .img-type {
+    height: 28px;
+    margin: 1px;
+    padding: 1px;
+    width: 28px;
+  }
+
+  #imagePokemon {
+    height: 110px;
+    margin: 5px;
+    width: 110px;
+  }
+
+  .saiba-mais {
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+  }
+
+  #chart {
+    width: 70%;
+  }
+
+  .column {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .curiosity {
+    font-size: 12px;
+  }
+
+  .curiosity h1 {
+    color: #F7F1E3;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .showData {
+    width: 80%;
+  }
+
+  .showDataPokemon {
+    margin: 5px;
+    width: 100%;
+  }
+
+  #politoed,
+  #snorlax {
+    height: 90px;
+    width: 90px;
+  }
+
+  .nameRevealed {
+    font-size: 14px;
   }
 }

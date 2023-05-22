@@ -17,17 +17,17 @@ export default [
   {
     typePokemon: 'flying',
     img: './images/types/flying.png',
-    color: '#778beb'
+    color: '#8c9be6cc'
   },
   {
     typePokemon: 'water',
     img: './images/types/water.png',
-    color: '#3dc1d371'
+    color: '#6ba5d1e7'
   },
   {
-    typePokmeon: 'bug',
+    typePokemon: 'bug',
     img: './images/types/bug.png',
-    color: '#0be8816e'
+    color: '#8bd671d8'
   },
   {
     typePokemon: 'normal',
@@ -37,12 +37,12 @@ export default [
   {
     typePokemon: 'electric',
     img: './images/types/electric.png',
-    color: '#fbd1007c'
+    color: '#fddb52ec'
   },
   {
     typePokemon: 'ground',
     img: './images/types/ground.png',
-    color: '#cd6133bb'
+    color: '#cc8b5fbd'
   },
   {
     typePokemon: 'fighting',
@@ -52,7 +52,7 @@ export default [
   {
     typePokemon: 'psychic',
     img: './images/types/psychic.png',
-    color: '#cf6a87b9'
+    color: '#dd9893e8'
   },
   {
     typePokemon: 'rock',
@@ -62,7 +62,7 @@ export default [
   {
     typePokemon: 'ice',
     img: './images/types/ice.png',
-    color: '#63ccdab6'
+    color: '#9ad3c4f6'
   },
   {
     typePokemon: 'ghost',

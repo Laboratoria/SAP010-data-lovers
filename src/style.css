@@ -9,7 +9,6 @@ html {
 #navPc {
   background-color: #D6E6F2;
   display: flex;
-  text-decoration: none;
   width: 100vw;
 }
 
@@ -29,17 +28,16 @@ html {
 #navPc div {
   padding: 15px;
   cursor: pointer;
-  text-decoration: none;
   transition-duration: 0.5s;
 }
 
 #navPc div:hover {
   background-color: #D6E6F2;
-  text-decoration: none;
 }
 
 #navCel {
   display: none;
+  width: 100vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -167,33 +165,50 @@ input {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  height: 600px;
-  width: 100vw;
   font-size: large;
+  height: 600px;
+  justify-content: center;
+  padding: 20px;
+  width: 100vw;
 }
 
 
 .card {
-  display: flex;
-  float: right;
+  background: rgba(33, 140, 116, 0.38);
+  border-radius: 63px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  height: 250px;
   margin: 20px;
   padding: 20px;
   width: 350px;
-  height: 220px;
-  left: 15px;
-  top: 11px;
-  background: rgba(33, 140, 116, 0.38);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 63px;
-  text-decoration: none;
 }
 
-.showNamePokemon {
+.showDataPokemon {
   align-items: center;
   display: flex;
-  padding: 10px;
+  flex-direction: column;
   justify-content: center;
+  height: 70%;
+  padding: 20px;
+  margin: 20px;
+}
+
+.name-number {
+  display: flex;
+  justify-content: space-around;
+  padding: 3px;
+  width: 100%;
+}
+
+#name,
+#num {
+  color: #F7F1E3;
+  font-family: 'Carter One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  margin: 10px;
 }
 
 .imagePokemon {
@@ -201,79 +216,138 @@ input {
   width: 221px;
 }
 
-#name, #num{
-  font-family: 'Carter One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  color: #F7F1E3;
-  margin: 10px;
+.all-images-card-pokemon {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.pokeball {
-  height: 40px;
-  width: 40px;
+.img-type {
+  height: 36px;
+  margin: 3px;
+  padding: 3px;
+  width: 36px;
+}
+
+#imagePokemon {
+  height: 120px;
+  margin: 10px;
+  width: 120px;
 }
 
 h1::first-letter {
   text-transform: capitalize;
 }
 
-p {
-  font-weight: bold;
-}
-
-span {
-  font-weight: lighter;
-}
-
-.questions {
+.saiba-mais {
+  align-items: center;
+  color: #F7F1E3;
   display: flex;
+  font-family: 'Carter One';
+  font-size: 18px;
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-questions {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#chart{
+  align-items: center;
+  background-color: #F7F1E3;
+  border-radius: 63px;
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
   height: max-content;
+  margin: 30px;
+  padding: 40px;
+  width: 40%;
+}
+.questions {
+  align-items: center;
+  background-color: #338ad1da;
+  border-radius: 63px;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  justify-content: center;
   margin: 20px;
   padding: 10px;
-  width: 100%;
+  width: 40%;
 }
 
 .curiosity {
   align-items: center;
-  height: 100%;
+  color: rgba(247, 241, 227, 0.71);
+  font-family: 'Carter One';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: max-content;
+  line-height: 49px;
   margin: 20px;
-  width: 15%;
+  padding: 20px;
+  text-align: justify;
+  width: 90%;
+}
+.curiosity h1{
+  color: #F7F1E3;
+  font-size: 18px;
+  text-align: center;
+}
+.curiosity p b {
+  color: #F7F1E3;
+}
+
+.center {
+  text-align: center;
 }
 
 .showData {
   align-items: center;
+  background-color: #F7F1E3;
+  border-radius: 63px;
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
   display: flex;
+  flex-direction: column;
+  height: 230px;
   justify-content: center;
-  width: 85%;
+  margin: 20px;
+  padding: 10px;
+  width: 90%;
 }
 
-#chart {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  width: 70%;
+.nameRevealed:first-letter {
+  text-transform: uppercase;
 }
 
-#typeOfPokemon {
-  background-color: coral;
-  height: 36px;
-  width: 15%;
-  float: left;
+.nameRevealed{
+  color: #00478C;
+  font-family: 'Carter One';
+  font-size: 16px;
+  font-style: normal;
+
 }
 
-#percentage {
-  background-color: aqua;
-  height: 36px;
-  width: 85%;
-  float: right;
-}
 
-#value {
-  background-color: darkgray;
-  height: 90%;
-}
+
+
 
 /*media queries - vai informar o que tem de ser feito quando for detectado um tamanho X de viewport*/
 /*max-width - pega o intervalo de 0px até 650px*/
@@ -341,3 +415,4 @@ span {
   text-align: center;
   color: #00478C;
 }
+

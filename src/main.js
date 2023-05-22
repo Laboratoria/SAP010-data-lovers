@@ -2,14 +2,18 @@ import { computeStats, filterData, sortData } from './data.js';
 import data from './data/pokemon/pokemon.js';
 import stylesPokemon from './stylesPokemon.js';
 
+
 const name = document.getElementById("namePokemon");
 
 if (name) {
   name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
-    buildCard("pokemons", filterData(name.value, data));
+    console.log('eventoInput')
+
+    buildCard(filterData(name.value, data.pokemon));
+    console.log(filterData(name.value, data));
     if (name.value === "") {
-      buildCard("pokemons", data.pokemon);
+      buildCard(data);
     }//if
   })//endAddEventListener
 }//endIf
@@ -22,33 +26,37 @@ if (searchType) {
     document.getElementById("pokemons").innerHTML = "";
     const sortBy = document.getElementById("sortBy").value;
     const orderBy = document.getElementById("orderBy").value;
-    buildCard("pokemons", sortData(data, sortBy, orderBy));
+    buildCard(sortData(data, sortBy, orderBy));
   });//endAddEventListener
 }//endIf
 
-const findPokemonWeight = document.getElementById("findPokemonWeight");
+const findPokemonWeight = document.getElementById("snorlax");
+
+const nameRevealedSnorlax = document.getElementById("nameRevealedSnorlax");
 
 if (findPokemonWeight) {
   findPokemonWeight.addEventListener("click", () => {
-    buildCard("pokemonsWeight", computeStats.findTheHeaviestPokemon(data));
+    showImagePokemonAndName(computeStats.findTheHeaviestPokemon(data), findPokemonWeight, nameRevealedSnorlax)
   });
 }//endIf
 
-const findPokemonHeight = document.getElementById("findPokemonHeight");
+const findPokemonHeight = document.getElementById("politoed");
+const nameRevealedPolitoed = document.getElementById("nameRevealedPolitoed");
+
 
 if (findPokemonHeight) {
   findPokemonHeight.addEventListener("click", () => {
-    buildCard("pokemonsHeight", computeStats.findTheTallestPokemon(data));
+    showImagePokemonAndName(computeStats.findTheTallestPokemon(data), findPokemonHeight, nameRevealedPolitoed)
   });
 }//endIf
 
-const findPercentageOfTypesOfPokemons = document.getElementById("findPercentageOfTypesOfPokemons");
+function showImagePokemonAndName(pokemon, tagImg, tagP) {
+  for (const image in pokemon) {
+    tagImg.src = pokemon[image].img;
+    tagP.innerHTML = pokemon[image].name;
+  }
+}
 
-if (findPercentageOfTypesOfPokemons) {
-  findPercentageOfTypesOfPokemons.addEventListener("click", () => {
-    plotChart("chart", computeStats.calculatePokemonTypesInPercentages(data));
-  });
-}//endIf
 
 const styleCard = (pokemon, stylesPokemon) => {
 
@@ -74,72 +82,60 @@ const styleCard = (pokemon, stylesPokemon) => {
 
 styleCard(data.pokemon, stylesPokemon);
 
-const buildCard = (id, pokemon) => {
+const buildCard = (pokemon) => {
+  console.log('chamei buildCard')
 
-  document.getElementById(id).innerHTML = "";
+  document.getElementById("pokemons").innerHTML = "";
 
-  const pokemons = document.getElementById(id);
+  const pokemons = document.getElementById("pokemons");
+
+  console.log(pokemon.length)
 
   for (let i = 0; i < pokemon.length; i++) {
 
-    const cardPokemon = document.createElement('a');
-    cardPokemon.classList.add("card");
-    cardPokemon.style.backgroundColor = pokemon[i].colorType[0];
-    cardPokemon.href = "cardDetails.html";
-    cardPokemon.target = "_blank";
-    let pokemonShowName = `
-    <div class="showNamePokemon">
-      <div>
-      <h1 id="name">${pokemon[i].name}</h1>
-    `;
+    console.log(pokemon[i].name)
 
-    for (let j = 0; j < pokemon[i].imgType.length; j++) {
-      pokemonShowName += `
-        <img class="pokeball" src=${pokemon[i].imgType[j]}>
-    `;
-    }
+    if (pokemon[i].colorType.length !== 0 && pokemon[i].imgType.length !== 0) {
 
-    pokemonShowName += `
-    </div>
-      <div>
-      <p id="num">${pokemon[i].num}</p>
+      const cardPokemon = document.createElement('div');
+      cardPokemon.classList.add("card");
+      cardPokemon.style.backgroundColor = pokemon[i].colorType[0];
+      let showDataPokemon = `
+    <div class="showDataPokemon">
+      <div class="name-number">
+        <h1 id="name">${pokemon[i].name}</h1>
+        <p id="num">${pokemon[i].num}</p>
       </div>
-      <img id="imagePokemon" alt="Image Pokemon" src=${pokemon[i].img}>
+      <div class=all-images-card-pokemon>
+        <div class="img-types">
+    `;
+
+      for (let j = 0; j < pokemon[i].imgType.length; j++) {
+        showDataPokemon += `
+        <img class="img-type" src=${pokemon[i].imgType[j]}>`
+      }
+
+      showDataPokemon += `
+        </div>
+        <img id="imagePokemon" alt="Image Pokemon" src=${pokemon[i].img}>
+      </div>
+        <a  href="cardDetails.html" target = "_blank"><p id=${pokemon[i].num} class="saiba-mais">saiba mais</p></a>
     </div>`;
 
-    cardPokemon.innerHTML = pokemonShowName;
+      cardPokemon.innerHTML = showDataPokemon;
 
-    if (pokemons) {
+      if (pokemons) {
 
-      pokemons.appendChild(cardPokemon);
+        pokemons.appendChild(cardPokemon);
 
-    }//endIf
+      }//endIf
+
+    }
 
   }//endFor
+
 
 }//endBuildCard
-
-
-const plotChart = (id, percentage) => {
-
-  document.getElementById(id).innerHTML = "";
-
-  for (const type in percentage) {
-    const chart = document.getElementById("chart");
-    const data = document.createElement('section');
-
-    data.innerHTML = `
-    <div id="typeOfPokemon">
-      <div id="tipo">${type}</div>
-    </div>
-    <div id="percentage">
-      <div id="value" style="width: ${percentage[type]}% "> ${percentage[type]}% </div>
-    </div> `;
-
-    chart.appendChild(data);
-  }//endFor
-
-}//endPlotChart
 
 
 document.querySelectorAll("header .home").forEach(
@@ -160,9 +156,51 @@ if (menuMob) {
   })
 }
 
-window.addEventListener("load", () => {
-  buildCard("pokemons", data.pokemon);
-});//endAddEventListener
+function teste(event) {
+  console.log(event);
+  console.log(event.target);
+  console.log(event.target.id);
+}//endTeste
+
+let url = document.URL;
+console.log(url)
+if (url === "http://localhost:3000/") {
+  console.log(document.URL)
+  let cards = document.querySelectorAll("#pokemons a");
+  window.addEventListener("load", () => {
+    buildCard(data.pokemon);
+    cards = document.querySelectorAll("#pokemons a");
+    if (cards) {
+      cards.forEach(card => {
+        card.addEventListener("click", teste)
+      })
+    }//endIf
+  });//endAddEventListener
+}
+
+if (url === "http://localhost:3000/") {
+  const home = document.querySelector(".home");
+  home.style.color = "#00478C"
+}
+if (url === "http://localhost:3000/statistic") {
+  const curiosidades = document.querySelector(".curiosidades");
+  curiosidades.style.color = "#00478C"
+}
+
+if (url === "http://localhost:3000/cardDetails") {
+  const details = document.querySelector(".details");
+  details.style.color = "#00478C"
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

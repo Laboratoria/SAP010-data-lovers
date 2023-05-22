@@ -28,7 +28,7 @@ export const filterData = (namePokemon, data) => {
       }//endIf
 
     }//endIf
-
+ 
   }//endFor
 
   return pokemons;
@@ -132,8 +132,10 @@ export const computeStats = {
     for (const property in count) {
       count[property] = ((count[property] / totalNumberOfPokemons) * 100).toFixed(2);
     }//endFor
-
+    console.log(count)
     return count;
+
+
 
   },//endCalculatePokemonTypesInPercentages
 

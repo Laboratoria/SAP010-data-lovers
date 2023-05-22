@@ -8,15 +8,15 @@
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <script src="main.js" type="module"></script>
+
 
   <header>
     <nav id="navPc">
@@ -24,7 +24,7 @@
         <div class="home">Home</div>
       </a>
       <a class="menu" href="statistic.html">
-        <div>Curiosidades</div>
+        <div class="curiosidades">Curiosidades</div>
       </a>
     </nav>
 
@@ -37,42 +37,63 @@
           <li class="home">Home</li>
         </a>
         <a class="menu" href="statistic.html">
-          <li>Curiosidades</li>
+          <li class="curiosidades">Curiosidades</li>
         </a>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="content-questions">
+    <div>
+      <p class="ficha">Veja no gráfico abaixo quais os tipos de Pokémons são os mais comuns e os mais raros!</p>
+    </div>
+    <section id="chart">
 
-    <section class="questions">
-      <div class="curiosity">
-        <p>Você sabe quais são Pokemons mais baixos e o mais alto?</p>
-        <button id="findPokemonHeight" class="btn">Clique aqui para descobrir</button>
-      </div>
-      <div id="pokemonsHeight" class="showData"></div>
+      <canvas id="myChart"></canvas>
     </section>
 
-    <section class="questions">
-      <div class="curiosity">
-        <p>Você sabe quais são Pokemons mais leves e o mais pesado?</p>
-        <button id="findPokemonWeight" class="btn">Clique aqui para descobrir</button>
-      </div>
-      <div id="pokemonsWeight" class="showData"></div>
-    </section>
+    <section class="column">
+      <section class="questions">
+        <div class="curiosity">
+          <h1>Quem é o Pokémon mais alto?</h1>
+          <p>
+            Ele é do tipo água, tem os cabelos cacheados e acredita-se que quanto mais
+            encaracolado o cabelo dele for, mais respeito este Pokémon ganha dos seus pares.
+            Ele mede incríveis <b>10,90 metros de altura</b>!
+          </p>
+          <p class="center">Clique na sombra dele para descobrir!</p>
+        </div>
+        <div id="pokemonsHeight" class="showData">
+          <img id="politoed" src="./images/shadows/politoed_shadow.png">
+            <p id="nameRevealedPolitoed" class="nameRevealed">???</p>
+        </div>
 
-    <section class="questions">
-      <section class="curiosity">
-        <p>Você sabe quais são os tipos de Pokémons mais raros?</p>
-        <button id="findPercentageOfTypesOfPokemons" class="btn">Clique aqui para descobrir</button>
       </section>
-      <section id="chart"></section>
+
+      <section class="questions">
+        <div class="curiosity">
+          <h1>Quem é o Pokémon mais pesado?</h1>
+          <p>
+            Ele é do tipo normal, é muito consistente quando o assunto é comer e dormir.
+            É um Pokémon tão dócil que há crianças que usam sua barriga expansiva como local de brincar.
+            Ele pesa incríveis <b>460 kg</b>!
+          </p>
+          <p class="center">Clique na sombra dele para descobrir!</p>
+        </div>
+        <div id="pokemonWeight" class="showData">
+          <img id="snorlax" src="./images/shadows/snorlax_shadow.png">
+          <p id="nameRevealedSnorlax" class="nameRevealed">???</p>
+        </div>
+      </section>
+    </section>
+
     </section>
 
   </main>
 
   <footer></footer>
-
-</body>
+  <script src="main.js" type="module"></script>
+  <script src="chart.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </html>

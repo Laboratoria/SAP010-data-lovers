@@ -1,7 +1,6 @@
 // Objetivo: Arquivo responsável por controlar a página inicial da aplicação
 
 // Importando o model got_cast
-const { render } = require('ejs');
 const got_cast = require('../model/got_cast');
 
 // Objeto HomeController

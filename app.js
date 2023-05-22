@@ -2,6 +2,7 @@
 const express = require('express');
 const path = require('path');
 const homeRouter = require('./src/routes/HomeRouter');
+const filtersRouter = require('./src/routes/FiltersRouter');
 
 // Variáveis
 const app = express();
@@ -20,6 +21,7 @@ app.use(express.static(path.resolve("src", "public")));
 
 // Rotas
 app.use(homeRouter);
+app.use(filtersRouter);
 
 app.use((req, res, next) => {
   res.status(404);

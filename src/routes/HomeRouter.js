@@ -8,6 +8,5 @@ const router = express.Router();
 // Rota para a página inicial
 router.get('/', HomeController.index);
 
-
 // Exportando o router
 module.exports = router;

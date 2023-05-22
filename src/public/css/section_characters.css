@@ -1,4 +1,5 @@
 .characters{
+  grid-area: characters;
   display: flex;
   flex-direction: row;
   gap: 10px;

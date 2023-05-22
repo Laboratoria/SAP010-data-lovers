@@ -12,7 +12,6 @@
 [![FIGMA](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white//https://figma.com/)](https://figma.com/)
 [![NODEJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white//https://nodejs.org/en)](https://nodejs.org/en)
 
-
 ## Índice
 
 - [1. Resumo do projeto](#1-resumo-do-projeto)
@@ -63,7 +62,21 @@ Os filtros de "apelido", "ocupação" e "status" foram substituídos por "status
 
 ## 4. Testes de usabilidade
 
-Em um primeiro momento, foi pensado em
+O usuário realizou o Teste de interface e a Reavaliação do design do produto, identificou que a navegabilidade é de fácil entendimento, na primeira página, após ler a apresentação, entendeu que era para clicar na van, e por ela se tornar opaca deu maior destaque a função dela.
+
+Ao navegar na página de contém os cards identificou que a navegabilidade também era de fácil entendimento, gostou da posição do logo e estética dos cards, e pontuou possíveis melhorias, como o botão “clear” poderia ter seu nome alterado para “reset”, e que ele mudasse de forma ou de lugar, pois está exatamente igual aos outros, o que pode causar confusão, e ele estando na mesma linha dos botões de filtro, pode parecer que seja só para limpar aquela linha, quando na verdade ele também limpa a pesquisa da busca por personagem.
+
+Ainda nos botões, percebeu que o botão “back” possuía uma tonalidade de cor diferente dos demais. Conforme abaixo:
+
+![Alt text](src/img/header%20e%20botoes.png)
+
+No espaço de pesquisa por personagem, acrescentar o “...character name”, pois a busca é somente pelo nome do personagem, caso tente procurar por “nickname” não conseguirá.
+
+Pontuou que o “corte” entre o header e os cards estava estranho, sugerindo que pudesse colocar outra tonalidade de preto, ou que o fundo dos cards a acompanhasse até em cima.
+
+E por fim, apesar de ter assistido a série inteira, o usuário informou que poderia conter um aviso que a pesquisa de “status” poderia conter spoiler.
+
+O tempo de pesquisa e entendimento foi considerado dentro dos limites estipulados.
 
 ## 5. Testes unitários
 

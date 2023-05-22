@@ -57,7 +57,7 @@ function loadActivePokemonInfo(pokemon) {
   imagePoke.alt = pokemon.name
   textPokeHeight.innerHTML = pokemon.size.height
   textPokeWeight.innerHTML = pokemon.size.weight
-  textPokeSpawnChance.innerHTML = pokemon['spawn-chance']
+  textPokeSpawnChance.innerHTML = pokemon['spawn-chance'] || 0 //Adicionado || 0 para caso haja retorno null, retornar 0
   textPokeAbout.innerHTML = pokemon.about
   textPokeName.innerHTML = firstToUpperCase(pokemon.name)
 

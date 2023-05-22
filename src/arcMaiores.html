@@ -5,26 +5,27 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet" href="style.css">
 	<title>Arcanos Maiores</title>
 </head>
 
 <body>
-	<header>
-		<h1>Menu</h1>
-		<span id="menu-paginas" class="material-icons">menu</span>
-		<menu>
+<header><!--onclick="clickMenu()"-->
+	<span id="burguer" class="material-symbols-outlined">
+		menu
+	</span>
+	<menu id="menuLista">
+		<ul>
+			<li><a href="historia.html">Historia do Tarô</a></li>
+			<li><a href="arcanos.html">Arcanos</a></li>
 			<ul>
-				<li><a href="historia.html">Historia do Tarô</a></li>
-				<li><a href="arcanos.html">Arcanos</a></li>
-				<ul>
-					<li><a href="arcMaiores.html">Maiores</a></li>
-					<li><a href="arcMenores.html">Menores</a></li>
-				</ul>
+				<li><a href="arcMaiores.html">Maiores</a></li>
+				<li><a href="arcMenores.html">Menores</a></li>
 			</ul>
-		</menu>
-	</header>
+		</ul>
+	</menu>
+</header>
 	<main>
 		<h1>Arcanos Maiores</h1>
 		<p>Os Arcanos Maiores representam basicamente a jornada de evolução do Ser Humano sendo contada através de símbolos
@@ -33,12 +34,11 @@
 
 	</main>
 
-	<a href="index.html"><span class="material-symbols-outlined">
-			arrow_back </span> Voltar</a>
+	<a href="index.html">&lt;Voltar</a>
 	<footer>
 
 	</footer>
-
+<script src="main.js" type="module"></script>
 </body>
 
 </html>

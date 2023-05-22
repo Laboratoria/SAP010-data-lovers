@@ -1,4 +1,4 @@
-import data from "./data/got/got.js"
+import characters from "./data/got/got.js";
 
 function showCharacterCards() {
   const container = document.getElementById("characterContainer");
@@ -9,7 +9,7 @@ function showCharacterCards() {
   // Itera sobre os personagens e cria os cards dinamicamente
   characters.got.forEach(character => {
     const card = document.createElement("div");
-    card.classList.add("card");
+    card.classList.add ("card");
 
     const image = document.createElement("img");
     image.src = character.imageUrl;
@@ -39,22 +39,18 @@ function showCharacterCards() {
 // Chama a função para exibir os cards dos personagens
 showCharacterCards();
 
-//let charactersFullname = data.got[0].fullName
-
 document.addEventListener("DOMContentLoaded", () => {
-  const menuIcon = document.querySelector(".menu-icon")
+  const menuIcon = document.querySelector(".menu-icon");
   menuIcon.addEventListener("click", switchMenu);
 
-
   function switchMenu() {
-    const menuDisplay = document.querySelector(".menu").style.display
+    const menuDisplay = document.querySelector(".menu").style.display;
     if (menuDisplay === "none" || !menuDisplay) {
-      document.querySelector(".menu").style.display = 'flex'
-      document.querySelector(".menu-icon").innerHTML = "<i class='fas fa-times fa-lg'></i>"
+      document.querySelector(".menu").style.display = "flex";
+      document.querySelector(".menu-icon").innerHTML = "<i class='fas fa-times fa-lg'></i>";
     } else {
-      document.querySelector(".menu").style.display = 'none'
-      document.querySelector(".menu-icon").innerHTML = "<i class='fas fa-bars fa-lg'></i>"
+      document.querySelector(".menu").style.display = "none";
+      document.querySelector(".menu-icon").innerHTML = "<i class='fas fa-bars fa-lg'></i>";
     }
   }
-  console.log(data.got);
-})
+});

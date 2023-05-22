@@ -223,9 +223,7 @@ select {
     justify-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
-  color: white;
-  f
- 
+    color: white;
 }
 
 #characterContainer {
@@ -236,11 +234,11 @@ select {
     justify-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
- 
+
 }
 
 .card {
-width: 244px;
+    width: 244px;
     height: 409px;
     background: #0d0d0d;
     padding: 10px;
@@ -249,26 +247,27 @@ width: 244px;
 }
 
 .card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  object-position: center;
-  
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+
 }
 
 .card h2 {
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 
 .card p {
-  font-size: 15px;
-  margin-bottom: 4px;
+    font-size: 15px;
+    margin-bottom: 4px;
 }
 
-@media (min-width: 500px) {
-  .card-container {
-    justify-content: flex-start;
-  }
+
+.card-container {
+        min-width: 500px {
+        justify-content: flex-start;
+    }
 }

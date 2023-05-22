@@ -15,9 +15,9 @@
 }
 
 .fighting {
-    --background-color: #FFC3C3; /* cor clara */
-    --background-color-2: #FF8C8C; /* cor media */
-    --suporte-color: #FF5D5D; /* cor forte */
+    --background-color: #FFCDC5; /* cor clara */
+    --background-color-2: #FFACA4; /* cor media */
+    --suporte-color: #A41020; /* cor forte */
     --text-header-color: #FFFFFF; /* cor texto onde ta cinza */
     color: var(--text-header-color);
 }
@@ -25,8 +25,8 @@
 .fire {
     --background-color: #FFBC80; /* cor clara */
     --background-color-2: #FF9F45; /* cor media */
-    --suporte-color: #F76E11; /* cor forte */
-    --text-header-color: #73777b; /* cor texto onde ta cinza */
+    --suporte-color: #d9230b; /* cor forte F76E11 */
+    --text-header-color: #FFFFFF; /* cor texto onde ta cinza */
     color: var(--text-header-color);
 }
 
@@ -46,7 +46,7 @@
     color: var(--text-header-color);
 }
 
-.grasson {
+.grass {
     --background-color: #CEEDC7;
     --background-color-2: #E9EDC9;
     --suporte-color: #6ECCAF;
@@ -64,8 +64,81 @@
 
 .bug {
     --background-color: #D3E4CD; /* cor clara */
-    --background-color-2: #BDD2B6; /* cor media */
+    --background-color-2: #62627B; /* cor media */
     --suporte-color: #56776C; /* cor forte */
+    --text-header-color: #FFFFFF;; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+
+.dark {
+    --background-color: #FFEEDE; /* cor clara */
+    --background-color-2: #BDD2B6; /* cor media */
+    --suporte-color: #29314A; /* cor forte */
     --text-header-color: #73777b;; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.fairy {
+    --background-color: #FFA2C4; /* cor clara */
+    --background-color-2: #DD8EDD; /* cor media */
+    --suporte-color: #9E319C; /* cor forte */
+    --text-header-color: #FFFFFF; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.flying {
+    --background-color: #BBD5F9; /* cor clara */
+    --background-color-2: #FFFEC4; /* cor media */
+    --suporte-color: #9696FD; /* cor forte */
+    --text-header-color: #73777B; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.ghost {
+    --background-color: #BD94B4; /* cor clara */
+    --background-color-2: #8B6283; /* cor media */
+    --suporte-color: #392939; /* cor forte */
+    --text-header-color: #FFFFFF; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.ground {
+    --background-color: #D1A588; /* cor clara */
+    --background-color-2: #AC7B5A; /* cor media */
+    --suporte-color: #73524A; /* cor forte */
+    --text-header-color: #FFFFFF; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.normal {
+    --background-color: #FFE6C5; /* cor clara */
+    --background-color-2: #DEBD9C; /* cor media */
+    --suporte-color: #F66231; /* cor forte */
+    --text-header-color: #73777B; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.rock {
+    --background-color: #B4ACAC; /* cor clara */
+    --background-color-2: #838383; /* cor media */
+    --suporte-color: #393941; /* cor forte */
+    --text-header-color: #FFFFFF; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.psychic {
+    --background-color: #FFC3C3; /* cor clara */
+    --background-color-2: #FF8C8C; /* cor media */
+    --suporte-color: #FF5D5D; /* cor forte */
+    --text-header-color: #FFFFFF; /* cor texto onde ta cinza */
+    color: var(--text-header-color);
+}
+
+.steel {
+    --background-color: #BDCDE6; /* cor clara */
+    --background-color-2: #7B94A4; /* cor media */
+    --suporte-color: #393952; /* cor forte */
+    --text-header-color: #FFFFFF; /* cor texto onde ta cinza */
     color: var(--text-header-color);
 }

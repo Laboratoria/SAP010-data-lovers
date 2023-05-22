@@ -26,7 +26,7 @@ body {
     display: flex; /* só para usar o flexbox */
     flex: 2; /* o tanto que ele ocupa de espaço dentro do flexbox */
     flex-direction: column;
-
+    overflow: scroll;
 }
 
 .list {

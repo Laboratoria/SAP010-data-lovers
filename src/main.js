@@ -67,6 +67,8 @@ function loadActivePokemonInfo(pokemon) {
   container.className = '';
   container.classList.add('container')
   container.classList.add(type)
+
+  activePokemon = pokemon.num
 }
 
 function firstToUpperCase(str) {
@@ -81,12 +83,12 @@ function firstToUpperCase(str) {
 const cardClick = (element) => {
   const value = element.dataset.value; //nesta linha eu pego o numero do pokemon clicado do elemento
   const pokemon = filterPokemonByStr(data, value)[0] // nesta linha eu busco nos dados o pokemon que tenha esse numero
-  loadActivePokemonInfo(pokemon) //nesta linha eu troco as informacoes da tela
 
   element.classList.add('active'); // adiciona a classe active no elemento clicado
   const activeElement = document.querySelector('#pokemon-'+activePokemon) //pega qual o elemento ativo anterior 
   activeElement.className = 'list-item' //remove todas as classes do elemento menos o item list
-  activePokemon = pokemon.num //troca o pokemon ativo para o elemento clicado
+
+  loadActivePokemonInfo(pokemon) //nesta linha eu troco as informacoes da tela
 }
 
 window.cardClick = cardClick;

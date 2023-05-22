@@ -1,0 +1,141 @@
+html {
+  text-align: center;
+  justify-content: center;
+  font-family: 'Grenze', serif;
+  color: #D1CFCE;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+html::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/papel-de-parede.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -5;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.imagem {
+  float: center;
+  margin: 20px 20px 0 100px;
+  align-self: flex-start;
+}
+
+img {
+  width: 500px;
+}
+
+main{
+  font-family: 'Grenze', serif;
+  text-align: justify;
+  margin: 0 80px 0 80px;
+  font-size: 30px;
+  line-height: 1.2;
+  text-shadow: 3px 3px black;
+
+}
+
+h1{
+  text-align: center;
+
+ }
+
+.links, main a {
+  color: #D1CFCE;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none
+
+  
+
+}
+
+footer {
+  background-color: #d1cfce28;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+}
+  
+ footer a, footer p {
+  margin: 5px;
+  text-decoration: none;
+  color: #D1CFCE;
+
+}
+
+button {
+  background-color: #26374C;
+  font-family: 'Grenze', serif;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .imagem {
+    float: center;
+    margin: 25px 25px 0 25px;
+    align-self: flex-start;
+  }
+    
+  img {
+    width: 250px;
+  }
+    
+  main{
+    margin: 0 30px 0 30px;
+    font-size: 15px;
+    line-height: 1.0;
+    text-shadow: 3px 3px black;
+  }
+    
+  h1{
+    text-align: center;
+    font-size: 30px;
+  }
+  button {
+    font-size: 15px;
+  }
+
+  footer {
+  
+    font-size: 10px;
+    line-height: 0.6;
+  }
+}
+  

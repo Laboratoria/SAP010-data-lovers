@@ -1,23 +1,73 @@
-import { example, anotherExample } from '../src/data.js';
+import { ordenarNomes, filtrarFamilia, filtrarPersonagens} from '../src/js/data';
 
+const dados = [
+  {
+    "fullName": "Daenerys Targaryen",
+    "family": "House Targaryen"
+  },
+  {
+    "fullName": "Samwell Tarly",
+    "family": "House Tarly"
+  },
+  {
+    "fullName": "Jon Snow",
+    "family": "House Stark"
+  }
+];
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('ordenarNomes', () => {
+  it('ordenarNomes is a function', () => {
+    expect(typeof ordenarNomes).toStrictEqual('function');
   });
+  it('Retorna em ordem alfabetica ', () => {
+    const nomesOrdenados = ordenarNomes(dados);
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+    const ordemEsperada = [
+      {
+        "fullName": "Daenerys Targaryen",
+        "family": "House Targaryen"
+      },
+      {
+        "fullName": "Jon Snow",
+        "family": "House Stark"
+      },
+      {
+        "fullName": "Samwell Tarly",
+        "family": "House Tarly"
+      }
+    ];
+    expect(nomesOrdenados).toStrictEqual(ordemEsperada);
   });
 });
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+describe('filtrarFamilia', () => {
+  it('filtrarFamilia is a function', () => {
+    expect(typeof filtrarFamilia).toStrictEqual('function');
   });
+  it('Retorna a família filtrada', () => {
+    const familiaFiltrada = filtrarFamilia(dados, "House Targaryen");
+    const familiaEsperada = [
+      {
+        "fullName": "Daenerys Targaryen",
+        "family": "House Targaryen"
+      }
+    ];
+    expect(familiaFiltrada).toStrictEqual(familiaEsperada);
+  });
+});
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+describe('filtrarPersonagens', () => {
+  it('filtrarPersonagens is a function', () => {
+    expect(typeof filtrarPersonagens).toStrictEqual('function');
+  });
+  it('Retorna o personagem filtrado ', () => {
+    const personagemFiltrado = filtrarPersonagens(dados, "Samwell Tarly");
+    const personagemEsperado = [
+      {
+        "fullName": "Samwell Tarly",
+        "family": "House Tarly"
+      }
+    ];
+    expect(personagemFiltrado).toStrictEqual(personagemEsperado);
   });
 });

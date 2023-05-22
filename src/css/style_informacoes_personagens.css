@@ -1,0 +1,175 @@
+html {
+  text-align: center;
+  justify-content: center;
+  font-family: 'Grenze', serif;
+  color: #D1CFCE;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+html::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/papel-de-parede.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -5;
+}
+
+
+body {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.bloco{
+  display: inline-block; 
+  font-size: 25px;
+  height: 300px;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  width: 500px;
+  margin: 20px 0 0 100px;
+  }
+ 
+.ladoDireito{
+  float: right;
+  margin: 20px  250px 0 0;
+}
+
+
+
+      
+.exibirCards img {
+  display: flex;
+  flex-wrap: wrap; /* exibe os itens em linha */
+  box-sizing: border-box; /* inclui a largura da borda e do padding no width */
+  height: 300px;
+  width: 230px;
+  justify-content: center; 
+  text-align: center; 
+  margin: 70px 10px 0 10px;
+  object-fit: cover;
+  border-radius: 50px;
+  border: solid 3px rgb(0, 0, 0) ;
+  
+
+}
+
+.exibirCards {
+  display: flex;
+  flex-wrap: wrap; /* exibe os itens em linha */
+  box-sizing: border-box; /* inclui a largura da borda e do padding no width */
+  justify-content: center;  
+  padding: 10px;
+}
+
+select {
+    width: auto;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+   }
+
+   label {
+    font-size: 30px;
+    padding: 15px;
+   }
+
+   footer {
+    background-color: #d1cfce28;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 1.0;
+
+  }
+    
+  footer a, footer p, .ladoDireito a {
+    margin: 5px;
+    text-decoration: none;
+    color: #D1CFCE;
+  }
+  
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+@media screen and (max-width: 768px) { 
+.logo {
+  width: 250px;
+  float: center;
+  margin: 25px 25px 0 25px;
+  align-self: flex-start;
+}
+
+.ladoDireito {
+  width: 100%;
+  float: center;
+  margin: 25px 0  0;
+  align-self: flex-start;
+  font-size: 15px;
+  line-height: 1.5;
+  text-shadow: 3px 3px black;}
+
+  h1{
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .exibirCards img {
+    height: 200px;
+    width: 130px;
+    border-radius: 50px;
+    border: solid 3px rgb(0, 0, 0) ;  
+    
+ 
+    }
+    
+  .exibirCards {
+    display: flex;
+    flex-wrap: wrap; /* exibe os itens em linha */
+    box-sizing: border-box; /* inclui a largura da borda e do padding no width */
+    justify-content: center;  
+    padding: 5px;
+    margin: 2px;
+    font-size: 12px;
+    text-shadow: 3px 3px black;
+    line-height: 1.0;
+  }
+        
+  select {
+    width: auto;
+    height: 20px;
+    font-size: 12px;
+
+  }
+    
+  label {
+    font-size: 15px;
+  }
+    
+  footer {
+    font-size: 10px;
+    line-height: 0.6;
+  }
+}    

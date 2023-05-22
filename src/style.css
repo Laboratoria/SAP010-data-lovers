@@ -325,19 +325,25 @@ select:invalid {
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    visibility: hidden;
     z-index: 9;
+    opacity: 0;
+    transition: opacity 400ms;
 
 }
 
+
+
 @media (max-width: 414px) {
   .info {
-    display: none;
+    visibility: hidden;
     padding: 18px;
     position: absolute;
     top: 5%;
     z-index: 10;
     border-radius: 10px;
+    opacity: 0;
+    transition: opacity 400ms;
    }
 
    .container {
@@ -345,12 +351,14 @@ select:invalid {
    }
 
    .info.active {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 
    }
 
    .overlay.active {
-    display: block;
+    visibility: visible;
+    opacity: 1;
    }
 
    .header {

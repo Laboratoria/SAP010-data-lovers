@@ -1,146 +1,107 @@
-# Data Lovers
+
+# Projeto Data Lovers - Game Of Thrones 💛
+
+Segundo projeto da turma 10 do bootcamp da Laboratoria.
+
+Desenvolvido por:
+
+Fernanda Souza [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://github.com/fernanda-asouza)
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.linkedin.com/in/fernandaasouza/)
+
+
+Renata Ribeiro
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rbcribeiro/)
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rbcribeiro)
+
+
 
 ## Índice
 
-* [1. Preâmbulo](#1-preâmbulo)
+* [1. Introdução](#1-introdução)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios mínimos de aceitação do
-  projeto](#5-critérios-mínimos-de-aceitação-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Pistas, dicas e leituras
-  complementares](#8-pistas-dicas-e-leituras-complementares)
-* [9. Checklist](#9-checklist)
+* [3. Histórias de usuário](#3-histórias-de-usuário)
+* [4. Protótipos](#4-protótipos)
+* [5. Testes de usabilidade](#5-testes-de-usabilidade)
+* [6. Checklist dos objetivos](#6-checklist-dos-objetivos)
 
-***
+## 1. Introdução 💻
 
-## 1. Preâmbulo
+Segundo a Forbes 90% dos dados que existem hoje foram gerados durante os últimos dois anos. A cada dia geramos 2.5 milhões de terabytes de dados, uma cifra sem precedentes.
 
+Apesar disso, os dados por si só são de pouca utilidade. Para que essas grandes quantidades de dados se convertam em informação compreensível para os usuários, precisamos entender e processar estes dados. Uma forma simples de fazer isso é criando interfaces e visualizações.
+## 2. Resumo do projeto 📄
 
+Neste projeto foi desenvolvida uma página web responsiva sobre a série Game of Thrones que permite que o usuário visualize informações e imagens dos personagens. 
 
-## 2. Resumo do projeto
+Essa visualização pode ser feita por nome e/ou família, além de poder ordenar em ordem alfabética crescente ou decrescente. 
+## 3. Histórias de usuário 💬
 
+### Busca por informações dos personagens
+Como um telespectador de Game of Thrones, eu quero acessar uma página web de fácil acesso que contenha informações sobre os personagens.
 
+### Busca por família 
+Como um telespectador de Game of Thrones, eu quero ver apenas os personagens que fazem parte de determinada família.
 
-## 3. Objetivos de aprendizagem
+### Busca por nome 
+Como um telespectador de Game of Thrones, eu quero buscar através do nome informações sobre o personagem.
 
+### Visualização dos personagens
+Como um telespectador de Game of Thrones, eu quero visualizar as imagens dos personagens.
 
-
-## 4. Considerações gerais
-
-#### Protótipo de baixa fidelidade
-
-
-
-#### Protótipo de alta fidelidade
-
-
-
-#### Testes de usabilidade
-
-pede pessoas para testar
-
-
-Após desenhar sua interface de usuário, deverá trabalhar na sua implementação.
-**Não** é necessário que construa a interface exatamente da mesma forma que
-desenhou. Terá um tempo limitado para trabalhar no projeto, então você deve
-priorizar as tarefas.
-
-No mínimo, sua implementação deverá:
-
-1. Mostrar os dados em uma interface: pode ser em cards, tabelas, listas, etc.
-2. Permitir ao usuário interagir com a interface para obter as informações que
-   necessita;
-3. Ser _responsiva_, ou seja, deve ser visualizada sem problemas a partir de
-   diversos tamanhos de tela: celulares, tablets, notebooks, etc.
-4. Que a interface siga os fundamentos de _visual design_.
-
-### Testes unitários
+### Direcionamento 
+Como um telespectador de Game of Thrones, eu quero encontrar na página web um direcionamento para o streaming que disponibiliza a série.
 
 
 
-## 6. Hacker edition
 
-As seções chamadas _Hacker Edition_ são **opcionais**. Se já tiver terminado
-todos os requisitos anteriores e tiver tempo, pode tentar completá-las. Dessa
-forma, você pode aprofundar e/ou exercitar mais os objetivos de aprendizagem
-deste projeto.
+## 4. Protótipos ✒️
 
+### Baixa fidelidade
 
-
-## 7. Considerações técnicas
+### Alta fidelidade
 
 
 
-## 8. Pistas, dicas e leituras complementares
+## 5. Testes de usabilidade ❗
 
-### Primeiros passos
+### Erros de digitação na busca
+Após o primeiro teste, verificamos que a busca dos personagens (que eram feitas através da digitação do nome) não era viável. Com esse tipo de busca, poderiam ocorrer erros de digitação e com isso não apareceria nenhum personagem. Para a solução deste problema alteramos a busca por um seletor com todos os nomes, onde o usuário apenas precisa selecionar um nome dentre os que estão disponíveis.
 
-Antes de começar a escrever o código, você deve definir seu produto com base no
-conhecimento que puder obter a respeito de seus usuários. Estas perguntas podem
-ajudar:
+### Falta de direcionamento para o streaming 
+No segundo teste, foi observado que seria interessante ter na página um botão que direcionava o usuário para o streaming que contém a série. Com essa sugestão, colocamos esse botão como uma das inclusões para serem feitas ao longo do projeto.
 
-* Quem são os usuários principais do produto?
-* Quais são os objetivos dos usuários com relação ao produto?
-* Quais são os dados mais relevantes que querem ver na interface e por quê?
-* Quando utilizam ou utilizariam o produto?
-* Toda sua investigação prévia deve ter como resultado as histórias de usuário
-  de seu projeto.
-* Não faça os protótipos de alta fidelidade de todas as suas histórias. Comece
-  somente pela que necessite para seu Sprint 1.
+### Falta de sinopse e de página inicial
+Com a ideia de acrescentar um botão que direcionava o usuário para o streaming, também foi verificado que o site deveria ter uma sinopse sobre a série, mas que ficaria muitas informações em apenas uma página. Para resolver esse problema foi criada uma página para o início, contendo a sinopse, botão que direciona para as informações sobre os personagens e botão que direciona para o streaming.
 
-Quando estiver pronta para codar, sugerimos começar desta forma:
+### Bug após a filtragem de personagens
 
-1. Uma das integrantes da dupla deve fazer um :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) do repositório de sua
-   turma (a equipe de formação fornecerá o link). A outra integrante da dupla
-   deve fazer um fork **a partir do repositório de sua companheira** e
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) um `remote`
-   a partir dele.
-2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   seu _fork_ para seu computador (cópia local).
-3. Instale as dependências do projeto com o comando `npm install`, assumindo que
-   já tenha instalado o [Node.js](https://nodejs.org/) (que inclui
-   [npm](https://docs.npmjs.com/)).
-4. Se tudo correr bem, deve ser capaz de executar os :traffic_light: testes
-   unitários (unit tests) com o comando `npm test`.
-5. Para ver a interface de seu programa no navegador, utilize o comando `npm
-   start` para subir o servidor web no endereço `http://localhost:5000`.
-6. Comece a codar! :rocket:
-
-***
-
-### Conteúdo de referência
+### Falta de responsividade em telas de dispositivos móveis 
 
 
 
-#### Ferramentas
 
-* [Git](https://git-scm.com/)
-* [GitHub](https://github.com/)
-* [GitHub Pages](https://pages.github.com/)
-* [Node.js](https://nodejs.org/)
-* [Jest](https://jestjs.io/)
+## 6. Checklist dos objetivos ✅
 
-#### Organização do trabalho
+[✓] Usar VanillaJS.
 
+[✓] Passa pelo linter (npm run pretest)
 
+[✓] Passa pelos testes (npm test)
 
-## 9. Checklist
+[✓] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e branches.
 
-* [ ] Usar VanillaJS.
-* [ ] Passa pelo linter (`npm run pretest`)
-* [ ] Passa pelos testes (`npm test`)
-* [ ] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e
-  branches.
-* [ ] Inclui uma _definição de produto_ clara e informativa no `README.md`.
-* [ ] Inclui histórias de usuário no `README.md`.
-* [ ] Inclui rascunho da solução (protótipo de baixa fidelidade) no `README.md`.
-* [ ] Inclui uma lista de problemas detectados nos testes de usabilidade no
-  `README.md`.
-* [ ] UI: Mostra lista/tabela/etc com dados e/ou indicadores.
-* [ ] UI: Permite ordenar dados por um ou mais campos (asc e desc).
-* [ ] UI: Permite filtrar dados com base em uma condição.
-* [ ] UI: É _responsivo_.
+[✓] Inclui uma definição de produto clara e informativa no README.md.
+
+[✓] Inclui histórias de usuário no README.md.
+
+[✓] Inclui rascunho da solução (protótipo de baixa fidelidade) no README.md.
+
+[✓] Inclui uma lista de problemas detectados nos testes de usabilidade no README.md
+
+[✓] UI: Mostra lista/tabela/etc com dados e/ou indicadores.
+
+[✓] UI: Permite ordenar dados por um ou mais campos (asc e desc).
+
+[✓] UI: Permite filtrar dados com base em uma condição.
+
+[✓] UI: É responsivo.

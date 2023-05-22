@@ -1,25 +1,12 @@
-// // estas funciones son de ejemplo
+import data from './data/ghibli/ghibli.js';
+export const selectTitle = () => {
 
-// export const example = () => {
-//   return 'example';
-// };
+  data.films[0].title
 
-// export const anotherExample = () => {
-//   return 'OMG';
-// };
+  const titulos = [];
 
-export const selectTitle = (films, data) => {
-
-  const titles = [];
-  //for (let j = 0; j = films.length; j++){
-  //substituindo por for of
-  function filmsArray(data){
-    for (let something of data.films){
-      for (let i = 0; i < 19; i++){
-        titles.push(data.films[i].title);
-      }
-      something = titles;
-      return something;
-    }
+  for (let i=0; i<data.films.length; i++) {
+    titulos.push(data.films[i].title);
   }
+  console.log(titulos);
 }

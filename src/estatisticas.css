@@ -31,18 +31,21 @@ a{
     font-size:50px;
     width: 100%;
     text-align: center;
+    display:inline-block;
   }  
 
 
-.ordenação{
+.ordenarPor{
   color: rgb(138, 19, 19);
   font-size:25px;
+  display:inline-block;
 
 }
 
-.tipo{
+.tipoPokemon{
   color: rgb(138, 19, 19);
   font-size:25px;
+  display:inline-block;
 
 }
   body {
@@ -52,49 +55,55 @@ a{
     display:inline-block;
     width: 100%;
   }
-  /* Define uma largura máxima para o conteúdo da página */
-  .busca {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Estilo do título principal */
-  .busca h1 {
-    font-family: 50px;
-    margin-top: 0;
-  }
-  
-  /* Estilo da lista de Pokémon */
-  #pokemon-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #pokemon-list li {
+  .pokemon_list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    list-style: none;
+    padding: 0;
+    display:inline-block;
+  }
+  
+  /* Estilo para cada item da lista de Pokémon */
+  .pokemon_list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 30px 0px 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid #b30101;
+    background-color: #fff;
+    display:inline-block;
+  }
+  
+  /* Estilo para a imagem do Pokémon */
+  .pokemon_list li img {
+    width: 150px;
+    height: 150px;
     margin-bottom: 10px;
+    display:inline-block;
   }
   
-  #pokemon-list li img {
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-  }
-  
-  #pokemon-list li p {
-    margin: 0;
-    font-size: 20px;
+  /* Estilo para o nome do Pokémon */
+  .pokemon_list li p:first-child {
+    font-size: 24px;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    display:inline-block;
   }
   
-  /* Estilo dos selects e botão de pesquisa */
-  .options1,
-  .options2,
-  .btn {
-    padding: 10px;
+  /* Estilo para os stats do Pokémon */
+  .pokemon_list li p:last-child {
+    font-size: 16px;
+    text-align: center;
+    display:inline-block;
+  }
+  .btn1 { /*do botão pesquisar a-z*/
+    padding: 9px;
     font-size: 16px;
     border: 1px solid #111111;
     border-radius: 4px;
@@ -102,11 +111,19 @@ a{
     background-color:rgb(138, 19, 19);
     color: #aaa;
     cursor: pointer;
+    display:inline-block;
   }
   
-  /* Estilo para quando o botão de pesquisa estiver desabilitado */
-  .btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+  .btn2 { /*do botão pesquisar tipo*/
+    padding: 9px;
+    font-size: 16px;
+    border: 1px solid #111111;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color:rgb(138, 19, 19);
+    color: #aaa;
+    cursor: pointer;
+    display:inline-block;
+    margin-top: 10px;
   }
-  
+

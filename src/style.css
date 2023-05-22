@@ -43,18 +43,18 @@ a{
 }
 
 .pokebola {
-width: 100%;
-max-width: 425px;
+width: 70%;
+max-width: 400px;
 
 }
 
 .logo {
   text-align: center;
   display:inline-block;
-  width: 100%;
+  width:47%;
   margin: 0%;
 
-    
+
 }
 
 .pokemon__image {
@@ -72,7 +72,7 @@ max-width: 425px;
   right: 33%;
   font-size: clamp(8px, 5vw, 25px);
   display:block;
-  
+
 }
 
 .pokemon__name {
@@ -80,26 +80,28 @@ max-width: 425px;
   text-transform: capitalize;
   left: 30%;
   display:inline-block;
-  
+
 }
+
+
 
 .form {
   width: 65%;
   display:inline-block;
-  
+
 }
 
 .input__search {
   width: 100%;
-  padding:4%;
+  padding:3%;
   outline: none;
-  border: 2px solid #333;
+  border: 3px solid #333;
   border-radius: 5px;
   font-weight: 600;
   color: #3a444d;
   font-size: clamp(8px, 5vw, 1rem);
   box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
-  
+
 }
 
 .btn-prev {
@@ -113,6 +115,8 @@ max-width: 425px;
   background-color:rgb(138, 19, 19);
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
   display:inline-block;
+  margin-top: 10px;
+
 }
 
  .btn-next {
@@ -126,7 +130,5 @@ max-width: 425px;
   background-color:rgb(138, 19, 19);
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
   display:inline-block;
+
 }
-
-
-

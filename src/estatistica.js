@@ -1,5 +1,5 @@
-import { displayPokemonList } from './pokeapi';
-import Promise from 'promise-polyfill'; // pollyfill, detectar que o navegador não tem suporte e vai implementar na hora usando funções disponíveis para aquele navegador, e vai fazer com que seja possível usar o recurso com a mesma interface inclusive.
+//import { displayPokemonList } from './pokeapi';
+//import Promise from 'promise-polyfill'; // pollyfill, detectar que o navegador não tem suporte e vai implementar na hora usando funções disponíveis para aquele navegador, e vai fazer com que seja possível usar o recurso com a mesma interface inclusive.
 
 const pokemon_List = document.querySelector('.pokemon_list');
 let pokemonList = [];
@@ -68,7 +68,7 @@ const ordenarPorElement = document.querySelector('#options1');
 const tipoPokemonElement = document.querySelector('#TipoPokemon');
 
 const btn1 = document.querySelector('.btn1');
-const btn2 = document.querySelector('#btn2');
+const btn2 = document.querySelector('.btn2');
 
 
 

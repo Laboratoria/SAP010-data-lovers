@@ -5,6 +5,7 @@
     <title>Breaking Bad Lovers</title>
     <link rel="stylesheet" href="cards.css" />
     <link rel="icon" href="img/bbicon.png" id="bbicon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
@@ -18,7 +19,7 @@
       <!-- <img src="img/Image20230516161335.jpg">-->
     </header>
     <!--Aqui são os botões de busca-->
-    <main>
+     <main> 
       <div class="option-container">
         <label>
           <select id="select-status" class="btn-option">
@@ -43,21 +44,19 @@
             <option value="ascending" id="ascending">A to Z</option>
             <option value="descending" id="descending">Z to A</option>
           </select>
-        </label>
-
-        <label>
-          <button id="reset" class="btn-option reset">Clear</button>
-        </label>
+        </label>       
       </div>
-
-      <label>
+    
+      <label><p style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 40px;">
         <input
           type="text"
           id="btn-search"
-          class="btn-option search"
-          placeholder="Search for a character..."
+          class="btn-option"
+          placeholder="Search for name"
         />
+        <button id="reset" class="btn-option">Clear</button>
       </label>
+    </p>
 
       <div class="percentage-container" id="percentage-container"> 
         <br />    <!--verificar necessidade de 2 class e 2 ids-->

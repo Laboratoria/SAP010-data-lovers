@@ -13,7 +13,7 @@
 
 body {
   color: var(--black);
-  background-color: var(--black);
+  background-image: url(img/greensmoke.png);
   background-size: fill;
   display: flex;/*Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
   flex-wrap: wrap; /*Quebra a linha assim que um dos flex itens não puder mais ser compactado*/
@@ -30,13 +30,13 @@ header {
 
 #bbimage {
   width: 280px;
-  justify-content: center;
-  display: flex;
+  /* justify-content: center;
+  display: flex; */
 }
 
 .nav-header {
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 
 .btn-header {
@@ -59,8 +59,8 @@ header {
   border-radius: 20px;
   border: none;
   color: var(--black);
-  width: 10vw;
-  height: 40px;
+  width: 15vw;
+  height: 6vh;
   margin: 0px 7px;
   font-size: 1.2rem;
   text-align: center;
@@ -68,22 +68,25 @@ header {
 }
 
 #btn-search {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  width: 250px;
+  justify-content: center;
+  /* margin-bottom: 20px;
+  margin-top: 20px; */
+  width: 20vw;
+  text-align: center;
+
 }
 
-main {
-  /*background-image: url(img/tubos\ de\ ensaio.jpg);
-  /*border-radius: 40px;*/
-  background-image: url(img/greensmoke.png);
+ main {
+  /* background-image: url(img/tubos\ de\ ensaio.jpg); */
+  border-radius: 40px;
+   /* background-image: url(img/greensmoke.png); */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
+} 
 
 .option-container {
   display: flex;
@@ -101,7 +104,6 @@ main {
   flex-wrap: wrap; /* alinhamento dos cards. */
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   flex-basis: auto;
 }
 
@@ -154,134 +156,17 @@ footer {
   align-items: center;
 }
 
-
-
-/* @media screen and (max-width: 480px) {
-  body {
-    font-size: 1 rem;
-    text-align: center;
-    justify-content: center;
-    width: 100vw;
-    margin: 10%;
-    margin-right: 10%;
-    padding: 5%;
-  }
-
-  .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-
-   .card {
-    width: 16vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-    align-items: center;
-  } 
-
-  .poster-img {
-    height: 20vh;
-    width: 15vw;
-    object-fit: cover;
-  }
-
-  footer {
-    display: flex;
-    justify-content: center;
-    width: 80vw;
-    padding: 10%;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  body {
-    font-size: 1.2rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    width: 80vw;
-  }
-
-  .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-   .card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  } 
-
-  .poster-img {
-    height: 20vh;
-    width: 15vw;
-    object-fit: cover;
-  }
-
-  footer {
-    text-align: center; 
-    width: 60vw;
-    display: flex;
-    justify-content: center;
-    padding: 30%;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-  body {
-    font-size: 1.2rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    width: 80vw;
-  }
-
-  .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-   .card {
-    width: 16vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-    align-items: center;
-  } 
-
-  .poster-img {
-    height: 20vh;
-    width: 15vw;
-    object-fit: cover;
-  }
-
-  footer {
-    width: 70vw;
-    display: flex;
-    justify-content: center;
-    padding: 10%;
-    margin-top: 35px;
-  }
-} */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .btn-header {
+    width: 14vw;
+    height: 5vh;
     font-size: 1.1rem;
+
   }
 
   .btn-option {
+    width: 14vw;
+    height: 5vh;
     font-size: 1.1rem;
   }
 
@@ -303,13 +188,19 @@ footer {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+
   .btn-header {
-    width: 15vw;
+    width: 10vw;
+    height: 3vh;
     font-size: 0.9rem;
   }
 
   .btn-option{
-    width: 15vw;
+    width: 10vw;
+    height: 3vh;
     font-size: 0.9rem;
   }
 
@@ -331,13 +222,19 @@ footer {
 
 
 @media screen and (max-width: 480px)  {
+  .card-container {
+    flex-direction: column;
+  }
+
   .btn-header {
-    width: 15vw;
+    width: 13vw;
+    height: 4vh;
     font-size: 0.8rem;
   }
 
   .btn-option{
-    width: 15vw;
+    width: 13vw;
+    height: 4vh;
     font-size: 0.8rem;
   }
 

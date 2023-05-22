@@ -5,6 +5,8 @@
 
 //import ghibli from './data/ghibli/ghibli.js';
 //import data from './data/ghibli/ghibli.js';
+
+//FILMOGRAFIA
 function createMovieCards(films) {
   const container = document.getElementById('movie-container');
 

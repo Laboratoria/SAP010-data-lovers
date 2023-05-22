@@ -7,31 +7,34 @@
     <link rel="icon" type="image-phg" href="https://img2.gratispng.com/20180328/pee/kisspng-walter-white-television-show-logo-amc-breaking-bad-5abba540e853e7.4609369915222469769516.jpg">
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Busque pelo seu personagem</h1>
-    </header>
     
+      <div class = "header-busca">
         <input type="search" value="" placeholder="Buscar personagem" class="busca" id="busca">
 
-      <select id="select-filter" class="filter">
-        <option value="" selected> Todos </option>
-        <option value ="better_call_saul_appearance">Personagens da série Better Call Saul</option>
-        <option value= "1"> Temporada 1 </option>
-        <option value= "2"> Temporada 2 </option>
-        <option value= "3"> Temporada 3 </option>
-        <option value= "4"> Temporada 4 </option>
-        <option value= "5"> Temporada 5 </option>
-      </select>
+        <select id="select-filter" class="filter">
+          <option value="" selected> Todos </option>
+          <option value ="better_call_saul_appearance">Personagens da série Better Call Saul</option>
+          <option value= "1"> Temporada 1 </option>
+          <option value= "2"> Temporada 2 </option>
+          <option value= "3"> Temporada 3 </option>
+          <option value= "4"> Temporada 4 </option>
+          <option value= "5"> Temporada 5 </option>
+        </select>
 
-      <select id="select-order" class="order">
-        <option value="" disabled selected> Ordenar </option>
-        <option value="a-z"> A - Z </option>
-        <option value="z-a"> Z - A </option>
-      </select>
+        <select id="select-order" class="order">
+          <option value="" disabled selected> Ordenar </option>
+          <option value="a-z"> A - Z </option>
+          <option value="z-a"> Z - A </option>
+        </select>
+      </div>
+    </header>
 
     <main>
       <div id="root">
         <section>
+          <p class="porcentagem" id="porcentagem-tela"></p>
            <!-- essa classe armazena todos os cards -->
            <div class="container-card" id="infoCards"></div>
         </section>

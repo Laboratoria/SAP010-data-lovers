@@ -14,14 +14,14 @@ export const orderZA = (breaking_bad) => {
 
 // retorna os personagens por temporada
 export const filterBreakingBad = (dados, temporada) => {
+  const temporadaNumerosInteiros = parseInt(temporada.toString().replace('Temporada ', ''));
   return dados.filter(breaking_bad_item =>
-    breaking_bad_item.appearance.includes(temporada)
+    breaking_bad_item.appearance.includes(temporadaNumerosInteiros)
   );
 };
 
 
-// calcula a porcentagem de personagens por temporada
-export const porcentagemTemporada = (dados, filterBreakingBad) => {
+export const porcentagemTemporada = (filterBreakingBad, dados) => {
   return ((filterBreakingBad.length / dados.length) * 100).toFixed(2); // to fixed retorna somente 2 casas depois da vírgula
 };
 
@@ -34,6 +34,6 @@ export const filtroNomes = (dados, nomePesquisado) => {
 // função para filtrar os personagens da serie Better Call Saul
 export const filterBetterCallSaul = (dados) => {
   return dados.filter(
-    (personagem) => personagem.better_call_saul_appearance === true
+    (personagem) => personagem.better_call_saul_appearance.length > 0
   );
 };

@@ -4,6 +4,7 @@ import {
   filterBetterCallSaul,
   orderAZ,
   orderZA,
+  porcentagemTemporada,
 } from "./data.js";
 import data from "./data/breakingbad/breakingbad.js";
 
@@ -14,6 +15,7 @@ import data from "./data/breakingbad/breakingbad.js";
 // }
 
 const resultBreakingBad = data.breaking_bad;
+
 const root = document.getElementById("infoCards");
 function infoAllCards(data) {
   root.innerHTML = data
@@ -52,30 +54,44 @@ infoAllCards(resultBreakingBad); //referente a const que virou de objeto para ar
 
 //pesquisar por nome
 const pesquisarNome = document.getElementById("busca");
-
 pesquisarNome.addEventListener("input", (Event) => {
   const nomeDoPersonagem = Event.target.value.toUpperCase();
   const nomeFiltrado = filtroNomes(resultBreakingBad, nomeDoPersonagem); //linka com a função da pasta data.js em barra de pesquisa
   infoAllCards(nomeFiltrado);
 });
 
+// filtrar personagens da serie better_call_saul e por temporada os personagens da serie Breakind Bad
 const buscarPortemporada = document.getElementById("select-filter");
 buscarPortemporada.addEventListener("change", () => {
-  const filtroBB = filterBreakingBad(
-    resultBreakingBad,
-    buscarPortemporada.value
-  );
+  if (buscarPortemporada.value === "better_call_saul_appearance") {
+    const filtroBCS = filterBetterCallSaul(resultBreakingBad);
+    infoAllCards(filtroBCS);
 
-  infoAllCards(filtroBB);
+    const porcentagem = porcentagemTemporada(filtroBCS, resultBreakingBad);
+    const calculoTela = document.getElementById("porcentagem-tela");
+    calculoTela.innerHTML = `São ${filtroBCS.length} atores da série Better Call Saul. Ou seja: ${porcentagem}% do total.`;
+
+  } else if (buscarPortemporada.value !== "") {
+    const filtroBB = filterBreakingBad(
+      resultBreakingBad,
+      buscarPortemporada.value
+    );
+    infoAllCards(filtroBB);
+
+    const porcentagem = porcentagemTemporada(filtroBB, resultBreakingBad);
+    const calculoTela = document.getElementById("porcentagem-tela");
+    calculoTela.innerHTML = `São ${filtroBB.length} atores nessa temporada da série Breaking Bad. Ou seja: ${porcentagem}% do total.`;
+    
+  } else {
+    infoAllCards(resultBreakingBad);
+
+    const calculoTela = document.getElementById("porcentagem-tela");
+    calculoTela.innerHTML = "";
+  }
 });
 
-const buscarSerieBCS = document.getElementById("select-filter");
-buscarSerieBCS.addEventListener("change", () => {
-  const filtroBCS = filterBetterCallSaul(resultBreakingBad);
-  console.log(filtroBCS, "better call saul");
-  infoAllCards(filtroBCS);
-});
 
+// ordena de a-z e z-a os personagens
 const ordenarPersonagens = document.getElementById("select-order");
 ordenarPersonagens.addEventListener("change", () => {
   const ordenar = ordenarPersonagens.value;

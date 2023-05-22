@@ -147,7 +147,7 @@ test("Retorna a porcentagem correta quando há dados", () => {
   const resultado = ((filterBreakingBad.length / dados.length) * 100).toFixed(
     2
   );
-  const resultadoFinal = porcentagemTemporada(dados, filterBreakingBad);
+  const resultadoFinal = porcentagemTemporada(filterBreakingBad, dados);
 
   expect(resultadoFinal).toBe(resultado);
 });

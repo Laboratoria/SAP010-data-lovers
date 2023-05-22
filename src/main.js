@@ -9,11 +9,14 @@ if (name) {
   name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
     console.log('eventoInput')
-
-    buildCard(filterData(name.value, data.pokemon));
-    console.log(filterData(name.value, data));
+    let retornoFilterData = filterData(name.value, data);
+    console.log("Console");
+    console.log(filterData(name.value, data))
+    console.log(retornoFilterData);
+    console.log("-----------");
+    buildCard(retornoFilterData);
     if (name.value === "") {
-      buildCard(data);
+      buildCard(data.pokemon);
     }//if
   })//endAddEventListener
 }//endIf

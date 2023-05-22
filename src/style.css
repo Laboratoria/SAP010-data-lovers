@@ -261,13 +261,13 @@ a {
   justify-content: center;
 }
 
-.column{
+.column {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-#chart{
+#chart {
   align-items: center;
   background-color: #F7F1E3;
   border-radius: 63px;
@@ -279,6 +279,7 @@ a {
   padding: 40px;
   width: 40%;
 }
+
 .questions {
   align-items: center;
   background-color: #338ad1da;
@@ -306,11 +307,13 @@ a {
   text-align: justify;
   width: 90%;
 }
-.curiosity h1{
+
+.curiosity h1 {
   color: #F7F1E3;
   font-size: 18px;
   text-align: center;
 }
+
 .curiosity p b {
   color: #F7F1E3;
 }
@@ -337,7 +340,7 @@ a {
   text-transform: uppercase;
 }
 
-.nameRevealed{
+.nameRevealed {
   color: #00478C;
   font-family: 'Carter One';
   font-size: 16px;
@@ -345,9 +348,15 @@ a {
 
 }
 
-
-
-
+.ficha {
+  font-family: 'Carter One', cursive;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  color: #00478C;
+}
 
 /*media queries - vai informar o que tem de ser feito quando for detectado um tamanho X de viewport*/
 /*max-width - pega o intervalo de 0px até 650px*/
@@ -355,12 +364,11 @@ a {
 
   .showData,
   .questions {
-    flex-direction: column;
     width: 100%;
-    height: max-content;
   }
 
   .curiosity {
+    margin: 5px;
     width: 100%;
   }
 
@@ -388,31 +396,27 @@ a {
 }
 
 
-@media (max-width: 650px) {
+@media (max-width: 371px) {
+  .ficha {
+    font-size: 18px;
+  }
 
-  .showData,
-  .questions {
+  #chart {
+    width: 70%;
+  }
+
+  .column {
     flex-direction: column;
-    width: 100%;
-    height: max-content;
+    width: 90%;
   }
 
   .curiosity {
-    width: 100%;
+    font-size: 12px;
   }
 
-  .card {
-    width: 50%;
+  .curiosity h1 {
+    color: #F7F1E3;
+    font-size: 14px;
+    text-align: center;
   }
 }
-
-.ficha {
-  font-family: 'Carter One', cursive;
-  font-style: normal;
-  font-weight: bolder;
-  font-size: 24px;
-  line-height: 37px;
-  text-align: center;
-  color: #00478C;
-}
-

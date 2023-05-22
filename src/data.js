@@ -27,11 +27,16 @@ export const filterData = (namePokemon, data) => {
 
       }//endIf
 
-    }//endIf
- 
-  }//endFor
 
-  return pokemons;
+    }//endIf
+
+
+
+  }//endFor
+  console.log(pokemons)
+
+    return pokemons;
+
 
 }//endFilterData
 

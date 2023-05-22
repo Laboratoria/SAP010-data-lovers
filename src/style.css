@@ -20,6 +20,7 @@ body {
     width: 100%; 
     height: 100vh;
     overflow: hidden;  /* esconde as barras de scroll */
+    position: relative;
 }
 
 .info {
@@ -313,19 +314,57 @@ select:invalid {
     background-color: #fff6bd9b;
 }
 
+.close-buttom {
+    display: none;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .50);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 9;
+
+}
+
 @media (max-width: 414px) {
   .info {
-    /* display: none; */
-    width: 100%;
+    display: none;
     padding: 18px;
+    position: absolute;
+    top: 5%;
+    z-index: 10;
+    border-radius: 10px;
    }
 
-   .list {
-    display: none;
+   .container {
+    overflow: scroll;
+   }
+
+   .info.active {
+    display: block;
+
+   }
+
+   .overlay.active {
+    display: block;
    }
 
    .header {
     font-size: 18px;
+    margin-top: 10px;
+   }
+
+   .close-buttom {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 11;
+    width: 18px;
    }
 
    .info-card-header p {
@@ -346,6 +385,7 @@ select:invalid {
 
    .description-pokemon p {
     font-size: 18px;
+    margin-bottom: 0;
    }
 
    .description-pokemon {
@@ -359,7 +399,6 @@ select:invalid {
     width: 100%;
     max-width: 100vw;
     gap: 16px;
-    
    }
 
    .picture {
@@ -397,5 +436,12 @@ select:invalid {
    .card {
     margin: -18px;
     width: 100vw;
+    position: relative;
    }
+
+   .list-item.active {
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+}
 }

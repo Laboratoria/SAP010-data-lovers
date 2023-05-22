@@ -89,6 +89,22 @@ const cardClick = (element) => {
   activeElement.className = 'list-item' //remove todas as classes do elemento menos o item list
 
   loadActivePokemonInfo(pokemon) //nesta linha eu troco as informacoes da tela
+
+  const overlay = document.querySelector('.overlay')
+  overlay.classList.add('active')
+
+  const info = document.querySelector('.info')
+  info.classList.add('active')
+}
+
+const closeButtom = document.querySelector('.close-buttom')
+closeButtom.onclick = function() {
+
+  const overlay = document.querySelector('.overlay')
+  overlay.classList.remove('active')
+
+  const info = document.querySelector('.info')
+  info.classList.remove('active')
 }
 
 window.cardClick = cardClick;

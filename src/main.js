@@ -1,14 +1,8 @@
-//import { example } from './data.js';
-// import data from './data/lol/lol.js';
-//import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-
-//import ghibli from './data/ghibli/ghibli.js';
-//import data from './data/ghibli/ghibli.js';
+//import { functionDiretor,  } from './data.js';
 
 //FILMOGRAFIA
-function createMovieCards(films) {
-  const container = document.getElementById('movie-container');
+function createMovieCardsFront(films) {
+  const container = document.getElementById('movie-container-front');
 
   films.forEach((films) => {
     const card = document.createElement('div');
@@ -30,11 +24,35 @@ function createMovieCards(films) {
     container.appendChild(card);
   });
 }
+
+function createMovieCardsBack(films) {
+  const container = document.getElementById('movie-container-back');
+
+  films.forEach((films) => {
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const description = document.createElement('description');
+    description.textContent = films.description;
+
+    const director = document.createElement('director');
+    director.textContent = films.director;
+
+    const rt_score = document.createElement('rt_score');
+    rt_score.textContent = films.rt_score;
+
+    card.appendChild(description);
+    card.appendChild(director);
+    card.appendChild(rt_score);
+    container.appendChild(card);
+  });
+}
 // Carregar dados de um arquivo JSON
 fetch('./data/ghibli/ghibli.json')
   .then(ghibli => ghibli.json())
   .then(data => {
-    createMovieCards(data.films);
+    createMovieCardsFront(data.films),
+    createMovieCardsBack(data.films);
   })
   .catch(error => {
     console.error('Ocorreu um erro ao carregar os dados:', error);

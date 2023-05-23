@@ -1,13 +1,48 @@
-.card-films {
+img{
+  width: 50px;
+}
+
+.card {
   border-radius: 5px;
   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
   padding: 30px;
   margin: 20px;
   width: 400px;
   transition: all 0.3s ease-out;
+  
 }
 
-.card-films:hover {
+.card:hover {
   transform: translateY(-5px);
   cursor: pointer;
 }
+
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);
+	/* se quiser uma animação na vertical,
+	troque por rotateX(180deg)
+	*/
+
+}
+
+.flipper{
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  position: relative;
+}
+
+.card-films-front, .card-films-back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-films-back{
+	transform: rotateY(180deg);
+}
+
+
+

@@ -61,9 +61,9 @@ filtroOp.addEventListener("change", function () {
   const b = calcularPercentualIngles(filteredCountries);
   a.classList.add("curiosidade");
   a.innerHTML =
-    " <h3>  O continente escolhido tem " +
+    "<h3>O continente escolhido tem " +
     b +
-    "% de países que usa inglês como seu idioma oficial!</h3>";
+    "% de países que usa o inglês como seu idioma oficial!</h3>";
 });
 
 const elementosDeOrdenacao = document.getElementById("az");

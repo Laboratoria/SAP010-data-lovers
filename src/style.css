@@ -3,13 +3,18 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh; /*o tamanho da altura do elemento será definido como o tamanho da janela do navegador (100 porcento da altura da janela do navegador)*/
+  height: 100vh; /* /o tamanho da altura do elemento será definido como o tamanho da janela do navegador (100 porcento da altura da janela do navegador)/ */
+  background-color: black;
+  align-items: center;
 }
 
 header {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #b2c8d6, black);
+  border-radius: 20px;
 }
 
 #logo {
@@ -28,26 +33,25 @@ header {
   margin-top: 50px;
   right: 10%;
   margin-left: 0px;
-  color: #006400;
-  border: 8px solid #2f939f;
+  color: white;
   border-radius: 6px;
   padding: 10px;
   text-align: center;
   font-size: clamp(1em, 3em + 3vw, 2.5em);
 }
 
-body {
-  background-color: black;
+.vid {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#continente {
-  height: 150px;
-  width: 90%;
-  margin-top: 0;
+video {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 100px;
+  width: 400px;
+  object-fit: fill;
 }
 
 #mapaheader {
@@ -57,20 +61,35 @@ body {
 }
 
 .filtros {
-  display: flex;
-  justify-content: center;
-  margin-top: 18%;
-  color: #006400;
+  margin-top: 10px;
+  color: white;
   font-family: "faustina";
   text-transform: uppercase;
   font-size: 20px;
-
 }
 
-.filtros select:first-of-type {
-  margin-right: 70px;
-  border: 2px solid#006400;
-  border-radius: 6px;
+#az {
+  margin-right: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 70px;
+  transition: all 0.5s;
+}
+
+#opcao {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+
+#az:hover {
+  width: 90px;
+}
+
+#opcao:hover {
+  width: 120px;
 }
 
 .bands {
@@ -91,7 +110,7 @@ body {
 }
 
 .bands:hover {
-  background-color: rgb(20, 47, 122);
+  background-color: rgb(11, 23, 54);
 }
 
 .bandeiras {
@@ -108,7 +127,7 @@ body {
 h3 {
   margin-top: 10px;
   color: #e0ffff;
-  font-size:x-large;
+  font-size: x-large;
   text-align: center;
 }
 h4 {
@@ -140,4 +159,92 @@ p {
   margin-left: 5%;
   margin-right: 5%;
   font-family: "faustina";
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(to bottom, black, #4c6c81);
+  border-radius: 20px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+h2 {
+  font-family: "faustina";
+  font-size: small;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 450px) {
+  body {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .bandeiras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bands {
+    width: 80%;
+    height: 370px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .curiosidade {
+    width: 55%;
+    height: 250px;
+  }
+  .vid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  video {
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+  }
+  #az {
+    width: 50px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  #opcao {
+    width: 50px;
+    font-size: 12px;
+  }
+  #logo {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+  }
+  #tituloprincipal {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  #porcentagem {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
 }

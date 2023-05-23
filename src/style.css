@@ -355,7 +355,7 @@ a {
 
 /*media queries - vai informar o que tem de ser feito quando for detectado um tamanho X de viewport*/
 /*max-width - pega o intervalo de 0px até 650px*/
-@media (max-width: 1200px) {
+@media screen and (max-width: 1069px) {
 
   .showData,
   .questions {
@@ -370,9 +370,39 @@ a {
   .card {
     width: 30%;
   }
+
+  .img-type {
+    height: 32px;
+    width: 32px;
+  }
+
 }
 
-@media (max-width: 915px) {
+@media screen and (max-width: 1016px) {
+
+  .showData,
+  .questions {
+    width: 100%;
+  }
+
+  .curiosity {
+    margin: 5px;
+    width: 100%;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .img-type {
+    height: 28px;
+    width: 28px;
+  }
+
+}
+
+
+@media screen and (max-width: 915px) {
 
   .cardsPokemon {
     padding: 0.4px;
@@ -451,7 +481,7 @@ a {
   }
 }
 
-@media (max-width: 545px) {
+@media screen and (max-width: 731px) {
 
   .cardsPokemon {
     padding: 0.4px;
@@ -459,7 +489,85 @@ a {
 
   .card {
     height: 200px;
-    width: 50%;
+    width: 40%;
+  }
+
+  #name,
+  #num {
+    font-size: 22px;
+  }
+
+  .ficha {
+    font-size: 20px;
+  }
+
+  .img-type {
+    height: 26px;
+    width: 26px;
+  }
+
+  #imagePokemon {
+    height: 110px;
+    margin: 5px;
+    width: 110px;
+  }
+
+  .saiba-mais {
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+  }
+
+  #chart {
+    width: 70%;
+  }
+
+  .column {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .curiosity {
+    font-size: 12px;
+  }
+
+  .curiosity h1 {
+    color: #F7F1E3;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .showData {
+    width: 80%;
+  }
+
+  .showDataPokemon {
+    margin: 5px;
+    width: 80%;
+  }
+
+  #politoed,
+  #snorlax {
+    height: 90px;
+    width: 90px;
+  }
+
+  .nameRevealed {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 470px) {
+
+  .cardsPokemon {
+    padding: 0.4px;
+  }
+
+  .card {
+    height: 200px;
+    width: 60%;
   }
 
   #name,
@@ -516,7 +624,7 @@ a {
 
   .showDataPokemon {
     margin: 5px;
-    width: 100%;
+    width: 80%;
   }
 
   #politoed,
@@ -529,3 +637,4 @@ a {
     font-size: 14px;
   }
 }
+

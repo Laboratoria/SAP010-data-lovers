@@ -1,4 +1,4 @@
-import {
+import { 
   filtroNomes,
   filterBreakingBad,
   filterBetterCallSaul,
@@ -23,15 +23,12 @@ function infoAllCards(data) {
       (character) => `
   <div class="cards">
     <div class="flip-container"> 
-      <div class="flipper">
-
           <ul class="frontCard">
             <h2 id="nome"><strong> ${character.name} </strong></h2>
             <img alt="foto" class="img-card" src="${character.img}">
           </ul>
-
         <div class="backCard">
-          <ul class="back-cards-texto">
+          <ul>
               <li><strong> Birthday: </strong> ${character.birthday}</li>
               <li><strong> occupation: </strong> ${character.occupation}</li>
               <li><strong> Status: </strong> ${character.status}</li>
@@ -42,7 +39,6 @@ function infoAllCards(data) {
               <li><strong> Better_call_saul_appearance: </strong> ${character.better_call_saul_appearance}</li>
           </ul>
         </div>
-      </div>
     </div>
   </div>
   `
@@ -51,9 +47,14 @@ function infoAllCards(data) {
 }
 infoAllCards(resultBreakingBad); //referente a const que virou de objeto para array
 
+// virar cards. O 'forEach' seleciona cada card 
+const flipContainers = document.querySelectorAll('.flip-container');
 
-
-
+flipContainers.forEach(flipContainer => {
+  flipContainer.addEventListener('click', function() {
+    flipContainer.classList.toggle('flipped'); // o card é virado com base na presença ou ausência da classe "flipped" (a classe está no card.css)
+  });
+});
 
 //pesquisar por nome
 const pesquisarNome = document.getElementById("busca");
@@ -93,7 +94,6 @@ buscarPortemporada.addEventListener("change", () => {
   }
 });
 
-
 // ordena de a-z e z-a os personagens
 const ordenarPersonagens = document.getElementById("select-order");
 ordenarPersonagens.addEventListener("change", () => {
@@ -106,5 +106,3 @@ ordenarPersonagens.addEventListener("change", () => {
   }
   infoAllCards(breakingBadOrdenado);
 });
-
-

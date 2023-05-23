@@ -11,9 +11,6 @@ html {
 
 body{
     background-image: url("img/brba.jpg");
-    /*filter: blur(8px);
-    -webkit-filter: blur(8px);*/
-
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -137,18 +134,36 @@ main{
     align-items: start;
 }
 
+.cards{
+    border-radius: 15px ;
+    cursor: pointer;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.438);
+}
+
+.flip-container{
+    width: 300px;
+    height: 450px;
+    perspective: 1000px; /* Define a perspectiva 3D */
+}
+
+.frontCard, .backCard{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Oculta o verso do card */
+    transition: transform 0.6s; /* Adiciona uma transição suave */
+}
+
 .frontCard{
     background-color: white;
-    width: 300px;
     padding: 16;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     border-radius: 15px ;
-    cursor: pointer;
-    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.438);
-    transition: 0.2s ease-in-out;
     text-align: center;
+
+    transform: rotateY(0deg); /* Define a rotação inicial */
 }
 
 .frontCard:hover{
@@ -156,25 +171,19 @@ main{
 }
 
 .backCard{
-    background-color: rgba(114, 150, 119, 0.678);
-    width: 300px;
-    padding: 16;
+    background-color: rgba(118, 153, 123, 0.678);
+    padding: 2.0rem;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     border-radius: 15px ;
-    cursor: pointer;
-    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.438);
-    transition: 0.2s ease-in-out;
-    padding: 2.0rem;
 
-    display: none; /* deixa o conteúdo escondido */
+    transform: rotateY(180deg); /* Define a rotação inicial */
 }
 
 .backCard:hover{
-    background-color: #959797e0;
+    background-color: #9ea1a1e0;
 }
-
 
 .backCard li{
     list-style-type: none;
@@ -182,6 +191,14 @@ main{
 
 .backCard ul li {
     margin-bottom: 8px;
+}
+
+.flip-container.flipped .frontCard {
+    transform: rotateY(180deg); /* Rotaciona para exibir o back card */
+}
+  
+.flip-container.flipped .backCard {
+    transform: rotateY(0deg); /* Rotaciona para exibir o front card */
 }
 
 h2{

@@ -29,14 +29,14 @@ function infoAllCards(data) {
           </ul>
         <div class="backCard">
           <ul>
-              <li><strong> Birthday: </strong> ${character.birthday}</li>
-              <li><strong> occupation: </strong> ${character.occupation}</li>
+              <li><strong> Aniversário: </strong> ${character.birthday}</li>
+              <li><strong> Ocupação: </strong> ${character.occupation}</li>
               <li><strong> Status: </strong> ${character.status}</li>
               <li><strong> Nickname: </strong> ${character.nickname}</li>
-              <li><strong> Appearance: </strong> ${character.appearance}</li>
-              <li><strong> Portrayed: </strong> ${character.portrayed}</li>
-              <li><strong> Category: </strong> ${character.category}</li>
-              <li><strong> Better_call_saul_appearance: </strong> ${character.better_call_saul_appearance}</li>
+              <li><strong> Visto na(s) temporada(s): </strong> ${character.appearance}</li>
+              <li><strong> Interpretado(a) por: </strong> ${character.portrayed}</li>
+              <li><strong> Categoria: </strong> ${character.category}</li>
+              <li><strong> Aparece na série Better call saul: </strong> ${character.better_call_saul_appearance}</li>
           </ul>
         </div>
     </div>
@@ -105,4 +105,14 @@ ordenarPersonagens.addEventListener("change", () => {
     breakingBadOrdenado = orderZA(resultBreakingBad);
   }
   infoAllCards(breakingBadOrdenado);
+});
+// função para mudar o background img
+document.getElementById("select-filter").addEventListener("change", function() {
+  const selectedOption = this.value;
+  
+  if (selectedOption === "better_call_saul_appearance") {
+    document.body.style.backgroundImage = "url(https://2.bp.blogspot.com/-9EYuVVYgXtQ/VRv7DrXU5KI/AAAAAAAAlZc/T1-G1B08bw8/s1600/BCSKEY13-700x400.jpg)";
+  } else {
+    document.body.style.backgroundImage = "url(img/brba.jpg)";
+  }
 });

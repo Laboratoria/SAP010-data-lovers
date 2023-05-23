@@ -43,7 +43,7 @@ h1{
     padding: 3.2rem;
     max-width: 100%;
     margin: auto;
-    
+    font-size: 37px;
 }
 
 /* .header-busca {
@@ -73,7 +73,7 @@ h1{
     margin-right: 10px;
     position: absolute;
     top: 150px;
-    left: 400px;
+    left: 800px;
     height: 25px;
     border: 1px solid white;
     border-radius: 4px;
@@ -89,7 +89,7 @@ h1{
     display: inline-block;
     position: absolute;
     top: 150px;
-    left: 800px;
+    left: 400px;
     height: 25px;
     border: 1px solid white;
     border-radius: 4px;
@@ -117,6 +117,21 @@ h1{
     height: 25px;
     border: 10px;
     border-radius: 40px;
+}
+
+.porcentagem{
+    background-color: white;
+    border-radius: 17px;
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    padding: 1rem 2rem;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* as linhas abaixo é referente a estilização dos cards*/
@@ -187,6 +202,7 @@ main{
 
 .backCard li{
     list-style-type: none;
+    font-size: 18px;
 }
 
 .backCard ul li {
@@ -235,7 +251,7 @@ h2{
 
 /* rodapé */
 .footer{
-    background-color: #f7faf9e0;
+    background-color: #f7faf9a9;
     color: #030303;
     text-align: center;
     padding-bottom: 10px;

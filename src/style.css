@@ -42,6 +42,6 @@ body{
     width: 400px;
     height: 100px;
     color: white;
-    font-size: 18px; /* tamanho da letra */
+    font-size: 18px;
     font-family: 'Source Code Pro', monospace;
 }

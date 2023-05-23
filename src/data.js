@@ -4,9 +4,8 @@ export const filtrarNomes = (dados, nomePesquisado) => { //é criada uma variave
 };
 
 export const filtrarNumeros = (dados, numeroPesquisado) => {
-  return dados.filter(cards => cards.value.includes(numeroPesquisado));
-}
-
+  return dados.filter(cards => String(cards.value).includes(numeroPesquisado));
+};
 
 
 

@@ -1,25 +1,17 @@
-// renderizar a lista de Pokémon, recebe a lista de Pokémon como parâmetro e cria os elementos HTML necessários para exibir as informações de cada Pokémon na lista.
+import Promise from 'promise-polyfill'; // pollyfill, detectar que o navegador não tem suporte e vai implementar na hora usando funções disponíveis para aquele navegador, e vai fazer com que seja possível usar o recurso com a mesma interface inclusive.
 
-export function displayPokemonList(pokemonList) {
-  const pokemon_List = document.querySelector('.pokemon_list');
-  pokemon_List.innerHTML = '';
-  pokemonList.forEach(pokemon => {
-    const listItem = document.createElement('li');
-    listItem.innerHTML = `
-        <div class="pokemon_info">
-          <h3 class="pokemon_name">${pokemon.name}</h3>
-          <img src="${pokemon.imageUrl}" alt="${pokemon.name}">
-          <p>name: ${pokemon.name}</p>
-          <p>Id: ${pokemon.id}</p>
-          <p>Weight: ${pokemon.weight}</p>
-          <p>HP: ${pokemon.hp}</p>
-          <p>Attack: ${pokemon.attack}</p>
-          <p>Defense: ${pokemon.defense}</p>
-          <p>Speed: ${pokemon.speed}</p>
-          <p>Types: ${pokemon.types.join(', ')}</p>
-          <p>Stats Total: ${pokemon.statsTotal}</p>
-        </div>
-      `;
-    pokemon_List.appendChild(listItem);
-  });
+
+export function fetchData() {
+
+  return fetch('https://pokeapi.co/api/v2/pokemon?limit=500&offset=0')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Não foi possível obter a lista de Pokémon');
+      }
+      return response.json();
+    })
+    .then(data => {
+      const pokemonList = data.results;
+      return Promise.all(pokemonList.map(pokemon => fetch(pokemon.url).then(res => res.json())));
+    });
 }

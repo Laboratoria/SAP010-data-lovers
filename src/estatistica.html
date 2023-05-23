@@ -7,60 +7,69 @@
     <link rel="stylesheet" href="estatisticas.css"> 
   </head>
 
-  <body>
-
-    <h1>
-      <nav>
-        <a href="index.html">
-          <div> HOME</div>
-        </a> 
-      </nav>
-    </h1>
-    
-
-
-
-    <label for="ordenarPor"><b>Organizar por:</b></label>
-    <select id="options1" class="ordenarPor">
-      <option value="a-z">A-Z</option>
-      <option value="z-a">Z-A</option>
-    </select>
-    <button class="btn1" type="submit">Pesquisar</button>
-
-    <label for="TipoPokemon"><b>Escolha o Tipo:</b></label>
-    <select class="tipoPokemon" id="TipoPokemon">
-      <option value="">Todos</option>
-      <option value="normal">Normal</option>
-      <option value="fighting">Lutador</option>
-      <option value="flying">Voador</option>
-      <option value="poison">Venenoso</option>
-      <option value="ground">Terra</option>
-      <option value="rock">Pedra</option>
-      <option value="bug">Inseto</option>
-      <option value="ghost">Fantasma</option>
-      <option value="steel">Aço</option>
-      <option value="fire">Fogo</option>
-      <option value="water">Água</option>
-      <option value="grass">Planta</option>
-      <option value="electric">Elétrico</option>
-      <option value="psychic">Psíquico</option>
-      <option value="ice">Gelo</option>
-      <option value="dragon">Dragão</option>
-      <option value="dark">sombrio</option>
-      <option value="fairy">Fada</option>
-    </select>
-
-    <button id="btn2" type="submit">Pesquisar</button>
-
-
-
-    <ul id="pokemon-list" class="pokemon_list"></ul>
-
-    <script src="estatistica.js" type="module"></script>
-    
-
-
-  </body>
-
+<head>
   
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="language" content="pt-br">
+  
+  <link rel="icon" href="pokebola.png">
+   <title>Pesquisa</title>
+  
+  <link rel="stylesheet" href="estatisticas.css">
+  
+  <script src="estatistica.js" type="module"></script>
+</head>
+
+<body>
+     <nav class="navE">
+       <div class="home">
+         <a href="index.html">
+          <div class="escritaHome">HOME</div>
+         </a>
+       </div>
+     </nav>
+
+   <label class="filtrePokemon">Filtre seus pokemons:</label>
+
+   <label for="options1"><b>Organizar por:</b></label>
+   <select id="options1" class="ordenarPor">
+     <option value="a-z">A-Z</option>
+     <option value="z-a">Z-A</option>
+     </select>
+
+   <button class="btn1" type="submit">Pesquisar</button>
+
+   <label for="TipoPokemon"><b>Escolha o Tipo:</b></label>
+
+   <select class="tipoPokemon" id="TipoPokemon">
+     <option value="">Todos</option>
+     <option value="normal">Normal</option>
+     <option value="fighting">Lutador</option>
+     <option value="flying">Voador</option>
+     <option value="poison">Venenoso</option>
+     <option value="ground">Terra</option>
+     <option value="rock">Pedra</option>
+     <option value="bug">Inseto</option>
+     <option value="ghost">Fantasma</option>
+     <option value="steel">Aço</option>
+     <option value="fire">Fogo</option>
+     <option value="water">Água</option>
+     <option value="grass">Planta</option>
+     <option value="electric">Elétrico</option>
+     <option value="psychic">Psíquico</option>
+     <option value="ice">Gelo</option>
+     <option value="dragon">Dragão</option>
+     <option value="dark">Sombrio</option>
+     <option value="fairy">Fada</option>
+     </select>
+
+   <button class="btn2" type="submit">Pesquisar</button>
+
+   <div class="pokemon_list" id="pokemon-List"></div>
+
+</body>
+
 </html>

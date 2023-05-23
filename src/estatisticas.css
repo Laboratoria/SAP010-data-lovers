@@ -1,9 +1,61 @@
-/* Estilo para a lista de Pokémon */
+@import url('https://fonts.google.com/specimen/Oxanium?query=oxanium');
+/* Define uma fonte padrão para a página */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+  font-family: 'Oxanium', cursive;
+  /*font escolhida padrão no link*/
+}
+
+navE {
+  width: 100%;
+}
+
+a {
+  color: #aaa;
+  font-size: 30px;
+  width: 100%;
+}
+
+.home {
+  border: 2px solid rgb(138, 19, 19);
+  padding: 20px;
+  width: 100%;
+  background: rgb(138, 19, 19);
+  text-align: left;
+}
+
+
+.filtrePokemon {
+  color: rgb(138, 19, 19);
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.ordenarPor {
+  color: rgb(138, 19, 19);
+  font-size: 25px;
+
+}
+
+.tipoPokemon {
+  color: rgb(138, 19, 19);
+  font-size: 25px;
+
+}
 
 body {
-  
-  background: linear-gradient(to bottom, #888787, #fff);
+  text-align: center;
+  background: linear-gradient(to bottom, #797575, #3b3a3a);
   min-height: 100vh;
+  display: inline-block;
+  width: 100%;
 }
 
 .pokemon_list {
@@ -47,4 +99,28 @@ body {
 .pokemon_list li p:last-child {
   font-size: 16px;
   text-align: center;
+}
+
+.btn1 {
+  /*do botão pesquisar a-z*/
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #111111;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: rgb(138, 19, 19);
+  color: #aaa;
+  cursor: pointer;
+}
+
+.btn2 {
+  /*do botão pesquisar tipo*/
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #111111;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: rgb(138, 19, 19);
+  color: #aaa;
+  cursor: pointer;
 }

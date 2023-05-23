@@ -16,11 +16,11 @@ const plotChart = (percentage) => {
     dataPokemon.push(percentage[type])
 
   }//endFor
-  const dataa = {
+  const datas = {
 
     labels: labelsChart,
     datasets: [{
-      label: 'My First Dataset',
+      label: 'Percentual',
       data: dataPokemon,
       backgroundColor: [
         'rgb(97, 170, 32)',
@@ -49,8 +49,9 @@ const plotChart = (percentage) => {
 
   const config = {
     type: 'pie',
-    data: dataa,
+    data: datas,
   };
+
   const ctx = document.getElementById('myChart');
 
   new Chart(ctx, config);

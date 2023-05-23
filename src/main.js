@@ -8,13 +8,7 @@ const name = document.getElementById("namePokemon");
 if (name) {
   name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
-    console.log('eventoInput')
-    let retornoFilterData = filterData(name.value, data);
-    console.log("Console");
-    console.log(filterData(name.value, data))
-    console.log(retornoFilterData);
-    console.log("-----------");
-    buildCard(retornoFilterData);
+    buildCard(filterData(name.value, data));
     if (name.value === "") {
       buildCard(data.pokemon);
     }//if
@@ -86,7 +80,6 @@ const styleCard = (pokemon, stylesPokemon) => {
 styleCard(data.pokemon, stylesPokemon);
 
 const buildCard = (pokemon) => {
-  console.log('chamei buildCard')
 
   document.getElementById("pokemons").innerHTML = "";
 
@@ -122,7 +115,6 @@ const buildCard = (pokemon) => {
         </div>
         <img id="imagePokemon" alt="Image Pokemon" src=${pokemon[i].img}>
       </div>
-        <a  href="cardDetails.html" target = "_blank"><p id=${pokemon[i].num} class="saiba-mais">saiba mais</p></a>
     </div>`;
 
       cardPokemon.innerHTML = showDataPokemon;
@@ -159,41 +151,21 @@ if (menuMob) {
   })
 }
 
-function teste(event) {
-  console.log(event);
-  console.log(event.target);
-  console.log(event.target.id);
-}//endTeste
-
 let url = document.URL;
-console.log(url)
+
 if (url === "http://localhost:3000/") {
-  console.log(document.URL)
-  let cards = document.querySelectorAll("#pokemons a");
   window.addEventListener("load", () => {
+    const home = document.querySelector(".home");
+    home.style.color = "#00478C"
     buildCard(data.pokemon);
-    cards = document.querySelectorAll("#pokemons a");
-    if (cards) {
-      cards.forEach(card => {
-        card.addEventListener("click", teste)
-      })
-    }//endIf
   });//endAddEventListener
 }
 
-if (url === "http://localhost:3000/") {
-  const home = document.querySelector(".home");
-  home.style.color = "#00478C"
-}
 if (url === "http://localhost:3000/statistic") {
   const curiosidades = document.querySelector(".curiosidades");
   curiosidades.style.color = "#00478C"
 }
 
-if (url === "http://localhost:3000/cardDetails") {
-  const details = document.querySelector(".details");
-  details.style.color = "#00478C"
-}
 
 
 

@@ -1,7 +1,5 @@
-import { filtrarNomes } from "./data.js";
-// import data from './data/lol/lol.js';
+import { filtrarNomes, filtrarNumeros } from "./data.js";
 import data from "./data/tarot/tarot.js";
-// import data from './data/rickandmorty/rickandmorty.js';
 
 const burguer = document.getElementById("burguer");
 burguer.addEventListener("click", clickMenu);
@@ -17,6 +15,8 @@ function clickMenu() {
 
 //console.log(example, data);
 const dadosTarot = data.cards;
+//const numeroCarta = data.cards;
+//console.log(dadosTarot);
 
 const root = document.getElementById("info-cards");
 
@@ -25,20 +25,14 @@ function infosDosCardsTela(cards) {
     .map(
       (cards) => `
     <div class="cards">
-        <div class="flip-container">
-            <div class="flipper">
-                <div class="front-cards-infos">
                     <img alt="cartas-frente" class="card-img" src="${cards.img}">
-                </div>
-                <div class="back-cards-infos">
+                <div class="informacoes">
                     <ul class="back-cards-txt">
                     <h1 id="nome-carta"><strong> ${cards.name}</strong></h1>
                     <li><strong>Tipo: ${cards.type} </strong></li>
                     <li><strong>Valor: ${cards.value} </strong></li>
+                    </ul>
                 </div>
-            
-            </div>
-        </div>   
     </div>
 `
     )
@@ -52,6 +46,13 @@ pesquisarNome.addEventListener("input", (evento) => {
   const nomeDasCartas = evento.target.value; // variavel para pegar o nome digitado no input
   const filtrarCartas = filtrarNomes(dadosTarot, nomeDasCartas); // variável para chamar a função no data.js com os parametros dadosTarot e nomeDasCartas
   infosDosCardsTela(filtrarCartas); // chama a função infoDosCardsTela com o parametro que foi atribuído na variavel filtrarCartas
+});
+
+const pesquisarNumero = document.getElementById("pesquisa-numero");
+pesquisarNumero.addEventListener("input", (evento) => {
+  const numero = evento.target.value;
+  const filtrarNum = filtrarNumeros(dadosTarot, numero);
+  infosDosCardsTela(filtrarNum);
 });
 
 //console.log(infosDosCardsTela);

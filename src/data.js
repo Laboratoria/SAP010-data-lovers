@@ -3,6 +3,10 @@ export const filtrarNomes = (dados, nomePesquisado) => { //é criada uma variave
   // é criada uma função in line chamada cards, cards.name pega o nome da carta no tarot.js, includes verifica se o nome pesquisado é true e retorna ele
 };
 
+export const filtrarNumeros = (dados, numeroPesquisado) => {
+  return dados.filter(cards => cards.value.includes(numeroPesquisado));
+}
+
 
 
 

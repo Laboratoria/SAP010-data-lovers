@@ -1,0 +1,13 @@
+.card-img {
+    width: 100px;
+}
+
+ #burguer {
+    background:#8FBC8F ;
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+}
+menu {
+    display: none;
+}

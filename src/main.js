@@ -271,8 +271,9 @@ function createFilterCard(movie) {
   title.textContent = movie.title;
   
   front.appendChild(image);
-  front.appendChild(releaseDate);
   front.appendChild(title);
+  front.appendChild(releaseDate);
+  
   
   const back = document.createElement("div");
   back.classList.add("back");

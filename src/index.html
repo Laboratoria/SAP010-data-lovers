@@ -2,11 +2,142 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="Website Icon" type="png" href="img/iconpokemon.png">
     <title>Data Lovers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&family=Open+Sans&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="type.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+
+    <div class="container grass" id="container">
+           <div class="overlay"></div>      
+
+      <div class="info"> 
+        <div class="card">
+          <div class="close-buttom">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#73777b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#73777b"></path> </g></svg>
+          </div>
+
+          <div class="card-wrapper"> 
+            <div class="header">
+              <p id="text-poke-num"></p>
+              <p id="text-poke-generation-name"></p>
+              <p id="text-poke-rarity"></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="info-pokemon">
+          <div class="cards">
+
+            <!-- Cards de informações -->
+            <div class="info-card">
+              <div class="info-card-header">
+                <p>Height</p>
+              </div>
+
+              <p id="text-poke-height"></p>
+            </div>
+            <!-- FIM Cards de informações -->
+            
+            <!-- Cards de informações -->
+            <div class="info-card">
+              <div class="info-card-header">
+                <p>Weight</p>
+              </div>
+
+              <p id="text-poke-weight"></p>
+            </div>
+            <!-- FIM Cards de informações -->
+            
+            <!-- Cards de informações -->
+            <div class="info-card">
+              <div class="info-card-header">
+                <p>Spawn %</p>
+              </div>
+
+              <p id="text-poke-spawn-chance"></p>
+            </div>
+            <!-- FIM Cards de informações -->
+
+          </div>
+
+          <div class="picture">
+            <img id="image-poke">
+            <p id="text-poke-name"></p>
+          </div>
+        </div>
+
+
+
+        <div class="description-pokemon">
+          <p id="text-poke-about"></p>
+        </div>
+
+
+
+
+      </div>
+      
+      <div class="list">
+        <div class="list-header">
+
+          <div class="search-input">
+            <div class="search-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 24 24" fill="none">
+                <circle cx="11" cy="11" r="7" stroke="#E3E3E3" stroke-width="2"/>
+                <path d="M11 8C10.606 8 10.2159 8.0776 9.85195 8.22836C9.48797 8.37913 9.15726 8.6001 8.87868 8.87868C8.6001 9.15726 8.37913 9.48797 8.22836 9.85195C8.0776 10.2159 8 10.606 8 11" stroke="#E3E3E3" stroke-width="2" stroke-linecap="round"/>
+                <path d="M20 20L17 17" stroke="#E3E3E3" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+              
+              <input id="input-poke-name" placeholder="Search"/>
+            
+          </div>
+
+          <div class="sort-input">
+
+            <select name="sort" id="select-poke-filter" required>
+              <option value="" disabled selected> Sort by</option>
+              <option value="num">
+                By Number
+              </option>
+              <option value="asc">
+                A to Z
+              </option>
+              <option value="desc">
+                Z to A
+              </option>
+              <option value="attack">
+                By Attack 
+              </option>
+              <option value="defense">
+                By Defense
+              </option>
+            </select>
+
+            <div>
+              <svg viewBox="0 0 24 24" widht="32px" height="32px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 2L7.29289 1.29289L8 0.585786L8.70711 1.29289L8 2ZM9 17C9 17.5523 8.55229 18 8 18C7.44772 18 7 17.5523 7 17L9 17ZM2.29289 6.29289L7.29289 1.29289L8.70711 2.70711L3.70711 7.70711L2.29289 6.29289ZM8.70711 1.29289L13.7071 6.29289L12.2929 7.70711L7.29289 2.70711L8.70711 1.29289ZM9 2L9 17L7 17L7 2L9 2Z" fill="#73777B"></path> <path d="M16 22L15.2929 22.7071L16 23.4142L16.7071 22.7071L16 22ZM17 7C17 6.44772 16.5523 6 16 6C15.4477 6 15 6.44771 15 7L17 7ZM10.2929 17.7071L15.2929 22.7071L16.7071 21.2929L11.7071 16.2929L10.2929 17.7071ZM16.7071 22.7071L21.7071 17.7071L20.2929 16.2929L15.2929 21.2929L16.7071 22.7071ZM17 22L17 7L15 7L15 22L17 22Z" fill="#73777B"></path> </g></svg>
+            </div>
+
+            
+          </div>
+
+        </div>
+        
+          <div class="list-items" id="list-items">
+            
+          </div>
+
+      </div>
+    </div>
+    </div>
     <script src="main.js" type="module"></script>
   </body>
 </html>

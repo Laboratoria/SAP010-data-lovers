@@ -42,11 +42,11 @@ Além disso ao filtrar, o usuário também terá a informação da porcentagem d
 
 Nós iniciamos com um protótipo de baixa fidelidade, desenhamos num papel mesmo para entender melhor o que gostaríamos de criar.
 PROTÓTIPO DE BAIXA FIDELIDADE
-<img src= "Protótipo de Baixa fidelidade (Estudante Digital).jpeg">
+<img src= "./src/Protótipo de Baixa fidelidade (Estudante Digital).jpeg">
 
 E depois desenhamos no Figma um protótipo de Alta Fidelidade para ficar um site mais parecido com a realidade. Foi muito bom porque assim aprendemos a mexer nessa ferramenta tão utilizada atualmente.
 PROTÓTIPO DE ALTA FIDELIDADE
-<img src= "Protótipo de Alta Fidelidade Data Lovers.jpg">
+<img src= "./src/Protótipo de Alta Fidelidade Data Lovers.jpg">
 
 Além disso aprendemos a usar o Trello como ferramenta de organização e ali conseguimos ver o site tomar forma. Utilizamos DOM, objetos, arrays, uso de condicionais. 
 

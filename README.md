@@ -1,6 +1,6 @@
 # Data Lovers
 
-<video width="800px" src="Data Lovers - Estudante Digital.mp4">
+<video width="800px" src="./src/Data Lovers - Estudante Digital.mp4"></video>
 
  [![Tecnologias e Ferramentas utilizadas:](https://skillicons.dev/icons?i=js,html,css,figma,github,git,jest,vscode)](https://skillicons.dev)
 

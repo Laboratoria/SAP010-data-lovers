@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ysabeau:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -28,10 +30,10 @@ body{
 }
 
 .btHome:hover {
-    background: #a6dadaa4; /* Muda a cor assim que o cursor estiver em cima*/
+    background: #a6dadaa4;
 }
 
-.btHome a {/* tira o sublinado do nome no botão*/
+.btHome a {
     text-decoration: none;
 }
 
@@ -43,6 +45,5 @@ body{
     max-width: 400px;
     height: auto;
     color: white;
-    /*font-size: 2vw;*/
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Noto Sans', sans-serif;
 }

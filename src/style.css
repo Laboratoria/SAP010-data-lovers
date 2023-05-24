@@ -334,122 +334,153 @@ select:invalid {
 
 
 
-@media (max-width: 414px) {
-  .info {
-    visibility: hidden;
-    padding: 18px;
-    position: absolute;
-    top: 5%;
-    z-index: 10;
-    border-radius: 10px;
-    opacity: 0;
-    transition: opacity 400ms;
-   }
-
-   .container {
-    overflow: scroll;
-   }
-
-   .info.active {
-    visibility: visible;
-    opacity: 1;
-
-   }
-
-   .overlay.active {
-    visibility: visible;
-    opacity: 1;
-   }
-
-   .header {
-    font-size: 18px;
-    margin-top: 10px;
-   }
-
-   .close-buttom {
-    display: block;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    z-index: 11;
-    width: 18px;
-   }
-
-   .info-card-header p {
-    font-size: 16px;
-   }
-
-   .info-card p {
-    font-size: 16px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    margin-top: 4px;
-   }
-
-   .picture p {
-    font-size: 24px;
-   }
-
-   .description-pokemon p {
-    font-size: 18px;
-    margin-bottom: 0;
-   }
-
-   .description-pokemon {
-    margin: 0;
-   }
-
-   .info-pokemon {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 100vw;
-    gap: 16px;
-   }
-
-   .picture {
-    width: 100%;
-    height: 272px;
-    aspect-ratio: 1/1;
-    margin: 0;
-   }
-
-   .picture img {
-    width: 193px;
-    height: 171px;
-   }
-
-   .info-card {
-    height: 79px;
-    width: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-   }
-
-   .cards {
-    flex-direction: row;
-    margin: 0;
-    justify-content: space-between;
-    width: 100%;
-    gap: 16px;
-   }
-
-   .info-card-header {
-    height: 28px;
-   }
-
-   .card {
-    margin: -18px;
-    width: 100vw;
-    position: relative;
-   }
-
-   .list-item.active {
-    border: none;
-    border-radius: 15px;
-    background-color: transparent;
-}
-}
+@media (max-width: 650px) {
+    .info {  
+      visibility: hidden;
+      padding: 18px;
+      position: absolute;
+      top: 5%;
+      z-index: 10;
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity 400ms;
+     }
+  
+     .container {
+      overflow: scroll;
+     }
+  
+     .info.active {
+      visibility: visible;
+      opacity: 1;
+  
+     }
+  
+     .overlay.active {
+      visibility: visible;
+      opacity: 1;
+     }
+  
+     .card {
+      margin: -18px;
+      width: 100vw;
+      position: relative;
+     }
+  
+     .close-buttom {
+      display: block;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 11;
+      width: 18px;
+     }
+     
+  
+     .info.active {
+      visibility: visible;
+      opacity: 1;
+  
+     }
+  
+     .overlay.active {
+      visibility: visible;
+      opacity: 1;
+     }
+  
+     .list-item.active {
+      border: none;
+      border-radius: 15px;
+      background-color: transparent;
+  }
+  }
+  
+  @media (max-width: 1299px) {
+      .info {  
+          padding: 18px;
+         }
+      
+         .container {
+          overflow: scroll;
+         }
+      
+        
+      
+         .header {
+          font-size: 18px;
+          margin-top: 10px;
+         }
+      
+         
+      
+         .info-card-header p {
+          font-size: 16px;
+         }
+      
+         .info-card p {
+          font-size: 16px;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          margin-top: 4px;
+         }
+      
+         .picture p {
+          font-size: 24px;
+         }
+      
+         .description-pokemon p {
+          font-size: 18px;
+          margin-bottom: 0;
+         }
+      
+         .description-pokemon {
+          margin: 0;
+         }
+      
+         .info-pokemon {
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          max-width: 100vw;
+          gap: 16px;
+         }
+      
+         .picture {
+          width: 100%;
+          height: 272px;
+          aspect-ratio: 1/1;
+          margin: 0;
+         }
+      
+         .picture img {
+          width: 193px;
+          height: 171px;
+         }
+      
+         .info-card {
+          height: 79px;
+          width: 100%;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+         }
+      
+         .cards {
+          flex-direction: row;
+          margin: 0;
+          justify-content: space-between;
+          width: 100%;
+          gap: 16px;
+         }
+      
+         .info-card-header {
+          height: 28px;
+         }
+  
+      .card {
+          margin: -16px 0px -16px -16px;
+          padding-right: 32px;
+      }
+  }

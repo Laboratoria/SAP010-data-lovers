@@ -50,11 +50,8 @@ function infoAllCards(data) {
     )
     .join("");
 }
-infoAllCards(resultBreakingBad); //referente a const que virou de objeto para array
+infoAllCards(resultBreakingBad);
 addClickEventToCards()
-
-// função para virar cards. O 'forEach' seleciona cada card 
-
 
 
 //pesquisar por nome

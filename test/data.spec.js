@@ -7,8 +7,7 @@ import {
   filterBetterCallSaul,
 } from "../src/data.js";
 
-
-//ordem crescente 
+//ordem crescente
 describe("orderAZ", () => {
   it("is a function", () => {
     expect(typeof orderAZ).toBe("function");
@@ -31,7 +30,7 @@ describe("orderAZ", () => {
   });
 });
 
-//ordem crescente 
+//ordem crescente
 describe("orderZA", () => {
   it("is a function", () => {
     expect(typeof orderZA).toBe("function");
@@ -159,18 +158,27 @@ describe("filterBetterCallSaul", () => {
   });
 });
 
-it("deve filtrar os personagens da serie Better Call Saul ", () => {
+it("deve retornar apenas os personagens da série Better Call Saul", () => {
   const dados = [
-    { name: "Personagem 1", better_call_saul_appearance: true },
-    { name: "Personagem 2", better_call_saul_appearance: false },
-    { name: "Personagem 3", better_call_saul_appearance: true },
-    { name: "Personagem 4" },
+    { name: "Personagem 1", better_call_saul_appearance: [] },
+    { name: "Personagem 2", better_call_saul_appearance: [1, 2, 3] },
+    { name: "Personagem 3", better_call_saul_appearance: [] },
   ];
 
   const resultado = filterBetterCallSaul(dados);
 
-  expect(resultado).toEqual([
-    { name: 'Personagem 1', better_call_saul_appearance: true },
-    { name: 'Personagem 3', better_call_saul_appearance: true },
-  ]);
+  expect(resultado.length).toBe(1);
+  expect(resultado[0].name).toBe("Personagem 2");
+});
+
+it("deve retornar um array vazio se não houver personagens da série Better Call Saul", () => {
+  const dados = [
+    { name: "Personagem 1", better_call_saul_appearance: [] },
+    { name: "Personagem 2", better_call_saul_appearance: [] },
+    { name: "Personagem 3", better_call_saul_appearance: [] },
+  ];
+
+  const resultado = filterBetterCallSaul(dados);
+
+  expect(resultado.length).toBe(0);
 });

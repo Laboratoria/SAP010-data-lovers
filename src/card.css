@@ -125,6 +125,7 @@ h1{
 .porcentagem{
     /*background-color: white;*/
     color: white;
+    white-space: nowrap;
     border-radius: 17px;
     position: absolute;
     text-align: center;

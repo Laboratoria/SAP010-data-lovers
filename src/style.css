@@ -14,13 +14,13 @@ body{
 
 .btHome{
     position: relative;
-    left: 920px;
+    left: 720px;
     top: 150px;
     width: 150px;
     height: 30px;
     cursor: pointer;
     border: 10px;
-    border-radius: 40px;
+    border-radius: 9px;
     color: aliceblue;
     text-decoration: none;
     outline: none;
@@ -28,7 +28,7 @@ body{
 }
 
 .btHome:hover {
-    background: #4db190a4; /* Muda a cor assim que o cursor estiver em cima*/
+    background: #a6dadaa4; /* Muda a cor assim que o cursor estiver em cima*/
 }
 
 .btHome a {/* tira o sublinado do nome no botão*/
@@ -37,11 +37,12 @@ body{
 
 .fraseHome {
     position: absolute;
-    top: 20px;
-    left: 700px;
-    width: 400px;
-    height: 100px;
+    top: 80px;
+    left: 450px;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
     color: white;
-    font-size: 18px;
+    /*font-size: 2vw;*/
     font-family: 'Source Code Pro', monospace;
 }

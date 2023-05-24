@@ -84,7 +84,7 @@ buscarPortemporada.addEventListener("change", () => {
 
     const porcentagem = porcentagemTemporada(filtroBB, resultBreakingBad);
     const calculoTela = document.getElementById("porcentagem-tela");
-    calculoTela.innerHTML = `São ${filtroBB.length} atores nessa temporada da série Breaking Bad. Ou seja: ${porcentagem}% do total.`;
+    calculoTela.innerHTML = `São ${filtroBB.length} atores da série Breaking Bad nessa temporada. Ou seja: ${porcentagem}% do total.`;
     
   } else {
     infoAllCards(resultBreakingBad);

@@ -23,7 +23,38 @@
     </nav>
   </header>
   <main id="">
-
+    <div class="container">
+      <h1>Filmografia</h1>
+      <div id="filters">
+        <h2>Filtros:</h2>
+        <div>
+          <label for="movie-filter">Filtrar por filme:</label>
+          <select id="movie-filter"></select>
+        </div>
+        <div>
+          <label for="director-filter">Filtrar por diretor:</label>
+          <select id="director-filter"></select>
+        </div>
+        <div>
+          <label for="sort-order">Ordenar por:</label>
+          <select id="sort-order">
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+            <option value="year">Ano de lançamento</option>
+          </select>
+        </div>
+        <div>
+          <label for="gender-filter">Filtrar personagens por gênero:</label>
+          <select id="gender-filter">
+            <option value="all">Todos</option>
+            <option value="female">Feminino</option>
+            <option value="male">Masculino</option>
+          </select>
+        </div>
+      </div>
+      <div id="cards-container"></div>
+    </div>
+  
 
   </main>
   <footer id="">Desenvolvido por Vitória Victor e Marina Cordeiro</footer>

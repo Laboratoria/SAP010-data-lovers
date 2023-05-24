@@ -8,13 +8,18 @@ import {
 } from "./data.js";
 import data from "./data/breakingbad/breakingbad.js";
 
-// o código abaixo transforma um objeto em array
-// const dadosSerie = [];
-// for (const character in data.data) {
-//   dadosSerie.push(data.data[character]);
-// }
-
 const resultBreakingBad = data.breaking_bad;
+
+function addClickEventToCards() {
+  const flipContainers = document.querySelectorAll('.flip-container');
+
+  flipContainers.forEach(flipContainer => {
+    flipContainer.addEventListener('click', function() {
+      flipContainer.classList.toggle('flipped');
+    });
+  });
+}
+
 
 const root = document.getElementById("infoCards");
 function infoAllCards(data) {
@@ -46,15 +51,11 @@ function infoAllCards(data) {
     .join("");
 }
 infoAllCards(resultBreakingBad); //referente a const que virou de objeto para array
+addClickEventToCards()
 
-// virar cards. O 'forEach' seleciona cada card 
-const flipContainers = document.querySelectorAll('.flip-container');
+// função para virar cards. O 'forEach' seleciona cada card 
 
-flipContainers.forEach(flipContainer => {
-  flipContainer.addEventListener('click', function() {
-    flipContainer.classList.toggle('flipped'); // o card é virado com base na presença ou ausência da classe "flipped" (a classe está no card.css)
-  });
-});
+
 
 //pesquisar por nome
 const pesquisarNome = document.getElementById("busca");
@@ -62,6 +63,7 @@ pesquisarNome.addEventListener("input", (Event) => {
   const nomeDoPersonagem = Event.target.value.toUpperCase();
   const nomeFiltrado = filtroNomes(resultBreakingBad, nomeDoPersonagem); //linka com a função da pasta data.js em barra de pesquisa
   infoAllCards(nomeFiltrado);
+  addClickEventToCards()
 });
 
 // filtrar personagens da serie better_call_saul e por temporada os personagens da serie Breakind Bad
@@ -70,6 +72,7 @@ buscarPortemporada.addEventListener("change", () => {
   if (buscarPortemporada.value === "better_call_saul_appearance") {
     const filtroBCS = filterBetterCallSaul(resultBreakingBad);
     infoAllCards(filtroBCS);
+    addClickEventToCards()
 
     const porcentagem = porcentagemTemporada(filtroBCS, resultBreakingBad);
     const calculoTela = document.getElementById("porcentagem-tela");
@@ -81,6 +84,7 @@ buscarPortemporada.addEventListener("change", () => {
       buscarPortemporada.value
     );
     infoAllCards(filtroBB);
+    addClickEventToCards()
 
     const porcentagem = porcentagemTemporada(filtroBB, resultBreakingBad);
     const calculoTela = document.getElementById("porcentagem-tela");
@@ -88,10 +92,12 @@ buscarPortemporada.addEventListener("change", () => {
     
   } else {
     infoAllCards(resultBreakingBad);
+    addClickEventToCards()
 
     const calculoTela = document.getElementById("porcentagem-tela");
     calculoTela.innerHTML = "";
   }
+ 
 });
 
 // ordena de a-z e z-a os personagens
@@ -105,7 +111,10 @@ ordenarPersonagens.addEventListener("change", () => {
     breakingBadOrdenado = orderZA(resultBreakingBad);
   }
   infoAllCards(breakingBadOrdenado);
+  addClickEventToCards()
 });
+
+
 // função para mudar o background img
 document.getElementById("select-filter").addEventListener("change", function() {
   const selectedOption = this.value;

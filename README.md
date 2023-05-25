@@ -15,8 +15,9 @@ Para este projeto, desenvolvemos uma aplicação responsiva que fornece dados so
 * [3. Teste de Usuabilidade](#3-Teste_de_Usuabilidade)
 * [4. Interface](#Interface)
 * [5. Responsividade](#5-Responsividade)
-* [6. Equipe do Projeto](#6-Equipe_do_Projeto)
-* [7. Checklist](#7-Checklist)
+* [6. Testes Unitários](#6-Testes_Unitários)
+* [7. Equipe do Projeto](#7-Equipe_do_Projeto)
+* [8. Checklist](#8-Checklist)
 
 
 ***
@@ -28,9 +29,9 @@ O objetivo desse projeto é construir uma página web que permita visualizar, fi
 
 ## 2. Protótipo :pen:
 
-Em uma folha de papel, realizamos o protótipo de baixa fidelidade e incluindo tópicos de tudo que gostaríamos de incluir. Em seguida, utilizamos o **Figma** e desenvolvemos um protótipo de alta fidelidade para apresentar o que consideramos o ideal para o nosso usuário.
+Em uma folha de papel, criamos o esboço inicial do design, considerando todos os elementos e funcionalidades que gostaríamos de incorporar. Em seguida, utilizamos o **Figma** e desenvolvemos um protótipo de alta fidelidade para apresentar o que consideramos o ideal para o nosso usuário.
 
-
+![Protótipo baixa fidelidade](../Desktop/imagem%20prototipo.jpg)
 
 ## 3. Teste de Usuabilidade
 
@@ -39,15 +40,24 @@ Em uma folha de papel, realizamos o protótipo de baixa fidelidade e incluindo t
 
 A interface criada considerou todas as recomendações recebidas pelos usuários em nossa pesquisa de campo, juntamente com as narrativas de usuários elaboradas.
 
-1. Na primeira tela, convidamos os nossos usuarios a conhecer melhor os personagens da série. 
+1. Na primeira tela, convidamos os nossos usuários a conhecer melhor os personagens da série. 
 
-2. Na página seguinte, exibimos por meio de cartões, todos os protagonistas da série "Breaking Bad" com a possibilidade de pesquisar pelo nome, classificar e filtrar por temporada. Adicionalmente, disponibilizamos a funcionalidade de filtrar os personagens da série "Better Call Saul", o que é uma informação relevante para nossos usuários. Além disso, há links adicionais para os trailers das séries, que redirecionam os usuários para o YouTube.
+2. Na página seguinte, exibimos por meio de cards, todos os protagonistas da série "Breaking Bad" com a possibilidade de pesquisar pelo nome, classificar e filtrar por temporada. Adicionalmente, disponibilizamos a funcionalidade de filtrar os personagens da série "Better Call Saul", o que é uma informação relevante para nossos usuários. Além disso, há links adicionais para os trailers das séries, que redirecionam os usuários para o YouTube.
+
+3. Ao clicar no card, ele gira e no verso, apresenta algumas informações adicionais, como data de aniversário, o status do personagem, nome do protagonista, entre outros. 
 
 ## 5. Responsividade :iphone:
 
 Criamos uma interface responsiva 
 
-## 6. Equipe do Projeto :busts_in_silhouette:
+## 6. Testes Unitários :ok_hand:
+
+Elaboramos nossos testes unitários para as funções encarregadas de processar, filtrar e ordenar os dados, assim como calcular estatísticas. 
+Nossos testes cobriram 100% de statements (sentenças), functions (funções), lines (linhas), e branches (ramos) do arquivo src/data.js.
+
+image.png
+
+## 7. Equipe do Projeto :busts_in_silhouette:
 
 <div align="center">
   
@@ -59,22 +69,23 @@ Criamos uma interface responsiva
   <img align="center" alt="Rafa-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="vscode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
   <img align="center" alt="Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+  <img align="center" alt="Jest" height="30" width="40" src="https://www.svgrepo.com/show/353930/jest.svg" />
   <br>
 
   Desenvolvido por 
   <br>
+   Myllena M. Martins <br>
+  [Linkedin](https://www.linkedin.com/in/myllenamirandamartins/) | [Github](https://github.com/myllenammartins)
+  <br>
   Nívia Miranda <br> 
   [Linkedin](https://www.linkedin.com/in/niviacristina/) | [Github](https://github.com/Nivicris)
-  <br>
-  Myllena M. Martins <br>
-  [Linkedin](https://www.linkedin.com/in/myllenamirandamartins/) | [Github](https://github.com/myllenammartins)
-</div>
+  </div>
 
 
 
 ***
 
-## 7. Checklist
+## 8. Checklist :white_check_mark:
 
 * [:star: ] Usar VanillaJS.
 * [:star: ] Passa pelo linter (`npm run pretest`)

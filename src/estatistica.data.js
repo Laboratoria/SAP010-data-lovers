@@ -1,4 +1,4 @@
-import Promise from 'promise-polyfill'; // pollyfill, detectar que o navegador não tem suporte e vai implementar na hora usando funções disponíveis para aquele navegador, e vai fazer com que seja possível usar o recurso com a mesma interface inclusive.
+//import Promise from 'promise-polyfill'; // pollyfill, detectar que o navegador não tem suporte e vai implementar na hora usando funções disponíveis para aquele navegador, e vai fazer com que seja possível usar o recurso com a mesma interface inclusive.
 
 
 export function fetchData() {

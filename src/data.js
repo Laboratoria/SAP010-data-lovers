@@ -23,4 +23,10 @@ const data = {
   }
 };
 
+//FILTROS
+export function filterByDirector(movies, director) {
+  return movies.filter(movie => movie.director === director);
+}
+
+
 export { data };

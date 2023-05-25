@@ -25,7 +25,43 @@
   <main id="">
     <div class="container">
       <div id="filters">
-        <div>
+        <!-- Exemplo de HTML para o filtro de diretor -->
+<label for="director-filter" data-filter="director" id="director-label">Diretor:</label>
+<select id="director-filter"></select>
+
+<!-- Exemplo de HTML para o filtro de gênero -->
+<label for="gender-filter" data-filter="gender" id="gender-label">Gênero:</label>
+<select id="gender-filter">
+  <option value="all">Todos</option>
+  <option value="male">Masculino</option>
+  <option value="female">Feminino</option>
+  <!-- Outros gêneros... -->
+</select>
+
+<!-- Exemplo de HTML para o filtro de filme -->
+<label for="movie-filter" data-filter="movie" id="movie-label">Filme:</label>
+<select id="movie-filter"></select>
+
+<!-- Exemplo de HTML para o label de ordenação de A-Z -->
+<label for="sort-az" id="sort-az-label">A-Z</label>
+<input type="radio" name="sort" id="sort-az">
+
+<!-- Exemplo de HTML para o label de ordenação de Z-A -->
+<label for="sort-za" id="sort-za-label">Z-A</label>
+<input type="radio" name="sort" id="sort-za">
+
+<!-- Exemplo de HTML para o label de ordenação por ano de lançamento -->
+<label for="sort-release-year" id="sort-release-year-label">Ano de Lançamento</label>
+<input type="radio" name="sort" id="sort-release-year">
+
+<!-- Exemplo de HTML para o label de ordenação por nota do Rotten Tomatoes -->
+<label for="sort-rotten-tomatoes" id="sort-rotten-tomatoes-label">Rotten Tomatoes</label>
+<input type="radio" name="sort" id="sort-rotten-tomatoes">
+
+<!-- Exemplo de HTML para o botão de calcular estatísticas -->
+<button id="calculate-stats-button">Calcular Estatísticas</button>
+
+        <!--<div>
           <label for="movie-filter">Filtrar por filme:</label>
           <select id="movie-filter"></select>
         </div>
@@ -49,7 +85,7 @@
             <option value="year">Ano de lançamento</option>
           </select>
         </div>
-      </div>
+      </div>-->
       <div id="cards-container"></div>
     </div>
   

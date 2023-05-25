@@ -90,7 +90,7 @@ fetch('./data/ghibli/ghibli.json')
     console.error('Ocorreu um erro ao carregar os dados:', error);
   });
 
-  //FILTROS 
+//FILTROS 
 
   
 document.addEventListener("DOMContentLoaded", function() {

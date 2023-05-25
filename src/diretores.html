@@ -4,14 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icons8-totoro-48.ico"/>
     <title>Studio Ghibli</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body>
-    <header id="">
+    <header id="header">
+      <a><img class="logo-icon" src="img/totoro.gif"></a>
       <h1>Diretores</h1>
-      <nav>
-        <ul>
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="studio.html">O Estúdio Ghibli</a></li>
           <li><a href="diretores.html">Diretores</a></li>

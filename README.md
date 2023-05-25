@@ -68,4 +68,3 @@ Funções (params, args, return)
 Testes unitários (testes unitários)
 
 ## 5. Tecnologias Utilizadas
-

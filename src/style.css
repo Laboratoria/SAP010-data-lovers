@@ -8,29 +8,37 @@
 body{
     background-image: url('https://giffiles.alphacoders.com/312/3123.gif');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
     padding:0;
     margin:0;
 }
 
-.btHome{
+.btHome {
     position: relative;
-    left: 720px;
+    display: inline-block;
+    font-size: 1.2rem;
+    left: 50%;
+    font-weight: bold;
+    transform: translateX(-50%);
     top: 150px;
-    width: 150px;
-    height: 30px;
+    width: fit-content; 
+    padding: 10px 20px; 
     cursor: pointer;
     border: 10px;
     border-radius: 9px;
-    color: aliceblue;
+    color: white;
     text-decoration: none;
-    outline: none;
-    transition: 1s;
+    transition: 0.2s;
 }
+    
 
 .btHome:hover {
     background: #a6dadaa4;
+    /* color: #3a593d; */
+    
 }
 
 .btHome a {
@@ -41,9 +49,31 @@ body{
     position: absolute;
     top: 80px;
     left: 450px;
-    width: 80%;
+    width: 80vw;
     max-width: 400px;
     height: auto;
     color: white;
     font-family: 'Noto Sans', sans-serif;
+    /* font-size: 2rem; */
+
+    
+    display: block;
+   
 }
+
+@media (max-width: 1200px) {
+    .btHome {
+
+    }
+    .fraseHome {
+        left: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .fraseHome {
+        left: 200px;
+    }
+}
+

@@ -11,8 +11,8 @@ Para este projeto, desenvolvemos uma aplicação responsiva que fornece dados so
 ## Índice
 
 * [1. Resumo do projeto](#1-Resumo_do_projeto) 
-* [2. Protótipo](#2-Protótipo)
-* [3. Teste de Usuabilidade](#3-Teste_de_Usuabilidade)
+* [2. História do Usuário](#2-História_do_Usuário)
+* [3. Protótipo](#3-Protótipo)
 * [4. Interface](#Interface)
 * [5. Responsividade](#5-Responsividade)
 * [6. Testes Unitários](#6-Testes_Unitários)
@@ -26,14 +26,22 @@ Para este projeto, desenvolvemos uma aplicação responsiva que fornece dados so
 
 O objetivo desse projeto é construir uma página web que permita visualizar, filtrar, ordenar e realizar cálculos agregados do conjunto de dados da série Breaking Bad. Além disso, atender as necessidades do usuário, fornecendo informações relevantes e uma interface intuitiva.
 
+## 2. História do Usuário
 
-## 2. Protótipo :pen:
+Fazendo uma investigação (pesquisa) sobre as informações que nossos usuários podem precisar, descobrimos que os dados de maior interesse são:
+
+1. Informações sobre os personagens como nome, apelido, ocupação e nome da atriz ou ator que o interpreta.
+
+2. Além dessas informações, Breaking Bad coexiste com Better Call Saul; para nossos usuários é importante poder ver a lista de personagens que aparecem em cada uma das séries.
+
+Para isso, adicionamos dois filtros, um para ordenar de A-Z ou Z-A e outro para filtrar da temporada 1 a 5, mais uma opção de selecionar para visualizar quais personagens aparecem na série Better Call Soul. Além disso, adicionamos uma barra de pesquisa e dois botões para direcionar o usuário para outra guia com o trailer das séries (breaking Bad e Better Call Soul).
+
+## 3. Protótipo :pen:
 
 Em uma folha de papel, criamos o esboço inicial do design, considerando todos os elementos e funcionalidades que gostaríamos de incorporar. Em seguida, utilizamos o **Figma** e desenvolvemos um protótipo de alta fidelidade para apresentar o que consideramos o ideal para o nosso usuário.
 
-![Protótipo baixa fidelidade](../Desktop/imagem%20prototipo.jpg)
 
-## 3. Teste de Usuabilidade
+![Protótipo de baixa fidelidade](src/img/imagem%20prototipo.jpg)![Protótipo de Alta Fidelidade](src/img/Prot%C3%B3tipo%20de%20alta%20fidelidade.jpg)
 
 
 ## 4. Interface :computer:
@@ -42,20 +50,28 @@ A interface criada considerou todas as recomendações recebidas pelos usuários
 
 1. Na primeira tela, convidamos os nossos usuários a conhecer melhor os personagens da série. 
 
+![Tela 1](src/img/interface%201.jpg)
+
 2. Na página seguinte, exibimos por meio de cards, todos os protagonistas da série "Breaking Bad" com a possibilidade de pesquisar pelo nome, classificar e filtrar por temporada. Adicionalmente, disponibilizamos a funcionalidade de filtrar os personagens da série "Better Call Saul", o que é uma informação relevante para nossos usuários. Além disso, há links adicionais para os trailers das séries, que redirecionam os usuários para o YouTube.
+
+![Tela 2](src/img/interface%202.jpg)
 
 3. Ao clicar no card, ele gira e no verso, apresenta algumas informações adicionais, como data de aniversário, o status do personagem, nome do protagonista, entre outros. 
 
+![Tela 3](src/img/interface%203.jpg)
+
 ## 5. Responsividade :iphone:
 
-Criamos uma interface responsiva 
+Criamos uma interface responsiva que poderá ser visualizada sem problemas a partir de diversos tamanhos de tela: celulares, tablets, notebooks, etc.
+
+
 
 ## 6. Testes Unitários :ok_hand:
 
 Elaboramos nossos testes unitários para as funções encarregadas de processar, filtrar e ordenar os dados, assim como calcular estatísticas. 
 Nossos testes cobriram 100% de statements (sentenças), functions (funções), lines (linhas), e branches (ramos) do arquivo src/data.js.
 
-image.png
+![NPM Test](src/img/imagem%20test.jpg)
 
 ## 7. Equipe do Projeto :busts_in_silhouette:
 

@@ -30,26 +30,26 @@ Usuario 2 :
 ### Desenho de interface do usuário
 Interface finalizada para o usuário :
 
-<p>
+
 ![Prototipo](./src/telasite.PNG)
-<p>
+
 ![Prototipo](./src/telasite2.PNG)
 
 #### Protótipo de baixa fidelidade
 
 Para desenvolver nosso projeto , o 1° passo que realizamos foi o desenho de baixa fidelidade de como seria o website.
-<p>
+
 ![Prototipo](./src/20230522_110424.jpg)
-<p>
+
 ![Prototipo](./src/20230522_110438.jpg)
 
 #### Protótipo de alta fidelidade
 
 O passo seguinte foi realizar protótipo de alta fidelidade fazendo que o projeto seguisse fielmente ele.
 
-<p>
+
 ![Prototipo](./src/fotofigma1.PNG)
-<p>
+
 ![Prototipo](./src/figma2.PNG)
 
 ### 4. Objetivos de aprendizagem

@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-   
-    <header>
-     <h1>Pokepídia</h1>
 
-     
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
 
-    <main>
+<body>
+
+  <header>
+    <img src="imagens/pokepídia-title.png">
+  </header>
+
+  <main>
+    <div class="filtro-pokepidia">
       <select id="tipo">
         <option selected="" value="planta">Planta</option>
         <option value="fogo">Fogo</option>
@@ -22,7 +26,7 @@
         <option value="normal">Normal</option>
         <option value="venenoso">Venenoso</option>
         <option value="eletrico">Elétrico</option>
-        <option value="lutador">lutador</option>
+        <option value="lutador">Lutador</option>
         <option value="psíquico">Psíquico</option>
         <option value="pedra">Pedra</option>
         <option value="voador">Voador</option>
@@ -32,7 +36,6 @@
         <option value="metálico">Metálico</option>
         <option value="sombrio">Sombrio</option>
         <option value="fada">Fada</option>
-        
       </select>
 
       <select id="ordem">
@@ -42,12 +45,14 @@
         <option value="nameDesc">Z-A</option>
       </select>
 
-     
-    <p>testando</p>
+    </div>
+
+    <p></p>
     <h1></h1>
     <div id="root"></div>
-    </main>
+  </main>
 
-    <script src="main.js" type="module"></script>
-  </body>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

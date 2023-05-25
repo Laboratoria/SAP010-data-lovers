@@ -1,33 +1,36 @@
-@keyframes piscar {
-  0% {
-    visibility: hidden;
-  }
-  50% {
-    visibility: visible;
-  }
-}
-
-.piscante {
-  animation: piscar 1s infinite;
-}
-
-body{
-  width: 100%;
+body {
+  width: 99%;
   height: 100%;
-  background-image: url(imagens/fundo.jpg);
+  background-image: url(imagens/fundo.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
 
-main{
+header {
+  text-align: center;
+}
+
+main {
   background-color: #ffff;
-  border-radius: 2px;
-  width: 80%;
-  height: 90%;
+  border-radius: 8px;
+  width: 90%;
+  height: auto;
   align-content: center;
   text-align: center;
-  margin-left: auto ;
+  margin-left: auto;
   margin-right: auto;
-  
+  padding: 1em;
+
+}
+
+.filtro-pokepidia {
+  text-align: right;
+}
+
+#tipo,
+#ordem {
+  background-color: rgba(106, 217, 106, 0.858);
+  color: black;
+  border-radius: 12px;
 }

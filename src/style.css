@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ysabeau:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url('https://giffiles.alphacoders.com/312/3123.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    padding:0;
+    margin:0;
+}
+
+.btHome{
+    position: relative;
+    left: 720px;
+    top: 150px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border: 10px;
+    border-radius: 9px;
+    color: aliceblue;
+    text-decoration: none;
+    outline: none;
+    transition: 1s;
+}
+
+.btHome:hover {
+    background: #a6dadaa4;
+}
+
+.btHome a {
+    text-decoration: none;
+}
+
+.fraseHome {
+    position: absolute;
+    top: 80px;
+    left: 450px;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}

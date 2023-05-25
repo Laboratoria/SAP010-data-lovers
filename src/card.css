@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ysabeau:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body{
+    background-image: url("img/brba.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin:0;
+    padding:0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    z-index: -1;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+
+h1{
+    opacity: .9;
+    text-align: center;
+    color: white;
+    padding: 3.2rem;
+    max-width: 100%;
+    margin: auto;
+    font-size: 37px;
+}
+
+.busca{
+    padding: 6px;
+    position: absolute;
+    top: 125px;
+    left: 31%;
+    height: 30px;
+    width: 500px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.filter{
+    background-color: white;
+    color: black;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    position: absolute;
+    top: 170px;
+    left: 60%;
+    transform: translateX(-50%);
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    width: 150px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+.order{
+    background-color:white;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: 170px;
+    left: 40%;
+    transform: translateX(-50%);
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    width: 150px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.btnBCS{
+    position: absolute;
+    top: 30px;
+    left: 90%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 25px;
+    border: 10px;
+    border-radius: 40px;
+}
+
+.btnBB{
+    position: absolute;
+    top: 60px;
+    left: 90%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 25px;
+    border: 10px;
+    border-radius: 40px;
+}
+
+.porcentagem{
+    color: white;
+    white-space: nowrap;
+    border-radius: 17px;
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    padding: 1rem 0.2rem;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: auto;
+}
+
+/* as linhas abaixo é referente a estilização dos cards*/
+
+main{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 5%;
+    align-items: start;
+}
+
+.cards{
+    border-radius: 15px ;
+    cursor: pointer;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.438);
+}
+
+.flip-container{
+    width: 300px;
+    height: 450px;
+    perspective: 1000px; /* Define a perspectiva 3D */
+}
+
+.frontCard, 
+.backCard{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Oculta o verso do card */
+    transition: transform 0.6s; /* Adiciona uma transição suave */
+}
+
+.frontCard{
+    background-color: white;
+    padding: 16;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px ;
+    text-align: center;
+
+    transform: rotateY(0deg); /* Define a rotação inicial */
+}
+
+.frontCard:hover{
+    background-color: #b5b8b8e0;
+}
+
+.backCard{
+    background-color: rgba(118, 153, 123, 0.678);
+    padding: 2.0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px ;
+
+    transform: rotateY(180deg); /* Define a rotação inicial */
+}
+
+.backCard:hover{
+    background-color: #b5b8b8e0;
+}
+
+.backCard li{
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.backCard ul li {
+    margin-bottom: 8px;
+}
+
+.flip-container.flipped .frontCard {
+    transform: rotateY(180deg); /* Rotaciona para exibir o back card */
+}
+  
+.flip-container.flipped .backCard {
+    transform: rotateY(0deg); /* Rotaciona para exibir o front card */
+}
+
+h2{
+    opacity: .9;
+    text-align: center;
+    color: rgb(31, 30, 30);
+    padding: 3.2rem;
+    max-width: 100%;
+    margin: auto; 
+}
+
+#nome{
+    color: rgb(26, 25, 25);
+}
+
+.img-card {
+    max-width: 200px;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    padding: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container-card{
+        padding: 2%;
+    }
+
+    .frontCard {
+      flex: 0 0 calc(50% - 10px); /* Altera a largura dos cards para ocupar metade da largura em telas menores */
+      margin-right: 10px; /* Restaura o espaçamento horizontal entre os cards */
+    }}
+
+    .frontCard:nth-child(2n) {
+        margin-right: 0; /* Remove o espaçamento à direita para o último card de cada fileira em telas menores */
+      }
+
+/* rodapé */
+.footer{
+    background-color: rgba(255, 255, 255, 0.815);
+    color: #030303;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.title-footer{
+    padding: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.nome-aluna{
+    font-size: 16px;
+    padding: 8px 8px 0 8px;
+}
+
+.contato a{
+    font-size: 14px;
+}

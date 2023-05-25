@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Detalhes sobre os personagens</title>
+    <link rel="stylesheet" type="text/css" href="card.css" />
+    <link rel="icon" type="image-phg" href="https://img2.gratispng.com/20180328/pee/kisspng-walter-white-television-show-logo-amc-breaking-bad-5abba540e853e7.4609369915222469769516.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Busque pelo seu personagem</h1>
+    </header>
+    <main>
+    
+      <div class = "header-busca">
+
+        <input type="search" value="" placeholder="Buscar" class="busca" id="busca">
+
+        <select id="select-filter" class="filter">
+          <option value="" selected> Todos </option>
+          <option value ="better_call_saul_appearance">Personagens da série Better Call Saul</option>
+          <option value= "1"> Temporada 1 </option>
+          <option value= "2"> Temporada 2 </option>
+          <option value= "3"> Temporada 3 </option>
+          <option value= "4"> Temporada 4 </option>
+          <option value= "5"> Temporada 5 </option>
+        </select>
+
+        <select id="select-order" class="order">
+          <option value="" disabled selected> Ordenar </option>
+          <option value="a-z"> A - Z </option>
+          <option value="z-a"> Z - A </option>
+        </select>
+      </div>
+
+      <div id="root">
+        <section>
+          <p class="porcentagem" id="porcentagem-tela"></p>
+           <!-- essa classe armazena todos os cards -->
+           <div class="container-card" id="infoCards"></div>
+        </section>
+      </div>
+    </main>
+
+      <button class="btnBCS">
+        <a href="https://www.youtube.com/watch?v=FAdiEjeNRi0&ab_channel=NetflixBrasil" target="_blank"> Trailer de Better Call Saul</a>
+      </button>
+
+      <button class="btnBB">
+        <a href="https://www.youtube.com/watch?v=HhesaQXLuRY&ab_channel=TrailerBlend" target="_blank"> Trailer de Breaking Bad</a>
+      </button>
+
+      <footer class="footer">
+        <section class="title-footer">
+          <p><h4> Projeto desenvolvido ao decorrer do Bootcamp da <a href="https://www.laboratoria.la/br" target="_blank>"> Laboratória </a> </h4></p>
+          <p>Projeto Data-lovers</p>
+        </section>
+
+        <section class="contato">
+          <p class="nome-aluna">Nívia Miranda</p>
+          <i class="fab fa-github"></i>
+            <a href="https://github.com/Nivicris" target="_blank">GitHub</a> | <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/niviacristina/" target="_blank">Linkedin</a>
+        </section>
+
+        <section class="contato">
+          <p class="nome-aluna">Myllena M. Martins</p>
+          <i class="fab fa-github"></i>
+            <a href="https://github.com/myllenammartins"  target="_blank">GitHub</a> | <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/myllenamirandamartins/" target="_blank">Linkedin</a>
+        </section>
+      </footer>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

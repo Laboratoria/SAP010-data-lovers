@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+
 /* MENU HAMBURGUER */
 body,
 ul {
@@ -8,7 +14,6 @@ ul {
 a {
   color: rgb(9, 122, 244);
   text-decoration: none;
-  font-family: sans-serif;
 }
 
 a:hover {

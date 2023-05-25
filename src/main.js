@@ -63,33 +63,39 @@ const filterByFamily = document.querySelector("#filter-by-family");
 const filterByBorn = document.querySelector("#filter-by-born");
 const orderByname = document.querySelector("#order-by-name");
 
+
+
 // Manipulação de eventos
 searchInput.addEventListener("input", () => {
   const searchTerm = searchInput.value;
-  const filteredNames = searchName(characters.got, searchTerm);
+  const filteredNames = searchName(searchTerm, "fullName"); // Passa searchTerm como primeiro parâmetro e "fullName" como segundo parâmetro
   showCharacterCards(filteredNames);
 });
 
 filterByTitle.addEventListener("change", () => {
   const selectedTitle = filterByTitle.value;
-  const filteredTitles = searchTitle(characters.got, selectedTitle);
+  const filteredTitles = searchName(characters.got, selectedTitle);
   showCharacterCards(filteredTitles);
 });
 
 filterByFamily.addEventListener("change", () => {
   const selectedFamily = filterByFamily.value;
-  const filteredFamily = filterByFamilyName(characters.got, selectedFamily);
+  const filteredFamily = searchName(characters.got, selectedFamily);
   showCharacterCards(filteredFamily);
 });
 
 filterByBorn.addEventListener("change", () => {
   const selectedBorn = filterByBorn.value;
-  const filteredBorn = filterByBorn(characters.got, selectedBorn);
+  const filteredBorn = searchName(characters.got, selectedBorn);
   showCharacterCards(filteredBorn);
 });
 
 orderByname.addEventListener("change", () => {
   const selectedOrder = orderByname.value;
-  const orderedNames = orderByname(characters.got, selectedOrder);
+  const orderedNames = ordenarAZ(selectedOrder, characters.got);
   showCharacterCards(orderedNames);
 });
+
+// 
+
+

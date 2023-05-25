@@ -14,12 +14,12 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: white;
+    background-color:gray;
 }
 
 *::-webkit-scrollbar-thumb {
-    height: 100px;
-    border-radius: 50px;
+    height: 200px;
+    
 }
 
 *::-webkit-scrollbar {
@@ -232,7 +232,7 @@ select {
     grid-gap: 10px;
     gap: 50px;
     justify-items: center;
-    padding-top: 180px;
+    padding-top: 250px;
     padding-bottom: 50px;
 
 }
@@ -240,10 +240,11 @@ select {
 .card {
     width: 244px;
     height: 409px;
-    background: #0d0d0d;
-    padding: 10px;
+    background: rgba(13, 13, 13, 0.8);
+    padding: 20px;
     padding-bottom: 40px;
     position: relative;
+
 }
 
 .card img {
@@ -267,7 +268,6 @@ select {
 
 
 .card-container {
-        min-width: 500px {
+    min-width: 500px;
         justify-content: flex-start;
     }
-}

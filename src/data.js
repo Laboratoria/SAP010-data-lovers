@@ -23,22 +23,22 @@ export function searchName(searchValue, searchType) {
 
 //função que ordena os nomes de A a Z
 
-export function ordenarAZ(value, character){
+export function ordenarAZ(value, character) {
   const ordenarCharacterAZ = [...character]; //cria uma cópia da array para não modificar a original 
-  if(value === 'a-z'){
-    ordenarCharacterAZ.sort(function (a, b){
-      if(a.name < b.name){
+  if (value === 'a-z') {
+    ordenarCharacterAZ.sort(function (a, b) {
+      if (a.fullName < b.fullName) {
         return -1;
       }
     })
-  }else{
-    ordenarCharacterAZ.sort(function (a, b){
-      if(a.name > b.name){
+  } else {
+    ordenarCharacterAZ.sort(function (a, b) {
+      if (a.fullName > b.fullName) {
         return -1;
       }
     })
   }
-  return ordenarCharacterAZ
+  return ordenarCharacterAZ;
 }
 
 
@@ -54,13 +54,9 @@ export function calculatePercentageByFamily(family, filteredNames) {
   return `A porcentagem de personagens por família é de ${percentage.toFixed(2)}%`;
 }
 
-const family = ['Stark', 'Lannister', 'Targaryen', 'Baratheon'];
+const familys = ['Stark', 'Lannister', 'Targaryen', 'Baratheon'];
 const filteredNames = ['Jon Snow', 'Tyrion Lannister', 'Daenerys Targaryen'];
 
-const percentage = calculatePercentageByFamily(family, filteredNames);
+const percentage = calculatePercentageByFamily(familys, filteredNames);
 console.log(percentage);
 
-export { 
-  searchName, 
-  ordenarAZ,
-  calculatePercentageByFamily }

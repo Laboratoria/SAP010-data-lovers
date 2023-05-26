@@ -268,7 +268,5 @@ select {
 
 
 .card-container {
-    min-width: 500px {
-        justify-content: flex-start;
+    min-width: 500px;
     }
-}

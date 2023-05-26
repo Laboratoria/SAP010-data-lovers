@@ -1,5 +1,6 @@
   import { data } from "./data.js";
-  import { filterByDirector } from './data.js';
+  import { convertToArray, filterByDirector, filterByGender, filterCharactersByMovie, sortByTitleAZ, sortByTitleZA, sortByReleaseYear, sortByRottenTomatoes, calculateGenderStats } from './data.js';
+  import { movies } from './data.js';
   
   // MENU HAMBURGUER
 
@@ -21,250 +22,166 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
- //FILTROS TESTE
-  
- function filterMoviesByDirector() {
-  const selectedDirector = directorFilter.value;
-  const filteredMovies = filterByDirector(movies, selectedDirector);
-  showMovies(filteredMovies);
-}
-const directorFilter = document.getElementById ('director-filter')
-directorFilter.addEventListener('change', filterMoviesByDirector);
-  
-  //FILTROS  
-  
-    
-  /* document.addEventListener("DOMContentLoaded", function() {
-    // Filtrar por filme
-    const movieFilter = document.getElementById("movie-filter");
-    movieFilter.addEventListener("change", function() {
-      const selectedMovie = movieFilter.value;
-      filterMovies(selectedMovie);
-    });
-    
-    // Filtrar por diretor
+//FILTROS
+
+async function loadDirectors() {
+  try {
+    const directors = await data.getDirectors();
     const directorFilter = document.getElementById("director-filter");
-    directorFilter.addEventListener("change", function() {
-      const selectedDirector = directorFilter.value;
-      filterDirectors(selectedDirector);
-    });  */
-    
-    // Ordenar filmes
-  /*   const sortOrder = document.getElementById("sort-order");
-    sortOrder.addEventListener("change", function() {
-      const selectedOrder = sortOrder.value;
-      sortMovies(selectedOrder);
-    });
-    
-    // Filtrar por gênero
-    const genderFilter = document.getElementById("gender-filter");
-    genderFilter.addEventListener("change", function() {
-      const selectedGender = genderFilter.value;
-      filterGender(selectedGender);
-    });
-    
-    // Carregar filmes e diretores
-    loadMovies();
-    loadDirectors();
-  }); */
+    while (directorFilter.firstChild) {
+      directorFilter.removeChild(directorFilter.firstChild);
+    }
   
-  /* async function loadMovies() {
+    // Adicionar opções
+    const allOption = document.createElement("option");
+    allOption.value = "all";
+    allOption.textContent = "Todos";
+    directorFilter.appendChild(allOption);
+  
+    directors.forEach(function(director) {
+      const option = document.createElement("option");
+      option.value = director;
+      option.textContent = director;
+      directorFilter.appendChild(option);
+    });
+  } catch (error) {
+    console.log('Ocorreu um erro ao carregar os diretores:', error);
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const directorFilter = document.getElementById('director-filter');
+
+  directorFilter.addEventListener('change', function() {
+    const selectedDirector = directorFilter.value;
+    const filteredMovies = filterByDirector(movies, selectedDirector);
+    showMovies(filteredMovies);
+    console.log(filteredMovies);
+  });
+
+
+  loadDirectors();
+  loadMovies();
+  
+
+  async function loadMovies() {
     try {
       const movies = await data.getMovies();
-      if (!Array.isArray(movies)) {
-        console.log('Os dados dos filmes não são válidos.');
-      }
-      
-      const movieFilter = document.getElementById("movie-filter");
-    
-      // Limpar opções existentes
+      const movieFilter = document.getElementById("movieFilter");
       while (movieFilter.firstChild) {
         movieFilter.removeChild(movieFilter.firstChild);
       }
-    
+      
       // Adicionar opções
       const allOption = document.createElement("option");
       allOption.value = "all";
       allOption.textContent = "Todos";
       movieFilter.appendChild(allOption);
     
-      movies.forEach(function(movie) {
+      movies.forEach(function(movies) {
         const option = document.createElement("option");
-        option.value = movie.title;
-        option.textContent = movie.title;
+        option.value = movies.title;
+        option.textContent = movies.title;
         movieFilter.appendChild(option);
-      });
-    
-      // Atualizar a visualização dos filmes
-      showMovies(movies);
-    } catch (error) {
-      console.log('Ocorreu um erro ao carregar os filmes:', error);
-    }
-  }
-  
-  async function loadDirectors() {
-    try {
-      const directors = await data.getDirectors();
-      const directorFilter = document.getElementById("director-filter");
-    
-      // Limpar opções existentes
-      while (directorFilter.firstChild) {
-        directorFilter.removeChild(directorFilter.firstChild);
-      }
-    
-      // Adicionar opções
-      const allOption = document.createElement("option");
-      allOption.value = "all";
-      allOption.textContent = "Todos";
-      directorFilter.appendChild(allOption);
-    
-      directors.forEach(function(director) {
-        const option = document.createElement("option");
-        option.value = director;
-        option.textContent = director;
-        directorFilter.appendChild(option);
       });
     } catch (error) {
       console.log('Ocorreu um erro ao carregar os diretores:', error);
     }
   }
   
-  function filterMovies(selectedMovie) {
-    const movies = data.getMovies();
-    
-    if (selectedMovie === "all") {
-      showMovies(movies);
-    } else {
-      const filteredMovies = movies.filter(function(movie) {
-        return movie.title === selectedMovie;
-      });
-      showMovies(filteredMovies);
-    }
-  }
-  
-  function filterDirectors(selectedDirector) {
-    const movies = data.getMovies();
-    
-    if (selectedDirector === "all") {
-      showMovies(movies);
-    } else {
-      const filteredMovies = movies.filter(function(movie) {
-        return movie.director === selectedDirector;
-      });
-      showMovies(filteredMovies);
-    }
-  }
-  
-  function sortMovies(selectedOrder) {
-    const movies = data.getMovies();
-    
-    if (selectedOrder === "az") {
-      movies.sort(function(a, b) {
-        return a.title.localeCompare(b.title);
-      });
-    } else if (selectedOrder === "za") {
-      movies.sort(function(a, b) {
-        return b.title.localeCompare(a.title);
-      });
-    } else if (selectedOrder === "year") {
-      movies.sort(function(a, b) {
-        return a.release_date - b.release_date;
-      });
-    }
-    
-    showMovies(movies);
-  }
-  
-  function filterGender(selectedGender) {
-    const movies = data.getMovies();
-    
-    if (selectedGender === "all") {
-      showMovies(movies);
-    } else {
-      const filteredMovies = movies.filter(function(movie) {
-        const femaleCount = movie.people.filter(function(person) {
-          return person.gender === "Female";
-        }).length;
-        const maleCount = movie.people.filter(function(person) {
-          return person.gender === "Male";
-        }).length;
-        
-        if (selectedGender === "female") {
-          return femaleCount > maleCount;
-        } else if (selectedGender === "male") {
-          return maleCount > femaleCount;
-        }
-      });
+     window.addEventListener('DOMContentLoaded', loadMovies); {
+        const movieFilter = document.getElementById('movieFilter');
       
-      showMovies(filteredMovies);
-    }
-  }
-  
-  function showMovies(movies) {
-    const cardsContainer = document.getElementById("cards-container");
-    
-    // Limpar cards existentes
-    while (cardsContainer.firstChild) {
-      cardsContainer.removeChild(cardsContainer.firstChild);
-    }
-    
-    movies.forEach(function(movie) {
-      const card = createFilterCard(movie);
-      cardsContainer.appendChild(card);
-    });
-  } */
-  
-  //function createFilterCard(movie) {
-    /* const card = document.createElement("div");
-    card.classList.add("card");
-    
-    const front = document.createElement("div");
-    front.classList.add("front");
-    
-    const image = document.createElement("img");
-    image.src = movie.poster;
-    
-    const releaseDate = document.createElement("p");
-    releaseDate.textContent = "Ano de lançamento: " + movie.release_date;
-    
-    const title = document.createElement("h3");
-    title.textContent = movie.title;
-    
-    front.appendChild(image);
-    front.appendChild(title);
-    front.appendChild(releaseDate);
-    
-    
-    const back = document.createElement("div");
-    back.classList.add("back");
-    
-    const description = document.createElement("p");
-    description.textContent = movie.description;
-    
-    back.appendChild(description);
-    
-    card.appendChild(front);
-    card.appendChild(back);  */
-    
-    /* Adicionar função de flip ao card
-    card.addEventListener("click", function() {
-      card.classList.toggle("flipped");
-    });
-    
-    return card;
-  } /*
-   
-  
-  /*Carregar dados de um arquivo JSON
-  fetch('./data/ghibli/ghibli.json')
-    .then(ghibli => ghibli.json())
-    .then(data => {
-      for(let i = 0; i < data.films.length; i++ ){
-        const filme = data.films[i];
-        console.log(filme);
-        createMovieCard(filme);
+        movieFilter.addEventListener('change', function() {
+          const selectedMovie = movieFilter.value;
+          const filteredCharacter = filterCharactersByMovie(movies, selectedMovie);
+          showCharacter(filteredCharacter);
+          console.log(filteredCharacter);
+        })
       }
-    })
-    .catch(error => {
-      console.error('Ocorreu um erro ao carregar os dados:', error);
-    });*/
+  
+   
+
+  function showMovies(movies) {
+    const moviesContainer = document.getElementById('cards-container');
+  moviesContainer.innerHTML = ''; // Limpa o conteúdo atual
+
+  movies.forEach(movie => {
+    const movieCard = createMovieCard(movie);
+    moviesContainer.appendChild(movieCard);
+  });
+}
+
+function createMovieCard(movie) {
+  const card = document.createElement('div');
+  card.classList.add('movie-card');
+
+  // Frente do card
+  const front = document.createElement('div');
+  front.classList.add('card-front');
+  front.innerHTML = `
+    <img src="${movie.poster}" alt="${movie.title}" />
+    <h3>${movie.title}</h3>
+    <h4>Ano de Lançamento: ${movie.release_date}</h4>
+  `;
+
+  // Verso do card
+  const back = document.createElement('div');
+  back.classList.add('card-back');
+  back.innerHTML = `
+    <h3>${movie.description}</h3>
+    <h4>Diretor: ${movie.director}</h4>
+    <h4>Nota no Rotten Tomatoes: ${movie.rt_score}</h4>
+  `;
+
+  card.appendChild(front);
+  card.appendChild(back);
+
+  // Adicione qualquer lógica adicional para interatividade, como o efeito de flip do card
+
+  return card;
+}
+
+
+  function showCharacter(movies) {
+    const characterContainer = document.getElementById('cards-container');
+  characterContainer.innerHTML = ''; // Limpa o conteúdo atual
+
+  movies.forEach(charac => {
+    const characterCard = createCharacterCard(charac);
+    characterContainer.appendChild(characterCard);
+  });
+}
+
+function createCharacterCard(charac) {
+  const card = document.createElement('div');
+  card.classList.add('character-card');
+
+  // Frente do card
+  const front = document.createElement('div');
+  front.classList.add('card-front');
+  front.innerHTML = `
+    <img src="${charac.img}" alt="${charac.name}" />
+    <h3>${charac.name}</h3>
+    <h4>Idade: ${charac.age}</h4>
+  `;
+
+  // Verso do card
+  const back = document.createElement('div');
+  back.classList.add('card-back');
+  back.innerHTML = `
+    <h4>Espécie: ${charac.specie}</h4>
+    <h4>Gênero: ${charac.gender}</h4>
+    <h4>Cor dos Olhos: ${charac.eye_color}</h4>
+    <h4>Cor do Cabelo: ${charac.hair_color}</h4>
+  `;
+
+  card.appendChild(front);
+  card.appendChild(back);
+
+  // Adicione qualquer lógica adicional para interatividade, como o efeito de flip do card
+
+  return card;
+}
+});

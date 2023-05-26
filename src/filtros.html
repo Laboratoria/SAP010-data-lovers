@@ -30,71 +30,47 @@
   <main id="">
     <div class="container">
       <div id="filters">
+        <label for="search" data-filter="films" id="search-label">Pesquisar:</label>
+        <input type="text" id="search"></input>
+        <button id="searchButton">Ok</button>
         <!-- Exemplo de HTML para o filtro de diretor -->
 <label for="director-filter" data-filter="director" id="director-label">Diretor:</label>
 <select id="director-filter"></select>
 
+<!-- Exemplo de HTML para o filtro de filme -->
+<label for="movieFilter" data-filter="movie" id="movie-label">Personagens por Filme:</label>
+<select id="movieFilter"></select>
+
 <!-- Exemplo de HTML para o filtro de gênero -->
-<label for="gender-filter" data-filter="gender" id="gender-label">Gênero:</label>
-<select id="gender-filter">
+<label for="genderFilter" data-filter="gender" id="gender-filter">Gênero:</label>
+<select id="genderFilter">
   <option value="all">Todos</option>
   <option value="male">Masculino</option>
   <option value="female">Feminino</option>
   <!-- Outros gêneros... -->
 </select>
 
-<!-- Exemplo de HTML para o filtro de filme -->
-<label for="movie-filter" data-filter="movie" id="movie-label">Filme:</label>
-<select id="movie-filter"></select>
-
 <!-- Exemplo de HTML para o label de ordenação de A-Z -->
-<label for="sort-az" id="sort-az-label">A-Z</label>
-<input type="radio" name="sort" id="sort-az">
+<label for="sortAZButton" id="sort-az-label">A-Z</label>
+<input type="radio" name="sort" id="sortAZButton">
 
 <!-- Exemplo de HTML para o label de ordenação de Z-A -->
-<label for="sort-za" id="sort-za-label">Z-A</label>
-<input type="radio" name="sort" id="sort-za">
+<label for="sortZAButton" id="sort-za-label">Z-A</label>
+<input type="radio" name="sort" id="sortZAButton">
 
 <!-- Exemplo de HTML para o label de ordenação por ano de lançamento -->
-<label for="sort-release-year" id="sort-release-year-label">Ano de Lançamento</label>
-<input type="radio" name="sort" id="sort-release-year">
+<label for="sortReleaseYearButton" id="sort-release-year-label">Ano de Lançamento</label>
+<input type="radio" name="sort" id="sortReleaseYearButton">
 
 <!-- Exemplo de HTML para o label de ordenação por nota do Rotten Tomatoes -->
-<label for="sort-rotten-tomatoes" id="sort-rotten-tomatoes-label">Rotten Tomatoes</label>
-<input type="radio" name="sort" id="sort-rotten-tomatoes">
+<label for="sortRottenTomatoesButton" id="sort-rotten-tomatoes-label">Rotten Tomatoes</label>
+<input type="radio" name="sort" id="sortRottenTomatoesButton">
 
 <!-- Exemplo de HTML para o botão de calcular estatísticas -->
-<button id="calculate-stats-button">Calcular Estatísticas</button>
+<button id="calculateStatsButton">Calcular Estatísticas</button>
 
-        <!--<div>
-          <label for="movie-filter">Filtrar por filme:</label>
-          <select id="movie-filter"></select>
-        </div>
-        <div>
-          <label for="director-filter">Filtrar por diretor:</label>
-          <select id="director-filter"></select>
-        </div>
-        <div>
-          <label for="gender-filter">Filtrar personagens por gênero:</label>
-          <select id="gender-filter">
-            <option value="all">Todos</option>
-            <option value="female">Feminino</option>
-            <option value="male">Masculino</option>
-          </select>
-        </div>
-        <div>
-          <label for="sort-order">Ordenar por:</label>
-          <select id="sort-order">
-            <option value="az">A-Z</option>
-            <option value="za">Z-A</option>
-            <option value="year">Ano de lançamento</option>
-          </select>
-        </div>
-      </div>-->
       <div id="cards-container"></div>
     </div>
-  
-
   </main>
   <footer id="">Desenvolvido por Vitória Victor e Marina Cordeiro</footer>
   <script src="main.js" type="module"></script>

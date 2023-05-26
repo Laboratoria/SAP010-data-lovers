@@ -1,69 +1,187 @@
-//import { functionDiretor,  } from './data.js';
-// FILMOGRAFIA NOVA
+  import { data } from "./data.js";
+  import { convertToArray, filterByDirector, filterByGender, filterCharactersByMovie, sortByTitleAZ, sortByTitleZA, sortByReleaseYear, sortByRottenTomatoes, calculateGenderStats } from './data.js';
+  import { movies } from './data.js';
+  
+  // MENU HAMBURGUER
 
-function createMovieCard(films) {
-  const container = document.getElementById('movie-container');
-  const card = document.createElement("div");
-  card.classList.add("card");
-  
-  const front = document.createElement("div");
-  front.classList.add("front");
-  
-  const image = document.createElement("img");
-  image.src = films.poster;
-  
-  const title = document.createElement("h3");
-  title.textContent = films.title;  
-  
-  const releaseDate = document.createElement("p");
-  releaseDate.textContent = "Ano de lançamento: " + films.release_date;
-  
-  front.appendChild(image);
-  front.appendChild(title);
-  front.appendChild(releaseDate);
-  
-  const back = document.createElement("div");
-  back.classList.add("back");
+const btnMobile = document.getElementById('btn-mobile');
 
-  const director = document.createElement("h4");
-  director.textContent = "Diretor: " +  films.director;
-  
-  const description = document.createElement("p");
-  description.textContent =  "Sinopse: " + films.description;
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
+}
 
-  const score = document.createElement("p");
-  score.textContent = "Nota no Rotten Tomatoes: " +  films.rt_score;
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+
+//FILTROS
+
+async function loadDirectors() {
+  try {
+    const directors = await data.getDirectors();
+    const directorFilter = document.getElementById("director-filter");
+    while (directorFilter.firstChild) {
+      directorFilter.removeChild(directorFilter.firstChild);
+    }
   
-  back.appendChild(description);
-  back.appendChild(director)
-  back.appendChild(score)
+    // Adicionar opções
+    const allOption = document.createElement("option");
+    allOption.value = "all";
+    allOption.textContent = "Todos";
+    directorFilter.appendChild(allOption);
   
+    directors.forEach(function(director) {
+      const option = document.createElement("option");
+      option.value = director;
+      option.textContent = director;
+      directorFilter.appendChild(option);
+    });
+  } catch (error) {
+    console.log('Ocorreu um erro ao carregar os diretores:', error);
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const directorFilter = document.getElementById('director-filter');
+
+  directorFilter.addEventListener('change', function() {
+    const selectedDirector = directorFilter.value;
+    const filteredMovies = filterByDirector(movies, selectedDirector);
+    showMovies(filteredMovies);
+    console.log(filteredMovies);
+  });
+
+
+  loadDirectors();
+  loadMovies();
+  
+
+  async function loadMovies() {
+    try {
+      const movies = await data.getMovies();
+      const movieFilter = document.getElementById("movieFilter");
+      while (movieFilter.firstChild) {
+        movieFilter.removeChild(movieFilter.firstChild);
+      }
+      
+      // Adicionar opções
+      const allOption = document.createElement("option");
+      allOption.value = "all";
+      allOption.textContent = "Todos";
+      movieFilter.appendChild(allOption);
+    
+      movies.forEach(function(movies) {
+        const option = document.createElement("option");
+        option.value = movies.title;
+        option.textContent = movies.title;
+        movieFilter.appendChild(option);
+      });
+    } catch (error) {
+      console.log('Ocorreu um erro ao carregar os diretores:', error);
+    }
+  }
+  
+     window.addEventListener('DOMContentLoaded', loadMovies); {
+        const movieFilter = document.getElementById('movieFilter');
+      
+        movieFilter.addEventListener('change', function() {
+          const selectedMovie = movieFilter.value;
+          const filteredCharacter = filterCharactersByMovie(movies, selectedMovie);
+          showCharacter(filteredCharacter);
+          console.log(filteredCharacter);
+        })
+      }
+  
+   
+
+  function showMovies(movies) {
+    const moviesContainer = document.getElementById('cards-container');
+  moviesContainer.innerHTML = ''; // Limpa o conteúdo atual
+
+  movies.forEach(movie => {
+    const movieCard = createMovieCard(movie);
+    moviesContainer.appendChild(movieCard);
+  });
+}
+
+function createMovieCard(movie) {
+  const card = document.createElement('div');
+  card.classList.add('movie-card');
+
+  // Frente do card
+  const front = document.createElement('div');
+  front.classList.add('card-front');
+  front.innerHTML = `
+    <img src="${movie.poster}" alt="${movie.title}" />
+    <h3>${movie.title}</h3>
+    <h4>Ano de Lançamento: ${movie.release_date}</h4>
+  `;
+
+  // Verso do card
+  const back = document.createElement('div');
+  back.classList.add('card-back');
+  back.innerHTML = `
+    <h3>${movie.description}</h3>
+    <h4>Diretor: ${movie.director}</h4>
+    <h4>Nota no Rotten Tomatoes: ${movie.rt_score}</h4>
+  `;
+
   card.appendChild(front);
   card.appendChild(back);
-  container.appendChild(card);
-  
-  // Adicionar função de flip ao card
-  card.addEventListener("click", function() {
-    card.classList.toggle("flipped");
-    console.log(1);
-  });
-  
+
+  // Adicione qualquer lógica adicional para interatividade, como o efeito de flip do card
+
   return card;
 }
 
-// Carregar dados de um arquivo JSON
-fetch('./data/ghibli/ghibli.json')
-  .then(ghibli => ghibli.json())
-  .then(data => {
-    for(let i = 0; i < data.films.length; i++ ){
-      const filme = data.films[i];
-      console.log(filme);
-      createMovieCard(filme);
-    }
 
-    //criar um loop para converter o array for it
-    //createMovieCard(data.films);
-  })
-  .catch(error => {
-    console.error('Ocorreu um erro ao carregar os dados:', error);
+  function showCharacter(movies) {
+    const characterContainer = document.getElementById('cards-container');
+  characterContainer.innerHTML = ''; // Limpa o conteúdo atual
+
+  movies.forEach(charac => {
+    const characterCard = createCharacterCard(charac);
+    characterContainer.appendChild(characterCard);
   });
+}
+
+function createCharacterCard(charac) {
+  const card = document.createElement('div');
+  card.classList.add('character-card');
+
+  // Frente do card
+  const front = document.createElement('div');
+  front.classList.add('card-front');
+  front.innerHTML = `
+    <img src="${charac.img}" alt="${charac.name}" />
+    <h3>${charac.name}</h3>
+    <h4>Idade: ${charac.age}</h4>
+  `;
+
+  // Verso do card
+  const back = document.createElement('div');
+  back.classList.add('card-back');
+  back.innerHTML = `
+    <h4>Espécie: ${charac.specie}</h4>
+    <h4>Gênero: ${charac.gender}</h4>
+    <h4>Cor dos Olhos: ${charac.eye_color}</h4>
+    <h4>Cor do Cabelo: ${charac.hair_color}</h4>
+  `;
+
+  card.appendChild(front);
+  card.appendChild(back);
+
+  // Adicione qualquer lógica adicional para interatividade, como o efeito de flip do card
+
+  return card;
+}
+});

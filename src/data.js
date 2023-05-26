@@ -67,22 +67,22 @@ export function convertToArray(obj) {
     }
   }
 
-   //ainda não
-  
   // Função para ordenar os filmes em ordem alfabética de A-Z
   export function sortByTitleAZ(movies) {
   return movies.sort((a, b) => a.title.localeCompare(b.title));
   }
-  
+
   // Função para ordenar os filmes em ordem alfabética de Z-A
   export function sortByTitleZA(movies) {
   return movies.sort((a, b) => b.title.localeCompare(a.title));
   }
-  
+ 
   // Função para ordenar os filmes por ano de lançamento (do mais antigo ao mais recente)
   export function sortByReleaseYear(movies) {
   return movies.sort((a, b) => a.release_date - b.release_date);
   }
+
+  //AINDA NAO
   
   // Função para ordenar os filmes por nota do Rotten Tomatoes (do maior ao menor)
   export function sortByRottenTomatoes(movies) {

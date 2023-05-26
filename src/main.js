@@ -1,4 +1,4 @@
-import { filtrarNomes, filtrarNumeros } from "./data.js";
+import { filtrarNomes, filtrarNumeros, ordenaCartas } from "./data.js";
 import data from "./data/tarot/tarot.js";
 
 const burguer = document.getElementById("burguer");
@@ -13,12 +13,9 @@ function clickMenu() {
   //console.log(menuLista);
 };
 
-//console.log(example, data);
 const dadosTarot = data.cards;
-//const numeroCarta = data.cards;
-//console.log(dadosTarot);
-
 const root = document.getElementById("info-cards");
+const select = document.querySelector(".ordem");
 
 function infosDosCardsTela(cards) {
   root.innerHTML = cards
@@ -55,4 +52,8 @@ pesquisarNumero.addEventListener("input", (evento) => {
   infosDosCardsTela(filtrarNum);
 });
 
-//console.log(infosDosCardsTela);
+select.addEventListener("change", (evento) => {
+  const selecao = evento.target.value;
+  const cardsOrdenados = ordenaCartas(dadosTarot, selecao);
+  infosDosCardsTela(cardsOrdenados);
+})

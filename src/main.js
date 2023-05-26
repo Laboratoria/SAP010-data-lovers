@@ -10,27 +10,40 @@ function clickMenu() {
   } else {
     menu.style.display = "block";
   }
-  //console.log(menuLista);
+  
 };
 
 const dadosTarot = data.cards;
 const root = document.getElementById("info-cards");
 const select = document.querySelector(".ordem");
 
+
 function infosDosCardsTela(cards) {
   root.innerHTML = cards
     .map(
       (cards) => `
-    <div class="cards">
-                    <img alt="cartas-frente" class="card-img" src="${cards.img}">
-                <div class="informacoes">
-                    <ul class="back-cards-txt">
-                    <h1 id="nome-carta"><strong> ${cards.name}</strong></h1>
-                    <li><strong>Tipo: ${cards.type} </strong></li>
-                    <li><strong>Valor: ${cards.value} </strong></li>
-                    </ul>
-                </div>
-    </div>
+    <section class="lista-cards">
+      <ul>
+        <li class="cartao-cards>"
+          <div id="info" class="informacoes">
+            <p id="valor"> ${cards.value}</p>
+            <p id="nome"><strong> ${cards.name}</strong></p>
+            
+          </div>
+            <img alt="cartas-frente" class="card-img" src="${cards.img}">
+            <p id="tipo"> Arcano: ${cards.type}</p>
+              <ul class="sign">
+                <li class="sign-up"><strong>Meaning Up: ${cards.meaning_up} </strong></li>
+                <li class="sign-rev"><strong>Meaning Reverso: ${cards.meaning_rev} </strong></li>
+              </ul>
+              <p class="descricao"><strong>Description:</strong> ${cards.desc} </p>
+
+        </li>
+      </ul>
+    </section>
+                                      
+               
+   
 `
     )
     .join("");

@@ -1,13 +1,13 @@
 body {
+    font-family: 'Poppins', sans-serif;
     max-width: 1280px;
-}
-
-.card-img {
-    width: 100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #333333;
 }
 
 #burguer {
-    background:#8FBC8F ;
+    background: #8FBC8F;
     display: block;
     cursor: pointer;
     padding: 10px;
@@ -17,22 +17,144 @@ menu {
     display: none;
 }
 
-.cards {
+.container-card {
+
     display: flex;
     flex-wrap: wrap;
+    /*essa propriedade colocamos no pai para conseguirmos mexer nos filhos*/
     gap: 30px;
+    /*essa propriedade colocamos no pai para conseguirmos mexer nos filhos*/
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: red;
-    width: 200px;
-    border: 20px blue;
+
 }
 
-/* .informacoes {
+.card-img {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    margin: auto;
+}
+
+.cartao-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.cartao-cards {
+    /*background: yellow;
+    width: 300px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    background: red;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}*/
+
+#nome {
+    margin:1.5% 0;
+    display: block;
+    text-align: center;
+    align-items: center;
+
+}
+
+#valor {
+    margin: 0;
+    display: block;
+    text-align: center;
+    align-items: center;
+
+}
+
+#tipo {
+    margin: 1.5% 0;
+    display: block;
+    text-align: center;
+    align-items: center;
+
+}
+
+.lista-cards {
+    /*background-color: #d8e3ec;*/
+    width: 290px;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    /*por padrão ele alinha em linhas*/
+    flex-direction: column;
+    /*aqui ele vai alinhar em colunas*/
+    align-items: center;
+    /*alinha horizontalmente*/
+    gap: 15px;
+    /*transition: 0.2s ease-in-out;*/
+    /*efeito suave de entrada e saída, só vai funcionar se eu colocar o hoover*/
+    justify-content: center;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}
+
+ul li {
+    list-style: none;
+    padding: 0px 10px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+
+
+/* .cartao-cards .informacoes p {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+    background: #8FBC8F;
 } */
+
+/*.cartao-cards  {
+    width: 90px;
+    height: 90px;
+}*/
+
+.cartao-cards .sign {
+    display: flex;
+    gap: 15px;
+}
+
+.sign {
+    border: 5px #000;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.sign-up {
+    background-color: #7ac74c;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    font-size: 8px;
+}
+
+.sign-rev {
+    background-color: #df67ddfb;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    font-size: 8px;
+}
+
+.descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 8px;
+    padding-right: 10px;
+}

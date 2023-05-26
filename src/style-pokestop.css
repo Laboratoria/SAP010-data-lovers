@@ -1,0 +1,70 @@
+body {
+    width: 99%; /* largura  */
+    height: 100%; /* altura  */
+    background-image: url(imagens/fundo.png); /* imagem de fundo */
+    background-repeat: no-repeat; /* repetição da imagem  */
+    background-attachment: fixed; /*   */
+    background-size: 100% 100%; /* tamanho da imagem  */
+    font-family: 'Orbitron'; /* fonte das letras  */
+}
+
+header {
+    text-align: center; /*  alinhamento do item na tela */
+}
+
+main {
+    background-color: #ffff; /* cor de fundo  */
+    border-radius: 8px; /* bordinha arredondada  */
+    width: 90%;
+    height: auto;
+    align-content: center;
+    text-align: center;
+    margin-left: auto; /*  margem na esquerda */
+    margin-right: auto; /*  margem na direita */
+    padding: 2em; /* espaço em volta da elemento  */
+    font-size:larger ;/* tamanho da fonte  */
+}
+
+p {
+    text-align: justify;
+}
+
+.btn-ball {
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Overflow serve para controlar ás "bordas" que ficam fora do limite de um conteúdo
+    Ex: Usamos uma imagem quadrada para um botão redondo, então as pontas do quadrado foram escondidas com o hidden*/
+  }
+  
+  .icone {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(imagens/botão.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+
+footer {
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    background-color: #ffffffc7;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}

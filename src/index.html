@@ -5,52 +5,39 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-pokestop.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-    <img src="imagens/pokepídia-title.png">
+    <img src="imagens/PokeStop.png">
   </header>
 
   <main>
-    <div class="filtro-pokepidia">
-      <select id="tipo">
-        <option selected="" value="planta">Planta</option>
-        <option value="fogo">Fogo</option>
-        <option value="água">Água</option>
-        <option value="inseto">Inseto</option>
-        <option value="normal">Normal</option>
-        <option value="venenoso">Venenoso</option>
-        <option value="eletrico">Elétrico</option>
-        <option value="lutador">Lutador</option>
-        <option value="psíquico">Psíquico</option>
-        <option value="pedra">Pedra</option>
-        <option value="voador">Voador</option>
-        <option value="fantasma">Fantasma</option>
-        <option value="gelo">Gelo</option>
-        <option value="dragão">Dragão</option>
-        <option value="metálico">Metálico</option>
-        <option value="sombrio">Sombrio</option>
-        <option value="fada">Fada</option>
-      </select>
 
-      <select id="ordem">
-        <option selected="" value="numberAsc">Menor número primeiro</option>
-        <option value="numberDesc">Maior número primeiro</option>
-        <option value="nameAsc">A-Z</option>
-        <option value="nameDesc">Z-A</option>
-      </select>
+    <h3>É novo na região de Kanto? </h3>
+    <h3> Não se preocupe! </h3>
+    <p>Primeiramente, seja muito bem-vindo a Kanto. Nessa região você poderá encontrar os mais diversos pokémons! Alguns que você já conhece e outro que não. Então se prepare para essa aventura.
+      Aqui na PokeStop você pode conhecer melhor os 251 pokemons que residem aqui
+      e também poderá descobrir seus atributos e muitos mais! Nossa pokepídia está repleta de informações e curiosidade. Aproveite!</p>
 
-    </div>
+   <a href="pokepidia.html" class="botao-imagem"> <!-- Criamos um botão linkado a página pokepídia, que quando for clicado será redirecionado -->
+     <button class="btn-ball">
+      <span class="icone"></span> <!-- Criamos uma span para conseguir colocar uma imagem dentro do botão-->
+     </button>
+   </a>
 
-    <p></p>
-    <h1></h1>
-    <div id="root"></div>
   </main>
+
+  <footer> <!-- Usamos para colocar nosso rodapé da página -->
+    Desenvolvido por&nbsp; <!--&nbsp é um espaço não quebrável -->
+    <a href="https://github.com/alinelandeira"> Aline Landeira&nbsp</a> 
+    e&nbsp
+    <a href="https://github.com/CatarinaEudoxia"> Catarina Eudoxia Ferreira</a>
+    .
+  </footer>
 
   <script src="main.js" type="module"></script>
 </body>

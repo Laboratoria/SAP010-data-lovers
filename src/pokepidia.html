@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> <!-- linkamos uma fonte do google, e usamos o rel para relacionar para que serve  -->
+</head>
+
+<body>
+
+  <header> <!-- usamos para fazer a parte superior do nosso html  -->
+    <img src="imagens/pokepídia-title.png">
+  </header>
+
+  <main> <!-- usamos ela para colocar nossos select, que serão usados para filtro  -->
+    <div class="filtro-pokepidia"> <!-- abrimos uma div, onde ficará os selects e suas opções para a filtragem e ordenação  -->
+      <select id="tipo"> <!--  Criamos um select, para conter as opções de tipos de pokemons que serão selecionadas -->
+        <option selected="" value="tipo-poke">Tipo</option> <!--  Criamos as opções com todos os tipos, onde a primeira se inicia selecionada -->
+        <option value="grass">Planta</option>
+        <option value="fire">Fogo</option>
+        <option value="water">Água</option>
+        <option value="bug">Inseto</option>
+        <option value="normal">Normal</option>
+        <option value="poison">Venenoso</option>
+        <option value="eletric">Elétrico</option>
+        <option value="ground">Terra</option>
+        <option value="fighting">Lutador</option>
+        <option value="psychic">Psíquico</option>
+        <option value="rock">Pedra</option>
+        <option value="flying">Voador</option>
+        <option value="ghost">Fantasma</option>
+        <option value="ice">Gelo</option>
+        <option value="dragon">Dragão</option>
+        <option value="steel">Metálico</option>
+        <option value="dark">Sombrio</option>
+        <option value="fairy">Fada</option>
+      </select>
+
+      <select id="ordem">
+        <option selected="" value="organizar">Organizar por</option>
+        <option value="numberAsc">Menor número primeiro</option>
+        <option value="numberDesc">Maior número primeiro</option>
+        <option value="nameAsc">A-Z</option>
+        <option value="nameDesc">Z-A</option>
+      </select>
+
+    </div>
+
+    <div id="root"></div>
+  </main>
+
+  <a href="index.html" class="botao-img"> <!--  criamos um botão para retornar para a página inicial -->
+    <button>back</button>
+  </a>
+
+  <script src="main.js" type="module"></script> 
+</body>
+
+</html>

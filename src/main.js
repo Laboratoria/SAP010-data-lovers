@@ -1,5 +1,5 @@
   import { data } from "./data.js";
-  import { convertToArray, filterByDirector, filterByGender, filterCharactersByMovie, sortByTitleAZ, sortByTitleZA, sortByReleaseYear, sortByRottenTomatoes, calculateGenderStats } from './data.js';
+  import { filterByDirector, filterByGender, filterCharactersByMovie, sortByTitleAZ, sortByTitleZA, sortByReleaseYear, sortByRottenTomatoes, calculateGenderStats } from './data.js';
   import { movies } from './data.js';
   
   // MENU HAMBURGUER
@@ -85,7 +85,15 @@ document.addEventListener('DOMContentLoaded', function() {
         option.textContent = movies.title;
         movieFilter.appendChild(option);
       });
-    } catch (error) {
+
+    genderFilter.addEventListener('change', function() {
+        const selectedGender = genderFilter.value;
+        const filteredMovies = filterByGender(movies, selectedGender);
+        showCharacter(filteredMovies);
+        console.log(filteredMovies);
+      })
+    } 
+    catch (error) {
       console.log('Ocorreu um erro ao carregar os personagens:', error);
     }
   }
@@ -100,8 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
           console.log(filteredCharacter);
         })
       }
-  
-   
+      
 
   function showMovies(movies) {
     const moviesContainer = document.getElementById('cards-container');
@@ -144,11 +151,11 @@ function createMovieCard(movie) {
 }
 
 
-  function showCharacter(movies) {
+  function showCharacter(characters) {
     const characterContainer = document.getElementById('cards-container');
   characterContainer.innerHTML = ''; // Limpa o conteúdo atual
 
-  movies.forEach(charac => {
+  characters.forEach(charac => {
     const characterCard = createCharacterCard(charac);
     characterContainer.appendChild(characterCard);
   });
@@ -183,5 +190,4 @@ function createCharacterCard(charac) {
   // Adicione qualquer lógica adicional para interatividade, como o efeito de flip do card
 
   return card;
-}
-});
+}})

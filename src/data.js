@@ -53,15 +53,21 @@ export function convertToArray(obj) {
     .flat();
     }
   }
-
-  //ainda não
   
   // Função para filtrar os personagens por gênero
   export function filterByGender(movies, gender) {
-  return movies.filter(movie => {
-  return movie.people.some(person => person.gender === gender);
-  });
+    if (gender === "all"){
+      return movies.flatMap(movie => movie.people);
+    } else {
+      const filteredMovies = movies.filter(movie => {
+        return movie.people.some(person => person.gender === gender);
+      });
+  
+      return filteredMovies.flatMap(movie => movie.people);
+    }
   }
+
+   //ainda não
   
   // Função para ordenar os filmes em ordem alfabética de A-Z
   export function sortByTitleAZ(movies) {

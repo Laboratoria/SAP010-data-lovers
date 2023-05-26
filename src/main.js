@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
         movieFilter.appendChild(option);
       });
     } catch (error) {
-      console.log('Ocorreu um erro ao carregar os diretores:', error);
+      console.log('Ocorreu um erro ao carregar os personagens:', error);
     }
   }
   

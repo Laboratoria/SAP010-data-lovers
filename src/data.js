@@ -40,12 +40,19 @@ export function convertToArray(obj) {
       }
     }
 
+
   // Função para filtrar os personagens por filme
   export function filterCharactersByMovie(movies, title) {
+    if (title === "all"){
+      const allCharacters = movies.flatMap(movie => movie.people);
+      return allCharacters;
+    }
+    else{
     return movies.filter(movie => movie.title === title)
     .map(movie => movie.people)
     .flat();
     }
+  }
 
   //ainda não
   

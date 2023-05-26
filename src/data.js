@@ -7,8 +7,29 @@ export const filtrarNumeros = (dados, numeroPesquisado) => {
   return dados.filter(cards => String(cards.value).includes(numeroPesquisado));
 };
 
-
-
+export const ordenaCartas = (dados, selecao) => {
+  if (selecao === "a-z") {
+    return dados.sort((a, b) => {
+      if (a.name > b.name) {
+        return 1
+      } if (a.name < b.name) {
+        return -1
+      }
+      return 0
+    })
+  }
+  else if (selecao === "z-a") {
+    return dados.sort((a, b) => {
+      if (a.name > b.name) {
+        return -1
+      } if (a.name < b.name) {
+        return 1
+      }
+      return 0
+    }
+    )
+  }
+}
 
 
 

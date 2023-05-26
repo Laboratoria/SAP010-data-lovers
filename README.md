@@ -26,7 +26,7 @@ Para este projeto, desenvolvemos uma aplicação responsiva que fornece dados so
 
 O objetivo desse projeto é construir uma página web que permita visualizar, filtrar, ordenar e realizar cálculos agregados do conjunto de dados da série Breaking Bad. Além disso, atender as necessidades do usuário, fornecendo informações relevantes e uma interface intuitiva.
 
-## 2. História do Usuário
+## 2. História do Usuário :mag:
 
 Fazendo uma investigação (pesquisa) sobre as informações que nossos usuários podem precisar, descobrimos que os dados de maior interesse são:
 
@@ -34,15 +34,13 @@ Fazendo uma investigação (pesquisa) sobre as informações que nossos usuário
 
 2. Além dessas informações, Breaking Bad coexiste com Better Call Saul; para nossos usuários é importante poder ver a lista de personagens que aparecem em cada uma das séries.
 
-Para isso, adicionamos dois filtros, um para ordenar de A-Z ou Z-A e outro para filtrar da temporada 1 a 5, mais uma opção de selecionar para visualizar quais personagens aparecem na série Better Call Soul. Além disso, adicionamos uma barra de pesquisa e dois botões para direcionar o usuário para outra guia com o trailer das séries (breaking Bad e Better Call Soul).
+Para isso, adicionamos dois filtros, um para ordenar os personagens de A-Z ou Z-A e outro para filtrar da temporada 1 a 5. Além disso, mais uma opção de selecionar para visualizar quais personagens aparecem na série Better Call Soul. Adicionamos uma barra de pesquisa e dois botões para direcionar o usuário para outra guia com o trailer das séries (breaking Bad e Better Call Soul).
 
 ## 3. Protótipo :pen:
 
 Em uma folha de papel, criamos o esboço inicial do design, considerando todos os elementos e funcionalidades que gostaríamos de incorporar. Em seguida, utilizamos o **Figma** e desenvolvemos um protótipo de alta fidelidade para apresentar o que consideramos o ideal para o nosso usuário.
 
-
-![Protótipo de baixa fidelidade](src/img/imagem%20prototipo.jpg)![Protótipo de Alta Fidelidade](src/img/Prot%C3%B3tipo%20de%20alta%20fidelidade.jpg)
-
+![Protótipo de Alta Fidelidade](src/img/Prot%C3%B3tipo%20de%20alta%20fidelidade.jpg)
 
 ## 4. Interface :computer:
 
@@ -64,7 +62,7 @@ A interface criada considerou todas as recomendações recebidas pelos usuários
 
 Criamos uma interface responsiva que poderá ser visualizada sem problemas a partir de diversos tamanhos de tela: celulares, tablets, notebooks, etc.
 
-
+![Responsividade](src/img/responsivo.jpg)
 
 ## 6. Testes Unitários :ok_hand:
 

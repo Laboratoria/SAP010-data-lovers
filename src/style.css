@@ -40,6 +40,7 @@ footer {
 	background-color: #1ba0d0;
 	text-align: center;
 	font-size: 1rem;
+	color: #ffffff;
 }
 
 #content{
@@ -54,7 +55,7 @@ ul {
 }
 
 a {
-  color: #ffff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -79,7 +80,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-	color: #ffff;
+	color: #ffffff;
 }
 
 #menu {
@@ -95,7 +96,7 @@ a:hover {
 
 #btn-mobile {
   display: none;
-	color: #ffff;
+	color: #ffffff;
 }
 
 @media (max-width: 600px) {
@@ -121,7 +122,7 @@ a:hover {
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(19, 57, 115, 0.361);
-		color: #ffff;
+		color: #ffffff;
   }
   #btn-mobile {
     display: flex;
@@ -160,11 +161,74 @@ a:hover {
   }
 }
 
+@media (max-width: 1024px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #1ba0d0;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(19, 57, 115, 0.361);
+		color: #ffffff;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+		color: #1ba0d0;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+
 /* CARDS */
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
 }
 
 h1, h2, h3 {
@@ -176,13 +240,14 @@ h1, h2, h3 {
 }
 
 .card {
-  width: 300px;
-  height: 550px;
+  width: 280px;
+	min-height: 600px;
   perspective: 1000px;
-  margin: 20px;
+  margin: 15px;
 	border-radius: 5px;
   display: inline-block;
 	text-align: center;
+	align-items: center;
 }
 
 .front, .back {
@@ -197,7 +262,7 @@ h1, h2, h3 {
 
 .front {
   transform: rotateY(0deg);
-	background-color: #ffff;
+	background-color: #ffffff;
 	color: #1ba0d0;
 	border-radius: 2rem;
 }
@@ -207,7 +272,7 @@ h1, h2, h3 {
   background-color: #1ba0d0;
   padding: 10px;
 	border-radius: 2rem;
-	color: #ffff;
+	color: #ffffff;
 }
 
 .card.flipped .front {
@@ -236,4 +301,77 @@ h1, h2, h3 {
   .card {
     width: 100%;
   }
+}
+/* Media queries para ajustar CARDS */
+
+/* @media (min-width: 768px) {
+	.card {
+    flex: 0 0 calc(25% - 2rem);
+    max-width: calc(25% - 2rem);
+		margin: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+} */
+
+/* DIRETORES */
+#content-director {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#hmiyazaki, #takahata, #kondo, #gmiyazaki, #morita, #yonebayashi {
+  width: 100%;
+  margin: .5rem;
+  border-radius: 2rem;
+  background-color: #ffffff;
+  color: #1ba0d0;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  align-items: center;
+  min-height: 150px; /* altura mínima para os cards */
+}
+
+#hmiyazaki a, #takahata a, #kondo a, #gmiyazaki a, #morita a, #yonebayashi a {
+  color: #1ba0d0;
+  border: #1ba0d0 solid;
+  padding: 5px;
+  border-radius: 2rem;
+  align-items: center;
+} 
+
+#hmiyazaki img, #takahata img, #kondo img, #gmiyazaki img, #morita img, #yonebayashi img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+/* Media queries para ajustar DIRETORES */
+
+@media (min-width: 768px) {
+  #hmiyazaki, #takahata, #kondo, #gmiyazaki, #morita, #yonebayashi  {
+    flex: 0 0 calc(25% - 2rem);
+    max-width: calc(25% - 2rem);
+		margin: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #hmiyazaki, #takahata, #kondo, #gmiyazaki, #morita, #yonebayashi {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* O ESTÚDIO */
+
+#studio-content{
+	background-color: #1ba0d0df;
+	padding: 2rem;
+	color: #ffffff;
 }

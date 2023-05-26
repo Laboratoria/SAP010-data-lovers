@@ -47,6 +47,9 @@ function createMovieCard(films) {
 
   const director = document.createElement("h4");
   director.textContent = "Diretor: " +  films.director;
+
+  const producer = document.createElement("h4");
+  producer.textContent = "Produtor: " +  films.producer;
   
   const description = document.createElement("p");
   description.textContent =  "Sinopse: " + films.description;
@@ -55,8 +58,9 @@ function createMovieCard(films) {
   score.textContent = "Nota no Rotten Tomatoes: " +  films.rt_score;
   
   back.appendChild(description);
-  back.appendChild(director)
-  back.appendChild(score)
+  back.appendChild(director);
+  back.appendChild(producer);
+  back.appendChild(score);
   
   card.appendChild(front);
   card.appendChild(back);

@@ -1,23 +1,25 @@
-import { example, anotherExample } from '../src/data.js';
+// adotar cultura de testes - qualidade(métrica) confiança e tempo ( atingir objetivos de negócio) economia de tempo e dinheiro
+// 1* analise de requisitos- funcionalidades do projeto tipos de teste
+// 2* Plano de testes- (QA)ferramentas gastos de recursos 
+// 3* caso de testes- dados de entrada e saida 
+// 4* ambiente de teste- como e onde serão desenvolvidos ( fluxo )
 
+import { filterPokemonListAZ } from './estatistica.eventos.js';
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
+describe('filterPokemonListAZ', () => {
+  it('filters the Pokémon list in A-Z order', () => {
+    const pokemonList = [
+      { name: 'Charizard' },
+      { name: 'Bulbasaur' },
+      { name: 'Pikachu' },
+    ];
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+    const filteredList = filterPokemonListAZ(pokemonList);
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+    expect(filteredList).toEqual([
+      { name: 'Bulbasaur' },
+      { name: 'Charizard' },
+      { name: 'Pikachu' },
+    ]);
   });
 });

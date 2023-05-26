@@ -1,0 +1,127 @@
+@import url('https://fonts.google.com/specimen/Oxanium?query=oxanium');
+/* Define uma fonte padrão para a página */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+  font-family: 'Oxanium', cursive;
+  /*font escolhida padrão no link*/
+}
+
+navE {
+  width: 100%;
+}
+
+a {
+  color: #aaa;
+  font-size: 30px;
+  width: 100%;
+}
+
+.home {
+  border: 2px solid rgb(138, 19, 19);
+  padding: 20px;
+  width: 100%;
+  background: rgb(138, 19, 19);
+  text-align: left;
+}
+
+
+.filtrePokemon {
+  color: rgb(138, 19, 19);
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.ordenarPor {
+  color: rgb(138, 19, 19);
+  font-size: 25px;
+
+}
+
+.tipoPokemon {
+  color: rgb(138, 19, 19);
+  font-size: 25px;
+
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(to bottom, #797575, #3b3a3a);
+  min-height: 100vh;
+  display: inline-block;
+  width: 100%;
+}
+
+.pokemon_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo para cada item da lista de Pokémon */
+.pokemon_list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 30px 0px 30px rgba(0, 0, 0, 0.2);
+  border: 3px solid #b30101;
+  background-color: #fff;
+}
+
+/* Estilo para a imagem do Pokémon */
+.pokemon_list li img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para o nome do Pokémon */
+.pokemon_list li p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Estilo para os stats do Pokémon */
+.pokemon_list li p:last-child {
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn1 {
+  /*do botão pesquisar a-z*/
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #111111;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: rgb(138, 19, 19);
+  color: #aaa;
+  cursor: pointer;
+}
+
+.btn2 {
+  /*do botão pesquisar tipo*/
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #111111;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: rgb(138, 19, 19);
+  color: #aaa;
+  cursor: pointer;
+  margin-top: 5px;
+}

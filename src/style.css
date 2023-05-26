@@ -1,3 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	position: relative;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/backgroung_ghibli.png);
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: repeat-y;
+	background-color: #1ba0d0;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+#home {
+	width: 100%;
+	background-image: url(img/backgroung_ghibli.png);
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: repeat-y;
+	background-color: #1ba0d0;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+	padding: 1rem;
+  left: 0;
+  width: 100%;
+	background-color: #1ba0d0;
+	text-align: center;
+	font-size: 1rem;
+}
+
+#content{
+	padding: 3rem;
+}
+
 /* MENU HAMBURGUER */
 body,
 ul {
@@ -6,13 +54,13 @@ ul {
 }
 
 a {
-  color: rgb(9, 122, 244);
+  color: #ffff;
   text-decoration: none;
-  font-family: sans-serif;
 }
 
 a:hover {
-  background: rgba(36, 149, 241, 0.311);
+  background: rgba(36, 149, 241, 0.579);
+	border-radius: 10px;
 }
 
 #logo {
@@ -31,7 +79,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #63a8ed;
+	color: #ffff;
 }
 
 #menu {
@@ -47,6 +95,7 @@ a:hover {
 
 #btn-mobile {
   display: none;
+	color: #ffff;
 }
 
 @media (max-width: 600px) {
@@ -56,7 +105,7 @@ a:hover {
     width: 100%;
     top: 70px;
     right: 0px;
-    background: #e7e7e7;
+    background: #1ba0d0;
     transition: 0.6s;
     z-index: 1000;
     height: 0px;
@@ -71,7 +120,8 @@ a:hover {
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid rgba(19, 57, 115, 0.361);
+		color: #ffff;
   }
   #btn-mobile {
     display: flex;
@@ -85,6 +135,7 @@ a:hover {
   #hamburger {
     border-top: 2px solid;
     width: 20px;
+		color: #1ba0d0;
   }
   #hamburger::after,
   #hamburger::before {
@@ -129,7 +180,6 @@ h1, h2, h3 {
   height: 550px;
   perspective: 1000px;
   margin: 20px;
-	background-color: #769ac9;
 	border-radius: 5px;
   display: inline-block;
 	text-align: center;
@@ -147,13 +197,17 @@ h1, h2, h3 {
 
 .front {
   transform: rotateY(0deg);
+	background-color: #ffff;
+	color: #1ba0d0;
+	border-radius: 2rem;
 }
 
 .back {
   transform: rotateY(180deg);
-  background-color: #769ac9;
+  background-color: #1ba0d0;
   padding: 10px;
-	border-radius: 5px;
+	border-radius: 2rem;
+	color: #ffff;
 }
 
 .card.flipped .front {
@@ -166,7 +220,7 @@ h1, h2, h3 {
 
 .front img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 2rem;
 }
 
 .front p, .back p {

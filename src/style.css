@@ -240,12 +240,13 @@ h1, h2, h3 {
 }
 
 .card {
-  width: 280px;
+	width: 280px;
 	min-height: 600px;
   perspective: 1000px;
-  margin: 15px;
+	margin: 15px;
 	border-radius: 5px;
-  display: inline-block;
+	display: inline-block;
+	flex-direction: column;
 	text-align: center;
 	align-items: center;
 }

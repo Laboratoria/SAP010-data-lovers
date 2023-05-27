@@ -23,33 +23,50 @@ body::before {
 }
 
 #home {
-	width: 100%;
-	background-image: url(img/backgroung_ghibli.png);
-	background-attachment: fixed;
-	background-size: 100%;
-	background-repeat: repeat-y;
-	background-color: #1ba0d0;
+  width: 100%;
+	min-height: 100%; /* Define a altura da seção para ocupar toda a janela */
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #1ba0d0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+	color: #ffffff;
+}
+
+#home img {
+  max-width: 250px; /* Limite a largura da imagem */
+  height: auto;
+  align-items: center;
 }
 
 footer {
   position: relative;
   bottom: 0;
-	padding: 1rem;
+  padding: 1rem;
   left: 0;
   width: 100%;
-	background-color: #1ba0d0;
-	text-align: center;
-	font-size: 1rem;
-	color: #ffffff;
+  background-color: #1ba0d0;
+  text-align: center;
+  font-size: 1rem;
+  color: #ffffff;
 }
 
-#content{
-	padding: 3rem;
+#content {
+  padding: 3rem;
 }
+
+.content-home {
+  display: none;
+}
+
+.show-home {
+  display: block;
+}
+
 
 /* MENU HAMBURGUER */
-body,
-ul {
+body, html, ul {
   margin: 0px;
   padding: 0px;
 }
@@ -300,24 +317,9 @@ h1, h2, h3 {
 
 @media (max-width: 500px) {
   .card {
-    width: 100%;
+    width: 90%;
   }
 }
-/* Media queries para ajustar CARDS */
-
-/* @media (min-width: 768px) {
-	.card {
-    flex: 0 0 calc(25% - 2rem);
-    max-width: calc(25% - 2rem);
-		margin: 2rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .card {
-    width: 100%;
-  }
-} */
 
 /* DIRETORES */
 #content-director {

@@ -17,8 +17,8 @@
           <span id="hamburger"></span>
         </button>
         <ul id="menu" role="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="studio.html">O Estúdio Ghibli</a></li>
+<!--           <li><a href="index.html">Home</a></li>
+          <li><a href="studio.html">O Estúdio Ghibli</a></li> -->
           <li><a href="diretores.html">Diretores</a></li>
           <li><a href="filmografia.html">Filmografia</a></li>
           <li><a href="filtros.html">Filtros de Busca</a></li>
@@ -26,13 +26,32 @@
       </nav>
     </header>
     <main id="content">
+<!--       <div>
+        <img src="img/backgroung_ghibli.png" class="background_totoro">
+      </div> -->
       <section id="home">
         <h2>Conheça mais sobre o estúdio que encanta com seu universo.</h2>
-        <a href="">Saiba mais</a>
-
+        <a href="studio.html"><img src="img/totoro.gif" id="show-home"></a>  
       </section>
     </main>
     <footer id="">Desenvolvido por Vitória Victor e Marina Cordeiro</footer>
-    <script src="main.js" type="module"></script>
+<script>
+  const btnMobile = document.getElementById('btn-mobile');
+  function toggleMenu(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+    const active = nav.classList.contains('active');
+    event.currentTarget.setAttribute('aria-expanded', active);
+    if (active) {
+      event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+    } else {
+      event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+    }
+  }
+
+  btnMobile.addEventListener('click', toggleMenu);
+  btnMobile.addEventListener('touchstart', toggleMenu); 
+</script>
   </body>
 </html>

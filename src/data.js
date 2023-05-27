@@ -40,7 +40,6 @@ export function filterByDirector(movies, director) {
   }
 }
 
-
 // Função para filtrar os personagens por filme
 export function filterCharactersByMovie(movies, title) {
   if (title === "all") {

@@ -4,6 +4,7 @@ import { movies } from './data.js';
 
 // MENU HAMBURGUER
 
+
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
@@ -87,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       genderFilter.addEventListener('change', function () {
+
         const selectedGender = genderFilter.value;
         const filteredMovies = filterByGender(movies, selectedGender);
         showCharacter(filteredMovies);
@@ -144,7 +146,6 @@ document.addEventListener('DOMContentLoaded', function () {
     showMovies(sortedMovies);
     console.log(sortedMovies);
   });
-
 
   function showMovies(movies) {
     const moviesContainer = document.getElementById('cards-container');

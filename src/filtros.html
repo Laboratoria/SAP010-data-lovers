@@ -5,21 +5,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="img/icons8-totoro-48.ico"/>
+  <link rel="icon" type="image/png" href="img/icons8-totoro-48.ico" />
   <title>Studio Ghibli</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="filtros.css" />
 </head>
 
 <body>
   <header id="header">
-    <a><img class="logo-icon" src="img/totoro.gif"></a>
+    <a href="index.html"><img class="logo-icon" src="img/totoro.gif"></a>
     <h1>Filtros de Busca</h1>
     <nav id="nav">
-      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+        aria-expanded="false">Menu
         <span id="hamburger"></span>
       </button>
       <ul id="menu" role="menu">
-        <li><a href="index.html">Home</a></li>
+        <!--         <li><a href="index.html">Home</a></li> -->
         <li><a href="studio.html">O Estúdio Ghibli</a></li>
         <li><a href="diretores.html">Diretores</a></li>
         <li><a href="filmografia.html">Filmografia</a></li>
@@ -33,47 +34,61 @@
         <label for="search" data-filter="films" id="search-label">Pesquisar:</label>
         <input type="text" id="search"></input>
         <button id="searchButton">Ok</button>
-        <!-- Exemplo de HTML para o filtro de diretor -->
-<label for="director-filter" data-filter="director" id="director-label">Diretor:</label>
-<select id="director-filter"></select>
+        <!-- Filtro de diretor -->
+        <label for="director-filter" data-filter="director" id="director-label">Diretor:</label>
+        <select id="director-filter"></select>
 
-<!-- Exemplo de HTML para o filtro de filme -->
-<label for="movieFilter" data-filter="movie" id="movie-label">Personagens por Filme:</label>
-<select id="movieFilter"></select>
+        <!-- Filtro de filme -->
+        <label for="movieFilter" data-filter="movie" id="movie-label">Personagens por Filme:</label>
+        <select id="movieFilter"></select>
 
-<!-- Exemplo de HTML para o filtro de gênero -->
-<label for="genderFilter" data-filter="gender" id="gender-filter">Gênero:</label>
-<select id="genderFilter">
-  <option value="all">Todos</option>
-  <option value="male">Masculino</option>
-  <option value="female">Feminino</option>
-  <!-- Outros gêneros... -->
-</select>
+        <!-- Filtro de gênero -->
+        <label for="genderFilter" data-filter="gender" id="gender-filter">Gênero:</label>
+        <select id="genderFilter">
+          <option value="all">Todos</option>
+          <option value="male">Masculino</option>
+          <option value="female">Feminino</option>
+          <!-- Outros gêneros... -->
+        </select>
+        <section id="a-z">
+          <h4>Ordenação dos filmes</h4>
+          <!-- Ordenação de A-Z -->
+          <label for="sortAZButton" id="sort-az-label">A-Z</label>
+          <input type="radio" name="sort" id="sortAZButton">
+          <!-- Ordenação de Z-A -->
+          <label for="sortZAButton" id="sort-za-label">Z-A</label>
+          <input type="radio" name="sort" id="sortZAButton">
+        </section>
+        <section id="ano">
+          <h4>Ordenação dos filmes por Ano de Lançamento</h4>
+          <!-- Ordenação por ano de lançamento -->
+          <label for="sortReleaseYearButtonOld" id="sort-release-year-label">Mais antigos</label>
+          <input type="radio" name="sort" id="sortReleaseYearButtonOld">
 
-<!-- Exemplo de HTML para o label de ordenação de A-Z -->
-<label for="sortAZButton" id="sort-az-label">A-Z</label>
-<input type="radio" name="sort" id="sortAZButton">
+          <!-- falta incluir -->
+          <label for="sortReleaseYearButtonNew" id="sort-release-year-label">Mais novos</label>
+          <input type="radio" name="sort" id="sortReleaseYearButtonNew">
+        </section>
 
-<!-- Exemplo de HTML para o label de ordenação de Z-A -->
-<label for="sortZAButton" id="sort-za-label">Z-A</label>
-<input type="radio" name="sort" id="sortZAButton">
+        <section id="nota">
+          <h4>Ordenação dos filmes por nota no Rotten Tomatoes</h4>
+          <!-- Ordenação por nota do Rotten Tomatoes -->
+          <label for="sortRottenTomatoesButtonHigh" id="sort-rotten-tomatoes-label">Maior Nota</label>
+          <input type="radio" name="sort" id="sortRottenTomatoesButtonHigh">
+          <!-- falta incluir -->
+          <label for="sortRottenTomatoesButtonLow" id="sort-rotten-tomatoes-label">Menor Nota</label>
+          <input type="radio" name="sort" id="sortRottenTomatoesButtonLow">
+        </section>
 
-<!-- Exemplo de HTML para o label de ordenação por ano de lançamento -->
-<label for="sortReleaseYearButton" id="sort-release-year-label">Ano de Lançamento</label>
-<input type="radio" name="sort" id="sortReleaseYearButton">
+        <!-- Calcular estatísticas -->
+        <button id="calculateStatsButton">Calcular Estatísticas</button>
 
-<!-- Exemplo de HTML para o label de ordenação por nota do Rotten Tomatoes -->
-<label for="sortRottenTomatoesButton" id="sort-rotten-tomatoes-label">Rotten Tomatoes</label>
-<input type="radio" name="sort" id="sortRottenTomatoesButton">
-
-<!-- Exemplo de HTML para o botão de calcular estatísticas -->
-<button id="calculateStatsButton">Calcular Estatísticas</button>
-
-      <div id="cards-container"></div>
-    </div>
+        <div id="cards-container"></div>
+      </div>
   </main>
   <footer id="">Desenvolvido por Vitória Victor e Marina Cordeiro</footer>
   <script src="main.js" type="module"></script>
   <script src="data.js" type="module"></script>
 </body>
+
 </html>

@@ -36,6 +36,13 @@
       <label for="numero">Número</label>
       <input type="number" id="pesquisa-numero" name="numero" min="1" max="21">
 
+      <label for="arcanos">Arcanos</label>
+      <select name="arcanos" id="" class="arcanos">
+        <option value="maiores">Major</option>
+        <option value="menores">Minor</option>
+        <option selected value="none">Selecione</option>
+      </select>
+
       <label for="ordem">Ordenar</label>
       <select name="ordem" id="" class="ordem">
         <option value="a-z">A-Z</option>
@@ -43,6 +50,7 @@
         <option selected value="none">Selecione</option>
       </select>
     </form>
+    <p id="calculo"></p>
   </main>
 
   <section>

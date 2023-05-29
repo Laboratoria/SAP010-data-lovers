@@ -31,7 +31,20 @@ export const ordenaCartas = (dados, selecao) => {
   }
 }
 
-
+export const filtrarArcanos = (dados, arcanoSelecionado) => {
+  if (arcanoSelecionado === "maiores") {
+    return dados.filter(cards => cards.type["major"]);
+  }
+  //calculo agregado
+  // if (arcanoSelecionado === "maiores") {
+  //   let totalMajor = 0;
+  //   for (const objeto of dados) {
+  //     if (objeto.type === "major") totalMajor++;
+  //     console.log(totalMajor);
+  //     return totalMajor;
+  //   }
+  // }
+}
 
 
 

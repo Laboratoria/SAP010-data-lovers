@@ -1,4 +1,4 @@
-import { filtrarNomes, filtrarNumeros, ordenaCartas } from "./data.js";
+import { filtrarArcanos, filtrarNomes, filtrarNumeros, ordenaCartas } from "./data.js";
 import data from "./data/tarot/tarot.js";
 
 const burguer = document.getElementById("burguer");
@@ -10,40 +10,39 @@ function clickMenu() {
   } else {
     menu.style.display = "block";
   }
-  
+
 };
 
 const dadosTarot = data.cards;
 const root = document.getElementById("info-cards");
-const select = document.querySelector(".ordem");
+const select = document.getElementById("ordem");
+const selectArcano = document.getElementById("arcanos")
 
 
 function infosDosCardsTela(cards) {
   root.innerHTML = cards
     .map(
       (cards) => `
-    <section class="lista-cards">
-      <ul>
-        <li class="cartao-cards>"
-          <div id="info" class="informacoes">
-            <p id="valor"> ${cards.value}</p>
-            <p id="nome"><strong> ${cards.name}</strong></p>
-            
-          </div>
+      <div class="lista-cards">
+        <ul>
+          <li class="cartao-cards">
+            <ul>
+              <li id="info">
+                <p id="valor"> ${cards.value}</p>
+                <p id="nome"><strong> ${cards.name}</strong></p>
+              </li>
+            </ul>
+
             <img alt="cartas-frente" class="card-img" src="${cards.img}">
             <p id="tipo"> Arcano: ${cards.type}</p>
               <ul class="sign">
                 <li class="sign-up"><strong>Meaning Up: ${cards.meaning_up} </strong></li>
                 <li class="sign-rev"><strong>Meaning Reverso: ${cards.meaning_rev} </strong></li>
               </ul>
-              <p class="descricao"><strong>Description:</strong> ${cards.desc} </p>
-
-        </li>
-      </ul>
-    </section>
-                                      
-               
-   
+            <p class="descricao"><strong>Description:</strong> ${cards.desc} </p>
+          </li>
+        </ul>
+      </div>
 `
     )
     .join("");
@@ -69,4 +68,30 @@ select.addEventListener("change", (evento) => {
   const selecao = evento.target.value;
   const cardsOrdenados = ordenaCartas(dadosTarot, selecao);
   infosDosCardsTela(cardsOrdenados);
+});
+
+selectArcano.addEventListener("change", (evento) => {
+  const opcaoArcano = evento.target.value;
+  const opcaoEscolhida = filtrarArcanos(dadosTarot, opcaoArcano);
+  infosDosCardsTela(opcaoEscolhida);
 })
+
+// let totalMajor = 0;
+// for (const objeto of dadosTarot){
+//   // console.log(objeto.type);
+//   if (objeto.type === "major") totalMajor++;
+//   // console.log(totalMajor);
+// }
+// const major = totalMajor;
+// console.log(major);
+// document.getElementById("calculo").innerHTML = `A quantidade de cartas de arcano maior é ${major}`;
+
+let totalMinor = 0;
+for (const objeto of dadosTarot){
+  // console.log(objeto.type);
+  if (objeto.type === "minor") totalMinor++;
+  // console.log(totalMinor);
+}
+
+const minor = totalMinor;
+console.log(minor);

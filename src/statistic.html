@@ -2,29 +2,31 @@
 <html>
 
 <head>
+
   <meta charset="utf-8">
-  <!-- o meta name viewport serve para saber o tamanho do elemento da tela do usuário -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Lovers</title>
+
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@700&display=swap" rel="stylesheet">
+
+  <title>Data Lovers</title>
+
 </head>
 
 <body>
 
-
-
   <header>
+
     <nav id="navPc">
-      <a class="menu" href="index.html">
-        <div class="home">Home</div>
+      <a href="index.html">
+        <div class="home menu">Home</div>
       </a>
-      <a class="menu" href="statistic.html">
-        <div class="curiosidades">Curiosidades</div>
+      <a href="statistic.html">
+        <div class="curiosidades menu">Curiosidades</div>
       </a>
     </nav>
 
@@ -33,26 +35,30 @@
         <img src="images/menu.png" alt="menu">
       </div>
       <ul>
-        <a class="menu" href="index.html">
-          <li class="home">Home</li>
+        <a href="index.html">
+          <li class="home menu">Home</li>
         </a>
-        <a class="menu" href="statistic.html">
-          <li class="curiosidades">Curiosidades</li>
+        <a href="statistic.html">
+          <li class="curiosidades menu">Curiosidades</li>
         </a>
       </ul>
     </nav>
+
   </header>
 
-  <main class="content-questions">
-    <div>
-      <p class="ficha">Veja no gráfico abaixo quais os tipos de Pokémons são os mais comuns e os mais raros!</p>
-    </div>
-    <section id="chart">
-
-      <canvas id="myChart"></canvas>
-    </section>
+  <main class="container-main">
 
     <section class="column">
+      <p class="title">
+        Veja no gráfico abaixo quais os tipos de Pokémons são os mais comuns e os mais raros!
+      </p>
+      <div id="chart">
+        <canvas id="myChart"></canvas>
+      </div>
+    </section>
+
+    <section id="row" class="column">
+
       <section class="questions">
         <div class="curiosity">
           <h1>Quem é o Pokémon mais alto?</h1>
@@ -63,11 +69,10 @@
           </p>
           <p class="center">Clique na sombra dele para descobrir!</p>
         </div>
-        <div id="pokemonsHeight" class="showData">
+        <div id="pokemonsHeight" class="show-data-pokemon">
           <img id="politoed" src="./images/shadows/politoed_shadow.png">
           <p id="nameRevealedPolitoed" class="nameRevealed">???</p>
         </div>
-
       </section>
 
       <section class="questions">
@@ -80,20 +85,22 @@
           </p>
           <p class="center">Clique na sombra dele para descobrir!</p>
         </div>
-        <div id="pokemonWeight" class="showData">
+        <div id="pokemonWeight" class="show-data-pokemon">
           <img id="snorlax" src="./images/shadows/snorlax_shadow.png">
           <p id="nameRevealedSnorlax" class="nameRevealed">???</p>
         </div>
       </section>
-    </section>
 
     </section>
 
   </main>
 
   <footer></footer>
+
   <script src="main.js" type="module"></script>
   <script src="chart.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+</body>
 
 </html>

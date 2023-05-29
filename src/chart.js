@@ -1,13 +1,12 @@
 import { computeStats } from './data.js';
 import data from './data/pokemon/pokemon.js';
-
-
+//import { Chart } from 'chart.js'
 
 const plotChart = (percentage) => {
 
-  let labelsChart = []
+  const labelsChart = []
 
-  let dataPokemon = []
+  const dataPokemon = []
 
   for (const type in percentage) {
 
@@ -16,6 +15,7 @@ const plotChart = (percentage) => {
     dataPokemon.push(percentage[type])
 
   }//endFor
+
   const datas = {
 
     labels: labelsChart,
@@ -45,7 +45,6 @@ const plotChart = (percentage) => {
       hoverOffset: 4
     }]
   };
-
 
   const config = {
     type: 'pie',

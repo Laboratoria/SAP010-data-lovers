@@ -108,6 +108,7 @@ export const sortData = (data, sortBy, orderBy) => {
     }//endIf
 
   }//endFor
+  
   return pokemons;
 
 }//endSortData

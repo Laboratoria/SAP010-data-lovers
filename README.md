@@ -13,7 +13,7 @@
 
 ## 1. Resumo do projeto
 
-Nosso projeto trata-se de  **uma _página web_** desenvolvida para os fãs de Pokémon que desejarem obter mais dados e informações sobre os eles. O usuário poderá visualizar os dados, ordena-los e fazer alguns cálculos de informações relevantes, tais como médias, valores máximos e mínimos, etc).
+Nosso projeto trata-se de  **uma _página web_** desenvolvida para os fãs de Pokémon que desejarem obter mais dados e informações sobre os eles. O usuário poderá visualizar os dados, ordena-los e fazer alguns cálculos de informações relevantes, tais como médias, valores máximos e mínimos, etc.
 
  **Ferramentas e tecnologias utilizadas**
 
@@ -45,4 +45,13 @@ Recomendamos usuário utilize o navegador do **Google Chrome** para traduzir o c
 
 ## 3. Feedback de teste de usabilidade
 
+Abaixo descrevo o feedback de um usuário ao testar o MVP1, cada item mencionado abaixo será um requisito para melhorar no MVP2:
+
+1. O usuário se incomodou, pois o alinhamento dos selects não estão perfeitamente alinhados com a lagura do input.
+2. O usuário achou que a cor da barra de Menu está fora de contexto, visto que todas as cores são escuras e a cor do menu ficou muito clara.
+3. O usuário não entendeu o que é uma ordenação ASC e DESC.
+4. O usuário constatou que não limite de caracteres no input.
+5. O usuário disse que trazer a próxima evolução do Pokémon na busca fica confuso, e parece que está filtrando errado.
+6. O usuário sugeriu desabilitar o botão de pesquisar caso o usuário não selecione o tipo de Pokémon.
+7. O usuário sentiu falta de uma mensagem de erro quando os padrões de busca não são atendidos.
 

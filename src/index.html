@@ -2,9 +2,10 @@
 <html>
 
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Lovers</title>
+
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,19 +13,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@700&display=swap" rel="stylesheet">
+
+  <title>Data Lovers</title>
+
 </head>
 
 <body>
 
-  <script src="main.js" type="module"></script>
-
   <header>
     <nav id="navPc">
-      <a class="menu" href="index.html">
-        <div class="home">Home</div>
+      <a href="index.html">
+        <div class="home menu">Home</div>
       </a>
-      <a class="menu" href="statistic.html">
-        <div>Curiosidades</div>
+      <a href="statistic.html">
+        <div class="curiosidades menu">Curiosidades</div>
       </a>
     </nav>
 
@@ -33,11 +35,11 @@
         <img src="images/menu.png" alt="menu">
       </div>
       <ul>
-        <a class="menu" href="index.html">
-          <li class="home">Home</li>
+        <a href="index.html">
+          <li class="home menu">Home</li>
         </a>
-        <a class="menu" href="statistic.html">
-          <li>Curiosidades</li>
+        <a href="statistic.html">
+          <li class="curiosidades menu">Curiosidades</li>
         </a>
       </ul>
     </nav>
@@ -45,60 +47,64 @@
 
   <main>
 
-    <section class="header">
+    <section class="container-main">
 
-      <img class="logo" rel="icon" type="image/png" src="./images/pokemonTittle.png" alt="Pokemon Tittle" />
+      <div class="column">
 
-      <div class="search">
-
-        <label class="ficha">Encontre a ficha técnica do seu Pokémon favorito:</label>
-        <input type="text" id="namePokemon" placeholder="Enter name Pokemon">
+        <img class="logo" rel="icon" type="image/png" src="./images/pokemonTittle.png" alt="Pokemon Tittle">
+        <label class="title">Encontre o seu Pokémon favorito:</label>
+        <input type="text" id="namePokemon" placeholder="Digite o nome do Pokémon">
 
         <div class="content-options">
-          <select id="sortBy" class="options">
+
+          <select id="sortBy">
+
             <option value="chosenType">Tipo</option>
-            <option value="grass">grass</option>
-            <option value="poison">poison</option>
+            <option value="bug">bug</option>
+            <option value="dark">dark</option>
+            <option value="dragon">dragon</option>
+            <option value="electric">electric</option>
+            <option value="fairy">fairy</option>
+            <option value="fighting">fighting</option>
             <option value="fire">fire</option>
             <option value="flying">flying</option>
-            <option value="water">water</option>
-            <option value="bug">bug</option>
-            <option value="normal">normal</option>
-            <option value="electric">electric</option>
+            <option value="grass">grass</option>
+            <option value="ghost">ghost</option>
             <option value="ground">ground</option>
-            <option value="fighting">fighting</option>
+            <option value="ice">ice</option>
+            <option value="normal">normal</option>
+            <option value="poison">poison</option>
             <option value="psychic">psychic</option>
             <option value="rock">rock</option>
-            <option value="ice">ice</option>
-            <option value="ghost">ghost</option>
-            <option value="dragon">dragon</option>
-            <option value="fairy">fairy</option>
-            <option value="dark">dark</option>
             <option value="steel">steel</option>
+            <option value="water">water</option>
+
           </select>
 
-          <select id="orderBy" class="options">
+          <select id="orderBy">
+
             <option value="a-z">A-Z</option>
             <option value="z-a">Z-A</option>
             <option value="asc">Pokédex ASC</option>
             <option value="desc">Pokédex DESC</option>
+
           </select>
+
         </div>
+
         <button id="submit" class="btn textsearch">Pesquisar</button>
 
       </div>
 
     </section>
 
-    <section id="pokemons" class="cardsPokemon">
-
-    </section>
-
-
+    <section id="pokemons" class="cards"></section>
 
   </main>
 
   <footer></footer>
+
+  <script src="main.js" type="module"></script>
 
 </body>
 

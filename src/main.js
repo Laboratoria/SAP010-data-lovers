@@ -28,7 +28,6 @@ if (searchType) {
 }//endIf
 
 const findPokemonWeight = document.getElementById("snorlax");
-
 const nameRevealedSnorlax = document.getElementById("nameRevealedSnorlax");
 
 if (findPokemonWeight) {
@@ -53,7 +52,6 @@ function showImagePokemonAndName(pokemon, tagImg, tagP) {
     tagP.innerHTML = pokemon[image].name;
   }
 }
-
 
 const styleCard = (pokemon, stylesPokemon) => {
 
@@ -85,25 +83,21 @@ const buildCard = (pokemon) => {
 
   const pokemons = document.getElementById("pokemons");
 
-  console.log(pokemon.length)
-
   for (let i = 0; i < pokemon.length; i++) {
-
-    console.log(pokemon[i].name)
 
     if (pokemon[i].colorType.length !== 0 && pokemon[i].imgType.length !== 0) {
 
       const cardPokemon = document.createElement('div');
       cardPokemon.classList.add("card");
       cardPokemon.style.backgroundColor = pokemon[i].colorType[0];
+
       let showDataPokemon = `
-    <div class="showDataPokemon">
-      <div class="name-number">
+    <div>
+      <div class="name-number-pokemon">
         <h1 id="name">${pokemon[i].name}</h1>
         <p id="num">${pokemon[i].num}</p>
       </div>
       <div class=all-images-card-pokemon>
-        <div class="img-types">
     `;
 
       for (let j = 0; j < pokemon[i].imgType.length; j++) {
@@ -112,8 +106,7 @@ const buildCard = (pokemon) => {
       }
 
       showDataPokemon += `
-        </div>
-        <img id="imagePokemon" alt="Image Pokemon" src=${pokemon[i].img}>
+        <img id="image-pokemon" alt="Image Pokemon" src=${pokemon[i].img}>
       </div>
     </div>`;
 
@@ -125,10 +118,9 @@ const buildCard = (pokemon) => {
 
       }//endIf
 
-    }
+    }//endIf
 
   }//endFor
-
 
 }//endBuildCard
 
@@ -151,14 +143,14 @@ if (menuMob) {
   })
 }
 
-let url = document.URL;
+const url = document.URL;
 
 if (url === "http://localhost:3000/") {
   window.addEventListener("load", () => {
     const home = document.querySelector(".home");
     home.style.color = "#00478C"
     buildCard(data.pokemon);
-  });//endAddEventListener
+  });
 }
 
 if (url === "http://localhost:3000/statistic") {

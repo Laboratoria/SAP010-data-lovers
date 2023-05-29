@@ -17,14 +17,19 @@ menu {
     display: none;
 }
 
-.container-card {
+.informacoes {
+    background-color: crimson;
+} 
 
+.container-card {
+    /* background-color: #7ac74c; */
     display: flex;
     flex-wrap: wrap;
     /*essa propriedade colocamos no pai para conseguirmos mexer nos filhos*/
     gap: 30px;
     /*essa propriedade colocamos no pai para conseguirmos mexer nos filhos*/
     justify-content: center;
+    margin-top: 20px;
 
 }
 
@@ -37,11 +42,11 @@ menu {
     margin: auto;
 }
 
-.cartao-cards {
+/*.cartao-cards {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 /*.cartao-cards {
     /*background: yellow;
@@ -55,7 +60,13 @@ menu {
     transition: 0.2s ease-in-out;
 }*/
 
-#nome {
+
+/* .informacoes {
+    background-color: coral;
+    
+} */
+
+/* #nome {
     margin:1.5% 0;
     display: block;
     text-align: center;
@@ -69,7 +80,7 @@ menu {
     text-align: center;
     align-items: center;
 
-}
+}*/
 
 #tipo {
     margin: 1.5% 0;
@@ -77,7 +88,7 @@ menu {
     text-align: center;
     align-items: center;
 
-}
+} 
 
 .lista-cards {
     /*background-color: #d8e3ec;*/
@@ -102,6 +113,7 @@ ul li {
     list-style: none;
     padding: 0px 10px;
 }
+
 ul {
     display: block;
     list-style-type: disc;
@@ -133,7 +145,7 @@ ul {
 }
 
 .sign {
-    border: 5px #000;
+    border: 10px red;
     padding: 8px;
     border-radius: 10px;
 }

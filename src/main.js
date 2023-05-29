@@ -22,12 +22,12 @@ function infosDosCardsTela(cards) {
   root.innerHTML = cards
     .map(
       (cards) => `
-    <section class="lista-cards">
+    <div class="lista-cards">
       <ul>
-        <li class="cartao-cards>"
+        <li class="cartao-cards">
           <div id="info" class="informacoes">
-            <p id="valor"> ${cards.value}</p>
-            <p id="nome"><strong> ${cards.name}</strong></p>
+            <p> ${cards.value}</p>
+            <p><strong> ${cards.name}</strong></p>
             
           </div>
             <img alt="cartas-frente" class="card-img" src="${cards.img}">
@@ -40,7 +40,7 @@ function infosDosCardsTela(cards) {
 
         </li>
       </ul>
-    </section>
+    </div>
                                       
                
    
@@ -70,3 +70,4 @@ select.addEventListener("change", (evento) => {
   const cardsOrdenados = ordenaCartas(dadosTarot, selecao);
   infosDosCardsTela(cardsOrdenados);
 })
+

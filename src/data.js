@@ -29,12 +29,13 @@ export const ordenaCartas = (dados, selecao) => {
     }
     )
   }
-}
+};
 
 export const filtrarArcanos = (dados, arcanoSelecionado) => {
   if (arcanoSelecionado === "maiores") {
     return dados.filter(cards => cards.type["major"]);
-  }
+    
+  // console.log(filtrarArcanos);
   //calculo agregado
   // if (arcanoSelecionado === "maiores") {
   //   let totalMajor = 0;
@@ -44,7 +45,9 @@ export const filtrarArcanos = (dados, arcanoSelecionado) => {
   //     return totalMajor;
   //   }
   // }
-}
+  }
+};
+// console.log(filtrarArcanos);
 
 
 

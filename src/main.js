@@ -1,4 +1,9 @@
-import { filtrarArcanos, filtrarNomes, filtrarNumeros, ordenaCartas } from "./data.js";
+import {
+  filtrarArcanos,
+  filtrarNomes,
+  filtrarNumeros,
+  ordenaCartas,
+} from "./data.js";
 import data from "./data/tarot/tarot.js";
 
 const burguer = document.getElementById("burguer");
@@ -10,14 +15,12 @@ function clickMenu() {
   } else {
     menu.style.display = "block";
   }
-
-};
+}
 
 const dadosTarot = data.cards;
 const root = document.getElementById("info-cards");
 const select = document.getElementById("ordem");
-const selectArcano = document.getElementById("arcanos")
-
+const selectArcano = document.getElementById("arcanos");
 
 function infosDosCardsTela(cards) {
   root.innerHTML = cards
@@ -74,7 +77,8 @@ selectArcano.addEventListener("change", (evento) => {
   const opcaoArcano = evento.target.value;
   const opcaoEscolhida = filtrarArcanos(dadosTarot, opcaoArcano);
   infosDosCardsTela(opcaoEscolhida);
-})
+  //  console.log(infosDosCardsTela);
+});
 
 // let totalMajor = 0;
 // for (const objeto of dadosTarot){
@@ -86,12 +90,12 @@ selectArcano.addEventListener("change", (evento) => {
 // console.log(major);
 // document.getElementById("calculo").innerHTML = `A quantidade de cartas de arcano maior é ${major}`;
 
-let totalMinor = 0;
-for (const objeto of dadosTarot){
-  // console.log(objeto.type);
-  if (objeto.type === "minor") totalMinor++;
-  // console.log(totalMinor);
-}
+// let totalMinor = 0;
+// for (const objeto of dadosTarot) {
+//   // console.log(objeto.type);
+//   if (objeto.type === "minor") totalMinor++;
+//   // console.log(totalMinor);
+// }
 
-const minor = totalMinor;
-console.log(minor);
+// // const minor = totalMinor;
+// // console.log(minor);

@@ -43,3 +43,21 @@ export function calculatePercentageByFamily(family, filteredNames) {
 
   return `A porcentagem de personagens por família é de ${percentage.toFixed(2)}%`;
 }
+
+// Função para traduzir um título para português
+export function translateTitle(title) {
+  // Mapear os títulos em inglês para suas traduções em português
+  const translations = {
+    "Mother of Dragons": "Mãe dos Dragões",
+   
+    // Adicionar as demais traduções
+  };
+
+  // Verifica se há uma tradução disponível para o título
+  if (translations.hasOwnProperty(title)) {
+    return translations[title]; // Retornar a tradução correspondente
+  } else {
+    return title; // Se não houver tradução disponível, retorna o título original
+  }
+}
+

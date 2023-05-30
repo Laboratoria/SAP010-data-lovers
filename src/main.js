@@ -73,6 +73,9 @@ select.addEventListener("change", (evento) => {
   const selecao = evento.target.value;
   const cardsOrdenados = ordenaCartas(dadosTarot, selecao);
   infosDosCardsTela(cardsOrdenados);
+  // if (selecao === "Selecione") {
+  //   return infosDosCardsTela(dadosTarot);
+  // }
 });
 
 selectArcano.addEventListener("change", (evento) => {

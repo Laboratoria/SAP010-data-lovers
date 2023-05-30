@@ -1,49 +1,39 @@
-//lógica da função para buscar e filtrar os nomes dos personagens
+import characters from "./data/got/got.js";
 
-export function searchName(searchValue, searchType) {
-  const filterName = (character) => {
-    const fullName = character.fullName.toLowerCase();
+export function searchName(searchValue) {
+  const filteredNames = characters.got.filter(character => {
+    const family = character.family.toLowerCase();
     const firstName = character.firstName.toLowerCase();
-    const lastName = character.lastName.toLowerCase();
+    const fullName = character.fullName.toLowerCase();
 
-    if (searchType === "fullName" && fullName.includes(searchValue.toLowerCase())) {
-      return true;
-    } else if (searchType === "firstName" && firstName.includes(searchValue.toLowerCase())) {
-      return true;
-    } else if (searchType === "lastName" && lastName.includes(searchValue.toLowerCase())) {
+    if (family.includes(searchValue.toLowerCase())) {
       return true;
     }
+    if (firstName.includes(searchValue.toLowerCase())) {
+      return true;
+    }
+    if (fullName.includes(searchValue.toLowerCase())) {
+      return true;
+    }
+    
 
     return false;
-  };
+  });
 
-  const filteredNames = characters.got.filter(filterName);
   return filteredNames;
 }
 
-//função que ordena os nomes de A a Z
-
 export function ordenarAZ(value, character) {
-  const ordenarCharacterAZ = [...character]; //cria uma cópia da array para não modificar a original 
+  const ordenarCharacterAZ = [...character]; // cria uma cópia da array para não modificar a original 
+
   if (value === 'a-z') {
-    ordenarCharacterAZ.sort(function (a, b) {
-      if (a.fullName < b.fullName) {
-        return -1;
-      }
-    })
+    ordenarCharacterAZ.sort((a, b) => a.fullName.localeCompare(b.fullName));
   } else {
-    ordenarCharacterAZ.sort(function (a, b) {
-      if (a.fullName > b.fullName) {
-        return -1;
-      }
-    })
+    ordenarCharacterAZ.sort((a, b) => b.fullName.localeCompare(a.fullName));
   }
+
   return ordenarCharacterAZ;
 }
-
-
-
-//Função de calculo agregado de porcentagem
 
 export function calculatePercentageByFamily(family, filteredNames) {
   const numberOfFilteredNames = filteredNames.length;
@@ -53,10 +43,3 @@ export function calculatePercentageByFamily(family, filteredNames) {
 
   return `A porcentagem de personagens por família é de ${percentage.toFixed(2)}%`;
 }
-
-const familys = ['Stark', 'Lannister', 'Targaryen', 'Baratheon'];
-const filteredNames = ['Jon Snow', 'Tyrion Lannister', 'Daenerys Targaryen'];
-
-const percentage = calculatePercentageByFamily(familys, filteredNames);
-console.log(percentage);
-

@@ -1,14 +1,14 @@
 import { searchName, ordenarAZ, calculatePercentageByFamily } from './data.js';
 import characters from "./data/got/got.js";
 
-function showCharacterCards() {
+function showCharacterCards(charactersArray = characters.got) {
   const container = document.getElementById("characterContainer");
 
   // Limpa o conteúdo do container
   container.innerHTML = "";
 
   // Itera sobre os personagens e cria os cards dinamicamente
-  characters.got.forEach(character => {
+  charactersArray.forEach(character => {
     const card = document.createElement("div");
     card.classList.add("card");
 
@@ -63,8 +63,6 @@ const filterByFamily = document.querySelector("#filter-by-family");
 const filterByBorn = document.querySelector("#filter-by-born");
 const orderByname = document.querySelector("#order-by-name");
 
-
-
 // Manipulação de eventos
 searchInput.addEventListener("input", () => {
   const searchTerm = searchInput.value;
@@ -92,10 +90,6 @@ filterByBorn.addEventListener("change", () => {
 
 orderByname.addEventListener("change", () => {
   const selectedOrder = orderByname.value;
-  const orderedNames = ordenarAZ(selectedOrder, characters.got);
+  const orderedNames = ordenarAZ(selectedOrder, characters.got); // Inverte a ordem dos argumentos
   showCharacterCards(orderedNames);
 });
-
-// 
-
-

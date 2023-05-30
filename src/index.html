@@ -33,29 +33,43 @@
         <ul>
           <li class="menu-item">filtrar por:</li>
           <li class="menu-sub-item">
-            <select id="filter-by-title">
-              <option style="display: none;">TÍTULO</option>
-            </select>
+            <a href="#" id="filter-by-title">TÍTULO</a>
           </li>
           <li class="menu-sub-item">
             <select id="filter-by-family">
-              <option style="display: none;">FAMÍLIA</option>
+              <option disabled selected style="display: none;">FAMÍLIA</option>
+              <option value="All">Mostrar Todos</option>
+              <option value="Baelish">Baelish</option>
+              <option value="Baratheon">Baratheon</option>
+              <option value="Bolton">Bolton</option>
+              <option value="Bronn">Bronn</option>
+              <option value="Clegane">Clegane</option>
+              <option value="Free Folk">Free Folk</option>
+              <option value="Greyjoy">Greyjoy</option>
+              <option value="Lannister">Lannister</option>
+              <option value="Lorath">Lorath</option>
+              <option value="Mormont">Mormont</option>
+              <option value="Naathi">Naathi</option>
+              <option value="Naharis">Naharis</option>
+              <option value="None">None</option>
+              <option value="Qyburn">Qyburn</option>
+              <option value="Sand">Sand</option>
+              <option value="Seaworth">Seaworth</option>
+              <option value="Sparrow">Sparrow</option>
+              <option value="Stark">Stark</option>
+              <option value="Targaryen">Targaryen</option>
+              <option value="Tarly">Tarly</option>
             </select>
           </li>
-          <li class="menu-sub-item">
-            <select id="filter-by-born">
-              <option style="display: none;">ANO DE NASCIMENTO</option>
-            </select>
-          </li>
-        </ul>
-        <ul>
-          <li class="menu-item">ordenar por:</li>
-          <li class="menu-sub-item">
-            <select id="order-by-name">
-              <option value="a-z">A-Z</option>
-              <option value="z-a">Z-A</option>
-            </select>
-          </li>
+          <ul>
+            <li class="menu-item">ordenar por:</li>
+            <li class="menu-sub-item">
+              <select id="order-by-name">
+                <option value="a-z">A-Z</option>
+                <option value="z-a">Z-A</option>
+              </select>
+            </li>
+          </ul>
         </ul>
         <a href="./quemsomosnos.html" class="menu-item">Quem somos nós</a>
       </div>
@@ -63,6 +77,7 @@
         <i class="fas fa-bars fa-lg"></i>
       </a>
     </nav>
+    
     <!-- Incluir aqui os cards dos personagens -->
     <div id="characterContainer" class="card-container"></div>
   </main>

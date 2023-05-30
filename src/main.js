@@ -60,36 +60,37 @@ document.addEventListener("DOMContentLoaded", () => {
 const searchInput = document.querySelector("#search-input");
 const filterByTitle = document.querySelector("#filter-by-title");
 const filterByFamily = document.querySelector("#filter-by-family");
-const filterByBorn = document.querySelector("#filter-by-born");
 const orderByname = document.querySelector("#order-by-name");
 
 // Manipulação de eventos
 searchInput.addEventListener("input", () => {
-  const searchTerm = searchInput.value;
-  const filteredNames = searchName(searchTerm, "fullName"); // Passa searchTerm como primeiro parâmetro e "fullName" como segundo parâmetro
-  showCharacterCards(filteredNames);
+  const searchTerm = searchInput.value.toLowerCase();
+  const filteredCharacters = characters.got.filter(character => character.fullName.toLowerCase().includes(searchTerm));
+  showCharacterCards(filteredCharacters);
 });
 
-filterByTitle.addEventListener("change", () => {
-  const selectedTitle = filterByTitle.value;
-  const filteredTitles = searchName(characters.got, selectedTitle);
-  showCharacterCards(filteredTitles);
+filterByTitle.addEventListener("click", () => {
+  const filteredCharacters = characters.got.sort((a, b) => a.title.localeCompare(b.title));
+  showCharacterCards(filteredCharacters);
 });
 
 filterByFamily.addEventListener("change", () => {
   const selectedFamily = filterByFamily.value;
-  const filteredFamily = searchName(characters.got, selectedFamily);
-  showCharacterCards(filteredFamily);
-});
-
-filterByBorn.addEventListener("change", () => {
-  const selectedBorn = filterByBorn.value;
-  const filteredBorn = searchName(characters.got, selectedBorn);
-  showCharacterCards(filteredBorn);
+  if (selectedFamily === "All") {
+    showCharacterCards(characters.got);
+  } else {
+    const filteredCharacters = characters.got.filter(character => character.family === selectedFamily);
+    showCharacterCards(filteredCharacters);
+  }
 });
 
 orderByname.addEventListener("change", () => {
   const selectedOrder = orderByname.value;
-  const orderedNames = ordenarAZ(selectedOrder, characters.got); // Inverte a ordem dos argumentos
-  showCharacterCards(orderedNames);
+  if (selectedOrder === "a-z") {
+    const orderedCharacters = characters.got.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    showCharacterCards(orderedCharacters);
+  } else if (selectedOrder === "z-a") {
+    const orderedCharacters = characters.got.sort((a, b) => b.fullName.localeCompare(a.fullName));
+    showCharacterCards(orderedCharacters);
+  }
 });

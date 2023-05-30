@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-image: url(background.png);
     background-size: cover;
+    opacity: 90%;
     width: "100%";
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -197,7 +198,8 @@ body {
 }
 
 select {
-    background-color: transparent;
+    background-color: white;
+    border-radius: 30px;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     padding: 10px;

@@ -21,6 +21,8 @@ const dadosTarot = data.cards;
 const root = document.getElementById("info-cards");
 const select = document.getElementById("ordem");
 const selectArcano = document.getElementById("arcanos");
+const calculoTelaMajor = document.getElementById("calculo");
+const calculoTelaMinor = document.getElementById("calculo2");
 
 function infosDosCardsTela(cards) {
   root.innerHTML = cards
@@ -77,25 +79,33 @@ selectArcano.addEventListener("change", (evento) => {
   const opcaoArcano = evento.target.value;
   const opcaoEscolhida = filtrarArcanos(dadosTarot, opcaoArcano);
   infosDosCardsTela(opcaoEscolhida);
-  //  console.log(infosDosCardsTela);
+  if (opcaoArcano === "major") {
+    calculoTelaMajor.innerHTML = `A porcentagem de cartas de Arcano maior no Baralho do Tarô é de ${totalMajor}%`;
+    calculoTelaMinor.innerHTML = "";
+  } else if (opcaoArcano === "minor") {
+    calculoTelaMinor.innerHTML = `A porcentagem de cartas de Arcano menor no Baralho do Tarô é de ${totalMinor}%`;
+    calculoTelaMajor.innerHTML = "";
+  } else {
+    infosDosCardsTela(dadosTarot);
+    calculoTelaMajor.innerHTML = "";
+    calculoTelaMinor.innerHTML = "";
+  }
 });
 
-// let totalMajor = 0;
-// for (const objeto of dadosTarot){
-//   // console.log(objeto.type);
-//   if (objeto.type === "major") totalMajor++;
-//   // console.log(totalMajor);
-// }
-// const major = totalMajor;
-// console.log(major);
-// document.getElementById("calculo").innerHTML = `A quantidade de cartas de arcano maior é ${major}`;
+let quantMajor = 0;
+for (const objeto of dadosTarot) {
+  if (objeto.type === "major") quantMajor++;
+}
+const major = quantMajor;
 
-// let totalMinor = 0;
-// for (const objeto of dadosTarot) {
-//   // console.log(objeto.type);
-//   if (objeto.type === "minor") totalMinor++;
-//   // console.log(totalMinor);
-// }
+let quantMinor = 0;
+for (const objeto of dadosTarot) {
+  if (objeto.type === "minor") quantMinor++;
+}
+const minor = quantMinor;
 
-// // const minor = totalMinor;
-// // console.log(minor);
+const calculoMinor = (minor * 100) / 78;
+const calculoMajor = (major * 100) / 78;
+
+const totalMajor = calculoMajor.toFixed(2);
+const totalMinor = calculoMinor.toFixed(2);

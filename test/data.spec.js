@@ -15,6 +15,8 @@ const valor = 2;
 const selecaoA = "a-z";
 const selecaoZ = "z-a";
 const arcano = "major";
+const arcanoMinor = "minor";
+//const selecao = "Selecione";
 
 describe("filtrarNomes", () => {
   it("is a function", () => {
@@ -72,10 +74,56 @@ describe("filtrarArcanos", () => {
   it("is a function", () => {
     expect(typeof filtrarArcanos).toBe("function");
   });
+
   it("filtrou  `ArcanosMaiores`", () => {
-    expect(ordenaCartas(dados, arcano)).toBe([
+    expect(filtrarArcanos(dados, arcano)).toEqual([
       { name: "Ana", value: 1, type: "major" },
       { name: "Amanda", value: 3, type: "major" },
     ]);
+  });
+});
+
+it("filtrou  `ArcanosMenores`", () => {
+  expect(filtrarArcanos(dados, arcanoMinor)).toEqual([
+    { name: "Camila", value: 2, type: "minor" },
+  ]);
+});
+
+// it("filtrou  `selecione`", () => {
+//   expect(ordenaCartas(dados, selecao)).toEqual();
+// });
+// teste.js
+
+//
+
+describe("Testes para a função ordenaCartas", () => {
+  test('Teste com selecao igual a "a-z"', () => {
+    const dados = [{ name: "C" }, { name: "B" }, { name: "A" }];
+    const selecao = "a-z";
+
+    const resultado = ordenaCartas(dados, selecao);
+
+    // Realize asserções para verificar se o resultado está correto
+    expect(resultado).toEqual([{ name: "A" }, { name: "B" }, { name: "C" }]);
+  });
+
+  test('Teste com selecao igual a "z-a"', () => {
+    const dados = [{ name: "C" }, { name: "B" }, { name: "A" }];
+    const selecao = "z-a";
+
+    const resultado = ordenaCartas(dados, selecao);
+
+    // Realize asserções para verificar se o resultado está correto
+    expect(resultado).toEqual([{ name: "C" }, { name: "B" }, { name: "A" }]);
+  });
+
+  test('Teste com selecao diferente de "a-z" e "z-a"', () => {
+    const dados = [{ name: "C" }, { name: "B" }, { name: "A" }];
+    const selecao = "outra-selecao";
+
+    const resultado = ordenaCartas(dados, selecao);
+
+    // Realize asserções para verificar se o resultado está correto
+    expect(resultado).toEqual();
   });
 });

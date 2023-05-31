@@ -41,7 +41,8 @@ function infosDosCardsTela(cards) {
             <img alt="cartas-frente" class="card-img" src="${cards.img}">
             <p id="tipo"> Arcano: ${cards.type}</p>
               <ul class="sign">
-                <li class="sign-up"><strong>Meaning Up: ${cards.meaning_up} </strong></li>
+              
+               <li class="sign-up"> <button id="btnUp"> Meaning Up </button> <dialog id="dialogUp"> <h2> Meaning Up: </h2> <p> ${cards.meaning_up} </p> <button> Fechar </button> </dialog> </li> 
                 <li class="sign-rev"><strong>Meaning Reverso: ${cards.meaning_rev} </strong></li>
               </ul>
             <p class="descricao"><strong>Description:</strong> ${cards.desc} </p>
@@ -53,6 +54,13 @@ function infosDosCardsTela(cards) {
     .join("");
 }
 infosDosCardsTela(dadosTarot);
+
+const botaoUp = document.getElementById("btnUp");
+const modalUp = document.getElementById("dialogUp");
+const botaoFechar = document.querySelector("dialog button");
+
+
+
 
 const pesquisarNome = document.getElementById("pesquisa-nome"); // pega o input de pesquisa pela id
 pesquisarNome.addEventListener("input", (evento) => {
@@ -73,6 +81,9 @@ select.addEventListener("change", (evento) => {
   const selecao = evento.target.value;
   const cardsOrdenados = ordenaCartas(dadosTarot, selecao);
   infosDosCardsTela(cardsOrdenados);
+  // if (selecao === "Selecione") {
+  //   return infosDosCardsTela(dadosTarot);
+  // }
 });
 
 selectArcano.addEventListener("change", (evento) => {
@@ -109,3 +120,11 @@ const calculoMajor = (major * 100) / 78;
 
 const totalMajor = calculoMajor.toFixed(2);
 const totalMinor = calculoMinor.toFixed(2);
+
+botaoUp.addEventListener("click", () => {
+  modalUp.showModal();
+});
+
+botaoFechar.addEventListener("click", () => {
+  modalUp.close();
+});

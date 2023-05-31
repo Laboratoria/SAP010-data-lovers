@@ -15,6 +15,7 @@ const valor = 2;
 const selecaoA = "a-z";
 const selecaoZ = "z-a";
 const arcano = "major";
+const arcanoMinor = "minor";
 
 describe("filtrarNomes", () => {
   it("is a function", () => {
@@ -72,10 +73,17 @@ describe("filtrarArcanos", () => {
   it("is a function", () => {
     expect(typeof filtrarArcanos).toBe("function");
   });
+
   it("filtrou  `ArcanosMaiores`", () => {
-    expect(ordenaCartas(dados, arcano)).toBe([
+    expect(filtrarArcanos(dados, arcano)).toEqual([
       { name: "Ana", value: 1, type: "major" },
       { name: "Amanda", value: 3, type: "major" },
     ]);
   });
+});
+
+it("filtrou  `ArcanosMenores`", () => {
+  expect(filtrarArcanos(dados, arcanoMinor)).toEqual([
+    { name: "Camila", value: 2, type: "minor" }
+  ]);
 });

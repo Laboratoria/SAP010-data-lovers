@@ -1,4 +1,5 @@
-import { searchName, ordenarAZ, calculatePercentageByFamily, translateTitle } from './data.js';
+import { searchName, ordenarAZ, calculatePercentageByFamily } from './data.js';
+import { translateTitle, translateFamily } from './extra.js';
 import characters from "./data/got/got.js";
 
 function showCharacterCards(charactersArray = characters.got) {
@@ -23,7 +24,8 @@ function showCharacterCards(charactersArray = characters.got) {
     title.textContent = "Título: " + translatedTitle;
 
     const family = document.createElement("p");
-    family.textContent = "Família: " + character.family;
+    const translatedFamily = translateFamily(character.family); // Traduzir a família
+    family.textContent = "Família: " + translatedFamily;
 
     const born = document.createElement("p");
     born.textContent = "Ano de nascimento: " + character.born;

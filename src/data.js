@@ -20,8 +20,10 @@ export const ordenaCartas = (dados, selecao) => {
       }
       if (a.name < b.name) {
         return -1;
+      } else {
+        return 0;
       }
-      return 0;
+      // return 0;
     });
   } else if (selecao === "z-a") {
     return dados.sort((a, b) => {
@@ -30,8 +32,10 @@ export const ordenaCartas = (dados, selecao) => {
       }
       if (a.name < b.name) {
         return 1;
+      } else {
+        return 0;
       }
-      return 0;
+      //
     });
   }
 };

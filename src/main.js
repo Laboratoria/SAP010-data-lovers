@@ -1,4 +1,4 @@
-import { searchName, ordenarAZ, calculatePercentageByFamily } from './data.js';
+import { filterCharactersByFamily, calculateFamilyPercentage } from './data.js';
 import { translateTitle, translateFamily } from './extra.js';
 import characters from "./data/got/got.js";
 
@@ -71,12 +71,14 @@ searchInput.addEventListener("input", () => {
   const filteredCharacters = characters.got.filter(character => character.fullName.toLowerCase().includes(searchTerm));
   showCharacterCards(filteredCharacters);
 });
-
+//Filtro por título
 filterByTitle.addEventListener("click", () => {
   const filteredCharacters = characters.got.sort((a, b) => a.title.localeCompare(b.title));
   showCharacterCards(filteredCharacters);
 });
 
+
+//Filtro por família
 filterByFamily.addEventListener("change", () => {
   const selectedFamily = filterByFamily.value;
   if (selectedFamily === "All") {
@@ -85,8 +87,14 @@ filterByFamily.addEventListener("change", () => {
     const filteredCharacters = characters.got.filter(character => character.family === selectedFamily);
     showCharacterCards(filteredCharacters);
   }
-});
+  const percentage = calculateFamilyPercentage(filteredCharacters, characters);
+  console.log(`${family}: ${percentage}% são pertencentes à essa família`);
+    showFilteredCharacterCards(charactersArray, 'Stark')
+}
+);
 
+
+//Ordenando de A-Z
 orderByname.addEventListener("change", () => {
   const selectedOrder = orderByname.value;
   if (selectedOrder === "a-z") {

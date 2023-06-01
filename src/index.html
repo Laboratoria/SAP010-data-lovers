@@ -37,9 +37,10 @@
         <ul>
           <li class="menu-item">filtrar por:</li>
           <li class="menu-sub-item">
-            <a href="#" id="filter-by-title">TÍTULO</a>
-          </li>
-          <li class="menu-sub-item">
+            <select id="filter-by-title">TÍTULO
+              <option disabled selected style="display: none;">TÍTULO</option>
+            </select>
+          </li><br>
             <select id="filter-by-family">
               <option disabled selected style="display: none;">FAMÍLIA</option>
               <option value="All">Mostrar Todos</option>
@@ -69,6 +70,7 @@
             <li class="menu-item">ordenar por:</li>
             <li class="menu-sub-item">
               <select id="order-by-name">
+                <option disabled selected style="display: none;">Selecione</option>
                 <option value="a-z">A-Z</option>
                 <option value="z-a">Z-A</option>
               </select>

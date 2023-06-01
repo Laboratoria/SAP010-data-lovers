@@ -5,10 +5,11 @@ body {
     padding: 0;
     background-image: url(background.png);
     background-size: cover;
-    opacity: 95%;
+    opacity: 100%;
     width: "100%";
     font-family: "Cinzel";
     color: white;
+
 }
 
 *::-webkit-scrollbar {
@@ -199,7 +200,7 @@ body {
     font-size: 20px;
 }
 
-select {
+ select {
     background-color: white;
     border-radius: 30px;
     font-size: 15px;
@@ -209,6 +210,20 @@ select {
     appearance: none;
     text-align: center;
     text-transform: uppercase;
+}
+
+#filter-by-title {
+    background-color: white;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border: none;
+    appearance: none;
+    text-align: center;
+    text-transform: uppercase;
+    color:#000000;
+
 }
 
 .fa-lg {

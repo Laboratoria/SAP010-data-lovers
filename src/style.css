@@ -43,7 +43,7 @@ menu {
 }
 
 .cartao-cards {
-    background: #cc4d4d;
+    /* background: #cc4d4d; */
     width: 200px;
     position: relative;
     display: block;
@@ -68,7 +68,7 @@ menu {
 }*/
 
 #info {
-    background: #8688d1;
+    /* background: #8688d1; */
 }
 
 #nome {
@@ -110,9 +110,11 @@ menu {
     /*transition: 0.2s ease-in-out;*/
     /*efeito suave de entrada e saída, só vai funcionar se eu colocar o hoover*/
     justify-content: center;
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
     border-radius: 6px;
-    background-color: darksalmon;
+    /* background-color: darksalmon; */
+    align-self: self-start;
+    box-shadow: 3px 3px 4px black;
 }
 
 ul li {
@@ -155,17 +157,17 @@ ul {
 }
 
 .sign-up {
-    background-color: #7ac74c;
-    border: 2px solid #000000;
-    border-radius: 3px;
-    font-size: 8px;
+    background-color: #ffffff;
+    /* border: 2px solid #000000;
+    border-radius: 3px; */
+    font-size: 14px;
 }
 
 .sign-rev {
     background-color: #df67ddfb;
-    border: 2px solid #000000;
-    border-radius: 3px;
-    font-size: 8px;
+    /* border: 2px solid #000000;
+    border-radius: 3px; */
+    font-size: 14px;
 }
 
 .descricao {
@@ -175,3 +177,32 @@ ul {
     padding-right: 10px;
     text-align: start;
 }
+
+h2 {
+    font-size: 15px;
+}
+
+details > summary {
+    padding: 2px 6px;
+    width: 150px;
+    background-color: #9edb2b;
+    border: none;
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+    list-style: none;
+    height: 20px;
+    padding: 6px 6px;
+    line-height: 20px;
+  }
+  
+  details .sumario {
+    border-radius: 0 0 10px 10px;
+    background-color: #9edb2b;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+  }
+
+  details {
+    width: 200px;
+  }

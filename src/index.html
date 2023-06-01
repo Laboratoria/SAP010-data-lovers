@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>GAME OF THRONES</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./newicon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/ac359e685a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="header">
+    <div id="logo">
+      <a href="./"> <img src="logo.png" alt="Logo Game of Thrones"></a>
+    </div>
+    <div id="container-right">
+      <div class="search-box">
+        <input class="search-input" id="search-input" type="text" placeholder="Pesquisar por nome">
+        <a href="#" class="search-btn">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
+      <a href="https://www.hbo.com/game-of-thrones/season-1/" target="_blank"><button id="watch-now">ASSISTA A
+          SÉRIE</button></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1 class="page-title">Conheça os personagens</h1>
+    <nav class="menu-hamburguer">
+      <div class="menu">
+        <a href="./about.html" class="menu-item">Sobre a série</a>
+        <ul>
+          <li class="menu-item">filtrar por:</li>
+          <li class="menu-sub-item">
+            <select id="filter-by-title">TÍTULO
+              <option disabled selected style="display: none;">TÍTULO</option>
+            </select>
+          </li><br>
+            <select id="filter-by-family">
+              <option disabled selected style="display: none;">FAMÍLIA</option>
+              <option value="All">Mostrar Todos</option>
+              <option value="House Baelish">Baelish</option>
+              <option value="House Baratheon">Baratheon</option>
+              <option value="Bolton">Bolton</option>
+              <option value="Bronn">Bronn</option>
+              <option value="House Clegane">Clegane</option>
+              <option value="Free Folk">Free Folk</option>
+              <option value="House Greyjoy">Greyjoy</option>
+              <option value="House Lannister">Lannister</option>
+              <option value="Lorath">Lorath</option>
+              <option value="Mormont">Mormont</option>
+              <option value="Naathi">Naathi</option>
+              <option value="Naharis">Naharis</option>
+              <option value="None">None</option>
+              <option value="Qyburn">Qyburn</option>
+              <option value="Sand">Sand</option>
+              <option value="House Seaworth">Seaworth</option>
+              <option value="Sparrow">Sparrow</option>
+              <option value="House Stark">Stark</option>
+              <option value="House Targaryen">Targaryen</option>
+              <option value="House Tarly">Tarly</option>
+            </select>
+          </li>
+          <ul>
+            <li class="menu-item">ordenar por:</li>
+            <li class="menu-sub-item">
+              <select id="order-by-name">
+                <option disabled selected style="display: none;">Selecione</option>
+                <option value="a-z">A-Z</option>
+                <option value="z-a">Z-A</option>
+              </select>
+            </li>
+          </ul>
+        </ul>
+        <a href="./quemsomosnos.html" class="menu-item">Quem somos nós</a>
+      </div>
+      <a href="#" class="menu-icon">
+        <i class="fas fa-bars fa-lg"></i>
+      </a>
+    </nav>
+
+    <!-- Incluir aqui os cards dos personagens -->
+    <div id="characterContainer" class="card-container"></div>
+  </main>
+  <p id="familyPercentage"></p>
+
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

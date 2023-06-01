@@ -41,9 +41,17 @@ function infosDosCardsTela(cards) {
             <img alt="cartas-frente" class="card-img" src="${cards.img}">
             <p id="tipo"> Arcano: ${cards.type}</p>
               <ul class="sign">
-              
-               <li class="sign-up"> <button id="btnUp"> Meaning Up </button> <dialog id="dialogUp"> <h2> Meaning Up: </h2> <p> ${cards.meaning_up} </p> <button> Fechar </button> </dialog> </li> 
-                <li class="sign-rev"><strong>Meaning Reverso: ${cards.meaning_rev} </strong></li>
+                <li class="sign-up">
+                  <dialog id="dialogUp">
+                    <h2> Meaning Up: </h2>
+                    <p> ${cards.meaning_up} </p>
+                    <button> Fechar </button>
+                  </dialog>
+                  <button id="btnUp"> Meaning Up </button>
+                </li> 
+                <li class="sign-rev">
+                 <strong>Meaning Reverso: ${cards.meaning_rev} </strong>
+                </li>
               </ul>
             <p class="descricao"><strong>Description:</strong> ${cards.desc} </p>
           </li>
@@ -121,10 +129,23 @@ const calculoMajor = (major * 100) / 78;
 const totalMajor = calculoMajor.toFixed(2);
 const totalMinor = calculoMinor.toFixed(2);
 
-botaoUp.addEventListener("click", () => {
+// const abrirModal = (meaningRevs) => {
+//   meaningRevs.showModal();
+// }
+
+// dadosTarot.meaning_rev.forEach((element) => {
+//   abrirModal(element);
+// });
+// console.log(dadosTarot.meaning_rev);
+botaoUp.addEventListener("click", function() {
   modalUp.showModal();
 });
 
-botaoFechar.addEventListener("click", () => {
+botaoFechar.addEventListener("click", function() {
   modalUp.close();
 });
+
+// algumas resoluções para o modal:
+// loop for;
+// forEach();
+// usar details em vez de dialog

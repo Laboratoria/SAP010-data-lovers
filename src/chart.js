@@ -57,4 +57,4 @@ const plotChart = (percentage) => {
 
 }//endPlotChart
 
-plotChart(computeStats.calculatePokemonTypesInPercentages(data))
+plotChart(computeStats.calculatePokemonTypesInPercentages(data.pokemon));

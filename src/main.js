@@ -24,48 +24,93 @@ const selectArcano = document.getElementById("arcanos");
 const calculoTelaMajor = document.getElementById("calculo");
 const calculoTelaMinor = document.getElementById("calculo2");
 
+// function infosDosCardsTela(cards) {
+//   root.innerHTML = cards
+//     .map(
+//       (cards) => `
+//       <div class="lista-cards">
+//         <ul>
+//           <li class="cartao-cards">
+//             <ul>
+//               <li id="info">
+//                 <p id="valor"> ${cards.value}</p>
+//                 <p id="nome"><strong> ${cards.name}</strong></p>
+//               </li>
+//             </ul>
+
+//             <img alt="cartas-frente" class="card-img" src="${cards.img}">
+//             <p id="tipo"> Arcano: ${cards.type}</p>
+//               <ul class="sign">
+              
+//                <li class="sign-up"> <button> Meaning Up </button> <dialog class="dialogUp"> <h2> Meaning Up: </h2> <p> ${cards.meaning_up} </p> <button> Fechar </button> </dialog> </li> 
+//                 <li class="sign-rev"><strong>Meaning Reverso: ${cards.meaning_rev} </strong></li>
+//               </ul>
+//             <p class="descricao"><strong>Description:</strong> ${cards.desc} </p>
+//           </li>
+//         </ul>
+//       </div>
+// `
+//     )
+//     .join("");
+// }
 function infosDosCardsTela(cards) {
   root.innerHTML = cards
     .map(
-      (cards) => `
+      (card, index) => `
       <div class="lista-cards">
         <ul>
           <li class="cartao-cards">
             <ul>
               <li id="info">
-                <p id="valor"> ${cards.value}</p>
-                <p id="nome"><strong> ${cards.name}</strong></p>
+                <p id="valor"> ${card.value}</p>
+                <p id="nome"><strong> ${card.name}</strong></p>
               </li>
             </ul>
 
-            <img alt="cartas-frente" class="card-img" src="${cards.img}">
-            <p id="tipo"> Arcano: ${cards.type}</p>
-              <ul class="sign">
-                <li class="sign-up">
-                  <dialog id="dialogUp">
-                    <h2> Meaning Up: </h2>
-                    <p> ${cards.meaning_up} </p>
-                    <button> Fechar </button>
-                  </dialog>
-                  <button id="btnUp"> Meaning Up </button>
-                </li> 
-                <li class="sign-rev">
-                 <strong>Meaning Reverso: ${cards.meaning_rev} </strong>
-                </li>
-              </ul>
-            <p class="descricao"><strong>Description:</strong> ${cards.desc} </p>
+            <img alt="cartas-frente" class="card-img" src="${card.img}">
+            <p id="tipo"> Arcano: ${card.type}</p>
+            <ul class="sign">
+              <li class="sign-up">
+                <button id="btnUp_${index}"> Meaning Up </button>
+                <dialog id="dialogUp_${index}">
+                  <h2> Meaning Up: </h2>
+                  <p> ${card.meaning_up} </p>
+                  <button id="btnCloseUp_${index}"> Fechar </button>
+                </dialog>
+              </li> 
+              <li class="sign-rev"><strong>Meaning Reverso: ${card.meaning_rev} </strong></li>
+            </ul>
+            <p class="descricao"><strong>Description:</strong> ${card.desc} </p>
           </li>
         </ul>
       </div>
-`
+    `
     )
     .join("");
+
+  // Adicionar lógica JavaScript para abrir/fechar os diálogos
+  cards.forEach((cards, index) => {
+    const btnUp = document.getElementById(`btnUp_${index}`);
+    const dialogUp = document.getElementById(`dialogUp_${index}`);
+    const btnCloseUp = document.getElementById(`btnCloseUp_${index}`);
+    btnUp.addEventListener("click", () => {
+      dialogUp.showModal();
+    });
+
+    btnCloseUp.addEventListener("click", () => {
+      dialogUp.close();
+    });
+  });
 }
+
 infosDosCardsTela(dadosTarot);
 
-const botaoUp = document.getElementById("btnUp");
-const modalUp = document.getElementById("dialogUp");
-const botaoFechar = document.querySelector("dialog button");
+
+// infosDosCardsTela(dadosTarot);
+
+// const botaoUp = document.querySelector("button");
+// const modalUp = document.querySelector("dialog");
+// const botaoFechar = document.querySelector("dialog button");
 
 
 
@@ -129,23 +174,10 @@ const calculoMajor = (major * 100) / 78;
 const totalMajor = calculoMajor.toFixed(2);
 const totalMinor = calculoMinor.toFixed(2);
 
-// const abrirModal = (meaningRevs) => {
-//   meaningRevs.showModal();
-// }
-
-// dadosTarot.meaning_rev.forEach((element) => {
-//   abrirModal(element);
+// botaoUp.addEventListener("click", () => {
+//   modalUp.showModal();
 // });
-// console.log(dadosTarot.meaning_rev);
-botaoUp.addEventListener("click", function() {
-  modalUp.showModal();
-});
 
-botaoFechar.addEventListener("click", function() {
-  modalUp.close();
-});
-
-// algumas resoluções para o modal:
-// loop for;
-// forEach();
-// usar details em vez de dialog
+// botaoFechar.addEventListener("click", () => {
+//   modalUp.close();
+// });

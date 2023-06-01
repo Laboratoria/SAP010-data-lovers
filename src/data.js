@@ -43,9 +43,3 @@ export const ordenaCartas = (dados, selecao) => {
 export const filtrarArcanos = (dados, arcanoSelecionado) => {
   return dados.filter((cards) => cards.type === arcanoSelecionado);
 };
-
-// export const modals = (cards, modal) => {
-//   return cards.forEach((cards) => cards.meaning_rev {
-//     modal.showModal();
-//   });
-// }

@@ -87,11 +87,7 @@ filterByFamily.addEventListener("change", () => {
     const filteredCharacters = characters.got.filter(character => character.family === selectedFamily);
     showCharacterCards(filteredCharacters);
   }
-  const percentage = calculateFamilyPercentage(filteredCharacters, characters);
-  console.log(`${family}: ${percentage}% são pertencentes à essa família`);
-    showFilteredCharacterCards(charactersArray, 'Stark')
-}
-);
+});
 
 
 //Ordenando de A-Z
@@ -103,5 +99,26 @@ orderByname.addEventListener("change", () => {
   } else if (selectedOrder === "z-a") {
     const orderedCharacters = characters.got.sort((a, b) => b.fullName.localeCompare(a.fullName));
     showCharacterCards(orderedCharacters);
+  }
+});
+
+// Função para exibir a mensagem com a porcentagem da família selecionada
+function showFamilyPercentage(filteredCharacters) {
+  const percentage = calculateFamilyPercentage(filteredCharacters, characters.got);
+  const message = `A família selecionada possui ${percentage}% dos personagens.`;
+  const percentageElement = document.getElementById("familyPercentage");
+  percentageElement.textContent = message;
+}
+
+filterByFamily.addEventListener("change", () => {
+  const selectedFamily = filterByFamily.value;
+  if (selectedFamily === "All") {
+    showCharacterCards(characters.got);
+    const percentageElement = document.getElementById("familyPercentage");
+    percentageElement.textContent = ""; // Limpa a mensagem de porcentagem
+  } else {
+    const filteredCharacters = characters.got.filter(character => character.family === selectedFamily);
+    showCharacterCards(filteredCharacters);
+    showFamilyPercentage(filteredCharacters);
   }
 });

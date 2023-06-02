@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter','Poppins','Roboto', sans-serif;    
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
     background-color: #ffffff;
     color: #333333;
@@ -11,10 +11,12 @@ body {
     display: block;
     cursor: pointer;
     padding: 10px;
+    /* height: 4vh; */
 }
 
 menu {
     display: none;
+    
 }
 
 .informacoes {

@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 100%;
+    width: "100%";
+    font-family: "Cinzel";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.page-header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.video-container {
+    width: 560px;
+    height: 315px;
+}

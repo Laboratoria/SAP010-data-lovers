@@ -71,7 +71,7 @@ function infosDosCardsTela(cards) {
             <p id="tipo"> Arcano: ${card.type}</p>
             <ul class="sign">
               <li class="sign-up">
-                <details>
+                <details class="details-up">
                 <summary class="btnUp"> Saiba mais </summary>
                 <div class="sumario">
                   <h2> Meaning Up: </h2>

@@ -10,7 +10,7 @@ body {
 	grid-template-rows: repeat(3 auto);
 	border: 2px #000; */
 
-	
+
 	/* background-image: url(imagens/cartasDireita.jpg);
 	background-size: cover;
 	background-repeat: no-repeat; */
@@ -28,8 +28,9 @@ body {
 	background-color: orange;
 	padding: 10px;
 }
+
 /* elementos da div layout: header, main, img e <a> */
-.layout > div {
+.layout>div {
 	background-color: white;
 	border: 1px solid black;
 	font-size: 30px;
@@ -39,6 +40,9 @@ body {
 h1 {
 	padding: 1em 0px 1em 3em;
 }
+ h2 {
+	padding: 0 0 1em 3em;
+ }
 
 p {
 	margin-bottom: 1em;
@@ -52,17 +56,29 @@ p {
 }
 
 .main {
-	background-image: url(imagens/cartasDireita.jpg);
+	background-image: url(imagens/cartasDireitaEstreita.jpg);
+	/* background-color: #E4E2E7; */
 	height: 97.5vh;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-	
+	width: 100vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+ul {
+	background-color: #E4E2E7;
+	margin: 0;
+
+}
+
+li a {
+	text-decoration: none;
 }
 
 main {
 	margin-left: 10px;
 	width: 500px;
+	font-size: 13px;
 }
 
 menu {

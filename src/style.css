@@ -169,12 +169,12 @@ select {
   width: 100%;
 }
 
-#name,
-#num {
+.letter-card{
   color: var(--whiteTone);
   font-family: 'Carter One';
   font-weight: 400;
   font-size: 22px;
+  text-align: center;
 }
 
 .all-images-card-pokemon {

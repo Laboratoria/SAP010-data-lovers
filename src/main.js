@@ -39,8 +39,8 @@ const buildCard = (pokemons) => {
     <div  class = "card" style="background-color: ${pokemon.colorType[0]};">
       <div>
         <div class="name-number-pokemon">
-          <h1 id="name">${pokemon.name}</h1>
-          <p id="num">${pokemon.num}</p>
+          <h1 class="letter-card">${pokemon.name}</h1>
+          <p class="letter-card">${pokemon.num}</p>
         </div>
         <div class=all-images-card-pokemon>
     `;
@@ -53,6 +53,7 @@ const buildCard = (pokemons) => {
     showDataPokemon += `
           <img id="image-pokemon" alt="Image Pokemon" src=${pokemon.img}>
         </div>
+        <a href="cardDetails.html" target="_blank"><p id=${pokemon.num} class="letter-card">saiba mais</p></a>
       </div>
     </div>
     `;
@@ -150,6 +151,14 @@ if (tallestPokemonImage) {
 window.addEventListener("load", () => {
 
   buildCard(data.pokemon);
+  const toKnowMore = document.querySelectorAll("a p");
+
+  toKnowMore.forEach(anchor => {
+    anchor.addEventListener('click', (event)=> {
+      console.log(event.target.id);
+      localStorage.setItem('id', event.target.id)
+    })
+  })
 
 });//endAddEventListener
 

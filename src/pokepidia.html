@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> <!-- linkamos uma fonte do google, e usamos o rel para relacionar para que serve  -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <!-- linkamos uma fonte do google, e usamos o rel para relacionar para que serve  -->
 </head>
 
 <body>
@@ -16,9 +17,11 @@
   </header>
 
   <main> <!-- usamos ela para colocar nossos select, que serão usados para filtro  -->
-    <div class="filtro-pokepidia"> <!-- abrimos uma div, onde ficará os selects e suas opções para a filtragem e ordenação  -->
+    <div class="filtro-pokepidia">
+      <!-- abrimos uma div, onde ficará os selects e suas opções para a filtragem e ordenação  -->
       <select id="tipo"> <!--  Criamos um select, para conter as opções de tipos de pokemons que serão selecionadas -->
-        <option selected="" value="tipo-poke">Tipo</option> <!--  Criamos as opções com todos os tipos, onde a primeira se inicia selecionada -->
+        <option selected="" value="tipo-poke">Tipo</option>
+        <!--  Criamos as opções com todos os tipos, onde a primeira se inicia selecionada -->
         <option value="grass">Planta</option>
         <option value="fire">Fogo</option>
         <option value="water">Água</option>
@@ -39,10 +42,10 @@
         <option value="fairy">Fada</option>
       </select>
 
-      <select id="ordem">
-        <option selected="" value="organizar">Organizar por</option>
-        <option value="numberAsc">Menor número primeiro</option>
-        <option value="numberDesc">Maior número primeiro</option>
+      <select id="order">
+        <option selected="" value="organize">Organizar por</option>
+        <option value="numberAsc">Crescente</option>
+        <option value="numberDesc">Decrescente</option>
         <option value="nameAsc">A-Z</option>
         <option value="nameDesc">Z-A</option>
       </select>
@@ -50,14 +53,14 @@
     </div>
 <p>Olá, mundo!</p>
 
-    <div id="root"></div>
+    <div id="cards"></div>
   </main>
 
-  <a href="index.html" class="botao-img"> <!--  criamos um botão para retornar para a página inicial -->
-    <button>back</button>
+  <a href="index.html" class="button-img"> <!--  criamos um botão para retornar para a página inicial -->
+    <button>Voltar</button>
   </a>
 
-  <script src="main.js" type="module"></script> 
+  <script src="main.js" type="module"></script>
 </body>
 
 </html>

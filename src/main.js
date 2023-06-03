@@ -2,7 +2,7 @@ import { filterCharactersByFamily, calculateFamilyPercentage } from './data.js';
 import { translateTitle, translateFamily } from './extra.js';
 import characters from "./data/got/got.js";
 
-function showCharacterCards(charactersArray = characters.got) {
+function showCharacterCards(charactersArray) {
   const container = document.getElementById("characterContainer");
 
   // Limpa o conteúdo do container
@@ -41,7 +41,7 @@ function showCharacterCards(charactersArray = characters.got) {
 }
 
 // Chama a função para exibir os cards dos personagens
-showCharacterCards();
+showCharacterCards(characters.got);
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuIcon = document.querySelector(".menu-icon");
@@ -64,6 +64,7 @@ const searchInput = document.querySelector("#search-input");
 const filterByTitle = document.querySelector("#filter-by-title");
 const filterByFamily = document.querySelector("#filter-by-family");
 const orderByname = document.querySelector("#order-by-name");
+const percentageElement = document.getElementById("familyPercentage");
 
 // Manipulação de eventos
 searchInput.addEventListener("input", () => {
@@ -71,26 +72,34 @@ searchInput.addEventListener("input", () => {
   const filteredCharacters = characters.got.filter(character => character.fullName.toLowerCase().includes(searchTerm));
   showCharacterCards(filteredCharacters);
 });
-//Filtro por título
+
+// Filtro por título
 filterByTitle.addEventListener("click", () => {
   const filteredCharacters = characters.got.sort((a, b) => a.title.localeCompare(b.title));
   showCharacterCards(filteredCharacters);
 });
 
+// Função para exibir a mensagem com a porcentagem da família selecionada
+function showFamilyPercentage(filteredCharacters) {
+  const percentage = calculateFamilyPercentage(filteredCharacters, characters.got);
+  const message = `A família selecionada possui ${percentage}% dos personagens.`;
+  percentageElement.textContent = message;
+}
 
-//Filtro por família
+// Filtro por família
 filterByFamily.addEventListener("change", () => {
   const selectedFamily = filterByFamily.value;
   if (selectedFamily === "All") {
     showCharacterCards(characters.got);
+    percentageElement.textContent = ""; // Limpa a mensagem de porcentagem
   } else {
     const filteredCharacters = characters.got.filter(character => character.family === selectedFamily);
     showCharacterCards(filteredCharacters);
+    showFamilyPercentage(filteredCharacters);
   }
 });
 
-
-//Ordenando de A-Z
+// Ordenando de A-Z
 orderByname.addEventListener("change", () => {
   const selectedOrder = orderByname.value;
   if (selectedOrder === "a-z") {
@@ -99,26 +108,5 @@ orderByname.addEventListener("change", () => {
   } else if (selectedOrder === "z-a") {
     const orderedCharacters = characters.got.sort((a, b) => b.fullName.localeCompare(a.fullName));
     showCharacterCards(orderedCharacters);
-  }
-});
-
-// Função para exibir a mensagem com a porcentagem da família selecionada
-function showFamilyPercentage(filteredCharacters) {
-  const percentage = calculateFamilyPercentage(filteredCharacters, characters.got);
-  const message = `A família selecionada possui ${percentage}% dos personagens.`;
-  const percentageElement = document.getElementById("familyPercentage");
-  percentageElement.textContent = message;
-}
-
-filterByFamily.addEventListener("change", () => {
-  const selectedFamily = filterByFamily.value;
-  if (selectedFamily === "All") {
-    showCharacterCards(characters.got);
-    const percentageElement = document.getElementById("familyPercentage");
-    percentageElement.textContent = ""; // Limpa a mensagem de porcentagem
-  } else {
-    const filteredCharacters = characters.got.filter(character => character.family === selectedFamily);
-    showCharacterCards(filteredCharacters);
-    showFamilyPercentage(filteredCharacters);
   }
 });

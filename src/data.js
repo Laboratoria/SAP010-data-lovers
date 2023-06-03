@@ -1,5 +1,3 @@
-import characters from "./data/got/got.js";
- 
 //Função de busca dos personagens por nome, sobrenome, nome completo
 export function searchName(searchValue) {
   const filteredNames = characters.got.filter(character => {

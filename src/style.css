@@ -9,6 +9,24 @@
   --secondWhiteTone: #F7F1E3;
   --whiteTone: #F5F5F5;
   --whiteWithTransparency: rgba(247, 241, 227, 0.71);
+  --bcgTypeGrass: #5fa81f7e;
+  --bcgTypePoison: #786fa6d0;
+  --bcgTypeDragon: #546ce5b0;
+  --bcgTypeFire: #ff793f7a;
+  --bcgTypeFlying: #8c9be6cc;
+  --bcgTypeWater: #6ba5d1e7;
+  --bcgTypeBug: #8bd671d8;
+  --bcgTypeNormal: #aaa69ddc;
+  --bcgTypeElectric: #fddb52ec;
+  --bcgTypeGround: #cc8b5fbd;
+  --bcgTypeFighting: #ea8685;
+  --bcgTypePsychic: #dd9893e8;
+  --bcgTypeRock: #84817ab6;
+  --bcgTypeIce: #9ad3c4f6;
+  --bcgTypeGhost: #786fa6c0;
+  --bcgTypeFairy: #f8a5c2e0;
+  --bcgTypeDark: #353b4891;
+  --bcgTypeSteel: #487eb0bd;
 }
 
 * {
@@ -176,6 +194,9 @@ select {
   font-size: 22px;
   text-align: center;
 }
+.know-more{
+  font-size: 18px;
+}
 
 .all-images-card-pokemon {
   display: flex;
@@ -281,6 +302,83 @@ h1::first-letter {
   text-transform: uppercase;
 }
 
+.flip-card-inner{
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.color-type-grass{
+  background-color: var(--bcgTypeGrass);
+}
+
+.color-type-dragon{
+  background-color: var(--bcgTypeDragon);
+}
+
+.color-type-poison{
+  background-color: var(--bcgTypePoison);
+}
+
+.color-type-fire{
+  background-color: var(--bcgTypeFire);
+}
+
+.color-type-flying{
+  background-color: var(--bcgTypeFlying);
+}
+
+.color-type-water{
+  background-color: var(--bcgTypeWater);
+}
+
+.color-type-bug{
+  background-color: var(--bcgTypeBug);
+}
+
+.color-type-normal{
+  background-color: var(--bcgTypeNormal);
+}
+
+.color-type-electric{
+  background-color: var(--bcgTypeElectric);
+}
+
+.color-type-ground{
+  background-color: var(--bcgTypeGround);
+}
+
+.color-type-fighting{
+  background-color: var(--bcgTypeFighting);
+}
+
+.color-type-psychic{
+  background-color: var(--bcgTypePsychic);
+}
+
+.color-type-rock{
+  background-color: var(--bcgTypeRock);
+}
+
+.color-type-ice{
+  background-color: var(--bcgTypeIce);
+}
+
+.color-type-ghost{
+  background-color: var(--bcgTypeGhost);
+}
+
+.color-type-fairy{
+  background-color: var(--bcgTypeFairy);
+}
+
+.color-type-dark{
+  background-color: var(--bcgTypeDark);
+}
+
+.color-type-steel{
+  background-color: var(--bcgTypeSteel);
+}
 
 @media screen and (max-width: 768px) {
 

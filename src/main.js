@@ -1,30 +1,5 @@
 import { computeStats, filterData, sortData } from './data.js';
 import data from './data/pokemon/pokemon.js';
-import stylesPokemon from './stylesPokemon.js';
-
-const styleCard = (pokemon, stylesPokemon) => {
-
-  for (const data in pokemon) {
-
-    Object.defineProperty(pokemon[data], 'imgType', { value: [] });
-    Object.defineProperty(pokemon[data], 'colorType', { value: [] });
-
-    stylesPokemon.forEach(style => {
-
-      if (pokemon[data].type.includes(style.typePokemon)) {
-
-        pokemon[data].imgType.push(style.img);
-        pokemon[data].colorType.push(style.color);
-
-      }//endIf
-
-    })//endForEach
-
-  }//endFor
-
-}//endStyleCard
-
-styleCard(data.pokemon, stylesPokemon);
 
 const buildCard = (pokemons) => {
 
@@ -36,7 +11,7 @@ const buildCard = (pokemons) => {
   pokemons.forEach(pokemon => {
 
     let showDataPokemon = `
-    <div  class = "card" style="background-color: ${pokemon.colorType[0]};">
+    <div  class="card flip-card-inner color-type-${pokemon.type[0]}">
       <div>
         <div class="name-number-pokemon">
           <h1 class="letter-card">${pokemon.name}</h1>
@@ -45,15 +20,15 @@ const buildCard = (pokemons) => {
         <div class=all-images-card-pokemon>
     `;
 
-    pokemon.imgType.forEach(image => {
+    pokemon.type.forEach(imgType => {
       showDataPokemon += `
-          <img class="img-type" src=${image}>`;
+          <img class="img-type" src="./images/types/${imgType}.png">`;
     })
 
     showDataPokemon += `
           <img id="image-pokemon" alt="Image Pokemon" src=${pokemon.img}>
         </div>
-        <a href="cardDetails.html" target="_blank"><p id=${pokemon.num} class="letter-card">saiba mais</p></a>
+        <a href="cardDetails.html" target="_blank"><p id=${pokemon.num} class="letter-card know-more">saiba mais</p></a>
       </div>
     </div>
     `;
@@ -63,6 +38,14 @@ const buildCard = (pokemons) => {
   });
 
   pokemonsHtml.innerHTML = tagsHtml;
+
+  const toKnowMore = pokemonsHtml.querySelectorAll("a p");
+
+  toKnowMore.forEach(anchor => {
+    anchor.addEventListener('click', (event)=> {
+      localStorage.setItem('id', event.target.id)
+    })
+  })
 
 }//endBuildCard
 
@@ -151,14 +134,6 @@ if (tallestPokemonImage) {
 window.addEventListener("load", () => {
 
   buildCard(data.pokemon);
-  const toKnowMore = document.querySelectorAll("a p");
-
-  toKnowMore.forEach(anchor => {
-    anchor.addEventListener('click', (event)=> {
-      console.log(event.target.id);
-      localStorage.setItem('id', event.target.id)
-    })
-  })
 
 });//endAddEventListener
 

@@ -25,16 +25,11 @@ export const sortData = (pokemons, sortBy, orderBy) => {
 
   const pokemonsSorted = pokemons.filter(pokemon => pokemon.type.includes(sortBy));
 
-  console.log(pokemonsSorted);
-
-  const alphabeticalOrder = 'a-z' || 'z-a';
-  const sortByPokedexNumber = 'asc' || 'desc';
-
-  if (orderBy === alphabeticalOrder) {
+  if (orderBy === 'a-z' || orderBy === 'z-a' ) {
     sorted(orderBy, pokemonsSorted, 'name');
   }
 
-  if (orderBy === sortByPokedexNumber) {
+  if (orderBy === 'asc' || orderBy === 'desc' ) {
     sorted(orderBy, pokemonsSorted, 'num');
   }
 
@@ -84,29 +79,3 @@ export const computeStats = {
   }//endFindBiggestPokemonSizes
 
 }//endComputStats
-
-
-/*
-if (Object.keys(data.pokemon[pokemon].evolution).filter((key) => key.includes('next-evolution')).length !== 0) {
-
-        const idNextEvolution = data.pokemon[pokemon].evolution['next-evolution'][0].num;
-
-        for (const evolution in data.pokemon) {
-
-          if (data.pokemon[evolution].num.includes(idNextEvolution)) {
-
-            pokemons.push(data.pokemon[evolution]);
-
-          }//endIf
-
-        }//endFor
-
-      }//endIf
-
-*/
-
-
-
-
-
-

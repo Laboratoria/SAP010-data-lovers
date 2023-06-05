@@ -7,7 +7,13 @@ body {
 }
 
 header {
-    z-index: 10;
+    z-index: 2;
+    width: 100vw;
+    /* height: 300px; */
+    position: fixed;
+    right: 0%;
+    bottom: 93%;
+    padding-top: 10px;
 }
 
 #menuLista {
@@ -30,7 +36,7 @@ menu > ul > li > a {
     background: #8FBC8F;
     display: block;
     cursor: pointer;
-    padding: 10px;
+    padding: 20px 0 10px 10px;
     /* position: relative; */
     /* height: 4vh; */
 }
@@ -46,6 +52,16 @@ menu {
     display: none;
 
 }
+
+#tituloT{
+    
+}
+
+#textoT{
+
+}
+
+
 
 .informacoes {
     background-color: crimson;

@@ -14,7 +14,7 @@ body {
 	/* background-image: url(imagens/cartasDireita.jpg);
 	background-size: cover;
 	background-repeat: no-repeat; */
-	font-family: 'Inter', 'Poppins', 'Roboto', sans-serif;
+	font-family: 'Poppins', 'Roboto', sans-serif;
 
 	/* background-repeat: no-repeat;
 	background-size: 1028px 617px;
@@ -28,12 +28,20 @@ body {
 	z-index: 2;
 } */
 
+#tituloH {
+	padding-top: 4em;
+	padding-bottom: 2em;
+	font-weight: bolder;
+	font-size: xx-large;
+}
+
 h1 {
-	padding: 1em 0px 1em 3em;
+	padding: 2em 0px 1em 3em;
 }
 
 h2 {
 	padding: 0 0 1em 3em;
+	font-weight: bolder;
 }
 
 p {
@@ -42,9 +50,24 @@ p {
 	/* margin-left: 10px;*/
 }
 
+.textoH {
+	font-size: 14.5px;
+	font-weight: 800;
+}
+
+.textoA {
+	font-size: 12px;
+	font-weight: 800;
+}
+
 .voltar {
 	text-decoration: none;
 	color: black;
+	/* padding-top: 1em; */
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: #8FBC8F;
+	display: inline-block;
 }
 
 .main {

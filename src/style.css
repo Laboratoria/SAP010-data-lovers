@@ -1,25 +1,71 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    max-width: 1280px;
+    font-family: 'Inter', 'Poppins', 'Roboto', sans-serif;
+    /* max-width: 1280px; */
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #fff;
     color: #333333;
+}
+
+header {
+    z-index: 2;
+    width: 100vw;
+    /* height: 300px; */
+    position: fixed;
+    right: 0%;
+    bottom: 93%;
+    padding-top: 10px;
+}
+
+#menuLista {
+
+    background-color:rgba(143, 188, 143, 0.25);
+    margin: 0;
+    position: fixed;
+    font-weight: bold;
+    padding: 1em 0;
+}
+
+menu > ul > li > a {
+    color: #000;
+    text-decoration: none;
+    /* margin-bottom: 5px; */
+    font-size: 15px;
 }
 
 #burguer {
     background: #8FBC8F;
     display: block;
     cursor: pointer;
-    padding: 10px;
+    padding: 20px 0 10px 10px;
+    /* position: relative; */
+    /* height: 4vh; */
 }
+
+
+/* .menuLista{
+    position:relative;
+    z-index: 10;
+} */
+
 
 menu {
     display: none;
+
 }
+
+#tituloT{
+    
+}
+
+#textoT{
+
+}
+
+
 
 .informacoes {
     background-color: crimson;
-} 
+}
 
 .container-card {
     /* background-color: #7ac74c; */
@@ -43,7 +89,7 @@ menu {
 }
 
 .cartao-cards {
-    background: #cc4d4d;
+    /* background: #cc4d4d; */
     width: 200px;
     position: relative;
     display: block;
@@ -68,11 +114,11 @@ menu {
 }*/
 
 #info {
-    background: #8688d1;
+    /* background: #8688d1; */
 }
 
 #nome {
-    margin:1.5% 0;
+    margin: 1.5% 0;
     display: block;
     text-align: center;
     align-items: center;
@@ -85,15 +131,15 @@ menu {
     text-align: center;
     align-items: center;
 
-}*/
+}
 
-#tipo {
+*/ #tipo {
     margin: 1.5% 0;
     display: block;
     text-align: center;
     align-items: center;
 
-} 
+}
 
 .lista-cards {
     /*background-color: #d8e3ec;*/
@@ -110,9 +156,11 @@ menu {
     /*transition: 0.2s ease-in-out;*/
     /*efeito suave de entrada e saída, só vai funcionar se eu colocar o hoover*/
     justify-content: center;
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
     border-radius: 6px;
-    background-color: darksalmon;
+    /* background-color: darksalmon; */
+    align-self: self-start;
+    box-shadow: 3px 3px 4px black;
 }
 
 ul li {
@@ -155,17 +203,17 @@ ul {
 }
 
 .sign-up {
-    background-color: #7ac74c;
-    border: 2px solid #000000;
-    border-radius: 3px;
-    font-size: 8px;
+    background-color: #ffffff;
+    /* border: 2px solid #000000;
+    border-radius: 3px; */
+    font-size: 14px;
 }
 
 .sign-rev {
     background-color: #df67ddfb;
-    border: 2px solid #000000;
-    border-radius: 3px;
-    font-size: 8px;
+    /* border: 2px solid #000000;
+    border-radius: 3px; */
+    font-size: 14px;
 }
 
 .descricao {
@@ -174,4 +222,34 @@ ul {
     font-size: 14px;
     padding-right: 10px;
     text-align: start;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+details>summary {
+    padding: 2px 6px;
+    width: 150px;
+    background-color: #9edb2b;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+    list-style: none;
+    height: 20px;
+    padding: 6px 6px;
+    line-height: 20px;
+}
+
+details .sumario {
+    border-radius: 0 10px 10px 10px;
+    background-color: #9edb2b;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+}
+
+details {
+    width: 200px;
 }

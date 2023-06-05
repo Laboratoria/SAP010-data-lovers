@@ -56,7 +56,7 @@ const calculoTelaMinor = document.getElementById("calculo2");
 function infosDosCardsTela(cards) {
   root.innerHTML = cards
     .map(
-      (card, index) => `
+      (card) => `
       <div class="lista-cards">
         <ul>
           <li class="cartao-cards">
@@ -71,16 +71,21 @@ function infosDosCardsTela(cards) {
             <p id="tipo"> Arcano: ${card.type}</p>
             <ul class="sign">
               <li class="sign-up">
-                <button id="btnUp_${index}"> Meaning Up </button>
-                <dialog id="dialogUp_${index}">
+                <details class="details-up">
+                <summary class="btnUp"> Saiba mais </summary>
+                <div class="sumario">
                   <h2> Meaning Up: </h2>
                   <p> ${card.meaning_up} </p>
-                  <button id="btnCloseUp_${index}"> Fechar </button>
-                </dialog>
+                  <h2> Meaning Rev </h2>
+                  <p>${card.meaning_rev}</p>
+                  <h2>Description:</h2>
+                  <p class="descricao"> ${card.desc} </p>
+                  </div>
+                </details>
               </li> 
-              <li class="sign-rev"><strong>Meaning Reverso: ${card.meaning_rev} </strong></li>
+            
             </ul>
-            <p class="descricao"><strong>Description:</strong> ${card.desc} </p>
+   
           </li>
         </ul>
       </div>
@@ -89,20 +94,21 @@ function infosDosCardsTela(cards) {
     .join("");
 
   // Adicionar lógica JavaScript para abrir/fechar os diálogos
-  cards.forEach((cards, index) => {
-    const btnUp = document.getElementById(`btnUp_${index}`);
-    const dialogUp = document.getElementById(`dialogUp_${index}`);
-    const btnCloseUp = document.getElementById(`btnCloseUp_${index}`);
-    btnUp.addEventListener("click", () => {
-      dialogUp.showModal();
-    });
+  // cards.forEach((cards) => {
+  //   const btnUp = document.querySelectorAll(".btnUp");
+  //   const dialogUp = document.querySelectorAll(".dialogUp");
+  //   const btnCloseUp = document.querySelectorAll(".btnCloseUp");
+  //   btnUp.addEventListener("click", () => {
+  //     dialogUp.showModal();
+  //   });
 
-    btnCloseUp.addEventListener("click", () => {
-      dialogUp.close();
-    });
-  });
+  //   btnCloseUp.addEventListener("click", () => {
+  //     dialogUp.close();
+  //   });
+  // });
 }
-
+// linha 83 do map -> <li class="sign-rev"><strong>Meaning Reverso: ${card.meaning_rev} </strong></li>
+// linha 87 do map -> <p class="descricao"><strong>Description:</strong> ${card.desc} </p>
 infosDosCardsTela(dadosTarot);
 
 

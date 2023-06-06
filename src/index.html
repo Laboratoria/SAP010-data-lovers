@@ -21,8 +21,8 @@
     <img src="./images/allchars.webp" alt="Principais personagens do Studio Ghibli caminhando juntos numa colina">
 
     <main>
-      <section class="all-filters">
-        <label for="all-filters">Filtrar animações por: </label>
+      <section class="filters-container">
+        <label for="filters-container">Filtrar animações por: </label>
         <!--p id= "filters" style="color: cornsilk;"> Filtrar animacoes por: </p-->
 
         <ul class="all-filters">
@@ -34,22 +34,21 @@
               <option value="Rating">
             </datalist>
           </li>
-          <li>
+          <!--li>
             <input list="second-filter">
             <datalist id="second-filter">
               <option value="Diretor">
               <option value="Produtor">
             </datalist>
-          </li>
+          </li-->
           <li>
             <input type="button" class ="all-filters" id="start-events" value="ok">
           </li>
         </ul>
       </section>
 
-      <section class="result">
-        <article class="list">
-        </article>
+      <section class="result-cards" id="card-container">
+        <p>Resultados de busca: </p>
       </section>
 
       <footer>

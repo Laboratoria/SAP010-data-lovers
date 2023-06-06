@@ -27,7 +27,7 @@ import {} from './data.js';
 
             **TODAS AS FUNCOES SAO DEFINIDAS NO DATA.JS
 
-            ***Chamo os cards no main ou no data.js?
+            ***Chamo os cards no main ou no data.js? No main mesmo?
 */
 
 console.log(data);
@@ -54,6 +54,9 @@ for (let i=0; i<data.films.length; i++){
 }
 console.log(rating);
 console.log(rating.sort());
+
+
+
 
 
 

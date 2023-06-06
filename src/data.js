@@ -1,8 +1,20 @@
-import data from './data/ghibli/ghibli.js';
-export const selectTitle = () => {
-
-  /* sort() -> alfabeto
-            -> lancamento
-            -> rating
-  */
+//import data from './data/ghibli/ghibli.js';
+export function sortAlphabet(){
+  //const titulos = [];
+  //sort
 }
+
+export function sortRealease(){
+  //string p number
+  //sort
+}
+
+export function sortRating(){
+  //string p number
+  //sort
+}
+
+export function filterDirector(){
+  //
+}
+

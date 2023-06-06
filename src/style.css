@@ -1,7 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Inter', 'Poppins', 'Roboto', sans-serif;
-    /* max-width: 1280px; */
-    margin: 0 auto;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    margin: 0;
     background-color: #fff;
     color: #333333;
 }
@@ -12,20 +16,22 @@ header {
     /* height: 300px; */
     position: fixed;
     right: 0%;
+    /* foi usado para ficar da largura da tela */
     bottom: 93%;
     padding-top: 10px;
 }
 
 #menuLista {
 
-    background-color:rgba(143, 188, 143, 0.25);
+    background-color: rgba(143, 188, 143, 0.25);
     margin: 0;
     position: fixed;
     font-weight: bold;
     padding: 1em 0;
+    padding-left: 1em;
 }
 
-menu > ul > li > a {
+menu>ul>li>a {
     color: #000;
     text-decoration: none;
     /* margin-bottom: 5px; */
@@ -34,10 +40,10 @@ menu > ul > li > a {
 
 #burguer {
     background: #8FBC8F;
-    display: block;
+    display: flex;
     cursor: pointer;
-    padding: 20px 0 10px 10px;
-    /* position: relative; */
+    padding: 20px 0 10px 30px;
+    position: relative;
     /* height: 4vh; */
 }
 
@@ -50,21 +56,81 @@ menu > ul > li > a {
 
 menu {
     display: none;
+}
+
+.background {
+    background-color: rgba(181, 195, 166, 0.6);
+    position: relative;
+}
+
+.background::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url(imagens/cartasEsquerda.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+	opacity: 0.9;
+
 
 }
 
-#tituloT{
-    
-}
-
-#textoT{
+.textoeinput {
+    display: flex;
+    justify-content: space-between;
 
 }
 
+#tituloT {
+    padding-top: 3em;
+    padding-left: 3em;
+    font-size: 3em;
+}
 
+#textoT {
+    padding-left: 3em;
+    text-indent: 2em;
+    display: flex;
+    position: relative;
+    padding-top: 3em;
+    font-weight: bold;
+    /* padding-top: 8em; */
+}
 
-.informacoes {
-    background-color: crimson;
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 180px;
+    position: relative;
+    right: 10%;
+    margin-bottom: 20px;
+    /* padding-top: 6em; */
+    /* left: 80%;
+    bottom: 80%; */
+}
+
+form>input {
+    border: none;
+    background-color: #B5C3A6;
+    height: 40px;
+    font-size: 16px;
+}
+
+form>select {
+    background-color: #B5C3A6;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+}
+
+.calculo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-bottom: 5px;
+    text-decoration: underline;
 }
 
 .container-card {
@@ -75,7 +141,8 @@ menu {
     gap: 30px;
     /*essa propriedade colocamos no pai para conseguirmos mexer nos filhos*/
     justify-content: center;
-    margin-top: 20px;
+    padding-top: 50px;
+    background-color: #B5C3A6;
 
 }
 
@@ -101,22 +168,6 @@ menu {
     align-items: center; */
 }
 
-/*.cartao-cards {
-    /*background: yellow;
-    width: 300px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    border-radius: 15px;
-    transition: 0.2s ease-in-out;
-}*/
-
-#info {
-    /* background: #8688d1; */
-}
-
 #nome {
     margin: 1.5% 0;
     display: block;
@@ -130,15 +181,14 @@ menu {
     display: block;
     text-align: center;
     align-items: center;
-
 }
 
-*/ #tipo {
+#tipo {
     margin: 1.5% 0;
     display: block;
     text-align: center;
     align-items: center;
-
+    font-weight: bold;
 }
 
 .lista-cards {
@@ -165,7 +215,7 @@ menu {
 
 ul li {
     list-style: none;
-    padding: 0px 10px;
+    padding: 0;
 }
 
 ul {
@@ -203,7 +253,7 @@ ul {
 }
 
 .sign-up {
-    background-color: #ffffff;
+    background-color:#B5C3A6;
     /* border: 2px solid #000000;
     border-radius: 3px; */
     font-size: 14px;
@@ -231,7 +281,7 @@ h2 {
 details>summary {
     padding: 2px 6px;
     width: 150px;
-    background-color: #9edb2b;
+    background-color: #8FBC8F;
     border: none;
     border-radius: 6px;
     box-shadow: 3px 3px 4px black;
@@ -244,7 +294,7 @@ details>summary {
 
 details .sumario {
     border-radius: 0 10px 10px 10px;
-    background-color: #9edb2b;
+    background-color: #8FBC8F;
     padding: 2px 6px;
     margin: 0;
     box-shadow: 3px 3px 4px black;

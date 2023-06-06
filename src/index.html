@@ -26,33 +26,40 @@
     </menu>
   </header>
   <main>
-    <h1 id="tituloT"><strong>Tarô</strong></h1>
-    <p id="textoT">O tarô é um baralho de cartas frequentemente utilizado como meio de consulta e interpretação de fatos (presentes,
-      passados ou futuros), sonhos, percepções ou estados emocionais, que também constitui um tipo de cartomancia.</p>
+    <div class="background">
+      <h1 id="tituloT"><strong>Tarô</strong></h1>
+      <div class="textoeinput">
+        <p id="textoT">O tarô é um baralho de cartas frequentemente utilizado como meio de consulta <br> e interpretação
+          de fatos (presentes,
+          passados ou futuros), sonhos, percepções ou <br> estados emocionais, que também constitui um tipo de
+          cartomancia.</p>
+        <form autocomplete="off">
+          <label for="nome">Nome</label>
+          <input type="search" id="pesquisa-nome" name="nome" placeholder="Insira o nome da Carta">
 
-    <form autocomplete="off">
-      <label for="nome">Nome</label>
-      <input type="search" id="pesquisa-nome" name="nome" placeholder="Insira o nome da Carta">
+          <label for="numero">Número</label>
+          <input type="number" id="pesquisa-numero" name="numero" min="1" max="21">
 
-      <label for="numero">Número</label>
-      <input type="number" id="pesquisa-numero" name="numero" min="1" max="21">
+          <label for="arcanos">Arcanos</label>
+          <select name="arcanos" id="arcanos" class="arcanos">
+            <option value="major">Major</option>
+            <option value="minor">Minor</option>
+            <option selected value="none">Selecione</option>
+          </select>
 
-      <label for="arcanos">Arcanos</label>
-      <select name="arcanos" id="arcanos" class="arcanos">
-        <option value="major">Major</option>
-        <option value="minor">Minor</option>
-        <option selected value="none">Selecione</option>
-      </select>
-
-      <label for="ordem">Ordenar</label>
-      <select name="ordem" id="ordem" class="ordem">
-        <option value="a-z">A-Z</option>
-        <option value="z-a">Z-A</option>
-        <option selected value="Selecione">Selecione</option>
-      </select>
-    </form>
-    <p id="calculo"></p>
-    <p id="calculo2"></p>
+          <label for="ordem">Ordenar</label>
+          <select name="ordem" id="ordem" class="ordem">
+            <option value="a-z">A-Z</option>
+            <option value="z-a">Z-A</option>
+            <option selected value="Selecione">Selecione</option>
+          </select>
+        </form>
+      </div>
+      <div class="calculo">
+        <p id="calculo"></p>
+        <p id="calculo2"></p>
+      </div>
+    </div>
   </main>
 
   <section>

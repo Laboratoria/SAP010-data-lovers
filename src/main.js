@@ -3,13 +3,9 @@
 import data from './data/ghibli/ghibli.js';
 import { sortAlphabet } from './data.js';
 
-const selectElement = document.querySelector("#first-filter")
+const selectElement = document.querySelector("#first-filter");
+console.log(selectElement);
 
-selectElement.addEventListener("change", (event) =>
-{ const escolha = event.target.value;
-console.log(escolha);
-sortAlphabet()
-});
 
 /* ToDo:
       Organizar DOM
@@ -20,7 +16,7 @@ sortAlphabet()
             ***Chamo os cards no main ou no data.js? No main mesmo? Sim.
 */
 
-console.log(data);
+//console.log(data);
 //document.getElementById("start-events").addEventListener("click", );
 
 

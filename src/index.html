@@ -26,12 +26,12 @@
         <!--p id= "filters" style="color: cornsilk;"> Filtrar animacoes por: </p-->
         <ul class="all-filters">
           <li>
-            <input list="first-filter">
-            <datalist id="first-filter">
-              <option value="Títulos a-z">
-              <option value="Producoes mais recentes">
-              <option value="Producoes mais antigas">
-            </datalist>
+
+            <select id="first-filter" onchange="ordenar">
+              <option value="Títulos a-z"></option>
+              <option value="Producoes mais recentes"></option>
+              <option value="Producoes mais antigas"></option>
+            </select>
 
             <!--select id="second-filter">
               <optgroup label="Ordenar por avaliacao da crítica">
@@ -40,15 +40,15 @@
               </optgroup>
             </select-->
 
-            <input list="third-filter">
-            <datalist id="third-filter">
-              <option value="Gorō Miyazaki">
-              <option value="Hayao Miyazak">
-              <option value="Hiromasa Yonebayashi">
-              <option value="Hiroyuki Morita">
-              <option value="Isao Takahata">
-              <option value="Yoshifumi Kondō">
-            </datalist>
+
+            <select id="third-filter">
+              <option value="Gorō Miyazaki"></option>
+              <option value="Hayao Miyazak"></option>
+              <option value="Hiromasa Yonebayashi"></option>
+              <option value="Hiroyuki Morita"></option>
+              <option value="Isao Takahata"></option>
+              <option value="Yoshifumi Kondō"></option>
+            </select>
           </li>
 
 

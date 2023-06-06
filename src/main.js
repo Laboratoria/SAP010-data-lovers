@@ -1,33 +1,23 @@
 //import { example } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
-import {} from './data.js';
+import { sortAlphabet } from './data.js';
+
+const selectElement = document.querySelector("#first-filter")
+
+selectElement.addEventListener("change", (event) =>
+{ const escolha = event.target.value;
+console.log(escolha);
+sortAlphabet()
+});
 
 /* ToDo:
       Organizar DOM
-            -> button onClick : pega o input do elemento HTML
-            input list="first-filter" -> datalist id="first-filter" -> option value
-
-            If (<nao-sei-como-referenciar>.innerHTML == "Títulos de a-z")
-            {
-              funcao sort por ordem alfabetica.
-            }
-            else if (<nao-sei-como-referenciar>.innerHTML == "Ano de lancamento")
-            {
-              funcao sort por ano lancamento *precisa transformar string p number
-            }
-            else if (<nao-sei-como-referenciar>.inner == "Rating")
-            {
-              funcao sort por rating -> transformar string pra double.
-            }
-            else
-            {
-              volta todos os cards.
-            }
+      onChange ->
 
             **TODAS AS FUNCOES SAO DEFINIDAS NO DATA.JS
 
-            ***Chamo os cards no main ou no data.js? No main mesmo?
+            ***Chamo os cards no main ou no data.js? No main mesmo? Sim.
 */
 
 console.log(data);

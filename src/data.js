@@ -1,7 +1,7 @@
-//import data from './data/ghibli/ghibli.js';
+
 export function sortAlphabet(){
   //const titulos = [];
-  //sort
+  //sort(escolha)
 }
 
 export function sortRealease(){

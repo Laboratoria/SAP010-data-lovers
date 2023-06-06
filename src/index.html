@@ -24,16 +24,35 @@
       <section class="filters-container">
         <label for="filters-container">Filtrar animações por: </label>
         <!--p id= "filters" style="color: cornsilk;"> Filtrar animacoes por: </p-->
-
         <ul class="all-filters">
           <li>
             <input list="first-filter">
             <datalist id="first-filter">
               <option value="Títulos a-z">
-              <option value="Ano de lancamento">
-              <option value="Rating">
+              <option value="Producoes mais recentes">
+              <option value="Producoes mais antigas">
+            </datalist>
+
+            <!--select id="second-filter">
+              <optgroup label="Ordenar por avaliacao da crítica">
+                <option value="best">Melhores</option>
+                <option value="wrost">Piores</option>
+              </optgroup>
+            </select-->
+
+            <input list="third-filter">
+            <datalist id="third-filter">
+              <option value="Gorō Miyazaki">
+              <option value="Hayao Miyazak">
+              <option value="Hiromasa Yonebayashi">
+              <option value="Hiroyuki Morita">
+              <option value="Isao Takahata">
+              <option value="Yoshifumi Kondō">
             </datalist>
           </li>
+
+
+
           <!--li>
             <input list="second-filter">
             <datalist id="second-filter">
@@ -41,9 +60,9 @@
               <option value="Produtor">
             </datalist>
           </li-->
-          <li>
+          <!--li>
             <input type="button" class ="all-filters" id="start-events" value="ok">
-          </li>
+          </li-->
         </ul>
       </section>
 

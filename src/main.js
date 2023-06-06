@@ -13,9 +13,14 @@ console.log(data.films[0].title);
 //console.log(data.films.title.sort());
 
 const titulos = [];
+
 for (let i=0; i<data.films.length; i++) {
-  titulos.push(data.films[i].title);
+  const card = `<h1>${data.films[i].title}</h1>`;
+  titulos.push(card);
+//fazer o sort na array de filmes
 }
+//p sort funcionar c rating tem q transformar p int
+
 console.log(titulos);
 console.log(titulos.sort());
 

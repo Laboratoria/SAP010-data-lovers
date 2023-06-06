@@ -5,28 +5,11 @@
 }
 
 body {
-	/* display: grid;
-	grid-template-columns: auto auto auto;
-	grid-template-rows: repeat(3 auto);
-	border: 2px #000; */
-
-
-	/* background-image: url(imagens/cartasDireita.jpg);
-	background-size: cover;
-	background-repeat: no-repeat; */
 	font-family: 'Poppins', 'Roboto', sans-serif;
-
-	/* background-repeat: no-repeat;
-	background-size: 1028px 617px;
-	background-position:  */
 	margin: 0;
 	overflow-x: hidden;
-	overflow-y: hidden;
-}
 
-/* header {
-	z-index: 2;
-} */
+}
 
 #tituloH {
 	padding-top: 4em;
@@ -47,7 +30,6 @@ h2 {
 p {
 	margin-bottom: 1em;
 	text-indent: 3em;
-	/* margin-left: 10px;*/
 }
 
 .textoH {
@@ -56,35 +38,26 @@ p {
 }
 
 .textoA {
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 800;
 }
 
 .voltar {
 	text-decoration: none;
 	color: black;
-	/* padding-top: 1em; */
 	padding-left: 1em;
 	padding-right: 1em;
+	padding-top: 0.2em;
 	background-color: #8FBC8F;
 	display: inline-block;
+	/* margin-bottom: 10px; */
 }
 
 .main {
-
-	/* align-items: center;
-	justify-content: center; */
-	/* background-color: #E4E2E7; */
 	height: 100vh;
 	width: 100vw;
 	position: relative;
 	background-color: rgba(181, 195, 166, 0.6);
-	/* background-image: url(imagens/cartasDireitaEstreita.jpg);
-	height: 97.5vh;
-	width: 100vw;
-	background-size: cover;
-	background-repeat: no-repeat;
-	 */
 }
 
 .main::before {
@@ -96,21 +69,7 @@ p {
 	background-position: center;
 	z-index: -1;
 	opacity: 0.9;
-
-
 }
-
-/* ul {
-	background-color: blue;
-	margin: 0;
-	position: fixed;
-
-} */
-
-/* li a {
-	text-decoration: none;
-	background-color: aqua;
-} */
 
 main {
 	margin-left: 60px;
@@ -118,9 +77,3 @@ main {
 	font-size: 13px;
 	z-index: 9;
 }
-
-/* 
-menu {
-	width: 100vw;
-	background-color: #b5c3a9ee;
-} */

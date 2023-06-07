@@ -82,9 +82,9 @@ export default{
     },
     {
       "id": 8,
-      "firstName": "Jamie",
+      "firstName": "Jaime",
       "lastName": "Lannister",
-      "fullName": "Jamie Lannister",
+      "fullName": "Jaime Lannister",
       "title": "Lord Commander of the Kingsguard",
       "family": "House Lannister",
       "imageUrl": "https://thronesapi.com/assets/images/jaime-lannister.jpg",
@@ -140,7 +140,7 @@ export default{
       "lastName": "Baratheon",
       "fullName": "Joffrey Baratheon",
       "title": "Lord of the Seven Kingdoms, Protector of the Realm",
-      "family": "House Lanister",
+      "family": "House Lannister",
       "imageUrl": "https://thronesapi.com/assets/images/joffrey.jpg",
       "born": "286 DC",
       "death": "300 DC"
@@ -151,7 +151,7 @@ export default{
       "lastName": "Lannister",
       "fullName": "Tyrion Lannister",
       "title": "Hand of the Queen",
-      "family": "House Lanister",
+      "family": "House Lannister",
       "imageUrl": "https://thronesapi.com/assets/images/tyrion-lannister.jpg",
       "born": "272 DC"
     },
@@ -273,10 +273,10 @@ export default{
     {
       "id": 26,
       "firstName": "Viserys",
-      "lastName": "Targaryan",
+      "lastName": "Targaryen",
       "fullName": "Viserys Targaryn",
       "title": "King Viserys III",
-      "family": "Targaryan",
+      "family": "House Targaryen",
       "imageUrl": "https://thronesapi.com/assets/images/viserys-targaryan.jpg",
       "born": "276 DC",
       "death": "298 DC"
@@ -287,7 +287,7 @@ export default{
       "lastName": "Stark",
       "fullName": "Rickon Stark",
       "title": "Prince",
-      "family": "Stark",
+      "family": "House Stark",
       "imageUrl": "https://thronesapi.com/assets/images/rickon.jpg",
       "born": "295 DC"
     },
@@ -328,7 +328,7 @@ export default{
       "lastName": "Baratheon",
       "fullName": "Tommen Baratheon",
       "title": "Prince",
-      "family": "Baratheon",
+      "family": "House Baratheon",
       "imageUrl": "https://thronesapi.com/assets/images/tommen.jpg",
       "born": "291 DC"
     },
@@ -338,7 +338,7 @@ export default{
       "lastName": "Baratheon",
       "fullName": "Gendry Baratheon",
       "title": "Lord of Storm's End",
-      "family": "Baratheon",
+      "family": "House Baratheon",
       "imageUrl": "https://thronesapi.com/assets/images/gendry.jpg",
       "born": "284 DC"
     },
@@ -358,7 +358,7 @@ export default{
       "lastName": "Baratheon",
       "fullName": "Robert Baratheon",
       "title": "King",
-      "family": "Baratheon",
+      "family": "House Baratheon",
       "imageUrl": "https://thronesapi.com/assets/images/king-robert.jpg",
       "born": "262 DC",
       "death": "298 DC"
@@ -379,7 +379,7 @@ export default{
       "lastName": "Stark",
       "fullName": "Talisa Stark",
       "title": "Queen Consort",
-      "family": "Stark",
+      "family": "House Stark",
       "imageUrl": "https://thronesapi.com/assets/images/talisa-stark.jpg",
       "born": null,
       "death": "300 DC"
@@ -422,7 +422,7 @@ export default{
       "lastName": "The Red Woman",
       "fullName": "Melisandre",
       "title": "Melisandre of Asshai",
-      "family": "Unkown",
+      "family": "Unknown",
       "imageUrl": "https://thronesapi.com/assets/images/melisandre.jpg",
       "born": null
     },
@@ -442,7 +442,7 @@ export default{
       "lastName": "Lannister",
       "fullName": "Tywin Lannister",
       "title": "Lord Paramount of Westerlands",
-      "family": "Lannister",
+      "family": "House Lannister",
       "imageUrl": "https://thronesapi.com/assets/images/tywin-lannister.jpg",
       "born": "234 DC",
       "death": "301 DC"
@@ -473,7 +473,7 @@ export default{
       "lastName": "Greyjoy",
       "fullName": "Yara Greyjoy",
       "title": "Lady of the Iron Islands",
-      "family": "Greyjoy",
+      "family": "House Greyjoy",
       "imageUrl": "https://thronesapi.com/assets/images/yara-greyjoy.jpg",
       "born": "276 DC"
     },
@@ -483,7 +483,7 @@ export default{
       "lastName": "Greyjoy",
       "fullName": "Euron Greyjoy",
       "title": "King of the iron Islands",
-      "family": "Greyjoy",
+      "family": "House Greyjoy",
       "imageUrl": "https://thronesapi.com/assets/images/euron-greyjoy.jpg",
       "born": null
     },
@@ -491,9 +491,9 @@ export default{
       "id": 47,
       "firstName": "Wylis",
       "lastName": "Hodor",
-      "fullName": "Hodor",
+      "fullName": "Wylis Hodor",
       "title": "Servant of House Stark",
-      "family": "Stark",
+      "family": "House Stark",
       "imageUrl": "https://thronesapi.com/assets/images/hodor.jpg",
       "born": null
     },
@@ -524,7 +524,7 @@ export default{
       "lastName": "Tyrell",
       "fullName": "Olenna Tyrell",
       "title": "Queen of Thorns",
-      "family": "Tyrell",
+      "family": "House Tyrell",
       "imageUrl": "https://thronesapi.com/assets/images/olenna-tyrell.jpg",
       "born": "228 DC"
     },

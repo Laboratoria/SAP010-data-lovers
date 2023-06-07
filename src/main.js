@@ -76,7 +76,7 @@ function infosDosCardsTela(cards) {
                 <div class="sumario">
                   <h2> Meaning Up: </h2>
                   <p> ${card.meaning_up} </p>
-                  <h2> Meaning Rev </h2>
+                  <h2> Meaning Rev: </h2>
                   <p>${card.meaning_rev}</p>
                   <h2>Description:</h2>
                   <p class="descricao"> ${card.desc} </p>

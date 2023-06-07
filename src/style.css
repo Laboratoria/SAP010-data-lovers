@@ -13,12 +13,17 @@ body {
 header {
     z-index: 2;
     width: 100vw;
-    /* height: 300px; */
+    /* foi usado para ficar da largura da tela */
     position: fixed;
     right: 0%;
-    /* foi usado para ficar da largura da tela */
     bottom: 93%;
     padding-top: 10px;
+}
+
+menu {
+    display: none;
+    /*deixa a lista do menu escondido*/
+
 }
 
 #menuLista {
@@ -34,7 +39,6 @@ header {
 menu>ul>li>a {
     color: #000;
     text-decoration: none;
-    /* margin-bottom: 5px; */
     font-size: 15px;
 }
 
@@ -44,18 +48,6 @@ menu>ul>li>a {
     cursor: pointer;
     padding: 20px 0 10px 30px;
     position: relative;
-    /* height: 4vh; */
-}
-
-
-/* .menuLista{
-    position:relative;
-    z-index: 10;
-} */
-
-
-menu {
-    display: none;
 }
 
 .background {
@@ -64,16 +56,14 @@ menu {
 }
 
 .background::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background-image: url(imagens/cartasEsquerda.jpg);
-	background-size: cover;
-	background-position: center;
-	z-index: -1;
-	opacity: 0.9;
-
-
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(imagens/cartasEsquerdaMenor.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.9;
 }
 
 .textoeinput {
@@ -95,7 +85,6 @@ menu {
     position: relative;
     padding-top: 3em;
     font-weight: bold;
-    /* padding-top: 8em; */
 }
 
 form {
@@ -106,9 +95,6 @@ form {
     position: relative;
     right: 10%;
     margin-bottom: 20px;
-    /* padding-top: 6em; */
-    /* left: 80%;
-    bottom: 80%; */
 }
 
 form>input {
@@ -128,13 +114,12 @@ form>select {
 .calculo {
     text-align: center;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
     padding-bottom: 5px;
     text-decoration: underline;
 }
 
 .container-card {
-    /* background-color: #7ac74c; */
     display: flex;
     flex-wrap: wrap;
     /*essa propriedade colocamos no pai para conseguirmos mexer nos filhos*/
@@ -143,6 +128,7 @@ form>select {
     justify-content: center;
     padding-top: 50px;
     background-color: #B5C3A6;
+    padding-bottom: 50px;
 
 }
 
@@ -156,16 +142,12 @@ form>select {
 }
 
 .cartao-cards {
-    /* background: #cc4d4d; */
     width: 200px;
     position: relative;
     display: block;
     text-align: center;
     height: auto;
     margin: auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 #nome {
@@ -192,7 +174,6 @@ form>select {
 }
 
 .lista-cards {
-    /*background-color: #d8e3ec;*/
     width: 290px;
     height: auto;
     padding: 15px;
@@ -203,12 +184,8 @@ form>select {
     align-items: center;
     /*alinha horizontalmente*/
     gap: 15px;
-    /*transition: 0.2s ease-in-out;*/
-    /*efeito suave de entrada e saída, só vai funcionar se eu colocar o hoover*/
     justify-content: center;
-    /* border: 2px solid #000000; */
     border-radius: 6px;
-    /* background-color: darksalmon; */
     align-self: self-start;
     box-shadow: 3px 3px 4px black;
 }
@@ -229,40 +206,18 @@ ul {
     padding-inline-end: 10px;
 }
 
-/* .cartao-cards .informacoes p {
-    padding: 5px;
-    text-transform: uppercase;
-    font-size: 17px;
-    background: #8FBC8F;
-} */
-
-/*.cartao-cards  {
-    width: 90px;
-    height: 90px;
-}*/
-
 .cartao-cards .sign {
     display: flex;
     gap: 15px;
 }
 
 .sign {
-    border: 10px red;
     padding: 8px;
     border-radius: 10px;
 }
 
-.sign-up {
-    background-color:#B5C3A6;
-    /* border: 2px solid #000000;
-    border-radius: 3px; */
-    font-size: 14px;
-}
-
+.sign-up,
 .sign-rev {
-    background-color: #df67ddfb;
-    /* border: 2px solid #000000;
-    border-radius: 3px; */
     font-size: 14px;
 }
 
@@ -302,4 +257,20 @@ details .sumario {
 
 details {
     width: 200px;
+}
+
+footer {
+    display: flex;
+    background-color: #8FBC8F;
+    position: absolute;
+    width: 100vw;
+    height: 40px;
+    right: 0%;
+    justify-content: center;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+footer p a{
+    text-decoration: none;
 }

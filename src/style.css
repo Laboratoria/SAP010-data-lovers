@@ -271,6 +271,49 @@ footer {
     padding-top: 10px;
 }
 
-footer p a{
+footer p a {
     text-decoration: none;
+}
+
+@media (max-width: 1000px){
+
+    #tituloT {
+        text-align: center;
+    }
+
+    #textoT {
+        text-align: justify;
+    }
+   
+   
+    .textoeinput {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    form {
+        display: flex;
+        margin: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        right: 35%;
+        font-weight: 600;
+        
+    }
+    
+    label {
+        text-align: right;
+    }
+}
+
+@media (max-width: 500px) {
+    /*telas menores que 500px*/
+    form {
+        align-items: stretch;
+    }
+
+    .lista-cards {
+        width: 480px;
+    }
 }

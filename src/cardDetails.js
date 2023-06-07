@@ -1,4 +1,3 @@
-import pokemon from './data/pokemon/pokemon.js';
 import data from './data/pokemon/pokemon.js';
 
 let retrievedId = localStorage.getItem('id');
@@ -259,10 +258,10 @@ const buildCardDetails = (pokemon) => {
       <nav>
         <div class="menu">
           <ul class="letter-details">
-            <li class="subtitles">Attributes</li>
-            <li class="subtitles">Base Stats</li>
-            <li class="subtitles">Pokemon GO</li>
-            <li class="subtitles">Evolutions</li>
+            <li id="attributes" class="subtitles">Attributes</li>
+            <li id="base-stats" class="subtitles">Base Stats</li>
+            <li id="pokemon-go" class="subtitles">Pokemon GO</li>
+            <li id="evolutions" class="subtitles">Evolutions</li>
           </ul>
         </div>
       </nav>
@@ -282,14 +281,7 @@ const buildCardDetails = (pokemon) => {
   menuDetails.forEach(item => {
 
     item.addEventListener('click', () => {
-      /*
-      item.style.color = '#84817A';
-      item.style['text-decoration'] = 'underline';
-       <div>
-        <h2>Rarity</h2>
-        <p>${pokemon['pokemon-rarity']}</p>
-      </div>
-      */
+
       switch (item.textContent) {
         case 'Attributes':
           detailsContainer.innerHTML = attributes(pokemon);

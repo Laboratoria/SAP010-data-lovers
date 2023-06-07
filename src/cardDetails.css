@@ -115,6 +115,10 @@ ul li:hover {
   color: #84817A;
 }
 
+ul li.active {
+  color: #84817A;
+}
+
 .letter-details {
   color: #84817A;
   font-family: 'Inter';

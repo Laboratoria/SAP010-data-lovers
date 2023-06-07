@@ -42,7 +42,7 @@ const buildCard = (pokemons) => {
   const toKnowMore = pokemonsHtml.querySelectorAll("a p");
 
   toKnowMore.forEach(anchor => {
-    anchor.addEventListener('click', (event)=> {
+    anchor.addEventListener('click', (event) => {
       localStorage.setItem('id', event.target.id)
     })
   })
@@ -82,24 +82,27 @@ if (name) {
 
 }//endIf
 
-const searchType = document.getElementById("submit");
 
-if (searchType) {
+const selects = document.querySelectorAll(".content-options select");
 
-  searchType.addEventListener("click", () => {
+if (selects) {
+  console.log(selects)
+  selects.forEach(select => {
 
-    name.value = "";
-    document.getElementById("pokemons").innerHTML = "";
+    select.addEventListener("change", () => {
 
-    const sortBy = document.getElementById("sortBy").value;
-    const orderBy = document.getElementById("orderBy").value;
-    const pokemons = sortData(data.pokemon, sortBy, orderBy);
+      name.value = "";
+      document.getElementById("pokemons").innerHTML = "";
 
-    buildCard(pokemons);
+      const sortBy = document.getElementById("sortBy").value;
+      const orderBy = document.getElementById("orderBy").value;
 
-  });//endAddEventListener
+      const pokemons = sortData(data.pokemon, sortBy, orderBy);
+      buildCard(pokemons);
 
-}//endIf
+    })
+  })
+}
 
 const heaviestPokemonImage = document.getElementById("snorlax");
 const heaviestPokemonName = document.getElementById("nameRevealedSnorlax");

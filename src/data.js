@@ -23,17 +23,32 @@ const sorted = (orderBy, pokemons, property) => {
 
 export const sortData = (pokemons, sortBy, orderBy) => {
 
-  const pokemonsSorted = pokemons.filter(pokemon => pokemon.type.includes(sortBy));
+  if (sortBy !== 'chosenType') {
+    const pokemonsSorted = pokemons.filter(pokemon => pokemon.type.includes(sortBy));
 
-  if (orderBy === 'a-z' || orderBy === 'z-a' ) {
-    sorted(orderBy, pokemonsSorted, 'name');
+    if (orderBy === 'a-z' || orderBy === 'z-a') {
+      sorted(orderBy, pokemonsSorted, 'name');
+    }
+
+    if (orderBy === 'asc' || orderBy === 'desc') {
+      sorted(orderBy, pokemonsSorted, 'num');
+    }
+
+    return pokemonsSorted;
+
+  } else {
+
+    if (orderBy === 'a-z' || orderBy === 'z-a') {
+      sorted(orderBy, pokemons, 'name');
+    }
+
+    if (orderBy === 'asc' || orderBy === 'desc') {
+      sorted(orderBy, pokemons, 'num');
+    }
+
+    return pokemons;
+
   }
-
-  if (orderBy === 'asc' || orderBy === 'desc' ) {
-    sorted(orderBy, pokemonsSorted, 'num');
-  }
-
-  return pokemonsSorted;
 
 }//endSortData
 

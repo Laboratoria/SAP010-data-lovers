@@ -5,8 +5,7 @@
 
 * [1. Resumo do projeto](#1-resumo-do-projeto)
 * [2. Definição de produto](#2-definição-de-produto)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios mínimos de aceitação do
+* [3. Critérios mínimos de aceitação do
   projeto](#5-critérios-mínimos-de-aceitação-do-projeto)
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Considerações técnicas](#7-considerações-técnicas)
@@ -53,8 +52,6 @@ Algumas destas informações podem ser obtidas através de campos de pesquisa, c
 
 ## 3. Critérios mínimos de aceitação do projeto
 
-Os critérios considerados para que tenha terminado este projeto são:
-
 ### Histórias de usuário
 
 (print da história 1 no Trello)
@@ -69,22 +66,6 @@ Durante o desafio você deverá fazer testes de usabilidade com usuários
 diferentes, e com base nos resultados desses testes, iterar seus desenhos de
 interface. Conte-nos quais problemas de usabilidade você detectou através dos
 testes e como os resolveu na proposta final.
-
-### Implementação da interface de usuário (HTML/CSS/JS)
-
-Após desenhar sua interface de usuário, deverá trabalhar na sua implementação.
-**Não** é necessário que construa a interface exatamente da mesma forma que
-desenhou. Terá um tempo limitado para trabalhar no projeto, então você deve
-priorizar as tarefas.
-
-No mínimo, sua implementação deverá:
-
-1. Mostrar os dados em uma interface: pode ser em cards, tabelas, listas, etc.
-2. Permitir ao usuário interagir com a interface para obter as informações que
-   necessita;
-3. Ser _responsiva_, ou seja, deve ser visualizada sem problemas a partir de
-   diversos tamanhos de tela: celulares, tablets, notebooks, etc.
-4. Que a interface siga os fundamentos de _visual design_.
 
 ### Testes unitários
 

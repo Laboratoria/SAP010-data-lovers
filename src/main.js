@@ -134,11 +134,9 @@ if (tallestPokemonImage) {
 }//endIf
 
 window.addEventListener('load', () => {
-  if(window.location.pathname == '/'){
     buildCard(data.pokemon);
     const menuHome = document.getElementById('home');
     menuHome.style.color = '#00478C';
-  }
 });//endAddEventListener
 
 const hamburgerMenu = document.querySelector('#burger');
@@ -155,9 +153,4 @@ if(hamburgerMenu){
     }
 
   })
-}
-
-if(window.location.pathname == '/statistic'){
-  const menuDiscovery = document.getElementById('discovery');
-  menuDiscovery.style.color = '#00478C';
 }

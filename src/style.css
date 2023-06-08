@@ -35,37 +35,41 @@
   padding: 0;
 }
 
-#navPc {
+header {
+  font-size: 0;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+#burger {
+  align-items: center;
   background-color: var(--bcgMenu);
-  display: flex;
+  color: var(--darkBlue);
+  padding-left: 10px;
   width: 100vw;
 }
 
-#navPc .menu {
-  color: var(--itemMenuColor);
-  font-family: 'Inter';
-  font-size: 18px;
-  font-weight: 600;
+.itens-menu, .itens-menu-mobile {
+  display: none;
 }
 
-#navCel ul a .menu {
-  color: var(--itemMenuColor);
-  font-family: 'Inter';
-  font-size: 18px;
-  font-weight: 600;
-}
-
-#navPc .menu:hover {
+a .menu:hover{
   color: var(--darkBlue);
 }
 
-#navPc div {
-  cursor: pointer;
-  padding: 15px;
+a .menu-mobile:hover{
+  color: var(--darkBlue);
 }
 
-#navCel {
-  display: none;
+.menu, .menu-mobile {
+  background-color: var(--bcgMenu);
+  color: var(--itemMenuColor);
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 8px 8px 10px;
   width: 100vw;
 }
 
@@ -77,7 +81,7 @@ a {
   text-decoration: none;
 }
 
-.container-main .column{
+.container-main .column {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -94,7 +98,6 @@ main {
   margin: 10px;
   width: 220px;
 }
-
 
 .title {
   color: var(--darkBlue);
@@ -142,21 +145,6 @@ select {
   width: 50%;
 }
 
-.btn {
-  background-color: var(--darkBlue);
-  border: var(--darkBlue);
-  border-radius: 15px;
-  color: var(--whiteTone);
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  height: 50px;
-  margin: 10px;
-  padding: 5px;
-  text-align: center;
-  width: 270px;
-}
-
-
 .cards {
   align-items: center;
   display: flex;
@@ -187,14 +175,15 @@ select {
   width: 100%;
 }
 
-.letter-card{
+.letter-card {
   color: var(--whiteTone);
   font-family: 'Carter One';
   font-weight: 400;
   font-size: 22px;
   text-align: center;
 }
-.know-more{
+
+.know-more {
   font-size: 18px;
 }
 
@@ -302,120 +291,106 @@ h1::first-letter {
   text-transform: uppercase;
 }
 
-.flip-card-inner{
+.flip-card-inner {
   position: relative;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
-.color-type-grass{
+.color-type-grass {
   background-color: var(--bcgTypeGrass);
 }
 
-.color-type-dragon{
+.color-type-dragon {
   background-color: var(--bcgTypeDragon);
 }
 
-.color-type-poison{
+.color-type-poison {
   background-color: var(--bcgTypePoison);
 }
 
-.color-type-fire{
+.color-type-fire {
   background-color: var(--bcgTypeFire);
 }
 
-.color-type-flying{
+.color-type-flying {
   background-color: var(--bcgTypeFlying);
 }
 
-.color-type-water{
+.color-type-water {
   background-color: var(--bcgTypeWater);
 }
 
-.color-type-bug{
+.color-type-bug {
   background-color: var(--bcgTypeBug);
 }
 
-.color-type-normal{
+.color-type-normal {
   background-color: var(--bcgTypeNormal);
 }
 
-.color-type-electric{
+.color-type-electric {
   background-color: var(--bcgTypeElectric);
 }
 
-.color-type-ground{
+.color-type-ground {
   background-color: var(--bcgTypeGround);
 }
 
-.color-type-fighting{
+.color-type-fighting {
   background-color: var(--bcgTypeFighting);
 }
 
-.color-type-psychic{
+.color-type-psychic {
   background-color: var(--bcgTypePsychic);
 }
 
-.color-type-rock{
+.color-type-rock {
   background-color: var(--bcgTypeRock);
 }
 
-.color-type-ice{
+.color-type-ice {
   background-color: var(--bcgTypeIce);
 }
 
-.color-type-ghost{
+.color-type-ghost {
   background-color: var(--bcgTypeGhost);
 }
 
-.color-type-fairy{
+.color-type-fairy {
   background-color: var(--bcgTypeFairy);
 }
 
-.color-type-dark{
+.color-type-dark {
   background-color: var(--bcgTypeDark);
 }
 
-.color-type-steel{
+.color-type-steel {
   background-color: var(--bcgTypeSteel);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 
-  #navPc {
+  #burger, .itens-menu-mobile, .menu-mobile{
     display: none;
   }
 
-  #navCel {
+  .itens-menu, .menu{
+    display: block;
+  }
+
+  .itens-menu{
+    align-items: center;
     background-color: var(--bcgMenu);
     display: flex;
-    flex-direction: column;
-    padding: 15px;
+    height: 50px;
+    width: 100vw;
   }
 
-  #navCel img {
-    cursor: pointer;
-    max-width: 50px;
+  .menu{
+    font-size: 20px;
+    width: max-content;
   }
-
-  #navCel ul {
-    max-height: 0px;
-    overflow: hidden;
-    text-align: left;
-    transition-duration: 0.5s;
-  }
-
-  #navCel.active ul {
-    max-height: 300px;
-  }
-
-  #navCel li {
-    padding: 10px;
-  }
-
-}
-
-@media screen and (min-width: 768px) {
 
   .logo {
     font-size: 22px;

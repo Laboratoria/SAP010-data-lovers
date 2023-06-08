@@ -86,7 +86,6 @@ if (name) {
 const selects = document.querySelectorAll(".content-options select");
 
 if (selects) {
-  console.log(selects)
   selects.forEach(select => {
 
     select.addEventListener("change", () => {
@@ -124,7 +123,7 @@ const tallestPokemonName = document.getElementById("nameRevealedPolitoed");
 
 if (tallestPokemonImage) {
 
-  tallestPokemonImage.addEventListener("click", () => {
+  tallestPokemonImage.addEventListener('click', () => {
 
     const pokemon = computeStats.findTheBiggestPokemonSizes(data.pokemon, 'height');
 
@@ -134,44 +133,31 @@ if (tallestPokemonImage) {
 
 }//endIf
 
-window.addEventListener("load", () => {
-
-  buildCard(data.pokemon);
-
+window.addEventListener('load', () => {
+  if(window.location.pathname == '/'){
+    buildCard(data.pokemon);
+    const menuHome = document.getElementById('home');
+    menuHome.style.color = '#00478C';
+  }
 });//endAddEventListener
 
-document.querySelectorAll("header .home").forEach(
-  item => {
-    item.addEventListener("click", () => {
-      return window.location = "./";
-    })
+const hamburgerMenu = document.querySelector('#burger');
 
-  }
-)
+if(hamburgerMenu){
+  hamburgerMenu.addEventListener('click', () => {
 
-const menuMob = document.getElementById("menuMob");
+    const itensMenuMobile = document.querySelector('.itens-menu-mobile');
 
-if (menuMob) {
-  menuMob.addEventListener("click", () => {
-    const menu = document.querySelector("#navCel");
-    menu.classList.toggle("active");
+    if (itensMenuMobile.style.display == 'block') {
+      itensMenuMobile.style.display = 'none';
+    } else {
+      itensMenuMobile.style.display = 'block';
+    }
+
   })
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if(window.location.pathname == '/statistic'){
+  const menuDiscovery = document.getElementById('discovery');
+  menuDiscovery.style.color = '#00478C';
+}

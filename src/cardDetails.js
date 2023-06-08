@@ -206,9 +206,7 @@ const evolutions = (pokemons) => {
 
       if(i !== pokemons.length-1 && pokemons[0].name !== 'eevee'){
         information += `
-        <picture>
-          <img class="arrow" src="/images/arrow.png">
-        </picture>
+        <span class="material-icons arrow">double_arrow</span>
         `;
       }
 
@@ -256,7 +254,7 @@ const buildCardDetails = (pokemon) => {
     </div>
     <div class="display-flex-align-center-row border container-details column">
       <nav>
-        <div class="menu">
+        <div class="menu-card">
           <ul class="letter-details">
             <li id="attributes" class="subtitles">Attributes</li>
             <li id="base-stats" class="subtitles">Base Stats</li>
@@ -278,9 +276,21 @@ const buildCardDetails = (pokemon) => {
   const menuDetails = cardDetails.querySelectorAll('ul li');
   const detailsContainer = cardDetails.querySelector('#details');
 
+  const attributesLi = cardDetails.querySelector('#attributes');
+  attributesLi.classList.add('active');
+
   menuDetails.forEach(item => {
 
     item.addEventListener('click', () => {
+
+      const selectedItem = item;
+      selectedItem.classList.add('active');
+
+      for(let i = 0; i < menuDetails.length; i ++){
+        if(menuDetails[i] !== selectedItem){
+          menuDetails[i].classList.remove('active')
+        }
+      }
 
       switch (item.textContent) {
         case 'Attributes':
@@ -309,6 +319,22 @@ window.addEventListener('load', () => {
   const detailsContainer = cardDetails.querySelector('#details');
   detailsContainer.innerHTML = attributes(pokemon);
 })
+
+const hamburgerMenu = document.querySelector('#burger');
+
+if(hamburgerMenu){
+  hamburgerMenu.addEventListener('click', () => {
+
+    const itensMenuMobile = document.querySelector('.itens-menu-mobile');
+
+    if (itensMenuMobile.style.display == 'block') {
+      itensMenuMobile.style.display = 'none';
+    } else {
+      itensMenuMobile.style.display = 'block';
+    }
+
+  })
+}
 
 
 

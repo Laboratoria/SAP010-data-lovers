@@ -6,13 +6,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" sizes="32x32" type="image/png" href="/src/images/favicon_pokeboll.png" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Data Lovers</title>
 
 </head>
@@ -20,27 +19,22 @@
 <body>
 
   <header>
-    <nav id="navPc">
+    <nav class="itens-menu">
       <a href="index.html">
-        <div class="home menu">Home</div>
+        <div id="home" class="menu home">Home</div>
       </a>
       <a href="statistic.html">
-        <div class="curiosidades menu">Curiosidades</div>
+        <div class="menu discovery">Curiosidades</div>
       </a>
     </nav>
-
-    <nav id="navCel">
-      <div id="menuMob">
-        <img src="images/menu.png" alt="menu">
-      </div>
-      <ul>
-        <a href="index.html">
-          <li class="home menu">Home</li>
-        </a>
-        <a href="statistic.html">
-          <li class="curiosidades menu">Curiosidades</li>
-        </a>
-      </ul>
+    <span id="burger" class="material-icons md-48">menu</span>
+    <nav class="itens-menu-mobile">
+      <a href="index.html">
+        <div id="home-mobile" class="menu-mobile">Home</div>
+      </a>
+      <a href="statistic.html">
+        <div class="menu-mobile">Curiosidades</div>
+      </a>
     </nav>
   </header>
 
@@ -57,7 +51,6 @@
         <div class="content-options">
 
           <select id="sortBy">
-
             <option value="chosenType">Tipo</option>
             <option value="bug">bug</option>
             <option value="dark">dark</option>
@@ -77,16 +70,13 @@
             <option value="rock">rock</option>
             <option value="steel">steel</option>
             <option value="water">water</option>
-
           </select>
 
           <select id="orderBy">
-
             <option value="asc">Pokédex ASC</option>
             <option value="desc">Pokédex DESC</option>
             <option value="a-z">A-Z</option>
             <option value="z-a">Z-A</option>
-
           </select>
 
         </div>
@@ -106,4 +96,3 @@
 </body>
 
 </html>
-

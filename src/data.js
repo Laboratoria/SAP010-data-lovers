@@ -1,6 +1,6 @@
 export const filterData = (namePokemon, pokemons) => {
-
-  return pokemons.filter(pokemon => pokemon.name.includes(namePokemon));
+  const name = namePokemon.toLowerCase();
+  return pokemons.filter(pokemon => pokemon.name.includes(name));
 
 }//endFilterData
 

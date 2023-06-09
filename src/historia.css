@@ -1,18 +1,16 @@
 * {
 	margin: 0;
 	padding: 0;
-
 }
 
 body {
 	font-family: 'Poppins', 'Roboto', sans-serif;
 	margin: 0;
 	overflow-x: hidden;
-
 }
 
 #tituloH {
-	padding-top: 4em;
+	padding-top: 2em;
 	padding-bottom: 2em;
 	font-weight: bolder;
 	font-size: xx-large;
@@ -33,21 +31,30 @@ p {
 }
 
 .textoH {
-	font-size: 14.5px;
+	/* font-size: 14.5px; */
+	font-size: 0.9rem;
 	font-weight: 800;
+	text-align: left;
+	padding: 0 0 1% 2%;
+	/*Aqui consegui a 'margem' do texto*/
 }
 
 .textoA {
-	font-size: 13px;
+	font-size: 0.9rem;
+	/*mudei a unidade de medida*/
 	font-weight: 800;
+	padding: 0 0 1% 2%;
 }
 
 .voltar {
+	font-size: 1rem;
 	text-decoration: none;
 	color: black;
-	padding-left: 1em;
+
+	padding: 0.2rem 1rem;
+	/* padding-left: 1em;
 	padding-right: 1em;
-	padding-top: 0.2em;
+	padding-top: 0.2em; */
 	background-color: #8FBC8F;
 	display: inline-block;
 	/* margin-bottom: 10px; */
@@ -72,8 +79,76 @@ p {
 }
 
 main {
-	margin-left: 60px;
-	width: 500px;
+	/* margin-left: 60px; */
+	width: 100vw;
+	/*mudei conforme orientação da Nury*/
 	font-size: 13px;
 	z-index: 9;
+}
+
+/* ----  Responsividade ---- */
+
+
+@media (max-width: 1000px) {
+
+	#tituloT {
+		text-align: center;
+	}
+
+	.textoH {
+		text-align: left;
+	}
+
+	.textoA {
+		text-align: left;
+	}
+
+	h2 {
+		padding-left: 0;
+		padding-bottom: 0.8rem;
+	}
+
+	.voltar {
+		font-size: 0.7rem;
+		font-weight: bold;
+	}
+
+
+}
+
+@media (max-width: 500px) {
+
+	#tituloH {
+		padding: 2em 0 1em 0.7rem;
+		padding-top: 2em;
+		padding-left: 1rem;
+		padding-bottom: 1em;
+		text-align: center;
+		font: size 1rem;
+		/*inclui hj 09/06 */
+	}
+
+	.textoH {
+		/*inclui hj 09/06 */
+		padding: 0 4%;
+		font-size: 0.7rem;
+
+
+	}
+
+	.tituloA {
+		padding-top: 1em;
+		/*inclui hj 09/06 */
+	}
+
+	.textoA {
+		/*inclui hj 09/06 */
+		padding: 0 4%;
+		font-size: 0.7rem;
+	}
+
+	footer p a {
+		font-size: 0.6rem;
+
+	}
 }

@@ -46,7 +46,7 @@
 
         <img class="logo" rel="icon" type="image/png" src="./images/pokemonTitle.png" alt="Pokemon Tittle">
         <label class="title">Encontre o seu Pokémon favorito:</label>
-        <input type="text" id="namePokemon" placeholder="Digite o nome do Pokémon">
+        <input type="text" id="namePokemon" maxlength="20" placeholder="Digite o nome do Pokémon" onkeydown="return /^[A-Za-z]+$/i.test(event.key)">
 
         <div class="content-options">
 

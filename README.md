@@ -4,54 +4,58 @@
 
 - [Data Lovers](#data-lovers)
   - [Índice](#índice)
-  - [1. Resumo do projeto](#1-resumo-do-projeto)
-  - [2. Histórias de usuário](#2-histórias-de-usuário)
-  - [3. Feedback de teste de usabilidade](#3-feedback-de-teste-de-usabilidade)
-
+  - [1. Sobre o projeto 🔍](#1-sobre-o-projeto-)
+  - [2. Como funciona 	🎯](#2-como-funciona-)
+  - [3. Autor ✒️](#3-autor-️)
 
 ***
 
-## 1. Resumo do projeto
+## 1. Sobre o projeto 🔍
 
-Nosso projeto trata-se de  **uma _página web_** desenvolvida para os fãs de Pokémon que desejarem obter mais dados e informações sobre os eles. O usuário poderá visualizar os dados, ordena-los e fazer alguns cálculos de informações relevantes, tais como médias, valores máximos e mínimos, etc.
+Este site foi desenvolvido para que os fãs de Pokémon e jogadores de Pokémon GO, possam encontrar mais dados e informações relevantes sobre eles.
 
- **Ferramentas e tecnologias utilizadas**
+Os dados apresentados no site são lidos de um objeto .js complexo que armazena várias listas e diversos outros objetos dentro dele. Os dados são exibidos atráves da criação de tags html dinâmicas.
 
-* **Figma** para o desenho do [prótipo de baixa fidelidade](https://www.figma.com/file/JP7AoZGHkFIvsGbb5NyDFc/data-lovers?type=design&node-id=0-1&t=nlMkHIDMdTdB5uDD-0).
+Este projeto também conta com algumas funções de cálculo que percorrem todo o objeto a fim de trazer dados relavantes sobre os Pokémons.
 
-* **GitHubPages** para hospedagem de [site](https://helouiseitokazo.github.io/SAP010-data-lovers/) estático .
+A base de onde os dados foram extraídos está em inglês.
+
+🚨 Visite o site [clicando aqui!](https://helouiseitokazo.github.io/SAP010-data-lovers/)
+
+**Ferramentas e tecnologias utilizadas** ⚙️
+
+* **Figma** para o desenho do prótipo de baixa fidelidade.
 
 * **GitHub** para armazenar o repositório do projeto.
 
 * **CSS/HTML/JS** para estilização, marcação de texto e linguagem de programação, respectivamente.
 
-## 2. Histórias de usuário
+![My Skills](https://skillicons.dev/icons?i=figma,github,git,css,html,js,vscode)
 
-O usuário acessará a página web, este acesso pode ser realizado de diversos dispositivos com tamanhos distintos, tais como (desktop, tablet, celular e etc.), visto que o site conta com a resposividade para se adaptar ao contexto do usuário.
+## 2. Como funciona 	🎯
 
-A primeira página exibirá os campos de busca para que o usuário possa inserir os dados que deseja pesquisar, além de escolher as formas de ordenação para a exibição do resultado. E, também contara com seletores para que ele possa fazer cálculos que tragam informações relevantes sobre os pokémons.
+O site foi dividido em quatro páginas sendo elas:
 
-Além disso logo na primeira página serão exibidos os cards com um resumo das informações de todos os Pokemons. Ao inserir o nome do Pokémon que deseja obter mais informações, o mesmo será exibido na tela trazendo consigo as próximas evoluções se houver.
+* **Home**
 
-Caso o usuário digite um nome inexistente na base de dados, o mesmo será notificado com uma mensagem. Desta forma o usuário terá a oportunidade de revisar o dado inputado para que ele tenha o acesso as informações desejadas.
+Aqui o usuário visualizará todos os cards dos Pokémons das gerações **Kanto** ou **Johto**, e poderá filtrar a pesquisa pelo nome do Pokémon ou pelo tipo de Pokémon, podendo ordenar a busca pelo número da Pokédex (por ordem crescente e descrescente) e por ordem alfabética (a-z e de z-a).
 
-Além de pesquisar por nome o usuário também poderá pesquisar o pokemon desejado filtrando pelo tipo dele. Estes dados poderão ser ordenados de alfabeticamente de forma crescente ou decrescente.
+* **Detalhes**
 
-O usuário poderá cliclar sobre o card do pokemon na qual deseja saber mais informações e será redirecionado para uma nova página onde todos os dados sobre este pokemon serão exibidos detalhamente.
+Cada card contém um campo denominado como "saiba mais" clicando nele o usuário será redirecionado para uma nova página onde terá acesso a informações mais detalhadas sobre o Pokémon selecionado, tais como: raridade, peso, altura, evoluções e etc.
 
-Através do menu de navegação, o usuário poderá escolher se deseja retornar para a página principal, ou para a página de estátisticas.
+* **Curiosidades**
 
-Recomendamos usuário utilize o navegador do **Google Chrome** para traduzir o conteúdo se assim desejar.
+O site também conta com uma página de curiosidades para trazer informações sobre os Pokémons de uma forma mais divertida, nesta página o usuário terá acesso a um gráfico que indica o percentual dos tipos de Pokémons, assim o usuário terá acesso aos dados de forma visual, mais objetiva e clara sobre quais são os tipos mais raros e comuns, cada cor utilizada no gráfico remete a cada tipo de Pokémon. Aqui o usuário também poderá testar os conhecimentos dele tentando advinhar qual é o Pokémon mais alto e o mais pesado através de algumas pistas fornecidas e poderá comprovar a resposta clicando na sombra do respectivo Pokémon.
 
-## 3. Feedback de teste de usabilidade
+* **Sobre**
 
-Abaixo descrevo o feedback de um usuário ao testar o MVP1, cada item mencionado abaixo será um requisito para melhorar no MVP2:
+Por fim esta parte foi dedicada para explicar ao usuário sobre o objetivo do projeto e para passar algumas informações sobre os desenvolvedores.
 
-1. O usuário se incomodou, pois o alinhamento dos selects não estão perfeitamente alinhados com a lagura do input.
-2. O usuário achou que a cor da barra de Menu está fora de contexto, visto que todas as cores são escuras e a cor do menu ficou muito clara.
-3. O usuário não entendeu o que é uma ordenação ASC e DESC.
-4. O usuário constatou que não limite de caracteres no input.
-5. O usuário disse que trazer a próxima evolução do Pokémon na busca fica confuso, e parece que está filtrando errado.
-6. O usuário sugeriu desabilitar o botão de pesquisar caso o usuário não selecione o tipo de Pokémon.
-7. O usuário sentiu falta de uma mensagem de erro quando os padrões de busca não são atendidos.
+## 3. Autor ✒️
 
+Desenvolvido por **Helouíse Itokazo**.
+
+📧 helouise.almeida93@gmail.com
+
+[![linkedin](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/helou%C3%ADse-itokazo-749778132/)

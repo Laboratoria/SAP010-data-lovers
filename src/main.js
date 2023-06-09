@@ -133,15 +133,19 @@ if (tallestPokemonImage) {
 
 }//endIf
 
+const menuHome = document.getElementById('home');
+const menuHomeMobile = document.getElementById('home-mobile');
+
 window.addEventListener('load', () => {
-    buildCard(data.pokemon);
-    const menuHome = document.getElementById('home');
-    menuHome.style.color = '#00478C';
+  buildCard(data.pokemon);
+  menuHome.classList.add('active-item-menu');
+  menuHomeMobile.classList.add('active-item-menu');
+
 });//endAddEventListener
 
 const hamburgerMenu = document.querySelector('#burger');
 
-if(hamburgerMenu){
+if (hamburgerMenu) {
   hamburgerMenu.addEventListener('click', () => {
 
     const itensMenuMobile = document.querySelector('.itens-menu-mobile');

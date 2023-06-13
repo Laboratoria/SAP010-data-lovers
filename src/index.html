@@ -5,8 +5,51 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <header>
+    <h1>A MAGIA HUMANA E FILOSÓFICA DO STUDIO GHIBLI</h1>
+    <img src="img/Studio_Ghibli_logo.png" alt="logotipo do Studio Ghibli">
+
+
+  </header>
   <body>
-    <h1>StudioGhibli</h1>
+    <main>
+      <div class="backgroung"></div>
+      <p>O Studio Ghibli é um estúdio de animação japonês, sediado em Koganei, Tóquio. Fundado em 1985,
+        o estúdio já produziu 21 longas de animação, sendo o primeiro O Castelo no Céu (1986) 
+        e o mais recente As Memórias de Marnie (2014).
+
+        O Studio Ghibli foi fundado em 1985 por Hayao Miyazaki, Isao Takahata, Toshio Suzuki 
+        e Yasuyoshi Tokuma, logo após o sucesso de Nausicaä do Vale do Vento, no ano anterior. 
+        O estúdio lançou seu primeiro filme, O Castelo no Céu, no ano seguinte. 
+        O logotipo da empresa é o Totoro, o personagem do filme Meu Amigo Totoro, lançado em 1988. 
+        Com exceção de seis produções, todos os filmes do estúdio foram dirigidos por Hayao Miyazaki 
+        e Isao Takahata. Toshio Suzuki, por sua vez, é o produtor da maioria deles. Em 2001, o Museu Ghibli, 
+        um museu dedicado as obras do estúdio, foi inaugurado.</p>
+
+<form autocomplete="off">
+  <label for="name">Nome do Filme <input type="search" id="name" name="name" placeholder="Nome do Filme"> </label>
+  <label for="director">Pesquisa por Diretor:</label>
+  <select id="director" name="director">
+    <option value="Todos">Todos</option>
+    <option value="Hayao-Miyazaki">Hayao Miyazaki</option>
+    <option value="Isao-Takahata">Isao Takahata</option>
+    <option value="Yoshifumi-Kondo">Yoshifumi Kondo</option>
+    <option value="Goro-Miyazaki">Goro Miyazaki</option>
+    <option value="Hiromasa-Yonebayashi">Hiromasa Yonebayashi</option>
+    <option value="Hiroyuki-Morita">Hiroyuki Morita</option>
+  </select>
+    <label for="order">Ordenar <select name="order" id="order" class="order">
+    <option value="a-z">A-Z</option>
+    <option value="z-a">Z-A</option>
+    <option selected value="Selecione">Selecione</option>
+  </select> </label>
+
+</form> 
+  <section class="container-films" id="info-films">
+    
+  
+  </section>
+    </main>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>

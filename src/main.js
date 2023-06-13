@@ -1,6 +1,22 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+//import { example } from './data.js';
+import data from './data/ghibli/ghibli.js';
+const filmList = data.films
+const section = document.querySelector(".container-films") 
 
-console.log(example, data);
+function renderFilms(filmList) {
+   section.innerHTML="";
+    for (let i=0; i<filmList.length; i++){
+      const card  = document.createElement("section")
+      card.classList.add("films")
+      card.innerHTML = `
+      <img src=${filmList[i].poster}>
+      `;
+      section.appendChild(card)
+    }
+}
+
+renderFilms(filmList);
+
+console.log(data.films[0].poster)
+
+//console.log(example, data);

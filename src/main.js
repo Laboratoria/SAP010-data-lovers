@@ -10,6 +10,8 @@ function renderFilms(filmList) {
       card.classList.add("films")
       card.innerHTML = `
       <img src=${filmList[i].poster}>
+      <h3>${filmList[i].title}</h3>
+      <h3>${filmList[i].release_date}</h3>
       `;
       section.appendChild(card)
     }

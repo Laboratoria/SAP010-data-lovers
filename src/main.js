@@ -16,7 +16,6 @@ function renderFilms(filmList) {
       section.appendChild(card)
     }
 }
-
 renderFilms(filmList);
 
 console.log(data.films[0].poster)

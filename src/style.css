@@ -24,12 +24,13 @@ main {
 
 }
 
-.filtro-pokepidia { /* o ponto é usado para chamar a class e fazer as modificações somente nela  */
+.filter-pokepidia { /* o ponto é usado para chamar a class e fazer as modificações somente nela  */
   text-align: right;
+  margin: 10px;
 }
 
-#tipo,
-#ordem {
+#elements,
+#order {
   background-color: rgba(133, 237, 187, 0.858);
   color: black;
   border-radius: 12px;
@@ -37,4 +38,19 @@ main {
   text-align: center;
   padding: 10px;
   font-size: 15px;
+}
+
+
+#all-content {
+  display: inline-block;
+  border-radius: 1em;
+  background-color: rgb(188, 190, 190);
+  width: 240px;
+  padding: 5px;
+  margin: 20px;
+  font-family: 'Orbitron';
+}
+
+#poke-numbers {
+ text-align: right;
 }

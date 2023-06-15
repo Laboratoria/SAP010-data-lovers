@@ -5,24 +5,38 @@ import data from './data/pokemon/pokemon.js';
 //console.log (data.pokemon[i].name); // Aqui printamos no console o nome de todos os pokemons. Primeiro acessamos o data, depois o pokemon e o seu indice (i) e depois acessamos seu nome.
 //}
 
-//faz as etapas: 1- printa no console as infos que vc quer do primeiro pokemon. ✔ 
-//2- faz um loop pra printar no console essas mesmas infos, mas agora de todos os pokemons.  ✔ 
-//3- cria uma template string com essas infos, como se fosse um html. 
-//4-inserir no dom essa template string no dom com innerHTML 
 
-
+const pokeOrder = document.getElementById("order");
+const pokeElements = document.getElementById("elements");
+const pokeCards = document.getElementById("cards");
+const pokeFilterType = document.getElementById("elements");
+const pokeFilterOrganize = document.getElementById("order");
 const dataPokemon = data.pokemon; //Criei uma ariavel pra colocar os dados de todos os pokemons
 
-const allPokemons = dataPokemon.map(pokemons => ({ //Criei uma variável e usei o map para pegar somente as informações que eu queria da outra variável
-    "Nº": pokemons.num,// Usei arrow function (preciso estudar mais e tentar fazer uma função a parte, para testar o entendimento)
-    "Nome": pokemons.name,//Dentro da minha variável puxei as informações que eu queria
-    "Tipo": pokemons.type.join(","), // Usei o join para concatenar os tipos e todos aparecerem
-    "Raridade": pokemons["pokemon-rarity"],
-    "Imagem": pokemons.img,
-}))
+const allPokemons = dataPokemon.map(pokemons => ` 
+<div id= "all-content"> 
+    <div id= "poke-numbers">
+    <h4>Nº: ${pokemons.num} </h4> 
+    </div>
 
-console.log(allPokemons) // Fiz um console.log para confirmar se consegui puxar essas informações
+    <div id= "poke-image">
+    <img src="${pokemons.img}" alt="Imagem do Pokémon">
+    </div>
 
- 
+    <div id="poke-info">
+   <h2>${pokemons.name.charAt(0).toUpperCase() + pokemons.name.slice(1)}</h2> 
+
+   <div id="poke-types">
+    <p> ${pokemons.type.join(" ")} </p>  
+    </div>
+
+   <p> Raridade: ${pokemons["pokemon-rarity"]}</p>
+</div>
+</div>
+`).join(" ");
+
+pokeCards.innerHTML = allPokemons;
+
+
 
 

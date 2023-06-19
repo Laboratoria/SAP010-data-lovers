@@ -16,6 +16,16 @@ function renderFilms(filmList) {
       section.appendChild(card)
     }
 }
+const directorSelect = document.getElementById("director");
+directorSelect.addEventListener("change", filterFilmsByDirector); //Adicionamos um evento de escuta ao elemento select
+
+function filterFilmsByDirector() {    //criamos uma  função para filtrar com base no diretor selecionado
+  const selectedDirector = directorSelect.value;
+  const filteredFilms = filmList.filter(film => film.director === selectedDirector);
+
+
+  renderFilms(filteredFilms);
+}
 renderFilms(filmList);
 
 console.log(data.films[0].poster)

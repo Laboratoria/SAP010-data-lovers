@@ -1,4 +1,4 @@
-//import { example } from './data.js';
+import {filmsDirector} from './data.js';
 import data from './data/ghibli/ghibli.js';
 const filmList = data.films
 const section = document.querySelector(".container-films") 
@@ -21,8 +21,7 @@ directorSelect.addEventListener("change", filterFilmsByDirector); //Adicionamos 
 
 function filterFilmsByDirector() {    //criamos uma  função para filtrar com base no diretor selecionado
   const selectedDirector = directorSelect.value;
-  const filteredFilms = filmList.filter(film => film.director === selectedDirector);
-
+  const filteredFilms = filmsDirector(selectedDirector, filmList) //executou aqui a função, com valor= selectedDirector e com dados=filmList
 
   renderFilms(filteredFilms);
 }
@@ -30,4 +29,4 @@ renderFilms(filmList);
 
 console.log(data.films[0].poster)
 
-//console.log(example, data);
+

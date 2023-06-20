@@ -1,4 +1,4 @@
-import {filmsDirector} from './data.js';
+import {filmsDirector, filteredFilms} from './data.js';
 import data from './data/ghibli/ghibli.js';
 const filmList = data.films
 const section = document.querySelector(".container-films") 
@@ -27,6 +27,20 @@ function filterFilmsByDirector() {    //criamos uma  função para filtrar com b
 }
 renderFilms(filmList);
 
-console.log(data.films[0].poster)
+
+const selectElement = document.getElementById("title");
+selectElement.addEventListener("change", filterFilmsByTitle); 
+
+function filterFilmsByTitle() { 
+  const selectedTitle = selectElement.value;
+  const filterFilmsResult = filteredFilms(selectedTitle, filmList);
+  renderFilms(filterFilmsResult);
+}
+
+filterFilmsByTitle()
+
+//renderFilms(filmList);
+
+//console.log(data.films[0].poster)
 
 

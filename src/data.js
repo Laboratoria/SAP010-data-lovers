@@ -6,7 +6,11 @@ export const filmsDirector = (valor, dados) => { //o parametro é o que a gente 
 };
  
 
-//export const anotherExample = () => {
-//  return 'OMG';
-//};
+export const filteredFilms = (title, dados) => {
+  if(title === "Todos") {
+  return dados
+}
+  const film = dados.filter(film => film.title === title)
+return film
+};
 

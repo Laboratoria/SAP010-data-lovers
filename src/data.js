@@ -1,8 +1,5 @@
 
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
+export function pokeType(pokeArray, pokeChange) {
+    const typeFiltered = pokeArray.filter(pokemon => pokemon.type.includes(pokeChange))
+    return typeFiltered;
+}

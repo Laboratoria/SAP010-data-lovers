@@ -1,4 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow', Consolas, "Courier New";
+}
+
+body {
+  text-align: center;
+  background-color: rgb(58, 145, 215);
+  /*background-color: linear-gradient(to bottom, rgb(58, 145, 215), rgb(132, 174, 218));*/
+  margin-top: 1%;
+  min-height: 100vh;
+}
+
+#img-header {
+  width: 100%;
+  max-width: 1000px;
+}
 
 section#menu{
   justify-items:flex-start;
@@ -6,6 +26,7 @@ section#menu{
 
 .all-filters{
   display: inline;
+  background-color: black;
 }
 
 ul.all-filters{

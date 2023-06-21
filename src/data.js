@@ -1,8 +1,15 @@
 
-export const example = () => {
-  return 'example';
-};
+export function pokeType(pokeArray, pokeChange) {
+    const typeFiltered = pokeArray.filter(pokemon => pokemon.type.includes(pokeChange))
+    return typeFiltered;
+}
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+export function pokeOrder( pokeChangeOrder) {
+    const ordered = pokeChangeOrder.sort((a, z) => {
+        if (a > z) return 1
+        if (a < z) return -1
+        return 0
+    }
+    )
+}
+

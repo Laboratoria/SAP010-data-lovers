@@ -1,20 +1,20 @@
-import {filmsDirector, filteredFilms} from './data.js';
+import { filmsDirector, filteredFilms } from './data.js';
 import data from './data/ghibli/ghibli.js';
 const filmList = data.films
-const section = document.querySelector(".container-films") 
+const section = document.querySelector(".container-films")
 
 function renderFilms(filmList) {
-   section.innerHTML="";
-    for (let i=0; i<filmList.length; i++){
-      const card  = document.createElement("section")
-      card.classList.add("films")
-      card.innerHTML = `
+  section.innerHTML = "";
+  for (let i = 0; i < filmList.length; i++) {
+    const card = document.createElement("section")
+    card.classList.add("films")
+    card.innerHTML = `
       <img src=${filmList[i].poster}>
       <h3>${filmList[i].title}</h3>
       <h3>${filmList[i].release_date}</h3>
       `;
-      section.appendChild(card)
-    }
+    section.appendChild(card)
+  }
 }
 const directorSelect = document.getElementById("director");
 directorSelect.addEventListener("change", filterFilmsByDirector); //Adicionamos um evento de escuta ao elemento select
@@ -29,15 +29,15 @@ renderFilms(filmList);
 
 
 const selectElement = document.getElementById("title");
-selectElement.addEventListener("change", filterFilmsByTitle); 
+selectElement.addEventListener("change", filterFilmsByTitle);
 
-function filterFilmsByTitle() { 
+function filterFilmsByTitle() {
   const selectedTitle = selectElement.value;
   const filterFilmsResult = filteredFilms(selectedTitle, filmList);
   renderFilms(filterFilmsResult);
 }
 
-filterFilmsByTitle()
+//filterFilmsByTitle()
 
 //renderFilms(filmList);
 

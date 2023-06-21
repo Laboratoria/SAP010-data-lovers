@@ -1,5 +1,6 @@
 import data from './data/pokemon/pokemon.js';
 import { pokeType } from './data.js'
+import {pokeOrder} from './data.js'
 
 
 //for (let i = 0; i < data.pokemon.length; i++){ //Atribuimos o valor 0 ao I, e definimos que se i for menos que o comprimento da pasta de pokemons, seria adicionado mais 1, tornando i=1. Fazendo isso consequentemente até que chegue ao numero certo//
@@ -44,6 +45,10 @@ pokeFilterType.addEventListener("change", function (event) {
     const returnCard = pokemonFiltered.map(pokemons => createCards(pokemons)).join(" ");
     pokeCards.innerHTML = returnCard;
 });
+
+//pokeFilterOrganize.addEventListener("change", ) {
+
+//}
 
 
 

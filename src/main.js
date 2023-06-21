@@ -6,4 +6,5 @@ import data from './data/countries/countries.js';
 console.log(example, data);
 
 //mais um teste
+//testando 
 

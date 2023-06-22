@@ -17,3 +17,14 @@ export const filteredFilms = (title, dados) => {
   return film
 };
 
+export function orderFilms(selectedOrder, filmList) {
+  const ordered = filmList.sort((a, b) => { //.sort ordena array
+        if (a.title > b.title) return 1
+    if (a.title < b.title) return -1
+      return 0
+    } //só falta ver o retorno de a-z e z-a como fazer para retornar?
+      )
+  console.log(ordered)
+}
+
+ 

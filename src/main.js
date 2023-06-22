@@ -1,4 +1,4 @@
-import { filmsDirector, filteredFilms } from './data.js';
+import { filmsDirector, filteredFilms, orderFilms } from './data.js';
 import data from './data/ghibli/ghibli.js';
 const filmList = data.films
 const section = document.querySelector(".container-films")
@@ -35,6 +35,15 @@ function filterFilmsByTitle() {
   const selectedTitle = selectElement.value;
   const filterFilmsResult = filteredFilms(selectedTitle, filmList);
   renderFilms(filterFilmsResult);
+}
+
+const filterOrder = document.getElementById("order");
+filterOrder.addEventListener("change", orderFilmsByName);
+
+function orderFilmsByName() {
+  const selectedOrder = selectElement.value;
+  const orderFilmsResult = orderFilms(selectedOrder, filmList);
+  renderFilms(orderFilmsResult);
 }
 
 //filterFilmsByTitle()

@@ -5,4 +5,4 @@ import data from './data/countries/countries.js';
 
 console.log(example, data);
 
-//testando
+//test 2

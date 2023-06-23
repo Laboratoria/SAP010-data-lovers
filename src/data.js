@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 
-export function sortAlphabet(){
-  //const titulos = [];
-  //sort(escolha)
-}
-
-=======
 //import data from './data/ghibli/ghibli.js';
 
 export const searchTitle = (titles, name) => {
@@ -16,24 +9,39 @@ export const searchTitle = (titles, name) => {
 
 export function sortAlphabet(){
   const orderByAlphabet = [];
-  orderByAlphabet.sort((a, b) => {
-    if (a.title.toUpperCase < b.title.toUpperCase){
-      return -1;
-    }
-  })
+  if (valorSel === "title-az"){
+    orderByAlphabet.sort((a, b) => {
+      if (a.title.toUpperCase < b.title.toUpperCase){
+        return -1;
+      }
+    })
+  }
+  return orderByAlphabet;
 }
 
->>>>>>> b0b5421 (atualizacoes html css js)
 export function sortRealease(){
-  //string p number
-  //sort
+  const orderByRealease = [];
+  if (valorSel === "lancamento"){
+    orderByRealease.sort((a, b) => {
+      if (a.release_date < b.release_date) {
+        return -1;
+      }
+    })
+  }
+  return orderByRealease;
 }
 
 export function sortRating(){
-  //string p number
-  //sort
+  const orderByRating = [];
+  if (valorSel === "rating"){
+    orderByRating.sort((a, b) => {
+      if (a.rt_score < b.rt_score){
+        return -1;
+      }
+    })
+  }
+  return orderByRating;
 }
-
 export function filterDirector(){
   //
 }

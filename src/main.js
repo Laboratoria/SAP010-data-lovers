@@ -5,6 +5,3 @@ import data from './data/countries/countries.js';
 
 console.log(example, data);
 
-//test 2
-//criando branch
-//teeeee

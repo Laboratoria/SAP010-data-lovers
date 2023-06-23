@@ -7,12 +7,28 @@ export function pokeType(pokeArray, pokeChange) {
     return typeFiltered;
 };
 
-/*export function pokeOrder(pokeChangeOrder) {
-    const ordered = pokeChangeOrder.sort((a,z) => {
-        if (a > z) return 1
-        if (a < z) return -1
-        return 0
-    }
-)}*/
+export function pokeOrder(pokeArray,changeOrder) {
+    const ordered = pokeArray.sort((a, b) => {
+        if (changeOrder === "nameAsc") {
+            if (a.name > b.name) {
+                return 1;
+            }
+            if (a.name < b.name) {
+                return -1;
+            }
+            return 0;
+        } else if (changeOrder === "nameDesc") {
+            if (a.name < b.name) {
+                return 1;
+            }
+            if (a.name > b.name) {
+                return -1;
+            }
+            return 0;
+        }
+    });
+
+    return ordered;
+}
 
 

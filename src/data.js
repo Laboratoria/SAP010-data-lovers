@@ -17,6 +17,7 @@ export const filteredFilms = (title, dados) => {
   return film
 };
 
+
 export function orderFilms(selectedOrder, filmList) {
   const ordered = filmList.sort((a, b) => { //.sort ordena array
     if (a.title >= b.title) return 1;
@@ -27,4 +28,18 @@ export function orderFilms(selectedOrder, filmList) {
   //o código parece correto, mas esta colocando em ordem de a-z do titulo em inglês e não português
 }
 
- 
+/*export const ordered(selectedOrder, filmList) => {
+  if (selectedOrder === a-z) {
+    return filmList.sort((a,b) => {
+      if (a.title > b.title) return {
+        return 1;
+      }
+      if (a.title < b.title) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+  };
+
+}*/

@@ -1,12 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+<html lang ="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<header>
+  <h1>A MAGIA HUMANA E FILOSÓFICA DO STUDIO GHIBLI</h1>
+  <img src="img/Studio_Ghibli_logo.png" alt="logotipo do Studio Ghibli">
+
+
+</header>
+
+<body>
+  <main>
+    <div class="backgroung"></div>
+    <p>O Studio Ghibli é um estúdio de animação japonês, sediado em Koganei, Tóquio. Fundado em 1985,
+      o estúdio já produziu 21 longas de animação, sendo o primeiro O Castelo no Céu (1986)
+      e o mais recente As Memórias de Marnie (2014).
+
+      O Studio Ghibli foi fundado em 1985 por Hayao Miyazaki, Isao Takahata, Toshio Suzuki
+      e Yasuyoshi Tokuma, logo após o sucesso de Nausicaä do Vale do Vento, no ano anterior.
+      O estúdio lançou seu primeiro filme, O Castelo no Céu, no ano seguinte.
+      O logotipo da empresa é o Totoro, o personagem do filme Meu Amigo Totoro, lançado em 1988.git
+      Com exceção de seis produções, todos os filmes do estúdio foram dirigidos por Hayao Miyazaki
+      e Isao Takahata. Toshio Suzuki, por sua vez, é o produtor da maioria deles. Em 2001, o Museu Ghibli,
+      um museu dedicado as obras do estúdio, foi inaugurado.</p> <br><br>
+
+    <form autocomplete="off">
+      <!--  <label for="name">Nome do Filme <input type="search" id="name" name="name" placeholder="Nome do Filme"> </label>-->
+      <label for="title">Título do Filme:</label>
+      <select id="title" name="title">
+      <option value="Todos">Todos</option>
+        <option value="Castle in the Sky">Castle in the Sky</option>
+        <option value="My Neighbor Totoro">My Neighbor Totoro</option>
+        <option value="Kiki's Delivery Service">Kiki's Delivery Service</option>
+        <option value="Grave of the Fireflies">Grave of the Fireflies</option>
+        <option value="Only Yesterday">Only Yesterday</option>
+        <option value="Porco Rosso">Porco Rosso</option>
+        <option value="Pom Poko">Pom Poko</option>
+        <option value="Whisper of the Heart">Whisper of the Heart</option>
+        <option value="Princess Mononoke">Princess Mononoke</option>
+        <option value="My Neighbors the Yamadas">My Neighbors the Yamadas</option>
+        <option value="Spirited Away">Spirited Away</option>
+        <option value="The Cat Returns">The Cat Returns</option>
+        <option value="Howl's Moving Castle">Howl's Moving Castle</option>
+        <option value="Tales from Earthsea">Tales from Earthsea</option>
+        <option value="Ponyo on the Cliff by the Sea">Ponyo on the Cliff by the Sea</option>
+        <option value="The Secret World of Arrietty">The Secret World of Arrietty</option>
+        <option value="From Up on Poppy Hill">From Up on Poppy Hill</option>
+        <option value="The Wind Rises">The Wind Rises</option>
+        <option value="The Tale of the Princess Kaguya">The Tale of the Princess Kaguya</option>
+        <option value="When Marnie Was There">When Marnie Was There</option> 
+
+      </select>
+      <label for="director">Pesquisa por Diretor:</label>
+      <select id="director" name="director">
+        <option value="Todos">Todos</option>
+        <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+        <option value="Isao Takahata">Isao Takahata</option>
+        <option value="Yoshifumi Kondō">Yoshifumi Kondo</option>
+        <option value="Gorō Miyazaki">Goro Miyazaki</option>
+        <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+      </select>
+      <label for="order">Ordenar</label>
+      <select name="order" id="order" class="order">
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+          <option selected value="Selecione">Selecione</option>
+        </select> </label>
+
+    </form>
+    <section class="container-films" id="info-films">
+    </section> 
+  </main>
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+<footer><strong>Desenvolvido por Cibelli Monte e Lilian Damadi, alunas da turma SAP010 Laboratória</strong></footer>
+
 </html>

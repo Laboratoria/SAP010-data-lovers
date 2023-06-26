@@ -28,7 +28,7 @@ describe('filteredFilms', () => {
 
 
 const testar = "order"
-const filmes = [{order: "a-z"}, {"z-a"}]
+const filmes = [{order: "a-z"}, {"z-a":any}]
 
 describe('orderFilms', () => {
   it('is a function', () => {

@@ -1865,7 +1865,7 @@ export default {
       "description": "14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items 'borrowed' from the house's human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.",
       "director": "Hiromasa Yonebayashi",
       "producer": "Toshio Suzuki",
-      "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/4/46/The_Borrower_Arrietty.jpg",
+      "poster": "https://media.fstatic.com/kbWNMCqZxvXFFZz0Trdfx02HOhw=/210x312/smart/filters:format(webp)/media/movies/covers/2014/08/o-mundo-dos-pequeninos_t24774_9.jpg",
       "release_date": "2010",
       "rt_score": "95",
       "people": [

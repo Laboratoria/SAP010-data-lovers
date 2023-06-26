@@ -19,12 +19,12 @@ export const filteredFilms = (title, dados) => {
 
 export function orderFilms(selectedOrder, filmList) {
   const ordered = filmList.sort((a, b) => { //.sort ordena array
-        if (a.title > b.title) return 1
-    if (a.title < b.title) return -1
-      return 0
-    } //só falta ver o retorno de a-z e z-a como fazer para retornar?
-      )
+    if (a.title >= b.title) return 1;
+    if (a.title <= b.title) return -1;
+    return 0;
+  });
   console.log(ordered)
+  //o código parece correto, mas esta colocando em ordem de a-z do titulo em inglês e não português
 }
 
  

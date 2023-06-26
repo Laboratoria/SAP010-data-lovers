@@ -43,7 +43,7 @@ filterOrder.addEventListener("change", orderFilmsByName);
 function orderFilmsByName() {
   const selectedOrder = selectElement.value;
   const orderFilmsResult = orderFilms(selectedOrder, filmList);
-  renderFilms(orderFilmsResult);
+  renderFilms(filmList); // Usei filmList no lugar de a, b e ouve movimentação na ordem dos filmes, contudo, só mudou a posição dos dois primeiros 
 }
 
 //filterFilmsByTitle()

@@ -28,6 +28,8 @@ export function orderFilms(selectedOrder, filmList) {
   //o código parece correto, mas esta colocando em ordem de a-z do titulo em inglês e não português
 }
 //estrutura 
+//estrutara-complexa
+
 /*export const ordered(selectedOrder, filmList) => {
   if (selectedOrder === a-z) {
     return filmList.sort((a,b) => {

@@ -27,7 +27,7 @@ export function orderFilms(selectedOrder, filmList) {
       )
   console.log(ordered)
 }
-
+//estrutura 
 /*export const ordered(selectedOrder, filmList) => {
   if (selectedOrder === a-z) {
     return filmList.sort((a,b) => {

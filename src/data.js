@@ -35,14 +35,13 @@ export function pokeOrder(pokeArray,changeOrder) {
             return 0;
         } else if (changeOrder === "numberDesc") {
             if (a.num > b.num) {
-                return 1;
+                return -1;
             }
             if (a.num < b.num) {
-                return -1;
+                return 1;
             }
              return 0;
         }
-        return 0
     });
 
     return ordered;

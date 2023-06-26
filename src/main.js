@@ -46,9 +46,9 @@ pokeFilterType.addEventListener("change", function (event) {
 });
 
 pokeFilterOrganize.addEventListener("change", function (event) {
-        const changeOrder = event.target.value;
-        const pokemonAlphaOrder = pokeOrder(dataPokemon,changeOrder);
-        const returnCardOrder = pokemonAlphaOrder.map(pokemons => createCards(pokemons)).join(" ");
+    const changeOrder = event.target.value;
+    const pokemonAlphaOrder = pokeOrder(dataPokemon, changeOrder);
+    const returnCardOrder = pokemonAlphaOrder.map(pokemons => createCards(pokemons)).join(" ");
     pokeCards.innerHTML = returnCardOrder;
 });
 

@@ -41,9 +41,9 @@ const filterOrder = document.getElementById("order");
 filterOrder.addEventListener("change", orderFilmsByName);
 
 function orderFilmsByName() {
-  const selectedOrder = selectElement.value;
+  const selectedOrder = filterOrder.value;
   const orderFilmsResult = orderFilms(selectedOrder, filmList);
-  renderFilms(filmList); // Usei filmList no lugar de a, b e ouve movimentação na ordem dos filmes, contudo, só mudou a posição dos dois primeiros 
+  renderFilms(orderFilmsResult); // Usei filmList no lugar de a, b e ouve movimentação na ordem dos filmes, contudo, só mudou a posição dos dois primeiros 
 }
 
 //filterFilmsByTitle()

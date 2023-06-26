@@ -28,7 +28,7 @@ describe('filteredFilms', () => {
 
 
 const testar = "order"
-const filmes = [{order: "a-z"}, {"z-a":any}]
+const films = [{order: "a-z"}, {order: "z-a"}]
 
 describe('orderFilms', () => {
   it('is a function', () => {
@@ -36,6 +36,6 @@ describe('orderFilms', () => {
   });
 
   it('selectedOrder `filmList`', () => {
-    expect(orderFilms(testar, films)).toBe([{ order: "a-z" }]);
+    expect(orderFilms(testar, films)).toEqual([{ order: "a-z" }]);
   });
 });

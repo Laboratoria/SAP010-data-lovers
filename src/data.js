@@ -27,7 +27,7 @@ export function orderFilms(selectedOrder, filmList) {
   console.log(ordered)
   //o código parece correto, mas esta colocando em ordem de a-z do titulo em inglês e não português
 }
-//estrutura 
+//estrutura 1
 //estrutara-complexa
 
 /*export const ordered(selectedOrder, filmList) => {

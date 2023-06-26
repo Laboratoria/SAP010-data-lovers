@@ -1,0 +1,38 @@
+
+body{
+    width: 99%; /* largura */
+    height: 100%; /* altura  */
+    background-image: url(imagens/fundo.png); /* imagem de fundo  */
+    background-repeat: no-repeat; /* repetição de imagem  */
+    background-attachment: fixed; /*   */
+    background-size: 100% 100%; /*  tamamnho da imagem no html */
+    font-family: 'Orbitron';
+}
+
+header{ 
+    text-align: center; /* alinhamento horizontal do elemento no html  */
+}
+
+main{
+background-color: white; /* cor de fundo  */
+  border-radius: 8px; /* bordinha arredondada  */
+  width: 90%; 
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  margin-left: auto; /* margem esquerda */
+  margin-right: auto; /*  margem direita */
+  padding: 1em; /* espaço em volta do elemento  */  
+}
+
+.chikorita-button {
+    text-align: center; 
+    height: 20%;
+    background:none;
+    border: none;
+    cursor: pointer;
+
+}
+
+  
+ 

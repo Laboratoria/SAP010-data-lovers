@@ -1,5 +1,6 @@
+
 body {
-  width: 99%; /* largura */
+  width: 100%; /* largura */
   height: 100%; /* altura  */
   background-image: url(imagens/fundo.png); /* imagem de fundo  */
   background-repeat: no-repeat; /* repetição de imagem  */
@@ -9,6 +10,22 @@ body {
 
 header {
   text-align: center; /* alinhamento horizontal do elemento no html  */
+}
+
+#menu-poke {
+  background-color: #ffffff;
+  border-radius: 8px; /* bordinha arredondada  */
+  width: 100% ;
+  height: 50%;
+  margin: 1em;
+  font-family: 'Orbitron';
+  text-align: left;
+  width: 90%; 
+  height: auto;
+  align-content: center;
+  margin-left: auto; /* margem esquerda */
+  margin-right: auto; /*  margem direita */
+  padding: 1em; /* espaço em volta do elemento  */
 }
 
 main {

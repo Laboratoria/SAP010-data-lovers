@@ -42,6 +42,7 @@ export function pokeOrder(pokeArray,changeOrder) {
             }
              return 0;
         }
+        return 0
     });
 
     return ordered;

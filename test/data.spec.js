@@ -1,4 +1,4 @@
-import { filmsDirector, filteredFilms } from '../src/data.js';
+import { filmsDirector, filteredFilms, orderFilms } from '../src/data.js';
 
 const test = "director";
 const valor = [{ director: "Todos" }, { director: "Hayao Miyazaki" }, { director: "Isao Takahata" }]
@@ -23,5 +23,19 @@ describe('filteredFilms', () => {
 
   it('filter `title`', () => {
     expect(filteredFilms(teste, dados)).toEqual([{ title: "Castle in the Sky" }]);
+  });
+});
+
+
+const testar = "order"
+const filmes = [{order: "a-z"}, {"z-a":any}]
+
+describe('orderFilms', () => {
+  it('is a function', () => {
+    expect(typeof orderFilms).toBe('function');
+  });
+
+  it('selectedOrder `filmList`', () => {
+    expect(orderFilms(testar, films)).toBe([{ order: "a-z" }]);
   });
 });

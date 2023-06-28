@@ -13,6 +13,13 @@ import data from './data/countries/countries.js';
     const exibirPopulation = data.countries[i].population
     
     // template string
-    const template = "<h1>" + exibirName + "</h1>"
-    console.log(template)
+    const template = `
+    <img src ="${exibirFlags}"> 
+    <h3>${exibirName}</h3> 
+    <p> População ${exibirPopulation}</p> `
+
+    
+
+    console.log(template) //como inserir template no dom com inner html
+    
  }

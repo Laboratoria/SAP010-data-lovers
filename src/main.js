@@ -1,4 +1,4 @@
-import { example } from './data.js';
+//import { example } from './data.js';
 import countries from './data/countries/countries.js';
 // import data from './data/lol/lol.js';
 import data from './data/countries/countries.js';
@@ -17,6 +17,10 @@ import data from './data/countries/countries.js';
     <img src ="${exibirFlags}"> 
     <h3>${exibirName}</h3> 
     <p> População ${exibirPopulation}</p> `
+
+const exibirFlagsDiv = document.getElementById("exibirFlags");
+exibirFlagsDiv.innerHTML= template;
+
 
     
 

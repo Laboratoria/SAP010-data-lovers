@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" lang="">
     <title>Data Lovers - GhibliFlix</title>
-    <link rel="icon" href="./images/favicon_totoro.jpg">
+    <link rel="icon" href="./images/totoro_editado.png">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,7 +11,7 @@
       <hgroup></hgroup>
       <section id="menu">
             <ul class="store">
-              <li><img id=logo src="./images/Logo-site.png" alt="Logo Studios Ghibli"></li>
+              <li><img id="logo" src="./images/Logo-site.png" alt="Logo Studios Ghibli"></li>
               <li><a href="https://studioghibli.com.br/ghiblistore/livros/">BOOKS</a></li>
               <li><a href="https://studioghibli.com.br/categoria/games/">GAMES</a></li>
               <li><a href="https://studioghibli.com.br/ghiblistore/">STORE</a></li>
@@ -19,22 +19,29 @@
         </section>
     </header>
 
-    <img id=img-header src="./images/allchars.webp" alt="Principais personagens do Studio Ghibli caminhando juntos numa colina">
+    <img id="img-header" src="./images/allchars.webp" alt="Principais personagens do Studio Ghibli caminhando juntos numa colina">
 
     <main>
       <section class="filters-container">
-        <label for="filters-container">Filtrar animações por: </label>
-        <!--p id= "filters" style="color: cornsilk;"> Filtrar animacoes por: </p-->
+        <p>
+          <label for="search-title"> Pesquisa por título: </label>
+          <input type="text" id="search-title">
+          <input type="button" class ="all-filters" id="start-event" value=" ok ">
+        </p>
 
-          <li>
-            <select id="first-filter">
-              <option value="selecionar">Selecione</option>
-              <option value= "title-az">Títulos a-z</option>
-              <option value="lancamento">Ano de lancamento</option>
-              <option value="rating">Rating</option>
-            </select>
-          </li>
+        <p>
+        <label for="order">Listar animações por ordem: </label>
+          <select id="first-filter">
+            <option value="selecionar">  </option>
+            <option value= "title-az"> alfabetica </option>
+            <option value="lancamento"> cronologica </option>
+            <option value="rating"> de rating </option>
+          </select>
+        </p>
+
+        <label for="director">Diretor: </label>
           <select id="second-filter">
+            <option value="selecionar"> </option>
             <option value="Gorō-Miyazaki">Gorō Miyazaki</option>
             <option value="Hayao-Miyazak">Hayao Miyazak</option>
             <option value="Hiromasa-Yonebayashi">Hiromasa Yonebayashi</option>
@@ -42,16 +49,13 @@
             <option value="Isao-Takahata">Isao Takahata</option>
             <option value="Yoshifumi-Kondō">Yoshifumi Kondō</option>
           </select>
-
-          <li>
-            <input type="button" class ="all-filters" id="start-event" value="ok">
-          </li>
       </section>
 
       <section class="result-cards" id="card-container">
         <p>Resultados de busca: </p>
-      </section>
 
+      </section>
+    </main>
       <footer>
       <menu id="about">
         <ul class="about">
@@ -66,10 +70,8 @@
         <li id="instagram"><a href="https://www.instagram.com/ghibli.movies/?hl=en"><img src="./images/instagram.jpeg" style="width:42px;height:42px;"></a></li>
         <li id="tiktok"><a href="https://www.tiktok.com/@studio_ghibli_shorts?lang=en"><img type="button" src="./images/tiktok.png" style="width:40px;height:42px;"></a></li>
       </menu>
-
-    </main>
       <figure>
-        <img src="./images/butterfly.8e1a40df.gif">
+        <img id="img-footer" src="./images/totoroblack-footer.jpg">
       </figure>
     </footer>
 

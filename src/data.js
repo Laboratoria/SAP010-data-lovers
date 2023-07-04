@@ -1,79 +1,71 @@
-
-import data from './data/ghibli/ghibli.js';
-
-const dataGhibli = data.films;
-//nao preciso acessar o titulo nessa constante, ele sera acessado na funcao!!
-export function sortAlphabet(dataGhibli){
-  const orderByAlphabet = [];
-  orderByAlphabet.sort((a, b) => {
-    if (a.title.toUpperCase < b.title.toUpperCase){
+export function alfabeto(data){
+  const titleAZ = data.slice();
+  titleAZ.sort((a, b) => {
+    if (a.title < b.title){
       return -1;
     }
   })
-  return orderByAlphabet;
+  return titleAZ;
 }
 
-export function sortRealease(dataGhibli){
-  const orderByRealease = [];
-  orderByRealease.sort((a, b) => {
+export function sortRelease(data){
+  const realease = data.slice();
+  realease.sort((a, b) => {
     if (a.release_date < b.release_date) {
       return -1;
     }
   })
-  return orderByRealease;
+  return realease;
 }
 
-export function sortRating(dataGhibli){
-  const orderByRating = [];
-  orderByRating.sort((a, b) => {
+export function sortRating(data){
+  const rating = data.slice();
+  rating.sort((a, b) => {
     if (a.rt_score < b.rt_score){
       return -1;
     }
   })
-  return orderByRating;
-}
-export function filterDirector(){
-  //
+  return rating;
 }
 
-
-// const order = {
-//   byAlphabet: function() {
-//     const orderByAlphabet = [];
-//     orderByAlphabet.sort((a, b) => {
-//       if (a.title.toUpperCase < b.title.toUpperCase){
-//         return -1;
-//       }
-//     })
-//     return orderByAlphabet;
-//   },
-
-//   byRealease: function() {
-//     const orderByRealease = [];
-//     orderByRealease.sort((a, b) =>
-//       a.release_date - b.release_date
-//     )
-//     return orderByRealease;
-//   },
-
-//   byRating: function() {
-//     <>.sort((a, b) => a.title - b.title);
-//   }
-
-
-// //const dataFilms = data.films.title;
-
-
-// export const searchTitle = (titles, name) => {
-//   const filterTitle = title => title.name.toUpperCase().includes(name.toUpperCase());
-//   const filter = titles.filter(filterTitle);
-//   return filter;
-//   return filter;
-// }
-
-
-{/* export function orderByNumber(arr){
-  arr.sort((a, b) => a.title - b.title);
+export function renderCardFilms(data){
+  const card = `
+  <div class = "card">
+    <img src="${data.poster}" alt="poster">
+    <table>
+      <tr>
+        <th>${data.title}</th>
+        <th>⭐${data.rt_score}/100</th>
+      </tr>
+      <tr>
+        <th>🎬${data.director}</th>
+        <th>${data.release_date}</th>
+      </tr>
+    </table>
+  </div>
+  `;
+  return card;
 }
-orderByAZ(data); */}
+
+export function percentRating(data){
+  const rating = data.slice();
+  const min95 = [];
+  const min80 = [];
+  const noMin = [];
+
+  for (let i = 0; i < data.length; i++){
+    if (rating[i] > 94){
+      min95.push(rating[i]);
+    } else if (rating[i] > 79){
+      min80.push(rating[i]);
+    } else {
+      noMin.push(rating[i]);
+    }
+  }
+  const ratingHigh = min95.length / data.lenght;
+  const ratingMiddle = min80.length / data.lenght;
+  const ratingLow = noMin.length / data.lenght;
+
+  return ratingHigh, ratingMiddle, ratingLow;
 }
+

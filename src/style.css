@@ -1,23 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Pacifico&family=Sacramento&display=swap');
+
+font-family: 'Comic Neue', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Sacramento', cursive;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Barlow', Consolas, "Courier New";
+  font-family: 'Comic Neue', cursive;
 }
 
 body {
-  text-align: center;
-  background-color: rgb(58, 145, 215);
-  /*background-color: linear-gradient(to bottom, rgb(58, 145, 215), rgb(132, 174, 218));*/
+  /*background-color: rgba(13,16,31,255);*/
   margin-top: 1%;
   min-height: 100vh;
+  
 }
 
 #img-header {
   width: 100%;
   max-width: 1000px;
+}
+
+#img-footer {
+  justify-content: left;
 }
 
 section#menu{

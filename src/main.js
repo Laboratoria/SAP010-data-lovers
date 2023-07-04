@@ -1,48 +1,92 @@
 //import { example } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
-import {sortAlphabet, sortRating, sortRealease} from './data.js';
+import {alfabeto, sortRelease, sortRating, renderCardFilms} from './data.js';
+
+const dataGhibli = data.films;
 
 // const titles = data.films(title);
 // const textoSel = element.options[element.selectedIndex].text;
 
-document.getElementById("start-event").addEventListener("click", myFunction);
 document.getElementById("first-filter").addEventListener("change", myFunction);
-
 
 function myFunction(){
   const element = document.getElementById("first-filter");
   const valorSel = element.options[element.selectedIndex].value;
 
   if (valorSel === "title-az"){
-    
-    document.getElementById("card-container").innerHTML = titleAZ;
+    const titleAZ = alfabeto(dataGhibli);
+    const cardsAZ = [];
+    console.log(titleAZ);
+
+    for (let i = 0; i < titleAZ.length; i++) {
+      cardsAZ.push(renderCardFilms(titleAZ[i]));
+      i++;
+    }
+    const returnCardsAZ = cardsAZ.join(" ");
+    document.getElementById("card-container").innerHTML = returnCardsAZ;
   }
+
   else if (valorSel === "lancamento"){
-    const lancamento = sortRealease(data.films.release_date);
-    for (let i = 0; i < data.films.length; i++){
-      lancamento.push(data.films[i].release_date);
+    const releaseDate = sortRelease(dataGhibli);
+    const cardsRelease = [];
+    console.log(releaseDate);
+
+    for (let i = 0; i < releaseDate.length; i++) {
+      cardsRelease.push(renderCardFilms(releaseDate[i]));
+      i++;
     }
-    console.log(lancamento);
+    document.getElementById("card-container").innerHTML = cardsRelease;
   }
+
   else if (valorSel === "rating"){
-    const rating = sortRating(data.films.rating);
-    for (let i=0; i<data.films.length; i++){
-      rating.push(data.films[i].rt_score);
+    const rating = sortRating(dataGhibli);
+    const cardsRating = [];
+    console.log(rating);
+
+    for (let i = 0; i < rating.length; i++) {
+      cardsRating.push(renderCardFilms(rating[i]));
+      i++;
     }
-    console.log(rating.sort());
+    document.getElementById("card-container").innerHTML = cardsRating;
   }
+
   else {
-    const titulos = [];
-    for (let i=0; i<data.films.length; i++) {
-      const card = `<h1>${data.films[i].title}</h1>`;
-      titulos.push(card);
+    const all = dataGhibli
+    const displayAll = [];
+    console.log(all);
+
+    for(let i = 0; i < dataGhibli.length; i++) {
+      displayAll.push(renderCardFilms(all[i]));
+      i++;
     }
+    document.getElementById("card-container").innerHTML = displayAll;
+
   }
 }
 
-//document.getElementById("start-events").addEventListener("click", );
+//function renderCardsCharacters(data)
+// document.getElementById("start-event").addEventListener("click", renderCardFilms);
+// const printCard = [];
+// function renderCardFilms(dataGhibli){
+//   const printCard = dataGhibli.map((dataGhibli) => {
+//     const card = `
+//     <div class = "card">
+//       <img src="${data.poster}" alt="poster">
+//       <table>
+//         <tr>
+//           <th>${data.title}</th>
+//           <th>${data.rt_score}</th>
+//         </tr>
+//         <tr>
+//           <th>${data.director}</th>
+//           <th>${data.realease_date}</th>
+//         </tr>
+//       </table>
+//     </div>
+//     `;
+//     return printCard;
+//   });
+//   document.querySelector("#card-container").innerHTML = printCard.join("");
+// }
 
-
-//console.log(data.films[0].title);
-//devolve um título.

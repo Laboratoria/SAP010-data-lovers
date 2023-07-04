@@ -5,13 +5,13 @@ import data from './data/countries/countries.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 //console.log(data.countries[0], data.countries[0].population);
-function paises() {
+function paises(array) {
 
-    for (let i = 0; i < data.countries.length; i++) {
+    for (let i = 0; i < array.length; i++) {
 
-        const exibirFlags = data.countries[i].flags.png
-        const exibirName = data.countries[i].name.common
-        const exibirPopulation = data.countries[i].population
+        const exibirFlags = array[i].flags.png
+        const exibirName = array[i].name.common
+        const exibirPopulation = array[i].population
 
         // template string
         const template = `
@@ -30,4 +30,4 @@ function paises() {
     }
 }
 
-paises();
+paises(data.countries);

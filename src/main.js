@@ -5,6 +5,7 @@ import data from "./data/countries/countries.js";
 // import data from './data/rickandmorty/rickandmorty.js';
 
 //console.log(data.countries[0], data.countries[0].population);
+function paises(array) {
 
 for (let i = 0; i < data.countries.length; i++) {
   const exibirFlags = data.countries[i].flags.png;
@@ -22,3 +23,7 @@ for (let i = 0; i < data.countries.length; i++) {
 
   console.log(template); //como inserir template no dom com inner html
 }
+
+}
+
+paises(data.countries);

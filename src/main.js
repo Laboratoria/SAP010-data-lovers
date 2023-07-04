@@ -36,7 +36,8 @@ function myFunction(){
       cardsRelease.push(renderCardFilms(releaseDate[i]));
       i++;
     }
-    document.getElementById("card-container").innerHTML = cardsRelease;
+    const returnCardsRelease = cardsRelease.join(" ");
+    document.getElementById("card-container").innerHTML = returnCardsRelease;
   }
 
   else if (valorSel === "rating"){
@@ -48,7 +49,8 @@ function myFunction(){
       cardsRating.push(renderCardFilms(rating[i]));
       i++;
     }
-    document.getElementById("card-container").innerHTML = cardsRating;
+    const returnCardsRating = cardsRating.join(" ");
+    document.getElementById("card-container").innerHTML = returnCardsRating;
   }
 
   else {

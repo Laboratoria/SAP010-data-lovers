@@ -6,6 +6,16 @@ const arrayExemple = [{
   "rt_score": "95"
 },
 {
+  "title": "The Secret World of Arrietty",
+  "release_date": "2010",
+  "rt_score": "95",
+},
+{
+  "title": "The Wind Rises",
+  "release_date": "2013",
+  "rt_score": "89"
+},
+{
   "title": "Grave of the Fireflies",
   "release_date": "1988",
   "rt_score": "97"
@@ -46,7 +56,18 @@ describe('alfabeto', () => {
         "title": "Kiki's Delivery Service",
         "release_date": "1989",
         "rt_score": "96"
-      }]
+      },
+      {
+        "title": "The Secret World of Arrietty",
+        "release_date": "2010",
+        "rt_score": "95",
+      },
+      {
+        "title": "The Wind Rises",
+        "release_date": "2013",
+        "rt_score": "89"
+      }
+      ]
     );
   });
 });
@@ -72,7 +93,18 @@ describe('sortRelease', () => {
         "title": "Kiki's Delivery Service",
         "release_date": "1989",
         "rt_score": "96"
-      }]
+      },
+      {
+        "title": "The Secret World of Arrietty",
+        "release_date": "2010",
+        "rt_score": "95",
+      },
+      {
+        "title": "The Wind Rises",
+        "release_date": "2013",
+        "rt_score": "89"
+      }
+      ]
     );
   });
 });
@@ -84,10 +116,20 @@ describe('sortRating', () => {
 
   it('returns array ordered by rating score', () => {
     expect(sortRating(arrayExemple)).toEqual(
-      [{
+      [ {
+        "title": "The Wind Rises",
+        "release_date": "2013",
+        "rt_score": "89"
+      },
+      {
         "title": "Castle in the Sky",
         "release_date": "1986",
         "rt_score": "95"
+      },
+      {
+        "title": "The Secret World of Arrietty",
+        "release_date": "2010",
+        "rt_score": "95",
       },
       {
         "title": "Kiki's Delivery Service",

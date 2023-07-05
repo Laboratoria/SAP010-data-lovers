@@ -66,6 +66,12 @@ export function percentRating(data){
   const ratingMiddle = min80.length / data.lenght;
   const ratingLow = noMin.length / data.lenght;
 
-  return ratingHigh, ratingMiddle, ratingLow;
+  return [ratingHigh, ratingMiddle, ratingLow]
 }
 
+export function director (data, value){
+  const result = data.filter(i => i.director === value);
+
+  const percent = (result.lenght / data.lenght) * 100
+  return result, percent;
+}

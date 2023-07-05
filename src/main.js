@@ -1,7 +1,7 @@
 //import { example } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
-import {alfabeto, sortRelease, sortRating, renderCardFilms} from './data.js';
+import {alfabeto, sortRelease, sortRating, renderCardFilms, director} from './data.js';
 
 const dataGhibli = data.films;
 
@@ -54,41 +54,25 @@ function myFunction(){
   }
 
   else {
-    const all = dataGhibli
-    const displayAll = [];
-    console.log(all);
-
-    for(let i = 0; i < dataGhibli.length; i++) {
-      displayAll.push(renderCardFilms(all[i]));
-      i++;
-    }
-    document.getElementById("card-container").innerHTML = displayAll;
-
+    const percentRating = percentRating(dataGhibli);
+    console.log(percentRating);
   }
+//chart.js
 }
 
-//function renderCardsCharacters(data)
-// document.getElementById("start-event").addEventListener("click", renderCardFilms);
-// const printCard = [];
-// function renderCardFilms(dataGhibli){
-//   const printCard = dataGhibli.map((dataGhibli) => {
-//     const card = `
-//     <div class = "card">
-//       <img src="${data.poster}" alt="poster">
-//       <table>
-//         <tr>
-//           <th>${data.title}</th>
-//           <th>${data.rt_score}</th>
-//         </tr>
-//         <tr>
-//           <th>${data.director}</th>
-//           <th>${data.realease_date}</th>
-//         </tr>
-//       </table>
-//     </div>
-//     `;
-//     return printCard;
-//   });
-//   document.querySelector("#card-container").innerHTML = printCard.join("");
-// }
+document.getElementById("second-filter").addEventListener("change", chooseDirector);
+function chooseDirector(dataGhibli){
+  const element = document.getElementById("second-filter");
+  const valorSel = element.options[element.selectedIndex].value;
+  console.log(valorSel);
+  const filterDirector = director(dataGhibli, valorSel);
+  const directorArray = [];
+  console.log(filterDirector);
+
+//   for (let i = 0; i < filterDirector.length; i++){
+//     directorArray.push(renderCardFilms(filterDirector[i]));
+//   }
+//   const returnCardsDirector = directorArray.join(" ");
+//   document.getElementById("card-container").innerHTML = returnCardsDirector;
+}
 

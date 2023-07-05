@@ -6,28 +6,29 @@
     <link rel="icon" href="./images/totoro_editado.png">
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <hgroup></hgroup>
-      <section id="menu">
-            <ul class="store">
-              <li><img id="logo" src="./images/Logo-site.png" alt="Logo Studios Ghibli"></li>
+  <body class="container">
+    <header class="cabecalho">
+      <section id="menu" class="menu">
+        <img id="logo" class="img-logo" src="./images/Logo-site.png" alt="Logo Studios Ghibli">
+          <ul class="store">
               <li><a href="https://studioghibli.com.br/ghiblistore/livros/">BOOKS</a></li>
               <li><a href="https://studioghibli.com.br/categoria/games/">GAMES</a></li>
               <li><a href="https://studioghibli.com.br/ghiblistore/">STORE</a></li>
-            </ul>
-        </section>
+          </ul>
+      </section>
     </header>
 
-    <img id="img-header" src="./images/allchars.webp" alt="Principais personagens do Studio Ghibli caminhando juntos numa colina">
+    <div class="img-header">
+      <img id="img-header" src="./images/allchars.webp" alt="Principais personagens do Studio Ghibli caminhando juntos numa colina">
+    </div>
 
-    <main>
+    <main class="main">
       <section class="filters-container">
-        <p>
+        <!--<p>
           <label for="search-title"> Pesquisa por título: </label>
           <input type="text" id="search-title">
           <input type="button" class ="all-filters" id="start-event" value=" ok ">
-        </p>
+        </p>-->
 
         <p>
         <label for="order">Listar animações por ordem: </label>
@@ -56,7 +57,7 @@
 
       </section>
     </main>
-      <footer>
+      <footer class="footer">
       <menu id="about">
         <ul class="about">
           <li id="Museum"><a href="https://www.ghibli-museum.jp/en/">MUSEUM</a></li>

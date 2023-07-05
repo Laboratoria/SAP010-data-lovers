@@ -62,9 +62,9 @@ export function percentRating(data){
       noMin.push(rating[i]);
     }
   }
-  const ratingHigh = min95.length / data.lenght;
-  const ratingMiddle = min80.length / data.lenght;
-  const ratingLow = noMin.length / data.lenght;
+  const ratingHigh = min95.length / data.length;
+  const ratingMiddle = min80.length / data.length;
+  const ratingLow = noMin.length / data.length;
 
   return [ratingHigh, ratingMiddle, ratingLow]
 }
@@ -72,6 +72,6 @@ export function percentRating(data){
 export function director (data, value){
   const result = data.filter(i => i.director === value);
 
-  const percent = (result.lenght / data.lenght) * 100
+  const percent = (result.length / data.length) * 100
   return result, percent;
 }

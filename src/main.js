@@ -61,7 +61,7 @@ function myFunction(){
 }
 
 document.getElementById("second-filter").addEventListener("change", chooseDirector);
-function chooseDirector(dataGhibli){
+function chooseDirector(){
   const element = document.getElementById("second-filter");
   const valorSel = element.options[element.selectedIndex].value;
   console.log(valorSel);
@@ -69,10 +69,10 @@ function chooseDirector(dataGhibli){
   const directorArray = [];
   console.log(filterDirector);
 
-//   for (let i = 0; i < filterDirector.length; i++){
-//     directorArray.push(renderCardFilms(filterDirector[i]));
-//   }
-//   const returnCardsDirector = directorArray.join(" ");
-//   document.getElementById("card-container").innerHTML = returnCardsDirector;
+  for (let i = 0; i < filterDirector.length; i++){
+    directorArray.push(renderCardFilms(filterDirector[i]));
+  }
+  const returnCardsDirector = directorArray.join(" ");
+  document.getElementById("card-container").innerHTML = returnCardsDirector;
 }
 

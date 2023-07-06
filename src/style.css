@@ -34,26 +34,48 @@ font-family: 'Sacramento', cursive;*/
   height: 4.8vw;
 }
 
+.menu-init {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .totoro-logo {
   width: 4vw;
   height: 5.2vw;
-  min-width: 10px;
-  justify-content: space-around;
   padding: 0.55%;
-  background-color: blueviolet;
 }
 
 .invert-color {
-  filter: invert(100%);
+  filter: invert(70%);
+}
+
+.create-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  background-color: aliceblue;
+  border-radius: 10%;
+  text-decoration: none;
+  font-family: 'Comic Neue', sans-serif;
+  font-weight: bold;
+  margi
 }
 
 .menu {
 
 }
 
-.item{
-  order: 0;
+.create-menu {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-items: flex-end
 }
+
+
 
 .filters-container {
   order: 1;

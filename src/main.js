@@ -14,19 +14,18 @@ function changeColor(){
   changeColor.classList.add("invert-color");
 }
 
-document.getElementById("totoro-logo").addEventListener("mouseout", originalColor());
+document.getElementById("totoro-logo").addEventListener("mouseout", originalColor);
 function originalColor(){
   const originalColor = document.getElementById("totoro-logo");
-  originalColor.style.backgroundColor = "hex(#7FFFD4)";
+  originalColor.classList.remove("invert-color");
 }
 
 document.getElementById("totoro-logo").addEventListener("click", createMenu);
 function createMenu(){
-  console.log("entrou");
   const whereInit = document.getElementById("create-menu");
-  const menuInicial = document.createElement('ul');
+  const menuInicial = document.createElement('div');
 
-  menuInicial.innerHTML = '<li class="item" name="e"><a href="https://studioghibli.com.br/ghiblistore/livros/">BOOKS</a></li> <li class="item" name="e"><a href="https://studioghibli.com.br/categoria/games/">GAMES</a></li>';
+  menuInicial.innerHTML = '<ul class=create-ul><li class="item" name="e"><a class="item" href="https://studioghibli.com.br/ghiblistore/livros/">Books</a></li>  <li class="item" name="e"><a class="item" href="https://studioghibli.com.br/categoria/games/">Games</a></li></ul>';
   whereInit.appendChild(menuInicial);
 }
 

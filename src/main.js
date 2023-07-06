@@ -7,19 +7,16 @@ import data from "./data/countries/countries.js";
 //console.log(data.countries[0], data.countries[0].population);
 function paises(array) {
 
-for (let i = 0; i < data.countries.length; i++) {
-  const exibirFlags = data.countries[i].flags.png;
-  const exibirName = data.countries[i].name.common;
-  const exibirPopulation = data.countries[i].population;
+for (let i = 0; i < array.length; i++) {
+  const exibirFlags = array[i].flags.png;
+  const exibirName = array[i].name.common;
+  const exibirPopulation = array[i].population;
 
   // template string
   const template = `
-    <div>
-      <img src ="${exibirFlags}"> 
-      <h3>${exibirName}</h3> 
-      <p> População ${exibirPopulation}</p> 
-    </div>`
-    ;
+    <img src ="${exibirFlags}"> 
+    <h3>${exibirName}</h3> 
+    <p> População ${exibirPopulation}</p> `;
 
   const exibirFlagsDiv = document.getElementById("exibirFlags");
   exibirFlagsDiv.innerHTML = exibirFlagsDiv.innerHTML + template

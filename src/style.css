@@ -22,11 +22,14 @@ body {
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.45);
     transition: all 0.8s;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+<<<<<<< HEAD
+=======
 }
 /* Responsividade*/
 
 body {
 
+>>>>>>> c0baf935e5207cd54a4b08d0fecee1102a3344cc
 }

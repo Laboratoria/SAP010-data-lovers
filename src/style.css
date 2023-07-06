@@ -20,18 +20,68 @@ font-family: 'Sacramento', cursive;*/
   align-items: flex-start;
 
 }
-.menu {
+
+.cabecalho {
+  order: 0;
   display: flex;
+  width: 100%;
+  background-color: aquamarine;
+  justify-content: space-between;
+}
+
+.img-logo {
+  width: 20vw;
+  height: 4.8vw;
+}
+
+.totoro-logo {
+  width: 4vw;
+  height: 5.2vw;
+  min-width: 10px;
+  justify-content: space-around;
+  padding: 0.55%;
+  background-color: blueviolet;
+}
+
+.invert-color {
+  filter: invert(100%);
+}
+
+.menu {
 
 }
 
+.item{
+  order: 0;
+}
+
 .filters-container {
+  order: 1;
   display: inline-flex;
   margin-top: 2%;
 }
 
-.footer {
-  justify-content: center;
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-color: bisque;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  background-color: blueviolet;
+}
+
+.about {
+}
+
+.img-footer {
+}
+
+.small {
 }
 
 .img-header {

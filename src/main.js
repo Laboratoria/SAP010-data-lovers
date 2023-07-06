@@ -14,9 +14,12 @@ for (let i = 0; i < data.countries.length; i++) {
 
   // template string
   const template = `
-    <img src ="${exibirFlags}"> 
-    <h3>${exibirName}</h3> 
-    <p> População ${exibirPopulation}</p> `;
+    <div>
+      <img src ="${exibirFlags}"> 
+      <h3>${exibirName}</h3> 
+      <p> População ${exibirPopulation}</p> 
+    </div>`
+    ;
 
   const exibirFlagsDiv = document.getElementById("exibirFlags");
   exibirFlagsDiv.innerHTML = exibirFlagsDiv.innerHTML + template

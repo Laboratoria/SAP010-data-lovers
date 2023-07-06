@@ -4,7 +4,6 @@ body {
     flex-direction: column;
     height: 100vh;
     background-image: url("./img/img-fundo-globo-greg-rosenke.png");
-    align-items: center;
 }
 
 .bandeiras {
@@ -26,10 +25,6 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     font-weight: bold;
 }
-
-
-
-
 /* Responsividade*/
 
 body {

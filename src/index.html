@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" lang="">
-    <title>Data Lovers - GhibliFlix</title>
+    <title>GhibliFlix</title>
     <link rel="icon" href="./images/totoro_editado.png">
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -16,7 +16,7 @@
     </header>
 
     <div class="img-header">
-      <img id="img-header" src="./images/allchars.webp" alt="Principais personagens do Studio Ghibli caminhando juntos numa colina">
+      <img class="img1" src="./images/header_ghibli.jpg" alt="Principais personagens do Studio Ghibli caminhando juntos numa colina">
     </div>
 
     <main class="main">
@@ -26,17 +26,8 @@
           <input type="text" id="search-title">
           <input type="button" class ="all-filters" id="start-event" value=" ok ">
         </p>-->
-
-        <label for="order" class="label-first-filter">Listar animações por ordem: </label>
-          <select id="first-filter" class="first-filter">
-            <option value="selecionar">  </option>
-            <option value= "title-az"> alfabetica </option>
-            <option value="lancamento"> cronologica </option>
-            <option value="rating"> de rating </option>
-          </select>
-
-
-        <label for="director" class="label-second-filter">Diretor: </label>
+        <article class="second-filter">
+          <label for="director" class="label-second-filter">Animações por diretor: </label>
           <select id="second-filter" class="second-filter">
             <option value="selecionar"> </option>
             <option value="Gorō Miyazaki">Gorō Miyazaki</option>
@@ -45,7 +36,19 @@
             <option value="Hiroyuki Morita">Hiroyuki Morita</option>
             <option value="Isao Takahata">Isao Takahata</option>
             <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+            <option value="all">TODOS</option>
           </select>
+        </article>
+
+        <article class="first-filter">
+          <label for="order" class="label-first-filter"> ordenadas por: </label>
+          <select id="first-filter" class="first-filter">
+            <option value="selecionar">  </option>
+            <option value= "title-az"> alfabeto </option>
+            <option value="lancamento"> data </option>
+            <option value="rating"> avaliação </option>
+          </select>
+        </article>
       </section>
 
       <section class="result-cards" id="card-container">
@@ -68,9 +71,10 @@
       </menu>
     </footer>
 
-    <figure>
+    <section class="end-pag">
       <img id="img-footer" class="img-footer" src="./images/totoroblack-footer.jpg">
-    </figure>
+
+    </section>
 
     <script src="main.js" type="module"></script>
     <small class="small"><a href="https://github.com/Lila8351">Desing by: Lila Araujo</a></small>

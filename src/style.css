@@ -5,82 +5,123 @@ font-family: 'Pacifico', cursive;
 font-family: 'Sacramento', cursive;*/
 
 * {
-  margin: 0;
+  margin: 0.3vw;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Comic Neue', cursive;
 }
 
 .container {
-  /*background-color: rgba(13,16,31,255);*/
-  margin-top: 1%;
+  background-color: rgb(1, 16, 49);
   min-height: 100vh;
+  min-width: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .cabecalho {
   order: 0;
   display: flex;
   width: 100%;
-  background-color: aquamarine;
+  height: 5.5vw;
   justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin-top: 0;
 }
 
 .img-logo {
-  width: 20vw;
-  height: 4.8vw;
+  width: 13vw;
+  height: 3vw;
+  position: relative;
+  margin: 0.9vw;
 }
 
 .menu-init {
   display: flex;
   flex-direction: row;
+  height: 5vw;
   justify-content: space-around;
 }
 
 .totoro-logo {
-  width: 4vw;
-  height: 5.2vw;
-  padding: 0.55%;
+  width: 2.3vw;
+  height: 2.9vw;
+  padding: 0.5%;
+  margin: 0.9vw;
+  margin-right: 1.8vw;
+  position: relative;
+  justify-content: flex-start
 }
 
 .invert-color {
-  filter: invert(70%);
+  filter: invert(95%);
+}
+
+.create-menu {
+  width: 6vw;
+  height: 10vw;
+  display: flex;
+  flex-direction: row;
+  padding: 0.6vw;
+  margin: 0.3vw;
 }
 
 .create-ul {
   display: flex;
   flex-direction: column;
+  width: 6vw;
 }
 
 .item {
-  background-color: aliceblue;
-  border-radius: 10%;
+  background-color: rgba(89, 99, 247, 0.39);
+  border-radius: 5%;
   text-decoration: none;
   font-family: 'Comic Neue', sans-serif;
   font-weight: bold;
-  margi
+  letter-spacing: 0.3vw;
+  color:rgb(0, 0, 0);
+  width: 5vw;
+  margin: 0.1vw;
+  font-size: 75%;
+  border: 20px;
 }
 
+
+.img1 {
+  width: 100%;
+}
 .menu {
 
 }
 
-.create-menu {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  justify-items: flex-end
+
+
+.main {
+  width: 100%;
 }
 
-
-
 .filters-container {
-  order: 1;
   display: inline-flex;
-  margin-top: 2%;
+  width: 100%;
+  justify-content: center;
+  background-color: rgb(1, 16, 49);
+  color:aliceblue
+}
+
+.card {
+}
+
+.card-img {
+  width: 10%;
+
+}
+
+.result-cards {
+  width: 100%;
+  background-image: linear-gradient(180deg, rgb(1, 16, 49),rgb(14, 16, 31));
+  color:aliceblue;
 }
 
 .footer-menu {
@@ -88,13 +129,19 @@ font-family: 'Sacramento', cursive;*/
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  background-color: bisque;
+  background-color: rgb(14, 16, 31);
 }
+
 
 .social-media {
   display: flex;
   justify-content: space-around;
   background-color: blueviolet;
+}
+
+.end-pag {
+  width: 100%;
+  background-color: rgb(14, 16, 31);
 }
 
 .about {
@@ -104,12 +151,13 @@ font-family: 'Sacramento', cursive;*/
 }
 
 .small {
+  width: 100%;
+  background-color: rgb(14, 16, 31);
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'Pacifico', sans-serif;
 }
 
-.img-header {
-  width: 100%;
-  max-width: 1000px;
-}
 
 
 .all-filters{

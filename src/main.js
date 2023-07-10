@@ -23,22 +23,24 @@ function originalColor(){
 document.getElementById("totoro-logo").addEventListener("click", createMenu);
 function createMenu(){
   const whereInit = document.getElementById("create-menu");
-  const menuInicial = document.createElement('div');
+ //const menuInicial = document.createElement('div');
 
-  menuInicial.innerHTML = '<ul class=create-ul><li class="item" name="e"><a class="item" href="https://studioghibli.com.br/ghiblistore/livros/">Books</a></li>  <li class="item" name="e"><a class="item" href="https://studioghibli.com.br/categoria/games/">Games</a></li></ul>';
-  whereInit.appendChild(menuInicial);
+  whereInit.innerHTML = '<ul class=create-ul><li class="item" name="e"><a class="item" href="https://studioghibli.com.br/ghiblistore/livros/"> Books </a></li>  <li class="item" name="e"><a class="item" href="https://studioghibli.com.br/categoria/games/">Games </a></li></ul>';
+  //whereInit.appendChild(menuInicial);
 }
 
 
-document.getElementById("cabecalho").addEventListener("mouseout", hideCreatedMenu)
-function hideCreatedMenu(){
-  //console.log("testando hideCreatedMenu");
-  const where = document.getElementById("create-menu");
-  const menuInicial = document.getElementsByClassName("item");
-  if (menuInicial){
-    where.removeChild(menuInicial);
-  }
-}
+// document.getElementById("cabecalho").addEventListener("mouseout", hideCreatedMenu)
+// function hideCreatedMenu(){
+//   //console.log("testando hideCreatedMenu");
+//   const where = document.getElementById("create-menu");
+//   const menuInicial = document.querySelector(".create-ul");
+//   if (menuInicial){
+//     console.log(where);
+//     console.log(menuInicial);
+//     where.removeChild(menuInicial);
+//   }
+//}
 
 document.getElementById("img-footer").addEventListener("mouseover", createSocialMediaButtons);
 function createSocialMediaButtons(){
@@ -89,9 +91,17 @@ function myFunction(){
     document.getElementById("card-container").innerHTML = returnCardsRating;
   }
 
+  else if (valorSel === "all"){
+    const allCards = [];
+    for (let i=0; i<dataGhibli.length; i++){
+      allCards.push(renderCardFilms(dataGhibli[i]));
+    }
+    const returnAllCards = allCards.join(" ");
+    document.getElementById("card-container").innerHTML = returnAllCards;
+  }
+
   else {
-    const percentRating = percentRating(dataGhibli);
-    console.log(percentRating);
+    console.log(valorSel);
   }
 //chart.js
 }
@@ -105,9 +115,12 @@ function chooseDirector(){
   const directorArray = [];
   console.log(filterDirector);
 
+  const orderArray = myFunction(filterDirector);
   for (let i = 0; i < filterDirector.length; i++){
-    directorArray.push(renderCardFilms(filterDirector[i]));
+    directorArray.push(renderCardFilms(orderArray[i]));
   }
+
+
   const returnCardsDirector = directorArray.join(" ");
   document.getElementById("card-container").innerHTML = returnCardsDirector;
 }

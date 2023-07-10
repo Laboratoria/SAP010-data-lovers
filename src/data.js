@@ -31,15 +31,15 @@ export function sortRating(data){
 export function renderCardFilms(data){
   const card = `
   <div class = "card">
-    <img src="${data.poster}" alt="poster">
+    <img class="card-img" src="${data.poster}" alt="poster">
     <table>
       <tr>
-        <th>${data.title}</th>
-        <th>⭐${data.rt_score}/100</th>
+        <th class="title">${data.title}</th>
+        <th class="score">⭐${data.rt_score}/100</th>
       </tr>
       <tr>
-        <th>🎬${data.director}</th>
-        <th>${data.release_date}</th>
+        <th class="director">🎬${data.director}</th>
+        <th class="release">${data.release_date}</th>
       </tr>
     </table>
   </div>
@@ -72,6 +72,6 @@ export function percentRating(data){
 export function director (data, value){
   const result = data.filter(i => i.director === value);
 
-  const percent = (result.length / data.length) * 100
-  return result, percent;
+  //const percent = (result.length / data.length) * 100
+  return result;
 }

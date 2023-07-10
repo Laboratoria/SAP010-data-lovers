@@ -153,7 +153,7 @@ describe('renderCardFilms', () => {
   it('returns card', () => {
     expect(renderCardFilms(arrayFilm[0])).toEqual(`
   <div class = "card">
-    <img src="https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg" alt="poster">
+    <img class="card-img" src="https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg" alt="poster">
     <table>
       <tr>
         <th>Grave of the Fireflies</th>

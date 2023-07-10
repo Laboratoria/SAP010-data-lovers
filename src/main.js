@@ -1,8 +1,5 @@
-//import { example } from './data.js';
 import countries from "./data/countries/countries.js";
-// import data from './data/lol/lol.js';
 import data from "./data/countries/countries.js";
-// import data from './data/rickandmorty/rickandmorty.js';
 
 //console.log(data.countries[0], data.countries[0].population);
 function paises(array) {
@@ -14,9 +11,9 @@ function paises(array) {
     // template string
     const template = `
     <div class= "bandeiras">
-    <img src ="${exibirFlags}"> 
-    <h3>${exibirName}</h3> 
-    <p> População ${exibirPopulation}</p> 
+    <img src ="${exibirFlags}">
+    <h3>${exibirName}</h3>
+    <p> População ${exibirPopulation}</p>
     </div>`;
 
     const exibirFlagsDiv = document.getElementById("exibirFlags");

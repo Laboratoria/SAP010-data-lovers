@@ -1,22 +1,46 @@
 body {
-  /*display: flex;
-    flex-direction: column;*/
-
-  height: 100vh;
   background-image: url("./img/img-fundo-globo-greg-rosenke.png");
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: azure;
+#subtitulo {
+  font-style: oblique;
+  color: beige;
+  text-align: center;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  margin-top: 0vh;
+  align-items: flex-start;
+}
+
+#imagem-palavra-mochileiros {
+  /* 
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(to top, transparent 5%, black 80%);
+  mask-image: linear-gradient(to top, transparent 5%, black 80%);
+  */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+  background-size: cover;
+  opacity: 0.4;
+  margin: 0;
+}
+
+#exibirFlags {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .bandeiras {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  height: 400px;
-  width: 55%;
+  height: 350px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,8 +49,8 @@ header {
   margin: 10px;
   background-color: #1f4c59c9;
   border-radius: 20px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+  box-shadow: 10px 10px 10px rgba(83, 51, 51, 0.45);
   transition: all 0.8s;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }

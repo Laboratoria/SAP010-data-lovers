@@ -1,5 +1,6 @@
 import countries from "./data/countries/countries.js";
 import data from "./data/countries/countries.js";
+import {filtro1} from "./data.js"
 
 //console.log(data.countries[0], data.countries[0].population);
 function paises(array) {
@@ -24,3 +25,5 @@ function paises(array) {
 }
 
 paises(data.countries);
+
+filtro1(data.countries); //inserir na manipulação de DOM

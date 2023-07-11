@@ -92,11 +92,6 @@ font-family: 'Sacramento', cursive;*/
 .img1 {
   width: 100%;
 }
-.menu {
-
-}
-
-
 
 .main {
   width: 100%;
@@ -110,6 +105,14 @@ font-family: 'Sacramento', cursive;*/
   color:aliceblue
 }
 
+.select {
+  width: 5vw;
+  border-radius: 5%;
+}
+
+.input-radio {
+  color:aliceblue;
+}
 .card {
 }
 

@@ -21,7 +21,7 @@ export function sortRelease(data){
 export function sortRating(data){
   const rating = data.slice();
   rating.sort((a, b) => {
-    if (a.rt_score < b.rt_score){
+    if (parseInt(a.rt_score) > parseInt(b.rt_score)){
       return -1;
     }
   })

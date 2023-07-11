@@ -48,12 +48,19 @@ function createSocialMediaButtons(){
 }
 
 document.getElementById("first-filter").addEventListener("change", myFunction);
+document.getElementById("second-filter").addEventListener("change", myFunction);
 function myFunction(){
-  const element = document.getElementById("first-filter");
-  const valorSel = element.options[element.selectedIndex].value;
+  const element1 = document.getElementById("first-filter");
+  const valorSel = element1.options[element1.selectedIndex].value;
+  const element2 = document.getElementById("second-filter");
+  const valorSelDirector = element2.options[element2.selectedIndex].value;
+  console.log(valorSelDirector);
+  const filterDirector = director(dataGhibli, valorSelDirector);
+  console.log(filterDirector);
+
 
   if (valorSel === "title-az"){
-    const titleAZ = alfabeto();
+    const titleAZ = alfabeto(filterDirector);
     const cardsAZ = [];
     console.log(titleAZ);
 
@@ -66,7 +73,7 @@ function myFunction(){
   }
 
   else if (valorSel === "lancamento"){
-    const releaseDate = sortRelease();
+    const releaseDate = sortRelease(filterDirector);
     const cardsRelease = [];
     console.log(releaseDate);
 
@@ -79,7 +86,7 @@ function myFunction(){
   }
 
   else if (valorSel === "rating"){
-    const rating = sortRating();
+    const rating = sortRating(filterDirector);
     const cardsRating = [];
     console.log(rating);
 
@@ -169,23 +176,23 @@ radioInputs.forEach(function(radioInput) {
   });
 });
 
-document.getElementById("second-filter").addEventListener("change", chooseDirector);
-function chooseDirector(){
-  const element = document.getElementById("second-filter");
-  const valorSel = element.options[element.selectedIndex].value;
-  console.log(valorSel);
-  const filterDirector = director(dataGhibli, valorSel);
-  const directorArray = [];
-  console.log(filterDirector);
+// document.getElementById("second-filter").addEventListener("change", chooseDirector);
+// function chooseDirector(){
+//   const element = document.getElementById("second-filter");
+//   const valorSelDirector = element.options[element.selectedIndex].value;
+//   console.log(valorSelDirector);
+//   const filterDirector = director(dataGhibli, valorSelDirector);
+//   const directorArray = [];
+//   console.log(filterDirector);
 
-  //const orderArray = myFunction(filterDirector);
-  for (let i = 0; i < filterDirector.length; i++){
-    directorArray.push(renderCardFilms(filterDirector[i]));
-  }
-  //console.log(directorArray);
-  const orderArray = myFunction(directorArray);
-  console.log(orderArray);
+//   //const orderArray = myFunction(filterDirector);
+//   for (let i = 0; i < filterDirector.length; i++){
+//     directorArray.push(renderCardFilms(filterDirector[i]));
+//   }
+//   //console.log(directorArray);
+//   const orderArray = myFunction(directorArray);
+//   console.log(orderArray);
 
   // const returnCardsDirector = directorArray.join(" ");
   // document.getElementById("card-container").innerHTML = returnCardsDirector;
-}
+//}

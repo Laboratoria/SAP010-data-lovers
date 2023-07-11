@@ -1,13 +1,10 @@
 // estas funciones son de ejemplo
+export const filtro = (array) => {
+  console.log("chamando-filtro");
 
-export const filtro1 = (array) => {
-  console.log("chamando-filtro-1");
-
-  return 'example';
-  
+  return "example";
 };
 
-
 export const anotherExample = () => {
-  return 'OMG';
+  return "OMG";
 };

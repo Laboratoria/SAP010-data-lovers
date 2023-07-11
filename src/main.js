@@ -53,7 +53,7 @@ function myFunction(){
   const valorSel = element.options[element.selectedIndex].value;
 
   if (valorSel === "title-az"){
-    const titleAZ = alfabeto(dataGhibli);
+    const titleAZ = alfabeto();
     const cardsAZ = [];
     console.log(titleAZ);
 
@@ -66,7 +66,7 @@ function myFunction(){
   }
 
   else if (valorSel === "lancamento"){
-    const releaseDate = sortRelease(dataGhibli);
+    const releaseDate = sortRelease();
     const cardsRelease = [];
     console.log(releaseDate);
 
@@ -79,7 +79,7 @@ function myFunction(){
   }
 
   else if (valorSel === "rating"){
-    const rating = sortRating(dataGhibli);
+    const rating = sortRating();
     const cardsRating = [];
     console.log(rating);
 
@@ -178,12 +178,14 @@ function chooseDirector(){
   const directorArray = [];
   console.log(filterDirector);
 
-  const orderArray = myFunction(filterDirector);
+  //const orderArray = myFunction(filterDirector);
   for (let i = 0; i < filterDirector.length; i++){
-    directorArray.push(renderCardFilms(orderArray[i]));
+    directorArray.push(renderCardFilms(filterDirector[i]));
   }
+  //console.log(directorArray);
+  const orderArray = myFunction(directorArray);
+  console.log(orderArray);
 
-
-  const returnCardsDirector = directorArray.join(" ");
-  document.getElementById("card-container").innerHTML = returnCardsDirector;
+  // const returnCardsDirector = directorArray.join(" ");
+  // document.getElementById("card-container").innerHTML = returnCardsDirector;
 }

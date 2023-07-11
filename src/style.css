@@ -18,6 +18,7 @@ font-family: 'Sacramento', cursive;*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 1vw;
 }
 
 .cabecalho {
@@ -50,7 +51,7 @@ font-family: 'Sacramento', cursive;*/
   height: 2.9vw;
   padding: 0.5%;
   margin: 0.9vw;
-  margin-right: 1.8vw;
+  margin-right: 2.5vw;
   position: relative;
   justify-content: flex-start
 }
@@ -114,17 +115,24 @@ font-family: 'Sacramento', cursive;*/
   color:aliceblue;
 }
 .card {
+  width: 20%;
+  margin: 0;
 }
 
 .card-img {
-  width: 10%;
-
+  width: 100%;
 }
 
 .result-cards {
   width: 100%;
   background-image: linear-gradient(180deg, rgb(1, 16, 49),rgb(14, 16, 31));
   color:aliceblue;
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .footer-menu {

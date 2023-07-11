@@ -156,12 +156,12 @@ describe('renderCardFilms', () => {
     <img class="card-img" src="https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg" alt="poster">
     <table>
       <tr>
-        <th>Grave of the Fireflies</th>
-        <th>⭐97/100</th>
+        <th class="title">Grave of the Fireflies</th>
+        <th class="score">⭐97/100</th>
       </tr>
       <tr>
-        <th>🎬Isao Takahata</th>
-        <th>1988</th>
+        <th class="director">🎬Isao Takahata</th>
+        <th class="release">1988</th>
       </tr>
     </table>
   </div>

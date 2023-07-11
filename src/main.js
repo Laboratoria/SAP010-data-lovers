@@ -1,5 +1,5 @@
-import countries from "./data/countries/countries.js";
 import data from "./data/countries/countries.js";
+import {filtro} from "./data.js"
 
 //console.log(data.countries[0], data.countries[0].population);
 function paises(array) {
@@ -19,8 +19,11 @@ function paises(array) {
     const exibirFlagsDiv = document.getElementById("exibirFlags");
     exibirFlagsDiv.innerHTML = exibirFlagsDiv.innerHTML + template;
 
-    console.log(template); //como inserir template no dom com inner html
+    
+    
   }
 }
 
 paises(data.countries);
+
+filtro(data.countries); //inserir na manipulação de DOM

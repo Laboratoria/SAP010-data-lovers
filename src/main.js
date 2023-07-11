@@ -59,59 +59,56 @@ function myFunction(){
   console.log(filterDirector);
 
 
-  if (valorSel === "title-az"){
-    const titleAZ = alfabeto(filterDirector);
-    const cardsAZ = [];
-    console.log(titleAZ);
-
-    for (let i = 0; i < titleAZ.length; i++) {
-      cardsAZ.push(renderCardFilms(titleAZ[i]));
-      i++;
-    }
-    const returnCardsAZ = cardsAZ.join(" ");
-    document.getElementById("card-container").innerHTML = returnCardsAZ;
-  }
-
-  else if (valorSel === "lancamento"){
-    const releaseDate = sortRelease(filterDirector);
-    const cardsRelease = [];
-    console.log(releaseDate);
-
-    for (let i = 0; i < releaseDate.length; i++) {
-      cardsRelease.push(renderCardFilms(releaseDate[i]));
-      i++;
-    }
-    const returnCardsRelease = cardsRelease.join(" ");
-    document.getElementById("card-container").innerHTML = returnCardsRelease;
-  }
-
-  else if (valorSel === "rating"){
-    const rating = sortRating(filterDirector);
-    const cardsRating = [];
-    console.log(rating);
-
-    for (let i = 0; i < rating.length; i++) {
-      cardsRating.push(renderCardFilms(rating[i]));
-      i++;
-    }
-    const returnCardsRating = cardsRating.join(" ");
-    document.getElementById("card-container").innerHTML = returnCardsRating;
-  }
-
-  else if (valorSel === "all"){
+  if(valorSelDirector === "all"){
+    const all = dataGhibli.slice();
     const allCards = [];
-    for (let i=0; i<dataGhibli.length; i++){
-      allCards.push(renderCardFilms(dataGhibli[i]));
+    for (let i = 0; i < all.length; i++) {
+      allCards.push(renderCardFilms(all[i]));
     }
-    const returnAllCards = allCards.join(" ");
-    document.getElementById("card-container").innerHTML = returnAllCards;
   }
-
   else {
-    console.log(valorSel);
+    if (valorSel === "title-az"){
+      const titleAZ = alfabeto(filterDirector);
+      const cardsAZ = [];
+      console.log(titleAZ);
+
+      for (let i = 0; i < titleAZ.length; i++) {
+        cardsAZ.push(renderCardFilms(titleAZ[i]));
+      }
+      const returnCardsAZ = cardsAZ.join(" ");
+      document.getElementById("card-container").innerHTML = returnCardsAZ;
+    }
+
+    else if (valorSel === "lancamento"){
+      const releaseDate = sortRelease(filterDirector);
+      const cardsRelease = [];
+      console.log(releaseDate);
+
+      for (let i = 0; i < releaseDate.length; i++) {
+        cardsRelease.push(renderCardFilms(releaseDate[i]));
+      }
+      const returnCardsRelease = cardsRelease.join(" ");
+      document.getElementById("card-container").innerHTML = returnCardsRelease;
+    }
+
+    else if (valorSel === "rating"){
+      const rating = sortRating(filterDirector);
+      const cardsRating = [];
+      console.log(rating);
+
+      for (let i = 0; i < rating.length; i++) {
+        cardsRating.push(renderCardFilms(rating[i]));
+      }
+      const returnCardsRating = cardsRating.join(" ");
+      document.getElementById("card-container").innerHTML = returnCardsRating;
+    }
+
+    else {
+      console.log(valorSel);
+    }
   }
-//chart.js
 }
+
 
 const radioInputs = document.querySelectorAll('input[type="radio"]');
 // Attach event listener to each radio input
@@ -120,59 +117,7 @@ radioInputs.forEach(function(radioInput) {
     // Handle radio input change event
     console.log(this.value);
     const valorSel = this.value;
-
-    if (valorSel === "title-az"){
-      const titleAZ = alfabeto(dataGhibli);
-      const cardsAZ = [];
-      console.log(titleAZ);
-
-      for (let i = 0; i < titleAZ.length; i++) {
-        cardsAZ.push(renderCardFilms(titleAZ[i]));
-        i++;
-      }
-      const returnCardsAZ = cardsAZ.join(" ");
-      document.getElementById("card-container").innerHTML = returnCardsAZ;
-    }
-
-    else if (valorSel === "lancamento"){
-      const releaseDate = sortRelease(dataGhibli);
-      const cardsRelease = [];
-      console.log(releaseDate);
-
-      for (let i = 0; i < releaseDate.length; i++) {
-        cardsRelease.push(renderCardFilms(releaseDate[i]));
-        i++;
-      }
-      const returnCardsRelease = cardsRelease.join(" ");
-      document.getElementById("card-container").innerHTML = returnCardsRelease;
-    }
-
-    else if (valorSel === "rating"){
-      const rating = sortRating(dataGhibli);
-      const cardsRating = [];
-      console.log(rating);
-
-      for (let i = 0; i < rating.length; i++) {
-        cardsRating.push(renderCardFilms(rating[i]));
-        i++;
-      }
-      const returnCardsRating = cardsRating.join(" ");
-      document.getElementById("card-container").innerHTML = returnCardsRating;
-    }
-
-    else if (valorSel === "all"){
-      const allCards = [];
-      for (let i=0; i<dataGhibli.length; i++){
-        allCards.push(renderCardFilms(dataGhibli[i]));
-      }
-      const returnAllCards = allCards.join(" ");
-      document.getElementById("card-container").innerHTML = returnAllCards;
-    }
-
-    else {
-      //console.log(valorSel);
-    }
-  //chart.js
+    console.log(valorSel);
   });
 });
 

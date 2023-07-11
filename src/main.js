@@ -50,8 +50,6 @@ function returnFilms(){
   document.getElementById("card-container").innerHTML = returnAllCards;
 }
 
-
-
 document.getElementById("first-filter").addEventListener("change", myFunction);
 document.getElementById("second-filter").addEventListener("change", myFunction);
 function myFunction(){
@@ -103,8 +101,6 @@ function myFunction(){
     console.log(valorSel);
   }
 }
-
-
 
 document.getElementById("img-footer").addEventListener("mouseover", createSocialMediaButtons);
 function createSocialMediaButtons(){

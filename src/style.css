@@ -121,6 +121,18 @@ font-family: 'Sacramento', cursive;*/
   flex-direction: column;
 }
 
+.result-cards {
+  width: 100%;
+  background-image: linear-gradient(180deg, rgb(1, 16, 49),rgb(14, 16, 31));
+  color:aliceblue;
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+
 .card-img {
   width: 95%;
   background-color: aliceblue;
@@ -144,17 +156,7 @@ font-family: 'Sacramento', cursive;*/
 .release {
   font-size: 80%;
 }
-.result-cards {
-  width: 100%;
-  background-image: linear-gradient(180deg, rgb(1, 16, 49),rgb(14, 16, 31));
-  color:aliceblue;
-  display: flex;
-  flex-direction: row;
-  gap: 3vw;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-around;
-}
+
 
 .footer-menu {
   display: flex;

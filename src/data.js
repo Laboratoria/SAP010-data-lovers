@@ -1,9 +1,12 @@
 // estas funciones son de ejemplo
-export const filtro = (array) => {
-  console.log("chamando-filtro");
 
-  return "example";
+//const filtroIdependecia = countries.filter(filtro)
+
+export function filtro  (array)  {
+  
+  //return array === "independent";
 };
+//console.log(filtroIdependecia);
 
 export const anotherExample = () => {
   return "OMG";

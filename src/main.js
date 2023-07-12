@@ -24,6 +24,14 @@ function paises(array) {
   }
 }
 
+const filtroIdependecia = data.countries.filter(filtroPorIndependecia)
+console.log(filtroIdependecia)
+function filtroPorIndependecia(elemento){
+  
+  return elemento.independent === false
+
+}
+
 paises(data.countries);
 
 filtro(data.countries); //inserir na manipulação de DOM

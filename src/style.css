@@ -24,6 +24,15 @@ body {
   margin: 0;
 }
 
+#filtro-independente, #ordenacao, #continentes{
+  width: 244px;
+  height: 35px;
+  background-color: #3E3E43;
+  border-radius: 6px;
+  border: none;
+  opacity: 0.8;
+}
+
 #exibirFlags {
   display: flex;
   flex-wrap: wrap;

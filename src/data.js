@@ -21,7 +21,7 @@ export function sortRelease(data){
 export function sortRating(data){
   const rating = data.slice();
   rating.sort((a, b) => {
-    if (parseInt(a.rt_score) < parseInt(b.rt_score)){
+    if (parseInt(a.rt_score) > parseInt(b.rt_score)){
       return -1;
     }
   })
@@ -48,25 +48,9 @@ export function renderCardFilms(data){
 }
 
 export function percentRating(data){
-  const rating = data.slice();
-  const min95 = [];
-  const min80 = [];
-  const noMin = [];
+  const array = data.slice();
+  const rating = array.rt_score;
 
-  for (let i = 0; i < data.length; i++){
-    if (rating[i] > 94){
-      min95.push(rating[i]);
-    } else if (rating[i] > 79){
-      min80.push(rating[i]);
-    } else {
-      noMin.push(rating[i]);
-    }
-  }
-  const ratingHigh = min95.length / data.length;
-  const ratingMiddle = min80.length / data.length;
-  const ratingLow = noMin.length / data.length;
-
-  return [ratingHigh, ratingMiddle, ratingLow]
 }
 
 export function director (data, value){

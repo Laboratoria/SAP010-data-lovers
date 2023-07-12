@@ -117,9 +117,15 @@ describe('sortRating', () => {
   it('returns array ordered by rating score', () => {
     expect(sortRating(arrayExemple)).toEqual(
       [ {
-        "title": "The Wind Rises",
-        "release_date": "2013",
-        "rt_score": "89"
+        "title": "Grave of the Fireflies",
+        "release_date": "1988",
+        "rt_score": "97"
+      },
+      {
+        "title": "Kiki's Delivery Service",
+        "release_date": "1989",
+        "rt_score": "96"
+
       },
       {
         "title": "Castle in the Sky",
@@ -132,14 +138,9 @@ describe('sortRating', () => {
         "rt_score": "95",
       },
       {
-        "title": "Kiki's Delivery Service",
-        "release_date": "1989",
-        "rt_score": "96"
-      },
-      {
-        "title": "Grave of the Fireflies",
-        "release_date": "1988",
-        "rt_score": "97"
+        "title": "The Wind Rises",
+        "release_date": "2013",
+        "rt_score": "89"
       }]
     );
   });
@@ -169,4 +170,3 @@ describe('renderCardFilms', () => {
     );
   });
 });
-

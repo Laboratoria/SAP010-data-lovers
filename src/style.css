@@ -5,7 +5,7 @@ font-family: 'Pacifico', cursive;
 font-family: 'Sacramento', cursive;*/
 
 * {
-  margin: 0.3vw;
+  margin: 0vw;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Comic Neue', cursive;
@@ -17,14 +17,12 @@ font-family: 'Sacramento', cursive;*/
   min-width: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-left: 1vw;
 }
 
 .cabecalho {
   order: 0;
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 5.5vw;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +31,7 @@ font-family: 'Sacramento', cursive;*/
 }
 
 .img-logo {
-  width: 13vw;
+  width: 11vw;
   height: 3vw;
   position: relative;
   margin: 0.9vw;
@@ -43,15 +41,16 @@ font-family: 'Sacramento', cursive;*/
   display: flex;
   flex-direction: row;
   height: 5vw;
-  justify-content: space-around;
+  width: 15vw;
+  justify-content: center;
 }
 
 .totoro-logo {
   width: 2.3vw;
   height: 2.9vw;
   padding: 0.5%;
-  margin: 0.9vw;
-  margin-right: 2.5vw;
+  margin-top: 0.9vw;
+  margin-right: 1.5vw;
   position: relative;
   justify-content: flex-start
 }
@@ -89,19 +88,29 @@ font-family: 'Sacramento', cursive;*/
   border: 20px;
 }
 
+.img-header {
+width: 100%;
+display: flex;
+align-items: center;
+margin-top: 0vw;
+}
 
 .img1 {
   width: 100%;
 }
 
 .main {
-  width: 100%;
+  width: 100vw;
+
 }
 
 .filters-container {
   display: inline-flex;
   width: 100%;
+  height: 100%;
+  margin-top: 5vw;
   justify-content: center;
+  font-size: 90%;
   background-color: rgb(1, 16, 49);
   color:aliceblue
 }
@@ -122,14 +131,14 @@ font-family: 'Sacramento', cursive;*/
 }
 
 .result-cards {
-  width: 100%;
-  background-image: linear-gradient(180deg, rgb(1, 16, 49),rgb(14, 16, 31));
+  width: 100vw;
+  background-color: rgb(1, 16, 49);
   color:aliceblue;
   display: flex;
   flex-direction: row;
   gap: 3vw;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: flex-start;
   justify-content: space-around;
 }
 
@@ -157,39 +166,55 @@ font-family: 'Sacramento', cursive;*/
   font-size: 80%;
 }
 
+.sprite {
+  width: 40%;
+}
 
 .footer-menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  background-color: rgb(14, 16, 31);
+  width: 100vw;
+  margin-top: -7vw;
+  background-color: rgb(0,0,0);
 }
-
 
 .social-media {
   display: flex;
-  justify-content: space-around;
-  background-color: blueviolet;
+  flex-direction: column;
+  margin-top: -2vw;
+  height: 3vw;
+  justify-content: flex-end;
+  background-color: rgb(0, 0, 0);
+  align-items: end;
+  padding: 1vw;
+}
+
+
+.links {
+  border-radius: 5%;
+  text-decoration: none;
+  font-family: 'Comic Neue', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.3vw;
+  color:rgba(240, 248, 255, 0.466);
+  width: 5vw;
+  margin: 0.1vw;
+  font-size: 75%;
+  border: 20px;
 }
 
 .end-pag {
-  width: 100%;
-  background-color: rgb(14, 16, 31);
-}
-
-.about {
-}
-
-.img-footer {
+  display: flex;
+  justify-content: center;
 }
 
 .small {
   width: 100%;
-  background-color: rgb(14, 16, 31);
+  background-color: rgb(0,0,0);
   text-decoration: none;
   color: aliceblue;
   font-family: 'Pacifico', sans-serif;
+  justify-content: flex-end;
 }
 
 

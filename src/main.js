@@ -21,15 +21,58 @@ function paises(array) {
 
     
     
+    
   }
 }
 
 const filtroIdependecia = data.countries.filter(filtroPorIndependecia)
-console.log(filtroIdependecia)
+
 function filtroPorIndependecia(elemento){
   
   return elemento.independent === false
 
+}
+
+const filtrandoAmerica = data.countries.filter(filtroAmerica)
+console.log(filtrandoAmerica)
+function filtroAmerica (elementos){
+  
+  return elementos.continents == "America"
+}
+
+const filtrandoAfrica = data.countries.filter(filtroAfrica)
+console.log(filtrandoAfrica)
+function filtroAfrica (elementos){
+  
+  return elementos.continents == "Africa"
+}
+
+const filtrandoAsia = data.countries.filter(filtroAsia)
+console.log(filtrandoAsia)
+function filtroAsia (elementos){
+  
+  return elementos.continents == "Asia"
+}
+
+const filtrandoEuropa = data.countries.filter(filtroEuropa)
+console.log(filtrandoEuropa)
+function filtroEuropa (elementos){
+  
+  return elementos.continents == "Europe"
+}
+
+const filtrandoOceania = data.countries.filter(filtroOceania)
+console.log(filtrandoOceania)
+function filtroOceania (elementos){
+  
+  return elementos.continents == "Oceania"
+}
+
+const filtrandoAntartida = data.countries.filter(filtroAntartida)
+console.log(filtrandoAntartida)
+function filtroAntartida (elementos){
+  
+  return elementos.continents == "Antarctica"
 }
 
 paises(data.countries);

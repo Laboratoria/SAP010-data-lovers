@@ -29,13 +29,6 @@ function createMenu(){
 document.getElementById("img-header").addEventListener("mouseover", returnFilms);
 function returnFilms(){
   document.getElementById("sprite").innerHTML =  '<img class="sprite" src="./images/sprite.gif" alt="Sprite">';
-//   const all = dataGhibli.slice();
-//   const allCards = [];
-//   for (let i = 0; i < all.length; i++) {
-//     allCards.push(renderCardFilms(all[i]));
-//   }
-//   const returnAllCards = allCards.join(" ");
-//   document.getElementById("card-container").innerHTML = returnAllCards;
 }
 
 document.getElementById("second-filter").addEventListener("change", betterFilms);
@@ -46,6 +39,8 @@ function betterFilms() {
   console.log(better(dataGhibli, valorSelDirector));
   console.log(avaliarDiretor(dataGhibli, valorSelDirector));
   console.log(rt_score(dataGhibli, valorSelDirector));
+  const info = avaliarDiretor(dataGhibli, valorSelDirector);
+  document.getElementById("infos").innerHTML = info;
 }
 
 document.querySelector('input[type="radio"]').addEventListener("checked", handleChange);

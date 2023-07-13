@@ -78,7 +78,7 @@ export function avaliarDiretor(data, value){
   const p = `
   <p class="rt"> Esse diretor produziu ${array.length} animações.</p>
   <p class="rt"> E ${betterFilms.length} foram muito bem avaliadas!</p>
-  <!--p class="rt"> Nota média das produções desse diretor é:  </p-->
+  <p class="rt"> Nota média das produções desse diretor é: ${rt_score(data, value)}  </p>
   `;
   return p;
 }

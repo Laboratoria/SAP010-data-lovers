@@ -1,4 +1,4 @@
-import { alfabeto, sortRelease, sortRating, renderCardFilms} from '../src/data.js';
+import { alfabeto, sortRelease, sortRating, renderCardFilms, better, rt_score} from '../src/data.js';
 
 const arrayExemple = [{
   "title": "Castle in the Sky",
@@ -170,3 +170,31 @@ describe('renderCardFilms', () => {
     );
   });
 });
+
+describe('better', () => {
+  it('should be a function', () => {
+    expect(typeof better).toBe('function');
+  });
+
+  it('returns list films by director wich rt_score is over 94', () => {
+    expect(better(arrayFilm[0])).toEqual([{"id": "12cfb892-aac0-4c5b-94af-521852e46d6a",
+      "title": "Grave of the Fireflies",
+      "description": "In the latter part of World War II, a boy and his sister, orphaned when their mother is killed in the firebombing of Tokyo, are left to survive on their own in what remains of civilian life in Japan. The plot follows this boy and his sister as they do their best to survive in the Japanese countryside, battling hunger, prejudice, and pride in their own quiet, personal battle.",
+      "director": "Isao Takahata",
+      "producer": "Toru Hara",
+      "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg",
+      "release_date": "1988",
+      "rt_score": "97"}]);
+  });
+});
+
+describe('rt_score', () => {
+  it ('should be a function', () => {
+    expect(typeof rt_score).toBe('function');
+  });
+  it('returns average score', () => {
+    expect(rt_score(arrayFilm).toEqual(97));
+  });
+});
+
+

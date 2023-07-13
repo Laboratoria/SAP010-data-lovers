@@ -122,6 +122,12 @@ margin-top: 0vw;
 
 .input-radio {
   color:aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+.radio {
+
 }
 .card {
   width: 30%;

@@ -47,15 +47,38 @@ export function renderCardFilms(data){
   return card;
 }
 
-export function percentRating(data){
-  const array = data.slice();
-  const rating = array.rt_score;
-
-}
-
 export function director (data, value){
   const result = data.filter(i => i.director === value);
-
-  //const percent = (result.length / data.length) * 100
   return result;
+}
+//funcionou!
+export function better (data, value){
+  const array = director(data, value);
+  const better = array.filter(i => i.rt_score >94);
+  console.log(better);
+  return better;
+}
+//funcionou!!
+export function rt_score (data, value) {
+  const array = director(data, value);
+
+  let soma = 0;
+  for (let i = 0; i < array.length; i++) {
+    soma += parseInt(array[i].rt_score);
+  }
+  const media = soma/array.length;
+  return media;
+}
+
+
+//funcionou!
+export function avaliarDiretor(data, value){
+  const array = director(data, value);
+  const betterFilms = better(data, value);
+  const p = `
+  <p class="rt"> Esse diretor produziu ${array.length} animações.</p>
+  <p class="rt"> E ${betterFilms.length} foram muito bem avaliadas!</p>
+  <!--p class="rt"> Nota média das produções desse diretor é:  </p-->
+  `;
+  return p;
 }

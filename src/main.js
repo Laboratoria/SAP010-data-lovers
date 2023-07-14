@@ -8,14 +8,14 @@ import { filtrarPorContinente } from "./data.js";
 const exibirFlagsDiv = document.getElementById("exibirFlags");
 
 const continente = document.getElementById("continente");
-continente.onchange = () => {
+continente.addEventListener("change", () => {
   const resultFiltroContinente = filtrarPorContinente(
     data.countries,
     continente.value
   );
   exibirFlagsDiv.innerHTML = "";
   paises(resultFiltroContinente);
-};
+});
 
 function paises(array) {
   for (let i = 0; i < array.length; i++) {

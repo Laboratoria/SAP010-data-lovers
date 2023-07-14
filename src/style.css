@@ -26,13 +26,16 @@ body {
 
 #filtro-independente,
 #ordenacao,
-#continentes {
+#continente {
   width: 244px;
   height: 35px;
   background-color: #3e3e43;
   border-radius: 6px;
   border: none;
   opacity: 0.8;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #exibirFlags {

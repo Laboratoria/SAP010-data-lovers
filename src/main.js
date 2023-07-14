@@ -1,5 +1,8 @@
 import data from "./data/countries/countries.js";
-import {filtro} from "./data.js"
+import { filtro } from "./data.js";
+
+const continente = document.getElementById("continente");
+continente.onchange = () => filtrarPorContinente(continente.value);
 
 //console.log(data.countries[0], data.countries[0].population);
 function paises(array) {
@@ -18,26 +21,28 @@ function paises(array) {
 
     const exibirFlagsDiv = document.getElementById("exibirFlags");
     exibirFlagsDiv.innerHTML = exibirFlagsDiv.innerHTML + template;
-
-
-    
-    
-    
-    
   }
 }
 
-const filtroIdependecia = data.countries.filter(filtroPorIndependecia)
-
-function filtroPorIndependecia(elemento){
-  
-  return elemento.independent === false
-
+const filtroIdependecia = data.countries.filter(filtroPorIndependecia);
+function filtroPorIndependecia(elemento) {
+  return elemento.independent === true;
 }
 
+function filtrarPorContinente(continente) {
+  //Filtra os países com base no continente especificado
+  const paisesFiltrados = data.countries.filter(function (elemento) {
+    console.log({ continente, c: elemento.continents[0] });
 
+    //continenteDiv.innerHTML = "",
+    return elemento.continents[0] === continente;
+  });
+  console.log(paisesFiltrados);
+  // Retorna o resultado da filtragem
+  return paisesFiltrados;
+}
 
-const filtrandoAfrica = data.countries.filter(filtroAfrica)
+/*const filtrandoAfrica = data.countries.filter(filtroAfrica)
 //console.log(filtrandoAfrica)
 function filtroAfrica (elementos){
   
@@ -70,20 +75,8 @@ const filtrandoAntartida = data.countries.filter(filtroAntartida)
 function filtroAntartida (elementos){
   
   return elementos.continents == "Antarctica"
-}
+}*/
 
 paises(data.countries);
 
- //inserir na manipulação de DOM
-
- const america = filtro(data.countries);
-//const clicarNaAmerica = document.addEventListener("click", America)
-//selecionarContinentes.innerHTML = america
-
-function clicar(){
-  const selecionarContinentes = document.addEventListener("select#continentes")
-  
-  selecionarContinentes.innerHTML = america
-}
-
-console.log(america)
+//const america = filtro(data.countries);

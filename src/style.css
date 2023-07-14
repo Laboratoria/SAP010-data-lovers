@@ -24,10 +24,12 @@ body {
   margin: 0;
 }
 
-#filtro-independente, #ordenacao, #continentes{
+#filtro-independente,
+#ordenacao,
+#continentes {
   width: 244px;
   height: 35px;
-  background-color: #3E3E43;
+  background-color: #3e3e43;
   border-radius: 6px;
   border: none;
   opacity: 0.8;

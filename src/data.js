@@ -2,23 +2,20 @@
 
 //const filtroIdependecia = countries.filter(filtro)
 
-
 // 1 fazer o DOM das select
-//2 funções 
-//3 transformar em 1 só 
+//2 funções
+//3 transformar em 1 só
 // trazer os continentes pelo parametro
-export function filtro(array) {
 
-  const filtrandoAmerica = array.filter(filtroAmerica)
-  //console.log(filtrandoAmerica)
-  function filtroAmerica(elementos) {
+export function filtrarPorContinente(array, continente) {
+  //Filtra os países com base no continente especificado
+  const paisesFiltrados = array.filter(function (elemento) {
+    return elemento.continents[0] === continente;
+  });
 
-    //console.log(elementos.continents)
-    return elementos.continents[0] === "America"
-
-  }
-  return filtrandoAmerica
-};
+  // Retorna o resultado da filtragem
+  return paisesFiltrados;
+}
 //console.log(filtroIdependecia);
 
 export const anotherExample = () => {

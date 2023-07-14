@@ -19,6 +19,8 @@ function paises(array) {
     const exibirFlagsDiv = document.getElementById("exibirFlags");
     exibirFlagsDiv.innerHTML = exibirFlagsDiv.innerHTML + template;
 
+
+    
     
     
     
@@ -33,43 +35,38 @@ function filtroPorIndependecia(elemento){
 
 }
 
-const filtrandoAmerica = data.countries.filter(filtroAmerica)
-console.log(filtrandoAmerica)
-function filtroAmerica (elementos){
-  
-  return elementos.continents == "America"
-}
+
 
 const filtrandoAfrica = data.countries.filter(filtroAfrica)
-console.log(filtrandoAfrica)
+//console.log(filtrandoAfrica)
 function filtroAfrica (elementos){
   
   return elementos.continents == "Africa"
 }
 
 const filtrandoAsia = data.countries.filter(filtroAsia)
-console.log(filtrandoAsia)
+//console.log(filtrandoAsia)
 function filtroAsia (elementos){
   
   return elementos.continents == "Asia"
 }
 
 const filtrandoEuropa = data.countries.filter(filtroEuropa)
-console.log(filtrandoEuropa)
+//console.log(filtrandoEuropa)
 function filtroEuropa (elementos){
   
   return elementos.continents == "Europe"
 }
 
 const filtrandoOceania = data.countries.filter(filtroOceania)
-console.log(filtrandoOceania)
+//console.log(filtrandoOceania)
 function filtroOceania (elementos){
   
   return elementos.continents == "Oceania"
 }
 
 const filtrandoAntartida = data.countries.filter(filtroAntartida)
-console.log(filtrandoAntartida)
+//console.log(filtrandoAntartida)
 function filtroAntartida (elementos){
   
   return elementos.continents == "Antarctica"
@@ -77,4 +74,16 @@ function filtroAntartida (elementos){
 
 paises(data.countries);
 
-filtro(data.countries); //inserir na manipulação de DOM
+ //inserir na manipulação de DOM
+
+ const america = filtro(data.countries);
+//const clicarNaAmerica = document.addEventListener("click", America)
+//selecionarContinentes.innerHTML = america
+
+function clicar(){
+  const selecionarContinentes = document.addEventListener("select#continentes")
+  
+  selecionarContinentes.innerHTML = america
+}
+
+console.log(america)

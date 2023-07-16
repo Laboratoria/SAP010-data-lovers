@@ -193,7 +193,7 @@ describe('rt_score', () => {
     expect(typeof rt_score).toBe('function');
   });
   it('returns average score', () => {
-    expect(rt_score(arrayFilm).toEqual(97));
+    expect(rt_score(arrayFilm, "Isao Takahata")).toEqual(97);
   });
 });
 

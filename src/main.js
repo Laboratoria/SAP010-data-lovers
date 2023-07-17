@@ -1,5 +1,6 @@
 import data from "./data/countries/countries.js";
 import { filtrarPorContinente } from "./data.js";
+import {filtrarPorIndependencia} from "./data.js";
 
 //aplicar o filtro independencia no DOM
 //transformar onchange para adventlistenner
@@ -16,6 +17,20 @@ continente.addEventListener("change", () => {
   exibirFlagsDiv.innerHTML = "";
   paises(resultFiltroContinente);
 });
+
+const independente = document.getElementById("filtro-independente");
+independente.addEventListener("change", () => {
+  const resultadofiltroIndependecia = filtrarPorIndependencia(
+    
+    data.countries,
+    independente.value
+   
+  );
+  exibirFlagsDiv.innerHTML = "";
+  paises(resultadofiltroIndependecia);
+  
+});
+
 
 function paises(array) {
   for (let i = 0; i < array.length; i++) {
@@ -35,9 +50,6 @@ function paises(array) {
   }
 }
 
-const filtroIdependecia = data.countries.filter(filtroPorIndependecia);
-function filtroPorIndependecia(elemento) {
-  return elemento.independent === true;
-}
+
 
 paises(data.countries);

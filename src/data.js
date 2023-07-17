@@ -18,6 +18,15 @@ export function filtrarPorContinente(array, continente) {
 }
 //console.log(filtroIdependecia);
 
-export const anotherExample = () => {
-  return "OMG";
-};
+export function filtrarPorIndependencia(array, independencia) {
+
+  const filtroIdependencia = array.filter(function (elemento) {
+
+    if(independencia === "Independente"){
+      return elemento.independent === true;
+    } 
+    return elemento.independent === false;
+    
+  });
+  return filtroIdependencia;
+}

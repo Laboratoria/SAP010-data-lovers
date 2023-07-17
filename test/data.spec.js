@@ -1,23 +1,46 @@
-import { example, anotherExample } from '../src/data.js';
+import { filtrarPorIndependencia } from '../src/data.js';
 
+const countries = [
+  {
+    "name": {
+      "common": "Guatemala",
+      "official": "Republic of Guatemala"
+    },
+    "tld": [
+      ".gt"
+    ],
+    "independent": true,
+  },
+  {
+    "name": {
+      "common": "Singapore",
+      "official": "Republic of Singapore"
+    },
+    "tld": [
+      ".sg",
+      ".新加坡",
+      ".சிங்கப்பூர்"
+    ],
+    "independent": false,
+  }
+]
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
+describe('testes dos filtros', () => {
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+  it('deve retornar os paises independentes', () => {
+    const expected =   [
+      {
+       "name": {
+          "common": "Guatemala",
+          "official": "Republic of Guatemala"
+        },
+        "tld": [
+          ".gt" 
+        ],
+        "independent": true,
+      }
+    ]
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+    expect(filtrarPorIndependencia(countries, "Independente")).toStrictEqual(expected);
   });
 });

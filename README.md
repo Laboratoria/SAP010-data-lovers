@@ -20,7 +20,7 @@
 
 
 ## 2. Tecnologias e Ferramentas utilizadas:
-![image](https://github.com/Danima-dev/SAP010-data-lovers/assets/60490226/98c76119-8035-461a-a433-8f861437f514)
+
 
 
 

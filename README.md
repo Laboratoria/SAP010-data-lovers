@@ -1,6 +1,5 @@
 # Data Lovers
 
-
 ## Índice
 
 - 1. Resumo do projeto
@@ -49,5 +48,7 @@ Figma
 6. ## Desenvolvedoras
    Este projeto foi desenvolvido por:
 
-Daniele Maria : <a href=""</a> Linkedin | <a href=""</a> GitHub 
-Priscila Freitas: <a href=""</a> Linkedin | <a href=""</a> GitHub
+Daniele Maria : <a href="linkedin.com/in/daniele-maria-7b8476217" target="_blank" alt= "link linkedin">Linkedin</a> |
+<a href="https://github.com/Danima-dev" target="_blank" alt= "link github">GitHub </a>
+Priscila Freitas: <a href="https://www.linkedin.com/in/priscila-freitas-35971497/"  target="_blank" alt= "link linkedin">Linkedin</a> |
+<a href="https://github.com/cilafreitas" target="_blank" alt= "link github">GitHub</a>

@@ -1,23 +1,42 @@
-import { example, anotherExample } from '../src/data.js';
+import { filtrarPorContinente } from "../src/data.js";
 
+const filtroContinentes = [
+  { 
+    "continents": [
+      "America"
+  ]
+},
+{
+  "continents": [
+    "Asia"
+  ]
+},
+{
+  "continents": [
+    "Europe"
+  ]
+}
+],
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+describe("testando filtro continente", () => {
+  const expected = [
+    { 
+      "continents": [
+        "America"
+    ]
+  },
+  {
+    "continents": [
+      "Asia"
+    ]
+  },
+  {
+    "continents": [
+      "Europe"
+    ]
+  }
+  ],
+  it("deve retornar os países de cada continente", () => {
+    expect(filtrarPorContinente(filtroContinentes, continente)).toStrictEqual(expected);
   });
 });

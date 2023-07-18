@@ -1,7 +1,7 @@
 # Data Lovers
 
 ## Tecnologias e Ferramentas utilizadas:
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="#242938" rx="60"/><g clip-path="url(#clip0_4_180)"><path fill="#0ACF83" d="M94.3467 228C112.747 228 127.68 213.067 127.68 194.667V161.333H94.3467C75.9467 161.333 61.0133 176.267 61.0133 194.667C61.0133 213.067 75.9467 228 94.3467 228Z"/><path fill="#A259FF" d="M61.0133 128C61.0133 109.6 75.9467 94.6667 94.3467 94.6667H127.68V161.333H94.3467C75.9467 161.333 61.0133 146.4 61.0133 128Z"/><path fill="#F24E1E" d="M61.0133 61.3333C61.0133 42.9333 75.9467 28 94.3467 28H127.68V94.6667H94.3467C75.9467 94.6667 61.0133 79.7333 61.0133 61.3333Z"/><path fill="#FF7262" d="M127.68 28H161.013C179.413 28 194.347 42.9333 194.347 61.3333C194.347 79.7333 179.413 94.6667 161.013 94.6667H127.68V28Z"/><path fill="#1ABCFE" d="M194.347 128C194.347 146.4 179.413 161.333 161.013 161.333C142.613 161.333 127.68 146.4 127.68 128C127.68 109.6 142.613 94.6667 161.013 94.6667C179.413 94.6667 194.347 109.6 194.347 128Z"/></g><defs><clipPath id="clip0_4_180"><rect width="133.36" height="200" fill="#fff" transform="translate(61 28)"/></clipPath></defs></svg>
+
 ## Índice
 * 1. Resumo do projeto
 * 2. História do usuário
@@ -9,10 +9,21 @@
 * 4. Teste de Usabilidade
 
 ## Resumo do projeto 
+ O projeto "Data Lovers" foi proposto pela Laboratória sendo atuado em dupla. Com o desafio de desenvolver
+ um site  que o usuário pudesse visualizar, filtrar e pesquisar dados disponibilizados por eles a partir de um banco de dadodos.
 
 ## História do usuário 
+  Nós construimos neste projeto uma página Web Mochileiros que permite ao usuário pesquisar países que ele queira conhecer para fazer trila e cultura da sua escolha. Através dos campos de pesquisa o usuário pode optar por nome, população e até mesmo a imagem para saber mais sobre o país que deseja conhecer.
+
+  O usuário poderá filtrar por continentes e por paises que tem ou não sua indepencia declarada, através de um banco de dados de pesquisas geográficas. Ao filtrar o continente, ele conseguirá visualizar cards com a seguintes informações do país: Nome do país e quantidade da população.
 
 ## Desenvolvimento do Site 
+Iniciamos com protótipo de baixa fidelidade, para colocar nossas idéias e entender o que gostaríamo de criar. (Protótipo de Baixa Fidelidade)
+<img src="./src/img/Protótipo de baixa fidelidade.jpeg">
+
+Depois utilizamos a ferramenta Figma para desenhar o protótipo de Alta Fidelidade para ficar mais próximo do que queriamos no nosso site. Foi um processo de aprendizado no começo um pouco confuso mas depois de aprender melhor utilizar o Figma e suas funcionalidades se tornou uma ferramenta indispensável. (Protótipo de Alta Fidelidade)
+<img src="./src/img/Protótipo de alta.png">
+
+Utilizamos DOM, objetos, arrays, uso de condicionais e CSS para ficar mais interessante para o usuário. Também tivemos necessidade usar o trello para nos organizar para não nos perder durante o processo e concluir o projeto.
 
 ## Teste de Usabilidade 
-

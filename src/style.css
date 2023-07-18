@@ -2,6 +2,7 @@ body {
   background-image: url("./img/img-fundo-globo-greg-rosenke.png");
   margin: 0;
   padding: 0;
+
 }
 
 #subtitulo {
@@ -25,17 +26,32 @@ body {
 }
 
 #filtro-independente,
-#ordenacao,
 #continente {
   width: 244px;
   height: 35px;
-  background-color: #3e3e43;
+  background-color: #1f4c59c9;
   border-radius: 6px;
   border: none;
   opacity: 0.8;
-  margin-left: 20px;
+ 
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#filtro-independente {
+margin-left: 30.50px;
+}
+
+#continente {
+  margin-left: 58.50%;
+}
+
+select {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  text-align: center;
 }
 
 #exibirFlags {
@@ -53,10 +69,95 @@ body {
   justify-content: center;
   text-align: center;
   margin: 10px;
+  margin-left: 2%;
   background-color: #1f4c59c9;
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(83, 51, 51, 0.45);
   transition: all 0.8s;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+}
+
+img {
+  height: 200px;
+  width: 70%;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    background-image: url("./img/img-fundo-globo-greg-rosenke.png");
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+  }
+
+  #subtitulo {
+    font-style: oblique;
+    color: beige;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin-top: 0vh;
+    align-items: flex-start;
+  }
+  
+  #imagem-palavra-mochileiros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    opacity: 0.3;
+    margin: 0;
+  }
+  
+  #filtro-independente,
+  #continente {
+    width: 244px;
+    height: 35px;
+    background-color: #3e3e43;
+    border-radius: 6px;
+    border: none;
+    opacity: 0.8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #filtro-independente {
+    margin-left: 70px;
+    }
+    
+    #continente {
+      margin-left: 51%;
+    }
+  
+  #exibirFlags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .bandeiras {
+    justify-content: center;
+    height: 350px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    margin-left: 2%;
+    background-color: #1f4c59c9;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(83, 51, 51, 0.45);
+    transition: all 0.8s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+
+  img {
+    height: 200px;
+    width: 70%;
+  }
+
 }

@@ -24,7 +24,7 @@ O usuário poderá filtrar por continentes e por paises que tem ou não sua inde
    O processo de criação foi pensado buscando um layout intuitivo e de fácil compreensão, que mostrasse apenas as informações principais.
 
 Iniciamos com protótipo de baixa fidelidade, para colocar nossas idéias e entender o que gostaríamo de criar. (Protótipo de Baixa Fidelidade)
-<img src="./src/img/Protótipo de baixa fidelidade.jpeg">
+Protótipo de baixa fidelidade.jpeg
 
 Depois utilizamos a ferramenta Figma para desenhar o protótipo de Alta Fidelidade para ficar mais próximo do que queriamos no nosso site. Foi um processo de aprendizado, no começo um pouco confuso, mas depois de aprender melhor utilizar o Figma e suas funcionalidades se tornou uma ferramenta indispensável. (Protótipo de Alta Fidelidade)
 <img src="./src/img/Protótipo de alta.png">

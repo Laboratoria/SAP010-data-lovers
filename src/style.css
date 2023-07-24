@@ -1,66 +1,77 @@
 body {
   background-image: url("./img/img-fundo-globo-greg-rosenke.png");
-  
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
+header {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(221, 112, 18, 0.6),
+    rgba(156, 154, 151, 0.3)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #subtitulo {
-  font-style: oblique;
+  font-family: "Roboto", sans-serif;
   color: beige;
   text-align: center;
   text-shadow: 0.1em 0.1em 0.2em black;
-  margin-top: 0vh;
-  align-items: flex-start;
+  margin-top: 20px;
+  font-size: 20px;
+  white-space: nowrap;
 }
 
 #imagem-palavra-mochileiros {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60%;
+  height: 100%;
   width: 100%;
-  background-size: cover;
-  opacity: 0.3;
+  background-size: contain;
+  opacity: 0.5;
   margin: 0;
+}
+
+.filtro-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 13.5%;
+  overflow: auto;
 }
 
 #filtro-independente,
 #continente {
-  width: 244px;
-  height: 35px;
-  display: flex;
+  width: 200px;
+  height: 30px;
   background-color: #1f4c59c9;
   border-radius: 6px;
   border: none;
   opacity: 0.8;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-#filtro-independente {
-margin-left: 5vh;
-color:#eff4ef ;
-}
-
-#continente {
-  margin-left:5vh;
-  color:#eff4ef ;
-}
-
-select {
+  color: #eff4ef;
+  margin-top: 20px;
+  margin-left: 45px;
+  margin-right: 46px;
   font-size: 20px;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 
 #exibirFlags {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .bandeiras {
+  background-color: #1f4c59c9;
   justify-content: center;
   height: 350px;
   width: 30%;
@@ -69,97 +80,93 @@ select {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 10px;
-  margin-left: 2%;
-  background-color: #1f4c59c9;
+  margin: 12px;
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(83, 51, 51, 0.45);
   transition: all 0.8s;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:#eff4ef ;
+  font-family: "Roboto", sans-serif;
+  color: #eff4ef;
   font-weight: bold;
+  font-size: 20px;
+}
+
+.bandeiras:hover {
+  background-image: url("./img/img-fundo-globo-greg-rosenke.png");
+}
+
+#filtro-independente:hover {
+  background-image: url("./img/img-fundo-globo-greg-rosenke.png");
+}
+
+#continente:hover {
+  background-image: url("./img/img-fundo-globo-greg-rosenke.png");
 }
 
 img {
-  height: 200px;
+  height: 150px;
   width: 70%;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   body {
     background-image: url("./img/img-fundo-globo-greg-rosenke.png");
     margin: 0;
     padding: 0;
-    width: 100vh;
+    width: 100%;
   }
 
   #subtitulo {
-    font-style: oblique;
-    color: beige;
-    text-align: center;
-    text-shadow: 0.1em 0.1em 0.2em black;
-    margin-top: 0vh;
-    align-items: flex-start;
+    font-size: 14px;
+    white-space: normal;
+    padding: 20px;
+    display: flex;
   }
-  
+
   #imagem-palavra-mochileiros {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60%;
     width: 100%;
     background-size: cover;
     opacity: 0.3;
     margin: 0;
   }
-  
-  #filtro-independente,
+
+  .filtro-container {
+    gap: 0%;
+    justify-content: center;
+  }
+
   #continente {
-    width: 244px;
-    height: 35px;
-    background-color: #3e3e43;
-    border-radius: 6px;
-    border: none;
-    opacity: 0.8;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 120px;
+    height: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 5px;
+    margin-right: 30px;
   }
 
   #filtro-independente {
-    margin-left: 30.50px;
-    }
-    
-    #continente {
-      margin-left: 58.50%;
-    }
-  
-  #exibirFlags {
-    display: flex;
-    flex-wrap: wrap;
+    width: 145px;
+    height: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+    margin-right: 2.5px;
+    justify-content: center;
   }
-  
+
+  #exibirFlags {
+    justify-content: center;
+  }
+
   .bandeiras {
-    justify-content: center;
-    height: 350px;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
-    margin-left: 2%;
-    background-color: #1f4c59c9;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(83, 51, 51, 0.45);
-    transition: all 0.8s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    height: 250px;
+    width: 48%;
   }
 
   img {
-    height: 200px;
+    height: 100px;
     width: 70%;
   }
-
 }

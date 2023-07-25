@@ -1,8 +1,8 @@
 body {
   background-image: url("./img/img-fundo-globo-greg-rosenke.png");
+  
   margin: 0;
   padding: 0;
-
 }
 
 #subtitulo {
@@ -39,18 +39,19 @@ body {
 }
 
 #filtro-independente {
-margin-left: 30.50px;
+margin-left: 5vh;
+color:#eff4ef ;
 }
 
 #continente {
-  margin-left: 30.50px;
+  margin-left:5vh;
+  color:#eff4ef ;
 }
 
 select {
   font-size: 20px;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
   text-align: center;
 }
 
@@ -75,6 +76,7 @@ select {
   box-shadow: 10px 10px 10px rgba(83, 51, 51, 0.45);
   transition: all 0.8s;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#eff4ef ;
   font-weight: bold;
 }
 

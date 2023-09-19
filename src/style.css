@@ -1,7 +1,12 @@
-:root{
+/*:root{
     --light-blue: #00B5CC;
     --dark-blue: #00353E;
     --green: #b2df28;
+}
+h1 {
+  font-family: Creepster;
+  color:#0a1ecb
+
 }
 
 *{
@@ -19,18 +24,18 @@ a{
 }
 
 img{
-    width: 10%;
-}
+    width: 20%;
+
+  }
 
 video {
     width: 100%;
-    max-height: 80vh;
+    max-height: -5%;
     object-fit: cover;
   }
 
 header{
     font-family: 'Creepster', cursive;
-    height: 4em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -70,6 +75,133 @@ select{
 option{
     font-family: 'Creepster', cursive;
     color: var(--light-blue);
+    font-size: 2em;
+    transition: 0.3s ease-in-out;
+}
+
+option:hover{
+    color: var(--green);
+}
+li {
+  font-family: 'Creepster', cursive;
+    color: #00B5CC;
+    font-size: 16px;
+}
+*/
+
+:root{
+    --light-blue: #00B5CC;
+    --dark-blue: #00353E;
+    --green: #b2df28;
+    --bg-color: #f2f2f2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Creepster', cursive;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: var(--bg-color);
+}
+img{
+  width: 80%;
+
+}
+
+video {
+  width: 100%;
+  max-height: -5%;
+  object-fit: cover;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+header img{
+    width: 43vh;
+}
+
+button{
+	font-family: 'Creepster', cursive;
+	color: var(--light-blue);
+    padding: 8px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border: none;
+    font-size: 2em;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover{
+    color: var(--green);
+}
+
+header a{
+    background-color: #f8f8f8;
+}
+
+a{
+    font-family: 'Creepster', cursive;
+	color: var(--light-blue);
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover{
+    color: var(--green);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.selecao{
+    color: var(--dark-blue);
+    font-family: 'Creepster', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+@media only screen and (max-width: 570px) {
+    .selecao{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    button{
+        font-size: 1.8em;
+    }
+}
+
+select{
+    font-family: 'Creepster', cursive;
+    color: var(--light-blue);
+    font-size: 2em;
+    border-style: none;
+}
+
+option{
+    font-family: 'Creepster', cursive;
+    color: var(--light-blue);
     font-size: 1em;
     transition: 0.3s ease-in-out;
 }
@@ -78,3 +210,117 @@ option:hover{
     color: var(--green);
 }
 
+.personagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    color: var(--dark-blue);
+    width: fit-content;
+    height: 65vh;
+    overflow-y: scroll;
+}
+
+.cards {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.84);
+    height: 29em;
+    gap: 0.5em;
+}
+
+.cards h2{
+    font-family: 'Creepster', cursive;
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 1.8em;
+    width: 7em;
+}
+
+.cards p{
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-blue);
+    border-radius: 20px;
+}
+
+input{
+	width: 15em;
+	height: 57px;
+	border: 1px solid var(--light-blue);
+    font-size: 1em;
+}
+
+::-webkit-input-placeholder{
+	text-align: center;
+	color: #00353E;
+}
+
+input:focus{
+    border: 1px solid var(--light-blue);
+    text-align: center;
+    font-size: 1em;
+}
+
+footer{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0.2em;
+}
+
+footer a{
+	color: var(--light-blue);
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+}
+
+.secundaria{
+    background-color: var(--bg-color);
+    width: 480px;
+    display: none;
+}
+
+.secundaria h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Creepster', cursive;
+    color: var(--light-blue);
+}
+
+.secundaria p {
+    text-align: justify;
+}
+
+.gif-morty{
+    display: flex;
+    align-items: center;
+}
+
+.gif-morty a{
+    font-size: 2em;
+    text-align: center;
+}
+
+.porcentagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.porcentagem span{
+    font-family: 'Creepster', cursive;
+    color: var(--light-blue);
+}

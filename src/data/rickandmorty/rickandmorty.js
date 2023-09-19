@@ -9,16 +9,16 @@ export default {
       {
           "id": 1,
           "name": "Rick Sanchez",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/1.jpeg",
@@ -61,16 +61,16 @@ export default {
       {
           "id": 2,
           "name": "Morty Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg",
@@ -113,16 +113,16 @@ export default {
       {
           "id": 3,
           "name": "Summer Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/3.jpeg",
@@ -158,16 +158,16 @@ export default {
       {
           "id": 4,
           "name": "Beth Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/4.jpeg",
@@ -203,16 +203,16 @@ export default {
       {
           "id": 5,
           "name": "Jerry Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/5.jpeg",
@@ -245,8 +245,8 @@ export default {
       {
           "id": 6,
           "name": "Abadango Cluster Princess",
-          "status": "Alive",
-          "species": "Alien",
+          "status": "Vivo",
+          "species": "Alienígena",
           "type": "",
           "gender": "Female",
           "origin": {
@@ -267,12 +267,12 @@ export default {
       {
           "id": 7,
           "name": "Abradolf Lincler",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "Genetic experiment",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
@@ -290,16 +290,16 @@ export default {
       {
           "id": 8,
           "name": "Adjudicator Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/8.jpeg",
@@ -312,16 +312,16 @@ export default {
       {
           "id": 9,
           "name": "Agency Director",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/9.jpeg",
@@ -334,12 +334,12 @@ export default {
       {
           "id": 10,
           "name": "Alan Rails",
-          "status": "Dead",
-          "species": "Human",
-          "type": "Superhuman (Ghost trains summoner)",
+          "status": "Morto",
+          "species": "Humana",
+          "type": "SuperHumana (Ghost trains summoner)",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -356,16 +356,16 @@ export default {
       {
           "id": 11,
           "name": "Albert Einstein",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/11.jpeg",
@@ -378,12 +378,12 @@ export default {
       {
           "id": 12,
           "name": "Alexander",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
@@ -400,16 +400,16 @@ export default {
       {
           "id": 13,
           "name": "Alien Googah",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/13.jpeg",
@@ -422,16 +422,16 @@ export default {
       {
           "id": 14,
           "name": "Alien Morty",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/14.jpeg",
@@ -444,16 +444,16 @@ export default {
       {
           "id": 15,
           "name": "Alien Rick",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/15.jpeg",
@@ -466,16 +466,16 @@ export default {
       {
           "id": 16,
           "name": "Amish Cyborg",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite, Cyborg",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/16.jpeg",
@@ -488,12 +488,12 @@ export default {
       {
           "id": 17,
           "name": "Annie",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
@@ -510,16 +510,16 @@ export default {
       {
           "id": 18,
           "name": "Antenna Morty",
-          "status": "Alive",
-          "species": "Human",
-          "type": "Human with antennae",
+          "status": "Vivo",
+          "species": "Humana",
+          "type": "Humana with antennae",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/18.jpeg",
@@ -533,16 +533,16 @@ export default {
       {
           "id": 19,
           "name": "Antenna Rick",
-          "status": "unknown",
-          "species": "Human",
-          "type": "Human with antennae",
+          "status": "Desconhecido",
+          "species": "Humana",
+          "type": "Humana with antennae",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/19.jpeg",
@@ -555,16 +555,16 @@ export default {
       {
           "id": 20,
           "name": "Ants in my Eyes Johnson",
-          "status": "unknown",
-          "species": "Human",
-          "type": "Human with ants in his eyes",
+          "status": "Desconhecido",
+          "species": "Humana",
+          "type": "Humana with ants in his eyes",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/20.jpeg",
@@ -577,16 +577,16 @@ export default {
       {
           "id": 21,
           "name": "Aqua Morty",
-          "status": "unknown",
-          "species": "Humanoid",
+          "status": "Desconhecido",
+          "species": "Humanaoid",
           "type": "Fish-Person",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/21.jpeg",
@@ -600,16 +600,16 @@ export default {
       {
           "id": 22,
           "name": "Aqua Rick",
-          "status": "unknown",
-          "species": "Humanoid",
+          "status": "Desconhecido",
+          "species": "Humanaoid",
           "type": "Fish-Person",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/22.jpeg",
@@ -624,12 +624,12 @@ export default {
       {
           "id": 23,
           "name": "Arcade Alien",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -650,7 +650,7 @@ export default {
       {
           "id": 24,
           "name": "Armagheadon",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Cromulon",
           "gender": "Male",
@@ -672,16 +672,16 @@ export default {
       {
           "id": 25,
           "name": "Armothy",
-          "status": "Dead",
-          "species": "unknown",
+          "status": "Morto",
+          "species": "Desconhecido",
           "type": "Self-aware arm",
           "gender": "Male",
           "origin": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "location": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/25.jpeg",
@@ -694,7 +694,7 @@ export default {
       {
           "id": 26,
           "name": "Arthricia",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Cat-Person",
           "gender": "Female",
@@ -716,16 +716,16 @@ export default {
       {
           "id": 27,
           "name": "Artist Morty",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/27.jpeg",
@@ -739,16 +739,16 @@ export default {
       {
           "id": 28,
           "name": "Attila Starwar",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/28.jpeg",
@@ -763,16 +763,16 @@ export default {
       {
           "id": 29,
           "name": "Baby Legs",
-          "status": "Alive",
-          "species": "Human",
-          "type": "Human with baby legs",
+          "status": "Vivo",
+          "species": "Humana",
+          "type": "Humana with baby legs",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/29.jpeg",
@@ -785,16 +785,16 @@ export default {
       {
           "id": 30,
           "name": "Baby Poopybutthole",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Poopybutthole",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/30.jpeg",
@@ -807,16 +807,16 @@ export default {
       {
           "id": 31,
           "name": "Baby Wizard",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/31.jpeg",
@@ -829,16 +829,16 @@ export default {
       {
           "id": 32,
           "name": "Bearded Lady",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/32.jpeg",
@@ -851,7 +851,7 @@ export default {
       {
           "id": 33,
           "name": "Beebo",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "",
           "gender": "Male",
@@ -873,16 +873,16 @@ export default {
       {
           "id": 34,
           "name": "Benjamin",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Poopybutthole",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/34.jpeg",
@@ -897,10 +897,10 @@ export default {
       {
           "id": 35,
           "name": "Bepisian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Bepisian",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Bepis 9",
               "url": "https://rickandmortyapi.com/api/location/11"
@@ -922,16 +922,16 @@ export default {
       {
           "id": 36,
           "name": "Beta-Seven",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Hivemind",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/36.jpeg",
@@ -944,16 +944,16 @@ export default {
       {
           "id": 37,
           "name": "Beth Sanchez",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (C-500A)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/23"
           },
           "location": {
-              "name": "Earth (C-500A)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/23"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/37.jpeg",
@@ -966,16 +966,16 @@ export default {
       {
           "id": 38,
           "name": "Beth Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/38.jpeg",
@@ -994,16 +994,16 @@ export default {
       {
           "id": 39,
           "name": "Beth Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Evil Rick's Target Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/34"
           },
           "location": {
-              "name": "Earth (Evil Rick's Target Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/34"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/39.jpeg",
@@ -1016,7 +1016,7 @@ export default {
       {
           "id": 40,
           "name": "Beth's Mytholog",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Mytholog",
           "type": "",
           "gender": "Female",
@@ -1038,8 +1038,8 @@ export default {
       {
           "id": 41,
           "name": "Big Boobed Waitress",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "",
           "gender": "Female",
           "origin": {
@@ -1060,16 +1060,16 @@ export default {
       {
           "id": 42,
           "name": "Big Head Morty",
-          "status": "unknown",
-          "species": "Human",
-          "type": "Human with giant head",
+          "status": "Desconhecido",
+          "species": "Humana",
+          "type": "Humana with giant head",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/42.jpeg",
@@ -1082,16 +1082,16 @@ export default {
       {
           "id": 43,
           "name": "Big Morty",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/43.jpeg",
@@ -1104,16 +1104,16 @@ export default {
       {
           "id": 44,
           "name": "Body Guard Morty",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/44.jpeg",
@@ -1126,16 +1126,16 @@ export default {
       {
           "id": 45,
           "name": "Bill",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/45.jpeg",
@@ -1148,16 +1148,16 @@ export default {
       {
           "id": 46,
           "name": "Bill",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Animal",
           "type": "Dog",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/46.jpeg",
@@ -1170,7 +1170,7 @@ export default {
       {
           "id": 47,
           "name": "Birdperson",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Bird-Person",
           "gender": "Male",
@@ -1196,16 +1196,16 @@ export default {
       {
           "id": 48,
           "name": "Black Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/48.jpeg",
@@ -1219,16 +1219,16 @@ export default {
       {
           "id": 49,
           "name": "Blamph",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/49.jpeg",
@@ -1241,16 +1241,16 @@ export default {
       {
           "id": 50,
           "name": "Blim Blam",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Korblock",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/50.jpeg",
@@ -1263,16 +1263,16 @@ export default {
       {
           "id": 51,
           "name": "Blue Diplomat",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/51.jpeg",
@@ -1285,16 +1285,16 @@ export default {
       {
           "id": 52,
           "name": "Blue Footprint Guy",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "location": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/52.jpeg",
@@ -1307,16 +1307,16 @@ export default {
       {
           "id": 53,
           "name": "Blue Shirt Morty",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/53.jpeg",
@@ -1329,16 +1329,16 @@ export default {
       {
           "id": 54,
           "name": "Bobby Moynihan",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/54.jpeg",
@@ -1351,12 +1351,12 @@ export default {
       {
           "id": 55,
           "name": "Boobloosian",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Boobloosian",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -1374,16 +1374,16 @@ export default {
       {
           "id": 56,
           "name": "Bootleg Portal Chemist Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/56.jpeg",
@@ -1396,16 +1396,16 @@ export default {
       {
           "id": 57,
           "name": "Borpocian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Elephant-Person",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/57.jpeg",
@@ -1418,16 +1418,16 @@ export default {
       {
           "id": 58,
           "name": "Brad",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/58.jpeg",
@@ -1442,16 +1442,16 @@ export default {
       {
           "id": 59,
           "name": "Brad Anderson",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/59.jpeg",
@@ -1464,16 +1464,16 @@ export default {
       {
           "id": 60,
           "name": "Calypso",
-          "status": "Dead",
-          "species": "Human",
-          "type": "Superhuman",
+          "status": "Morto",
+          "species": "Humana",
+          "type": "SuperHumana",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/60.jpeg",
@@ -1486,16 +1486,16 @@ export default {
       {
           "id": 61,
           "name": "Campaign Manager Morty",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/61.jpeg",
@@ -1508,7 +1508,7 @@ export default {
       {
           "id": 62,
           "name": "Canklanker Thom",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Gromflomite",
           "gender": "Male",
@@ -1517,7 +1517,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/19"
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/62.jpeg",
@@ -1530,12 +1530,12 @@ export default {
       {
           "id": 63,
           "name": "Centaur",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Centaur",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -1552,16 +1552,16 @@ export default {
       {
           "id": 64,
           "name": "Chris",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Organic gun",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/64.jpeg",
@@ -1574,8 +1574,8 @@ export default {
       {
           "id": 65,
           "name": "Chris",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Microverse inhabitant",
           "gender": "Male",
           "origin": {
@@ -1596,16 +1596,16 @@ export default {
       {
           "id": 66,
           "name": "Coach Feratu (Balik Alistane)",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Vampire",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/66.jpeg",
@@ -1618,7 +1618,7 @@ export default {
       {
           "id": 67,
           "name": "Collector",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Light bulb-Alien",
           "gender": "Male",
@@ -1640,16 +1640,16 @@ export default {
       {
           "id": 68,
           "name": "Colossus",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "location": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/68.jpeg",
@@ -1662,16 +1662,16 @@ export default {
       {
           "id": 69,
           "name": "Commander Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/69.jpeg",
@@ -1684,16 +1684,16 @@ export default {
       {
           "id": 70,
           "name": "Concerto",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/70.jpeg",
@@ -1706,16 +1706,16 @@ export default {
       {
           "id": 71,
           "name": "Conroy",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Robot",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/71.jpeg",
@@ -1728,16 +1728,16 @@ export default {
       {
           "id": 72,
           "name": "Cool Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (K-83)",
+              "name": "Terra (K-83)",
               "url": "https://rickandmortyapi.com/api/location/26"
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/72.jpeg",
@@ -1750,16 +1750,16 @@ export default {
       {
           "id": 73,
           "name": "Cop Morty",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/73.jpeg",
@@ -1772,16 +1772,16 @@ export default {
       {
           "id": 74,
           "name": "Cop Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/74.jpeg",
@@ -1794,12 +1794,12 @@ export default {
       {
           "id": 75,
           "name": "Courier Flap",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -1816,16 +1816,16 @@ export default {
       {
           "id": 76,
           "name": "Cousin Nicky",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/76.jpeg",
@@ -1838,16 +1838,16 @@ export default {
       {
           "id": 77,
           "name": "Cowboy Morty",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/77.jpeg",
@@ -1860,16 +1860,16 @@ export default {
       {
           "id": 78,
           "name": "Cowboy Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/78.jpeg",
@@ -1883,10 +1883,10 @@ export default {
       {
           "id": 79,
           "name": "Crab Spider",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Animal",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Hideout Planet",
               "url": "https://rickandmortyapi.com/api/location/27"
@@ -1905,12 +1905,12 @@ export default {
       {
           "id": 80,
           "name": "Creepy Little Girl",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -1927,12 +1927,12 @@ export default {
       {
           "id": 81,
           "name": "Crocubot",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Robot-Crocodile hybrid",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -1949,16 +1949,16 @@ export default {
       {
           "id": 82,
           "name": "Cronenberg Rick",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Cronenberg",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Cronenberg Earth",
+              "name": "Cronenberg Terra",
               "url": "https://rickandmortyapi.com/api/location/12"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/82.jpeg",
@@ -1972,16 +1972,16 @@ export default {
       {
           "id": 83,
           "name": "Cronenberg Morty",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Cronenberg",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Cronenberg Earth",
+              "name": "Cronenberg Terra",
               "url": "https://rickandmortyapi.com/api/location/12"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/83.jpeg",
@@ -1995,12 +1995,12 @@ export default {
       {
           "id": 84,
           "name": "Cult Leader Morty",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -2017,16 +2017,16 @@ export default {
       {
           "id": 85,
           "name": "Cyclops Morty",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/85.jpeg",
@@ -2040,16 +2040,16 @@ export default {
       {
           "id": 86,
           "name": "Cyclops Rick",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/86.jpeg",
@@ -2064,12 +2064,12 @@ export default {
       {
           "id": 87,
           "name": "Cynthia",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Zigerion",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -2086,16 +2086,16 @@ export default {
       {
           "id": 88,
           "name": "Cynthia",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/88.jpeg",
@@ -2111,8 +2111,8 @@ export default {
       {
           "id": 89,
           "name": "Dale",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Giant",
           "gender": "Male",
           "origin": {
@@ -2133,7 +2133,7 @@ export default {
       {
           "id": 90,
           "name": "Daron Jefferson",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Cone-nippled alien",
           "gender": "Male",
@@ -2155,16 +2155,16 @@ export default {
       {
           "id": 91,
           "name": "David Letterman",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-500A)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/23"
           },
           "location": {
-              "name": "Earth (C-500A)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/23"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/91.jpeg",
@@ -2177,16 +2177,16 @@ export default {
       {
           "id": 92,
           "name": "Davin",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/92.jpeg",
@@ -2200,12 +2200,12 @@ export default {
       {
           "id": 93,
           "name": "Diablo Verde",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Demon",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -2222,16 +2222,16 @@ export default {
       {
           "id": 94,
           "name": "Diane Sanchez",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Unknown dimension)",
+              "name": "Terra (Desconhecido dimension)",
               "url": "https://rickandmortyapi.com/api/location/30"
           },
           "location": {
-              "name": "Earth (Unknown dimension)",
+              "name": "Terra (Desconhecido dimension)",
               "url": "https://rickandmortyapi.com/api/location/30"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/94.jpeg",
@@ -2244,16 +2244,16 @@ export default {
       {
           "id": 95,
           "name": "Dipper and Mabel Mortys",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/95.jpeg",
@@ -2266,10 +2266,10 @@ export default {
       {
           "id": 96,
           "name": "Tuberculosis",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Disease",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Anatomy Park",
               "url": "https://rickandmortyapi.com/api/location/5"
@@ -2288,10 +2288,10 @@ export default {
       {
           "id": 97,
           "name": "Gonorrhea",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Disease",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Anatomy Park",
               "url": "https://rickandmortyapi.com/api/location/5"
@@ -2310,10 +2310,10 @@ export default {
       {
           "id": 98,
           "name": "Hepatitis A",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Disease",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Anatomy Park",
               "url": "https://rickandmortyapi.com/api/location/5"
@@ -2332,10 +2332,10 @@ export default {
       {
           "id": 99,
           "name": "Hepatitis C",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Disease",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Anatomy Park",
               "url": "https://rickandmortyapi.com/api/location/5"
@@ -2354,10 +2354,10 @@ export default {
       {
           "id": 100,
           "name": "Bubonic Plague",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Disease",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Anatomy Park",
               "url": "https://rickandmortyapi.com/api/location/5"
@@ -2376,10 +2376,10 @@ export default {
       {
           "id": 101,
           "name": "E. Coli",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Disease",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Anatomy Park",
               "url": "https://rickandmortyapi.com/api/location/5"
@@ -2398,12 +2398,12 @@ export default {
       {
           "id": 102,
           "name": "Donna Gueterman",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Robot",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -2420,16 +2420,16 @@ export default {
       {
           "id": 103,
           "name": "Doofus Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (J19ζ7)",
+              "name": "Terra (J19ζ7)",
               "url": "https://rickandmortyapi.com/api/location/31"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/103.jpeg",
@@ -2443,12 +2443,12 @@ export default {
       {
           "id": 104,
           "name": "Doom-Nomitron",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Shapeshifter",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -2465,12 +2465,12 @@ export default {
       {
           "id": 105,
           "name": "Dr. Glip-Glop",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -2487,8 +2487,8 @@ export default {
       {
           "id": 106,
           "name": "Dr. Schmidt",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "Game",
           "gender": "Male",
           "origin": {
@@ -2509,16 +2509,16 @@ export default {
       {
           "id": 107,
           "name": "Dr. Wong",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/107.jpeg",
@@ -2531,12 +2531,12 @@ export default {
       {
           "id": 108,
           "name": "Dr. Xenon Bloom",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Amoeba-Person",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -2553,16 +2553,16 @@ export default {
       {
           "id": 109,
           "name": "Duck With Muscles",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Parasite",
           "type": "Alien",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/109.jpeg",
@@ -2575,16 +2575,16 @@ export default {
       {
           "id": 110,
           "name": "Eli",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "location": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/110.jpeg",
@@ -2597,16 +2597,16 @@ export default {
       {
           "id": 111,
           "name": "Eli's Girlfriend",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "location": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/111.jpeg",
@@ -2619,16 +2619,16 @@ export default {
       {
           "id": 112,
           "name": "Eric McMan",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/112.jpeg",
@@ -2641,16 +2641,16 @@ export default {
       {
           "id": 113,
           "name": "Eric Stoltz Mask Morty",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Eric Stoltz Mask Earth",
+              "name": "Eric Stoltz Mask Terra",
               "url": "https://rickandmortyapi.com/api/location/33"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/113.jpeg",
@@ -2663,16 +2663,16 @@ export default {
       {
           "id": 114,
           "name": "Ethan",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "Cronenberg",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/114.jpeg",
@@ -2685,16 +2685,16 @@ export default {
       {
           "id": 115,
           "name": "Ethan",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/115.jpeg",
@@ -2708,16 +2708,16 @@ export default {
       {
           "id": 116,
           "name": "Evil Beth Clone",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "Clone",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/116.jpeg",
@@ -2730,16 +2730,16 @@ export default {
       {
           "id": 117,
           "name": "Evil Jerry Clone",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "Clone",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/117.jpeg",
@@ -2752,16 +2752,16 @@ export default {
       {
           "id": 118,
           "name": "Evil Morty",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/118.jpeg",
@@ -2775,16 +2775,16 @@ export default {
       {
           "id": 119,
           "name": "Evil Rick",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Robot",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/119.jpeg",
@@ -2797,16 +2797,16 @@ export default {
       {
           "id": 120,
           "name": "Evil Summer Clone",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "Clone",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/120.jpeg",
@@ -2819,16 +2819,16 @@ export default {
       {
           "id": 121,
           "name": "Eyehole Man",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/121.jpeg",
@@ -2841,16 +2841,16 @@ export default {
       {
           "id": 122,
           "name": "Fart",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Interdimensional gaseous being",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/122.jpeg",
@@ -2863,16 +2863,16 @@ export default {
       {
           "id": 123,
           "name": "Fat Morty",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/123.jpeg",
@@ -2885,16 +2885,16 @@ export default {
       {
           "id": 124,
           "name": "Father Bob",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/124.jpeg",
@@ -2908,12 +2908,12 @@ export default {
       {
           "id": 125,
           "name": "Flansian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Flansian",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -2932,16 +2932,16 @@ export default {
       {
           "id": 126,
           "name": "Fleeb",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/126.jpeg",
@@ -2954,16 +2954,16 @@ export default {
       {
           "id": 127,
           "name": "Frank Palicky",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/127.jpeg",
@@ -2976,16 +2976,16 @@ export default {
       {
           "id": 128,
           "name": "Frankenstein's Monster",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/128.jpeg",
@@ -2998,16 +2998,16 @@ export default {
       {
           "id": 129,
           "name": "Fulgora",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/129.jpeg",
@@ -3022,16 +3022,16 @@ export default {
       {
           "id": 130,
           "name": "Galactic Federation President",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Gromflomite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/130.jpeg",
@@ -3044,12 +3044,12 @@ export default {
       {
           "id": 131,
           "name": "Gar Gloonch",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Zombodian",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -3068,7 +3068,7 @@ export default {
       {
           "id": 132,
           "name": "Gar's Mytholog",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Mytholog",
           "type": "",
           "gender": "Male",
@@ -3090,7 +3090,7 @@ export default {
       {
           "id": 133,
           "name": "Garblovian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Garblovian",
           "gender": "Male",
@@ -3099,7 +3099,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/36"
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/133.jpeg",
@@ -3114,16 +3114,16 @@ export default {
       {
           "id": 134,
           "name": "Garmanarnar",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/134.jpeg",
@@ -3136,16 +3136,16 @@ export default {
       {
           "id": 135,
           "name": "Garment District Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/135.jpeg",
@@ -3158,7 +3158,7 @@ export default {
       {
           "id": 136,
           "name": "Gazorpazorpfield",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Gazorpian",
           "gender": "Male",
@@ -3167,7 +3167,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/40"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/136.jpeg",
@@ -3181,16 +3181,16 @@ export default {
       {
           "id": 137,
           "name": "Gene",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/137.jpeg",
@@ -3203,16 +3203,16 @@ export default {
       {
           "id": 138,
           "name": "General Nathan",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/138.jpeg",
@@ -3225,7 +3225,7 @@ export default {
       {
           "id": 139,
           "name": "General Store Owner",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Cat-Person",
           "gender": "Male",
@@ -3247,16 +3247,16 @@ export default {
       {
           "id": 140,
           "name": "Genital Washer",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "location": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/140.jpeg",
@@ -3269,16 +3269,16 @@ export default {
       {
           "id": 141,
           "name": "Ghost in a Jar",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite, Ghost",
           "gender": "Genderless",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/141.jpeg",
@@ -3291,10 +3291,10 @@ export default {
       {
           "id": 142,
           "name": "Gibble Snake",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Animal",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Resort Planet",
               "url": "https://rickandmortyapi.com/api/location/37"
@@ -3313,16 +3313,16 @@ export default {
       {
           "id": 143,
           "name": "Glasses Morty",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/143.jpeg",
@@ -3335,12 +3335,12 @@ export default {
       {
           "id": 144,
           "name": "Glenn",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Gromflomite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -3357,16 +3357,16 @@ export default {
       {
           "id": 145,
           "name": "Glenn",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "Eat shiter-Person",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/145.jpeg",
@@ -3379,12 +3379,12 @@ export default {
       {
           "id": 146,
           "name": "Glexo Slim Slom",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -3401,16 +3401,16 @@ export default {
       {
           "id": 147,
           "name": "Gobo",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/147.jpeg",
@@ -3423,7 +3423,7 @@ export default {
       {
           "id": 148,
           "name": "Goddess Beth",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Mytholog",
           "type": "",
           "gender": "Female",
@@ -3445,16 +3445,16 @@ export default {
       {
           "id": 149,
           "name": "Gordon Lunas",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/149.jpeg",
@@ -3467,12 +3467,12 @@ export default {
       {
           "id": 150,
           "name": "Cornvelious Daniel",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Gromflomite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -3489,7 +3489,7 @@ export default {
       {
           "id": 151,
           "name": "Gwendolyn",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Robot",
           "type": "Gazorpian reproduction robot",
           "gender": "Female",
@@ -3498,7 +3498,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/40"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/151.jpeg",
@@ -3511,16 +3511,16 @@ export default {
       {
           "id": 152,
           "name": "Hammerhead Morty",
-          "status": "unknown",
-          "species": "Humanoid",
+          "status": "Desconhecido",
+          "species": "Humanaoid",
           "type": "Hammerhead-Person",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/152.jpeg",
@@ -3534,10 +3534,10 @@ export default {
       {
           "id": 153,
           "name": "Hamster In Butt",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Hamster in Butt World",
               "url": "https://rickandmortyapi.com/api/location/41"
@@ -3557,16 +3557,16 @@ export default {
       {
           "id": 154,
           "name": "Hamurai",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/154.jpeg",
@@ -3579,16 +3579,16 @@ export default {
       {
           "id": 155,
           "name": "Harold",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Cronenberg",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/155.jpeg",
@@ -3601,16 +3601,16 @@ export default {
       {
           "id": 156,
           "name": "Hemorrhage",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "location": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/156.jpeg",
@@ -3623,16 +3623,16 @@ export default {
       {
           "id": 157,
           "name": "Hole in the Wall Where the Men Can See it All",
-          "status": "unknown",
-          "species": "unknown",
+          "status": "Desconhecido",
+          "species": "Desconhecido",
           "type": "Hole",
           "gender": "Genderless",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/157.jpeg",
@@ -3645,12 +3645,12 @@ export default {
       {
           "id": 158,
           "name": "Hookah Alien",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Tuskfish",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -3667,16 +3667,16 @@ export default {
       {
           "id": 159,
           "name": "Hunter",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "Clone",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Giant Telepathic Spiders Dimension)",
+              "name": "Terra (Giant Telepathic Spiders Dimension)",
               "url": "https://rickandmortyapi.com/api/location/42"
           },
           "location": {
-              "name": "Earth (Giant Telepathic Spiders Dimension)",
+              "name": "Terra (Giant Telepathic Spiders Dimension)",
               "url": "https://rickandmortyapi.com/api/location/42"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/159.jpeg",
@@ -3689,16 +3689,16 @@ export default {
       {
           "id": 160,
           "name": "Hunter's Father",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Giant Telepathic Spiders Dimension)",
+              "name": "Terra (Giant Telepathic Spiders Dimension)",
               "url": "https://rickandmortyapi.com/api/location/42"
           },
           "location": {
-              "name": "Earth (Giant Telepathic Spiders Dimension)",
+              "name": "Terra (Giant Telepathic Spiders Dimension)",
               "url": "https://rickandmortyapi.com/api/location/42"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/160.jpeg",
@@ -3711,7 +3711,7 @@ export default {
       {
           "id": 161,
           "name": "Hydrogen-F",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Alphabetrian",
           "gender": "Female",
@@ -3733,7 +3733,7 @@ export default {
       {
           "id": 162,
           "name": "Ice-T",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Alphabetrian",
           "gender": "Male",
@@ -3755,7 +3755,7 @@ export default {
       {
           "id": 163,
           "name": "Ideal Jerry",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Mytholog",
           "type": "",
           "gender": "Male",
@@ -3777,16 +3777,16 @@ export default {
       {
           "id": 164,
           "name": "Insurance Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/164.jpeg",
@@ -3799,16 +3799,16 @@ export default {
       {
           "id": 165,
           "name": "Investigator Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/165.jpeg",
@@ -3821,16 +3821,16 @@ export default {
       {
           "id": 166,
           "name": "Invisi-trooper",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/166.jpeg",
@@ -3843,16 +3843,16 @@ export default {
       {
           "id": 167,
           "name": "Izzy",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "Cat",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/167.jpeg",
@@ -3865,7 +3865,7 @@ export default {
       {
           "id": 168,
           "name": "Jackie",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Gazorpian",
           "gender": "Female",
@@ -3887,16 +3887,16 @@ export default {
       {
           "id": 169,
           "name": "Jacob",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/169.jpeg",
@@ -3910,16 +3910,16 @@ export default {
       {
           "id": 170,
           "name": "Jacqueline",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/170.jpeg",
@@ -3932,16 +3932,16 @@ export default {
       {
           "id": 171,
           "name": "Jaguar",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/171.jpeg",
@@ -3954,16 +3954,16 @@ export default {
       {
           "id": 172,
           "name": "Jamey",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/172.jpeg",
@@ -3976,16 +3976,16 @@ export default {
       {
           "id": 173,
           "name": "Jan-Michael Vincent",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/173.jpeg",
@@ -3998,12 +3998,12 @@ export default {
       {
           "id": 174,
           "name": "Jerry 5-126",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (5-126)",
+              "name": "Terra (5-126)",
               "url": "https://rickandmortyapi.com/api/location/17"
           },
           "location": {
@@ -4020,16 +4020,16 @@ export default {
       {
           "id": 175,
           "name": "Jerry Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/175.jpeg",
@@ -4048,16 +4048,16 @@ export default {
       {
           "id": 176,
           "name": "Celebrity Jerry",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-500A)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/23"
           },
           "location": {
-              "name": "Earth (C-500A)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/23"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/176.jpeg",
@@ -4070,16 +4070,16 @@ export default {
       {
           "id": 177,
           "name": "Jerry Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Evil Rick's Target Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/34"
           },
           "location": {
-              "name": "Earth (Evil Rick's Target Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/34"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/177.jpeg",
@@ -4092,7 +4092,7 @@ export default {
       {
           "id": 178,
           "name": "Jerry's Mytholog",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Mytholog",
           "type": "",
           "gender": "Male",
@@ -4114,16 +4114,16 @@ export default {
       {
           "id": 179,
           "name": "Jessica",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Cronenberg",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/179.jpeg",
@@ -4138,16 +4138,16 @@ export default {
       {
           "id": 180,
           "name": "Jessica",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/180.jpeg",
@@ -4168,16 +4168,16 @@ export default {
       {
           "id": 181,
           "name": "Jessica's Friend",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/181.jpeg",
@@ -4197,16 +4197,16 @@ export default {
       {
           "id": 182,
           "name": "Jim",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/182.jpeg",
@@ -4219,16 +4219,16 @@ export default {
       {
           "id": 183,
           "name": "Johnny Depp",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-500A)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/23"
           },
           "location": {
-              "name": "Earth (C-500A)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/23"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/183.jpeg",
@@ -4241,7 +4241,7 @@ export default {
       {
           "id": 184,
           "name": "Jon",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Gazorpian",
           "gender": "Male",
@@ -4250,7 +4250,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/40"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/184.jpeg",
@@ -4263,16 +4263,16 @@ export default {
       {
           "id": 185,
           "name": "Joseph Eli Lipkip",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/185.jpeg",
@@ -4285,16 +4285,16 @@ export default {
       {
           "id": 186,
           "name": "Joyce Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/186.jpeg",
@@ -4307,16 +4307,16 @@ export default {
       {
           "id": 187,
           "name": "Juggling Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/187.jpeg",
@@ -4329,9 +4329,9 @@ export default {
       {
           "id": 188,
           "name": "Karen Entity",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
-          "type": "Unknown-nippled alien",
+          "type": "Desconhecido-nippled alien",
           "gender": "Female",
           "origin": {
               "name": "Unity's Planet",
@@ -4351,16 +4351,16 @@ export default {
       {
           "id": 189,
           "name": "Katarina",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/189.jpeg",
@@ -4373,7 +4373,7 @@ export default {
       {
           "id": 190,
           "name": "Keara",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Krootabulan",
           "gender": "Female",
@@ -4382,7 +4382,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/45"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/190.jpeg",
@@ -4395,12 +4395,12 @@ export default {
       {
           "id": 191,
           "name": "Kevin",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Zigerion",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -4417,7 +4417,7 @@ export default {
       {
           "id": 192,
           "name": "King Flippy Nips",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Plutonian",
           "gender": "Male",
@@ -4439,7 +4439,7 @@ export default {
       {
           "id": 193,
           "name": "King Jellybean",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Jellybean",
           "gender": "Male",
@@ -4461,12 +4461,12 @@ export default {
       {
           "id": 194,
           "name": "Kozbian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Tentacle alien",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -4483,16 +4483,16 @@ export default {
       {
           "id": 195,
           "name": "Kristen Stewart",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (C-500A)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/23"
           },
           "location": {
-              "name": "Earth (C-500A)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/23"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/195.jpeg",
@@ -4505,16 +4505,16 @@ export default {
       {
           "id": 196,
           "name": "Krombopulos Michael",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Gromflomite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/196.jpeg",
@@ -4527,8 +4527,8 @@ export default {
       {
           "id": 197,
           "name": "Kyle",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Miniverse inhabitant",
           "gender": "Male",
           "origin": {
@@ -4549,12 +4549,12 @@ export default {
       {
           "id": 198,
           "name": "Lady Katana",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Cyborg",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -4571,10 +4571,10 @@ export default {
       {
           "id": 199,
           "name": "Larva Alien",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Larva alien",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Larva Alien's Planet",
               "url": "https://rickandmortyapi.com/api/location/51"
@@ -4595,16 +4595,16 @@ export default {
       {
           "id": 200,
           "name": "Lawyer Morty",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/200.jpeg",
@@ -4617,16 +4617,16 @@ export default {
       {
           "id": 201,
           "name": "Leonard Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/201.jpeg",
@@ -4639,7 +4639,7 @@ export default {
       {
           "id": 202,
           "name": "Lighthouse Keeper",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Cat-Person",
           "gender": "Male",
@@ -4661,12 +4661,12 @@ export default {
       {
           "id": 203,
           "name": "Lil B",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Snail alien",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -4683,12 +4683,12 @@ export default {
       {
           "id": 204,
           "name": "Lisa",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -4705,16 +4705,16 @@ export default {
       {
           "id": 205,
           "name": "Little Dipper",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Tinymouth",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/205.jpeg",
@@ -4727,16 +4727,16 @@ export default {
       {
           "id": 206,
           "name": "Lizard Morty",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Lizard-Person",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/206.jpeg",
@@ -4749,16 +4749,16 @@ export default {
       {
           "id": 207,
           "name": "Loggins",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Alligator-Person",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/207.jpeg",
@@ -4773,12 +4773,12 @@ export default {
       {
           "id": 208,
           "name": "Logic",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -4795,16 +4795,16 @@ export default {
       {
           "id": 209,
           "name": "Long Sleeved Morty",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/209.jpeg",
@@ -4817,16 +4817,16 @@ export default {
       {
           "id": 210,
           "name": "Lucy",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/210.jpeg",
@@ -4839,7 +4839,7 @@ export default {
       {
           "id": 211,
           "name": "Ma-Sha",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Gazorpian",
           "gender": "Female",
@@ -4861,7 +4861,7 @@ export default {
       {
           "id": 212,
           "name": "Magma-Q",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Alphabetrian",
           "gender": "Male",
@@ -4883,7 +4883,7 @@ export default {
       {
           "id": 213,
           "name": "Magnesium-J",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Alphabetrian",
           "gender": "Male",
@@ -4905,16 +4905,16 @@ export default {
       {
           "id": 214,
           "name": "Man Painted Silver Who Makes Robot Noises",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/214.jpeg",
@@ -4927,16 +4927,16 @@ export default {
       {
           "id": 215,
           "name": "Maximums Rickimus",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/215.jpeg",
@@ -4950,16 +4950,16 @@ export default {
       {
           "id": 216,
           "name": "MC Haps",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/216.jpeg",
@@ -4974,16 +4974,16 @@ export default {
       {
           "id": 217,
           "name": "Mechanical Morty",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Robot",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/217.jpeg",
@@ -4996,16 +4996,16 @@ export default {
       {
           "id": 218,
           "name": "Mechanical Rick",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Robot",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/218.jpeg",
@@ -5018,16 +5018,16 @@ export default {
       {
           "id": 219,
           "name": "Mechanical Summer",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Robot",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/219.jpeg",
@@ -5040,16 +5040,16 @@ export default {
       {
           "id": 220,
           "name": "Mega Fruit Farmer Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/220.jpeg",
@@ -5062,8 +5062,8 @@ export default {
       {
           "id": 221,
           "name": "Melissa",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Monster",
           "gender": "Female",
           "origin": {
@@ -5084,16 +5084,16 @@ export default {
       {
           "id": 222,
           "name": "Michael Denny and the Denny Singers",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/222.jpeg",
@@ -5106,16 +5106,16 @@ export default {
       {
           "id": 223,
           "name": "Michael Jenkins",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/223.jpeg",
@@ -5128,16 +5128,16 @@ export default {
       {
           "id": 224,
           "name": "Michael McLick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/224.jpeg",
@@ -5150,16 +5150,16 @@ export default {
       {
           "id": 225,
           "name": "Michael Thompson",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Conjoined twin",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/225.jpeg",
@@ -5172,12 +5172,12 @@ export default {
       {
           "id": 226,
           "name": "Million Ants",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Animal",
           "type": "Sentient ant colony",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -5194,16 +5194,16 @@ export default {
       {
           "id": 227,
           "name": "Mitch",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/227.jpeg",
@@ -5216,16 +5216,16 @@ export default {
       {
           "id": 228,
           "name": "Mohawk Guy",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "location": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/228.jpeg",
@@ -5238,16 +5238,16 @@ export default {
       {
           "id": 229,
           "name": "Morty Mart Manager Morty",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/229.jpeg",
@@ -5260,16 +5260,16 @@ export default {
       {
           "id": 230,
           "name": "Morty Jr.",
-          "status": "Alive",
-          "species": "Humanoid",
-          "type": "Human Gazorpian",
+          "status": "Vivo",
+          "species": "Humanaoid",
+          "type": "Humana Gazorpian",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/230.jpeg",
@@ -5282,16 +5282,16 @@ export default {
       {
           "id": 231,
           "name": "Morty Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/231.jpeg",
@@ -5304,16 +5304,16 @@ export default {
       {
           "id": 232,
           "name": "Morty Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Evil Rick's Target Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/34"
           },
           "location": {
-              "name": "Earth (Evil Rick's Target Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/34"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/232.jpeg",
@@ -5326,16 +5326,16 @@ export default {
       {
           "id": 233,
           "name": "Morty K-22",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (K-22)",
+              "name": "Terra (K-22)",
               "url": "https://rickandmortyapi.com/api/location/52"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/233.jpeg",
@@ -5348,16 +5348,16 @@ export default {
       {
           "id": 234,
           "name": "Morty Smith",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/234.jpeg",
@@ -5370,16 +5370,16 @@ export default {
       {
           "id": 235,
           "name": "Mortytown Loco",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/235.jpeg",
@@ -5392,16 +5392,16 @@ export default {
       {
           "id": 236,
           "name": "Mr. Beauregard",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/236.jpeg",
@@ -5414,16 +5414,16 @@ export default {
       {
           "id": 237,
           "name": "Mr. Benson",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/237.jpeg",
@@ -5436,7 +5436,7 @@ export default {
       {
           "id": 238,
           "name": "Mr. Booby Buyer",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "Boobie buyer reptilian",
           "gender": "Male",
@@ -5458,16 +5458,16 @@ export default {
       {
           "id": 239,
           "name": "Mr. Goldenfold",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Cronenberg",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/239.jpeg",
@@ -5483,16 +5483,16 @@ export default {
       {
           "id": 240,
           "name": "Mr. Goldenfold",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/240.jpeg",
@@ -5513,16 +5513,16 @@ export default {
       {
           "id": 241,
           "name": "Mr. Marklovitz",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/241.jpeg",
@@ -5536,8 +5536,8 @@ export default {
       {
           "id": 242,
           "name": "Mr. Meeseeks",
-          "status": "unknown",
-          "species": "Humanoid",
+          "status": "Desconhecido",
+          "species": "Humanaoid",
           "type": "Meeseeks",
           "gender": "Male",
           "origin": {
@@ -5561,16 +5561,16 @@ export default {
       {
           "id": 243,
           "name": "Mr. Needful",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "The Devil",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/243.jpeg",
@@ -5583,16 +5583,16 @@ export default {
       {
           "id": 244,
           "name": "Mr. Poopybutthole",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Poopybutthole",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/244.jpeg",
@@ -5609,16 +5609,16 @@ export default {
       {
           "id": 245,
           "name": "Mrs. Lipkip",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/245.jpeg",
@@ -5631,12 +5631,12 @@ export default {
       {
           "id": 246,
           "name": "Mrs. Pancakes",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
@@ -5654,16 +5654,16 @@ export default {
       {
           "id": 247,
           "name": "Mrs. Poopybutthole",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Poopybutthole",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/247.jpeg",
@@ -5676,16 +5676,16 @@ export default {
       {
           "id": 248,
           "name": "Mrs. Refrigerator",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite, Refrigerator",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/248.jpeg",
@@ -5698,16 +5698,16 @@ export default {
       {
           "id": 249,
           "name": "Mrs. Sanchez",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/249.jpeg",
@@ -5723,16 +5723,16 @@ export default {
       {
           "id": 250,
           "name": "Mrs. Sullivan",
-          "status": "Dead",
-          "species": "Human",
-          "type": "Cat controlled dead lady",
+          "status": "Morto",
+          "species": "Humana",
+          "type": "Cat controlled Morto lady",
           "gender": "Female",
           "origin": {
-              "name": "Earth (C-500A)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/23"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/250.jpeg",
@@ -5745,16 +5745,16 @@ export default {
       {
           "id": 251,
           "name": "Nancy",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/251.jpeg",
@@ -5771,12 +5771,12 @@ export default {
       {
           "id": 252,
           "name": "Noob-Noob",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Poopybutthole",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -5793,12 +5793,12 @@ export default {
       {
           "id": 253,
           "name": "Numbericon",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "Numbericon",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -5815,16 +5815,16 @@ export default {
       {
           "id": 254,
           "name": "Octopus Man",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Octopus-Person",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/254.jpeg",
@@ -5837,16 +5837,16 @@ export default {
       {
           "id": 255,
           "name": "Orthodox Jew",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/255.jpeg",
@@ -5859,12 +5859,12 @@ export default {
       {
           "id": 256,
           "name": "Pat Gueterman",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Robot",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -5881,12 +5881,12 @@ export default {
       {
           "id": 257,
           "name": "Paul Fleishman",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -5903,12 +5903,12 @@ export default {
       {
           "id": 258,
           "name": "Pawnshop Clerk",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -5925,16 +5925,16 @@ export default {
       {
           "id": 259,
           "name": "Pencilvester",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite, Pencil",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/259.jpeg",
@@ -5947,16 +5947,16 @@ export default {
       {
           "id": 260,
           "name": "Phillip Jacobs",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/260.jpeg",
@@ -5969,12 +5969,12 @@ export default {
       {
           "id": 261,
           "name": "Photography Cyborg",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Robot",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -5991,16 +5991,16 @@ export default {
       {
           "id": 262,
           "name": "Photography Raptor",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite, Dinosaur",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/262.jpeg",
@@ -6013,12 +6013,12 @@ export default {
       {
           "id": 263,
           "name": "Pibbles Bodyguard",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Hairy alien",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -6035,16 +6035,16 @@ export default {
       {
           "id": 264,
           "name": "Pichael Thompson",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Conjoined twin",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/264.jpeg",
@@ -6057,16 +6057,16 @@ export default {
       {
           "id": 265,
           "name": "Pickle Rick",
-          "status": "Alive",
-          "species": "unknown",
+          "status": "Vivo",
+          "species": "Desconhecido",
           "type": "Pickle",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/265.jpeg",
@@ -6079,16 +6079,16 @@ export default {
       {
           "id": 266,
           "name": "Piece of Toast",
-          "status": "Alive",
-          "species": "unknown",
+          "status": "Vivo",
+          "species": "Desconhecido",
           "type": "Bread",
           "gender": "Genderless",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/266.jpeg",
@@ -6102,16 +6102,16 @@ export default {
       {
           "id": 267,
           "name": "Plumber Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/267.jpeg",
@@ -6124,12 +6124,12 @@ export default {
       {
           "id": 268,
           "name": "Poncho",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -6146,8 +6146,8 @@ export default {
       {
           "id": 269,
           "name": "Presidentress of The Mega Gargantuans",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Mega Gargantuan",
           "gender": "Female",
           "origin": {
@@ -6168,12 +6168,12 @@ export default {
       {
           "id": 270,
           "name": "Prince Nebulon",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Zigerion",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -6190,16 +6190,16 @@ export default {
       {
           "id": 271,
           "name": "Principal Vagina",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Cronenberg",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/271.jpeg",
@@ -6214,16 +6214,16 @@ export default {
       {
           "id": 272,
           "name": "Principal Vagina",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/272.jpeg",
@@ -6241,7 +6241,7 @@ export default {
       {
           "id": 273,
           "name": "Purge Planet Ruler",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Cat-Person",
           "gender": "Male",
@@ -6263,16 +6263,16 @@ export default {
       {
           "id": 274,
           "name": "Quantum Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/274.jpeg",
@@ -6286,16 +6286,16 @@ export default {
       {
           "id": 275,
           "name": "Randy Dicknose",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/275.jpeg",
@@ -6308,16 +6308,16 @@ export default {
       {
           "id": 276,
           "name": "Rat Boss",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Animal",
           "type": "Rat",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/276.jpeg",
@@ -6330,16 +6330,16 @@ export default {
       {
           "id": 277,
           "name": "Real Fake Doors Salesman",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/277.jpeg",
@@ -6352,16 +6352,16 @@ export default {
       {
           "id": 278,
           "name": "Regional Manager Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/278.jpeg",
@@ -6374,16 +6374,16 @@ export default {
       {
           "id": 279,
           "name": "Regular Legs",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/279.jpeg",
@@ -6396,16 +6396,16 @@ export default {
       {
           "id": 280,
           "name": "Reverse Giraffe",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/280.jpeg",
@@ -6418,16 +6418,16 @@ export default {
       {
           "id": 281,
           "name": "Reverse Rick Outrage",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/281.jpeg",
@@ -6440,7 +6440,7 @@ export default {
       {
           "id": 282,
           "name": "Revolio Clockberg Jr.",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "Gear-Person",
           "gender": "Male",
@@ -6464,16 +6464,16 @@ export default {
       {
           "id": 283,
           "name": "Rick D. Sanchez III",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/283.jpeg",
@@ -6486,16 +6486,16 @@ export default {
       {
           "id": 284,
           "name": "Rick Guilt Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/284.jpeg",
@@ -6508,16 +6508,16 @@ export default {
       {
           "id": 285,
           "name": "Rick Prime",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/285.jpeg",
@@ -6531,16 +6531,16 @@ export default {
       {
           "id": 286,
           "name": "Rick D-99",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (D-99)",
+              "name": "Terra (D-99)",
               "url": "https://rickandmortyapi.com/api/location/58"
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/286.jpeg",
@@ -6553,16 +6553,16 @@ export default {
       {
           "id": 287,
           "name": "Rick D716",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (D716)",
+              "name": "Terra (D716)",
               "url": "https://rickandmortyapi.com/api/location/59"
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/287.jpeg",
@@ -6575,16 +6575,16 @@ export default {
       {
           "id": 288,
           "name": "Rick D716-B",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (D716-B)",
+              "name": "Terra (D716-B)",
               "url": "https://rickandmortyapi.com/api/location/60"
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/288.jpeg",
@@ -6597,16 +6597,16 @@ export default {
       {
           "id": 289,
           "name": "Rick D716-C",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (D716-C)",
+              "name": "Terra (D716-C)",
               "url": "https://rickandmortyapi.com/api/location/61"
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/289.jpeg",
@@ -6619,16 +6619,16 @@ export default {
       {
           "id": 290,
           "name": "Rick Sanchez",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Evil Rick's Target Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/34"
           },
           "location": {
-              "name": "Earth (Evil Rick's Target Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/34"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/290.jpeg",
@@ -6641,16 +6641,16 @@ export default {
       {
           "id": 291,
           "name": "Rick J-22",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (J-22)",
+              "name": "Terra (J-22)",
               "url": "https://rickandmortyapi.com/api/location/62"
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/291.jpeg",
@@ -6663,16 +6663,16 @@ export default {
       {
           "id": 292,
           "name": "Rick K-22",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (K-22)",
+              "name": "Terra (K-22)",
               "url": "https://rickandmortyapi.com/api/location/52"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/292.jpeg",
@@ -6685,16 +6685,16 @@ export default {
       {
           "id": 293,
           "name": "Rick Sanchez",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/293.jpeg",
@@ -6707,16 +6707,16 @@ export default {
       {
           "id": 294,
           "name": "Ricktiminus Sancheziminius",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/294.jpeg",
@@ -6730,16 +6730,16 @@ export default {
       {
           "id": 295,
           "name": "Riq IV",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/295.jpeg",
@@ -6754,7 +6754,7 @@ export default {
       {
           "id": 296,
           "name": "Risotto Groupon",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Blue ape alien",
           "gender": "Male",
@@ -6776,7 +6776,7 @@ export default {
       {
           "id": 297,
           "name": "Risotto's Tentacled Henchman",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Tentacle alien",
           "gender": "Male",
@@ -6798,16 +6798,16 @@ export default {
       {
           "id": 298,
           "name": "Robot Morty",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Robot",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/298.jpeg",
@@ -6820,16 +6820,16 @@ export default {
       {
           "id": 299,
           "name": "Robot Rick",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Robot",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/299.jpeg",
@@ -6842,12 +6842,12 @@ export default {
       {
           "id": 300,
           "name": "Roger",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
@@ -6864,8 +6864,8 @@ export default {
       {
           "id": 301,
           "name": "Ron Benson",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Ring-nippled alien",
           "gender": "Male",
           "origin": {
@@ -6886,16 +6886,16 @@ export default {
       {
           "id": 302,
           "name": "Ruben",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/302.jpeg",
@@ -6908,16 +6908,16 @@ export default {
       {
           "id": 303,
           "name": "Samantha",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/303.jpeg",
@@ -6930,8 +6930,8 @@ export default {
       {
           "id": 304,
           "name": "Scary Brandon",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Monster",
           "gender": "Male",
           "origin": {
@@ -6952,8 +6952,8 @@ export default {
       {
           "id": 305,
           "name": "Scary Glenn",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Monster",
           "gender": "Male",
           "origin": {
@@ -6974,8 +6974,8 @@ export default {
       {
           "id": 306,
           "name": "Scary Terry",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Monster",
           "gender": "Male",
           "origin": {
@@ -6996,7 +6996,7 @@ export default {
       {
           "id": 307,
           "name": "Scroopy Noopers",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Plutonian",
           "gender": "Male",
@@ -7018,12 +7018,12 @@ export default {
       {
           "id": 308,
           "name": "Scropon",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "Lobster-Alien",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -7041,12 +7041,12 @@ export default {
       {
           "id": 309,
           "name": "Scrotian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "Scrotian",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -7066,7 +7066,7 @@ export default {
       {
           "id": 310,
           "name": "Self-Congratulatory Jerry",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Mytholog",
           "type": "",
           "gender": "Male",
@@ -7088,12 +7088,12 @@ export default {
       {
           "id": 311,
           "name": "Shimshamian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Shimshamian",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -7112,16 +7112,16 @@ export default {
       {
           "id": 312,
           "name": "Shlaammi",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/312.jpeg",
@@ -7134,16 +7134,16 @@ export default {
       {
           "id": 313,
           "name": "Shleemypants",
-          "status": "Alive",
-          "species": "unknown",
+          "status": "Vivo",
+          "species": "Desconhecido",
           "type": "Omniscient being",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/313.jpeg",
@@ -7156,16 +7156,16 @@ export default {
       {
           "id": 314,
           "name": "Shmlamantha Shmlicelli",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/314.jpeg",
@@ -7178,16 +7178,16 @@ export default {
       {
           "id": 315,
           "name": "Shmlangela Shmlobinson-Shmlower",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/315.jpeg",
@@ -7200,16 +7200,16 @@ export default {
       {
           "id": 316,
           "name": "Shmlona Shmlobinson",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/316.jpeg",
@@ -7222,16 +7222,16 @@ export default {
       {
           "id": 317,
           "name": "Shmlonathan Shmlower",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/317.jpeg",
@@ -7244,16 +7244,16 @@ export default {
       {
           "id": 318,
           "name": "Shmlony Shmlicelli",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/318.jpeg",
@@ -7266,7 +7266,7 @@ export default {
       {
           "id": 319,
           "name": "Shmooglite Runner",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "Animal",
           "gender": "Male",
@@ -7288,12 +7288,12 @@ export default {
       {
           "id": 320,
           "name": "Shnoopy Bloopers",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -7310,12 +7310,12 @@ export default {
       {
           "id": 321,
           "name": "Shrimply Pibbles",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -7332,16 +7332,16 @@ export default {
       {
           "id": 322,
           "name": "Simple Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/322.jpeg",
@@ -7354,16 +7354,16 @@ export default {
       {
           "id": 323,
           "name": "Slaveowner",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "location": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/323.jpeg",
@@ -7376,16 +7376,16 @@ export default {
       {
           "id": 324,
           "name": "Sleepy Gary",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/324.jpeg",
@@ -7398,16 +7398,16 @@ export default {
       {
           "id": 325,
           "name": "Slick Morty",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/325.jpeg",
@@ -7420,7 +7420,7 @@ export default {
       {
           "id": 326,
           "name": "Slippery Stair",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "Slug",
           "gender": "Male",
@@ -7429,7 +7429,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/48"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/326.jpeg",
@@ -7443,16 +7443,16 @@ export default {
       {
           "id": 327,
           "name": "Slow Mobius",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/327.jpeg",
@@ -7465,16 +7465,16 @@ export default {
       {
           "id": 328,
           "name": "Slow Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/328.jpeg",
@@ -7487,16 +7487,16 @@ export default {
       {
           "id": 329,
           "name": "Snuffles (Snowball)",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "Intelligent dog",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/329.jpeg",
@@ -7516,16 +7516,16 @@ export default {
       {
           "id": 330,
           "name": "Solicitor Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/330.jpeg",
@@ -7539,7 +7539,7 @@ export default {
       {
           "id": 331,
           "name": "Squanchy",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "Cat-like creature",
           "gender": "Male",
@@ -7563,16 +7563,16 @@ export default {
       {
           "id": 332,
           "name": "Stacy",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/332.jpeg",
@@ -7585,12 +7585,12 @@ export default {
       {
           "id": 333,
           "name": "Stair Goblin",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Stair goblin",
           "gender": "Genderless",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -7609,16 +7609,16 @@ export default {
       {
           "id": 334,
           "name": "Stealy",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Poopybutthole",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/334.jpeg",
@@ -7631,16 +7631,16 @@ export default {
       {
           "id": 335,
           "name": "Steve",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/335.jpeg",
@@ -7653,9 +7653,9 @@ export default {
       {
           "id": 336,
           "name": "Steven Phillips",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
-          "type": "Unknown-nippled alien",
+          "type": "Desconhecido-nippled alien",
           "gender": "Male",
           "origin": {
               "name": "Unity's Planet",
@@ -7675,12 +7675,12 @@ export default {
       {
           "id": 337,
           "name": "Stu",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Zigerion",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -7697,16 +7697,16 @@ export default {
       {
           "id": 338,
           "name": "Summer Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/338.jpeg",
@@ -7725,16 +7725,16 @@ export default {
       {
           "id": 339,
           "name": "Summer Smith",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Evil Rick's Target Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/34"
           },
           "location": {
-              "name": "Earth (Evil Rick's Target Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/34"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/339.jpeg",
@@ -7747,12 +7747,12 @@ export default {
       {
           "id": 340,
           "name": "Supernova",
-          "status": "Alive",
-          "species": "Human",
-          "type": "Superhuman",
+          "status": "Vivo",
+          "species": "Humana",
+          "type": "SuperHumana",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -7769,16 +7769,16 @@ export default {
       {
           "id": 341,
           "name": "Taddy Mason",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/341.jpeg",
@@ -7791,16 +7791,16 @@ export default {
       {
           "id": 342,
           "name": "Taint Washer",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "location": {
-              "name": "Post-Apocalyptic Earth",
+              "name": "Terra pós-apocalíptica",
               "url": "https://rickandmortyapi.com/api/location/8"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/342.jpeg",
@@ -7813,16 +7813,16 @@ export default {
       {
           "id": 343,
           "name": "Tammy Guetermann",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Cronenberg",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/343.jpeg",
@@ -7836,16 +7836,16 @@ export default {
       {
           "id": 344,
           "name": "Tammy Guetermann",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/344.jpeg",
@@ -7861,16 +7861,16 @@ export default {
       {
           "id": 345,
           "name": "Teacher Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/345.jpeg",
@@ -7883,16 +7883,16 @@ export default {
       {
           "id": 346,
           "name": "Terry",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/346.jpeg",
@@ -7905,16 +7905,16 @@ export default {
       {
           "id": 347,
           "name": "The President",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/347.jpeg",
@@ -7928,8 +7928,8 @@ export default {
       {
           "id": 348,
           "name": "The President of the Miniverse",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Miniverse inhabitant",
           "gender": "Male",
           "origin": {
@@ -7950,16 +7950,16 @@ export default {
       {
           "id": 349,
           "name": "The Scientist Formerly Known as Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/349.jpeg",
@@ -7972,12 +7972,12 @@ export default {
       {
           "id": 350,
           "name": "Thomas Lipkip",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
@@ -7993,17 +7993,17 @@ export default {
       },
       {
           "id": 351,
-          "name": "Three Unknown Things",
-          "status": "Alive",
+          "name": "Three Desconhecido Things",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/351.jpeg",
@@ -8016,16 +8016,16 @@ export default {
       {
           "id": 352,
           "name": "Tinkles",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite, Unicorn lamb",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/352.jpeg",
@@ -8038,16 +8038,16 @@ export default {
       {
           "id": 353,
           "name": "Tiny Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "Clone",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/353.jpeg",
@@ -8060,16 +8060,16 @@ export default {
       {
           "id": 354,
           "name": "Toby Matthews",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/354.jpeg",
@@ -8082,9 +8082,9 @@ export default {
       {
           "id": 355,
           "name": "Todd Crystal",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
-          "type": "Unknown-nippled alien",
+          "type": "Desconhecido-nippled alien",
           "gender": "Male",
           "origin": {
               "name": "Unity's Planet",
@@ -8104,16 +8104,16 @@ export default {
       {
           "id": 356,
           "name": "Tom Randolph",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/356.jpeg",
@@ -8126,16 +8126,16 @@ export default {
       {
           "id": 357,
           "name": "Tommy's Clone",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "Clone",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/357.jpeg",
@@ -8148,16 +8148,16 @@ export default {
       {
           "id": 358,
           "name": "Tophat Jones",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Leprechaun",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/358.jpeg",
@@ -8172,16 +8172,16 @@ export default {
       {
           "id": 359,
           "name": "Tortured Morty",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/359.jpeg",
@@ -8194,8 +8194,8 @@ export default {
       {
           "id": 360,
           "name": "Toxic Morty",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Morty's toxic side",
           "gender": "Male",
           "origin": {
@@ -8203,7 +8203,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/64"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/360.jpeg",
@@ -8216,8 +8216,8 @@ export default {
       {
           "id": 361,
           "name": "Toxic Rick",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Rick's toxic side",
           "gender": "Male",
           "origin": {
@@ -8225,7 +8225,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/64"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/361.jpeg",
@@ -8238,12 +8238,12 @@ export default {
       {
           "id": 362,
           "name": "Traflorkian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Traflorkian",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -8264,7 +8264,7 @@ export default {
       {
           "id": 363,
           "name": "Trandor",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Krootabulan",
           "gender": "Male",
@@ -8273,7 +8273,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/45"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/363.jpeg",
@@ -8286,10 +8286,10 @@ export default {
       {
           "id": 364,
           "name": "Tree Person",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Teenyverse inhabitant",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Kyle's Teenyverse",
               "url": "https://rickandmortyapi.com/api/location/50"
@@ -8308,16 +8308,16 @@ export default {
       {
           "id": 365,
           "name": "Tricia Lange",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/365.jpeg",
@@ -8331,8 +8331,8 @@ export default {
       {
           "id": 366,
           "name": "Trunk Morty",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Trunk-Person",
           "gender": "Male",
           "origin": {
@@ -8340,7 +8340,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/65"
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/366.jpeg",
@@ -8353,8 +8353,8 @@ export default {
       {
           "id": 367,
           "name": "Trunk Man",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Trunk-Person",
           "gender": "Male",
           "origin": {
@@ -8362,7 +8362,7 @@ export default {
               "url": "https://rickandmortyapi.com/api/location/65"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/367.jpeg",
@@ -8376,16 +8376,16 @@ export default {
       {
           "id": 368,
           "name": "Truth Tortoise",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Animal",
           "type": "Omniscient being",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/368.jpeg",
@@ -8398,7 +8398,7 @@ export default {
       {
           "id": 369,
           "name": "Tusked Assassin",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "Tuskfish",
           "gender": "Male",
@@ -8420,16 +8420,16 @@ export default {
       {
           "id": 370,
           "name": "Two Guys with Handlebar Mustaches",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/370.jpeg",
@@ -8442,7 +8442,7 @@ export default {
       {
           "id": 371,
           "name": "Tumblorkian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Tumblorkian",
           "gender": "Male",
@@ -8464,12 +8464,12 @@ export default {
       {
           "id": 372,
           "name": "Unity",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Hivemind",
           "gender": "Genderless",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -8486,16 +8486,16 @@ export default {
       {
           "id": 373,
           "name": "Unmuscular Michael",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/373.jpeg",
@@ -8508,16 +8508,16 @@ export default {
       {
           "id": 374,
           "name": "Vampire Master",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Vampire",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/374.jpeg",
@@ -8530,12 +8530,12 @@ export default {
       {
           "id": 375,
           "name": "Vance Maximus",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -8552,7 +8552,7 @@ export default {
       {
           "id": 376,
           "name": "Veronica Ann Bennet",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Gazorpian",
           "gender": "Female",
@@ -8574,16 +8574,16 @@ export default {
       {
           "id": 377,
           "name": "Voltematron",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/377.jpeg",
@@ -8596,16 +8596,16 @@ export default {
       {
           "id": 378,
           "name": "Wall Crawling Rick",
-          "status": "unknown",
-          "species": "Humanoid",
+          "status": "Desconhecido",
+          "species": "Humanaoid",
           "type": "Lizard-Person",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/378.jpeg",
@@ -8618,12 +8618,12 @@ export default {
       {
           "id": 379,
           "name": "Wedding Bartender",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -8640,16 +8640,16 @@ export default {
       {
           "id": 380,
           "name": "Weird Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/380.jpeg",
@@ -8662,16 +8662,16 @@ export default {
       {
           "id": 381,
           "name": "Woman Rick",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Chair",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/381.jpeg",
@@ -8684,12 +8684,12 @@ export default {
       {
           "id": 382,
           "name": "Worldender",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -8706,12 +8706,12 @@ export default {
       {
           "id": 383,
           "name": "Yaarb",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -8728,12 +8728,12 @@ export default {
       {
           "id": 384,
           "name": "Yellow Headed Doctor",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -8750,16 +8750,16 @@ export default {
       {
           "id": 385,
           "name": "Yellow Shirt Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/385.jpeg",
@@ -8772,12 +8772,12 @@ export default {
       {
           "id": 386,
           "name": "Zarbadar Gloonch",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Drumbloxian",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -8795,7 +8795,7 @@ export default {
       {
           "id": 387,
           "name": "Zarbadar's Mytholog",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Mytholog",
           "type": "",
           "gender": "Female",
@@ -8817,8 +8817,8 @@ export default {
       {
           "id": 388,
           "name": "Zeep Xanflorp",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Microverse inhabitant",
           "gender": "Male",
           "origin": {
@@ -8839,16 +8839,16 @@ export default {
       {
           "id": 389,
           "name": "Zeta Alpha Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/389.jpeg",
@@ -8863,16 +8863,16 @@ export default {
       {
           "id": 390,
           "name": "Zick Zack",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Floop Floopian",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/390.jpeg",
@@ -8885,16 +8885,16 @@ export default {
       {
           "id": 391,
           "name": "Uncle Steve",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Parasite",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/391.jpeg",
@@ -8907,16 +8907,16 @@ export default {
       {
           "id": 392,
           "name": "Bearded Morty",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/392.jpeg",
@@ -8929,8 +8929,8 @@ export default {
       {
           "id": 393,
           "name": "Roy",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "Game",
           "gender": "Male",
           "origin": {
@@ -8951,16 +8951,16 @@ export default {
       {
           "id": 394,
           "name": "Davin",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Cronenberg",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "location": {
-              "name": "Earth (C-137)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/1"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/394.jpeg",
@@ -8974,10 +8974,10 @@ export default {
       {
           "id": 395,
           "name": "Greebybobe",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Greebybobe",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Girvonesk",
               "url": "https://rickandmortyapi.com/api/location/68"
@@ -8999,8 +8999,8 @@ export default {
       {
           "id": 396,
           "name": "Scary Teacher",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Monster",
           "gender": "Male",
           "origin": {
@@ -9021,7 +9021,7 @@ export default {
       {
           "id": 397,
           "name": "Fido",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "Dog",
           "gender": "Male",
@@ -9043,7 +9043,7 @@ export default {
       {
           "id": 398,
           "name": "Accountant dog",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "Dog",
           "gender": "Male",
@@ -9065,8 +9065,8 @@ export default {
       {
           "id": 399,
           "name": "Tiny-persons advocacy group lawyer",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Giant",
           "gender": "Male",
           "origin": {
@@ -9087,8 +9087,8 @@ export default {
       {
           "id": 400,
           "name": "Giant Judge",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Giant",
           "gender": "Male",
           "origin": {
@@ -9109,16 +9109,16 @@ export default {
       {
           "id": 401,
           "name": "Morty Jr's interviewer",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/401.jpeg",
@@ -9131,16 +9131,16 @@ export default {
       {
           "id": 402,
           "name": "Guy from The Bachelor",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/402.jpeg",
@@ -9153,16 +9153,16 @@ export default {
       {
           "id": 403,
           "name": "Corn detective",
-          "status": "Dead",
-          "species": "Humanoid",
+          "status": "Morto",
+          "species": "Humanaoid",
           "type": "Corn-person",
           "gender": "Male",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/403.jpeg",
@@ -9175,16 +9175,16 @@ export default {
       {
           "id": 404,
           "name": "Michael Jackson",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Phone-Person",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Phone Dimension)",
+              "name": "Terra (Phone Dimension)",
               "url": "https://rickandmortyapi.com/api/location/72"
           },
           "location": {
-              "name": "Earth (Phone Dimension)",
+              "name": "Terra (Phone Dimension)",
               "url": "https://rickandmortyapi.com/api/location/72"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/404.jpeg",
@@ -9197,16 +9197,16 @@ export default {
       {
           "id": 405,
           "name": "Trunkphobic suspenders guy",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/405.jpeg",
@@ -9222,16 +9222,16 @@ export default {
       {
           "id": 406,
           "name": "Spiderweb teddy bear",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "Teddy Bear",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/406.jpeg",
@@ -9244,16 +9244,16 @@ export default {
       {
           "id": 407,
           "name": "Regular Tyrion Lannister",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/407.jpeg",
@@ -9266,16 +9266,16 @@ export default {
       {
           "id": 408,
           "name": "Quick Mistery Presenter",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/408.jpeg",
@@ -9288,16 +9288,16 @@ export default {
       {
           "id": 409,
           "name": "Mr. Sneezy",
-          "status": "Alive",
-          "species": "Human",
-          "type": "Little Human",
+          "status": "Vivo",
+          "species": "Humana",
+          "type": "Little Humana",
           "gender": "Male",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/409.jpeg",
@@ -9310,16 +9310,16 @@ export default {
       {
           "id": 410,
           "name": "Two Brothers",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/410.jpeg",
@@ -9332,16 +9332,16 @@ export default {
       {
           "id": 411,
           "name": "Alien Mexican Armada",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "Mexican",
           "gender": "Male",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/411.jpeg",
@@ -9354,16 +9354,16 @@ export default {
       {
           "id": 412,
           "name": "Giant Cat Monster",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Animal",
           "type": "Giant Cat Monster",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/412.jpeg",
@@ -9376,16 +9376,16 @@ export default {
       {
           "id": 413,
           "name": "Old Women",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "Old Amazons",
           "gender": "Female",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/413.jpeg",
@@ -9398,16 +9398,16 @@ export default {
       {
           "id": 414,
           "name": "Trunkphobic guy",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/414.jpeg",
@@ -9420,16 +9420,16 @@ export default {
       {
           "id": 415,
           "name": "Pro trunk people marriage guy",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/415.jpeg",
@@ -9442,16 +9442,16 @@ export default {
       {
           "id": 416,
           "name": "Muscular Mannie",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "Mannie",
           "gender": "Male",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/416.jpeg",
@@ -9464,16 +9464,16 @@ export default {
       {
           "id": 417,
           "name": "Baby Legs Chief",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/417.jpeg",
@@ -9486,16 +9486,16 @@ export default {
       {
           "id": 418,
           "name": "Mrs. Sullivan's Boyfriend",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "Necrophiliac",
           "gender": "Male",
           "origin": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/418.jpeg",
@@ -9508,7 +9508,7 @@ export default {
       {
           "id": 419,
           "name": "Plutonian Hostess",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Plutonian",
           "gender": "Female",
@@ -9530,7 +9530,7 @@ export default {
       {
           "id": 420,
           "name": "Plutonian Host",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Plutonian",
           "gender": "Male",
@@ -9552,7 +9552,7 @@ export default {
       {
           "id": 421,
           "name": "Rich Plutonian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Plutonian",
           "gender": "Female",
@@ -9574,7 +9574,7 @@ export default {
       {
           "id": 422,
           "name": "Rich Plutonian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Plutonian",
           "gender": "Male",
@@ -9596,16 +9596,16 @@ export default {
       {
           "id": 423,
           "name": "Synthetic Laser Eels",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "Eel",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/423.jpeg",
@@ -9618,16 +9618,16 @@ export default {
       {
           "id": 424,
           "name": "Pizza-person",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Pizza",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Pizza Dimension)",
+              "name": "Terra (Pizza Dimension)",
               "url": "https://rickandmortyapi.com/api/location/71"
           },
           "location": {
-              "name": "Earth (Pizza Dimension)",
+              "name": "Terra (Pizza Dimension)",
               "url": "https://rickandmortyapi.com/api/location/71"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/424.jpeg",
@@ -9640,16 +9640,16 @@ export default {
       {
           "id": 425,
           "name": "Pizza-person",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Pizza",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Pizza Dimension)",
+              "name": "Terra (Pizza Dimension)",
               "url": "https://rickandmortyapi.com/api/location/71"
           },
           "location": {
-              "name": "Earth (Pizza Dimension)",
+              "name": "Terra (Pizza Dimension)",
               "url": "https://rickandmortyapi.com/api/location/71"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/425.jpeg",
@@ -9662,8 +9662,8 @@ export default {
       {
           "id": 426,
           "name": "Greasy Grandma",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "Grandma",
           "gender": "Female",
           "origin": {
@@ -9684,16 +9684,16 @@ export default {
       {
           "id": 427,
           "name": "Phone-person",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Phone",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Phone Dimension)",
+              "name": "Terra (Phone Dimension)",
               "url": "https://rickandmortyapi.com/api/location/72"
           },
           "location": {
-              "name": "Earth (Phone Dimension)",
+              "name": "Terra (Phone Dimension)",
               "url": "https://rickandmortyapi.com/api/location/72"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/427.jpeg",
@@ -9706,16 +9706,16 @@ export default {
       {
           "id": 428,
           "name": "Phone-person",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Phone",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Phone Dimension)",
+              "name": "Terra (Phone Dimension)",
               "url": "https://rickandmortyapi.com/api/location/72"
           },
           "location": {
-              "name": "Earth (Phone Dimension)",
+              "name": "Terra (Phone Dimension)",
               "url": "https://rickandmortyapi.com/api/location/72"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/428.jpeg",
@@ -9728,16 +9728,16 @@ export default {
       {
           "id": 429,
           "name": "Chair-person",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Chair",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Chair Dimension)",
+              "name": "Terra (Chair Dimension)",
               "url": "https://rickandmortyapi.com/api/location/74"
           },
           "location": {
-              "name": "Earth (Chair Dimension)",
+              "name": "Terra (Chair Dimension)",
               "url": "https://rickandmortyapi.com/api/location/74"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/429.jpeg",
@@ -9750,16 +9750,16 @@ export default {
       {
           "id": 430,
           "name": "Chair-person",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Chair",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Chair Dimension)",
+              "name": "Terra (Chair Dimension)",
               "url": "https://rickandmortyapi.com/api/location/74"
           },
           "location": {
-              "name": "Earth (Chair Dimension)",
+              "name": "Terra (Chair Dimension)",
               "url": "https://rickandmortyapi.com/api/location/74"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/430.jpeg",
@@ -9772,16 +9772,16 @@ export default {
       {
           "id": 431,
           "name": "Chair-homeless",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Chair",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Chair Dimension)",
+              "name": "Terra (Chair Dimension)",
               "url": "https://rickandmortyapi.com/api/location/74"
           },
           "location": {
-              "name": "Earth (Chair Dimension)",
+              "name": "Terra (Chair Dimension)",
               "url": "https://rickandmortyapi.com/api/location/74"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/431.jpeg",
@@ -9794,16 +9794,16 @@ export default {
       {
           "id": 432,
           "name": "Chair-waiter",
-          "status": "Alive",
-          "species": "Humanoid",
+          "status": "Vivo",
+          "species": "Humanaoid",
           "type": "Chair",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Chair Dimension)",
+              "name": "Terra (Chair Dimension)",
               "url": "https://rickandmortyapi.com/api/location/74"
           },
           "location": {
-              "name": "Earth (Chair Dimension)",
+              "name": "Terra (Chair Dimension)",
               "url": "https://rickandmortyapi.com/api/location/74"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/432.jpeg",
@@ -9816,16 +9816,16 @@ export default {
       {
           "id": 433,
           "name": "Doopidoo",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "Doopidoo",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/433.jpeg",
@@ -9838,16 +9838,16 @@ export default {
       {
           "id": 434,
           "name": "Super Weird Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/434.jpeg",
@@ -9860,16 +9860,16 @@ export default {
       {
           "id": 435,
           "name": "Pripudlian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Pripudlian",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/435.jpeg",
@@ -9885,10 +9885,10 @@ export default {
       {
           "id": 436,
           "name": "Giant Testicle Monster",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Animal",
           "type": "Monster",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Testicle Monster Dimension",
               "url": "https://rickandmortyapi.com/api/location/21"
@@ -9908,16 +9908,16 @@ export default {
       {
           "id": 437,
           "name": "Michael",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/437.jpeg",
@@ -9930,16 +9930,16 @@ export default {
       {
           "id": 438,
           "name": "Michael's Lawyer",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/438.jpeg",
@@ -9952,16 +9952,16 @@ export default {
       {
           "id": 439,
           "name": "Veterinary",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/439.jpeg",
@@ -9974,16 +9974,16 @@ export default {
       {
           "id": 440,
           "name": "Veterinary Nurse",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/440.jpeg",
@@ -9996,12 +9996,12 @@ export default {
       {
           "id": 441,
           "name": "Bearded Jerry",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -10018,12 +10018,12 @@ export default {
       {
           "id": 442,
           "name": "Shaved Head Jerry",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -10040,12 +10040,12 @@ export default {
       {
           "id": 443,
           "name": "Tank Top Jerry",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -10062,12 +10062,12 @@ export default {
       {
           "id": 444,
           "name": "Pink Polo Shirt Jerry",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -10084,12 +10084,12 @@ export default {
       {
           "id": 445,
           "name": "Jerryboree Keeper",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -10106,12 +10106,12 @@ export default {
       {
           "id": 446,
           "name": "Jerryboree Receptionist",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -10128,7 +10128,7 @@ export default {
       {
           "id": 447,
           "name": "Anchor Gear",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Gear-Person",
           "gender": "Male",
@@ -10150,7 +10150,7 @@ export default {
       {
           "id": 448,
           "name": "Gear Cop",
-          "status": "Dead",
+          "status": "Morto",
           "species": "Alien",
           "type": "Gear-Person",
           "gender": "Male",
@@ -10172,8 +10172,8 @@ export default {
       {
           "id": 449,
           "name": "Roy's Mum",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "Game",
           "gender": "Female",
           "origin": {
@@ -10194,8 +10194,8 @@ export default {
       {
           "id": 450,
           "name": "Roy's Wife",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "Game",
           "gender": "Male",
           "origin": {
@@ -10216,8 +10216,8 @@ export default {
       {
           "id": 451,
           "name": "Roy's Son",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "Game",
           "gender": "Male",
           "origin": {
@@ -10238,16 +10238,16 @@ export default {
       {
           "id": 452,
           "name": "Simon",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/452.jpeg",
@@ -10260,16 +10260,16 @@ export default {
       {
           "id": 453,
           "name": "Vampire Master's Assistant",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Vampire",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/453.jpeg",
@@ -10282,10 +10282,10 @@ export default {
       {
           "id": 454,
           "name": "Arbolian Mentirososian",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
               "name": "Árboles Mentirosos",
               "url": "https://rickandmortyapi.com/api/location/75"
@@ -10306,12 +10306,12 @@ export default {
       {
           "id": 455,
           "name": "St. Gloopy Noops Nurse",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -10328,12 +10328,12 @@ export default {
       {
           "id": 456,
           "name": "Nano Doctor",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Nano Alien",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -10350,16 +10350,16 @@ export default {
       {
           "id": 457,
           "name": "Funny Songs Presenter",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/457.jpeg",
@@ -10372,16 +10372,16 @@ export default {
       {
           "id": 458,
           "name": "Tax Attorney",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/458.jpeg",
@@ -10394,16 +10394,16 @@ export default {
       {
           "id": 459,
           "name": "Butthole Ice Cream Guy",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Interdimensional Cable",
+              "name": "Cabo Interdimensional",
               "url": "https://rickandmortyapi.com/api/location/6"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/459.jpeg",
@@ -10416,12 +10416,12 @@ export default {
       {
           "id": 460,
           "name": "Traflorkian Journalist",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "Traflorkian",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -10438,16 +10438,16 @@ export default {
       {
           "id": 461,
           "name": "Communication's Responsible Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/461.jpeg",
@@ -10460,16 +10460,16 @@ export default {
       {
           "id": 462,
           "name": "Teleportation's Responsible Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/462.jpeg",
@@ -10482,16 +10482,16 @@ export default {
       {
           "id": 463,
           "name": "SEAL Team Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/463.jpeg",
@@ -10504,16 +10504,16 @@ export default {
       {
           "id": 464,
           "name": "SEAL Team Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/464.jpeg",
@@ -10526,16 +10526,16 @@ export default {
       {
           "id": 465,
           "name": "SEAL Team Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/465.jpeg",
@@ -10548,16 +10548,16 @@ export default {
       {
           "id": 466,
           "name": "SEAL Team Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/466.jpeg",
@@ -10570,16 +10570,16 @@ export default {
       {
           "id": 467,
           "name": "Morphizer-XE Customer Support",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/467.jpeg",
@@ -10592,16 +10592,16 @@ export default {
       {
           "id": 468,
           "name": "Morphizer-XE Customer Support",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/468.jpeg",
@@ -10614,16 +10614,16 @@ export default {
       {
           "id": 469,
           "name": "Morphizer-XE Customer Support",
-          "status": "unknown",
+          "status": "Desconhecido",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/469.jpeg",
@@ -10636,12 +10636,12 @@ export default {
       {
           "id": 470,
           "name": "Alien Spa Employee",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -10658,16 +10658,16 @@ export default {
       {
           "id": 471,
           "name": "Little Voltron",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Robot",
           "type": "",
           "gender": "Genderless",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/471.jpeg",
@@ -10680,16 +10680,16 @@ export default {
       {
           "id": 472,
           "name": "Baby Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "Clone",
           "gender": "Male",
           "origin": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/472.jpeg",
@@ -10702,16 +10702,16 @@ export default {
       {
           "id": 473,
           "name": "Bartender Morty",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/473.jpeg",
@@ -10724,16 +10724,16 @@ export default {
       {
           "id": 474,
           "name": "Dancer Cowboy Morty",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/474.jpeg",
@@ -10746,16 +10746,16 @@ export default {
       {
           "id": 475,
           "name": "Dancer Morty",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/475.jpeg",
@@ -10768,16 +10768,16 @@ export default {
       {
           "id": 476,
           "name": "Flower Morty",
-          "status": "Alive",
-          "species": "Human",
-          "type": "Human with a flower in his head",
+          "status": "Vivo",
+          "species": "Humana",
+          "type": "Humana with a flower in his head",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/476.jpeg",
@@ -10790,16 +10790,16 @@ export default {
       {
           "id": 477,
           "name": "Hairdresser Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/477.jpeg",
@@ -10812,16 +10812,16 @@ export default {
       {
           "id": 478,
           "name": "Journalist Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/478.jpeg",
@@ -10834,16 +10834,16 @@ export default {
       {
           "id": 479,
           "name": "Private Sector Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/479.jpeg",
@@ -10856,16 +10856,16 @@ export default {
       {
           "id": 480,
           "name": "Purple Morty",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/480.jpeg",
@@ -10878,16 +10878,16 @@ export default {
       {
           "id": 481,
           "name": "Retired General Rick",
-          "status": "unknown",
-          "species": "Human",
+          "status": "Desconhecido",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/481.jpeg",
@@ -10900,16 +10900,16 @@ export default {
       {
           "id": 482,
           "name": "Secret Service Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/482.jpeg",
@@ -10922,16 +10922,16 @@ export default {
       {
           "id": 483,
           "name": "Steve Jobs Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/483.jpeg",
@@ -10944,16 +10944,16 @@ export default {
       {
           "id": 484,
           "name": "Sheik Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/484.jpeg",
@@ -10966,16 +10966,16 @@ export default {
       {
           "id": 485,
           "name": "Modern Rick",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/485.jpeg",
@@ -10988,16 +10988,16 @@ export default {
       {
           "id": 486,
           "name": "Tan Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/486.jpeg",
@@ -11010,16 +11010,16 @@ export default {
       {
           "id": 487,
           "name": "Visor Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/487.jpeg",
@@ -11032,16 +11032,16 @@ export default {
       {
           "id": 488,
           "name": "Colonial Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/488.jpeg",
@@ -11054,16 +11054,16 @@ export default {
       {
           "id": 489,
           "name": "P-Coat Rick",
-          "status": "Dead",
-          "species": "Human",
+          "status": "Morto",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Citadel of Ricks",
+              "name": "Cidadela de Rick",
               "url": "https://rickandmortyapi.com/api/location/3"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/489.jpeg",
@@ -11076,12 +11076,12 @@ export default {
       {
           "id": 490,
           "name": "Chang",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -11098,12 +11098,12 @@ export default {
       {
           "id": 491,
           "name": "Dr. Eleanor Arroway",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Female",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
@@ -11120,16 +11120,16 @@ export default {
       {
           "id": 492,
           "name": "Varrix",
-          "status": "Alive",
+          "status": "Vivo",
           "species": "Alien",
           "type": "",
-          "gender": "unknown",
+          "gender": "Desconhecido",
           "origin": {
-              "name": "unknown",
+              "name": "Desconhecido",
               "url": ""
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/492.jpeg",
@@ -11142,16 +11142,16 @@ export default {
       {
           "id": 493,
           "name": "Secretary of the Interior",
-          "status": "Alive",
-          "species": "Human",
+          "status": "Vivo",
+          "species": "Humana",
           "type": "",
           "gender": "Male",
           "origin": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "location": {
-              "name": "Earth (Replacement Dimension)",
+              "name": "Terra ",
               "url": "https://rickandmortyapi.com/api/location/20"
           },
           "image": "https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/493.jpeg",

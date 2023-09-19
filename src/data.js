@@ -1,46 +1,39 @@
-import data from './data/rickandmorty/rickandmorty.js';
+export const buscarNome = (personagens, name) => {
+  const filtraPersonagens = personagem => personagem.name.toUpperCase().includes(name.toUpperCase());
+  const filtro = personagens.filter(filtraPersonagens);
+  return filtro;
+}
 
-// estas funciones são de exemplo
 
-/*export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
-import data from './data/rickandmorty/rickandmorty.js';
-*/
-function filterData(data, condition) {
-  return data.slice().filter(item => item.gender === condition);
-};
-
-function filterStatus(data, condition) {
-  return data.slice().filter(item => item.status === condition);
-};
-
-function sortNames(arr, condition) {
-  if (condition === "sortAZ") {
-    return arr.slice().sort((a, b) => (a.name > b.name ? 1 : -1));
-  } else if (condition === "sortZA") {
-    return arr.slice().sort((a, b) => (a.name > b.name ? -1 : 1));
-  } else {
-    document.location.reload(true);
+export function ordenarAZ(value, personagens){
+  const ordenarPersonagensAZ = [...personagens]; //cria uma cópia da array para não modificar a original
+  if(value === 'a-z'){
+    ordenarPersonagensAZ.sort(function (a, b){
+      if(a.name < b.name){
+        return -1;
+      }
+    })
+  }else{
+    ordenarPersonagensAZ.sort(function (a, b){
+      if(a.name > b.name){
+        return -1;
+      }
+    })
   }
-};
+  return ordenarPersonagensAZ
+}
 
-function percCalculation(data) {
-  return ((data.length * 100) / 493).toFixed();
-};
+//filtro por tipo
+export function filtrar (personagens, value, key) {
+  const filtro = personagens.filter(function(personagem) {
+    const filtrado = personagem[key].toLowerCase() === value;
+    return filtrado
+  });
 
-function filterName(data, condition) {
-  return data.slice().filter(item => item.name.toUpperCase() === condition);
-};
+  return filtro;
+}
 
-app = {
-  filterData,
-  filterStatus,
-  sortNames,
-  percCalculation,
-  filterName,
-};
+//calculo porcentagem
+export function calcularPorcentagem (tamanhoDaLista, tamanhoDaListaFiltrada){
+  return Math.round((tamanhoDaListaFiltrada*100)/tamanhoDaLista);
+}

@@ -1,23 +1,41 @@
-import { example, anotherExample } from '../src/data.js';
+import { filmsDirector, filteredFilms, orderFilms } from '../src/data.js';
 
+const test = "director";
+const valor = [{ director: "Todos" }, { director: "Hayao Miyazaki" }, { director: "Isao Takahata" }]
 
-describe('example', () => {
+describe('filmsDirector', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filmsDirector).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('filter `directors`', () => {
+    expect(filmsDirector(test, valor)).toEqual([{ director: "Isao Takahata" }]);
+  });
+});
+
+const teste = "title";
+const dados = [{ title: "Todos" }, { title: "Castle in the Sky" }, { title: "My Neighbor Totoro" }]
+
+describe('filteredFilms', () => {
+  it('is a function', () => {
+    expect(typeof filteredFilms).toBe('function');
+  });
+
+  it('filter `title`', () => {
+    expect(filteredFilms(teste, dados)).toEqual([{ title: "Castle in the Sky" }]);
   });
 });
 
 
-describe('anotherExample', () => {
+const testar = "order"
+const films = [{order: "a-z"}, {order: "z-a"}]
+
+describe('orderFilms', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof orderFilms).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('selectedOrder `filmList`', () => {
+    expect(orderFilms(testar, films)).toEqual([{ order: "a-z" }]);
   });
 });
